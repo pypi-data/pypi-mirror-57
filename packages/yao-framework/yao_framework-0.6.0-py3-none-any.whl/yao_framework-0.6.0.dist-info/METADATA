@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: yao-framework
+Version: 0.6.0
+Summary: Extensible Efficient Quantum Algorithm Design in Python
+Home-page: https://github.com/QuantumBFS/Yao.jl
+Author: Xiuzhe (Roger) Luo and Jinguo Liu
+Author-email: roger.luo@uwaterloo.ca
+License: Apache License 2.0
+Keywords: differential equations stochastic ordinary delay differential-algebraic dae ode sde dde
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+Requires-Dist: julia (>=0.2)
+
+# Yao Python Package
+This directory and nested files contain Yao Python Package and language binding.
+
+## Installation
+
+To install Yao Python package, install Julia 1.x first,
+visit [julialang.org](https://julialang.org/) to download
+the Julia language.
+
+Then install the python binding by
+
+```python
+pip install yao-framework
+```
+
+CUDA is not supported for Yao Python Package yet.
+
+
