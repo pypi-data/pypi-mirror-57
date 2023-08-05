@@ -1,0 +1,10 @@
+README.md
+setup.py
+pymacaron_google_datastore/__init__.py
+pymacaron_google_datastore.egg-info/PKG-INFO
+pymacaron_google_datastore.egg-info/SOURCES.txt
+pymacaron_google_datastore.egg-info/dependency_links.txt
+pymacaron_google_datastore.egg-info/not-zip-safe
+pymacaron_google_datastore.egg-info/requires.txt
+pymacaron_google_datastore.egg-info/top_level.txt
+test/test_pep8.py
