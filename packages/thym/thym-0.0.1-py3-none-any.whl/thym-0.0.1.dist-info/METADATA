@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: thym
+Version: 0.0.1
+Summary: Python-based timer component for developers
+Home-page: https://github.com/apgeorg/thym.git
+Author: Apostolos Georgiadis
+Author-email: apostolos.georgiadis@nfiniity.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# thym [![PyPI version](https://badge.fury.io/py/thym.svg)](https://badge.fury.io/py/thym)
+
+A simple timer component that allows you to trigger an event at a specified interval.
+
+## Installation
+### There are two ways to install thym:
+
+Install thym from PyPI (recommended):
+```
+sudo pip install thym
+```
+If you are using a virtualenv, you may want to avoid using sudo:
+```
+pip install thym
+```
+### Alternatively: install thym from the GitHub source:
+First, clone thym using `git`:
+```
+git clone https://github.com/apgeorg/thym.git
+```
+Then, cd to the thym folder and run the install command:
+```
+cd thym
+sudo python setup.py install
+```
+## Getting started
+### Timer
+```python
+import thym
+
+# Timer callback function
+def timer_timeout():
+  print("Hello!")
+
+# Create a Timer which runs periodically 
+t = thym.Timer(1, timer_timeout, oneshot=False)
+
+# Start running
+t.start()
+```
+
+You can now stop the timer:
+
+```python
+t.stop()
+```
+
+
+
+
+
+
+
+
