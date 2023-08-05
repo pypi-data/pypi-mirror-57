@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+kdata/__init__.py
+kdata.egg-info/PKG-INFO
+kdata.egg-info/SOURCES.txt
+kdata.egg-info/dependency_links.txt
+kdata.egg-info/not-zip-safe
+kdata.egg-info/requires.txt
+kdata.egg-info/top_level.txt
