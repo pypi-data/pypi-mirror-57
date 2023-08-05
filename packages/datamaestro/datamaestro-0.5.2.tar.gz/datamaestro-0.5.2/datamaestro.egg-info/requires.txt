@@ -1,0 +1,7 @@
+click
+mkdocs
+mkdocs-material
+numpy
+pymdown-extensions
+tqdm
+urllib3
