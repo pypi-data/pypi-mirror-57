@@ -1,0 +1,11 @@
+mypy_boto3_kinesis_video_media/__init__.py,sha256=WqBOv8OW8is1VAW6qhsPk05HRk0oEZH280QErmr4SDU,210
+mypy_boto3_kinesis_video_media/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kinesis_video_media/client.py,sha256=pQGUt2l61gzhR9Q5b8iZbDm-W8WqJDet3rEoTJNdAac,10796
+mypy_boto3_kinesis_video_media/helpers.py,sha256=MIqv_OXiy_ojm5_dh0nF82IpCAzs4NS2hbv5_OkK1Do,1637
+mypy_boto3_kinesis_video_media/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kinesis_video_media/type_defs.py,sha256=vMVLC3mrF2jaD0p-DSYu0Z-zog_MPM_ddNiohjZfqvw,2342
+mypy_boto3_kinesis_video_media/version.py,sha256=nutSzm8RAe0nnGy5hpI-TNJoRJ6UPP6sv0GrjM6EfCk,55
+mypy_boto3_kinesis_video_media-1.10.30.dist-info/METADATA,sha256=Sc-87Dfi47O0CLKre7geW4NuvpbWg7lYzcMcKcnZIYo,1092
+mypy_boto3_kinesis_video_media-1.10.30.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_kinesis_video_media-1.10.30.dist-info/top_level.txt,sha256=WlpJ8jfTEf0ZwZZVmx78OOA5vQNfH_LXSpCbljGiQlc,31
+mypy_boto3_kinesis_video_media-1.10.30.dist-info/RECORD,,
