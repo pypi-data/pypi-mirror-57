@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+pyhdpowerview/__init__.py
+pyhdpowerview.egg-info/PKG-INFO
+pyhdpowerview.egg-info/SOURCES.txt
+pyhdpowerview.egg-info/dependency_links.txt
+pyhdpowerview.egg-info/top_level.txt
+pypowerview/__init__.py
