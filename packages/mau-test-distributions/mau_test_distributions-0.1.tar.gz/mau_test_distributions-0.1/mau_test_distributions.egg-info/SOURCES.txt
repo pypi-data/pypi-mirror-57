@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+mau_test_distributions/Binomialdistribution.py
+mau_test_distributions/Gaussiandistribution.py
+mau_test_distributions/Generaldistribution.py
+mau_test_distributions/__init__.py
+mau_test_distributions.egg-info/PKG-INFO
+mau_test_distributions.egg-info/SOURCES.txt
+mau_test_distributions.egg-info/dependency_links.txt
+mau_test_distributions.egg-info/not-zip-safe
+mau_test_distributions.egg-info/top_level.txt
