@@ -1,0 +1,4 @@
+netaddr
+django>=1.8
+six
+ipaddress
