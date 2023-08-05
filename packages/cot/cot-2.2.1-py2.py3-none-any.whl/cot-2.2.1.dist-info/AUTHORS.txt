@@ -1,0 +1,8 @@
+Common OVF Tool (COT)
+
+The following developers have contributed to this project:
+Glenn F. Matthews
+Kevin A. Keim
+Quol Fontana
+Jusheng Feng
+Subba Srinivas
