@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: nswairquality
+Version: 0.0.1
+Summary: NSW Air Quality Scraper
+Home-page: https://github.com/troykelly/python-nswairquality
+Author: Troy Kelly
+Author-email: troy@troykelly.com
+License: Creative Commons Attribution-Noncommercial-Share Alike license
+Description: # Gets NSW Air Quality Data
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
