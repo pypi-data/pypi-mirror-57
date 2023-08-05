@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hybridcontents
+Version: 0.1.0
+Summary: Hybrid Content Manager
+Home-page: https://github.com/viaduct-ai/hybridcontents
+Author: viaduct.ai
+Author-email: engineering@viaduct.ai
+License: Apache 2.0
+Download-URL: https://github.com/viaduct-ai/hybridcontents/archive/v0.1.0.tar.gz
+Description: UNKNOWN
+Keywords: jupyterhub,pgcontents,hybridcontents,content manager,hybridcontentmanager
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python
+Provides-Extra: test
