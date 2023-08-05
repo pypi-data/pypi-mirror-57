@@ -1,0 +1,11 @@
+rocketlogger/__init__.py,sha256=JG0LdoJq9m1EGvOFNpJsTuBWcZStF9TyqnQ2HYkrwH4,1560
+rocketlogger/calibration.py,sha256=o8p8cGqMfPwRmaIHtUN5KgxDblh41weqCI-EL6F5WrI,27864
+rocketlogger/data.py,sha256=oyJ-14_VAr69O2Sdlm-dEmruIl67youUBKY-VoCR8LI,51548
+rocketlogger/tests/__init__.py,sha256=0jpuYp44FdGjuE1KdV9hC-0d9cc3bU2AlgGORlFnuGc,1757
+rocketlogger/tests/test_calibration.py,sha256=QnjZE1o55G2RXPg1kzrSv8_Ji8whPV5Z55H0Ga8zWrg,14592
+rocketlogger/tests/test_data.py,sha256=GhYzOpQIvIKnW7VA8uV85liw226w9Poz1GfEz7KhcdU,45695
+rocketlogger-1.99a7.dist-info/LICENSE.txt,sha256=eAp3E8MRThzKMF3AFq1QqB0tFHQXSb9Ii8wjpe0SmrE,1521
+rocketlogger-1.99a7.dist-info/METADATA,sha256=vhVobhRSwe1apDznkGV_iifo7mGBk8k_p7qENGxc1YY,2845
+rocketlogger-1.99a7.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+rocketlogger-1.99a7.dist-info/top_level.txt,sha256=pEmAsWJ5y-rzWc4EdmrjAW4LwgEGFVbz9jZW-MoNvgU,13
+rocketlogger-1.99a7.dist-info/RECORD,,
