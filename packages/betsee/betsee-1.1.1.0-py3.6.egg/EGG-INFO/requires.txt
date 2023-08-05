@@ -1,0 +1,5 @@
+BETSE==1.1.1
+PySide2
+
+[all]
+pyside2uic
