@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        tap-webcrm=tap_webcrm:main
+    
