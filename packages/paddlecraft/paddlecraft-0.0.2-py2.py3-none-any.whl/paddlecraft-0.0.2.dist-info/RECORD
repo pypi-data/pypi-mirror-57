@@ -1,0 +1,14 @@
+paddlecraft/__init__.py,sha256=C9wg0VIEyM9NBP418sz2jixZpMi5UnQ26F_l0KEFQfo,281
+paddlecraft/base.py,sha256=4EsRQnN26WcDGsznoKtVfbJGMokYZPTfEVu__6Dp0dg,3583
+paddlecraft/bert.py,sha256=UVessOpobekTRAFDbLDBhV_Rard9wpLrq0z0MoMd5H8,11519
+paddlecraft/image_mlp_encoder.py,sha256=m1BJeBy9XyijCX012dtJxdyO_xepRNuAZae9cwAG-HA,5257
+paddlecraft/transformer_encoder.py,sha256=krkClyj22AwOw4E3H8zOZ7jjXV6VM3k49sRN32672tU,25480
+paddlecraft/utils/__init__.py,sha256=HGHNILwstu7zSFDnMzJASlwQ8kuM0cQXCGnXekGMA5M,178
+paddlecraft/utils/configure.py,sha256=EuTOYaJ1_GXVqUYM_h7IiBX1r6OlGaZZ6MjsTWcYHKM,9115
+paddlecraft/utils/shared_tools.py,sha256=QLpK612wfay2kEL3oton3ZasP0c1uZ_G7aJMZuuyQwY,3614
+paddlecraft-0.0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+paddlecraft-0.0.2.dist-info/METADATA,sha256=9fetGY8B2bHuE1lr7jXAc3I2GXIyQNYOsIxUygkMcW8,679
+paddlecraft-0.0.2.dist-info/RECORD,,
+paddlecraft-0.0.2.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+paddlecraft-0.0.2.dist-info/metadata.json,sha256=IOTMHd6IdtzhU2jyekM_3aj2eYIS3xn3_VGyU802hZg,823
+paddlecraft-0.0.2.dist-info/top_level.txt,sha256=R7j21f0mxfDz2-XwRUNjkxlD29xx4KzStrKBBy2tXVY,12
