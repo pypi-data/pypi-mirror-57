@@ -1,0 +1,11 @@
+footest/__init__.py,sha256=uap9QyJD0N5g_3vQjiKbREmwYyGyVLlV-QdnkU-FEDM,1110
+footest/cpp_bar/CMakeLists.txt,sha256=rgqcZKROYcPXXMFxX8dl2bk5paqMd52amxQs09CFRIw,578
+footest/cpp_bar/bar.cpp,sha256=mkus66BtnoOxOh1uYKdRnEvsAZUudcr00dJmQvFvTU4,1699
+footest/cpp_bar/bar.rst,sha256=cNzVYLS_L2MEFqCA-xn-1q0jbE29JyQbWHGz9vPgt_o,629
+footest/f2py_foo/foo.f90,sha256=NfcWo2PqfVeXbET9GYoFY4v-PkJxATrznpeG3gTsIZw,1627
+footest/f2py_foo/foo.rst,sha256=tVf5FZePfYljjBih7WGIZ9xUeupnIWnMZbB7p4lsGr0,635
+footest-0.0.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+footest-0.0.0.dist-info/LICENSE,sha256=7EbWHLVWGrgfUCeGAk1qxdIrKA7mmSes5k1ZST7HjqY,1077
+footest-0.0.0.dist-info/WHEEL,sha256=KNDdkjSeigjRXptGlrG4jH7jZgp5SlNmTTETrR633wE,85
+footest-0.0.0.dist-info/METADATA,sha256=AUTD9Rkj_Cp3QVW55SFjfpccIpD0gDJnIFQfbx2J8f0,847
+footest-0.0.0.dist-info/RECORD,,
