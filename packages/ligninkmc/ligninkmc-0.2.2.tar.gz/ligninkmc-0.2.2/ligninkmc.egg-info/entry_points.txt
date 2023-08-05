@@ -1,0 +1,4 @@
+[console_scripts]
+create_lignin = ligninkmc.create_lignin:main
+plot_bond_formation = ligninkmc.plot_bond_formation:main
+

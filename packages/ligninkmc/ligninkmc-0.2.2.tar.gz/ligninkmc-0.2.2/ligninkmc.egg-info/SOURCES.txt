@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+ligninkmc/__init__.py
+ligninkmc/_version.py
+ligninkmc/create_lignin.py
+ligninkmc/kmc_common.py
+ligninkmc/kmc_functions.py
+ligninkmc.egg-info/PKG-INFO
+ligninkmc.egg-info/SOURCES.txt
+ligninkmc.egg-info/dependency_links.txt
+ligninkmc.egg-info/entry_points.txt
+ligninkmc.egg-info/requires.txt
+ligninkmc.egg-info/top_level.txt
