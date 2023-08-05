@@ -1,0 +1,12 @@
+mypy_boto3_chime/__init__.py,sha256=rWVtDhxah8D9x8JLQ_VWYEx7upTIu8wf71QFZSiQ5_w,168
+mypy_boto3_chime/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_chime/client.py,sha256=l5tqywv1mZU3XyHfLIDmX5R76swMEl87UmmBWCe2hmY,236898
+mypy_boto3_chime/helpers.py,sha256=XWmrVcXR7zW5pNseGNxAPFMyhLiutLGpIratyO_VRCQ,2232
+mypy_boto3_chime/paginator.py,sha256=rUmVa_VZ3R11-FpkPMYUwCFp-Gn3dJgeNj1gdYgI3hE,8687
+mypy_boto3_chime/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_chime/type_defs.py,sha256=73d8_2zg_wBdh37_u7WG7FGf1rSwy3ZubaZTmaYaJn8,138361
+mypy_boto3_chime/version.py,sha256=nutSzm8RAe0nnGy5hpI-TNJoRJ6UPP6sv0GrjM6EfCk,55
+mypy_boto3_chime-1.10.30.dist-info/METADATA,sha256=E22GbKBw5W1LhjGkla_OjAWzcLjgzGUwvu57bmgmzuQ,1064
+mypy_boto3_chime-1.10.30.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_chime-1.10.30.dist-info/top_level.txt,sha256=QKKLWiYLobqels0_BY0ddur2JV1fGAmFSEG2h13-F3U,17
+mypy_boto3_chime-1.10.30.dist-info/RECORD,,
