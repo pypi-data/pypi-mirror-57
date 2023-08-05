@@ -1,0 +1,16 @@
+epsproc/AFBLM.py,sha256=QU58npuM9l1erJaWuYPjo7m-874P5pl8jlRumod9tqk,18689
+epsproc/IO.py,sha256=6hsN8YbaSclI8sdg1G63Oz8CMGJ312NJb__DKknxUbk,66726
+epsproc/MFBLM.py,sha256=Elol5wNJkJey2yhCa8q2v85jycEVF6DCpl8SQGP-VWw,20296
+epsproc/MFPAD.py,sha256=ihLFUGvVKve1-LuIZ-h2zWihBoRrY5P3-eR_1DxOdk8,8779
+epsproc/__init__.py,sha256=VTFlmrSU0BRyvoNAsoYea6FiZjUniXvDJ274iOhc6Ec,1248
+epsproc/_sns_matrixMod.py,sha256=KZHa-68N-A5dmv8hD4Q5NDv-9E1koaOGfGRS3xK_DwE,50463
+epsproc/basicPlotters.py,sha256=fdxAZ2L96xnueT9CTLJAoV_copRvfPVt1sTllKRA88s,22842
+epsproc/sphCalc.py,sha256=L32l6w6hxDI1N1q7oCtafvAMy2n6wOI6re_UefE0mtM,9525
+epsproc/sphPlot.py,sha256=7h2oQJxdUBhy3pu8rt8wtPL1BHEXLFEZth57p3M16Vo,15851
+epsproc/util.py,sha256=J2V-PxiEgWbx_4mOQ4nJR9ZEiYHDjoo-d60jahU3EYM,14510
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ePSproc-1.2.2.dist-info/LICENSE,sha256=U5J70Lc504yHoKgiNv2bBwwt__EcDBGb5QNyAF1QR60,35815
+ePSproc-1.2.2.dist-info/METADATA,sha256=Ei8rUor564fX0ZaAiAucYfMmAR8RTrGEccNZX3wzsPo,9065
+ePSproc-1.2.2.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+ePSproc-1.2.2.dist-info/top_level.txt,sha256=A7nQtvFoXUmndLRZRrFPHVq8kJ47AFVMOjLSSXPZnQc,14
+ePSproc-1.2.2.dist-info/RECORD,,
