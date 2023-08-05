@@ -1,0 +1,11 @@
+mypy_boto3_pinpoint/__init__.py,sha256=zbhhTYS4JyDlmfEY64B9BRZ9M3brRnwzKQdhsFpYezg,177
+mypy_boto3_pinpoint/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_pinpoint/client.py,sha256=joivIXAsMYIYeBJV30uoffLLLi5tUj-JZ0zKbjZshto,2281152
+mypy_boto3_pinpoint/helpers.py,sha256=fngzaQaUzdI7pjyS55EfO_OOiTeoI2PUm0UHcbFnEKU,1582
+mypy_boto3_pinpoint/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_pinpoint/type_defs.py,sha256=0tNE-QJvwacmkPQL_loMEJ1VDuEZbA8CdRiFZ6uCYyk,1343409
+mypy_boto3_pinpoint/version.py,sha256=nutSzm8RAe0nnGy5hpI-TNJoRJ6UPP6sv0GrjM6EfCk,55
+mypy_boto3_pinpoint-1.10.30.dist-info/METADATA,sha256=p9NjtatqW1JJzfXRLt-VmBLiza-Aeuix7eij9xHLQIE,1070
+mypy_boto3_pinpoint-1.10.30.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_pinpoint-1.10.30.dist-info/top_level.txt,sha256=ACmqDf15F7ZkaIv8YhTAjak5unzkLTX2JxcA9SXEd7k,20
+mypy_boto3_pinpoint-1.10.30.dist-info/RECORD,,
