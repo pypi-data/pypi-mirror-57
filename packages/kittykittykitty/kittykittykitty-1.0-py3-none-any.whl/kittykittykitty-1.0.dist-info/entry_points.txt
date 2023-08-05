@@ -1,0 +1,3 @@
+[console_scripts]
+kitty-lulz = kittykittykitty.lulz:main
+

@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: kittykittykitty
+Version: 1.0
+Summary: A nice kitty for your terminal
+Home-page: https://github.com/carlosgprado/PackagingTemplate
+Author: Carl OS
+Author-email: carlos.g.prado@gmail.com
+License: MIT
+Keywords: programming kitty lulz wat
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Artistic Software
+Requires-Dist: colorama
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-pycodestyle ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+
+KITTYKITTYKITTY
+---------------
+
+Test by making the kitty purrrr::
+
+    >> import kittykittykitty.lulz as lulz
+    >> lulz.meow()
+
+
