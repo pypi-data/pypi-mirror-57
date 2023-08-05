@@ -1,0 +1,3 @@
+pyserial<4.0,>=3.0
+mbed-os-tools<0.1.0,>=0.0.9
+mercurial>=5.2
