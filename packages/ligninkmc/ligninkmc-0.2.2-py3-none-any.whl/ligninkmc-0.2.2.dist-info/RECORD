@@ -1,0 +1,15 @@
+ligninkmc/__init__.py,sha256=ybMvxegeX3xiCwZVLKHx06lpB9dAZ2wYzO4yFUuwEy8,265
+ligninkmc/_version.py,sha256=_uHomOI4le1nEDuisMPuwHKksXxuthvWrfzVQfBmviE,497
+ligninkmc/analysis.py,sha256=JL0zBUNzcFE0DYsNwWHQUuJC4mG1jdptORAmrjPtg44,18513
+ligninkmc/create_lignin.py,sha256=FnVL2FhBEcFWAh_2_sZlqJbOj6jOXlRfx9_5yjm_QJ8,49687
+ligninkmc/event.py,sha256=SKVs0VWTunYPtxOJaWme3XPCxdluJGYorxwF-rjM6k0,128
+ligninkmc/kmc_common.py,sha256=wE4_bH3DluiSFkbYqEcwtlbNdYXnhyplXxdjEH9d41I,25052
+ligninkmc/kmc_functions.py,sha256=qK7nHMTMxZKs64_81W9MqCTUJaJehoi991dkJ9M3D04,62216
+ligninkmc/monomer.py,sha256=Mh5kD-FSa7VI7zli_DGxe1xOvHMIXCtD4sLAQNMtEiA,140
+ligninkmc/visualization.py,sha256=FDV_MROzYwOVbWAqnlloz_T3-f_i3yVKdHWRKD__1Ls,27081
+ligninkmc-0.2.2.dist-info/LICENSE,sha256=Xtpcdw3Yx8IHMzJ1HD3Zc8DTWbQRS6H0Yjhi1xY5y0w,1071
+ligninkmc-0.2.2.dist-info/METADATA,sha256=wdyLnXrzjXwz2zPplTC8eX-mhlRvIsce693kQybO2EY,383
+ligninkmc-0.2.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ligninkmc-0.2.2.dist-info/entry_points.txt,sha256=nRvPRVUbYTRSLuxBeZmZXjQPSzev3Y5Cp7eTlP59wlI,121
+ligninkmc-0.2.2.dist-info/top_level.txt,sha256=WaI4G3c0XKHwb9CLkGyJ2-2xbpU9o7fq2DqcUcSMLwo,10
+ligninkmc-0.2.2.dist-info/RECORD,,

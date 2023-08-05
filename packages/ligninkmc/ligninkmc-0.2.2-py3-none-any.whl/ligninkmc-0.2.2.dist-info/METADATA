@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ligninkmc
+Version: 0.2.2
+Summary: UNKNOWN
+Home-page: https://github.com/michaelorella/lignin-kmc
+Author: Michael Orella, Terry Gani, and Heather Mayes
+Author-email: hmayes@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >3.6
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: common-wrangler (>=0.2.3)
+
+UNKNOWN
+
+
