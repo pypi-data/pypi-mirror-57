@@ -1,0 +1,16 @@
+numpy>=1.14.6
+
+[:platform_system != "Windows"]
+imagecodecs-lite>=2019.12.2
+
+[:platform_system == "Windows"]
+imagecodecs>=2019.11.28
+
+[:python_version == "2.7"]
+pathlib
+enum34
+futures
+
+[all]
+matplotlib>=2.2
+imagecodecs>=2019.11.28
