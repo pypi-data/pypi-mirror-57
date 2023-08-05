@@ -1,0 +1,8 @@
+README.md
+setup.py
+valkyrie/__init__.py
+valkyrie/linear_model.py
+valkyrie.egg-info/PKG-INFO
+valkyrie.egg-info/SOURCES.txt
+valkyrie.egg-info/dependency_links.txt
+valkyrie.egg-info/top_level.txt

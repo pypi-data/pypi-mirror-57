@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: valkyrie
+Version: 0.0.1
+Summary: Implementation of machine learning algorithm.
+Home-page: UNKNOWN
+Author: Yifan Wu
+Author-email: yw693@cornell.edu
+License: UNKNOWN
+Description: # Valkyrie
+        
+        This package hosts implementation of some machine learning algorithms.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
