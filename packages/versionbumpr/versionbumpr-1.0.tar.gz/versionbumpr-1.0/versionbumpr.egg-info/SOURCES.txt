@@ -1,0 +1,11 @@
+README.md
+setup.py
+versionbumpr/__init__.py
+versionbumpr/commandline.py
+versionbumpr/versionbumpr.py
+versionbumpr.egg-info/PKG-INFO
+versionbumpr.egg-info/SOURCES.txt
+versionbumpr.egg-info/dependency_links.txt
+versionbumpr.egg-info/entry_points.txt
+versionbumpr.egg-info/not-zip-safe
+versionbumpr.egg-info/top_level.txt
