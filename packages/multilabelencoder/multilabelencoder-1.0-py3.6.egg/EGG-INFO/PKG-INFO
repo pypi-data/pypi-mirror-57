@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: multilabelencoder
+Version: 1.0
+Summary: Labelencoder for many pandas dataframe columns package
+Home-page: UNKNOWN
+Author: HMG - Team Big Data & AI
+Author-email: data@handelsblattgroup.com
+Maintainer: Emna Jaoua
+Maintainer-email: E.Jaoua@handelsblattgroup.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
