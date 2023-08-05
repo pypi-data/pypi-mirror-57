@@ -1,0 +1,12 @@
+seqfold/__init__.py,sha256=-aD-FJtprzny4TR1UrfJfJ8JQ0O5_NAgyC9FoWi8XUQ,363
+seqfold/fold.py,sha256=ft1bJSUqnQff0RV7sWq18-XjjHx76KQI_DQIkAhHN48,41797
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/fold_test.py,sha256=mpHUD1EO2EuVQP3bn_mkHFjBpD3SXCuzI-SU0zCeHIk,4386
+seqfold-0.1.2.dist-info/AUTHORS.rst,sha256=e63mcyph3lNrt9C6ESERs6ELPilMvzjtgWOuIX8TKY0,85
+seqfold-0.1.2.dist-info/LICENSE,sha256=FTe6hT88QWR5NJuKNqjQWvptHwBhHT-PfENeyR3ACcE,1075
+seqfold-0.1.2.dist-info/METADATA,sha256=WhAbUHWfk9OS14rRNiXtwcKhJfFhNJd7iz8lKXGQnbY,6239
+seqfold-0.1.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+seqfold-0.1.2.dist-info/entry_points.txt,sha256=UigQOdrwF5Nb3NjqxAzAB5zC8cwQNGG2kzW4aRQNm88,46
+seqfold-0.1.2.dist-info/top_level.txt,sha256=h8IY0nR1ETUw5e1iW2uc-ArMwGWl1rnvFQJbQmAtTMY,14
+seqfold-0.1.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+seqfold-0.1.2.dist-info/RECORD,,
