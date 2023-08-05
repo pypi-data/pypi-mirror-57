@@ -1,0 +1,12 @@
+excel2wisxml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+excel2wisxml/excel2wisxml.py,sha256=uA7YV37K1EgYKXw2Zft9oiqWz4trTe0v-11R4qGaiSE,41030
+excel2wisxml/excel2wisxmlutils.py,sha256=C1hmerajSsG8Dm5XSToOPy2t6KUdbV5wn_T2N6Gp9OU,12133
+excel2wisxml/templates/Metadata-guide-record.xls,sha256=hgnvgOEjYxBCttA8mYLMjzvc8ibEkRSp6jdRq6PRQtg,324096
+excel2wisxml/templates/excel2wisxml_template.xml,sha256=LAULegMGtgSjrROq8LW5PkPeF46rIyHCP4mFeM3aWgo,9662
+excel2wisxml-3.5.7.dist-info/DESCRIPTION.rst,sha256=VdDcm5M-YjsdiMobqn09JGDsJ6mThnE9GlttPvRZsVA,705
+excel2wisxml-3.5.7.dist-info/METADATA,sha256=P40gwqPG0MH-YK8sx5-rtNe4sl9xIP3Y8H0Ny3AoEnE,1044
+excel2wisxml-3.5.7.dist-info/RECORD,,
+excel2wisxml-3.5.7.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+excel2wisxml-3.5.7.dist-info/entry_points.txt,sha256=rHL-XBjZ3xXSdGoHycfQ3KfNtToLDxFLuhzcb32z02Q,124
+excel2wisxml-3.5.7.dist-info/metadata.json,sha256=ydk21e-5v-eS3gwfDwKKLCyF9QDAV8FQ5pOKpXvS3io,802
+excel2wisxml-3.5.7.dist-info/top_level.txt,sha256=FqoNKVp02JTy3zf3qhqzht3PQa03i9NYv1RAxnZ5tWM,13
