@@ -1,0 +1,53 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+docs/Makefile
+docs/authors.rst
+docs/conf.py
+docs/contributing.rst
+docs/history.rst
+docs/index.rst
+docs/installation.rst
+docs/make.bat
+docs/modules.rst
+docs/readme.rst
+docs/scope.rst
+docs/usage.rst
+docs/_build/html/_static/ajax-loader 2.gif
+docs/_build/html/_static/ajax-loader.gif
+docs/_build/html/_static/comment 2.png
+docs/_build/html/_static/comment-bright 2.png
+docs/_build/html/_static/comment-bright.png
+docs/_build/html/_static/comment-close 2.png
+docs/_build/html/_static/comment-close.png
+docs/_build/html/_static/comment.png
+docs/_build/html/_static/down 2.png
+docs/_build/html/_static/down-pressed.png
+docs/_build/html/_static/down.png
+docs/_build/html/_static/file 2.png
+docs/_build/html/_static/file.png
+docs/_build/html/_static/minus 2.png
+docs/_build/html/_static/minus.png
+docs/_build/html/_static/plus.png
+docs/_build/html/_static/up 2.png
+docs/_build/html/_static/up-pressed 2.png
+docs/_build/html/_static/up-pressed.png
+docs/_build/html/_static/up.png
+scope/__init__.py
+scope/cli.py
+scope/models.py
+scope/scope.py
+scope_coupler.egg-info/PKG-INFO
+scope_coupler.egg-info/SOURCES.txt
+scope_coupler.egg-info/dependency_links.txt
+scope_coupler.egg-info/entry_points.txt
+scope_coupler.egg-info/not-zip-safe
+scope_coupler.egg-info/requires.txt
+scope_coupler.egg-info/top_level.txt
+tests/__init__.py
+tests/test_scope.py
