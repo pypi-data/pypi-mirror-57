@@ -1,0 +1,3 @@
+[sentry.plugins]
+sentry_dingding_gio = sentry_dingding_gio.plugin:DingDingGIOPlugin
+

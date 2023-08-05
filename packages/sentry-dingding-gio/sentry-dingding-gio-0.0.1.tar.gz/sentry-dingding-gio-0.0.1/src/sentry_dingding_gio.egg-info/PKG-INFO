@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: sentry-dingding-gio
+Version: 0.0.1
+Summary: A Sentry extension which send errors stats to DingDing
+Home-page: https://www.growingio.com
+Author: howard
+Author-email: nocturne2023@gmail.com
+License: MIT
+Description: # Sentry-DingDing-gio
+        
+        `Sentry`的`钉钉`通知插件
+        
+        ## 安装
+        
+        ```bash
+        $ pip install sentry-dingding-gio
+        ```
+        
+        ## 使用
+        
+        在`项目`的所有集成页面找到`DingDing`插件，启用，并设置`Access Token`
+        
+Keywords: sentry dingding
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
