@@ -1,0 +1,17 @@
+knockknock/__init__.py,sha256=lKcbmSbiXNExpB3Fe1-hjmZlObRemctHzcvv5_8L41c,352
+knockknock/__main__.py,sha256=1yeiEZJ83xi4cVAoQfWAKk6d9odwdARQ_Ujjo45lWOA,5111
+knockknock/desktop_sender.py,sha256=qKblai2rQafqHHo_Bp5iOPlrT2fbc2VK3ESG7CvJNYI,3622
+knockknock/discord_sender.py,sha256=nwUPj45ogdSA2D2ax1cAZia4aNFN1YpsiSyDAPJXcmo,4096
+knockknock/email_sender.py,sha256=jB8_5Y-DBt_6LQwr9scVhPnryvIT7Mgybsl9IKvPq-E,4479
+knockknock/slack_sender.py,sha256=sOj8PyzesMfZhQzuetnwJPffYCJwRlLdwTFAXjXOzc0,4627
+knockknock/sms_sender.py,sha256=1rn-9kXiPZkabbInu3I6aecNkyV4F0pEk-3xBKxku50,3697
+knockknock/teams_sender.py,sha256=D1dIFZkgtEWY_l1TdaC05GhNynvFt9iwWts61xxmJaQ,4706
+knockknock/telegram_sender.py,sha256=1YFW01m98BUxQumLuWU0XAk_U6T9vjTt7tSP6PbWAGg,4183
+knockknock/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+knockknock/tests/test_senders.py,sha256=JWjeFj0XOibIPd0Rf87Ys_ccGUXH0q8ByVlmKd6ebew,474
+knockknock-0.1.6.dist-info/LICENSE,sha256=MyXDT62ElnU1S1lY9ZcFGRFifdBt1zyX10SBFnjFc6U,1085
+knockknock-0.1.6.dist-info/METADATA,sha256=RVqEsNPLPgc2RDUl4rS583DrUwQtv2cmxke6IMUURNg,10206
+knockknock-0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+knockknock-0.1.6.dist-info/entry_points.txt,sha256=Rhzpt04cTc4rbl_Q8-S6kJP1gGJNz7RxINH9m9FmEQw,57
+knockknock-0.1.6.dist-info/top_level.txt,sha256=fvedUG_V6uyRg-ZYmm9xzRCu5AwH8Nnsq44HnScNFto,11
+knockknock-0.1.6.dist-info/RECORD,,
