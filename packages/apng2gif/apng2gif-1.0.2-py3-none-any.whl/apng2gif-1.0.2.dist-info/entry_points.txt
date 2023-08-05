@@ -1,0 +1,3 @@
+[console_scripts]
+apng2gif = apng2gif:main
+
