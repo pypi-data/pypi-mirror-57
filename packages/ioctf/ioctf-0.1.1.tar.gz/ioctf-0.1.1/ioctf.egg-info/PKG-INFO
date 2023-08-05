@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ioctf
+Version: 0.1.1
+Summary: a simple io package for ctf use python3
+Home-page: https://github.com/WangZhuo2000/ioctf
+Author: Zhuo Wang
+Author-email: zhuowangy2k@outlook.com
+License: UNKNOWN
+Description: The website is [here](https://github.com/WangZhuo2000/ioctf)
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
