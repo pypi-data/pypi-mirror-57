@@ -1,0 +1,12 @@
+COPYING
+setup.py
+TracVisualization.egg-info/PKG-INFO
+TracVisualization.egg-info/SOURCES.txt
+TracVisualization.egg-info/dependency_links.txt
+TracVisualization.egg-info/entry_points.txt
+TracVisualization.egg-info/top_level.txt
+viz/__init__.py
+viz/web_ui.py
+viz/htdocs/viz.css
+viz/htdocs/viz.js
+viz/templates/viz.html
