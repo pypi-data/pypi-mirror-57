@@ -1,0 +1,6 @@
+click
+requests
+prettytable
+APScheduler
+bottle
+configParser

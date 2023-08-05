@@ -1,0 +1,4 @@
+[console_scripts]
+runtaskmanageserver = task_manage.server.main:runtaskmanageserver
+tm = task_manage.client.main:tm
+
