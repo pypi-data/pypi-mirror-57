@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+Calculator/__init__.py
+Temu_Calculator.egg-info/PKG-INFO
+Temu_Calculator.egg-info/SOURCES.txt
+Temu_Calculator.egg-info/dependency_links.txt
+Temu_Calculator.egg-info/top_level.txt
