@@ -1,0 +1,330 @@
+Metadata-Version: 2.1
+Name: oemof.db
+Version: 0.0.6
+Summary: Open Energy Modelling Framework - An extension for all database related things
+Home-page: https://github.com/oemof/oemof.db
+Author: oemof developer group
+Author-email: oemof@rl-institut.de
+License: MIT
+Project-URL: Documentation, https://oemofdb.readthedocs.io/
+Project-URL: Changelog, https://oemofdb.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/oemof/oemof.db/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Requires-Python: !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Requires-Dist: oemof
+Requires-Dist: sqlalchemy (>=1.0)
+Requires-Dist: keyring (>=4.0)
+Requires-Dist: shapely
+Requires-Dist: psycopg2
+Requires-Dist: keyrings.alt
+Requires-Dist: pandas (>=0.19.1)
+
+========
+Overview
+========
+
+
+
+Open Energy Modelling Framework - An extension for all database related things
+
+See `the documentation`_ for more information!
+
+.. _`the documentation`: https://oemofdb.readthedocs.io
+
+
+
+Installation
+++++++++++++
+
+  ..
+
+    ::
+
+        pip install oemof.db
+
+    You can also install the in-development version with::
+
+        pip install https://github.com/oemof/oemof.db/archive/master.zip
+
+Unfortunately installing the PyPi package doesn't work until #28 is fixed.
+Instead, you have to install via:
+
+  .. code:: bash
+
+    pip install -e git://github.com/oemof/oemof.db.git@master#egg=oemof.db
+
+Note that you have to have `git` installed for this to work.
+
+If you want to have the developer version clone the repository by
+
+  .. code:: bash
+
+    git clone git@github.com:oemof/oemof.db.git
+
+and you can install it using pip3 with the -e flag.
+
+  .. code:: bash
+
+    sudo pip3 install -e <path/to/the/oemof.db/repository/root/directory>
+
+.. _readme#configuration:
+
+Keep `virtualenvs`_ in mind!
+
+.. _virtualenvs: https://virtualenv.pypa.io
+
+Configuration and usage
++++++++++++++++++++++++
+
+As the purpose of this package is to facilitate usage of the ``oemof``
+database, it needs to know how to connect to this database. Being part of
+``oemof``, as fallback ``oemof.db`` always looks for this configuration in the
+file ``config.ini`` in a directory called ``.oemof`` in your home directory.
+
+A particular config-file can either specified and accessed via
+
+
+.. code-block:: python
+
+    from oemof.db import cfg
+
+    # only load config file
+    cfg.load_config(config_file=<you-config-file>)
+
+    # access config parameters
+    cfg.get(<section>, <parameter>)
+
+If you're interested in establishing a database connection and specify config
+file connection parameters are stored in use
+
+.. code-block:: python
+
+    from oemof.db import cfg
+
+    # establish database connection with specified section and config_file
+    db.connection(section=<section>, config_file=<you-config-file>)
+
+To configure database access this file has to have at least one dedicated
+section containing the necessary options, like this:
+
+  .. code:: INI
+    :name: config.ini
+
+    [postGIS]
+    username = username under which to connect to the database
+    database = name of the database from which to read
+    host     = host to connect to
+    port     = port to connect to
+    pw       = password used to connect with the given username (OPTIONAL)
+
+The section is assumed to be named ``postGIS`` by default, but you can name it
+differently and have multiple sections for different databases if the need
+arises.
+
+The password is optional. If you don't want to store the password in the
+``config.ini``, you may store it using the `keyring package`_, which is a
+dependency of ``oemof.db``, like this:
+
+  .. code:: python
+
+    >>> import keyring
+    >>> keyring.set_password("database", "username")
+
+where ``"database"`` and ``"username"`` have the same values as the
+corresponding options in ``config.ini``.
+
+.. _`keyring package`: https://pypi.python.org/pypi/keyring
+
+
+Development
++++++++++++
+
+To run the all tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+v0.0.6 (2019-12-03)
++++++++++++++++++++
+
+Testing
+#######
+
+  * Testing is now done via ``pytest``_ instead of ``nose``.
+
+.. _pytest: https://pypi.org/project/pytest/
+
+
+Bug fixes
+#########
+
+  * This release should finally get rid of `issue #28`_.
+
+.. _issue #28: https://github.com/oemof/oemof.db/issues/28
+
+
+Other changes
+#############
+
+  * Switched to a `src` based repository layout. This is done via a
+    special `packaging template`_ helping with a lot of stuff. Most
+    importantly it helps with correct test isolation so that `issue
+    #28`_ can properly be tested against.
+
+.. _packaging template: https://github.com/ionelmc/cookiecutter-pylibrary
+
+
+Contributors
+############
+
+  * Stephan Günther
+
+v0.0.3 (March 10, 2016)
++++++++++++++++++++++++++
+
+New features
+############
+
+ * It's now possible to have multiple sections for different databases in
+   ``config.ini`` (`PR #7 <https://github.com/oemof/oemof.db/pull/7>`_)
+
+Documentation
+#############
+
+  * The documentation was erroneously talking about ``feedinlib`` in places
+    where it should have said ``oemof.db``.
+    (`issue #3 <https://github.com/oemof/oemof.db/issues/3>`_)
+
+Contributors
+############
+
+ * Uwe Krien
+ * Stephan Günther
+ * Guido Pleßmann
+
+
+v0.0.4 (December 16, 2016)
+++++++++++++++++++++++++++
+
+New features
+############
+
+ * Create an empty database table with primary key type serial in `tools.py`
+ * Access grant to users/ group of users, see `grant_db_access` in `tools.py`
+ * Additional optional keyword argument to specify config file (`issue #21 <https://github.com/oemof/oemof.db/issues/21>`_)
+ * Ask for password and save store in keyring if not existent (`issue #22 <https://github.com/oemof/oemof.db/issues/22>`_)
+
+
+Documentation
+#############
+
+
+Testing
+#######
+
+
+Bug fixes
+#########
+
+ * Add missing keyrings.alt dependency
+
+
+Other changes
+#############
+
+
+Contributors
+############
+
+ * Guido Pleßmann
+ * Uwe Krien
+
+v0.0.2 (January 29, 2016)
++++++++++++++++++++++++++
+
+Other changes
+#############
+
+  * Package is now called ``oemof.db``
+
+Contributors
+############
+
+ * Uwe Krien
+ * Stephan Günther
+
+
+v0.0.1 (October 30, 2015)
++++++++++++++++++++++++++
+
+New features
+############
+
+
+Documentation
+#############
+
+
+Testing
+####### 
+
+
+Bug fixes
+#########
+
+
+Other changes
+#############
+
+
+Contributors
+############
+
+ * Uwe Krien
+
+v0.0.5 (March 20th, 2017)
++++++++++++++++++++++++++
+
+Bug fixes
+#########
+
+ * In order to play well with `oemof`, `oemof/db/__init__.py` has been
+   removed. This should fix `oemof`'s `issue #269 <https://github.com/oemof/oemof/issues/269>`_.
+
+Contributors
+############
+
+ * Stephan Günther
+
+
+
