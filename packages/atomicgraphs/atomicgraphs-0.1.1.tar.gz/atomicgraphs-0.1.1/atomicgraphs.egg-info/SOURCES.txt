@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+atomicgraph/__init__.py
+atomicgraph/atomic_graph.py
+atomicgraph/coloring.py
+atomicgraph/comp_graph.py
+atomicgraph/hash_combiner.py
+atomicgraphs.egg-info/PKG-INFO
+atomicgraphs.egg-info/SOURCES.txt
+atomicgraphs.egg-info/dependency_links.txt
+atomicgraphs.egg-info/requires.txt
+atomicgraphs.egg-info/top_level.txt
