@@ -1,0 +1,11 @@
+README.rst
+setup.py
+pyunimarc/__init__.py
+pyunimarc/entities.py
+pyunimarc/errors.py
+pyunimarc/reader.py
+pyunimarc/tree_utils.py
+pyunimarc.egg-info/PKG-INFO
+pyunimarc.egg-info/SOURCES.txt
+pyunimarc.egg-info/dependency_links.txt
+pyunimarc.egg-info/top_level.txt
