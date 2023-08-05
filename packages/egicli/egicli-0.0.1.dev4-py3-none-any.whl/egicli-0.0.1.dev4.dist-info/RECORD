@@ -1,0 +1,13 @@
+egicli/.travis.yml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+egicli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+egicli/checkin.py,sha256=tyFVbIOqkZThZTgjIHH8bCdnoKsHFMK-MmcDVtbAE-w,2936
+egicli/cli.py,sha256=3zt5TS1dC94dInFRrio-lGxfPbHHENjnb_San6g_SWM,364
+egicli/endpoint.py,sha256=mKiLYiyVwUnYX2qyHHci1naj5f5B24zoM92vtInB5oY,9947
+egicli-0.0.1.dev4.dist-info/AUTHORS,sha256=MFBaYPNdq_HeaVuNZcsXNFI4oHjWY_5k4GEBB6FyfkA,79
+egicli-0.0.1.dev4.dist-info/LICENSE,sha256=em4oJUKQK43w1uiAmPoBys-ambhzvIKBR5H2MaEqqzU,1068
+egicli-0.0.1.dev4.dist-info/METADATA,sha256=1udSB_SRnhT_4FLXX2pMqzoecuu5iHb2R4fk9VdrU3g,776
+egicli-0.0.1.dev4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+egicli-0.0.1.dev4.dist-info/entry_points.txt,sha256=U4c12KsHAYOW335WxOMtYc6lLA9YNyEQ9hFokU6-vS4,43
+egicli-0.0.1.dev4.dist-info/pbr.json,sha256=vvgQoi0eii_ZpsWbijKRYmIv87DY202xdHFhCx8dqEE,47
+egicli-0.0.1.dev4.dist-info/top_level.txt,sha256=ohtAMPUT7aor5Ak5-VQf3zuUD3s0HF0Gcr-zj83xszA,7
+egicli-0.0.1.dev4.dist-info/RECORD,,
