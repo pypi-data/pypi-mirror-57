@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/django_react_admin/static/css/main.34de6062.chunk.css",
+    "main.js": "/static/django_react_admin/static/js/main.f9fe51be.chunk.js",
+    "main.js.map": "/static/django_react_admin/static/js/main.f9fe51be.chunk.js.map",
+    "runtime-main.js": "/static/django_react_admin/static/js/runtime-main.18a24d86.js",
+    "runtime-main.js.map": "/static/django_react_admin/static/js/runtime-main.18a24d86.js.map",
+    "static/js/2.a5cf5eb4.chunk.js": "/static/django_react_admin/static/js/2.a5cf5eb4.chunk.js",
+    "static/js/2.a5cf5eb4.chunk.js.map": "/static/django_react_admin/static/js/2.a5cf5eb4.chunk.js.map",
+    "index.html": "/static/django_react_admin/index.html",
+    "precache-manifest.fb44c76e75461f39e1866aef37d0a4fa.js": "/static/django_react_admin/precache-manifest.fb44c76e75461f39e1866aef37d0a4fa.js",
+    "service-worker.js": "/static/django_react_admin/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/static/django_react_admin/static/css/main.34de6062.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18a24d86.js",
+    "static/js/2.a5cf5eb4.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.f9fe51be.chunk.js"
+  ]
+}
