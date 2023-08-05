@@ -1,0 +1,13 @@
+.gitignore
+ArtisticLicense20.html
+MANIFEST.in
+README.md
+licenses-amendments.txt
+setup.cfg
+setup.py
+yapyutils/__init__.py
+yapyutils.egg-info/PKG-INFO
+yapyutils.egg-info/SOURCES.txt
+yapyutils.egg-info/dependency_links.txt
+yapyutils.egg-info/not-zip-safe
+yapyutils.egg-info/top_level.txt
