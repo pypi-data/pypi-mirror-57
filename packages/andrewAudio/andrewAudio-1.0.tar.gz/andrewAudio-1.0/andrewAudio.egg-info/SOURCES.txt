@@ -1,0 +1,11 @@
+README.md
+setup.py
+andrewAudio.egg-info/PKG-INFO
+andrewAudio.egg-info/SOURCES.txt
+andrewAudio.egg-info/dependency_links.txt
+andrewAudio.egg-info/requires.txt
+andrewAudio.egg-info/top_level.txt
+src/__init__.py
+src/app.py
+test/test_predict.py
+test/test_train.py

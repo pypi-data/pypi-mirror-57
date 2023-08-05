@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: andrewAudio
+Version: 1.0
+Summary: A sound-object labelling machine learning model for use with Audacity. Uses VGGish for feature extraction and a Pytorch N-way classifier neural network for training.
+Home-page: https://github.com/andrew-audio/andrew-model
+Author: Cooper Barth & Jack Wiig
+Author-email: cooperfbarth@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
