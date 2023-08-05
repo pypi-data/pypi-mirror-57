@@ -1,0 +1,4 @@
+include spikeforest_widgets/dist/bundle.js
+include spikeforest_widgets/host_widget/dist/bundle.js
+recursive-include spikeforest_widgets/electron *
+recursive-include spikeforest_widgets/widgets *
