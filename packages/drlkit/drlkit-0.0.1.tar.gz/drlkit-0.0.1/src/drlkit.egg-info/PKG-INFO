@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: drlkit
+Version: 0.0.1
+Summary: A High Level Python Deep Reinforcement Learning library. Great for beginners, for prototyping and quickly comparing algorithms
+Home-page: https://github.com/FranckNdame/drlkit
+Author: Franck Ndame
+Author-email: franck.mpouli@gmail.com
+License: UNKNOWN
+Description: # drlkit
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Description-Content-Type: text/markdown
