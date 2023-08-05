@@ -1,0 +1,10 @@
+msgpack == 0.6
+python-rapidjson
+pyzmq>=17
+ruamel.yaml
+
+# testing
+numpy
+pytest
+pytest-asyncio
+pytest-cov
