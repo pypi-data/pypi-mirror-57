@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        log-anomaly-detector=app:cli
+    
