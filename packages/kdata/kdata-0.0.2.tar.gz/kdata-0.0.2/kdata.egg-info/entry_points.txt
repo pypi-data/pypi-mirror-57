@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        stick=kdata.stick:get_tick_data
+      
