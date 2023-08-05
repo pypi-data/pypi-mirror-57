@@ -1,0 +1,4 @@
+colorama
+superb
+requests
+json
