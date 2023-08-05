@@ -1,0 +1,12 @@
+ipython[notebook]>=4.0
+matplotlib>=1.1.0
+numpy>=1.6.1
+six>=1.7.0
+sphinx>=1.4
+sphinxtesters>=0.2
+texext
+
+[test]
+mock
+pytest
+scripttester
