@@ -1,0 +1,2 @@
+termcolor-util
+PyYAML<5.2,>=5.1
