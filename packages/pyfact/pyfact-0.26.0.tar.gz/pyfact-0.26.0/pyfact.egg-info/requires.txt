@@ -1,0 +1,14 @@
+astropy
+h5py
+matplotlib>=1.4
+numpy
+pandas
+peewee>=3
+pymysql
+python-dateutil
+scipy
+setuptools
+simple-crypt
+sqlalchemy
+tables
+wrapt
