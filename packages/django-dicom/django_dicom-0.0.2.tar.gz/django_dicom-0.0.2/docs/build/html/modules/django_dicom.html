@@ -1,0 +1,555 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>django_dicom package &mdash; django_dicom 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="django_dicom.data_import package" href="django_dicom.data_import.html" />
+    <link rel="prev" title="Reference" href="reference.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> django_dicom
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/user_guide.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="reference.html">Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">django_dicom package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-django_dicom">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="django_dicom.data_import.html">django_dicom.data_import package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="django_dicom.filters.html">django_dicom.filters package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="django_dicom.models.html">django_dicom.models package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="django_dicom.reader.html">django_dicom.reader package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="django_dicom.serializers.html">django_dicom.serializers package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-django_dicom.admin">django_dicom.admin module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-django_dicom.apps">django_dicom.apps module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-django_dicom.urls">django_dicom.urls module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-django_dicom.utils">django_dicom.utils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-django_dicom.views">django_dicom.views module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tests.html">tests package</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">django_dicom</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="reference.html">Reference</a> &raquo;</li>
+        
+      <li>django_dicom package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/django_dicom.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="django-dicom-package">
+<h1>django_dicom package<a class="headerlink" href="#django-dicom-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-django_dicom">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-django_dicom" title="Permalink to this headline">¶</a></h2>
+<p>Manages <a class="reference external" href="https://en.wikipedia.org/wiki/DICOM">DICOM</a> files by creating
+<a class="reference external" href="https://docs.djangoproject.com/en/2.2/topics/db/models/">Django models</a> to
+represent the various <a class="reference external" href="https://en.wikipedia.org/wiki/DICOM">DICOM</a> entities
+(see <a class="reference internal" href="django_dicom.models.html#django-dicom-models"><span class="std std-ref">django_dicom.models package</span></a> for more information). Also provides the
+<a class="reference internal" href="django_dicom.data_import.html#django-dicom-data-import"><span class="std std-ref">django_dicom.data_import package</span></a> for supervising the maintenance of these models
+when importing new data, and a few more utility modules meant to help retrieving
+DICOM data easily and efficiently.</p>
+</div>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="django_dicom.data_import.html">django_dicom.data_import package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.data_import.html#module-django_dicom.data_import">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.data_import.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.data_import.html#module-django_dicom.data_import.import_image">django_dicom.data_import.import_image module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.data_import.html#module-django_dicom.data_import.local_import">django_dicom.data_import.local_import module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="django_dicom.filters.html">django_dicom.filters package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.filters.html#module-django_dicom.filters">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.filters.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.filters.html#module-django_dicom.filters.image_filter">django_dicom.filters.image_filter module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="django_dicom.models.html">django_dicom.models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.models.html#module-django_dicom.models">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.models.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.models.html#module-django_dicom.models.choice_enum">django_dicom.models.choice_enum module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.models.html#module-django_dicom.models.dicom_entity">django_dicom.models.dicom_entity module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.models.html#module-django_dicom.models.fields">django_dicom.models.fields module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.models.html#module-django_dicom.models.help_text">django_dicom.models.help_text module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.models.html#module-django_dicom.models.image">django_dicom.models.image module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.models.html#module-django_dicom.models.patient">django_dicom.models.patient module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.models.html#module-django_dicom.models.series">django_dicom.models.series module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.models.html#module-django_dicom.models.study">django_dicom.models.study module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.models.html#module-django_dicom.models.validators">django_dicom.models.validators module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="django_dicom.reader.html">django_dicom.reader package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.reader.html#module-django_dicom.reader">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.reader.html#subpackages">Subpackages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.reader.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.reader.html#module-django_dicom.reader.header_information">django_dicom.reader.header_information module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.reader.html#module-django_dicom.reader.parser">django_dicom.reader.parser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.reader.html#module-django_dicom.reader.value_representation">django_dicom.reader.value_representation module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="django_dicom.serializers.html">django_dicom.serializers package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.serializers.html#module-django_dicom.serializers">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.serializers.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.serializers.html#module-django_dicom.serializers.image_serializer">django_dicom.serializers.image_serializer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.serializers.html#module-django_dicom.serializers.patient_serializer">django_dicom.serializers.patient_serializer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.serializers.html#module-django_dicom.serializers.series_serializer">django_dicom.serializers.series_serializer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="django_dicom.serializers.html#module-django_dicom.serializers.study_serializer">django_dicom.serializers.study_serializer module</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-django_dicom.admin">
+<span id="django-dicom-admin-module"></span><h2>django_dicom.admin module<a class="headerlink" href="#module-django_dicom.admin" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="django_dicom.admin.ImageAdmin">
+<em class="property">class </em><code class="descclassname">django_dicom.admin.</code><code class="descname">ImageAdmin</code><span class="sig-paren">(</span><em>model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#django_dicom.admin.ImageAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.admin.options.ModelAdmin</span></code></p>
+<dl class="attribute">
+<dt id="django_dicom.admin.ImageAdmin.list_display">
+<code class="descname">list_display</code><em class="property"> = ('id', 'uid', 'series', 'number', 'date', 'time')</em><a class="headerlink" href="#django_dicom.admin.ImageAdmin.list_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.ImageAdmin.media">
+<code class="descname">media</code><a class="headerlink" href="#django_dicom.admin.ImageAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.ImageAdmin.ordering">
+<code class="descname">ordering</code><em class="property"> = ['-date', '-series', 'number']</em><a class="headerlink" href="#django_dicom.admin.ImageAdmin.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.ImageAdmin.readonly_fields">
+<code class="descname">readonly_fields</code><em class="property"> = ['uid']</em><a class="headerlink" href="#django_dicom.admin.ImageAdmin.readonly_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="django_dicom.admin.ImageInLine">
+<em class="property">class </em><code class="descclassname">django_dicom.admin.</code><code class="descname">ImageInLine</code><span class="sig-paren">(</span><em>parent_model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#django_dicom.admin.ImageInLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.admin.options.TabularInline</span></code></p>
+<dl class="attribute">
+<dt id="django_dicom.admin.ImageInLine.exclude">
+<code class="descname">exclude</code><em class="property"> = ('uid', 'date', 'time')</em><a class="headerlink" href="#django_dicom.admin.ImageInLine.exclude" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.ImageInLine.media">
+<code class="descname">media</code><a class="headerlink" href="#django_dicom.admin.ImageInLine.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.ImageInLine.model">
+<code class="descname">model</code><a class="headerlink" href="#django_dicom.admin.ImageInLine.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="django_dicom.models.html#django_dicom.models.image.Image" title="django_dicom.models.image.Image"><code class="xref py py-class docutils literal notranslate"><span class="pre">django_dicom.models.image.Image</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.ImageInLine.ordering">
+<code class="descname">ordering</code><em class="property"> = ['number']</em><a class="headerlink" href="#django_dicom.admin.ImageInLine.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="django_dicom.admin.PatientAdmin">
+<em class="property">class </em><code class="descclassname">django_dicom.admin.</code><code class="descname">PatientAdmin</code><span class="sig-paren">(</span><em>model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#django_dicom.admin.PatientAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.admin.options.ModelAdmin</span></code></p>
+<dl class="attribute">
+<dt id="django_dicom.admin.PatientAdmin.fieldsets">
+<code class="descname">fieldsets</code><em class="property"> = ((None, {'fields': ('uid',)}), ('Name', {'fields': ('name_prefix', 'given_name', 'middle_name', 'family_name', 'name_suffix')}), ('Personal Information', {'fields': ('sex', 'date_of_birth')}))</em><a class="headerlink" href="#django_dicom.admin.PatientAdmin.fieldsets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.PatientAdmin.inlines">
+<code class="descname">inlines</code><em class="property"> = (&lt;class 'django_dicom.admin.SeriesInLine'&gt;,)</em><a class="headerlink" href="#django_dicom.admin.PatientAdmin.inlines" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.PatientAdmin.list_display">
+<code class="descname">list_display</code><em class="property"> = ('id', 'uid', 'given_name', 'family_name', 'sex', 'date_of_birth')</em><a class="headerlink" href="#django_dicom.admin.PatientAdmin.list_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.PatientAdmin.media">
+<code class="descname">media</code><a class="headerlink" href="#django_dicom.admin.PatientAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="django_dicom.admin.SeriesAdmin">
+<em class="property">class </em><code class="descclassname">django_dicom.admin.</code><code class="descname">SeriesAdmin</code><span class="sig-paren">(</span><em>model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#django_dicom.admin.SeriesAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.admin.options.ModelAdmin</span></code></p>
+<dl class="attribute">
+<dt id="django_dicom.admin.SeriesAdmin.inlines">
+<code class="descname">inlines</code><em class="property"> = (&lt;class 'django_dicom.admin.ImageInLine'&gt;,)</em><a class="headerlink" href="#django_dicom.admin.SeriesAdmin.inlines" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.SeriesAdmin.list_display">
+<code class="descname">list_display</code><em class="property"> = ('id', 'uid', 'date', 'time', 'number', 'description')</em><a class="headerlink" href="#django_dicom.admin.SeriesAdmin.list_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.SeriesAdmin.media">
+<code class="descname">media</code><a class="headerlink" href="#django_dicom.admin.SeriesAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.SeriesAdmin.ordering">
+<code class="descname">ordering</code><em class="property"> = ['-date', '-time']</em><a class="headerlink" href="#django_dicom.admin.SeriesAdmin.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.SeriesAdmin.readonly_fields">
+<code class="descname">readonly_fields</code><em class="property"> = ['uid']</em><a class="headerlink" href="#django_dicom.admin.SeriesAdmin.readonly_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="django_dicom.admin.SeriesInLine">
+<em class="property">class </em><code class="descclassname">django_dicom.admin.</code><code class="descname">SeriesInLine</code><span class="sig-paren">(</span><em>parent_model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#django_dicom.admin.SeriesInLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.admin.options.TabularInline</span></code></p>
+<dl class="attribute">
+<dt id="django_dicom.admin.SeriesInLine.fields">
+<code class="descname">fields</code><em class="property"> = ('date', 'number', 'description', 'scanning_sequence', 'sequence_variant', 'repetition_time', 'echo_time', 'inversion_time')</em><a class="headerlink" href="#django_dicom.admin.SeriesInLine.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.SeriesInLine.media">
+<code class="descname">media</code><a class="headerlink" href="#django_dicom.admin.SeriesInLine.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.SeriesInLine.model">
+<code class="descname">model</code><a class="headerlink" href="#django_dicom.admin.SeriesInLine.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="django_dicom.models.html#django_dicom.models.series.Series" title="django_dicom.models.series.Series"><code class="xref py py-class docutils literal notranslate"><span class="pre">django_dicom.models.series.Series</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.SeriesInLine.ordering">
+<code class="descname">ordering</code><em class="property"> = ['date', 'number']</em><a class="headerlink" href="#django_dicom.admin.SeriesInLine.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="django_dicom.admin.StudyAdmin">
+<em class="property">class </em><code class="descclassname">django_dicom.admin.</code><code class="descname">StudyAdmin</code><span class="sig-paren">(</span><em>model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#django_dicom.admin.StudyAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.admin.options.ModelAdmin</span></code></p>
+<dl class="attribute">
+<dt id="django_dicom.admin.StudyAdmin.inlines">
+<code class="descname">inlines</code><em class="property"> = (&lt;class 'django_dicom.admin.StudySeriesInLine'&gt;,)</em><a class="headerlink" href="#django_dicom.admin.StudyAdmin.inlines" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.StudyAdmin.list_display">
+<code class="descname">list_display</code><em class="property"> = ('id', 'uid', 'description')</em><a class="headerlink" href="#django_dicom.admin.StudyAdmin.list_display" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.StudyAdmin.media">
+<code class="descname">media</code><a class="headerlink" href="#django_dicom.admin.StudyAdmin.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.StudyAdmin.readonly_fields">
+<code class="descname">readonly_fields</code><em class="property"> = ['uid']</em><a class="headerlink" href="#django_dicom.admin.StudyAdmin.readonly_fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="django_dicom.admin.StudySeriesInLine">
+<em class="property">class </em><code class="descclassname">django_dicom.admin.</code><code class="descname">StudySeriesInLine</code><span class="sig-paren">(</span><em>parent_model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#django_dicom.admin.StudySeriesInLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.contrib.admin.options.TabularInline</span></code></p>
+<dl class="attribute">
+<dt id="django_dicom.admin.StudySeriesInLine.fields">
+<code class="descname">fields</code><em class="property"> = ('patient', 'date', 'number', 'description', 'scanning_sequence', 'sequence_variant')</em><a class="headerlink" href="#django_dicom.admin.StudySeriesInLine.fields" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.StudySeriesInLine.media">
+<code class="descname">media</code><a class="headerlink" href="#django_dicom.admin.StudySeriesInLine.media" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.StudySeriesInLine.model">
+<code class="descname">model</code><a class="headerlink" href="#django_dicom.admin.StudySeriesInLine.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="django_dicom.models.html#django_dicom.models.series.Series" title="django_dicom.models.series.Series"><code class="xref py py-class docutils literal notranslate"><span class="pre">django_dicom.models.series.Series</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.admin.StudySeriesInLine.ordering">
+<code class="descname">ordering</code><em class="property"> = ['patient', 'date', 'number']</em><a class="headerlink" href="#django_dicom.admin.StudySeriesInLine.ordering" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-django_dicom.apps">
+<span id="django-dicom-apps-module"></span><h2>django_dicom.apps module<a class="headerlink" href="#module-django_dicom.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="django_dicom.apps.DjangoDicomConfig">
+<em class="property">class </em><code class="descclassname">django_dicom.apps.</code><code class="descname">DjangoDicomConfig</code><span class="sig-paren">(</span><em>app_name</em>, <em>app_module</em><span class="sig-paren">)</span><a class="headerlink" href="#django_dicom.apps.DjangoDicomConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="attribute">
+<dt id="django_dicom.apps.DjangoDicomConfig.data_extension">
+<code class="descname">data_extension</code><em class="property"> = 'dcm'</em><a class="headerlink" href="#django_dicom.apps.DjangoDicomConfig.data_extension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="django_dicom.apps.DjangoDicomConfig.name">
+<code class="descname">name</code><em class="property"> = 'django_dicom'</em><a class="headerlink" href="#django_dicom.apps.DjangoDicomConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-django_dicom.urls">
+<span id="django-dicom-urls-module"></span><h2>django_dicom.urls module<a class="headerlink" href="#module-django_dicom.urls" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="django_dicom.urls.path">
+<code class="descclassname">django_dicom.urls.</code><code class="descname">path</code><span class="sig-paren">(</span><em>route</em>, <em>view</em>, <em>kwargs=None</em>, <em>name=None</em>, <em>*</em>, <em>Pattern=&lt;class 'django.urls.resolvers.RoutePattern'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#django_dicom.urls.path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-django_dicom.utils">
+<span id="django-dicom-utils-module"></span><h2>django_dicom.utils module<a class="headerlink" href="#module-django_dicom.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="django_dicom.utils.NumpyEncoder">
+<em class="property">class </em><code class="descclassname">django_dicom.utils.</code><code class="descname">NumpyEncoder</code><span class="sig-paren">(</span><em>*</em>, <em>skipkeys=False</em>, <em>ensure_ascii=True</em>, <em>check_circular=True</em>, <em>allow_nan=True</em>, <em>sort_keys=False</em>, <em>indent=None</em>, <em>separators=None</em>, <em>default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#django_dicom.utils.NumpyEncoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">json.encoder.JSONEncoder</span></code></p>
+<p>Converts NumPy array to a JSON serializable nested list.
+Based on <a class="reference external" href="https://stackoverflow.com/a/47626762">this</a> SO answer.</p>
+<dl class="method">
+<dt id="django_dicom.utils.NumpyEncoder.default">
+<code class="descname">default</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#django_dicom.utils.NumpyEncoder.default" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implement this method in a subclass such that it returns
+a serializable object for <code class="docutils literal notranslate"><span class="pre">o</span></code>, or calls the base implementation
+(to raise a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code>).</p>
+<p>For example, to support arbitrary iterators, you could
+implement default like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">o</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">iterable</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">o</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="c1"># Let the base class default method raise the TypeError</span>
+    <span class="k">return</span> <span class="n">JSONEncoder</span><span class="o">.</span><span class="n">default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">o</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="django_dicom.utils.snake_case_to_camel_case">
+<code class="descclassname">django_dicom.utils.</code><code class="descname">snake_case_to_camel_case</code><span class="sig-paren">(</span><em>string: str</em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#django_dicom.utils.snake_case_to_camel_case" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-django_dicom.views">
+<span id="django-dicom-views-module"></span><h2>django_dicom.views module<a class="headerlink" href="#module-django_dicom.views" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="django_dicom.data_import.html" class="btn btn-neutral float-right" title="django_dicom.data_import package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="reference.html" class="btn btn-neutral float-left" title="Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Zvi Baratz
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
