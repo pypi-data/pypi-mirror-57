@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: questions-three-selenium
+Version: 3.0.5.0
+Summary: Selenium integration and tools for questions-three
+Home-page: https://git.dev.grx.io/Testing/questions-three
+Author: Mike Duskis
+Author-email: mike.duskis@cybergrx.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: expects (>=0.8.0)
+Requires-Dist: questions-three
+Requires-Dist: pyfakefs (>=3.4.3)
+Requires-Dist: PyYAML (>=5.1)
+Requires-Dist: selenium (>=3.141.0)
+Requires-Dist: twin-sister (>=4.5.1)
+Requires-Dist: twine (>=1.9.1)
+Requires-Dist: wheel (>=0.30.0)
+
+UNKNOWN
+
+
