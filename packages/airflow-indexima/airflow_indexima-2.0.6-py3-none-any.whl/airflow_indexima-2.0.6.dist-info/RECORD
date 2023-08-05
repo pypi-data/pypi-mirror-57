@@ -1,0 +1,13 @@
+airflow_indexima/__init__.py,sha256=Vq6CtTxgGvOoJFtDnQ069MNMZpX0EtyiZ7B9KPC7qhw,227
+airflow_indexima/connection.py,sha256=hBBaP_vSTbgpMn02yLTl1XKAo2ANl6xVwaAOACYxwhw,395
+airflow_indexima/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_indexima/hooks/indexima.py,sha256=4Os6prskOt7fs2TQ0bDO0ncOfxJt_KRk-wxEecYIHjg,3588
+airflow_indexima/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_indexima/operators/indexima.py,sha256=haxkuppfC0OQhUqfcEFXmRrEBY3jW0v0N-yRZgNYZWA,4861
+airflow_indexima/uri/__init__.py,sha256=ETT1a5tfy3F9vWEN0560voUh63EQcOSsrONGsmVRgIo,253
+airflow_indexima/uri/base.py,sha256=I_8ulojrO38rGeBgsOq3c7ZXBd8-c39ipWnoYondrV4,1162
+airflow_indexima/uri/redshift.py,sha256=aUbNXhsxhDih8K_MUOvoa27VKiN33A3weuRuODDWBU8,1277
+airflow_indexima-2.0.6.dist-info/LICENSE.md,sha256=sXJ8jJBvARYjsjiYfvkV--KQe3Sh46Fid_0Ts6TONMc,1089
+airflow_indexima-2.0.6.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+airflow_indexima-2.0.6.dist-info/METADATA,sha256=3TrJC4wLyY1y5hcS8mPpZr4JBkWksf0Ojxnl70ignwE,4868
+airflow_indexima-2.0.6.dist-info/RECORD,,
