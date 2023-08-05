@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: fast-ann
+Version: 2019.12.4.20.42.19
+Summary: description
+Home-page: https://github.com/Jie-Yuan/tql-ANN
+Author: JieYuan
+Author-email: 313303303@qq.com
+Maintainer: JieYuan
+Maintainer-email: 313303303@qq.com
+License: MIT
+Keywords: tool wheel,yuanjie,utils
+Platform: all
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: faiss
+
+<h1 align = "center">:rocket: ANN :facepunch:</h1>
+
+---
+
+# Install
+`pip install fast-ann`
+
+# Usage
+```python
+from ann import ANN
+import numpy as np
+
+data = np.random.random((1000, 128)).astype('float32')
+
+ann = ANN()
+ann.train(data, index_factory='IVF4000, Flat', noramlize=True)
+
+dis, idx = ann.search(data[:10])
+
+print(dis)
+print(idx)
+```
+
