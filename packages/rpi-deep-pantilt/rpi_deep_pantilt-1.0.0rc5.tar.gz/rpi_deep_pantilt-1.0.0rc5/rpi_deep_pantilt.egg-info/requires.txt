@@ -1,0 +1,15 @@
+Click>=7.0
+tensorflow-hub
+pillow
+pycocotools
+jupyter
+h5py
+
+[:platform_machine == "armv7l"]
+smbus
+picamera
+pantilthat>=0.0.7
+
+[:platform_machine == "x86_64"]
+tensorflow==2.0.0
+numpy
