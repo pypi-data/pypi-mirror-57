@@ -1,0 +1,7 @@
+README.md
+setup.py
+linearity/__init__.c
+linearity.egg-info/PKG-INFO
+linearity.egg-info/SOURCES.txt
+linearity.egg-info/dependency_links.txt
+linearity.egg-info/top_level.txt
