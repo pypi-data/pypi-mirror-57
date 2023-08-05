@@ -1,0 +1,5 @@
+setup.py
+bol_crawler.egg-info/PKG-INFO
+bol_crawler.egg-info/SOURCES.txt
+bol_crawler.egg-info/dependency_links.txt
+bol_crawler.egg-info/top_level.txt
