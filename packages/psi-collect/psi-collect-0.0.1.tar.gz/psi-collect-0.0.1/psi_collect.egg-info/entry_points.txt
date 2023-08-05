@@ -1,0 +1,3 @@
+[console_scripts]
+pcollect = psicollect.common.pcollect:main
+
