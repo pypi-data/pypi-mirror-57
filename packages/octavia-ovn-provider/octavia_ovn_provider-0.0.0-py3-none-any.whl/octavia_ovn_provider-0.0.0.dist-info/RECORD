@@ -1,0 +1,10 @@
+octavia_ovn_provider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octavia_ovn_provider/driver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octavia_ovn_provider-0.0.0.dist-info/AUTHORS,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+octavia_ovn_provider-0.0.0.dist-info/LICENSE,sha256=XfKg2H1sVi8OoRxoisUlMqoo10TKvHmU_wU39ks7MyA,10143
+octavia_ovn_provider-0.0.0.dist-info/METADATA,sha256=GLQxePuoBtw7E1GLFp9N6arNCxVcacw8LF-9S_Vthsg,1759
+octavia_ovn_provider-0.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+octavia_ovn_provider-0.0.0.dist-info/entry_points.txt,sha256=fxY0DzEK_NrfeDxshXwN7bzH0-98sgvD_6V8sklCcY8,79
+octavia_ovn_provider-0.0.0.dist-info/pbr.json,sha256=RY9TiMWKsfGv0NonmRIgnfLdckjlzfeUGiSouhsUskg,40
+octavia_ovn_provider-0.0.0.dist-info/top_level.txt,sha256=ppux3vpujftgILVEzkqi-6PIBKvqALVc1rmb-q6sK8E,21
+octavia_ovn_provider-0.0.0.dist-info/RECORD,,
