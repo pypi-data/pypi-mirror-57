@@ -1,0 +1,11 @@
+premoji/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+premoji/.gitignore,sha256=0UDHSWfs-X6Me00a7F_93cE1qv1pWXZ-wbznh4uGL34,783
+premoji/Mapping.csv,sha256=NWxv7pbTvR0ZOkja462NoQFOFhuzzcLqUwnPPjmyQY4,222
+premoji/__init__.py,sha256=3sfEEq0fleFr0eW-fOwXXhxZ2pywEbAsHhqTY2ipdhg,95
+premoji/emojis_model_19111601.joblib,sha256=5F5f_D5pscXYQxAzpJX8CXl_1TrVt5umjuE3nwFxCdg,14223232
+premoji/predictor_api.py,sha256=rCfxdic6WJHiCP7jSwtPg9qy7Oc36SUIXdUygkvh4VE,3039
+premoji-0.1.2.dist-info/LICENSE.txt,sha256=0agBu6uIOts6Wf3Md1pBnj9hr_JelWWsf4e77ULN_GI,1063
+premoji-0.1.2.dist-info/METADATA,sha256=32LzPktUkfETqnpMkcajA8yxUOBNrdjNiS_nLi1eeXw,649
+premoji-0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+premoji-0.1.2.dist-info/top_level.txt,sha256=SH4qXAkY9rbjaLhq8SnaoVCWqCNbFaikpjNnwhDr4H4,8
+premoji-0.1.2.dist-info/RECORD,,
