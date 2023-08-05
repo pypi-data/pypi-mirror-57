@@ -1,0 +1,10 @@
+nameko
+pymongo
+mongoengine
+
+[dev]
+pytest~=4.0
+pytest-cov~=2.6
+pytest-mock~=1.12
+pylint~=1.0
+mongomock~=3.18
