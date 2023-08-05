@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: ez_awssecretmanager
+Version: 0.1
+Summary: This module once installed within an ec-2 instance, help you retrieve secret-value for a given secret-key
+Home-page: https://github.com/proloyghosh1234/ez_awssecretmanager/archive/0.1.tar.gz
+Author: Proloy Ghosh
+Author-email: proloy.ghosh1234@gmail.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: AWS,SECRETMANAGER,GETSECRET
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
