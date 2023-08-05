@@ -1,0 +1,3 @@
+[trac.plugins]
+viz.web_ui = viz.web_ui
+
