@@ -1,0 +1,6 @@
+README.md
+setup.py
+quantum_query_optimizer.egg-info/PKG-INFO
+quantum_query_optimizer.egg-info/SOURCES.txt
+quantum_query_optimizer.egg-info/dependency_links.txt
+quantum_query_optimizer.egg-info/top_level.txt
