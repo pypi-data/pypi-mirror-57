@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pylamport
+Version: 0.1
+Summary: A python library for generating cryptographically secure lamport signatures
+Home-page: https://github.com/InnovativeInventor/pylamport
+Author: InnovativeInventor
+Author-email: theinnovativeinventor@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/InnovativeInventor/pylamport/issues
+Project-URL: Source, https://github.com/InnovativeInventor/pylamport
+Description: ## Pylamport
+        A python library for producing lamport signatures.
+        
+        Lamport signatures can be constructed with any secure one-way function (usually
+        a hash).
+        
+        Anything in hashlib (for example, `hashlib.sha256`) is supported.
+        
+        ## Example usage
+        Generating keys:
+        ```python
+        keys = pylamport.Lamport().gen()
+        ```
+        
+        Signing a message:
+        ```python
+        identity = pylamport.Lamport()
+        signature = identity.sign("Hello, world!")
+        ```
+        
+        Verifiying a signature:
+        ```python
+        identity = pylamport.Lamport()
+        identity.verify(signature)
+        ```
+        
+        Exporting keys:
+        ```python
+        identity = pylamport.Lamport()
+        keys = identity.export()
+        ```
+        
+        ## Warnings
+        This project was written in less than a few hours, so it may contain mistakes
+        and/or bugs.
+        
+Keywords: hashes lamport signatures public-key cryptography
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
