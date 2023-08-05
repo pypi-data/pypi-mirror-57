@@ -1,0 +1,9 @@
+README.md
+setup.py
+ioctf/__init__.py
+ioctf/ioctf.py
+ioctf.egg-info/PKG-INFO
+ioctf.egg-info/SOURCES.txt
+ioctf.egg-info/dependency_links.txt
+ioctf.egg-info/top_level.txt
+test/test.py
