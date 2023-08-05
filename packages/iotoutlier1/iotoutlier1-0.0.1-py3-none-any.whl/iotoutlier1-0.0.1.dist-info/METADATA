@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: iotoutlier1
+Version: 0.0.1
+Summary: Data representation for IoT traffic
+Home-page: https://github.com/Learn-Live/IoT_feature_sets_comparison
+Author: Kun
+Author-email: kun.bj@outlook.com
+License: xxx
+Download-URL: https://github.com/Learn-Live/IoT_feature_sets_comparison
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: scipy (>=1.3.1)
+Requires-Dist: pandas (>=0.25.1)
+Requires-Dist: pyod (>=0.7.4)
+Requires-Dist: scapy (>=2.4.3)
+Requires-Dist: scikit-learn (>=0.21.3)
+Requires-Dist: tensorflow
+Requires-Dist: tensorboard
+Requires-Dist: keras
+Provides-Extra: terminal
+Requires-Dist: colorama ; extra == 'terminal'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: requests ; extra == 'tests'
+Requires-Dist: markdown ; extra == 'tests'
+Provides-Extra: visualize
+Requires-Dist: matplotlib (>=3.3.1) ; extra == 'visualize'
+
+# Purpose
+    "Comparison of data representation for outlier detection in IOT"  
+
+## 1. Requirements (pip3 freeze > requirements.txt)
+    python==3.7.4
+    seaborn==0.9.0
+    scipy==1.3.1
+    matplotlib==3.1.1
+    scapy==2.4.3
+    pandas==0.25.1
+    pyod==0.7.4
+    numpy==1.17.0
+    umap_learn==0.3.10
+    scikit_learn==0.21.3
+    umap==0.1.1
+    keras==2.3.1  # for autoencoder
+    tensorflow==2.0.0
+
+## 2. Project Directory Structure
+
+## iot_outlier_src: source root directory (set 'iot_outlier_src' as sources root)
+### |- input_data: raw data
+    if any file is more than 100MB, please do not store it at here
+
+### |- output_data: results
+    figures: store roc and auc
+    model_dumpling: store models to disk
+    ...
+
+### |- data_process: 
+        pcap2features
+        features2dataset
+
+### |- detector
+    gmm
+    ocsvm
+
+### |- utils
+    toolkit to preprocess input data, such as 'load data', 'normalization data'
+    visualization: plot data to visualize 
+        ..
+
+### |- log: use to log middle or tmp results.
+    ...
+
+### |-legacy: backup 
+    ...
+
+
+### Main
+    main_featcomp-class.py
+
+## docs
+    To do ...
+## tests
+    To do ... 
+
+## Note:
+
+
+
