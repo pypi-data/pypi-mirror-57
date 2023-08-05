@@ -1,0 +1,11 @@
+flasynk/__init__.py,sha256=vAlkGcwzXfSYlu_26uMcLPqf5RTwqYk0_GTO8rqVXKA,126
+flasynk/_asynchronous.py,sha256=gjwU3nAihcC2RbbjaLQomCMu_G2mcnCqopgWpB0rHJo,6933
+flasynk/celery_mock.py,sha256=sdvARujn9nAG_VupwWxkyHfWjXZN-cF6iWKmNo5RMrs,4036
+flasynk/celery_specifics.py,sha256=1c1amL_qDYWXuWYV0qRTBPOqUB5qjyX9mWz1RPRV41A,4623
+flasynk/huey_specifics.py,sha256=ZWDSNBQC-zP9cJQI0WJPhPR1eoXlevzsv157d7RZ9Jo,1760
+flasynk/version.py,sha256=TpzBmR2vi10qpj3t1CzVYGclbuSTn2Mcq-5TwOuXWGo,371
+flasynk-1.5.0.dist-info/LICENSE,sha256=xd320zQeoc-jRB1LnCTKMFT2x0yIIqqX64icuabaQtE,1071
+flasynk-1.5.0.dist-info/METADATA,sha256=DZvcYkTBvAT_Ibye4F4XH5uc2TQpFIJECotiHpG7kio,2980
+flasynk-1.5.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+flasynk-1.5.0.dist-info/top_level.txt,sha256=QXtuTZ7quD1TdHqb1OylRVwWE34W5zF14Q5QN-bks2s,8
+flasynk-1.5.0.dist-info/RECORD,,
