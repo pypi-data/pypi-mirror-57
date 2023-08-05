@@ -1,0 +1,17 @@
+elodie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elodie/compatability.py,sha256=2fDjVJT6yux79M1mVE1ocxb0T_l13fxGsltHo5-nKc0,2354
+elodie/config.py,sha256=88oQB6SJjC83F2-U7gbntPI7EAV2f1M4b6M9derTRig,970
+elodie/constants.py,sha256=_jZffTkXrK3nc236wfENi4_3ncvP7eHGa_2sJQb2WPA,1590
+elodie/dependencies.py,sha256=G0-FgPvNvz-JZGVmDXlNpnMcS0zXZzZZagwng_Eo1iE,1350
+elodie/elodie.py,sha256=8Qf3r9L8HTjLv092C3SSMqD-VDpSPt5_KtcdhQ7wbxg,13667
+elodie/filesystem.py,sha256=QeL6O_BXBcAlcrpHrxtImB4CDkHvcKEJekKtx9gmIOs,25228
+elodie/geolocation.py,sha256=Ul0f2sPj4xpTm08O8NTeQjUJUFzxSoc9l-PS3Pp79QA,7285
+elodie/localstorage.py,sha256=guoWHU8pYMbI55ZKWqb24HQxpv4q2lN4Dh-k23LYgiE,6788
+elodie/log.py,sha256=e8-MIYpeDWWIuIvIVZgqAIMThmRQfeyCEkzv_9mUt8U,1289
+elodie/result.py,sha256=TFhYEcLxtyD5GLTi50RTtZTUC9IVf5pBdp0Omg5iugw,961
+elodie-0.0.1b0.dist-info/LICENSE,sha256=wURoCIWynkcZ4qUfCqtUOaHgLZgGkrWq8IbK4Scn8os,10849
+elodie-0.0.1b0.dist-info/METADATA,sha256=t-ssyBkk8Ub6rMR_jwwwltSp51J5N4r5NP2Kvq8YVjY,21475
+elodie-0.0.1b0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+elodie-0.0.1b0.dist-info/entry_points.txt,sha256=N9F-EgBtwsPFm_i1RpnifX4MFOKClcTcNTuWehgcxhU,47
+elodie-0.0.1b0.dist-info/top_level.txt,sha256=IdTnlnazbWs7QD7XhVUSO_CF_X3uLwRRM-ElfMr-9jQ,7
+elodie-0.0.1b0.dist-info/RECORD,,
