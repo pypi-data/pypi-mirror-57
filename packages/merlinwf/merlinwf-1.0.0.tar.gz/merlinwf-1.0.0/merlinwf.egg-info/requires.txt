@@ -1,0 +1,15 @@
+cached_property
+celery[redis]>=4.3.0
+coloredlogs
+cryptography
+numpy
+parse
+psutil>=5.1.0
+pyyaml>=5.1.2
+
+[:python_version < "3.7"]
+importlib_resources
+
+[mysql]
+mysql-connector-python-rf
+pymysql
