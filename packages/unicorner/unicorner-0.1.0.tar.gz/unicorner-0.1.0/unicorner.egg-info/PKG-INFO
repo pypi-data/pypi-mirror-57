@@ -1,0 +1,31 @@
+Metadata-Version: 1.2
+Name: unicorner
+Version: 0.1.0
+Summary: GM standings and fixtures parser
+Home-page: https://github.com/zilupe/unicorner
+Author: Jazeps Basko
+Author-email: jazeps.basko@gmail.com
+License: BSD license
+Description: # unicorner
+        
+        GM season standings and fixtures parser as a reusable library.
+        
+        ### Usage
+        
+            from unicorner import SeasonParse
+            
+            sp = SeasonParse()
+            sp.parse_standings_page(path="standings.html")
+            sp.parse_fixtures_page(path="fixtures.html")
+            print(sp.game_days[0])
+        
+Keywords: unicorner
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
