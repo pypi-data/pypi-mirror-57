@@ -1,0 +1,10 @@
+atomicgraph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atomicgraph/atomic_graph.py,sha256=tFOh3hK8EqxwVK0bCfOSeSNARReSOWxQix9kXQ3p4Sk,4744
+atomicgraph/coloring.py,sha256=2RxGizwqglGVgMYH0ZS8rGY-lj5IOWVZEDDMfo_VNgk,12004
+atomicgraph/comp_graph.py,sha256=kHsdzoHxQGveuCYQpGA9HXC88yDWBpWsp_hAzNg7N48,3836
+atomicgraph/hash_combiner.py,sha256=cEuaevO4seg280YaDxxV2vA6ZDkgTzVDP95OXA8reYI,415
+atomicgraphs-0.1.1.dist-info/LICENSE,sha256=u_93uwXvFLeWEcIri2X0iMgNdKOIY8ZXUA_vODhem_g,1100
+atomicgraphs-0.1.1.dist-info/METADATA,sha256=mJICpp9JFLng4xvrOXJdgRNYq5HJg1ycV8lvVBJhKuM,515
+atomicgraphs-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+atomicgraphs-0.1.1.dist-info/top_level.txt,sha256=0JzOL1Y3C_nqAYokXwN_cn0QcWyQO6tuu2_7ir08-qE,12
+atomicgraphs-0.1.1.dist-info/RECORD,,
