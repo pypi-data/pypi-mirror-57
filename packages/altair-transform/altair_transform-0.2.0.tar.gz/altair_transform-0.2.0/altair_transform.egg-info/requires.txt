@@ -1,0 +1,7 @@
+ply
+altair>=3.0
+numpy
+pandas
+
+[:python_version < "3.7"]
+dataclasses
