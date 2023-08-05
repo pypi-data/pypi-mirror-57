@@ -1,0 +1,3 @@
+[console_scripts]
+public_meetings = public_meetings.bin.commands:main
+
