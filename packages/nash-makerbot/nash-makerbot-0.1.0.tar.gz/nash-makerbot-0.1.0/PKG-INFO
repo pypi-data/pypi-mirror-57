@@ -1,0 +1,45 @@
+Metadata-Version: 1.2
+Name: nash-makerbot
+Version: 0.1.0
+Summary: A crypto market maker bot that is easy understand and customize
+Home-page: https://gitlab.com/nash-io-public/python-makerbot
+Author: Nash
+Author-email: contact@nash.io
+License: MIT license
+Description: Getting started
+        ---------------
+        
+        **Requires Python 3** (``sudo apt-get install python3``)
+        
+        # Install from Pypi
+        
+            pip3 install nash-makerbot
+        
+        To get the current version of the Python client::
+        
+            makerbot --version
+        
+        You can test using the default config file included in the repo::
+        
+            makerbot start neo_eth --config=default.ini
+        
+        See the help with ``makerbot -h``.
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-12-04)
+        ------------------
+        * Public release
+        
+Keywords: nash,ethereum,neo,hft,bot,trading,market,maker
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
