@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+api_bible_sdk/__init__.py
+api_bible_sdk/api_bible.py
+api_bible_sdk.egg-info/PKG-INFO
+api_bible_sdk.egg-info/SOURCES.txt
+api_bible_sdk.egg-info/dependency_links.txt
+api_bible_sdk.egg-info/requires.txt
+api_bible_sdk.egg-info/top_level.txt
