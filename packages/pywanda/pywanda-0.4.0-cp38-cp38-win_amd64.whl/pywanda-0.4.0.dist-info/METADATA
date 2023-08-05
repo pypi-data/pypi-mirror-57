@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pywanda
+Version: 0.4.0
+Summary: Python bindings for WandaModel library
+Home-page: http://www.deltares.nl
+Author: Michiel Tukker
+Author-email: Michiel.Tukker@deltares.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pybind11 (>=2.2)
+
+UNKNOWN
+
+
