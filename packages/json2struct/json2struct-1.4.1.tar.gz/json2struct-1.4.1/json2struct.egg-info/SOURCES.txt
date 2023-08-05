@@ -1,0 +1,12 @@
+README.md
+setup.py
+json2struct/__init__.py
+json2struct/commandline.py
+json2struct/json2struct.py
+json2struct.egg-info/PKG-INFO
+json2struct.egg-info/SOURCES.txt
+json2struct.egg-info/dependency_links.txt
+json2struct.egg-info/entry_points.txt
+json2struct.egg-info/not-zip-safe
+json2struct.egg-info/requires.txt
+json2struct.egg-info/top_level.txt
