@@ -1,0 +1,7 @@
+variant_tools/_assoTests.cpython-37m-darwin.so
+variant_tools/_cgatools.cpython-37m-darwin.so
+variant_tools/_ucsctools.cpython-37m-darwin.so
+variant_tools/_vt_sqlite3.cpython-37m-darwin.so
+variant_tools/_vt_sqlite3_ext.cpython-37m-darwin.so
+variant_tools/cplinkio.cpython-37m-darwin.so
+variant_tools/io_vcf_read.cpython-37m-darwin.so
