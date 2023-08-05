@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sc2rl
+Version: 0.0.2
+Summary: A python-sc2 wrapper for Reinforcement Learning
+Home-page: https://github.com/Junyoungpark/JSSPsimulator
+Author: Junyoung Park, Juyeon Yoon
+Author-email: Junyoungpark@kaist.ac.kr
+License: UNKNOWN
+Keywords: python-sc2,reinforcement-learning,rl
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: numpy
+Requires-Dist: sc2
+
+UNKNOWN
+
+
