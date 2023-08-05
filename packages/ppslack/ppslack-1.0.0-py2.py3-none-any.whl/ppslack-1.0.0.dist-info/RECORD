@@ -1,0 +1,11 @@
+ppslack/__init__.py,sha256=3wHQCGK6r8Q13QsJ0LkSSdm8WuCFkCGy2GdZTJaGkQs,87
+ppslack/__main__.py,sha256=R3MBnm9hidWWVOaRk02taRHO_4CPwEaQYVchcSCiO6c,87
+ppslack/__version__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+ppslack/main.py,sha256=nNXDLqdgU18-hTEa4eIkZBCuJxp0ZBwwagUhn9MzpOU,2666
+ppslack/slack.py,sha256=PKmVKyAojeXxIxCpkDg-XvyY8yDFkkLEdPkTlh8VeMk,5159
+ppslack-1.0.0.dist-info/LICENSE.txt,sha256=xh8S2nza1Sa9y-1HpMCmA-YNu_2vi2aTPNCI6RMsMD8,32472
+ppslack-1.0.0.dist-info/METADATA,sha256=q3BFly5FuM341ZOZGQdC2Mu8b1_URHaSNPW8A3Ec2h0,2895
+ppslack-1.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+ppslack-1.0.0.dist-info/entry_points.txt,sha256=jUougteEJ1blLFdjD_YCnbTzaDwCu0mpuobaI1Y07XM,47
+ppslack-1.0.0.dist-info/top_level.txt,sha256=9eKefZ3vgKPIHxhPi8d16KitkYGt3AYv8eA3QKp2pxI,8
+ppslack-1.0.0.dist-info/RECORD,,
