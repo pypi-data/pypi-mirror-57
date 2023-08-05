@@ -1,0 +1,15 @@
+drak_archive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drak_archive/file/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drak_archive/file/dvk.py,sha256=zcS2A3vWZlPJrkaNZ45XB-a6oeGlxXi9jhxETwOAx94,29597
+drak_archive/file/dvk_directory.py,sha256=XO9uqPR1-fGV2U45qhJof2sFtLE4zIZ7-7AhBFy-iD0,1930
+drak_archive/file/dvk_handler.py,sha256=BHL5u1NmeAInhzTocWfcDKyOLg0nhDVHB4UMekzV04A,7948
+drak_archive/processing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drak_archive/processing/html_processing.py,sha256=O6GhblU-OkBKVznLyG2rAYNyJZTeMdKzp0QyEAdXE4s,3799
+drak_archive/processing/list_processing.py,sha256=oUhUrS6PLgooUjtiVurj42oCYxn16rJnA49HnqXJpaI,1457
+drak_archive/processing/string_compare.py,sha256=fFF0710epN_HTjTLzL1RrHEzYyJb3-nBhHHyIYPM3jg,3977
+drak_archive/processing/string_processing.py,sha256=YFoQCyCPbZZr0m-_MSZXLbUIPu7onXNVZcbA69PbpZs,858
+dvk_archive-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dvk_archive-0.0.1.dist-info/METADATA,sha256=qCLd-teLG2VRo5KwtWMijZLccL7GY9S69nIyls88cbw,566
+dvk_archive-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dvk_archive-0.0.1.dist-info/top_level.txt,sha256=LUTaFKiN2LmtI1-vLlc2oIb-tPtKDlqTtH1qkDN3cM4,13
+dvk_archive-0.0.1.dist-info/RECORD,,
