@@ -1,0 +1,8 @@
+imageio
+matplotlib
+numba==0.45.1
+numpy
+Pillow
+scipy
+termcolor
+typing
