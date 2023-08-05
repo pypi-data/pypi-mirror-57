@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: the-whole-caboodle
+Version: 0.1.1
+Summary: Utilities for artifact management for data science in the cloud.
+Author: Saad Khan
+Author-email: skhan8@mail.einstein.yu.edu
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: fireworks-ml (>=0.3.7,<0.4.0)
+Requires-Dist: google-cloud-storage (>=1.23,<2.0)
+Requires-Dist: kfp (>=0.1.36,<0.2.0)
