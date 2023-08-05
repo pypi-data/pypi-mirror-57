@@ -1,0 +1,3 @@
+[console_scripts]
+challenge = challenge_rlcrt.__main__:cli
+
