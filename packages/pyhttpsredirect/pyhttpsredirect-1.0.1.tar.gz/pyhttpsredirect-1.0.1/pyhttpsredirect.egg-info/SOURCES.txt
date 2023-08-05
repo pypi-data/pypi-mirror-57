@@ -1,0 +1,7 @@
+pyhttpsredirect.py
+setup.py
+pyhttpsredirect.egg-info/PKG-INFO
+pyhttpsredirect.egg-info/SOURCES.txt
+pyhttpsredirect.egg-info/dependency_links.txt
+pyhttpsredirect.egg-info/entry_points.txt
+pyhttpsredirect.egg-info/top_level.txt
