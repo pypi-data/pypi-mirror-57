@@ -1,0 +1,7 @@
+build/
+dist/
+iwlib.egg-info/
+*.pyc
+*.so
+*.c
+*.o
