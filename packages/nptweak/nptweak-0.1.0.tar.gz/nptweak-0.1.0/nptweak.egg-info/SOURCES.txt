@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+nptweak/__init__.py
+nptweak/to_2darray.py
+nptweak.egg-info/PKG-INFO
+nptweak.egg-info/SOURCES.txt
+nptweak.egg-info/dependency_links.txt
+nptweak.egg-info/not-zip-safe
+nptweak.egg-info/requires.txt
+nptweak.egg-info/top_level.txt
+test/__init__.py
+test/test_to_2darray.py
