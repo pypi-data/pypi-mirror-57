@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: redcli
+Version: 1.3.0
+Summary: Simple Redis Client Tool
+Home-page: UNKNOWN
+Author: zhouhao
+Author-email: zhouhao19931002@hotmail.com
+Maintainer: zhouhao
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7.2
