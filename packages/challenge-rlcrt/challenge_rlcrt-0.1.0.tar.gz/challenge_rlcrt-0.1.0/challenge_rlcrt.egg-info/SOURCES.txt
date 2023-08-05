@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+challenge_rlcrt/__init__.py
+challenge_rlcrt/__main__.py
+challenge_rlcrt/application.py
+challenge_rlcrt.egg-info/PKG-INFO
+challenge_rlcrt.egg-info/SOURCES.txt
+challenge_rlcrt.egg-info/dependency_links.txt
+challenge_rlcrt.egg-info/entry_points.txt
+challenge_rlcrt.egg-info/requires.txt
+challenge_rlcrt.egg-info/top_level.txt
