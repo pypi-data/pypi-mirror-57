@@ -1,0 +1,3 @@
+[console_scripts]
+travisty = travisty.__main__:main
+
