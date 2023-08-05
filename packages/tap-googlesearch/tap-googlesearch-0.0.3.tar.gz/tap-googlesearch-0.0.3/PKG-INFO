@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tap-googlesearch
+Version: 0.0.3
+Summary: Singer.io tap for extracting data from Google Search Analytics
+Home-page: https://github.com/dreamdata-io/tap-googlesearch
+Author: Dreamdata
+Author-email: friends@dreamdata.io
+License: MIT
+Download-URL: https://github.com/dreamdata-io/tap-googlesearch/archive/vv0.0.3.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: test

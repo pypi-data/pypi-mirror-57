@@ -1,0 +1,7 @@
+singer-python<6,>=5.8.1
+google-api-python-client
+ratelimit
+backoff
+
+[test]
+pytest
