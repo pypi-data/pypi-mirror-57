@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/premoji/.DS_Store
+src/premoji/__init__.py
+src/premoji/predictor_api.py
+src/premoji.egg-info/PKG-INFO
+src/premoji.egg-info/SOURCES.txt
+src/premoji.egg-info/dependency_links.txt
+src/premoji.egg-info/requires.txt
+src/premoji.egg-info/top_level.txt
+src/premoji/models/Mapping.csv
+src/premoji/models/emojis_model_19111601.joblib
