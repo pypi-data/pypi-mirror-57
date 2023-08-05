@@ -1,0 +1,9 @@
+waflabs/__init__.py,sha256=eYs87jRv2EQ9I_BbpfQseir8QCYHxuJkWzcLZ2R-Fq4,65
+waflabs/waflabsapi/__init__.py,sha256=bWijQt3aI6zttmGM_RgovYkuNBwYj1tywoYtWJBqtK8,62
+waflabs/waflabsapi/waflabsapi.py,sha256=DXivEWipjd2khaAxYnVWk4phYXXj4oTIrdYKdwCGdNA,2702
+waflabs-1.0.2.data/scripts/waflabs,sha256=GS0fjOLrm-AjE8GKQJIk9SHj7oVHbDMPxqo-S4IPKVY,21554
+waflabs-1.0.2.dist-info/LICENSE,sha256=DZLzDFbhiLa0UjuDJHWBkaY4nPTb63Oeo7iszQ6I9ZE,1062
+waflabs-1.0.2.dist-info/METADATA,sha256=Kf-4bGbvqNxzTH1grH-nURadpGZUKTkbHsnsPHdIW7A,1387
+waflabs-1.0.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+waflabs-1.0.2.dist-info/top_level.txt,sha256=O7EAj5ZoqOWyjT38XKgt4dNxSM3lRiM4SFtMrrPUGhQ,8
+waflabs-1.0.2.dist-info/RECORD,,
