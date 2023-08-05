@@ -1,0 +1,8 @@
+README.md
+setup.py
+demono/__init__.py
+demono/__version__.py
+demono.egg-info/PKG-INFO
+demono.egg-info/SOURCES.txt
+demono.egg-info/dependency_links.txt
+demono.egg-info/top_level.txt
