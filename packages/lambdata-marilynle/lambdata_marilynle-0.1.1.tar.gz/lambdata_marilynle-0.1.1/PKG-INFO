@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lambdata_marilynle
+Version: 0.1.1
+Summary: a collection of data science helper functions
+Home-page: https://github.com/marilynle/lambdata_marilynle/archive/0.1.1.tar.gz
+Author: marilynle
+License: UNKNOWN
+Description: # lambdata-marilynle
+        A collection of Data Science helper functions
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

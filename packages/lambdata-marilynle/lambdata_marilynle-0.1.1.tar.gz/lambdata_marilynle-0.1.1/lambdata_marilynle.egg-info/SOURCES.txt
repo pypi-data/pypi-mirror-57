@@ -1,0 +1,10 @@
+README.md
+setup.py
+lambdata_marilynle/__init__.py
+lambdata_marilynle/df_confidence_interval.py
+lambdata_marilynle/df_utils.py
+lambdata_marilynle.egg-info/PKG-INFO
+lambdata_marilynle.egg-info/SOURCES.txt
+lambdata_marilynle.egg-info/dependency_links.txt
+lambdata_marilynle.egg-info/requires.txt
+lambdata_marilynle.egg-info/top_level.txt
