@@ -1,0 +1,14 @@
+flask-restplus==0.13.*
+
+[celery]
+celery[msgpack,redis]==4.*
+
+[huey]
+huey==2.*
+redis==3.*
+
+[testing]
+celery[msgpack,redis]==4.*
+huey==2.*
+pytest-flask==0.15.*
+pytest-cov==2.*
