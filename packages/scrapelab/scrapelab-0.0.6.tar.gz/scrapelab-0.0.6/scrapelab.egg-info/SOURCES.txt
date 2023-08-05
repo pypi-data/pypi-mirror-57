@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+config
+setup.py
+scrapelab/__init__.py
+scrapelab.egg-info/PKG-INFO
+scrapelab.egg-info/SOURCES.txt
+scrapelab.egg-info/dependency_links.txt
+scrapelab.egg-info/requires.txt
+scrapelab.egg-info/top_level.txt
