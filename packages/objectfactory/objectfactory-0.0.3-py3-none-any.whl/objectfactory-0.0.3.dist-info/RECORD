@@ -1,0 +1,13 @@
+objectfactory/__init__.py,sha256=7kqHtJuSgPzgwwVT5h3WbSm77U0-B7m_0aI867BLtOc,153
+objectfactory/factory.py,sha256=Vj6pCSssFgMTc3Qcu89YtzLUkC3Rqy20fDKZQPKHS1E,808
+objectfactory/field.py,sha256=8q9x5XJ79MIVGH9zKIVv9GGSHB-NPEhQum-6__gpuMs,3242
+objectfactory/serializable.py,sha256=4CQfxo7Tgb7MuLiOwnRyH8BaQ8akDHcWX9JmoS2wCpg,3556
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_factory.py,sha256=eSoge8Zl6GL6RluHQfxZ6Lo8ujf3T-ZaxnDk92stUAs,863
+test/test_fields.py,sha256=MXMcMOZaUT334JE2lOCPWGFw6mUiGzMqjmw2CCgux5k,12338
+test/test_serializable.py,sha256=_gomEtdBMseUY1wacuBJct8QLWayZ0gEj1ACZynmrps,4095
+objectfactory-0.0.3.dist-info/LICENSE,sha256=2lM9BD8Y5EZaHL_qW6I5wy8-DdoSUNrqDH-4tCqGPIE,1072
+objectfactory-0.0.3.dist-info/METADATA,sha256=lWTMT2qtg4ymPsxkRWeXl5FEyRCbzWQZwOAX4BWoI1A,2229
+objectfactory-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+objectfactory-0.0.3.dist-info/top_level.txt,sha256=gEKh2sPKIQljkb7ls8OmOD747qXv6HhSlJclQQcsZJY,19
+objectfactory-0.0.3.dist-info/RECORD,,
