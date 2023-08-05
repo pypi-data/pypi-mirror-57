@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+miraclesort.egg-info/PKG-INFO
+miraclesort.egg-info/SOURCES.txt
+miraclesort.egg-info/dependency_links.txt
+miraclesort.egg-info/top_level.txt
+miraclesort.egg-info/zip-safe
