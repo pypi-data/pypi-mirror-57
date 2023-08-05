@@ -1,0 +1,30 @@
+body {
+	margin: auto;
+	padding: 5em;
+}
+
+.students {
+	display: grid;
+	grid-template-columns: minmax(10em, auto) minmax(10em, auto);
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	gap: 1.5em;
+	line-height: 1.5;
+}
+
+.details {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
+
+.portrait {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.name { font-weight: bold; }
+.song { font-style: italic; }
