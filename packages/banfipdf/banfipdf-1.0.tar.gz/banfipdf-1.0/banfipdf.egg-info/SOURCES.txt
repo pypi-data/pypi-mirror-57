@@ -1,0 +1,9 @@
+README.md
+setup.py
+banfipdf/__init__.py
+banfipdf/pdf2image.py
+banfipdf/pdf2text.py
+banfipdf.egg-info/PKG-INFO
+banfipdf.egg-info/SOURCES.txt
+banfipdf.egg-info/dependency_links.txt
+banfipdf.egg-info/top_level.txt
