@@ -1,0 +1,9 @@
+genosolver/__init__.py,sha256=cVz4LvfnJQCD-c-w0c3vOMKn4ZWl1r6_StBlgMWepu4,241
+genosolver/_version.py,sha256=DeoeFAIETf9shA8CWGpltBZE6PGMK3hnr6pYiZsXTGo,501
+genosolver/min.py,sha256=ov3uzg8rNA7-s5fyNPtrV8gfIPYfzwjexpugnIsz0Ng,7936
+genosolver/pygeno.cpython-37m-darwin.so,sha256=2AZ8bISXCb1e-XWigFKBPju6UgbPhBrPeOVk55l7KLM,1174336
+genosolver-0.0.3.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+genosolver-0.0.3.dist-info/METADATA,sha256=2uSDsb5aOmC5QhWDNvJJkMmI8IRluvJVbY9jU9NjJCc,2079
+genosolver-0.0.3.dist-info/WHEEL,sha256=SVgIjoh-kwqbfVCJO35pBBQ3LlKaO4I_yw1BGptd_6c,109
+genosolver-0.0.3.dist-info/top_level.txt,sha256=cDTEfJ-N4h6aLRlJwtfomnYOGI6xJ_s8QPeZTYLhXK0,11
+genosolver-0.0.3.dist-info/RECORD,,
