@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: wechatwork-notify
+Version: 0.0.4
+Summary: 使用微信企业号发送应用消息
+Home-page: https://github.com/xianghua.du/wechat
+Author: jack.du
+Author-email: xxx@163.com
+License: MIT Licence
+Description: 使用微信企业号发送应用消息
+Platform: any

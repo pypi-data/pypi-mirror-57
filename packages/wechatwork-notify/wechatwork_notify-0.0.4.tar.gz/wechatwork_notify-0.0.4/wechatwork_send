@@ -1,0 +1,13 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# @Time    : 2019/11/28 6:50 下午
+# @Author  : jack.du
+# @Email   : xianghua.du@start.com.cn
+# @File    : main.py
+# @Software: PyCharm
+from __future__ import absolute_import
+
+from wechat import main
+
+if __name__ == '__main__':
+    main.main()
