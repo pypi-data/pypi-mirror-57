@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: voila-centered
+Version: 0.2.5
+Summary: Default fork design template for voila
+Home-page: https://github.com/wullli/voila-centered
+Author: wullli
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: ipython,jupyter,widgets,voila
+Platform: UNKNOWN
+Requires-Dist: voila (>=0.1.14)
+
+UNKNOWN
+
+

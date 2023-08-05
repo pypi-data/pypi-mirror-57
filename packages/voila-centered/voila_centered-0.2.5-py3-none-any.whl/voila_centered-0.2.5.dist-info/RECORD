@@ -1,0 +1,16 @@
+voila_centered-0.2.5.data/data/share/jupyter/voila/templates/centered/nbconvert_templates/base.tpl,sha256=yg1cLdbN3EGcVBp7D39bjLi1JlPTCdV2c-5n1vPZwW8,1604
+voila_centered-0.2.5.data/data/share/jupyter/voila/templates/centered/nbconvert_templates/lab.tpl,sha256=PrdVoFQfIVvq2-HNoFnLXoi-OhnDqCDCYJdlHAYfARk,7702
+voila_centered-0.2.5.data/data/share/jupyter/voila/templates/centered/nbconvert_templates/spinner.tpl,sha256=y1-KrOHUxGNy6WLi7Ofb15tLxXj4V0CN_0iOyZyrlhQ,1694
+voila_centered-0.2.5.data/data/share/jupyter/voila/templates/centered/nbconvert_templates/voila.tpl,sha256=GM41wuVh5kJoDMXSZBrVQIZ4Fopf6C_oqK7_AuA4G5M,2907
+voila_centered-0.2.5.data/data/share/jupyter/voila/templates/centered/static/main.js,sha256=5ZnQeqv64b6pA4T23yutxXaOrsiW87K8WHAXWNiyDM0,1940
+voila_centered-0.2.5.data/data/share/jupyter/voila/templates/centered/static/require.min.js,sha256=Ae2Vz_4ePdIu6ZyI_5ZGsYnb-m0JlOmKPjt6XZ9JJkA,17536
+voila_centered-0.2.5.data/data/share/jupyter/voila/templates/centered/templates/404.html,sha256=IqqFBFwuTqmU33GmuKy4xLYU4mLAaGitWuphWeApp0Y,149
+voila_centered-0.2.5.data/data/share/jupyter/voila/templates/centered/templates/browser-open.html,sha256=cLA7-wTL9Z8ylERKTUIjep1beW6dLKTtn7Yq4fTkk9s,335
+voila_centered-0.2.5.data/data/share/jupyter/voila/templates/centered/templates/error.html,sha256=d7cgm2AskhD74ZuRtpm4GOSbheST4PpRLI_Ny66ATP8,178
+voila_centered-0.2.5.data/data/share/jupyter/voila/templates/centered/templates/page.html,sha256=5GgW4KCW8BWg5vVDlqvF5rtX0_ST6AVzREuJWAit3G0,876
+voila_centered-0.2.5.data/data/share/jupyter/voila/templates/centered/templates/tree.html,sha256=7mrPSEScM8zJFonF6iCKjvwn1hJSpBobNYmTDnp1vno,1693
+voila_centered-0.2.5.dist-info/LICENSE,sha256=1tHoswGBvCuoYzR0KbND_x7_iSFf3nB7l84iiRTyTb0,1538
+voila_centered-0.2.5.dist-info/METADATA,sha256=s3adOmUiGpT9HIbjBCltwEj4C5aSs5PesAb6pFxD2yY,313
+voila_centered-0.2.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+voila_centered-0.2.5.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+voila_centered-0.2.5.dist-info/RECORD,,
