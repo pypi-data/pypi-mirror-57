@@ -1,0 +1,11 @@
+ifsFractals/__init__.py,sha256=jfCaqI3Mldpw0IaFib5J2kcjH7JIjZFt401JnMMPe6o,10860
+ifsFractals/basic.py,sha256=BAQ9kiHDfxx9uKBJ_ng9JHnje0PseXxCsvn2nLedm8I,1271
+ifsFractals/figures.py,sha256=Rx162pK1kQF-r1TM7Lo4GaTPIa7BFJJ8yEbpCfw_WPM,2754
+ifsFractals/generatingPoints.py,sha256=VDpYUEJx5TumsioKAZZn296-t5LD2p7i6JbEk3A-KYc,4317
+ifsFractals/mathOps.py,sha256=lyNpeisLX81I1fcXu0ayjY1orlwBD3Rm15awmFHhP40,1872
+ifsFractals/wordFractals.py,sha256=Yju61XK7YImceqPzn90tp3qyf8UIucxjRS7TuGacat0,6734
+ifsFractals-0.0.20.dist-info/LICENSE,sha256=tjLOE57ZWL4adMNt0dQKmSW4tDvQdP8oZ-3hlrbPAhQ,1070
+ifsFractals-0.0.20.dist-info/METADATA,sha256=cQ9XWymOmxakXcAwNMGFLRG2dWbRBXDcqMlyyjvICb0,1576
+ifsFractals-0.0.20.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ifsFractals-0.0.20.dist-info/top_level.txt,sha256=10eQZPPgxWVHhSf_AvfwdWj2weiSMBdlqcwOGn0WhL4,12
+ifsFractals-0.0.20.dist-info/RECORD,,
