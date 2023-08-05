@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: premoji
+Version: 0.1.3
+Summary: predict emoji on given text
+Home-page: https://macworks.io
+Author: Qiang Huang
+Author-email: nickyfoto@gmail.com
+License: MIT
+Download-URL: https://github.com/nickyfoto/premoji/archive/v0.1.3-alpha.tar.gz
+Description: # Premoji
+        
+        License
+        ----
+        
+        MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
