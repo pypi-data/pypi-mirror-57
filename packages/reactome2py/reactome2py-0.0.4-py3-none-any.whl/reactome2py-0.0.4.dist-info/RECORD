@@ -1,0 +1,10 @@
+reactome2py/__init__.py,sha256=7EgIGqzMuCK1k3N5Jm0ofxVRdsBISETgJBGCoV1xKnA,78
+reactome2py/analysis.py,sha256=YbqgReCdOA2KKfyiZyi3diawo7AiYZGlYLdgf_S319c,53810
+reactome2py/content.py,sha256=6kg40zu3GJPNsBVL_gBLtohwhN7mzwHdQFIgVw0bLJg,62525
+reactome2py/utils.py,sha256=bWe0w7WfmeHU-totDj8gWShV0QS2A01U6CDClc1KY-I,3019
+reactome2py-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+reactome2py-0.0.4.dist-info/METADATA,sha256=IFdZ1EAVXYyYOsW1qXGmgicVsx67k3YePGVIek30XAE,2589
+reactome2py-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+reactome2py-0.0.4.dist-info/entry_points.txt,sha256=PBh-UQ5Ut0eqzCgVZ7qDOWbDc__TZhPNMqKbETAGvUE,59
+reactome2py-0.0.4.dist-info/top_level.txt,sha256=ntAOLzuSZV8xPiaW1gh5B__fcaSfkW-vbg6kqto5fcE,12
+reactome2py-0.0.4.dist-info/RECORD,,
