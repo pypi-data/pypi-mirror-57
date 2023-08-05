@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: substratum
+Version: 0.1.0a1
+Summary: Substratum
+Home-page: https://github.com/zatoichi-labs/substratum
+Author: Zatoichi Labs
+Author-email: admin@zatoichi-labs.com
+License: MIT
+Keywords: substrate
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6,<4
+Provides-Extra: dev
+Requires-Dist: bumpversion ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: docs
+Provides-Extra: test
+
+# substratum
+Python API for interacting with Substrate-based chains
+
