@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: c_excel_template
+Version: 0.0.2
+Summary: c_excel_template
+Home-page: https://www.cnblogs.com/Evan-fanfan/
+Author: evanyang
+Author-email: lightyiyi@qq.com
+License: MIT tencent_message
+Description: print data with excel template
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
