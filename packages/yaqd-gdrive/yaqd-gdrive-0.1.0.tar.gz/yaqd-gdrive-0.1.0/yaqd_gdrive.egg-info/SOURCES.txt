@@ -1,0 +1,7 @@
+setup.py
+yaqd_gdrive.egg-info/PKG-INFO
+yaqd_gdrive.egg-info/SOURCES.txt
+yaqd_gdrive.egg-info/dependency_links.txt
+yaqd_gdrive.egg-info/entry_points.txt
+yaqd_gdrive.egg-info/requires.txt
+yaqd_gdrive.egg-info/top_level.txt
