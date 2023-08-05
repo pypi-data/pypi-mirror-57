@@ -1,0 +1,7 @@
+imagecodecs_lite-2019.12.3.dist-info/RECORD,,
+imagecodecs_lite-2019.12.3.dist-info/METADATA,sha256=1nNPBOG_OWg2kY8PLAxW0oukhRqfj_ttuGWLsE6k92w,2773
+imagecodecs_lite-2019.12.3.dist-info/top_level.txt,sha256=WqsXSxGZfuezd3msB_eZnIHfFr4SS1gfOB_x25RUeHM,17
+imagecodecs_lite-2019.12.3.dist-info/WHEEL,sha256=bMGJzfnzmODnc7070hP_ZkCsY-cmPTWm8nY09-AXKjI,111
+imagecodecs_lite/imagecodecs.py,sha256=2nZPgVUflmCaeqXeshITi955WBlRL5uz4mQoaOIUpy0,26327
+imagecodecs_lite/__init__.py,sha256=p4gfbYb2i8qEEA93tcb6ja822mt1aau3Nt2NZU-mGW4,141
+imagecodecs_lite/_imagecodecs_lite.cpython-38-x86_64-linux-gnu.so,sha256=8K5jWhNOKNg6QTHbH4bGd973cRONFlV36YRsmROrro8,3066984
