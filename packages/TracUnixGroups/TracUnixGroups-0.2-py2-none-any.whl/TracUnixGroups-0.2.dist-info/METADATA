@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: TracUnixGroups
+Version: 0.2
+Summary: Use UNIX groups in Trac
+Home-page: https://trac-hacks.org/wiki/UnixGroupsPlugin
+Author: Noah Kantrowitz
+Author-email: noah@coderanger.net
+License: BSD
+Keywords: trac plugin unix groups permissions
+Platform: UNKNOWN
+Classifier: Framework :: Trac
+
+Allows permissions to be assigned based on local system groups
+
+
