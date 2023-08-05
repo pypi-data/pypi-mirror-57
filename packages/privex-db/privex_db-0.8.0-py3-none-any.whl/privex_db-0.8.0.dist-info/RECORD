@@ -1,0 +1,15 @@
+privex/__init__.py,sha256=SY_y7juGnSAIVctqUlhZx51tOkyW3YVATY-8frmF_Rs,2200
+privex/db/__init__.py,sha256=Gts-QXOKBV-JWNjcrwCtfiSMChq0WDcLT44vVLBQG-E,4063
+privex/db/base.py,sha256=WssotfBebMceNfd7WqhNgerRHH5SbMw4lkOxZxm6Flc,39712
+privex/db/postgres.py,sha256=WVzAK2u7XnzdWczOo2GNmVOaZGbUxQ1ye9zIiWm4Dmw,11495
+privex/db/sqlite.py,sha256=ZV0xhd5_NiyWHJ3ZqzAHXcEvJvTEquVVKI9dbaFv5Xg,8054
+privex/db/types.py,sha256=e7yYvPFEJl_n94FwBpIZn9oF8TG3i2skR3_F6k_WxVc,2333
+privex/db/query/__init__.py,sha256=yptp1NY_q8ms0rnwFrvc4EtZdZUOR34jnGaz-WH9NcA,576
+privex/db/query/base.py,sha256=_VvQgZviARfP1zdpbwKrhRtmWzTYhd2StXYSM1taccQ,13944
+privex/db/query/postgres.py,sha256=PaRW_7LOxLnSiJreNFm1LA9x9zfQY9CG1_XaGye79G0,8654
+privex/db/query/sqlite.py,sha256=UYSE4CuSgn28NKs55hSNGQRQW0P2Jl_N9HCT-1QPro8,2387
+privex_db-0.8.0.dist-info/LICENSE,sha256=daTUUjPjRuX6u8T5Pyz2VlA94zn3VhRr-CwPFxpwPLc,2184
+privex_db-0.8.0.dist-info/METADATA,sha256=GXNdwC7Z_1JpQ-mxczE-XJq0BDmcNUMr5f02WiK4MWE,5574
+privex_db-0.8.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+privex_db-0.8.0.dist-info/top_level.txt,sha256=CfZhsdgr5OeyQuHMCIIgL0CnVtwImLWwXPN09JIOqz8,7
+privex_db-0.8.0.dist-info/RECORD,,
