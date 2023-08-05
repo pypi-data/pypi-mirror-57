@@ -1,0 +1,6 @@
+setup.py
+./ocaml.so
+ocaml.egg-info/PKG-INFO
+ocaml.egg-info/SOURCES.txt
+ocaml.egg-info/dependency_links.txt
+ocaml.egg-info/top_level.txt
