@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+RELEASENOTES.md
+setup.cfg
+setup.py
+version.txt
+bps_restpy/__init__.py
+bps_restpy/bps_restpy.py
+bps_restpy/bps_restpy3.py
+bps_restpy.egg-info/PKG-INFO
+bps_restpy.egg-info/SOURCES.txt
+bps_restpy.egg-info/dependency_links.txt
+bps_restpy.egg-info/requires.txt
+bps_restpy.egg-info/top_level.txt
