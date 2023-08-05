@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: friendlycloud
+Version: 0.1
+Summary: A Cloud Storage User Friendly
+Home-page: https://github.com/kerlarajumca/friendlycloud
+Author: RAJU KERLA
+Author-email: kerlarajumca@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# friendlycloud
+Friendly Cloud Application
+
+
