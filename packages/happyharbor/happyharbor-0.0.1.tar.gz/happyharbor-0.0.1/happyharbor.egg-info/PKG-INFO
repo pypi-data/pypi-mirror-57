@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: happyharbor
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://happyharbor.io
+Author: Giorgos Trichopoulos
+Author-email: giorgos.trichopoulos@gmail.com
+License: UNKNOWN
+Description: # Foobar
+        
+        Foobar is a Python library for dealing with word pluralization.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
