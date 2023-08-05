@@ -1,0 +1,3 @@
+[console_scripts]
+pihat-eeprom = pihat.eeprom.cli:main
+
