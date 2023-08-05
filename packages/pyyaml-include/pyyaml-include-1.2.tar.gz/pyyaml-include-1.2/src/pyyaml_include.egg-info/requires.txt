@@ -1,0 +1,7 @@
+PyYAML!=4.*,<6.0,>=3.12
+
+[all]
+toml
+
+[toml]
+toml
