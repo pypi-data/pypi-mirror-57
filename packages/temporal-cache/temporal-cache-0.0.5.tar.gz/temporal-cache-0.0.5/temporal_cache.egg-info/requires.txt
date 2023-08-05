@@ -1,0 +1,11 @@
+frozendict>=1.2
+
+[dev]
+frozendict>=1.2
+pytest
+pytest-cov
+pylint
+flake8
+autopep8
+mock
+codecov
