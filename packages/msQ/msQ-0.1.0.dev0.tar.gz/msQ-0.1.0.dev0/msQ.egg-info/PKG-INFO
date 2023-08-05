@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: msQ
+Version: 0.1.0.dev0
+Summary: msQ
+Home-page: https://github.com/IsotopeC/msQ
+Author: Calvin Peters
+Author-email: calvin.isotope@gmail.com
+License: UNKNOWN
+Description: # msQ
+        msQ
+        
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown

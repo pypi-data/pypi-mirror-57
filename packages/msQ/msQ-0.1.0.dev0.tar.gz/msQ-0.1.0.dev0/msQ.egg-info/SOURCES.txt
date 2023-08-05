@@ -1,0 +1,7 @@
+README.md
+setup.py
+msQ/__init__.py
+msQ.egg-info/PKG-INFO
+msQ.egg-info/SOURCES.txt
+msQ.egg-info/dependency_links.txt
+msQ.egg-info/top_level.txt
