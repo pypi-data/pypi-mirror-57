@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: TracChangeLog
+Version: 0.5
+Summary: Adds a Wiki macro that displays the changelog for a repository path
+Home-page: https://trac-hacks.org/wiki/ChangeLogMacro
+Author: Alec Thomas
+Maintainer: Ryan Ollos
+Maintainer-email: ryan.j.ollos@gmail.com
+License: 3-Clause BSD
+Keywords: trac scm macro plugin
+Platform: UNKNOWN
+Classifier: Framework :: Trac
+Requires-Dist: Trac
+
+UNKNOWN
+
+
