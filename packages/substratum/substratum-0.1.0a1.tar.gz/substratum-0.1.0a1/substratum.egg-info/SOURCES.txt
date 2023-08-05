@@ -1,0 +1,9 @@
+README.md
+setup.py
+substratum/__init__.py
+substratum.egg-info/PKG-INFO
+substratum.egg-info/SOURCES.txt
+substratum.egg-info/dependency_links.txt
+substratum.egg-info/not-zip-safe
+substratum.egg-info/requires.txt
+substratum.egg-info/top_level.txt

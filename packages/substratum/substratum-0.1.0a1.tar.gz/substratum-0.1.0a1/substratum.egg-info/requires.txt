@@ -1,0 +1,8 @@
+
+[dev]
+bumpversion
+twine
+
+[docs]
+
+[test]
