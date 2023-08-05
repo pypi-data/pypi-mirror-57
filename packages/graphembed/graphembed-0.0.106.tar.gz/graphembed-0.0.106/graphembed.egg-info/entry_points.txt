@@ -1,0 +1,3 @@
+[console_scripts]
+graphembed = graphembed.graph_embed:main
+
