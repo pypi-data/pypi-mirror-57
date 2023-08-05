@@ -1,0 +1,10 @@
+pyspark_hnsw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyspark_hnsw/bruteforce.py,sha256=GfCaXscjvcKau8pY5pjw8FECIE-ff643Y7ZNoG6uXQE,2981
+pyspark_hnsw/hnsw.py,sha256=RZfQTteo0GNlUCms9EeB-B2FPtgZOgu-GJfJAsZjwTs,3520
+pyspark_hnsw/normalizer.py,sha256=yf_eceBieQNm6zbW4mID_7Z_mYEGb4AjfmuJbEjJWa8,973
+pyspark_hnsw-0.27.dist-info/METADATA,sha256=ZKLrOItfnGQDzcrXE0ofP9UJZtL2wwFXkhzxfq2Dqrs,397
+pyspark_hnsw-0.27.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+pyspark_hnsw-0.27.dist-info/entry_points.txt,sha256=ntPu4aifawR1dtauS0ZVihqrJXToom5n0d9TpYQ0Pgg,68
+pyspark_hnsw-0.27.dist-info/top_level.txt,sha256=8-p8ZGt6O3LA1xQolN8rMPw4W5BhAAC9JkqGviMI9as,13
+pyspark_hnsw-0.27.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyspark_hnsw-0.27.dist-info/RECORD,,
