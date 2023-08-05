@@ -1,0 +1,9 @@
+README.md
+setup.py
+medialogia/__init__.py
+medialogia/mlg.py
+medialogia_api_wrapper.egg-info/PKG-INFO
+medialogia_api_wrapper.egg-info/SOURCES.txt
+medialogia_api_wrapper.egg-info/dependency_links.txt
+medialogia_api_wrapper.egg-info/requires.txt
+medialogia_api_wrapper.egg-info/top_level.txt
