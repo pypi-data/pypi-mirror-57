@@ -1,0 +1,128 @@
+;; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with C-x C-f,
+;; then enter the text in that file's own buffer.
+
+<!--
+      <Interaction interaction_type="modification" id="210000">
+        <ReferenceList>
+          <Reference pmid="11551930">11551930</Reference>
+        </ReferenceList>
+
+        <InteractionComponentList>
+          <InteractionComponent role_type="input" molecule_idref="201131">
+          </InteractionComponent>
+
+          <InteractionComponent role_type="agent" molecule_idref="007">
+            <Label label_type="activity-state" value="active" />
+            <PTMExpression>
+              <PTMTerm protein="Q9H4B4" position="0" aa="X" modification="phosphorylation" />
+            </PTMExpression>
+          </InteractionComponent>
+
+          <InteractionComponent role_type="output" molecule_idref="201131">
+            <PTMExpression>
+              <PTMTerm protein="P04637" position="20" aa="S" modification="phosphorylation" />
+            </PTMExpression>
+          </InteractionComponent>
+
+        </InteractionComponentList>
+      </Interaction>
+
+
+
+      <Interaction interaction_type="modification" id="210183">
+
+        <InteractionComponentList>
+          <InteractionComponent role_type="input" molecule_idref="200988">
+            <Label label_type="activity-state" value="active" />
+            <PTMExpression>
+              <PTMTerm protein="Q9H4B4" position="0" aa="X" modification="phosphorylation" />
+            </PTMExpression>
+          </InteractionComponent>
+
+          <InteractionComponent role_type="input" molecule_idref="201885">
+            <Label label_type="location" value="cytoplasm" />
+          </InteractionComponent>
+
+          <InteractionComponent role_type="agent" molecule_idref="200988">
+          </InteractionComponent>
+
+          <InteractionComponent role_type="output" molecule_idref="201885">
+            <Label label_type="location" value="cytoplasm" />
+            <PTMExpression>
+              <PTMTerm protein="P30307" position="191" aa="S" modification="phosphorylation" />
+            </PTMExpression>
+          </InteractionComponent>
+          <InteractionComponent role_type="output" molecule_idref="201131">
+            <PTMExpression>
+              <PTMTerm protein="P04637" position="20" aa="S" modification="phosphorylation" />
+            </PTMExpression>
+          </InteractionComponent>
+
+        </InteractionComponentList>
+      </Interaction>
+
+      <Interaction interaction_type="modification" id="210188">
+
+        <ReferenceList>
+          <Reference pmid="12242661">12242661</Reference>
+          <Reference pmid="11551930">11551930</Reference>
+        </ReferenceList>
+
+        <InteractionComponentList>
+          <InteractionComponent role_type="input" molecule_idref="200988">
+          </InteractionComponent>
+
+          <InteractionComponent role_type="agent" molecule_idref="202443">
+            <Label label_type="activity-state" value="active" />
+          </InteractionComponent>
+
+          <InteractionComponent role_type="output" molecule_idref="200988">
+            <Label label_type="activity-state" value="active" />
+            <PTMExpression>
+              <PTMTerm protein="Q9H4B4" position="0" aa="X" modification="phosphorylation" />
+            </PTMExpression>
+          </InteractionComponent>
+
+        </InteractionComponentList>
+      </Interaction>
+
+      <Interaction interaction_type="translocation" id="210184">
+        <ReferenceList>
+          <Reference pmid="14968113">14968113</Reference>
+        </ReferenceList>
+
+        <InteractionComponentList>
+          <InteractionComponent role_type="input" molecule_idref="201885">
+            <Label label_type="location" value="cytoplasm" />
+            <PTMExpression>
+              <PTMTerm protein="P30307" position="191" aa="S" modification="phosphorylation" />
+            </PTMExpression>
+          </InteractionComponent>
+
+          <InteractionComponent role_type="output" molecule_idref="201885">
+            <Label label_type="location" value="nucleus" />
+            <PTMExpression>
+              <PTMTerm protein="P30307" position="191" aa="S" modification="phosphorylation" />
+            </PTMExpression>
+          </InteractionComponent>
+
+        </InteractionComponentList>
+      </Interaction>
+
+      <Interaction interaction_type="transcription" id="210182">
+        <ReferenceList>
+          <Reference pmid="17264206">17264206</Reference>
+        </ReferenceList>
+
+        <InteractionComponentList>
+          <InteractionComponent role_type="agent" molecule_idref="200988">
+          </InteractionComponent>
+
+          <InteractionComponent role_type="output" molecule_idref="200673">
+          </InteractionComponent>
+
+        </InteractionComponentList>
+      </Interaction>
+
+-->
