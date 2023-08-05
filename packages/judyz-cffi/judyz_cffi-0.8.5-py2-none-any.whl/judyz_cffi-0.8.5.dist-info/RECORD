@@ -1,0 +1,14 @@
+judyz_cffi/Judy_cffi.h,sha256=nvN7G1oQVGqEfT6ZYGScl5mGQHBmQl76lBO3_xeqcDI,11830
+judyz_cffi/__init__.py,sha256=MiyMXCi9ImqJ_9x6HYsHrzZSSHkpaO3B6YESSdIRay8,249
+judyz_cffi/_build.py,sha256=d_7iE4uElDlqA1YUiEXEG7RbH-4mIodnMXBsjEKK8a0,228
+judyz_cffi/_judy_cffi.py,sha256=qjHSY2Nx_Sy4UJ73yQE41l4mFvrBJ6DsJzo3LJXPJuU,6255
+judyz_cffi/exceptions.py,sha256=5z8YfebggTq42xzIDZ8wCgxuj8WMvxjFOIkLu-ud8ns,688
+judyz_cffi/internal.py,sha256=5ijocKv5RFKHAGAiiPC1scFXDwh56HWM9X848XzIvmc,208
+judyz_cffi/judy1.py,sha256=yLTw0-sL4KMHJTDuWwiOn-jrQIeVmzEHlhGdIg9e-9s,2815
+judyz_cffi/judyl.py,sha256=ym4bjKwP3VdAbOJoO4666sTeXPZ7kOj5I2igZuhb6Lw,5181
+judyz_cffi/judysl.py,sha256=t-ZnTUJI5rh4DY7020CBSi6_MKCF82De_9w2LOPIf00,8538
+judyz_cffi-0.8.5.dist-info/LICENSE,sha256=FIrpp0g_J_N_3Mrix1JICViP_9R7RCMYJE2sFPUA5CY,1052
+judyz_cffi-0.8.5.dist-info/METADATA,sha256=Fc47FdnG1e-OdkZci1OmmJGyqZJnli38hqTzMxMqIoI,3431
+judyz_cffi-0.8.5.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+judyz_cffi-0.8.5.dist-info/top_level.txt,sha256=HA1s8Fwkci_OR4HE-G5rktFOqJsPGuksmrMHFoV5t8Q,11
+judyz_cffi-0.8.5.dist-info/RECORD,,
