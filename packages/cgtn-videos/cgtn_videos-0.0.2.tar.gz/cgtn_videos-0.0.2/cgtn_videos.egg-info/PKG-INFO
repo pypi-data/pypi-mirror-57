@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: cgtn-videos
+Version: 0.0.2
+Summary: Python package fetch the video URLs and metadata from CGTN website
+Home-page: https://github.com/boeboe/cgtn-videos
+Author: Bart Van Bos
+Author-email: bartvanbos@gmail.com
+License: MIT
+Description: # cgtn_videos
+        
+        ## Introduction
+        
+        `cgtn_videos` is a python package to retrieve video links and meta data
+        from the CGTN (China Global Television Network) website.
+        
+        The data is retrieved from the [`CGTN website`](https://www.cgtn.com/)
+        
+        ## Installation
+        
+        ### Install with pip
+        
+        Run `pip install cgtn-videos`
+        
+        ### Install from source
+        
+        `git clone https://github.com/boeboe/cgtn-videos.git`
+        
+        Run `python setup.py install`
+        
+        ### Run tests
+        
+        Run `make tests`
+        
+        ## Usage
+        
+        Some examples on how to use this package.
+        
+        ```python
+        from cgtn_videos import *
+        
+        print("Check the tests folder for example usage")
+        ```
+        
+Keywords: china chinese cgtn video kodi xbmc
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Software Distribution
+Description-Content-Type: text/markdown
