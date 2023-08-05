@@ -1,0 +1,11 @@
+setuptools>=38.2.0
+betse==1.1.1
+PySide2>=5.12.3
+
+[all]
+
+[test]
+setuptools>=38.2.0
+pytest>=3.7.0
+pytest-qt>=3.2.0
+pytest-xvfb>=1.2.0
