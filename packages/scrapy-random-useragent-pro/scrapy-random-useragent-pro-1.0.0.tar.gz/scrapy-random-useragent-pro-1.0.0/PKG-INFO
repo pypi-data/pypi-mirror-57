@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: scrapy-random-useragent-pro
+Version: 1.0.0
+Summary: A random user-agent for all your needs
+Home-page: https://github.com/phpgao/scrapy-random-useragent-pro
+Author: Jimmy
+Author-email: endoffight@gmail.com
+License: MIT License
+Description: # scrapy-random-useragent-pro
+        
+        Random UserAgent middleware for Scrapy.
+        
+        You can chose your preferred ua in request.meta[desktop,mobile,bot].
+        
+        ## Install
+        
+        ```bash
+        pip install scrapy-random-useragent-pro
+        ```
+        
+        ## Usage
+        
+        settings.py
+        
+        ```python
+        RANDOM_UA_ENABLED = True
+        RANDOM_UA_DEFAULT_TYPE = 'mobile'
+        # always change user-agent
+        RANDOM_UA_OVERWRITE = False
+        
+        
+        DOWNLOADER_MIDDLEWARES = {
+            'scrapy_random_useragent_pro.middleware.RandomUserAgentMiddleware': 100,
+            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,# important
+        }
+        
+        ```
+        
+        In your code
+        
+        ```python
+        yield Request('http://scrapytest.org/', meta={'ua': 'mobile'})
+        ```
+Keywords: random useragent scrapy middleware
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Scrapy
+Classifier: Environment :: MacOS X
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
