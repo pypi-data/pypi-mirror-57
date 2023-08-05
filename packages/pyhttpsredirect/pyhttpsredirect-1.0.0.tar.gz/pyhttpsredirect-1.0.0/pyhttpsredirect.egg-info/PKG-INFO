@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pyhttpsredirect
+Version: 1.0.0
+Summary: A simple http server that forcefully redirects to https.
+Home-page: UNKNOWN
+Author: Steve McMaster
+Author-email: mcmaster@hurricanelabs.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
