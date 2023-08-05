@@ -1,0 +1,12 @@
+README.md
+ansistrm.py
+setup.py
+yara_scanner.py
+ysc.py
+yss.py
+yara_scanner.egg-info/PKG-INFO
+yara_scanner.egg-info/SOURCES.txt
+yara_scanner.egg-info/dependency_links.txt
+yara_scanner.egg-info/entry_points.txt
+yara_scanner.egg-info/requires.txt
+yara_scanner.egg-info/top_level.txt
