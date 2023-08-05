@@ -1,0 +1,477 @@
+Metadata-Version: 2.1
+Name: structureReader
+Version: 2.1.10
+Summary: Simple static structure/union parser
+Home-page: UNKNOWN
+Author: gibartes
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+
+from structureReader import structureReader as sr
+
+if __name__ == '__main__':
+    HELP = """
+
+    << 구조체 >> 
+
+    1. 생성시 바로 선언
+        cs = sr.CStructure(필드 리스트,필드 크기 리스트,
+                    {ptr=필드 타입 리스트(참조=True, 값=False),arr=배열 크기, name=구조체 별명})
+
+    2. 객체 생성 후 빌드 (어레이 생성 안됨)
+        cs = sr.CStructure()
+        cs.build(필드 리스트,필드 크기 리스트,{ptr=필드 타입 리스트(참조=True, 값=False)})
+
+        예제)
+            모두 값인 경우 필드 타입 리스트를 생략해도 무방하다.
+            header = sr.CStructure(["size","flag","mode"],[4,4,4])
+            중간에 포인터가 필요한 경우 필드 타입 리스트를 추가해야 한다. True인 경우가 포인터 값이다.
+            포인터 변수의 크기만큼 바이너리를 건너 뛴다.
+            body = sr.CStructure(["own","hello","world","message"],[4,4,2,0],[False,False,False,True])
+
+    3. 전체 구조/값 가시적으로 확인하기
+        encode 값은 기본적으로 None이며 endian에 따라 정수값으로 변환하여 출력한다.
+        sr.print(endian='system_endian',encode=None)
+
+    4. 구조체 크기 확인하기
+        cs.sizeof()
+        크기가 지정되지 않은 포인터 값은 크기에서 제외된다.
+
+    5. 구조체 위치 옮기기
+        cs.move_head(offset)
+        구조체 전체 위치를 offset만큼 이동시킨다.
+
+    6. 구조체 특정 필드 크기 변경하기
+        cs.extent(field,size)
+        field는 크기를 변경할 값이고, size는 변경할 크기이다.
+        복합 구조체 내에 사용할 때는 CStructure의 포인터 형식으로 사용하는 것을 권장한다.
+
+    7. 구조체가 가지고 있는 바이너리 값 추출하기
+        new_binary = cs.bin
+        포인터 구조체를 제외한 나머지 필드들이 가진 값들을 순서대로 바이너리 값으로 출력한다.
+
+    8. 구조체 복사하기
+        1. 현재 구조체 (형태/값) 복사
+            new = cs.copy()
+
+        2. 다른 구조체로부터 복사
+            형태/값 복사:
+                new = sr.CStructure()
+                new.copy(cs,CStructure.ByValue)
+            형태/참조 복사:
+                new = sr.CStructure()
+                new.copy(cs,CStructure.ByRef)
+
+    9.구조체 특정 필드에 데이터 추출하기
+        1. >> 연산자를 사용한다.
+            return 인자를 명시한 경우, ret에 필드 데이터가 저장된다.
+                cs >> (field, ret)
+            실행문의 결과는 ret과 같다. 즉,
+                a = cs >> (field,ret)
+            이면  a == ret 이다.
+
+            return 인자가 없는 경우
+                cs >> (field,)
+            실행문의 결과는 필드에 있는 데이터 값이다.
+
+            예제)
+                signature 필드 값 추출 
+                cs >> ("signature",)
+
+        2. - 연산자를 통해 값에 접근할 수 있다. 이 연산자는 읽기 전용이다.
+            예제)
+                cs-"signature"
+
+    10. 구조체 데이터 수정하기
+        << 연산자를 사용한다.
+
+        바이너리 데이터의 경우
+        cs << binary
+        로 입력을 할 수 있다. 바이너리 값을 넣어주면 크기만큼 알아서 필드에 넣어준다. 엔디안을 고려하지 않는다.
+
+        특정 필드에 특정 값을 삽입하는 경우
+        cs << (field, value)
+        로 값을 수정할 수 있다.
+
+        예제)
+            cs << ("signature",b'FILE')
+
+        엔디안을 고려해야하는 경우 << 오퍼레이터에 인자를 3개 준다.
+        기본적으로 시스템 엔디안이며, little, big을 인자로 줄 수 있다.
+        만일 바이트 길이가 특정 필드 길이에 비해 짧으면 엔디안 상위바이트로부터 패딩 바이트가 추가된다. 
+
+        예제)
+            cs << ("signature",0x100,CStructure.LITTLE)
+
+    11.구조체의 포인터 필드에 데이터 수정하기
+        < 연산자를 사용한다.
+        cs < (ptr_field, new)
+
+    12. 기타 제공 기능
+        1.) 바이트->정수 전환
+            CStructure.byte2int(binary,endian=system)
+            Binary 형식의 데이터를 endian에 따라 정수값으로 변환한다.
+            이 메소드는 static이므로 객체를 선언할 필요가 없다.
+        2.) 정렬 패딩 계산
+            CStructure.align(data,aligned)
+            data에서 aligned만큼 데이터 정렬하기 위해 필요한 패딩 바이트 수를 구한다.
+            이 메소드는 static이므로 객체를 선언할 필요가 없다.
+        3.) 아스키->정수 변환
+            CStructure.ascii2int(ascii,base=8)
+            아스키 코드로 적혀져 있는 "숫자들"을 base를 진수로하는 정수로 변환한다.
+            이 메소드는 static이므로 객체를 선언할 필요가 없다.
+
+    << 복합 구조체 >>
+
+    1. 생성시 바로 선언
+        cu = sr.CUnion([
+            [필드 이름#1,구조체#1],
+            [필드 이름#2,구조체#2],
+        ],arr=배열 크기, name=복합 구조체 별명)
+
+        복합 구조체에서 특정 필드의 오프셋을 변경하려면 movefrom(field,offset) 함수를 사용한다.
+        movefrom 함수를 호출하게 되면 해당 필드 이후의 모든 필드는 offset만큼 움직인다. (상대 위치)
+
+    예제)
+        cu = sr.CUnion(
+            [
+                ["header" ,header],
+                ["body"   ,body  ],
+                ["trailer",footer],
+            ],3
+    )
+
+    2. 전체 구조/값 가시적으로 확인하기
+        encode 값은 기본적으로 None이며 endian에 따라 정수값으로 변환하여 출력한다.
+        cu.pprint(endian=system_endian,encode=None)
+
+    3. 복합 구조체 크기 확인하기
+        cu.sizeof()
+        CUnion 내부에 있는 CStruture 내에 크기가 지정되지 않은 포인터 값은 크기에서 제외된다.
+
+    4. 복합 구조체가 가지고 있는 바이너리 값 추출하기
+        new_binary = cu.bin
+        포인터 구조체를 제외한 나머지 필드들이 가진 값들을 순서대로 바이너리 값으로 출력한다.
+
+    5. 복합 구조체 복사하기
+        다른 복합 구조체(CUnion)와만 상호작용한다. CStrucutre와 호환이 되지 않는다.
+        1. 현재 구조체 (형태/값) 복사
+            new = cu.copy()
+
+        2. 다른 구조체로부터 복사
+            형태 복사:
+                new = sr.CUnion()
+                new.copy(cs,CStructure.ByValue)
+            형태/참조 복사:
+                new = sr.CUnion()
+                new.copy(cs,CStructure.ByRef)
+
+    6. 구조체가 가지고 있는 바이너리 값 추출하기
+        new_binary = cu.bin 혹은 cu.data
+        내부의 포인터 구조체를 제외한 나머지 필드들이 가진 값들을 순서대로 바이너리 값으로 출력한다.
+
+    7. 복합 구조체 특정 필드에 데이터 추출하기
+        1. >> 연산자를 사용한다.
+            return 인자를 명시한 경우, ret에 필드 데이터가 저장된다.
+                cu >> (field, ret)
+            실행문의 결과는 ret과 같다. 즉,
+                a = cu >> (field,ret)
+            이면  a == ret 이다. 이 경우 값에 대한 호출이다.
+            리턴 값은 CUnion, CStructure, Value 이다.
+
+            return 인자가 없는 경우
+                cu >> (field,)
+            실행문의 결과는 필드에 있는 데이터 값이며 값에 대한 호출이다.
+            리턴 값은 CUnion, CStructure, Value 이다.
+
+            만일 객체 내의 데이터를 수정하고 이를 현 복합 구조체에 반영하고 싶다면 참조에 의한 호출을 사용한다. 
+            두번째 인자가 True이면 주면 참조에 의한 호출이다.
+                cu >> (field,True)
+
+            예제)
+                CU 복합 구조체 내에 있는 header 구조체를 구성하는 필드 중 signature 값에 대한 호출
+                    cu >> ("header",) >> ("signature",))
+                CU 복합 구조체 내에 있는 body 구조체를 구성하는 필드 중 contents_header 구조체에 대한 참조에 의한 호출
+                    cu >> ("body",True) >> ("contents_header",True)
+
+        2. - 연산자를 통해 값에 접근할 수 있다. 이 연산자는 읽기 전용이다.
+            cs-"header"-"signature"
+
+    8. 복합 구조체 데이터 수정하기
+        << 연산자를 사용한다.
+
+        바이너리 데이터의 경우
+        cu << binary
+        로 입력을 할 수 있다. 바이너리 값을 넣어주면 크기만큼 알아서 필드에 넣어준다.
+
+        복합 구조체 특정 필드에 데이터 수정하는 경우
+        원하는 필드에 데이터를 수정하기 위해서는 값에 의한 호출이 아니라 참조에 의한 호출이어야 한다.
+        값이 아니더라도, CStructure나 CUnion 필드에서도 크기가 동일한 CStructure나 CUnion이면 수정 허용한다.
+
+        예제)
+            CU 복합 구조체 내에 있는 header 구조체를 구성하는 필드 중 signature 값을 b'FILE'로 수정
+                cu >> ("header",True) << ("signature",b'FILE')
+
+    9. 복합 구조체에서의 포인터 필드
+        복합 구조체에서는 포인터 필드가 없으므로 포인터 필드를 사용하기 위해서는 
+        CStructure를 사용해서 CStructure 내에 포인터 필드를 삽입해야 한다.
+
+        예제)
+            CU 복합 구조체 내에 있는 body 구조체를 구성하는 필드 중 contents 포인터 구조체에 대한 참조에 의한 호출
+            cu >> ("body",True) < ("contents",sth_binary_data)
+
+    10. lazy 기능
+        데이터를 분석하는 것보다 데이터를 보유하고 있는 것이 중요할 때가 있다. 
+        이 경우 lazy 기능을 사용함으로써 구조를 내부에 입력하지 않고 지나가게 하여 속도를 향상시킬 수 있다.
+        wake를 호출하면 lazy 값은 초기화되고 내부에 데이터를 입력한다.
+
+        예제)
+            보관: cu.lazy = sth_binary_data
+            사용: cu.wake()
+
+
+    << 구조체와 복합 구조체 생성 간단히 하기 >>
+
+    cref 객체를 이용하면 CStructure나 CUnion 객체를 생성할 때 매번 구조 인자를 줄 필요 없이 객체 생성이 가능하다.
+    해당 구조체가 미리 정의되고 참조되어야하지 않으며, 파이썬 호출 방식에 익숙하지 않으면 
+    cref로 객체를 생성하는 것을 권장한다.
+
+    cref를 이용해 구조체 객체 생성 방법
+
+    1. cref 객체 선언 및 파라미터 설정
+        p = sr.cref(list of Fields,list of Sizes,list of Pointers,list of CStructures,name)
+        cref 객체 생성시 목적에 맞게 파라미터를 주면 된다.
+
+        cref의 객체 메소드인 args를 이용해 내부 항목을 변경할 수 있다.
+        p.args(list of Fields,list of Sizes,list of Pointers,list of CStructures,name)
+        변경하지 않을 파라미터에는 None값을 주면 된다.
+
+        예제)
+            s = sr.cref(["hdr","nxt_off","mlen","message"],[8,8,4,0],[False,False,False,True],None,"content")
+
+        cref에는 dictionary로 구조체를 생성하는 방법을 제공한다. 
+        dictionary는 순서 정렬된 OrderedDict이어야 하며, 다음처럼 구성되어야 한다.
+        dictionary=OrderedDict({"str_field":[int_size,bool_ptr],})
+
+        p.from_dict(types,dictionary)를 이용해서 dictionary로부터 구조체를 생성한다.
+        여기서 types라는 생성 결과물 형식이다.
+        types가 cref.structure이라면 cref 객체는 CStructure 객체를 생성하고,
+                cref.union이라면 cref 객체는 CUnion 객체를 생성한다.
+
+    2. cref를 이용해 CStructure, CUnion 생성하기
+        선언된 cref 객체를 이용해 CStructure와 CUnion을 생성하려면 g 메소드와 generate메소드를 호출하면 된다. 
+        generate 메소드는 pobject 함수의 긴-이름 레퍼 메소드이다.
+
+        사용법은 다음과 같다.        
+        p.pobject(types,arr=None,name=None)
+
+        types: 산출물 형식을 지정한다.
+            1. cref.structure이라면 cref 객체는 CStructure 객체를 생성한다.
+            2. cref.union이라면 cref 객체는 CUnion 객체를 생성한다.
+        arr  : 어레이 형식의 객체를 생성한다. arr에 양의 정수를 입력하면 
+               CStructure[arr]가 생성된다.
+        name : CStructure, CUnion 설정한다. 크기가 큰 프로젝트의 경우 구분을 위해 구조체 이름을 지정해두는 것이 좋다.
+               객체 생성시의 name과 달리 한번만 사용한다.
+
+        g메소드를 사용하지 않고 << 연산자를 이용해서 생성할 수 있다. 이 방법을 사용하면 1 line 객체 생성이 가능하다.
+
+        1. CStructure/CUnion = p << types
+        2. CStructure/CUnion = p << (types,arr)
+        3. CStructure/CUnion = p << (types,arr,name)
+        4. CStructure/CUnion = sr.cref(list of Fields,list of Sizes,list of Pointers,list of CStructures,name) << types
+
+    3. Primitive라면 INTEGER.default(types)를 이용해서 생성하면 간단하다.
+       지원하는 Primitive는 int8, int16, int32, int64의 4개 종류이다.
+       Primitive는 1개의 필드를 가진 CStructure 형식으로 구성되어 있다.
+
+       _int32 = sr.INTEGERS.default("int32")
+
+    4. C 구조체 생성 방법
+        cref 객체로 동적으로 C-구조체를 생성할 수 있다. 
+
+        cstyle = cref()
+
+        cref 객체를 생성했으면 push와 pusha 함수로 필드를 지정해서 넣을 수 있다. push에는 필드이름과 필드 타입이 인자로 들어가며,
+        pusha에서는 필드 이름과 타입이 순써쌍으로 묶인 OrderedDict 나, 필드 이름 리스트, 필드 타입 리스트의 2개 인자를 받는다.
+
+            cstyle.pusha(OrderedDict{"signature":c_uint32,"size":c_uint32,"flag":c_uint16})
+            혹은
+            cstyle.pusha(["signature","size","flag][c_uint32,c_uint32,c_uint16])
+
+        필드를 전부 삽입했다면, csytle.build(name=str)을 통해 구조체 객체를 빌드한다. name에는 반드시 구조체 이름이 들어가야 한다.
+        build 될 때 유효하지 않는 C 형식 개체이면 목록에서 제외된다. build를 수행하게 되면 구조체 객체를 형성하기는 하지만 
+        구조체 자체를 반환하지는 않는다. 생성된 구조체를 사용하려면, cstyle.cobject를 호출하여 구조체 객체를 받는다.
+
+            cobj = cstyle.cobjet
+
+        정상적으로 빌드되었는지 확인하려면 print_field를 호출하여 확인하면 된다. 물론, 입력 길이와 출력 길이 검사로도 수행할 수 있다.
+
+            cref.print_field()
+
+        cref의 C-구조체는 Python과 C/C++와 호환성을 위해 만든 구조체로, 온전히 Python에서 쉽게 사용하기 위한 CStructure와 CUnion 객체와 호환되지 않는다.
+        다만, 구조체의 바이너리 값만 추출해서 CStructure/CUnion에 삽입할 수는 있다.
+
+    """
+
+    header    = sr.cref(["size","flag","mode"],[4,4,4])
+
+    """ body contains exactly 1 pointer value. """
+    body      = sr.cref(["nxt_off","mlen","message"],[8,8,0],[False,False,True],None,"content")
+
+    p_content = sr.cref(["id","text"],[8,0],None,None) << sr.cref.structure
+
+    """
+    The above statment directly returns CStructure.
+
+    Of course, you can also do this job like:       
+        p_content = sr.CStructure(["hdr","hdr_size","nocontent"],[4,4,4])
+
+    """
+
+    taghdr   = sr.cref(["tag","content"],None,None,[
+                        sr.INTEGERS.default("int64"),
+                        body<<sr.cref.structure])
+
+    sbo      = sr.cref(["signature","header","pheader","body"],None,None,[
+                        sr.INTEGERS.default("int32"),
+                        header<<sr.cref.structure,
+                        taghdr<<sr.cref.union,
+                        body<<sr.cref.structure],
+                        "example_structure")
+    sbo_test = sbo<<(sr.cref.union,3)
+
+    print("Structure: {0}\nLength of structure array: {1}".format(sbo.name,len(sbo_test)))
+    """
+    Of course, you can also do this job like:
+
+        header = sr.CStructure(["size","flag","mode"],[4,4,4])
+        taghdr = sr.CUnion(
+            [
+                ["tag",sr.INTEGERS.default("int64")],
+                ["content",body<<sr.cref.structure],
+            ]
+        )
+
+        sbo_test = sr.CUnion(
+            [
+                ["signature", sr.INTEGERS.default("int32")],
+                ["header",    header],
+                ["pheader",   taghdr],
+                ["body",      body<<sr.cref.structure],
+            ],3
+        )
+    """
+
+    block_buffer = b''
+    try:
+        with open("01.mft","rb") as file:
+            block_buffer = file.read(1024)
+    except:
+        print("[!] file not found")
+        exit(0)
+
+    test_buffer = bytes("thepythonisveryinterestingprogramlanguage",'utf-8')
+
+    print("<<Default Status>>")
+    sbo_test[0].pprint()
+    input("Please enter key and then go to the next stage.")
+
+    print("<< Data input >>")
+    sbo_test[0]<<block_buffer
+    sbo_test[0].pprint()
+    input("Please enter key and then go to the next stage.")
+
+    print("<< Change data in field >>")
+    sbo_test[0]>>("header",True)<<("size",0x100)
+    sbo_test[0].pprint()
+    input("Please enter key and then go to the next stage.")
+
+    print("\n[*] Pointer\n")
+    p_content<<("id",0xdeadbeef)
+    p_content<<("text",test_buffer)
+    p_content.print()
+
+    input("Please enter key and then go to the next stage.")
+
+    print("\n[*] Pointer: Extension\n")
+    # Think as a malloc process
+    p_content.extent("text",len(test_buffer))
+    p_content<<("text",test_buffer)
+
+    sbo_test[0]>>("body",True)<("message",p_content)  
+    sbo_test[0]>>("body",True)<<("mlen",len(test_buffer))
+    (sbo_test[0]>>("body",)>>("message",)).print(encode='utf-8')
+
+    print("\nOverall Status:")
+    print("structure size (except for pointer structure) : ",sbo_test[0].sizeof())
+    print("data size: {0}\ndata info:\n{1}".format(len(sbo_test[0].bin),sbo_test[0].bin))
+    print("\n")
+    sbo_test[0].pprint()
+    print("\nYou can also check structure type with status()\n")
+    sbo_test[0].status()
+
+    input("Please enter key and then go to the next stage.")
+
+    print("\n[*] Pointer: Free\n")
+    # Think as a free process
+    sbo_test[0]>>("body",True)<("message",sr.NULL())
+    del p_content
+
+    sbo_test[0].pprint()
+
+    input("Please enter key and then go to the next stage.")
+
+    print("\n[*] move fields\n")
+    sbo_test[0].movefrom("pheader",0x40)
+    sbo_test[0]<<block_buffer
+
+    print("structure size (except for pointer structure) : ",sbo_test[0].sizeof())
+    print("data size: {0}\ndata info:\n{1}".format(len(sbo_test[0].bin),sbo_test[0].bin))
+
+    sbo_test[0].pprint()
+
+    input("Please enter key and then go to the next stage.")
+
+    print("\n[*] Call by reference: The value is changed.\n")
+    sbo_test[0]>>("pheader",True)>>("content",True)<<("nxt_off",0x100)
+    sbo_test[0].pprint()
+
+    input("Please enter key and then go to the next stage.")
+    print("\n[*] Call by value : The value is not changed.\n")
+    sbo_test[0]>>("pheader",True)>>("content",False)<<("nxt_off",0x80)
+    sbo_test[0].pprint()
+
+    input("Please enter key and then go to the next stage.")
+
+    print("--MFT--")
+    mft = sr._MFTEntryHeader()  # Predefined mft-entry-header
+    mft_entry_builder = sr.cref(name="mft_entry_header")
+    mft_entry_builder.from_dict(sr.cref.structure,mft.MFTEntryHeader)
+    mft_entry = mft_entry_builder << sr.cref.structure
+
+    print("NAME:", mft_entry.name)
+
+    try:
+        with open("01.mft","rb") as file:
+            mft_entry << file.read(1024)
+    except:
+        print("[!] file not found")
+
+    mft_entry.print()
+
+    exit(0)
+
+
+
