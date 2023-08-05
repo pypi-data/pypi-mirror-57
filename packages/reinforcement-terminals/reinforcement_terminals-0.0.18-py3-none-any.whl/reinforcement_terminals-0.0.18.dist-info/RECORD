@@ -1,0 +1,10 @@
+reinforcement_terminals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reinforcement_terminals/detect_age_gender/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reinforcement_terminals/detect_age_gender/inference.py,sha256=FMoB5sdMh7Zg3TTklDOUuObwSsO5GWb50_NGmf4RGng,1780
+reinforcement_terminals/detect_age_gender/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reinforcement_terminals/detect_age_gender/model/config_eag.py,sha256=j6camWn7NRj4DY9xiC01mCV3Sn_Vr1KgqAXnt11Vt2g,287
+reinforcement_terminals-0.0.18.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+reinforcement_terminals-0.0.18.dist-info/METADATA,sha256=qNtEARYlqz2KdNpooSaMCWo8Ju_zBd1cm4OgPoKOn_4,627
+reinforcement_terminals-0.0.18.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+reinforcement_terminals-0.0.18.dist-info/top_level.txt,sha256=KE6AM-zfc01eJT888riQMbr1vJEQOp95kBUwpQl03yA,24
+reinforcement_terminals-0.0.18.dist-info/RECORD,,
