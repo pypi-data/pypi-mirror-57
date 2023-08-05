@@ -1,0 +1,8 @@
+mc_sokect.py
+setup.py
+mc_sokect.egg-info/PKG-INFO
+mc_sokect.egg-info/SOURCES.txt
+mc_sokect.egg-info/dependency_links.txt
+mc_sokect.egg-info/not-zip-safe
+mc_sokect.egg-info/requires.txt
+mc_sokect.egg-info/top_level.txt
