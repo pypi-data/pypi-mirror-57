@@ -1,0 +1,9 @@
+dataglove/DataGloveWindows_32.dll,sha256=O-koUX33o5FmVZVEQ17qR8knpPtaTZ8zFO-ZTkwuLso,458752
+dataglove/DataGloveWindows_64.dll,sha256=ZUJIQmvZzLLeAioy86_KCpMX4xjjs55yLxtDfZg5xD4,561152
+dataglove/__init__.py,sha256=7gteGJ5zPFeAkfSpBsBxJjMeJ9Cmfh84giGdHqBjdY0,35
+dataglove/dataglove.py,sha256=5fgTbpteKfEWtP7Fv43UZyM0DG9_7iCmA902HBH7wgI,14647
+dataglove-0.1.0.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+dataglove-0.1.0.dist-info/METADATA,sha256=enQyWDVidKs6y2pKYHbrl3QKOWjeb2GQXfWuEChaF_Y,3439
+dataglove-0.1.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+dataglove-0.1.0.dist-info/top_level.txt,sha256=JUqWlopz9XjyZcA1ObhHOq29izd8Wfc6bmx8PkB06cs,10
+dataglove-0.1.0.dist-info/RECORD,,
