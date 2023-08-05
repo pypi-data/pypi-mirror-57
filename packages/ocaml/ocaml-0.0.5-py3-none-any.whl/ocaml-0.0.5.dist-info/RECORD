@@ -1,0 +1,7 @@
+ocaml/__init__.py,sha256=8sbJZfDbnwZV4LkkCY9cn7BtnqOAlODDLh_ZWvWuZ-4,660
+ocaml/sharedlib/ocaml.so,sha256=5zVoPrMzEvn7j9-kflMo3BQJJJ-b0CSbCSFMZR5VX2s,5238552
+ocaml/sharedlib/stdlib.cmi,sha256=UXvss02SEDFdY4qF8db7S2P5Nv934WWwjQsUNYsyA3g,33942
+ocaml-0.0.5.dist-info/METADATA,sha256=hwH_SA69NXEzwsf6_bLFNGg8b8UKCj4TGWFGBB6dSBo,211
+ocaml-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ocaml-0.0.5.dist-info/top_level.txt,sha256=10vODgXbozRfT0Efi2SH2FYhmukXSk7w2Mqv6-K7wfk,6
+ocaml-0.0.5.dist-info/RECORD,,
