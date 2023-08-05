@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: datamaestro-image
+Version: 2019.12.4
+Summary: Image related datasets
+Home-page: https://github.com/bpiwowar/datamaestro_image
+Author: Benjamin Piwowarski
+Author-email: benjamin@piwowarski.fr
+License: MIT
+Description: # Text-related datasets
+        
+        This [datamaestro](https://github.com/experimaestro/datamaestro) plugin covers image-related datasets.
+        
+        
+        The list of available datasets and usage instruction can be found in the [documentation](https://experimaestro.github.io/datamaestro_image/).
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
