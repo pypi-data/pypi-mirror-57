@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: simple-django-teams
+Version: 0.0.1
+Summary: Simple Django teams.
+Home-page: UNKNOWN
+Author: Corey Sterling
+Author-email: coreytsterling@gmail.com
+License: MIT
+Description: Django app for combining users into teams and setting simple permissions within a team.
+        
+        Changelog
+        =========
+        
+        0.0.1 (2019-12-04)
+        -------------------
+        
+        - Initial release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python :: 3.7
