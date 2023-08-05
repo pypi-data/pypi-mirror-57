@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rio-hist
+Version: 1.0.0
+Summary: Histogram matching plugin for rasterio
+Home-page: https://github.com/mapbox/rio-hist
+Author: Matthew Perry
+Author-email: perry@mapbox.com
+License: BSD
+Description: Histogram matching plugin for rasterio.
+        
+        See https://github.com/mapbox/rio-hist for docs.
+Platform: UNKNOWN
+Provides-Extra: plot
+Provides-Extra: test
