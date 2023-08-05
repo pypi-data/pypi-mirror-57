@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: bgu_physics_lab
+Version: 0.1
+Summary: plot and caluclate fiting goodness using chi2 regression
+Home-page: https://github.com/AdamHamody/bgu_physics_lab
+Author: Adam H. Agbaria
+Author-email: adam.h.agb@gmail.com
+License: MIT
+Download-URL: https://github.com/AdamHamody/bgu_physics_lab/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: chi2,regression,physics_lab
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

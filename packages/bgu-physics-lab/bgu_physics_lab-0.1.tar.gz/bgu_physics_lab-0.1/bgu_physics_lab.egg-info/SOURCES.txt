@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+bgu_physics_lab.egg-info/PKG-INFO
+bgu_physics_lab.egg-info/SOURCES.txt
+bgu_physics_lab.egg-info/dependency_links.txt
+bgu_physics_lab.egg-info/requires.txt
+bgu_physics_lab.egg-info/top_level.txt
+chi2/Chi2RegDxDy.py
+chi2/__init__.py
