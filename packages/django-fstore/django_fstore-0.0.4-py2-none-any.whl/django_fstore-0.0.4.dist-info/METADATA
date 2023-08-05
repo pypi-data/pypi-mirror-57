@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: django-fstore
+Version: 0.0.4
+Summary: minio for django store. 
+Home-page: http://www.hshl.ltd
+Author: bigtiger
+Author-email: chinafengheping@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: deprecation (>=2.0.1)
+Requires-Dist: minio (>=5.0.5)
+
+UNKNOWN
+
+
