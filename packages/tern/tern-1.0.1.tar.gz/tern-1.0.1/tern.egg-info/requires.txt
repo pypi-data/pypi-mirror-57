@@ -1,0 +1,16 @@
+certifi==2019.11.28
+chardet==3.0.4
+docker==4.1.0
+idna==2.8
+pbr==5.4.4
+pyyaml==5.2
+requests==2.22.0
+six==1.13.0
+stevedore==1.31.0
+urllib3==1.25.7
+websocket-client==0.56.0
+
+[dev]
+GitPython~=2.1
+bandit~=1.6
+prospector>=1.1
