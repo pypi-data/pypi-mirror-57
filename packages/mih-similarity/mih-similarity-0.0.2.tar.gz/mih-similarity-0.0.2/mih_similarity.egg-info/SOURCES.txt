@@ -1,0 +1,13 @@
+__init__.py
+edit_distance1.py
+edit_distance2.py
+setup.py
+similarity.py
+weight.py
+weighted_edit_distance1.py
+mih_similarity.egg-info/PKG-INFO
+mih_similarity.egg-info/SOURCES.txt
+mih_similarity.egg-info/dependency_links.txt
+mih_similarity.egg-info/namespace_packages.txt
+mih_similarity.egg-info/top_level.txt
+mih_similarity.egg-info/zip-safe
