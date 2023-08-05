@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+superwise/__init__.py
+superwise/config.py
+superwise/superwise.py
+superwise.egg-info/PKG-INFO
+superwise.egg-info/SOURCES.txt
+superwise.egg-info/dependency_links.txt
+superwise.egg-info/not-zip-safe
+superwise.egg-info/requires.txt
+superwise.egg-info/top_level.txt
