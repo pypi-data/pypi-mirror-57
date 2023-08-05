@@ -1,0 +1,15 @@
+click==7.0
+flask==1.0.3
+flask_cors==3.0.8
+isodate==0.6.0
+itsdangerous==1.1.0
+jinja2==2.10.3
+markupsafe==1.1.1
+prompt-toolkit==3.0.2
+pyparsing==2.4.5
+pyyaml==5.1.1
+rdflib-jsonld==0.4.0
+rdflib==4.2.2
+six==1.13.0
+wcwidth==0.1.7
+werkzeug==0.16.0
