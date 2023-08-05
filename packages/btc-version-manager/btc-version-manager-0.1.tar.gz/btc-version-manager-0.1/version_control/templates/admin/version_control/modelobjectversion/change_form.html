@@ -1,0 +1,82 @@
+{% extends "admin/change_form.html" %}
+
+{% load version_control %}
+
+{% block after_field_sets %}
+    {% if previous_version_proxy or next_version %}
+        <div class="form-row">
+            {% if previous_version_proxy %}
+                <a href="{% url 'admin:version_control_modelobjectversion_change' previous_version_proxy.version.id %}">
+                    Предыдущая запись от {{ previous_version_proxy.version.created|date:'d.m.Y в H:i' }}
+                </a>
+            {% endif %}
+            {% if next_version %}
+                <a href="{% url 'admin:version_control_modelobjectversion_change' next_version.id %}">
+                    Следющая запись от {{ next_version.created|date:'d.m.Y в H:i' }}
+                </a>
+            {% endif %}
+        </div>
+    {% else %}
+        <div class="form-row">
+            Других записей пока нет
+        </div>
+    {% endif %}
+    <div class="inline-group">
+        <div class="tabular inline-related last-related">
+            <fieldset class="module">
+                <h2>Список изменений</h2>
+                <table>
+                    <thead>
+                        {% if fields %}
+                            <tr>
+                                <th class="original"></th>
+                                <th class="column-field_name">Поле</th>
+                                {% if previous_version_proxy %}
+                                    <th class="column-previous_value">Предыдущее значение</th>
+                                {% endif %}
+                                <th class="column-current_value">Текущее значение</th>
+                            </tr>
+                        {% else %}
+                            <tr><th></th></tr>
+                        {% endif %}
+                    </thead>
+                    <tbody>
+                        {% for field in fields %}
+                            {% get_dict_item_by_expression previous_version_proxy.fields field as previous_version_field %}
+                            {% get_dict_item_by_expression current_version_proxy.fields field as current_version_field %}
+                            {% if previous_version_field.value != current_version_field.value or current_version_proxy.version.is_deleted %}
+                                <tr class="form-row has_original">
+                                    <td class="original">
+                                        <p>Поле: "{{ current_version_field.verbose_name }}"</p>
+                                    </td>
+                                    <td class="field-field_name">
+                                        <p>{{ current_version_field.verbose_name }}</p>
+                                    </td>
+                                    {% if previous_version_field %}
+                                        <td class="field-previous_value">
+                                            <p>{{ previous_version_field.value }}</p>
+                                        </td>
+                                    {% endif %}
+                                    {% if current_version_proxy.version.is_deleted %}
+                                        <td class="field-current_value">
+                                            {% if forloop.counter == 1 %}
+                                                <p>Объект удален</p>
+                                            {% endif %}
+                                        </td>
+                                    {% else %}
+                                        <td class="field-current_value">
+                                            <p>{{ current_version_field.value }}</p>
+                                        </td>
+                                    {% endif %}
+                                </tr>
+                            {% endif %}
+                        {% empty %}
+                            <tr><td>Нет отслеживаемых полей</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+    </div>
+{% endblock %}
+{% block submit_buttons_bottom %}{% endblock %}
