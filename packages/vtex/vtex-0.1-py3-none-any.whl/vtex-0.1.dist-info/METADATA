@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vtex
+Version: 0.1
+Summary: VTEX API Wrapper for Python
+Home-page: UNKNOWN
+Author: Leandro Meili
+Author-email: leandro.meili@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
