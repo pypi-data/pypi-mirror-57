@@ -1,0 +1,3 @@
+ccxt==1.9.37
+aiohttp
+pendulum
