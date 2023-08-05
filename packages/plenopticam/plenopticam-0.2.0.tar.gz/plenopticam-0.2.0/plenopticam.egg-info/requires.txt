@@ -1,0 +1,6 @@
+numpy
+scipy
+colour_demosaicing
+colour
+pillow
+imageio
