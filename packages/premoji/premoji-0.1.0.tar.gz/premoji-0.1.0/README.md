@@ -1,0 +1,6 @@
+# Premoji
+
+License
+----
+
+MIT
