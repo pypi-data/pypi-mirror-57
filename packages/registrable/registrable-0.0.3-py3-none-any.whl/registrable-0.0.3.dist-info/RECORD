@@ -1,0 +1,9 @@
+registrable/__init__.py,sha256=5H4sVNpKAYKDMuDkRC_Wu4lrxwVlQqOF3km04i_tDI8,5215
+registrable/exceptions.py,sha256=KWw-7M0l9b0W2FEGBhGCXL3_lIwC84_Fj8UCpY-H32Y,76
+registrable/version.py,sha256=xvgyCnGLEVQQobe_rn2jApve2jVTiwNl0SXzvu3raII,150
+registrable/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+registrable/tests/registrable_test.py,sha256=BDHyxAW-jUFsLr7Bmw8dQpCrg2ompkfe8pCgdRvKCUI,2945
+registrable-0.0.3.dist-info/METADATA,sha256=QCyhY4Q3QBytORu1V1Dq-b0tGGGjRPclc4lD0BGbRM4,1981
+registrable-0.0.3.dist-info/RECORD,,
+registrable-0.0.3.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+registrable-0.0.3.dist-info/top_level.txt,sha256=dcAf48QhpQYxmJjEPpyySx6Zk07R-qu6EOwvpiFbhv0,12
