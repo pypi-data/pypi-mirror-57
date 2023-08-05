@@ -1,0 +1,4 @@
+art==4.2
+Click==7.0
+coverage==4.5.4
+-e git+https://github.com/yashprakash13/PieOrg.git@f02488beb6e0f545b0e8cde462304d0b49f1ba7b#egg=pieorg
