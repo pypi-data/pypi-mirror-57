@@ -1,0 +1,3 @@
+[console_scripts]
+jiralogreporter = jiralogreporter.cli:main
+
