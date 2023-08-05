@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: yzwspider
+Version: 0.1.2
+Summary: A web spider for Chinese graduate student examination catalogue.
+Home-page: https://github.com/Hthing/yzw/tree/master/
+Author: Hthing
+Author-email: hxcnly@gmail.com
+License: MIT Licence
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: xlwt
+Requires-Dist: pymysql
+Requires-Dist: scrapy
+
+scrapy实现研招网专业目录爬虫，详见https://github.com/Hthing/yzw/tree/master/
+
+
