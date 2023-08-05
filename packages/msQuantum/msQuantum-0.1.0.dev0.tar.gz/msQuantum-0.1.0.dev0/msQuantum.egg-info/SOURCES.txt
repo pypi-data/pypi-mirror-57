@@ -1,0 +1,7 @@
+README.md
+setup.py
+msQuantum/__init__.py
+msQuantum.egg-info/PKG-INFO
+msQuantum.egg-info/SOURCES.txt
+msQuantum.egg-info/dependency_links.txt
+msQuantum.egg-info/top_level.txt
