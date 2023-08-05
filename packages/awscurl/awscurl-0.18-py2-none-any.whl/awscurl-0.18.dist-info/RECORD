@@ -1,0 +1,10 @@
+awscurl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awscurl/__main__.py,sha256=FMLyDr2B6bSUgunDLzKWuBcCbs3I2c2kfo5Bfy3jets,183
+awscurl/awscurl.py,sha256=y9MN-A-OeyIT0TpojbGK9F4ULqyckzNxeQnH4IlMmyo,17293
+awscurl/utils.py,sha256=3aAfkZxuBVA1rJw_7m5ntRRYsWQ2sXnwkXISII9f180,599
+awscurl-0.18.dist-info/LICENSE,sha256=Ku__GaBVB9UK3m6mhn7oDA6_ZJfjb1R0Cv-wdYXJTOw,1083
+awscurl-0.18.dist-info/METADATA,sha256=87U90qFnzjZE13yjr6onxPqmi7mH0R5qy4hwidamJio,436
+awscurl-0.18.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+awscurl-0.18.dist-info/entry_points.txt,sha256=2Nx2zcuFFxE8YvamdhLG7EAgfb8VFG9nceaClM3Acu0,51
+awscurl-0.18.dist-info/top_level.txt,sha256=hsmDphP1GHgqHWgI2Pc0goBB6JQKCF-W00dJBIZOo3M,8
+awscurl-0.18.dist-info/RECORD,,
