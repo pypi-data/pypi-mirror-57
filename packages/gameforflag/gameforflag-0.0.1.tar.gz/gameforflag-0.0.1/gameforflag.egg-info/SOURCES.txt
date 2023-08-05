@@ -1,0 +1,7 @@
+setup.py
+gameforflag/__init__.py
+gameforflag/flag.py
+gameforflag.egg-info/PKG-INFO
+gameforflag.egg-info/SOURCES.txt
+gameforflag.egg-info/dependency_links.txt
+gameforflag.egg-info/top_level.txt
