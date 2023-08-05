@@ -1,0 +1,8 @@
+README.md
+setup.py
+sphinx_copybutton/__init__.py
+sphinx_copybutton.egg-info/PKG-INFO
+sphinx_copybutton.egg-info/SOURCES.txt
+sphinx_copybutton.egg-info/dependency_links.txt
+sphinx_copybutton.egg-info/requires.txt
+sphinx_copybutton.egg-info/top_level.txt
