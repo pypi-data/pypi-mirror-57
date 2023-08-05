@@ -1,0 +1,6 @@
+singer-python<6,>=5.8
+requests>=2.22.0
+cachetools>=3.1.1
+
+[test]
+pytest

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tap-webcrm
+Version: 0.0.2
+Summary: Singer.io tap for extracting data from WebCRM
+Home-page: https://github.com/dreamdata-io/tap-webcrm
+Author: Dreamdata
+License: MIT
+Download-URL: https://github.com/dreamdata-io/tap-webcrm/archive/v0.0.2.tar.gz
+Description: UNKNOWN
+Keywords: singer,io,webcrm,etl,crm
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: test

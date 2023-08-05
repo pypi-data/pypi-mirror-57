@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+tap_webcrm/__init__.py
+tap_webcrm/client.py
+tap_webcrm/stream.py
+tap_webcrm.egg-info/PKG-INFO
+tap_webcrm.egg-info/SOURCES.txt
+tap_webcrm.egg-info/dependency_links.txt
+tap_webcrm.egg-info/entry_points.txt
+tap_webcrm.egg-info/requires.txt
+tap_webcrm.egg-info/top_level.txt
