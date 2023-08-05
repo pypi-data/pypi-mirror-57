@@ -1,0 +1,9 @@
+setup.py
+./__init__.py
+./sharedlib/ocaml.so
+./sharedlib/stdlib.cmi
+ocaml.egg-info/PKG-INFO
+ocaml.egg-info/SOURCES.txt
+ocaml.egg-info/dependency_links.txt
+ocaml.egg-info/requires.txt
+ocaml.egg-info/top_level.txt
