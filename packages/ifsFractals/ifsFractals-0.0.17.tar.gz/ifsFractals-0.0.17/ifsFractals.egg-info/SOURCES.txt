@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+ifsFractals/__init__.py
+ifsFractals/basic.py
+ifsFractals/figures.py
+ifsFractals/generatingPoints.py
+ifsFractals/mathOps.py
+ifsFractals/wordFractals.py
+ifsFractals.egg-info/PKG-INFO
+ifsFractals.egg-info/SOURCES.txt
+ifsFractals.egg-info/dependency_links.txt
+ifsFractals.egg-info/requires.txt
+ifsFractals.egg-info/top_level.txt
