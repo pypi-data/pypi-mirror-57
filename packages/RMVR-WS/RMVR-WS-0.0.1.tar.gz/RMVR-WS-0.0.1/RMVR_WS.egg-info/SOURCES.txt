@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+RMVR_WS.egg-info/PKG-INFO
+RMVR_WS.egg-info/SOURCES.txt
+RMVR_WS.egg-info/dependency_links.txt
+RMVR_WS.egg-info/top_level.txt
+Scrapping/__init__.py
