@@ -1,0 +1,12 @@
+README.md
+setup.py
+newgistics/__init__.py
+newgistics/auth.py
+newgistics/exceptions.py
+newgistics/fulfillments.py
+newgistics/web.py
+newgistics.egg-info/PKG-INFO
+newgistics.egg-info/SOURCES.txt
+newgistics.egg-info/dependency_links.txt
+newgistics.egg-info/requires.txt
+newgistics.egg-info/top_level.txt
