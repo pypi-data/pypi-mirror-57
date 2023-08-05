@@ -1,0 +1,9 @@
+README.md
+setup.py
+scrape_lab.egg-info/PKG-INFO
+scrape_lab.egg-info/SOURCES.txt
+scrape_lab.egg-info/dependency_links.txt
+scrape_lab.egg-info/requires.txt
+scrape_lab.egg-info/top_level.txt
+scrapper/Controller.py
+scrapper/__init__.py
