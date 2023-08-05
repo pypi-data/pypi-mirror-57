@@ -1,0 +1,3 @@
+setuptools
+whell
+Django>=1.11
