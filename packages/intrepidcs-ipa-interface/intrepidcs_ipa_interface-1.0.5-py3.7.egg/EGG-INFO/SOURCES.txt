@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+intrepidcs/__init__.py
+intrepidcs/ipa_interface/__init__.py
+intrepidcs/ipa_interface/ipa_interface.py
+intrepidcs_ipa_interface.egg-info/PKG-INFO
+intrepidcs_ipa_interface.egg-info/SOURCES.txt
+intrepidcs_ipa_interface.egg-info/dependency_links.txt
+intrepidcs_ipa_interface.egg-info/namespace_packages.txt
+intrepidcs_ipa_interface.egg-info/top_level.txt
+test/test.py
