@@ -1,0 +1,11 @@
+zconfig_watchedfile/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zconfig_watchedfile/component.xml,sha256=-ujArWpBi-uN5RVV5fqo1H0NTVi7FxW6-KhBVCDkr24,652
+zconfig_watchedfile/handler.py,sha256=S-1OK3fh-l-GdmiR0bcvjL6-h8yihv_4AF3mj_yA8Ws,384
+zconfig_watchedfile/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zconfig_watchedfile/tests/schema.xml,sha256=cVTXNLcNWNrHEeMIzDr_qmdFQPywEFgLCLXJLe_6l6k,245
+zconfig_watchedfile/tests/test_handler.py,sha256=iaThEFddPWF2xweRliQCgdjNoRJHnYFprmj0ys9_aJ8,1435
+zconfig_watchedfile-1.2.dist-info/LICENSE.txt,sha256=L-6VJW_kS3fJpaNaDbaD2yXByVwFix74JIDLUbTLaiM,2071
+zconfig_watchedfile-1.2.dist-info/METADATA,sha256=u7FVxfbF7MTj7Lk3fwubKrXO0RqzMgMkenChssZBHT8,1849
+zconfig_watchedfile-1.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+zconfig_watchedfile-1.2.dist-info/top_level.txt,sha256=zImpYaIv6BLVkBTZtSj2f4MmJHhUwektqJokGIlcD_o,20
+zconfig_watchedfile-1.2.dist-info/RECORD,,
