@@ -1,0 +1,13 @@
+jupyter_nbrequirements/__about__.py,sha256=KKL-BQhWXHPxtb8Nc_fkqeD2s-Fh-XJCm8F0h4MTupc,506
+jupyter_nbrequirements/__init__.py,sha256=Ge7oXy7q5Xi0E58TD_muWgYkukBjggKdQUORyxc2hQU,18857
+jupyter_nbrequirements/magic_parser.py,sha256=euJt1lcLqFSc34T6G2ZsR5f7mLu7I8RLEBIe6kJL8l4,1759
+jupyter_nbrequirements/static/extension.js,sha256=6wAxFqGMytMKLFBfX2c-_U_yxtgQ4eHd-sS2cAdcZXI,6680
+jupyter_nbrequirements/static/index.js,sha256=Qh9_RBrQJCY7vtoVWlJ_IN-7RvemrvUqxa39aBrESac,1705725
+jupyter_nbrequirements-0.4.0.data/data/etc/jupyter/nbconfig/notebook.d/jupyter-nbrequirements.json,sha256=e49RkmH0XZQmX3zxjFoCpVD5-GbJu71sU1FdZR079N8,76
+jupyter_nbrequirements-0.4.0.data/data/share/jupyter/nbextensions/jupyter-nbrequirements/extension.js,sha256=6wAxFqGMytMKLFBfX2c-_U_yxtgQ4eHd-sS2cAdcZXI,6680
+jupyter_nbrequirements-0.4.0.data/data/share/jupyter/nbextensions/jupyter-nbrequirements/index.js,sha256=Qh9_RBrQJCY7vtoVWlJ_IN-7RvemrvUqxa39aBrESac,1705725
+jupyter_nbrequirements-0.4.0.dist-info/LICENSE,sha256=HiGTk4vmR4tDrQOcnwRDYXdv1rjbg_26OezLBN6d2o0,1071
+jupyter_nbrequirements-0.4.0.dist-info/METADATA,sha256=YamYEVSHh1vfv1b87mxj95naO1tezHeTrFryjgb8YRg,4178
+jupyter_nbrequirements-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jupyter_nbrequirements-0.4.0.dist-info/top_level.txt,sha256=M9x0T77yD_fArXWkjlSbrrFog54AYFyi5xpDjiGr_zA,23
+jupyter_nbrequirements-0.4.0.dist-info/RECORD,,
