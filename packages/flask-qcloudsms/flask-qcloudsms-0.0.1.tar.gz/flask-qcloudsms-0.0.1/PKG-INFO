@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: flask-qcloudsms
+Version: 0.0.1
+Summary: Flask Extension for qcloud sms
+Home-page: https://github.com/codeif/flask-qcloudsms
+Author: codeif
+Author-email: me@codeif.com
+License: MIT
+Description: flask-qcloudsms
+        ==================
+        
+        腾讯云发送短信的Flask扩展
+        
+        
+        配置
+        ------
+        
+        ==========================  ===================
+        配置项                       说明
+        ==========================  ===================
+        QCLOUDSMS_APPID             appid
+        QCLOUDSMS_APPKEY            appkey
+        QCLOUDSMS_DEFAULT_SIGN      默认签名
+        ==========================  ===================
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
