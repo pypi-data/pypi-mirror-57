@@ -1,0 +1,8 @@
+README.md
+setup.py
+autoaugment/__init__.py
+autoaugment/autoaugment.py
+randaugment.egg-info/PKG-INFO
+randaugment.egg-info/SOURCES.txt
+randaugment.egg-info/dependency_links.txt
+randaugment.egg-info/top_level.txt
