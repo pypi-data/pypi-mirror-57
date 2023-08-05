@@ -1,0 +1,11 @@
+mutapath/__init__.py,sha256=ITNQJ1k67wt6LZBPyKIUvbGLtyyOOOp-VjB1d-FBmd8,119
+mutapath/decorator.py,sha256=NtvG_e-MtqBoyiWgwXGmDQ2zHGzxt10zkwX_3hVwS0M,4981
+mutapath/defaults.py,sha256=AbCzTLVSxBmr1_S5uIM5XZ0brBpD1-i5iuMwbQ355k8,369
+mutapath/exceptions.py,sha256=5K2yVrpCpwdwxiSefX58BRvgixY3ct-VKr4fWccdiho,139
+mutapath/immutapath.py,sha256=2Q82ScnsnxIVRXYh3ht01DSMhSmeKPMg6AN2xKvvD8k,20706
+mutapath/lock_dummy.py,sha256=BKIXUngSQ98rdtXZa_HSSftyZYSekk_Anj0Y8DaQUU0,329
+mutapath/mutapath.py,sha256=vduY56BI0SWLjYFFMJzixXQNJdfsvFw9L-Jm663hSA0,1267
+mutapath-0.15.5.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+mutapath-0.15.5.dist-info/WHEEL,sha256=KvY1g7zIOl4mQEMkderYQrWQRhoTqMOhqr9g8hbxY54,85
+mutapath-0.15.5.dist-info/METADATA,sha256=u119cKxlaJp_oc0v6fAedu3KwsERfHDHGr5Fn-PVpzo,5126
+mutapath-0.15.5.dist-info/RECORD,,
