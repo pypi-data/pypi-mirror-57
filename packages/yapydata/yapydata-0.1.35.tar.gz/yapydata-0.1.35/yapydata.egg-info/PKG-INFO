@@ -1,0 +1,246 @@
+Metadata-Version: 1.2
+Name: yapydata
+Version: 0.1.35
+Summary: The 'yapydata' package provides miscellaneous *Python* utilities for the adaptation of platform indepentent APIs.
+Home-page: https://sourceforge.net/projects/yapydata/
+Author: Arno-Can Uestuensoez
+Author-email: acue_sf2@sourceforge.net
+Maintainer: acue
+Maintainer-email: acue_sf2@sourceforge.net
+License: Artistic-License-2.0 + Forced-Fairplay-Constraints
+Download-URL: https://sourceforge.net/projects/yapydata/files/
+Project-URL: home, https://sourceforge.net/projects/YapyData
+Project-URL: documents, https://YapyData.sourceforge.io/
+Project-URL: runtimerepo, https://pypi.org/project/yapydata/
+Project-URL: downloads, https://pypi.org/project/yapydata/
+Project-URL: downloads1, https://sourceforge.net/projects/yapydata/
+Project-URL: source, https://github.com/ArnoCan/yapydata/
+Project-URL: source1, https://sourceforge.net/projects/yapydata/
+Project-URL: source2, https://bitbucket.org/acue/yapydata/
+Project-URL: tracker, https://github.com/ArnoCan/yapydata/issues
+Description: YapyData
+        =========
+        
+        The *YapyData* - Yet Another Python Data - package provides miscellaneous data processing utilities
+        for the adaptation of abstract APIs at the low-level part of the software stack.
+        The package *YapyData* is member of the *DataFusion* family by providing the basic 
+        syntaxes and features required for the low-level components of modern software stacks.
+        The features comprise the management and processing of structured data types including the definition,
+        persistence, and the processing. The processing supports hereby the arbitrary mixed syntaxes for the
+        sources and targets.
+        The initial supported data definition languages are:
+        
+        * *JSON*
+        * *Python* - used as dynamic DDL based on pickling for persistence
+        * *XML*
+        * *YAML*
+        
+        In addition the syntaxes defined by the widespread configuration files:
+        
+        * *INI* - multiple variants: *INI*, *INIX*, *CFG*, *CONF*
+        * *.properties* - the *Java* configuration syntax in *INI* style
+        
+        The design targets of the low-level package *YapyData* are in particular:
+        
+        * core processing of heterogeneous data definition syntaxes
+        * abstract processing of heterogeneous input data structures against canonical reference data
+        * a mix of APIs for flexibility and use-case driven high performance 
+        
+        This in particular supports the modularization, and the automation of the processing of
+        large scale heterogeneous data sets with canonical reference data.
+        
+        Last but not least the whole set of standard *Python* and *platforms* implementations is supported - and tested of course:
+        
+        * *CPython*
+        * *IPython*
+        * *IronPython*
+        * *Jython*
+        * *PyPy*
+        
+        soon:
+        
+        * *Cython*
+        * *Stackless*
+        
+        
+        **Online documentation**:
+        
+        * https://yapydata.sourceforge.io/
+        
+        
+        **Runtime-Repository**:
+        
+        * PyPI: https://pypi.org/project/yapydata/
+        
+          Install: *pip install yapydata*, see also section 'Install' of the online documentation.
+        
+        
+        **Downloads**:
+        
+        * sourceforge.net: https://sourceforge.net/projects/yapydata/files/
+        
+        * bitbucket.org: https://bitbucket.org/acue/yapydata
+        
+        * github.com: https://github.com/ArnoCan/yapydata/
+        
+        * pypi.org: https://pypi.org/project/yapydata/
+        
+        
+        Project Data
+        ------------
+        
+        * PROJECT: 'YapyData'
+        
+        * MISSION: Canonical numeric platform IDs for the core Python environment.
+        
+        * VERSION: 00.01
+        
+        * RELEASE: 00.01.035
+        
+        * STATUS: beta
+        
+        * AUTHOR: Arno-Can Uestuensoez
+        
+        * COPYRIGHT: Copyright (C) 2019 Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez
+        
+        * LICENSE: Artistic-License-2.0 + Forced-Fairplay-Constraints
+        
+        Runtime Environment
+        -------------------
+        For a comprehensive list refer to the documentation.
+        
+        **Python Syntax Support**
+        
+        *  Python2.7, and Python3
+        
+        **Python Implementation Support**
+        
+        *  CPython, IPython, IronPython, Jython, and PyPy
+        
+        **OS on Server, Workstation, Laptops, Virtual Machines, and Containers**
+        
+        * Linux: AlpineLinux, ArchLinux, CentOS, Debian, Fedora, Gentoo, OpenSUSE, Raspbian, RHEL, Slackware, SLES, Ubuntu, ...  
+        
+        * BSD: DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, GhostBSD, TrueOS, NomadBSD
+        
+        * OS-X: Snow Leopard
+        
+        * Windows: Win10, Win8.1, Win7, WinXP, Win2019, Win2016, Win2012, Win2008, Win2000
+        
+        * WSL-1.0: Alpine, Debian, KaliLinux, openSUSE, SLES, Ubuntu
+        
+        * Cygwin
+        
+        * UNIX: Solaris10, Solaris11
+        
+        * Minix: Minix3
+        
+        * ReactOS
+        
+        **Network and Security**
+        
+        * Network Devices: OpenWRT
+        
+        * Security: KaliLinux, pfSense, BlackArch, ParrotOS, Pentoo
+        
+        **OS on Embedded Devices**
+        
+        * RaspberryPI: ArchLinux, CentOS, OpenBSD, OpenWRT, Raspbian
+        
+        * ASUS-TinkerBoard: Armbian
+        
+        * By special modules e.g. for Adafruit Trinket M0: CircuitPython, MicroPython
+        
+        Current Release
+        ---------------
+        
+        Major Changes:
+        
+        * Initial version.
+        
+        * started with basic API - but those in production quality as required for other projects.
+        
+        ToDo:
+        
+        * add additional APIs
+        
+        * add .Properties - yapydata.datatree.datatreesprop
+        
+        * AIX
+        
+        * MicroPython, CircuitPython
+        
+        * test Windows10IoT-Core
+        
+        nn
+Keywords: module loader  Linux Unix Windows OS-X MacOS BSD  FreeBSD OpenBSD NetBSD DragonFlyBSD  SnowLeopard Darwin Solaris SunOS SunOS5 Aix HP-UX  CentOS RHEL Fedora Debian Ubuntu SuSE OpenSUSE SLES  ArchLinux BlackArchLinux BlackArch Arch  AlpineLinux Alpine  ScientificLinux Scientific  Armbian Raspbian  Gentoo  OpenWRT Kali KaliLinux  Minix Minx3  Cygwin  Windows10 Windows7 WindowsXP  Windows2003 Windows2008 Windows2010 Windows2012 Windows2016 Windows2019  ReactOS  WSL
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Other Environment
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Free To Use But Restricted
+Classifier: License :: OSI Approved :: Artistic License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Other OS
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: POSIX :: BSD :: OpenBSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: Other
+Classifier: Operating System :: POSIX :: SunOS/Solaris
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Java
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: IronPython
+Classifier: Programming Language :: Python :: Implementation :: Jython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Internet
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Java Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: pygame
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Operating System
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: System :: Software Distribution
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
