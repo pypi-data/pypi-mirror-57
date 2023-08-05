@@ -1,0 +1,3 @@
+[console_scripts]
+programme = programme.cli:main
+

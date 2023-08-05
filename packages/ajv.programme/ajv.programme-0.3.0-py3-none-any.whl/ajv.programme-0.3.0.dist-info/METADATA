@@ -1,0 +1,53 @@
+Metadata-Version: 2.0
+Name: ajv.programme
+Version: 0.3.0
+Summary: Simple programme generator
+Home-page: https://github.com/andrew-vant/programme
+Author: Andrew Vant
+Author-email: ajv@andrewvant.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: jinja2
+
+programme
+=========
+
+programme is a program that writes programmes.
+
+This isn't really intended for general use. It's something I put
+together so someone I know could make nice-ish programmes for music
+recitals without having to manually futz with word processor layouts.
+But if you run across it on pypi, you're welcome to use it.
+
+Quick Start
+-----------
+
+Install ``programme`` and generate a starting file:
+
+::
+
+    pip3 install ajv.programme
+    programme --init > students.tsv
+
+
+Open ``students.tsv`` in your spreadsheet program of choice. It may
+prompt you for import settings; the only relevant one is the delimiter,
+which should be a tab.
+
+Fill in the columns on the spreadsheet. Save when done. Then:
+
+::
+
+    programme students.tsv output.html
+
+That's it. Open output.html and you should get something usable. If you
+specified student images in the tsv file, and if those files are present
+in the same directory, they'll be included in the output.
+
+You can run ``programme --help`` to see additional options.
+
+

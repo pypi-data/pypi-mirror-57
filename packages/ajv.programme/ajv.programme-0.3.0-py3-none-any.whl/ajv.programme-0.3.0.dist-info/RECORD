@@ -1,0 +1,13 @@
+ajv.programme-0.3.0.dist-info/DESCRIPTION.rst,sha256=mqt2gw7AFX9L3fgNS45uEEjFJ38r5QJISt3rJoRdJec,1021
+ajv.programme-0.3.0.dist-info/METADATA,sha256=tK39Q5aYpQhbpGWBU8yFClNI14viKOcVmyo9APpgwVY,1456
+ajv.programme-0.3.0.dist-info/RECORD,,
+ajv.programme-0.3.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+ajv.programme-0.3.0.dist-info/entry_points.txt,sha256=jslJufuFCxYXR1WmKQ5lcharNimdC0Bx04gSBviSaew,50
+ajv.programme-0.3.0.dist-info/metadata.json,sha256=fAJppvlrmMYxiGda_wBrMpwD-DAWrBmQnSl2gB-9Ex4,808
+ajv.programme-0.3.0.dist-info/top_level.txt,sha256=mU4j-svzWSLh5WkmvrqhHI9gNyAFGk9e0SKgr8o3Q8Y,10
+programme/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+programme/base.tsv,sha256=ir5zQzcNRtg7qlAV9zh5zZVBp-nY8RoHBohSV1nF3yU,59
+programme/cli.py,sha256=c0YGQaYE1JD0dU-_AJXYZOUtJxMIGtcT1PRWg5EShJQ,4633
+programme/style.css,sha256=lU0j9N85WyRIHSR0mQmIURQE7DIFbZeJl8W4F4af2-c,480
+programme/template.jinja,sha256=nKbjmApUs5ei0QwGA7CCFzIvQkEs-cAHrdUkrOYHjtA,604
+programme/version.txt,sha256=VQYTU3_EiPOzcq90pAAYefASyEZbgW8bhcbTRGss-0k,5

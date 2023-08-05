@@ -1,0 +1,23 @@
+<html>
+<head>
+    <style>
+    {{ css | indent }}
+    </style>
+</head>
+<body>
+    <div class=students>
+    {%- for student in students %}
+        <div class=student>
+            <ul class=details>
+                <li class=name>{{ student.firstname }} {{ student.lastname }}</span>
+                {%- for key in details %}
+                <li class={{ key }}>{{ student.get(key, "").title() }}</li>
+                {%- endfor %}
+            </ul>
+        </div>
+        <div class=portrait style="background-image: url('{{ student.image }}')">
+        </div>
+    {%- endfor %}
+    </div>
+</body>
+</html>
