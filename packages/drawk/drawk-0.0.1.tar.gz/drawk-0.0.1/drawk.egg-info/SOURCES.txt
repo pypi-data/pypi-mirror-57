@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+drawk/__init__.py
+drawk/drawk.py
+drawk.egg-info/PKG-INFO
+drawk.egg-info/SOURCES.txt
+drawk.egg-info/dependency_links.txt
+drawk.egg-info/not-zip-safe
+drawk.egg-info/requires.txt
+drawk.egg-info/top_level.txt
