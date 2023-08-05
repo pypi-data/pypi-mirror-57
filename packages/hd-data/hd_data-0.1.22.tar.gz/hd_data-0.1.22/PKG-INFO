@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: hd_data
+Version: 0.1.22
+Summary: Happy Dev website data
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Description: # HD data website
+        
+        To install yhe project, you can refer to the [official Sib Documentation](https://git.happy-dev.fr/startinblox/devops/doc/wikis/install_sib_server)
+        
+        ## installation
+        `pip install sib-manager`
+        `sib startproject mysite -m hd_data`
+        
+        ## run project
+        `cd mysite`
+        `python manage.py runserver`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
