@@ -1,0 +1,16 @@
+COPYING
+MANIFEST.in
+README.md
+gmicpy.cpp
+setup.cfg
+setup.py
+/export/home/schrode191/Productions/GMIC/gmic-building/gmic-2.7.5/src/gmic.cpp
+gmic.egg-info/PKG-INFO
+gmic.egg-info/SOURCES.txt
+gmic.egg-info/dependency_links.txt
+gmic.egg-info/top_level.txt
+src/gmic/src/CImg.h
+src/gmic/src/gmic.cpp
+src/gmic/src/gmic.h
+src/gmic/src/gmic_stdlib.h
+src/gmic/src/use_libgmic.cpp
