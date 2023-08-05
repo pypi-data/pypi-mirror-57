@@ -1,0 +1,1 @@
+http://github.com/ixna/filetype.py/tarball/master#egg=filetype-1.0.6
