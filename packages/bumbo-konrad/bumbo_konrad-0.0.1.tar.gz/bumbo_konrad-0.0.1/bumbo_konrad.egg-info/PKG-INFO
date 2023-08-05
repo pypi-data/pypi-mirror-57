@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bumbo-konrad
+Version: 0.0.1
+Summary: Bumbo Python Web Framework built for learning purposes.
+Home-page: UNKNOWN
+Author: Konrad Galczynski
+Author-email: konradgalczynski07@gmail.com
+License: MIT
+Description: 
+        ## bumbo_konrad
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
