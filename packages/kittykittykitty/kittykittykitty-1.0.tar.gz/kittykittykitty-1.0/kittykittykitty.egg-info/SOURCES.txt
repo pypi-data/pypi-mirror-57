@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+kittykittykitty/__init__.py
+kittykittykitty/lulz.py
+kittykittykitty.egg-info/PKG-INFO
+kittykittykitty.egg-info/SOURCES.txt
+kittykittykitty.egg-info/dependency_links.txt
+kittykittykitty.egg-info/entry_points.txt
+kittykittykitty.egg-info/not-zip-safe
+kittykittykitty.egg-info/requires.txt
+kittykittykitty.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+colorama
+
+[dev]
+pytest
+pytest-pycodestyle
+sphinx_rtd_theme
