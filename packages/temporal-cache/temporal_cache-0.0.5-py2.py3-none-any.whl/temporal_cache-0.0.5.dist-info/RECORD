@@ -1,0 +1,10 @@
+temporalcache/__init__.py,sha256=Y9ActXaPVbprX2-hePG-i3brEwp9OuoOJYkyfnpyuo0,154
+temporalcache/expire.py,sha256=6hatZu5Fb4vx3AJCa6fQ7IMkocYrTt3r7xquGJrM9KY,2902
+temporalcache/interval.py,sha256=wqrdy_YqBvQGaIbJ-KwTBhUoWsvWZiXrPvIr6lVYnvk,1951
+temporalcache/persistent_lru_cache.py,sha256=uoJV8YKkPIpg3pzYRL0ZYXj3NNzFG_ryw3Fb2EYIyGs,10427
+temporalcache/utils.py,sha256=WKlIR9k9OczSkq5mkQmnxqy0zcp3Fv_FB32RyAmbObo,2642
+temporal_cache-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+temporal_cache-0.0.5.dist-info/METADATA,sha256=MeOF25d5H90PDiQiBfLVrIiB5qT63FHPWG_KM6xF6P0,2618
+temporal_cache-0.0.5.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+temporal_cache-0.0.5.dist-info/top_level.txt,sha256=JgtWZsQtwZSFLA2NR-ocNOfUzLdfixODX3ym5cVhCM8,14
+temporal_cache-0.0.5.dist-info/RECORD,,
