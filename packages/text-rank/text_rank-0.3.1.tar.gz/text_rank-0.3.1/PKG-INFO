@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: text_rank
+Version: 0.3.1
+Summary: Text Rank
+Home-page: https://github.com/blester125/text_rank
+Author: blester125
+Author-email: blester125@gmail.com
+License: MIT
+Download-URL: https://github.com/blester125/text_rank/archive/0.3.1.tar.gz
+Description: # Text Rank
+        
+        ##
+        
+        [![PyPi Version](https://img.shields.io/pypi/v/text-rank.svg)](https://pypi.org/project/text-rank/)
+        
+        [![Actions Status](https://github.com/blester125/text-rank/workflows/Unit%20Test/badge.svg)](https://github.com/blester125/text-rank/actions)
+        
+        Implementation of text rank algorithms described in [(Mihalcea and Tarau, 2004)](http://www.aclweb.org/anthology/W04-3252)
+        
+Keywords: NLP
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test

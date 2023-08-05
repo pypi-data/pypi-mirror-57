@@ -1,0 +1,3 @@
+[console_scripts]
+text-rank-demo = text_rank.main:main
+
