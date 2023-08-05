@@ -1,0 +1,50 @@
+# BenBot
+Python wrapper for BenBot.
+
+[![Requires: Python 3.x](https://img.shields.io/pypi/pyversions/BenBot.svg)](https://pypi.org/project/BenBot/)
+[![BenBot Version: 1.0.1](https://img.shields.io/pypi/v/BenBot.svg)](https://pypi.org/project/BenBot/)
+
+## Installing:
+### Synchronous:
+Windows: ``py -3 -m pip install BenBot``<br>
+Linux/macOS: ``python3 -m pip install BenBot``
+
+### Asynchronous:
+Windows: ``py -3 -m pip install AsyncBenBot``<br>
+Linux/macOS: ``python3 -m pip install AsyncBenBot``
+
+## Examples:
+```
+import BenBot
+
+BenSearch = BenBot.getSkinId("Ghoul Trooper")
+print(BenSearch)
+```
+
+fortnitepy example:
+```
+import fortnitepy
+import BenBotAsync
+
+client = fortnitepy.Client(
+    email='example@email.com',
+    password='password123'
+)
+
+@client.event
+async def event_friend_message(message):
+    args = message.content.split()
+    split = args[1:]
+    content = " ".join(split)
+
+    if args[0] == '!skin':
+        skinId = await BenBotAsync.getSkinId(content)
+        await client.user.party.me.set_outfit(asset=skinId)
+
+client.run()
+```
+
+This would output:<br>
+```CID_029_Athena_Commando_F_Halloween```
+
+The list of functions is on the Wiki.
