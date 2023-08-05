@@ -1,0 +1,10 @@
+README.md
+setup.py
+thundersvm/__init__.py
+thundersvm/libthundersvm.so
+thundersvm/thundersvm.py
+thundersvm_cuda10.egg-info/PKG-INFO
+thundersvm_cuda10.egg-info/SOURCES.txt
+thundersvm_cuda10.egg-info/dependency_links.txt
+thundersvm_cuda10.egg-info/requires.txt
+thundersvm_cuda10.egg-info/top_level.txt
