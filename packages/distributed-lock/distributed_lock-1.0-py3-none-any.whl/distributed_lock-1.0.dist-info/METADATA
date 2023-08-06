@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: distributed-lock
+Version: 1.0
+Summary: Distributed lock
+Home-page: https://github.com/maxpowel/python-distributed-lock
+Author: Álvaro García
+Author-email: maxpowel@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/maxpowel/python-distributed-lock/archive/master.zip
+Keywords: redis,distributed,lock
+Platform: UNKNOWN
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+Requires-Dist: redis
+
+UNKNOWN
+
+
