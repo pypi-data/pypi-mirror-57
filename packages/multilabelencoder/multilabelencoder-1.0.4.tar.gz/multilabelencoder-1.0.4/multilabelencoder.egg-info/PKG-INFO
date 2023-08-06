@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: multilabelencoder
+Version: 1.0.4
+Summary: Labelencoder for many pandas dataframe columns package
+Home-page: https://github.com/emnajaoua/multilabelencoder
+Author: Emna Jaoua
+Author-email: emnajaoua1@gmail.com
+Maintainer: Emna Jaoua
+Maintainer-email: emnajaoua1@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
