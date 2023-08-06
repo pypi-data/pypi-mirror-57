@@ -1,0 +1,9 @@
+[
+    {
+        "selector": "//book",
+        "attrs": [
+            {"attr": "id", "regex": "^bk\\d{3}$"}
+        ],
+        "description": "Rule 001: Book id isn't bkddd where d=0..9 - %(id)s"
+    }
+]

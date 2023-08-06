@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pylintxml/main.py
+pylintxml.egg-info/PKG-INFO
+pylintxml.egg-info/SOURCES.txt
+pylintxml.egg-info/dependency_links.txt
+pylintxml.egg-info/entry_points.txt
+pylintxml.egg-info/requires.txt
+pylintxml.egg-info/top_level.txt
+pylintxml/examples/books/.lintxml
+pylintxml/examples/books/sample_fail.xml
+pylintxml/examples/books/sample_ok.xml
+pylintxml/examples/qt/.lintxml
+pylintxml/examples/qt/sample.xml

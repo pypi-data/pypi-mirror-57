@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pylintxml
+Version: 0.0.6
+Summary: XML linter
+Home-page: UNKNOWN
+Author: BPL.
+Author-email: 
+License: MIT
+Description: ## What is pylintxml?
+        
+        pylintxml is a simple tool that allows creating simple xml 'linters'.
+        
+        # Installation
+        
+        The best way is to get the pip package management tool (or use a virtualenv)
+        and run the following:
+        
+        `pip install pylintxml`
+        
+        ## Examples
+        
+        Check out pylintxml\examples folder
+        
+        Examples:
+        
+        - `cd examples\qt && pylintxml sample.xml`
+        - `cd examples\qt && pylintxml sample.xml -s`
+        - `cd examples\qt && pylintxml sample.xml -s -v`
+        - `cd examples && pylintxml -r books\.lintxml books\sample.xml -s`
+        - `cd examples\books && pylintxml sample.xml -v`
+        
+        ## Usage
+        
+        `pylintxml --help`
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
