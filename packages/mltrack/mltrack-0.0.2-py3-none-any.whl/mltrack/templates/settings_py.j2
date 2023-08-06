@@ -1,0 +1,27 @@
+# store project-wide settings here
+from pathlib import Path
+
+project_dir = Path(__file__).resolve().parent
+data_dir = project_dir / "data"
+
+data_dir_external = data_dir / "external"
+data_dir_interim = data_dir / "interim"
+data_dir_raw = data_dir / "raw"
+data_dir_processed = data_dir / "processed"
+
+
+#paths specific to sample project
+download_url = "http://deeplearning.net/data/mnist/mnist.pkl.gz"
+mnist_gz_filepath = data_dir_external / "mnist.pkl.gz"
+
+train_set_filepath = data_dir_raw / "train_set.pkl"
+valid_set_filepath = data_dir_raw / "valid_set.pkl"
+test_set_filepath = data_dir_raw / "test_set.pkl"
+
+scaler_pkl = data_dir_interim / 'scaler.pkl'
+pca_pkl = data_dir_interim / 'pca.pkl'
+
+feature_data_filepath = data_dir_interim / "feature_data.pkl"
+
+model_pkl = data_dir_processed / 'model.pkl'
+model_eval = data_dir_processed / 'model_evaluation.txt'

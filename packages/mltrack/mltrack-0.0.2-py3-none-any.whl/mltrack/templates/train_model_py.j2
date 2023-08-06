@@ -1,0 +1,28 @@
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from settings import feature_data_filepath
+from settings import model_pkl 
+from sklearn.metrics import log_loss
+
+import pickle
+
+model_log_reg = LogisticRegression(solver='lbfgs', multi_class='multinomial', max_iter=200)
+
+def train_persist_model(model):
+    feature_data = pickle.load(open(feature_data_filepath, 'rb'))
+
+    x_train = feature_data["x_train"]
+    y_train = feature_data["y_train"]
+    x_valid = feature_data["x_valid"]
+    y_valid = feature_data["y_valid"]
+    print("starting model training...")
+    model.fit(x_train, y_train)
+    print("finished training model...")
+    y_train_pred = model.predict_proba(x_train)
+    print(f"train error (log loss) : {log_loss(y_true=y_train, y_pred=y_train_pred)}")
+    y_valid_pred = model.predict_proba(x_valid)
+    print(f"validation error (log loss): {log_loss(y_true=y_valid, y_pred=y_valid_pred)}")
+    pickle.dump(model, open(model_pkl, 'wb'))
+
+if __name__ == '__main__':
+    train_persist_model(model= model_log_reg)

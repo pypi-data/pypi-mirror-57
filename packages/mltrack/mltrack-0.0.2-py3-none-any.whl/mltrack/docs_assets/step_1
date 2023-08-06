@@ -1,0 +1,7 @@
+digraph step_1 {
+	graph [rankdir=LR size="24,32"]
+	node [color=lightblue2 style=filled]
+	"gen_raw_1.py"
+	"raw_data_1.txt"
+	"gen_raw_1.py" -> "raw_data_1.txt" [label="python gen_raw_1.py > raw_data_1.txt"]
+}
