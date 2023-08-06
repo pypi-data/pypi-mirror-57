@@ -1,0 +1,11 @@
+-r requirements.txt
+coverage
+mock
+pbs; sys_platform == 'win32'
+pep257
+pre-commit
+pylint>2
+pytest
+radon
+recommonmark
+sh; sys_platform != 'win32'
