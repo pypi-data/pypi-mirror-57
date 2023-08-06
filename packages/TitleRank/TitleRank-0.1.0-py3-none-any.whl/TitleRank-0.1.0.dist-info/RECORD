@@ -1,0 +1,14 @@
+TitleRank/TitleRank.py,sha256=pKHUl9o0l_7qwa7bp2C0-5kQOLMJ82vjTnk6cl7wIC0,11536
+TitleRank/__init__.py,sha256=V30J0fFGceSJL_YLsbcKFsxXivbSsQXbERAKLcWTe_k,339
+TitleRank/data/stopwords.txt,sha256=JBCqMXIeFmXd5hr0vPNO-x-GStRAlkKPmr59ycJTdtY,34494
+TitleRank/data/user_stopwords.txt,sha256=JzfXaJJ_ytqwwEajHSltyAom0WMTOkZc08Ff016bNc0,3
+TitleRank/models/news_title.model,sha256=iciDyjEqkUlPrbB8wjdYYqdlW-QsSfSArgbYwUAHvfc,466320
+TitleRank/models/news_title_5w.model,sha256=wNLBndQp8Zwk4qBlzo1SmpERjLgV9oQpEzBL3PYrE3o,1188787
+TitleRank/models/news_title_8w.model,sha256=St6DdIs9bMoSX3AYINsT_Y_BBLTG1x9KVBpz5jW7Jsk,1852717
+TitleRank/utils/__init__.py,sha256=X6wuivybOqJUc9XAV1G526ENCwJ4vcrDu8vZCGdV_Lg,338
+TitleRank/utils/textprocess.py,sha256=RO7-4LHRYqiWX2yS2CCD3K46hdZURrHGKsOP8zyVyuI,1007
+TitleRank-0.1.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+TitleRank-0.1.0.dist-info/METADATA,sha256=dv3qg4xE30PlDBf6IJ-g_ObF22Io3_J-YPYC8b-fCJc,645
+TitleRank-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+TitleRank-0.1.0.dist-info/top_level.txt,sha256=neglYN9__kYT3vRMG_BHsLknaL_Z7ltKVwcuCCQ1r7M,10
+TitleRank-0.1.0.dist-info/RECORD,,
