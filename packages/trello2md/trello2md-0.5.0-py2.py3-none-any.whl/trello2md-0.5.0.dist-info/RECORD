@@ -1,0 +1,10 @@
+trello2md/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trello2md/__main__.py,sha256=gbh0MzfBfXL3dZPVL4qrmQhlc5zJ-gVqT_rx68fwswg,136
+trello2md/api.py,sha256=iOOXaQWdM-dmpixTK5SevIwu_hgj5dTgv4bpzzOozA8,4821
+trello2md/cli.py,sha256=Nlf-YCHLfI_XLPR5XX67Dye57_PAnbF-wwsxYtb-w4k,4541
+trello2md-0.5.0.dist-info/LICENSE.txt,sha256=_twM4pulWzTFDINbldXgREyNllQpN4k66IfTuYiXHKA,1071
+trello2md-0.5.0.dist-info/METADATA,sha256=JPjl0ZkUCQx5Rm-uX1xyXmv1Kf_hZ16E6YS_WWoME2Y,3163
+trello2md-0.5.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+trello2md-0.5.0.dist-info/entry_points.txt,sha256=3CLX6G9s77JLBTf5Ij-Ev1HeroVHJzuGYMbz-xR_AJg,55
+trello2md-0.5.0.dist-info/top_level.txt,sha256=hgWrSasN79AmbPbC87olueU45Uf1oMNvFsTULuCXbMs,10
+trello2md-0.5.0.dist-info/RECORD,,
