@@ -1,0 +1,3 @@
+[console_scripts]
+remediation = remediation.cli:main
+
