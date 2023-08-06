@@ -1,0 +1,8 @@
+ann/ANN.py,sha256=DisFKn6UgsFYFsyiazG73VFQx7GRRkUNygdPwwHd8a0,3336
+ann/__init__.py,sha256=WUTBi5Jr8dhf8RVT9cvwJ61kTZl4uRLc0TSYuZ-jsYU,268
+ann/utils.py,sha256=iOOyhssUGEPF4NuNnfxNIZ4-8rJHzU_QIi3jdLwrviY,767
+fast_ann-2019.12.6.20.49.36.dist-info/METADATA,sha256=Lqs66-AT8V_ZncbVvD7_Zw71J8M401gzS_03H69JnLg,1237
+fast_ann-2019.12.6.20.49.36.dist-info/RECORD,,
+fast_ann-2019.12.6.20.49.36.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+fast_ann-2019.12.6.20.49.36.dist-info/entry_points.txt,sha256=2IdGZK1NmftNtHm_zLTVOunMuFbJ_B1guQeEy-JeHTQ,47
+fast_ann-2019.12.6.20.49.36.dist-info/top_level.txt,sha256=KjvAXQfWP2DojfH4VK8xQkiUspMBxnG5xX50vCsBKqg,4
