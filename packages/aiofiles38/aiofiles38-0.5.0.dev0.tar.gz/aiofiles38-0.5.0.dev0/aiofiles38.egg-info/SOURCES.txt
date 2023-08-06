@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+aiofiles/__init__.py
+aiofiles/base.py
+aiofiles/os.py
+aiofiles/threadpool/__init__.py
+aiofiles/threadpool/binary.py
+aiofiles/threadpool/text.py
+aiofiles/threadpool/utils.py
+aiofiles38.egg-info/PKG-INFO
+aiofiles38.egg-info/SOURCES.txt
+aiofiles38.egg-info/dependency_links.txt
+aiofiles38.egg-info/top_level.txt
