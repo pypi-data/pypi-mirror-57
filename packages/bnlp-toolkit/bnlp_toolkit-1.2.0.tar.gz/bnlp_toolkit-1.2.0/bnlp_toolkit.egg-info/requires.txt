@@ -1,0 +1,6 @@
+sentencepiece
+gensim
+nltk
+fasttext
+numpy
+scipy
