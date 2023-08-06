@@ -1,0 +1,12 @@
+textanalysis_python_sdk/__init__.py,sha256=E_nrWj9VcuAG01GrOLP28fKazmsSIHaJvYkCTZOoNEA,239
+textanalysis_python_sdk/entity.py,sha256=0IZq34uzb11xIKAYb4wS0wGOOei7DOfgOo2vqkXwFlM,1555
+textanalysis_python_sdk/enumtypes.py,sha256=E-uw2XsKE5oOzON-KbfwqjvXn3BLwcS4Lgqrj9qu8TA,3103
+textanalysis_python_sdk/exception.py,sha256=-GgHM52sGwuGLRixj6PKEQdnzkxPYqTSGB_96GsI0Ik,46
+textanalysis_python_sdk/sentence.py,sha256=H5k9q9IBfcJv2qlT4TsegxGSnmoGo5k1WZLBXxtG7gM,1579
+textanalysis_python_sdk/textanalysis.py,sha256=rX5xBnFZEoIXyrCcR1fiTygD0dSJsYF_iabOuaENpd4,4385
+textanalysis_python_sdk/textanalysisanswer.py,sha256=ic7cejz9Wqt21krZ8oYAKWoXuuLjD1Tfi3j4Xe-Ofnw,8623
+neticle_textanalysis_api_sdk-3.0.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+neticle_textanalysis_api_sdk-3.0.0.dist-info/METADATA,sha256=qgXMTngTFt0wnyyi1bN_5B_Aa28pHzFETTQfiLdbUyc,2347
+neticle_textanalysis_api_sdk-3.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+neticle_textanalysis_api_sdk-3.0.0.dist-info/top_level.txt,sha256=HCzYgNyT-W0bj03W2t8SrNl30Jp81zg01t7hrGZcYNM,24
+neticle_textanalysis_api_sdk-3.0.0.dist-info/RECORD,,
