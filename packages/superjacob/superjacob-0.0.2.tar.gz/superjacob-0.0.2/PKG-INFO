@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: superjacob
+Version: 0.0.2
+Summary: Yet another autodiff package (YAAP
+Home-page: https://github.com/ADMonsters/cs207-FinalProject
+Author: Benjamin Levy, Mark Miao, Zhenru Wang, Kidus Negesse
+License: UNKNOWN
+Description: # superjacob is a package for automatic differentiation
+        
+        [![Build Status](https://travis-ci.com/ADMonsters/cs207-FinalProject.svg?branch=master)](https://travis-ci.com/ADMonsters/cs207-FinalProject)
+        
+        [![codecov](https://codecov.io/gh/ADMonsters/cs207-FinalProject/branch/master/graph/badge.svg)](https://codecov.io/gh/ADMonsters/cs207-FinalProject)
+        
+        ## A guide for using this package can be found in docs/documentation.ipynb (How to Use section)
+        
+        ## Developed by CS 207 Group 2
+        
+        - Benjamin Levy
+        - Mark Miao
+        - Kidus Negesse
+        - Zhenru Wang
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
