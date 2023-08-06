@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: briar_repl
+Version: 19.12.14
+Summary: briar cli-messenger for briar:headless
+Home-page: https://code.briarproject.org/fphemeral/briar_repl
+License: UNKNOWN
+Author: fphemeral
+Author-email: fphemeral@i2pmail.org
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
