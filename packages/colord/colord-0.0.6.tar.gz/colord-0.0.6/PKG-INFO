@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: colord
+Version: 0.0.6
+Summary: colord is a python package for multiplatform colors.
+Home-page: https://github.com/hinzee/colord
+Author: hinzee
+Author-email: hinzee@seznam.cz
+License: MIT
+Description: # Colord
+        
+        
+        ## Executive summary
+        
+        - Python package which allows you to print colored text & colored words.
+        - You need to setup lists with colored words & all words in lists will be printed in color of that list.
+        
+        ## Installation
+        
+        - pip3 install colord
+        
+        
+        ## Usage
+        
+        - in printc function can be used argumets: delay, skipline.
+        - delay : delay between next letter will be printed
+        - skipline = True : will skip line after text is printed
+        
+        ## Example
+        
+        ```
+        import colord
+        
+        colord.setlist.magenta(['test'])
+        colord.setlist.green(['test2','test3'])
+        colord.setlist.red(['test4'])
+        
+        colord.printc('testtest2test4test3')
+        
+        colord.printc('testtest2test4test3',delay=0.03)
+        
+        colord.printc('testtest2test4test3',delay=0.03,skipline=True)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
