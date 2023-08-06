@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+CollectTemplate/__init__.py
+CollectTemplate.egg-info/PKG-INFO
+CollectTemplate.egg-info/SOURCES.txt
+CollectTemplate.egg-info/dependency_links.txt
+CollectTemplate.egg-info/not-zip-safe
+CollectTemplate.egg-info/requires.txt
+CollectTemplate.egg-info/top_level.txt
+CollectTemplate/management/__init__.py
+CollectTemplate/management/commands/__init__.py
+CollectTemplate/management/commands/collecttemplates.py

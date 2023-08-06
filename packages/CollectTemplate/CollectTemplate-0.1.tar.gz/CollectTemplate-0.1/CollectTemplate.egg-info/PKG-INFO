@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: CollectTemplate
+Version: 0.1
+Summary: A Django app to collect template
+Home-page: https://github.com/sonus21/CollectTemplate
+Author: Sonu Kumar
+Author-email: sonunitw12@gmail.com
+License: GNU
+Description: # CollectTemplate
+        
+        CollectTemplate is an app for Django framework, which allows you to collect
+        different app templates to working project templates directory.
+        
+        ## Installation
+        
+        1. pip install CollectTemplate
+        2. Add CollectTemplate to settings as shown below
+        ```
+        INSTALLED_APPS = (
+            ...
+            'CollectTemplate',
+            ...
+        )
+        ```
+        ## Usage
+        
+        |  Commmand  |Description  |
+        |---|---|
+        | manage.py collecttemplates  -h |Help  |  
+        | manage.py collecttemplates  |Copy all installed apps templates  | 
+        |manage.py collecttemplates -e app1 app2 app3|Copy all installed apps templates and exclude app1, app2 | 
+        |manage.py collecttemplates app1,app2,app3|Copy selected installed apps templates | 
+        |manage.py collecttemplates -t app1/home.html|Copy template app1/home.html | 
+            
+        #### This app is inspired from Mezzanine CMS command collecttemplates
+        
+        
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
