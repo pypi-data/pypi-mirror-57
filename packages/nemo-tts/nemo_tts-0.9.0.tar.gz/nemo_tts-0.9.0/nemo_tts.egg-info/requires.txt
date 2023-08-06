@@ -1,0 +1,7 @@
+nemo_toolkit
+nemo_asr
+librosa
+matplotlib
+scipy
+ruamel.yaml
+pypinyin
