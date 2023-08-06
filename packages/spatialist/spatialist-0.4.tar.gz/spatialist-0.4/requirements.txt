@@ -1,0 +1,11 @@
+progressbar2
+pathos>=0.2
+numpy
+scoop
+matplotlib
+prompt_toolkit~=2.0.10
+jupyter
+IPython
+ipywidgets
+tblib
+pyyaml
