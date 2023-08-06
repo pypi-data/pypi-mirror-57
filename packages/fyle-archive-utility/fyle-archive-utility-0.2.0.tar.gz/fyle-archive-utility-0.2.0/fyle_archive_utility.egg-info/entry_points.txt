@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        fyle_archive_utility=archive_utility.app:main
+    
