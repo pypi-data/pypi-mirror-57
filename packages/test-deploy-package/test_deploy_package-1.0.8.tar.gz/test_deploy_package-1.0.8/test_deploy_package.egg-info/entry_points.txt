@@ -1,0 +1,3 @@
+[console_scripts]
+test_deploy = test_deploy_package.test_deploy:main
+

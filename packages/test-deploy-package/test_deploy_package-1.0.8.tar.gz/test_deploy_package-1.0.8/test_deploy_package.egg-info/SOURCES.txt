@@ -1,0 +1,10 @@
+setup.py
+test-deploy-package/__init__.py
+test-deploy-package/test_deploy.py
+test_deploy_package.egg-info/PKG-INFO
+test_deploy_package.egg-info/SOURCES.txt
+test_deploy_package.egg-info/dependency_links.txt
+test_deploy_package.egg-info/entry_points.txt
+test_deploy_package.egg-info/not-zip-safe
+test_deploy_package.egg-info/requires.txt
+test_deploy_package.egg-info/top_level.txt

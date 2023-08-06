@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: test_deploy_package
+Version: 1.0.8
+Summary: Demo
+Home-page: https://github.com/Qili-test/test-deploy
+Author: Qi
+Author-email: lihqih@gmail.com
+License: MIT
+Description: dont not use it without acknowledgement-useless.
+Keywords: test deploy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
