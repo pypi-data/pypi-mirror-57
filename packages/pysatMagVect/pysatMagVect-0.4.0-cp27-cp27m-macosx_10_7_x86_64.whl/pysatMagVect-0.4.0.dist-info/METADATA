@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pysatMagVect
+Version: 0.4.0
+Summary: Calculates geomagnetic unit vectors (field aligned, zonal, and meridional) and includes supporting routines for characterizing the motion of ionospheric plasma.
+Home-page: http://github.com/rstoneback/pysatMagVect
+Author: Russell Stoneback
+Author-email: rstoneba@utdallas.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pysat
+Provides-Extra: testing
+Requires-Dist: nose ; extra == 'testing'
+
+UNKNOWN
+
+
