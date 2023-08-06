@@ -1,0 +1,14 @@
+[console_scripts]
+frecklecute = freckles_cli.frecklecute.frecklecute_cli:cli
+freckles = freckles_cli.freckles_cli.freckles_cli:cli
+
+[freckles_cli.plugins]
+config = freckles_cli.plugins.freckles_cli_plugin_config:config
+context = freckles_cli.plugins.freckles_cli_plugin_context:context
+doc = freckles_cli.plugins.freckles_cli_plugin_doc:doc
+list = freckles_cli.plugins.freckles_cli_plugin_list:list
+run = freckles_cli.plugins.freckles_cli_plugin_run:run
+run-info = freckles_cli.plugins.freckles_cli_plugin_runs:runs
+self = freckles_cli.plugins.freckles_cli_plugin_self:self_command
+ssh = freckles_cli.plugins.freckles_cli_plugin_ssh:ssh
+
