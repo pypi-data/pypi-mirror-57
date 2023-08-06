@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quick start example &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="User guide" href="../documentation/user_guide.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="quick-start-example">
+<h1>Quick start example<a class="headerlink" href="#quick-start-example" title="Permalink to this headline">¶</a></h1>
+<p>Users of <code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code> typically want to</p>
+<ol class="arabic simple">
+<li><p>analyse, whether their data show hubness</p></li>
+<li><p>reduce hubness</p></li>
+<li><p>perform learning (classification, regression, …)</p></li>
+</ol>
+<p>The following example shows all these steps for an example dataset
+from the text domain (dexter).
+Please make sure you have installed <code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code>
+(<a class="reference external" href="installation.html">installation instructions</a>).</p>
+<p>First, we load the dataset and inspect its size.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skhubness.data</span> <span class="kn">import</span> <span class="n">load_dexter</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">load_dexter</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;X.shape = {X.shape}, y.shape={y.shape}&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Dexter is embedded in a high-dimensional space,
+and could, thus, be prone to hubness.
+Therefore, we assess the actual degree of hubness.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skhubness</span> <span class="kn">import</span> <span class="n">Hubness</span>
+<span class="n">hub</span> <span class="o">=</span> <span class="n">Hubness</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;cosine&#39;</span><span class="p">)</span>
+<span class="n">hub</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">k_skew</span> <span class="o">=</span> <span class="n">hub</span><span class="o">.</span><span class="n">score</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Skewness = {k_skew:.3f}&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>As a rule-of-thumb, skewness &gt; 1.2 indicates significant hubness.
+Additional hubness indices are available, for example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Robin hood index: {hub.robinhood_index:.3f}&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Antihub occurrence: {hub.antihub_occurrence:.3f}&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Hub occurrence: {hub.hub_occurrence:.3f}&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>There is considerable hubness in dexter.
+Let’s see, whether hubness reduction can improve
+kNN classification performance.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">skhubness.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+
+<span class="c1"># vanilla kNN</span>
+<span class="n">knn_standard</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+                                    <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;cosine&#39;</span><span class="p">)</span>
+<span class="n">acc_standard</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">knn_standard</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># kNN with hubness reduction (mutual proximity)</span>
+<span class="n">knn_mp</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+                              <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;cosine&#39;</span><span class="p">,</span>
+                              <span class="n">hubness</span><span class="o">=</span><span class="s1">&#39;mutual_proximity&#39;</span><span class="p">)</span>
+<span class="n">acc_mp</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">knn_mp</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Accuracy (vanilla kNN): {acc_standard.mean():.3f}&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Accuracy (kNN with hubness reduction): {acc_mp.mean():.3f}&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Accuracy was considerably improved by mutual proximity (MP).
+But did MP actually reduce hubness?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">hub_mp</span> <span class="o">=</span> <span class="n">Hubness</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;cosine&#39;</span><span class="p">,</span>
+                 <span class="n">hubness</span><span class="o">=</span><span class="s1">&#39;mutual_proximity&#39;</span><span class="p">)</span>
+<span class="n">hub_mp</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">k_skew_mp</span> <span class="o">=</span> <span class="n">hub_mp</span><span class="o">.</span><span class="n">score</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Skewness after MP: {k_skew_mp:.3f} &#39;</span>
+      <span class="n">f</span><span class="s1">&#39;(reduction of {k_skew - k_skew_mp:.3f})&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Robin hood: {hub_mp.robinhood_index:.3f} &#39;</span>
+      <span class="n">f</span><span class="s1">&#39;(reduction of {hub.robinhood_index - hub_mp.robinhood_index:.3f})&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Yes!</p>
+<p>The neighbor graph can also be created directly,
+with or without hubness reduction:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">skhubness.neighbors</span> <span class="kn">import</span> <span class="n">kneighbors_graph</span>
+<span class="n">neighbor_graph</span> <span class="o">=</span> <span class="n">kneighbors_graph</span><span class="p">(</span><span class="n">X</span><span class="p">,</span>
+                                  <span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+                                  <span class="n">hubness</span><span class="o">=</span><span class="s1">&#39;mutual_proximity&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You may want to precompute the graph like this,
+in order to avoid computing it repeatedly for subsequent hubness estimation and learning.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/documentation.html">scikit-hubness API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter">Installation</a></li>
+      <li>Next: <a href="../documentation/user_guide.html" title="next chapter">User guide</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/getting_started/example.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

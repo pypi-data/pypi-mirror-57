@@ -1,0 +1,413 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>skhubness.neighbors.random_projection_trees &mdash; scikit-hubness 0.21.0a8 documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../../../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="scikit-hubness 0.21.0a8 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="fa fa-home"> scikit-hubness </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../../../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-source">Installation from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#supported-platforms">Supported platforms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/example.html">Quick start example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/documentation.html">scikit-hubness API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <h1>Source code for skhubness.neighbors.random_projection_trees</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1"># SPDX-License-Identifier: BSD-3-Clause</span>
+<span class="c1"># Author: Tom Dupre la Tour (original work)</span>
+<span class="c1">#         Roman Feldbauer (adaptions for scikit-hubness)</span>
+<span class="c1"># PEP 563: Postponed Evaluation of Annotations</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Tuple</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">annoy</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The package &#39;annoy&#39; is required to run this example.&quot;</span><span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>  <span class="c1"># pragma: no cover</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="k">import</span> <span class="n">BaseEstimator</span>
+<span class="kn">from</span> <span class="nn">sklearn.utils.validation</span> <span class="k">import</span> <span class="n">check_array</span><span class="p">,</span> <span class="n">check_is_fitted</span><span class="p">,</span> <span class="n">check_X_y</span>
+<span class="kn">from</span> <span class="nn">tqdm.auto</span> <span class="k">import</span> <span class="n">tqdm</span>
+<span class="kn">from</span> <span class="nn">.approximate_neighbors</span> <span class="k">import</span> <span class="n">ApproximateNearestNeighbor</span>
+<span class="kn">from</span> <span class="nn">..utils.check</span> <span class="k">import</span> <span class="n">check_n_candidates</span>
+<span class="kn">from</span> <span class="nn">..utils.io</span> <span class="k">import</span> <span class="n">create_tempfile_preferably_in_dir</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="vm">__doc__</span><span class="p">)</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;RandomProjectionTree&#39;</span><span class="p">,</span>
+           <span class="p">]</span>
+
+
+<div class="viewcode-block" id="RandomProjectionTree"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.RandomProjectionTree.html#skhubness.neighbors.RandomProjectionTree">[docs]</a><span class="k">class</span> <span class="nc">RandomProjectionTree</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">ApproximateNearestNeighbor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Wrapper for using annoy.AnnoyIndex</span>
+
+<span class="sd">    Annoy is an approximate nearest neighbor library,</span>
+<span class="sd">    that builds a forest of random projections trees.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    n_candidates: int, default = 5</span>
+<span class="sd">        Number of neighbors to retrieve</span>
+<span class="sd">    metric: str, default = &#39;euclidean&#39;</span>
+<span class="sd">        Distance metric, allowed are &quot;angular&quot;, &quot;euclidean&quot;, &quot;manhattan&quot;, &quot;hamming&quot;, &quot;dot&quot;</span>
+<span class="sd">    n_trees: int, default = 10</span>
+<span class="sd">        Build a forest of n_trees trees. More trees gives higher precision when querying,</span>
+<span class="sd">        but are more expensive in terms of build time and index size.</span>
+<span class="sd">    search_k: int, default = -1</span>
+<span class="sd">        Query will inspect search_k nodes. A larger value will give more accurate results,</span>
+<span class="sd">        but will take longer time.</span>
+<span class="sd">    mmap_dir: str, default = &#39;auto&#39;</span>
+<span class="sd">        Memory-map the index to the given directory.</span>
+<span class="sd">        This is required to make the the class pickleable.</span>
+<span class="sd">        If None, keep everything in main memory (NON pickleable index),</span>
+<span class="sd">        if mmap_dir is a string, it is interpreted as a directory to store the index into,</span>
+<span class="sd">        if &#39;auto&#39;, create a temp dir for the index, preferably in /dev/shm on Linux.</span>
+<span class="sd">    n_jobs: int, default = 1</span>
+<span class="sd">        Number of parallel jobs</span>
+<span class="sd">    verbose: int, default = 0</span>
+<span class="sd">        Verbosity level. If verbose &gt; 0, show tqdm progress bar on indexing and querying.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    valid_metrics:</span>
+<span class="sd">        List of valid distance metrics/measures</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">valid_metrics</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;angular&quot;</span><span class="p">,</span> <span class="s2">&quot;euclidean&quot;</span><span class="p">,</span> <span class="s2">&quot;manhattan&quot;</span><span class="p">,</span> <span class="s2">&quot;hamming&quot;</span><span class="p">,</span> <span class="s2">&quot;dot&quot;</span><span class="p">,</span> <span class="s2">&quot;minkowski&quot;</span><span class="p">]</span>
+
+<div class="viewcode-block" id="RandomProjectionTree.__init__"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.RandomProjectionTree.html#skhubness.neighbors.RandomProjectionTree.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_candidates</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">metric</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;euclidean&#39;</span><span class="p">,</span>
+                 <span class="n">n_trees</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">search_k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">mmap_dir</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+                 <span class="n">n_jobs</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">n_candidates</span><span class="o">=</span><span class="n">n_candidates</span><span class="p">,</span>
+                         <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span>
+                         <span class="n">n_jobs</span><span class="o">=</span><span class="n">n_jobs</span><span class="p">,</span>
+                         <span class="n">verbose</span><span class="o">=</span><span class="n">verbose</span><span class="p">,</span>
+                         <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span> <span class="o">=</span> <span class="n">n_trees</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">search_k</span> <span class="o">=</span> <span class="n">search_k</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mmap_dir</span> <span class="o">=</span> <span class="n">mmap_dir</span></div>
+
+<div class="viewcode-block" id="RandomProjectionTree.fit"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.RandomProjectionTree.html#skhubness.neighbors.RandomProjectionTree.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RandomProjectionTree</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Build the annoy.Index and insert data from X.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: np.array</span>
+<span class="sd">            Data to be indexed</span>
+<span class="sd">        y: any</span>
+<span class="sd">            Ignored</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        self: RandomProjectionTree</span>
+<span class="sd">            An instance of RandomProjectionTree with a built index</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">y</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">check_X_y</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">y_train_</span> <span class="o">=</span> <span class="n">y</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_samples_fit_</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_features_</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">X_dtype_</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">dtype</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;minkowski&#39;</span><span class="p">:</span>  <span class="c1"># for compatibility</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">=</span> <span class="s1">&#39;euclidean&#39;</span>
+        <span class="n">metric</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">!=</span> <span class="s1">&#39;sqeuclidean&#39;</span> <span class="k">else</span> <span class="s1">&#39;euclidean&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">effective_metric_</span> <span class="o">=</span> <span class="n">metric</span>
+        <span class="n">annoy_index</span> <span class="o">=</span> <span class="n">annoy</span><span class="o">.</span><span class="n">AnnoyIndex</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mmap_dir</span> <span class="o">==</span> <span class="s1">&#39;auto&#39;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">annoy_</span> <span class="o">=</span> <span class="n">create_tempfile_preferably_in_dir</span><span class="p">(</span><span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;skhubness_&#39;</span><span class="p">,</span>
+                                                            <span class="n">suffix</span><span class="o">=</span><span class="s1">&#39;.annoy&#39;</span><span class="p">,</span>
+                                                            <span class="n">directory</span><span class="o">=</span><span class="s1">&#39;/dev/shm&#39;</span><span class="p">)</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;The index will be stored in </span><span class="si">{self.annoy_}</span><span class="s1">. &#39;</span>
+                            <span class="n">f</span><span class="s1">&#39;It will NOT be deleted automatically, when this instance is destructed.&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mmap_dir</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">annoy_</span> <span class="o">=</span> <span class="n">create_tempfile_preferably_in_dir</span><span class="p">(</span><span class="n">prefix</span><span class="o">=</span><span class="s1">&#39;skhubness_&#39;</span><span class="p">,</span>
+                                                            <span class="n">suffix</span><span class="o">=</span><span class="s1">&#39;.annoy&#39;</span><span class="p">,</span>
+                                                            <span class="n">directory</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">mmap_dir</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># e.g. None</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mmap_dir</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">X</span><span class="p">),</span>
+                         <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;Build RPtree&#39;</span><span class="p">,</span>
+                         <span class="n">disable</span><span class="o">=</span><span class="kc">False</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="k">else</span> <span class="kc">True</span><span class="p">,</span>
+                         <span class="p">):</span>
+            <span class="n">annoy_index</span><span class="o">.</span><span class="n">add_item</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+        <span class="n">annoy_index</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_trees</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mmap_dir</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">annoy_</span> <span class="o">=</span> <span class="n">annoy_index</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">annoy_index</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">annoy_</span><span class="p">,</span> <span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+<div class="viewcode-block" id="RandomProjectionTree.kneighbors"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.RandomProjectionTree.html#skhubness.neighbors.RandomProjectionTree.kneighbors">[docs]</a>    <span class="k">def</span> <span class="nf">kneighbors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">n_candidates</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">return_distance</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot; Retrieve k nearest neighbors.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: np.array or None, optional, default = None</span>
+<span class="sd">            Query objects. If None, search among the indexed objects.</span>
+<span class="sd">        n_candidates: int or None, optional, default = None</span>
+<span class="sd">            Number of neighbors to retrieve.</span>
+<span class="sd">            If None, use the value passed during construction.</span>
+<span class="sd">        return_distance: bool, default = True</span>
+<span class="sd">            If return_distance, will return distances and indices to neighbors.</span>
+<span class="sd">            Else, only return the indices.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">check_is_fitted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;annoy_&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+        <span class="n">n_test</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_samples_fit_</span> <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">dtype</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_dtype_</span> <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">X</span><span class="o">.</span><span class="n">dtype</span>
+
+        <span class="k">if</span> <span class="n">n_candidates</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">n_candidates</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_candidates</span>
+        <span class="n">n_candidates</span> <span class="o">=</span> <span class="n">check_n_candidates</span><span class="p">(</span><span class="n">n_candidates</span><span class="p">)</span>
+
+        <span class="c1"># For compatibility reasons, as each sample is considered as its own</span>
+        <span class="c1"># neighbor, one extra neighbor will be computed.</span>
+        <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">n_neighbors</span> <span class="o">=</span> <span class="n">n_candidates</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">n_neighbors</span> <span class="o">=</span> <span class="n">n_candidates</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="c1"># If fewer candidates than required are found for a query,</span>
+        <span class="c1"># we save index=-1 and distance=NaN</span>
+        <span class="n">neigh_ind</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">n_test</span><span class="p">,</span> <span class="n">n_candidates</span><span class="p">),</span>
+                             <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+        <span class="n">neigh_dist</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty_like</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">,</span>
+                                   <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+        <span class="c1"># Load memory-mapped annoy.Index, unless it&#39;s already in main memory</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">annoy_</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="n">annoy_index</span> <span class="o">=</span> <span class="n">annoy</span><span class="o">.</span><span class="n">AnnoyIndex</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_features_</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">effective_metric_</span><span class="p">)</span>
+            <span class="n">annoy_index</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">annoy_</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">annoy_</span><span class="p">,</span> <span class="n">annoy</span><span class="o">.</span><span class="n">AnnoyIndex</span><span class="p">):</span>
+            <span class="n">annoy_index</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">annoy_</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">annoy_index</span><span class="p">,</span> <span class="n">annoy</span><span class="o">.</span><span class="n">AnnoyIndex</span><span class="p">),</span> <span class="n">f</span><span class="s1">&#39;Internal error: unexpected type for annoy index&#39;</span>
+
+        <span class="n">disable_tqdm</span> <span class="o">=</span> <span class="kc">False</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="k">else</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">n_items</span> <span class="o">=</span> <span class="n">annoy_index</span><span class="o">.</span><span class="n">get_n_items</span><span class="p">()</span>
+
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n_items</span><span class="p">),</span>
+                          <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;Query RPtree&#39;</span><span class="p">,</span>
+                          <span class="n">disable</span><span class="o">=</span><span class="n">disable_tqdm</span><span class="p">,</span>
+                          <span class="p">):</span>
+                <span class="n">ind</span><span class="p">,</span> <span class="n">dist</span> <span class="o">=</span> <span class="n">annoy_index</span><span class="o">.</span><span class="n">get_nns_by_item</span><span class="p">(</span>
+                    <span class="n">i</span><span class="p">,</span> <span class="n">n_neighbors</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">search_k</span><span class="p">,</span>
+                    <span class="n">include_distances</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="n">ind</span> <span class="o">=</span> <span class="n">ind</span><span class="p">[</span><span class="n">start</span><span class="p">:]</span>
+                <span class="n">dist</span> <span class="o">=</span> <span class="n">dist</span><span class="p">[</span><span class="n">start</span><span class="p">:]</span>
+                <span class="n">neigh_ind</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">ind</span><span class="p">)]</span> <span class="o">=</span> <span class="n">ind</span>
+                <span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">dist</span><span class="p">)]</span> <span class="o">=</span> <span class="n">dist</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># if X was provided</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">X</span><span class="p">),</span>
+                             <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;Query RPtree&#39;</span><span class="p">,</span>
+                             <span class="n">disable</span><span class="o">=</span><span class="n">disable_tqdm</span><span class="p">,</span>
+                             <span class="p">):</span>
+                <span class="n">ind</span><span class="p">,</span> <span class="n">dist</span> <span class="o">=</span> <span class="n">annoy_index</span><span class="o">.</span><span class="n">get_nns_by_vector</span><span class="p">(</span>
+                    <span class="n">x</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="n">n_neighbors</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">search_k</span><span class="p">,</span>
+                    <span class="n">include_distances</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="n">ind</span> <span class="o">=</span> <span class="n">ind</span><span class="p">[</span><span class="n">start</span><span class="p">:]</span>
+                <span class="n">dist</span> <span class="o">=</span> <span class="n">dist</span><span class="p">[</span><span class="n">start</span><span class="p">:]</span>
+                <span class="n">neigh_ind</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">ind</span><span class="p">)]</span> <span class="o">=</span> <span class="n">ind</span>
+                <span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">dist</span><span class="p">)]</span> <span class="o">=</span> <span class="n">dist</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;sqeuclidean&#39;</span><span class="p">:</span>
+            <span class="n">neigh_dist</span> <span class="o">**=</span> <span class="mi">2</span>
+
+        <span class="k">if</span> <span class="n">return_distance</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">neigh_ind</span></div></div>
+</pre></div>
+
+	    </div>
+            <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Roman Feldbauer.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.21.0a8',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/language_data.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../../../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../../../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>

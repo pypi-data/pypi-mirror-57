@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nearest neighbors &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Examples" href="examples.html" />
+    <link rel="prev" title="Hubness reduction" href="reduction.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="nearest-neighbors">
+<h1>Nearest neighbors<a class="headerlink" href="#nearest-neighbors" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference internal" href="documentation.html#module-skhubness.neighbors" title="skhubness.neighbors"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a> subpackage provides several neighbors-based learning methods.
+It is designed as a drop-in replacement for scikit-learn’s <code class="docutils literal notranslate"><span class="pre">neighbors</span></code>.
+The package provides all functionality from <code class="docutils literal notranslate"><span class="pre">sklearn.neighbors</span></code>,
+and adds support for transparent hubness reduction, where applicable, including</p>
+<ul class="simple">
+<li><p>classification (e.g. <a class="reference internal" href="_autosummary/skhubness.neighbors.KNeighborsClassifier.html#skhubness.neighbors.KNeighborsClassifier" title="skhubness.neighbors.KNeighborsClassifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">KNeighborsClassifier</span></code></a>),</p></li>
+<li><p>regression (e.g. <a class="reference internal" href="_autosummary/skhubness.neighbors.RadiusNeighborsRegressor.html#skhubness.neighbors.RadiusNeighborsRegressor" title="skhubness.neighbors.RadiusNeighborsRegressor"><code class="xref py py-class docutils literal notranslate"><span class="pre">RadiusNeighborsRegressor</span></code></a>),</p></li>
+<li><p>unsupervised learning (e.g. <a class="reference internal" href="_autosummary/skhubness.neighbors.NearestNeighbors.html#skhubness.neighbors.NearestNeighbors" title="skhubness.neighbors.NearestNeighbors"><code class="xref py py-class docutils literal notranslate"><span class="pre">NearestNeighbors</span></code></a>),</p></li>
+<li><p>outlier detection (<a class="reference internal" href="_autosummary/skhubness.neighbors.LocalOutlierFactor.html#skhubness.neighbors.LocalOutlierFactor" title="skhubness.neighbors.LocalOutlierFactor"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocalOutlierFactor</span></code></a>), and</p></li>
+<li><p>kNN graphs (<a class="reference internal" href="_autosummary/skhubness.neighbors.kneighbors_graph.html#skhubness.neighbors.kneighbors_graph" title="skhubness.neighbors.kneighbors_graph"><code class="xref py py-meth docutils literal notranslate"><span class="pre">kneighbors_graph</span></code></a>).</p></li>
+</ul>
+<p>In addition, scikit-hubness provides approximate nearest neighbor (ANN) search,
+in order to support large data sets with millions of data objects and more.
+A list of currently provided ANN methods is available
+<a class="reference internal" href="concepts.html#approximate-nearest-neighbor-search-methods"><span class="std std-ref">here</span></a>.</p>
+<p>Hubness reduction and ANN search can be used independently or in conjunction,
+the latter yielding <cite>approximate hubness reduction</cite>.
+User of scikit-learn will find that only minor modification of their code
+is required to enable one or both of the above.
+We describe how to do so <a class="reference internal" href="concepts.html#the-scikit-hubness-package"><span class="std std-ref">here</span></a>.</p>
+<p>For general information and details about nearest neighbors,
+we refer to the excellent scikit-learn
+<a class="reference external" href="https://scikit-learn.org/stable/modules/neighbors.html">User Guide on Nearest Neighbors</a>.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/example.html">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="user_guide.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="concepts.html">Core concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">Hubness analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reduction.html">Hubness reduction</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Nearest neighbors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">scikit-hubness API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="user_guide.html">User guide</a><ul>
+      <li>Previous: <a href="reduction.html" title="previous chapter">Hubness reduction</a></li>
+      <li>Next: <a href="examples.html" title="next chapter">Examples</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/documentation/nearestneighbors.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

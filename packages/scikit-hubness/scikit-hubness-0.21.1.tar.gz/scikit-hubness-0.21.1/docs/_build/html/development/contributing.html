@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contributing &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Changelog" href="../changelog.html" />
+    <link rel="prev" title="History of scikit-hubness" href="../documentation/history.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<p><cite>scikit-hubness</cite> is free open source software.
+Contributions from the community are highly appreciated.
+Even small contributions improve the software’s quality.</p>
+<p>Even if you are not familiar with programming languages and tools,
+you may contribute by filing bugs or any problems as a
+<a class="reference external" href="https://github.com/VarIr/scikit-hubness/issues">GitHub issue</a>.</p>
+<div class="section" id="git-and-branching-model">
+<h2>Git and branching model<a class="headerlink" href="#git-and-branching-model" title="Permalink to this headline">¶</a></h2>
+<p>We use <cite>git</cite> for version control (CVS), as do most projects nowadays.
+If you are not familiar with git, there are lots of tutorials on
+<a class="reference external" href="https://guides.github.com/">GitHub Guide</a>.
+All the important basics are covered in the
+<a class="reference external" href="https://guides.github.com/introduction/git-handbook/">GitHub Git handbook</a>.</p>
+<p>Development of <cite>scikit-hubness</cite> (mostly) follows the
+<a class="reference external" href="https://nvie.com/posts/a-successful-git-branching-model/">git flow branching model</a>.
+There are two main branches: master and develop.
+For any changes, a new branch should be created.
+If you want to add a new feature, fix a noncritical bug, etc. one should
+branch off <cite>develop</cite>.
+Only if you want to fix a critical bug, branch off <cite>master</cite>.</p>
+</div>
+<div class="section" id="workflow">
+<h2>Workflow<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h2>
+<p>In case of large changes to the software, please first get in contact
+with the authors for coordination, for example by filing an
+<a class="reference external" href="https://github.com/VarIr/scikit-hubness/issues">issue</a>.
+If you want to fix small issues (typos in the docs, obvious errors, etc.)
+you can - of course - directly submit a pull request (PR).</p>
+<ol class="arabic">
+<li><dl class="simple">
+<dt>Create a fork of <cite>scikit-hubness</cite> in your GitHub account.</dt><dd><p>Simply click “Fork” button on <a class="reference external" href="https://github.com/VarIr/scikit-hubness">https://github.com/VarIr/scikit-hubness</a>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Clone your fork on your computer.</dt><dd><p>$ <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git&#64;github.com:YOUR-ACCOUNT-GOES-HERE/scikit-hubness.git</span> <span class="pre">&amp;&amp;</span> <span class="pre">cd</span> <span class="pre">scikit-hubness</span></code></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Add remote upstream.</dt><dd><p>$ <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">upstream</span> <span class="pre">git&#64;github.com:VarIr/scikit-hubness.git</span></code></p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Create feature/bugfix branch.</dt><dd><p>In case of feature or noncritical bugfix:
+$ <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">develop</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">featureXYZ</span> <span class="pre">develop</span></code></p>
+<p>In case of critical bug:
+$ <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">bugfix123</span> <span class="pre">master</span></code></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Implement feature/fix bug/fix typo/…</dt><dd><p>Happy coding!</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Create a commit with meaningful message</dt><dd><p>If you only modified existing files, simply
+<code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-am</span> <span class="pre">&quot;descriptive</span> <span class="pre">message</span> <span class="pre">what</span> <span class="pre">this</span> <span class="pre">commit</span> <span class="pre">does</span> <span class="pre">(in</span> <span class="pre">present</span> <span class="pre">tense)</span> <span class="pre">here&quot;</span></code></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Push to GitHub</dt><dd><p>e.g. $ <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">featureXYZ</span></code></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Create pull request (PR)</dt><dd><p>Git will likely provide a link to directly create the PR.
+If not, click “New pull request” on your fork on GitHub.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Wait…</dt><dd><p>Several devops checks will be performed automatically
+(e.g. continuous integration (CI) with Travis, AppVeyor).</p>
+<p>The authors will get in contact with you,
+and may ask for changes.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Respond to code review.</dt><dd><p>If there were issues with continous integration,
+or the authors asked for changes, please create a new commit locally,
+and simply push again to GitHub as you did before.
+The PR will be updated automatically.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Maintainers merge PR, when all issues are resolved.</dt><dd><p>Thanks a lot for your contribution!</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<div class="section" id="code-style-and-further-guidelines">
+<h2>Code style and further guidelines<a class="headerlink" href="#code-style-and-further-guidelines" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Please make sure all code complies with <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a></p></li>
+<li><p>All code should be documented sufficiently
+(functions, classes, etc. must have docstrings with general description, parameters,
+ideally return values, raised exceptions, notes, etc.)</p></li>
+<li><p>Documentation style is
+<a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard">NumPy format</a>.</p></li>
+<li><p>New code must be covered by unit tests using <a class="reference external" href="https://docs.pytest.org/en/latest/">pytest</a>.</p></li>
+<li><p>If you fix a bug, please provide regression tests (fail on old code, succeed on new code).</p></li>
+<li><p>It may be helpful to install <cite>scikit-hubness</cite> in editable mode for development.
+When you have already cloned the package, switch into the corresponding directory, and</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -e .
+</pre></div>
+</div>
+<p>(don’t omit the trailing period).
+This way, any changes to the code are reflected immediately.
+That is, you don’t need to install the package each and every time,
+when you make changes while developing code.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>In <cite>scikit-hubness</cite>, we aim for high code coverage. As of September 2019,
+between 98% and 99% of all code lines are visited at least once when
+running the complete test suite. This is primarily to ensure:</p>
+<ul class="simple">
+<li><p>correctness of the code (to some extent) and</p></li>
+<li><p>maintainability (new changes don’t break old code).</p></li>
+</ul>
+<p>Creating a new PR, ideally all code would be covered by tests.
+Sometimes, this is not feasible or only with large effort.
+Pull requests will likely be accepted, if the overall code coverage
+at least does not decrease.</p>
+<p>Unit tests are automatically performed for each PR using CI tools online.
+This may take some time, however.
+To run the tests locally, you need <cite>pytest</cite> installed.
+From the scikit-hubness directory, call</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest skhubness/
+</pre></div>
+</div>
+<p>to run all the tests. You can also restrict the tests to the subpackage
+you are working on, down to single tests.
+For example</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest skhubness/reduction/tests/test_local_scaling.py --showlocals -v
+</pre></div>
+</div>
+<p>only runs tests for hubness reduction with local scaling.</p>
+<p>In order to check code coverage locally, you need the
+<a class="reference external" href="https://github.com/pytest-dev/pytest-cov">pytest-cov plugin</a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest skhubness/reduction/ --cov<span class="o">=</span>skhubness/reduction/
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/example.html">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/documentation.html">scikit-hubness API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../documentation/history.html" title="previous chapter">History  of <code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code></a></li>
+      <li>Next: <a href="../changelog.html" title="next chapter">Changelog</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/development/contributing.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

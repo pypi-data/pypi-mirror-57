@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Changelog &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Contributing" href="development/contributing.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="next-release">
+<h2><a class="reference external" href="https://github.com/VarIr/scikit-hubness/compare/v0.21.0...HEAD">Next release</a><a class="headerlink" href="#next-release" title="Permalink to this headline">¶</a></h2>
+<p>…</p>
+</div>
+<div class="section" id="id1">
+<h2><a class="reference external" href="https://github.com/VarIr/scikit-hubness/releases/tag/v0.21.0">0.21.0</a> - 2019-11-25<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>This is the first major release of scikit-hubness.</p>
+<div class="section" id="added">
+<h3>Added<a class="headerlink" href="#added" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Enable ONNG provided by NGT (optimized ANNG). Pass <code class="docutils literal notranslate"><span class="pre">optimize=True</span></code> to <code class="docutils literal notranslate"><span class="pre">NNG</span></code>.</p></li>
+<li><p>User Guide: Description of all subpackages and common usage scenarios.</p></li>
+<li><p>Examples: Various usage examples</p></li>
+<li><p>Several tests</p></li>
+<li><p>Classes inheriting from <code class="docutils literal notranslate"><span class="pre">SupervisedIntegerMixin</span></code> can be fit with an
+<code class="docutils literal notranslate"><span class="pre">ApproximateNearestNeighbor</span></code> or <code class="docutils literal notranslate"><span class="pre">NearestNeighbors</span></code> instance,
+thus reuse precomputed indices.</p></li>
+</ul>
+</div>
+<div class="section" id="changes">
+<h3>Changes<a class="headerlink" href="#changes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Use argument <code class="docutils literal notranslate"><span class="pre">algorithm='nng'</span></code> for ANNG/ONNG provided by NGT instead of <code class="docutils literal notranslate"><span class="pre">'onng'</span></code>.
+Also set <code class="docutils literal notranslate"><span class="pre">optimize=True</span></code> in order to use ONNG.</p></li>
+</ul>
+</div>
+<div class="section" id="fixes">
+<h3>Fixes<a class="headerlink" href="#fixes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>DisSimLocal would previously fail when invoked as <code class="docutils literal notranslate"><span class="pre">hubness='dis_sim_local'</span></code>.</p></li>
+<li><p>Hubness reduction would previously ignore <code class="docutils literal notranslate"><span class="pre">verbose</span></code> arguments under certain circumstances.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">HNSW</span></code> would previously ignore <code class="docutils literal notranslate"><span class="pre">n_jobs</span></code> on index creation.</p></li>
+<li><p>Fix installation instructions for puffinn.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="a9-2019-10-30">
+<h2><a class="reference external" href="https://github.com/VarIr/scikit-hubness/releases/tag/v0.21.0-alpha.9">0.21.0a9</a> - 2019-10-30<a class="headerlink" href="#a9-2019-10-30" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Added<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>General structure for docs</p></li>
+<li><p>Enable NGT OpenMP support on MacOS (in addition to Linux)</p></li>
+<li><p>Enable Puffinn LSH also on MacOS</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>Fixes<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Correct mutual proximity (empiric) calculation</p></li>
+<li><p>Better handling of optional packages (ANN libraries)</p></li>
+</ul>
+</div>
+<div class="section" id="maintenance">
+<h3>Maintenance<a class="headerlink" href="#maintenance" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>streamlined CI builds</p></li>
+<li><p>several minor code improvements</p></li>
+</ul>
+</div>
+<div class="section" id="new-contributors">
+<h3>New contributors<a class="headerlink" href="#new-contributors" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Silvan David Peter</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="a8-2019-09-12">
+<h2><a class="reference external" href="https://github.com/VarIr/scikit-hubness/releases/tag/v0.21.0-alpha.8">0.21.0a8</a> - 2019-09-12<a class="headerlink" href="#a8-2019-09-12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>Added<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Approximate nearest neighbor search</p>
+<ul>
+<li><p>LSH by an additional provider, <a class="reference external" href="https://github.com/puffinn/puffinn"><code class="docutils literal notranslate"><span class="pre">puffinn</span></code></a> (Linux only, atm)</p></li>
+<li><p>ANNG provided by <a class="reference external" href="https://github.com/yahoojapan/NGT/"><code class="docutils literal notranslate"><span class="pre">ngtpy</span></code></a> (Linux, MacOS)</p></li>
+<li><p>Random projection forests provided by <a class="reference external" href="https://github.com/spotify/annoy"><code class="docutils literal notranslate"><span class="pre">annoy</span></code></a> (Linux, MacOS, Windows)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>Fixes<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Several minor issues</p></li>
+<li><p>Several documentations issues</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="a7-2019-07-17">
+<h2><a class="reference external" href="https://github.com/VarIr/scikit-hubness/releases/tag/v0.21.0-alpha.7">0.21.0a7</a> - 2019-07-17<a class="headerlink" href="#a7-2019-07-17" title="Permalink to this headline">¶</a></h2>
+<p>The first alpha release of <code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code> to appear in this changelog.
+It already contains the following features:</p>
+<ul class="simple">
+<li><p>Hubness estimation (exact or approximate)</p></li>
+<li><p>Hubness reduction (exact or approximate)</p>
+<ul>
+<li><p>Mutual proximity</p></li>
+<li><p>Local scaling</p></li>
+<li><p>DisSim Local</p></li>
+</ul>
+</li>
+<li><p>Approximate nearest neighbor search</p>
+<ul>
+<li><p>HNSW provided by <a class="reference external" href="https://github.com/nmslib/nmslib">nmslib</a></p></li>
+<li><p>LSH provided by <a class="reference external" href="https://github.com/FALCONN-LIB/FALCONN">falconn</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started/example.html">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/documentation.html">scikit-hubness API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="development/contributing.html" title="previous chapter">Contributing</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/changelog.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

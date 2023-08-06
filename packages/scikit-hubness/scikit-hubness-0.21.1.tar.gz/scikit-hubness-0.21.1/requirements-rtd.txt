@@ -1,0 +1,19 @@
+numpy
+scipy>=1.2
+scikit-learn>=0.21
+pandas
+joblib>=0.12
+tqdm
+pytest
+pytest-cov
+codecov
+nose
+flake8
+git+https://github.com/readthedocs/readthedocs-sphinx-search@master  # TODO update to PyPI when it becomes available
+sphinx>=2.1
+sphinx-automodapi
+sphinx-gallery
+sphinx-pdj-theme
+mock
+graphviz
+numpydoc

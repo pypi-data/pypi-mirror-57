@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hubness analysis &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hubness reduction" href="reduction.html" />
+    <link rel="prev" title="Core Concepts" href="concepts.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="hubness-analysis">
+<h1>Hubness analysis<a class="headerlink" href="#hubness-analysis" title="Permalink to this headline">¶</a></h1>
+<p>You can use the <a class="reference internal" href="documentation.html#module-skhubness.analysis" title="skhubness.analysis"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a> subpackage
+to assess whether your data is prone to hubness.
+Currently, the <a class="reference internal" href="_autosummary/skhubness.analysis.Hubness.html#skhubness.analysis.Hubness" title="skhubness.analysis.Hubness"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hubness</span></code></a> class
+acts as a one-stop-shop for hubness estimation.
+It provides several hubness measures,
+that are all computed from a nearest neighbor graph (kNNG).
+More specifically, hubness is measured from <cite>k-occurrence</cite>,
+that is, how often does an object occur in the k-nearest neighbor lists of other objects
+(reverse nearest neighbors).
+Traditionally, hubness has been measured by the skewness of the k-occurrence histogram,
+where higher skewness to the right indicates higher hubness (due to objects that appear very
+often as nearest neighbors).
+Recently, additional indices borrowed from inequality research have been proposed for measuring hubness,
+such as calculating the Robin Hood index or Gini index from k-occurrences,
+which may have more desirable features w.r.t to large datasets and interpretability.</p>
+<p>The <a class="reference internal" href="_autosummary/skhubness.analysis.Hubness.html#skhubness.analysis.Hubness" title="skhubness.analysis.Hubness"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hubness</span></code></a> class provides a variety of these measures.
+It is based on scikit-learn’s <code class="docutils literal notranslate"><span class="pre">BaseEstimator</span></code>, and thus follows scikit-learn principles.
+When a new instance is created, sensible default parameters are used,
+unless specific choices are made.
+Typically, the user may want to choose a parameter <code class="docutils literal notranslate"><span class="pre">k</span></code> to define the size
+of nearest neighbor lists, or <code class="docutils literal notranslate"><span class="pre">metric</span></code>, in case the default Euclidean distances
+do not fit the data well.
+Parameter <code class="docutils literal notranslate"><span class="pre">return_value</span></code> defines which hubness measures to use.
+<a class="reference internal" href="_autosummary/skhubness.analysis.VALID_HUBNESS_MEASURES.html#skhubness.analysis.VALID_HUBNESS_MEASURES" title="skhubness.analysis.VALID_HUBNESS_MEASURES"><code class="xref py py-const docutils literal notranslate"><span class="pre">VALID_HUBNESS_MEASURES</span></code></a>
+provides a list of available measures.
+If <code class="docutils literal notranslate"><span class="pre">return_values=='all'</span></code>, all available measures are computed.
+The <code class="docutils literal notranslate"><span class="pre">algorithm</span></code> parameter defines how to compute the kNN graph.
+This is especially relevant for large datasets, as it provides more efficient index
+structures and approximate nearest neighbor algorithms.
+For example, <code class="docutils literal notranslate"><span class="pre">algorithm='hnsw'</span></code> uses a hierarchical navigable small-world graph
+to compute the hubness measures in log-linear time (instead of quadratic).</p>
+<p><a class="reference internal" href="_autosummary/skhubness.analysis.Hubness.html#skhubness.analysis.Hubness" title="skhubness.analysis.Hubness"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hubness</span></code></a> uses <a class="reference internal" href="_autosummary/skhubness.analysis.Hubness.html#skhubness.analysis.Hubness.fit" title="skhubness.analysis.Hubness.fit"><code class="xref py py-meth docutils literal notranslate"><span class="pre">fit</span></code></a>
+and <a class="reference internal" href="_autosummary/skhubness.analysis.Hubness.html#skhubness.analysis.Hubness.score" title="skhubness.analysis.Hubness.score"><code class="xref py py-meth docutils literal notranslate"><span class="pre">score</span></code></a> methods to estimate hubness.
+In this fictional example, we estimate hubness in terms of the Robin Hood index in some large dataset:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="p">(</span><span class="n">some</span> <span class="n">large</span> <span class="n">dataset</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hub</span> <span class="o">=</span> <span class="n">Hubness</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>              <span class="n">return_value</span><span class="o">=</span><span class="s1">&#39;robinhood&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>              <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;hnsw&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hub</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>  <span class="c1"># Creates the HNSW index</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hub</span><span class="o">.</span><span class="n">score</span><span class="p">()</span>
+<span class="go">0.56</span>
+</pre></div>
+</div>
+<p>A Robin Hood index of 0.56 indicates,
+that 56% of all slots in nearest neighbor lists would need to be redistributed,
+in order to obtain equal k-occurrence for all objects.
+We’d consider this rather high hubness.</p>
+<p>In order to evaluate, whether hubness reduction might be beneficial
+for downstream tasks (learning etc.),
+we can perform the same estimation with hubness reduction enabled.
+We use the same code as above, but add the <code class="docutils literal notranslate"><span class="pre">hubness</span></code> parameter:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="p">(</span><span class="n">some</span> <span class="n">large</span> <span class="n">dataset</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hub</span> <span class="o">=</span> <span class="n">Hubness</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>              <span class="n">return_value</span><span class="o">=</span><span class="s1">&#39;robinhood&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span>              <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;hnsw&#39;</span><span class="p">,</span>
+<span class="hll"><span class="gp">&gt;&gt;&gt; </span>              <span class="n">hubness</span><span class="o">=</span><span class="s1">&#39;local_scaling&#39;</span><span class="p">)</span>
+</span><span class="gp">&gt;&gt;&gt; </span><span class="n">hub</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hub</span><span class="o">.</span><span class="n">score</span><span class="p">()</span>
+<span class="hll"><span class="go">0.35</span>
+</span></pre></div>
+</div>
+<p>Here, the hubness reduction method <cite>local scaling</cite> resulted in a markedly lower
+Robin Hood index.</p>
+<p>Note, that we used the complete data set <code class="docutils literal notranslate"><span class="pre">X</span></code> in the examples above.
+We can also split the data into some <code class="docutils literal notranslate"><span class="pre">X_train</span></code> and <code class="docutils literal notranslate"><span class="pre">X_test</span></code>:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">hub</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hub</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="go">0.36</span>
+</pre></div>
+</div>
+<p>This is useful, when you want to tune hyperparameters towards
+low hubness, and prevent data leakage.</p>
+<div class="section" id="hubness-measures">
+<h2>Hubness measures<a class="headerlink" href="#hubness-measures" title="Permalink to this headline">¶</a></h2>
+<p>The degree of hubness in a dataset typically measured from its k-occurrence histogram <span class="math notranslate nohighlight">\(O^k\)</span>.
+For an individual data object <strong>x</strong>, its k-occurrence <span class="math notranslate nohighlight">\(O^k(x)\)</span> is defined as the number of times
+<strong>x</strong> resides among the <em>k</em>-nearest neighbors of all other objects in the data set.
+In the notion of network analysis, <span class="math notranslate nohighlight">\(O^k(x)\)</span> is the indegree of <strong>x</strong> in a directed kNN graph.
+It is also known as reverse neighbor count.</p>
+<p>The following measures are provided in <a class="reference internal" href="_autosummary/skhubness.analysis.Hubness.html#skhubness.analysis.Hubness" title="skhubness.analysis.Hubness"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hubness</span></code></a>
+by passing the corresponding argument values (e.g. <code class="docutils literal notranslate"><span class="pre">hubness='robinhood'</span></code>):</p>
+<ul class="simple">
+<li><p>‘k_skewness’: Skewness, the third central moment of the k-occurrence distribution,
+as introduced by <a class="reference external" href="http://www.jmlr.org/papers/v11/radovanovic10a.html">Radovanović et al. 2010</a></p></li>
+<li><p>‘k_skewness_truncnorm’: skewness of truncated normal distribution estimated from k-occurrence distribution.</p></li>
+<li><p>‘atkinson’: the <a class="reference external" href="https://en.wikipedia.org/wiki/Atkinson_index">Atkinson index</a> of inequality,
+which can be tuned in order to be more sensitive towards antihub or hubs.</p></li>
+<li><p>‘gini’: the <a class="reference external" href="https://en.wikipedia.org/wiki/Gini_coefficient">Gini coefficient</a> of inequality,
+defined as the half of the relative mean absolute difference</p></li>
+<li><p>‘robinhood’: the <a class="reference external" href="https://en.wikipedia.org/wiki/Hoover_index">Robin Hood or Hoover index</a>,
+which gives the amount that needs to be redistributed in order to obtain equality
+(e.g. proportion of total income, so that there is equal income for all;
+or the number of nearest neighbor slot, so that all objects are among the k-nearest neighbors
+of others exactly k times).</p></li>
+<li><p>‘antihubs’: returns the indices of antihubs in data set <strong>X</strong> (which are never
+among the nearest neighbors of other objects.</p></li>
+<li><p>‘antihub_occurrence’: proportion of antihubs in the data set (percentage of total objects,
+which are antihubs).</p></li>
+<li><p>‘hubs’:  indices of hub objects <strong>x</strong> in data set <strong>X</strong>
+(with <span class="math notranslate nohighlight">\(O^k(x) &gt; \text{hub_size} * k\)</span>, where <span class="math notranslate nohighlight">\(\text{hub_size} = 2\)</span> by default).</p></li>
+<li><p>‘hub_occurrence’: proportion of nearest neighbor slots occupied by hubs</p></li>
+<li><p>‘groupie_ratio’: proportion of objects with the largest hub in their neighborhood</p></li>
+<li><p>‘k_neighbors’: indices to k-nearest neighbors for each object</p></li>
+<li><p>‘k_occurrence’: reverse neighbor count for each object</p></li>
+<li><p>‘all’: return a dictionary containing all of the above</p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/example.html">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="user_guide.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="concepts.html">Core concepts</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Hubness analysis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hubness-measures">Hubness measures</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reduction.html">Hubness reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nearestneighbors.html">Nearest neighbors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">scikit-hubness API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="user_guide.html">User guide</a><ul>
+      <li>Previous: <a href="concepts.html" title="previous chapter">Core Concepts</a></li>
+      <li>Next: <a href="reduction.html" title="next chapter">Hubness reduction</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/documentation/analysis.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

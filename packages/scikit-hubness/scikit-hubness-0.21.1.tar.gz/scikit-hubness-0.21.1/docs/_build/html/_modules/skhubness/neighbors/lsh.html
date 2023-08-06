@@ -1,0 +1,660 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>skhubness.neighbors.lsh &mdash; scikit-hubness 0.21.0a8 documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../../../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="scikit-hubness 0.21.0a8 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="fa fa-home"> scikit-hubness </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../../../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-source">Installation from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#supported-platforms">Supported platforms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/example.html">Quick start example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/documentation.html">scikit-hubness API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <h1>Source code for skhubness.neighbors.lsh</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1"># SPDX-License-Identifier: BSD-3-Clause</span>
+
+<span class="c1"># PEP 563: Postponed Evaluation of Annotations</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">annotations</span>
+
+<span class="kn">from</span> <span class="nn">functools</span> <span class="k">import</span> <span class="n">partial</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">Union</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="k">import</span> <span class="n">BaseEstimator</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">euclidean_distances</span><span class="p">,</span> <span class="n">pairwise_distances</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="k">import</span> <span class="n">cosine_distances</span>
+<span class="kn">from</span> <span class="nn">sklearn.utils.validation</span> <span class="k">import</span> <span class="n">check_is_fitted</span><span class="p">,</span> <span class="n">check_array</span><span class="p">,</span> <span class="n">check_X_y</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">puffinn</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;The package &#39;puffinn&#39; is not available.&quot;</span><span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">falconn</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;The package &#39;falconn&#39; is not available.&quot;</span><span class="p">)</span>  <span class="c1"># pragma: no cover</span>
+<span class="kn">from</span> <span class="nn">tqdm.auto</span> <span class="k">import</span> <span class="n">tqdm</span>
+<span class="kn">from</span> <span class="nn">.approximate_neighbors</span> <span class="k">import</span> <span class="n">ApproximateNearestNeighbor</span>
+<span class="kn">from</span> <span class="nn">..utils.check</span> <span class="k">import</span> <span class="n">check_n_candidates</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;FalconnLSH&#39;</span><span class="p">,</span> <span class="s1">&#39;PuffinnLSH&#39;</span><span class="p">,</span> <span class="p">]</span>
+
+
+<div class="viewcode-block" id="PuffinnLSH"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.PuffinnLSH.html#skhubness.neighbors.PuffinnLSH">[docs]</a><span class="k">class</span> <span class="nc">PuffinnLSH</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">ApproximateNearestNeighbor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Wrap Puffinn LSH for scikit-learn compatibility.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    n_candidates: int, default = 5</span>
+<span class="sd">        Number of neighbors to retrieve</span>
+<span class="sd">    metric: str, default = &#39;euclidean&#39;</span>
+<span class="sd">        Distance metric, allowed are &quot;angular&quot;, &quot;jaccard&quot;.</span>
+<span class="sd">        Other metrics are partially supported, such as &#39;euclidean&#39;, &#39;sqeuclidean&#39;.</span>
+<span class="sd">        In these cases, &#39;angular&#39; distances are used to find the candidate set</span>
+<span class="sd">        of neighbors with LSH among all indexed objects, and (squared) Euclidean</span>
+<span class="sd">        distances are subsequently only computed for the candidates.</span>
+<span class="sd">    memory: int, default = 1GB</span>
+<span class="sd">        Max memory usage</span>
+<span class="sd">    recall: float, default = 0.90</span>
+<span class="sd">        Probability of finding the true nearest neighbors among the candidates</span>
+<span class="sd">    n_jobs: int, default = 1</span>
+<span class="sd">        Number of parallel jobs</span>
+<span class="sd">    verbose: int, default = 0</span>
+<span class="sd">        Verbosity level. If verbose &gt; 0, show tqdm progress bar on indexing and querying.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    valid_metrics:</span>
+<span class="sd">        List of valid distance metrics/measures</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">valid_metrics</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;angular&quot;</span><span class="p">,</span> <span class="s2">&quot;cosine&quot;</span><span class="p">,</span> <span class="s2">&quot;euclidean&quot;</span><span class="p">,</span> <span class="s2">&quot;sqeuclidean&quot;</span><span class="p">,</span> <span class="s2">&quot;minkowski&quot;</span><span class="p">,</span>
+                     <span class="s2">&quot;jaccard&quot;</span><span class="p">,</span>
+                     <span class="p">]</span>
+    <span class="n">metric_map</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;euclidean&#39;</span><span class="p">:</span> <span class="s1">&#39;angular&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;sqeuclidean&#39;</span><span class="p">:</span> <span class="s1">&#39;angular&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;minkowski&#39;</span><span class="p">:</span> <span class="s1">&#39;angular&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;cosine&#39;</span><span class="p">:</span> <span class="s1">&#39;angular&#39;</span><span class="p">,</span>
+                  <span class="p">}</span>
+
+<div class="viewcode-block" id="PuffinnLSH.__init__"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.PuffinnLSH.html#skhubness.neighbors.PuffinnLSH.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_candidates</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+                 <span class="n">metric</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;euclidean&#39;</span><span class="p">,</span>
+                 <span class="n">memory</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1024</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span>
+                 <span class="n">recall</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.9</span><span class="p">,</span>
+                 <span class="n">n_jobs</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                 <span class="n">verbose</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+                 <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">n_candidates</span><span class="o">=</span><span class="n">n_candidates</span><span class="p">,</span>
+                         <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span>
+                         <span class="n">n_jobs</span><span class="o">=</span><span class="n">n_jobs</span><span class="p">,</span>
+                         <span class="n">verbose</span><span class="o">=</span><span class="n">verbose</span><span class="p">,</span>
+                         <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">memory</span> <span class="o">=</span> <span class="n">memory</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">recall</span> <span class="o">=</span> <span class="n">recall</span></div>
+
+<div class="viewcode-block" id="PuffinnLSH.fit"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.PuffinnLSH.html#skhubness.neighbors.PuffinnLSH.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">PuffinnLSH</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Build the puffinn LSH index and insert data from X.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: np.array</span>
+<span class="sd">            Data to be indexed</span>
+<span class="sd">        y: any</span>
+<span class="sd">            Ignored</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        self: Puffinn</span>
+<span class="sd">            An instance of Puffinn with a built index</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">y</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">check_X_y</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">y_train_</span> <span class="o">=</span> <span class="n">y</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">valid_metrics</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Invalid metric &quot;</span><span class="si">{self.metric}</span><span class="s1">&quot;. Using &quot;euclidean&quot; instead&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">=</span> <span class="s1">&#39;euclidean&#39;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">effective_metric</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric_map</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">metric</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">effective_metric</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span>
+
+        <span class="c1"># Reduce default memory consumption for unit tests</span>
+        <span class="k">if</span> <span class="s2">&quot;pytest&quot;</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">memory</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="mi">1024</span><span class="o">**</span><span class="mi">2</span>
+
+        <span class="c1"># Construct the index</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="n">puffinn</span><span class="o">.</span><span class="n">Index</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">effective_metric</span><span class="p">,</span>
+                              <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                              <span class="bp">self</span><span class="o">.</span><span class="n">memory</span><span class="p">,</span>
+                              <span class="p">)</span>
+
+        <span class="n">disable_tqdm</span> <span class="o">=</span> <span class="kc">False</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="k">else</span> <span class="kc">True</span>
+        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;Indexing&#39;</span><span class="p">,</span> <span class="n">disable</span><span class="o">=</span><span class="n">disable_tqdm</span><span class="p">):</span>
+            <span class="n">index</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+        <span class="n">index</span><span class="o">.</span><span class="n">rebuild</span><span class="p">(</span><span class="n">num_threads</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">n_jobs</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">index_</span> <span class="o">=</span> <span class="n">index</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span> <span class="o">=</span> <span class="n">X</span>  <span class="c1"># remove, once we can retrieve vectors from the index itself</span>
+
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+<div class="viewcode-block" id="PuffinnLSH.kneighbors"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.PuffinnLSH.html#skhubness.neighbors.PuffinnLSH.kneighbors">[docs]</a>    <span class="k">def</span> <span class="nf">kneighbors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">n_candidates</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">return_distance</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot; Retrieve k nearest neighbors.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: np.array or None, optional, default = None</span>
+<span class="sd">            Query objects. If None, search among the indexed objects.</span>
+<span class="sd">        n_candidates: int or None, optional, default = None</span>
+<span class="sd">            Number of neighbors to retrieve.</span>
+<span class="sd">            If None, use the value passed during construction.</span>
+<span class="sd">        return_distance: bool, default = True</span>
+<span class="sd">            If return_distance, will return distances and indices to neighbors.</span>
+<span class="sd">            Else, only return the indices.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">check_is_fitted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;index_&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">n_candidates</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">n_candidates</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_candidates</span>
+        <span class="n">n_candidates</span> <span class="o">=</span> <span class="n">check_n_candidates</span><span class="p">(</span><span class="n">n_candidates</span><span class="p">)</span>
+
+        <span class="c1"># For compatibility reasons, as each sample is considered as its own</span>
+        <span class="c1"># neighbor, one extra neighbor will be computed.</span>
+        <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span>
+            <span class="n">n_neighbors</span> <span class="o">=</span> <span class="n">n_candidates</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+            <span class="n">n_neighbors</span> <span class="o">=</span> <span class="n">n_candidates</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="n">n_test</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">dtype</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">dtype</span>
+
+        <span class="c1"># If chosen metric is not among the natively support ones, reorder the neighbors</span>
+        <span class="n">reorder</span> <span class="o">=</span> <span class="kc">True</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;angular&#39;</span><span class="p">,</span> <span class="s1">&#39;cosine&#39;</span><span class="p">,</span> <span class="s1">&#39;jaccard&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="kc">False</span>
+
+        <span class="c1"># If fewer candidates than required are found for a query,</span>
+        <span class="c1"># we save index=-1 and distance=NaN</span>
+        <span class="n">neigh_ind</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">n_test</span><span class="p">,</span> <span class="n">n_candidates</span><span class="p">),</span>
+                             <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">return_distance</span> <span class="ow">or</span> <span class="n">reorder</span><span class="p">:</span>
+            <span class="n">neigh_dist</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty_like</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">,</span>
+                                       <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+        <span class="n">metric</span> <span class="o">=</span> <span class="s1">&#39;cosine&#39;</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;angular&#39;</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span>
+
+        <span class="n">index</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">index_</span>
+
+        <span class="n">disable_tqdm</span> <span class="o">=</span> <span class="kc">False</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="k">else</span> <span class="kc">True</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">X</span><span class="p">),</span>
+                         <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;Querying&#39;</span><span class="p">,</span>
+                         <span class="n">disable</span><span class="o">=</span><span class="n">disable_tqdm</span><span class="p">,</span>
+                         <span class="p">):</span>
+            <span class="c1"># Find the approximate nearest neighbors.</span>
+            <span class="c1"># Each of the true `n_candidates` nearest neighbors</span>
+            <span class="c1"># has at least `recall` chance of being found.</span>
+            <span class="n">ind</span> <span class="o">=</span> <span class="n">index</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+                               <span class="n">n_neighbors</span><span class="p">,</span>
+                               <span class="bp">self</span><span class="o">.</span><span class="n">recall</span><span class="p">,</span>
+                               <span class="p">)</span>
+
+            <span class="n">ind</span> <span class="o">=</span> <span class="n">ind</span><span class="p">[</span><span class="n">start</span><span class="p">:]</span>
+            <span class="n">neigh_ind</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">ind</span><span class="p">)]</span> <span class="o">=</span> <span class="n">ind</span>
+            <span class="k">if</span> <span class="n">return_distance</span> <span class="ow">or</span> <span class="n">reorder</span><span class="p">:</span>
+                <span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">ind</span><span class="p">)]</span> <span class="o">=</span> <span class="n">pairwise_distances</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span>
+                                                              <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span><span class="p">[</span><span class="n">ind</span><span class="p">],</span>
+                                                              <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span>
+                                                              <span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">reorder</span><span class="p">:</span>
+            <span class="n">sort</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">neigh_dist</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">take_along_axis</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">neigh_ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">take_along_axis</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">return_distance</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">neigh_ind</span></div></div>
+
+
+<div class="viewcode-block" id="FalconnLSH"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.FalconnLSH.html#skhubness.neighbors.FalconnLSH">[docs]</a><span class="k">class</span> <span class="nc">FalconnLSH</span><span class="p">(</span><span class="n">ApproximateNearestNeighbor</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Wrapper for using falconn LSH</span>
+
+<span class="sd">    Falconn is an approximate nearest neighbor library,</span>
+<span class="sd">    that uses multiprobe locality-sensitive hashing.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    n_candidates: int, default = 5</span>
+<span class="sd">        Number of neighbors to retrieve</span>
+<span class="sd">    radius: float or None, optional, default = None</span>
+<span class="sd">        Retrieve neighbors within this radius.</span>
+<span class="sd">        Can be negative: See Notes.</span>
+<span class="sd">    metric: str, default = &#39;euclidean&#39;</span>
+<span class="sd">        Distance metric, allowed are &quot;angular&quot;, &quot;euclidean&quot;, &quot;manhattan&quot;, &quot;hamming&quot;, &quot;dot&quot;</span>
+<span class="sd">    num_probes: int, default = 50</span>
+<span class="sd">        The number of buckets the query algorithm probes.</span>
+<span class="sd">        The higher number of probes is, the better accuracy one gets,</span>
+<span class="sd">        but the slower queries are.</span>
+<span class="sd">    n_jobs: int, default = 1</span>
+<span class="sd">        Number of parallel jobs</span>
+<span class="sd">    verbose: int, default = 0</span>
+<span class="sd">        Verbosity level. If verbose &gt; 0, show tqdm progress bar on indexing and querying.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    valid_metrics:</span>
+<span class="sd">        List of valid distance metrics/measures</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    From the falconn docs: radius can be negative, and for the distance function</span>
+<span class="sd">    &#39;negative_inner_product&#39; it actually makes sense.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">valid_metrics</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span> <span class="s1">&#39;l2&#39;</span><span class="p">,</span> <span class="s1">&#39;minkowski&#39;</span><span class="p">,</span> <span class="s1">&#39;squared_euclidean&#39;</span><span class="p">,</span> <span class="s1">&#39;sqeuclidean&#39;</span><span class="p">,</span>
+                     <span class="s1">&#39;cosine&#39;</span><span class="p">,</span> <span class="s1">&#39;neg_inner&#39;</span><span class="p">,</span> <span class="s1">&#39;NegativeInnerProduct&#39;</span><span class="p">]</span>
+
+<div class="viewcode-block" id="FalconnLSH.__init__"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.FalconnLSH.html#skhubness.neighbors.FalconnLSH.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_candidates</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">radius</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.</span><span class="p">,</span> <span class="n">metric</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;euclidean&#39;</span><span class="p">,</span> <span class="n">num_probes</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span>
+                 <span class="n">n_jobs</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">n_candidates</span><span class="o">=</span><span class="n">n_candidates</span><span class="p">,</span>
+                         <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span>
+                         <span class="n">n_jobs</span><span class="o">=</span><span class="n">n_jobs</span><span class="p">,</span>
+                         <span class="n">verbose</span><span class="o">=</span><span class="n">verbose</span><span class="p">,</span>
+                         <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_probes</span> <span class="o">=</span> <span class="n">num_probes</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="n">radius</span></div>
+
+<div class="viewcode-block" id="FalconnLSH.fit"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.FalconnLSH.html#skhubness.neighbors.FalconnLSH.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">FalconnLSH</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Setup the LSH index from training data.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: np.array</span>
+<span class="sd">            Data to be indexed</span>
+<span class="sd">        y: any</span>
+<span class="sd">            Ignored</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        self: FalconnLSH</span>
+<span class="sd">            An instance of LSH with a built index</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span> <span class="s1">&#39;l2&#39;</span><span class="p">,</span> <span class="s1">&#39;minkowski&#39;</span><span class="p">]:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">=</span> <span class="s1">&#39;euclidean&#39;</span>
+            <span class="n">distance</span> <span class="o">=</span> <span class="n">falconn</span><span class="o">.</span><span class="n">DistanceFunction</span><span class="o">.</span><span class="n">EuclideanSquared</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;squared_euclidean&#39;</span><span class="p">,</span> <span class="s1">&#39;sqeuclidean&#39;</span><span class="p">]:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">=</span> <span class="s1">&#39;sqeuclidean&#39;</span>
+            <span class="n">distance</span> <span class="o">=</span> <span class="n">falconn</span><span class="o">.</span><span class="n">DistanceFunction</span><span class="o">.</span><span class="n">EuclideanSquared</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;cosine&#39;</span><span class="p">,</span> <span class="s1">&#39;NegativeInnerProduct&#39;</span><span class="p">,</span> <span class="s1">&#39;neg_inner&#39;</span><span class="p">]:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">=</span> <span class="s1">&#39;cosine&#39;</span>
+            <span class="n">distance</span> <span class="o">=</span> <span class="n">falconn</span><span class="o">.</span><span class="n">DistanceFunction</span><span class="o">.</span><span class="n">NegativeInnerProduct</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Invalid metric &quot;</span><span class="si">{self.metric}</span><span class="s1">&quot;. Using &quot;euclidean&quot; instead&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">=</span> <span class="s1">&#39;euclidean&#39;</span>
+            <span class="n">distance</span> <span class="o">=</span> <span class="n">falconn</span><span class="o">.</span><span class="n">DistanceFunction</span><span class="o">.</span><span class="n">EuclideanSquared</span>
+
+        <span class="c1"># Set up the LSH index</span>
+        <span class="n">lsh_construction_params</span> <span class="o">=</span> <span class="n">falconn</span><span class="o">.</span><span class="n">get_default_parameters</span><span class="p">(</span><span class="o">*</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
+                                                                 <span class="n">distance</span><span class="o">=</span><span class="n">distance</span><span class="p">)</span>
+        <span class="n">lsh_index</span> <span class="o">=</span> <span class="n">falconn</span><span class="o">.</span><span class="n">LSHIndex</span><span class="p">(</span><span class="n">lsh_construction_params</span><span class="p">)</span>
+        <span class="n">lsh_index</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span> <span class="o">=</span> <span class="n">X</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">y_train_</span> <span class="o">=</span> <span class="n">y</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">index_</span> <span class="o">=</span> <span class="n">lsh_index</span>
+
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+<div class="viewcode-block" id="FalconnLSH.kneighbors"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.FalconnLSH.html#skhubness.neighbors.FalconnLSH.kneighbors">[docs]</a>    <span class="k">def</span> <span class="nf">kneighbors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                   <span class="n">n_candidates</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                   <span class="n">return_distance</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot; Retrieve k nearest neighbors.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: np.array or None, optional, default = None</span>
+<span class="sd">            Query objects. If None, search among the indexed objects.</span>
+<span class="sd">        n_candidates: int or None, optional, default = None</span>
+<span class="sd">            Number of neighbors to retrieve.</span>
+<span class="sd">            If None, use the value passed during construction.</span>
+<span class="sd">        return_distance: bool, default = True</span>
+<span class="sd">            If return_distance, will return distances and indices to neighbors.</span>
+<span class="sd">            Else, only return the indices.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">check_is_fitted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;index_&quot;</span><span class="p">,</span> <span class="s1">&#39;X_train_&#39;</span><span class="p">])</span>
+
+        <span class="c1"># Check the n_neighbors parameter</span>
+        <span class="k">if</span> <span class="n">n_candidates</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">n_candidates</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_candidates</span>
+        <span class="k">elif</span> <span class="n">n_candidates</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Expected n_neighbors &gt; 0. Got </span><span class="si">{n_candidates:d}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">issubdtype</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">n_candidates</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">integer</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;n_neighbors does not take {type(n_candidates)} value, enter integer value&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+            <span class="n">query_is_train</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">accept_sparse</span><span class="o">=</span><span class="s1">&#39;csr&#39;</span><span class="p">)</span>
+            <span class="n">n_retrieve</span> <span class="o">=</span> <span class="n">n_candidates</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">query_is_train</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span>
+            <span class="c1"># Include an extra neighbor to account for the sample itself being</span>
+            <span class="c1"># returned, which is removed later</span>
+            <span class="n">n_retrieve</span> <span class="o">=</span> <span class="n">n_candidates</span> <span class="o">+</span> <span class="mi">1</span>
+
+        <span class="c1"># Configure the LSH query object</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">index_</span><span class="o">.</span><span class="n">construct_query_object</span><span class="p">()</span>
+        <span class="n">query</span><span class="o">.</span><span class="n">set_num_probes</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">num_probes</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">return_distance</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;euclidean&#39;</span><span class="p">:</span>
+                <span class="n">distances</span> <span class="o">=</span> <span class="n">partial</span><span class="p">(</span><span class="n">euclidean_distances</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;sqeuclidean&#39;</span><span class="p">:</span>
+                <span class="n">distances</span> <span class="o">=</span> <span class="n">partial</span><span class="p">(</span><span class="n">euclidean_distances</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;cosine&#39;</span><span class="p">:</span>
+                <span class="n">distances</span> <span class="o">=</span> <span class="n">cosine_distances</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Internal error: unrecognized metric &quot;</span><span class="si">{self.metric}</span><span class="s1">&quot;&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Allocate memory for neighbor indices (and distances)</span>
+        <span class="n">n_objects</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">neigh_ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">n_objects</span><span class="p">,</span> <span class="n">n_candidates</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">return_distance</span><span class="p">:</span>
+            <span class="n">neigh_dist</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty_like</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">X</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+
+        <span class="c1"># If verbose, show progress bar on the search loop</span>
+        <span class="n">disable_tqdm</span> <span class="o">=</span> <span class="kc">False</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="k">else</span> <span class="kc">True</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">X</span><span class="p">),</span>
+                         <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;LSH&#39;</span><span class="p">,</span>
+                         <span class="n">disable</span><span class="o">=</span><span class="n">disable_tqdm</span><span class="p">,</span>
+                         <span class="p">):</span>
+            <span class="n">knn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">query</span><span class="o">.</span><span class="n">find_k_nearest_neighbors</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">n_retrieve</span><span class="p">))</span>
+            <span class="k">if</span> <span class="n">query_is_train</span><span class="p">:</span>
+                <span class="n">knn</span> <span class="o">=</span> <span class="n">knn</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+            <span class="n">neigh_ind</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:</span><span class="n">knn</span><span class="o">.</span><span class="n">size</span><span class="p">]</span> <span class="o">=</span> <span class="n">knn</span>
+
+            <span class="k">if</span> <span class="n">return_distance</span><span class="p">:</span>
+                <span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:</span><span class="n">knn</span><span class="o">.</span><span class="n">size</span><span class="p">]</span> <span class="o">=</span> <span class="n">distances</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span><span class="p">[</span><span class="n">knn</span><span class="p">])</span>
+
+            <span class="c1"># LSH may yield fewer neighbors than n_neighbors.</span>
+            <span class="c1"># We set distances to NaN, and indices to -1</span>
+            <span class="k">if</span> <span class="n">knn</span><span class="o">.</span><span class="n">size</span> <span class="o">&lt;</span> <span class="n">n_candidates</span><span class="p">:</span>
+                <span class="n">neigh_ind</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">knn</span><span class="o">.</span><span class="n">size</span><span class="p">:]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+                <span class="k">if</span> <span class="n">return_distance</span><span class="p">:</span>
+                    <span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">knn</span><span class="o">.</span><span class="n">size</span><span class="p">:]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+
+        <span class="k">if</span> <span class="n">return_distance</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">neigh_ind</span></div>
+
+<div class="viewcode-block" id="FalconnLSH.radius_neighbors"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.FalconnLSH.html#skhubness.neighbors.FalconnLSH.radius_neighbors">[docs]</a>    <span class="k">def</span> <span class="nf">radius_neighbors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                         <span class="n">radius</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                         <span class="n">return_distance</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot; Retrieve neighbors within a certain radius.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: np.array or None, optional, default = None</span>
+<span class="sd">            Query objects. If None, search among the indexed objects.</span>
+<span class="sd">        radius: float or None, optional, default = None</span>
+<span class="sd">            Retrieve neighbors within this radius.</span>
+<span class="sd">            Can be negative: See Notes.</span>
+<span class="sd">        return_distance: bool, default = True</span>
+<span class="sd">            If return_distance, will return distances and indices to neighbors.</span>
+<span class="sd">            Else, only return the indices.</span>
+
+<span class="sd">        Notes</span>
+<span class="sd">        -----</span>
+<span class="sd">        From the falconn docs: radius can be negative, and for the distance function</span>
+<span class="sd">        &#39;negative_inner_product&#39; it actually makes sense.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">check_is_fitted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;index_&quot;</span><span class="p">,</span> <span class="s1">&#39;X_train_&#39;</span><span class="p">])</span>
+
+        <span class="c1"># Constructing a query object</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">index_</span><span class="o">.</span><span class="n">construct_query_object</span><span class="p">()</span>
+        <span class="n">query</span><span class="o">.</span><span class="n">set_num_probes</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">num_probes</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">return_distance</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;euclidean&#39;</span><span class="p">:</span>
+                <span class="n">distances</span> <span class="o">=</span> <span class="n">partial</span><span class="p">(</span><span class="n">euclidean_distances</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;sqeuclidean&#39;</span><span class="p">:</span>
+                <span class="n">distances</span> <span class="o">=</span> <span class="n">partial</span><span class="p">(</span><span class="n">euclidean_distances</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;cosine&#39;</span><span class="p">:</span>
+                <span class="n">distances</span> <span class="o">=</span> <span class="n">cosine_distances</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Internal error: unrecognized metric &quot;</span><span class="si">{self.metric}</span><span class="s1">&quot;&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">query_is_train</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">accept_sparse</span><span class="o">=</span><span class="s1">&#39;csr&#39;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">query_is_train</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span>
+
+        <span class="k">if</span> <span class="n">radius</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">radius</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span>
+        <span class="c1"># LSH uses squared Euclidean internally</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;euclidean&#39;</span><span class="p">:</span>
+            <span class="n">radius</span> <span class="o">*=</span> <span class="n">radius</span>
+
+        <span class="c1"># Add a small number to imitate &lt;= threshold</span>
+        <span class="n">radius</span> <span class="o">+=</span> <span class="mf">1e-7</span>
+
+        <span class="c1"># Allocate memory for neighbor indices (and distances)</span>
+        <span class="n">n_objects</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">neigh_ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">n_objects</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">return_distance</span><span class="p">:</span>
+            <span class="n">neigh_dist</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty_like</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">)</span>
+
+        <span class="c1"># If verbose, show progress bar on the search loop</span>
+        <span class="n">disable_tqdm</span> <span class="o">=</span> <span class="kc">False</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="k">else</span> <span class="kc">True</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">X</span><span class="p">),</span>
+                         <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;LSH&#39;</span><span class="p">,</span>
+                         <span class="n">disable</span><span class="o">=</span><span class="n">disable_tqdm</span><span class="p">,</span>
+                         <span class="p">):</span>
+            <span class="n">knn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">query</span><span class="o">.</span><span class="n">find_near_neighbors</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="n">radius</span><span class="p">))</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">knn</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">knn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">query_is_train</span><span class="p">:</span>
+                    <span class="n">knn</span> <span class="o">=</span> <span class="n">knn</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+            <span class="n">neigh_ind</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">knn</span>
+
+            <span class="k">if</span> <span class="n">return_distance</span><span class="p">:</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">knn</span><span class="p">):</span>
+                    <span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">distances</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span><span class="p">[</span><span class="n">knn</span><span class="p">])</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([])</span>
+
+        <span class="k">if</span> <span class="n">return_distance</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">neigh_ind</span></div></div>
+</pre></div>
+
+	    </div>
+            <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Roman Feldbauer.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.21.0a8',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/language_data.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../../../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../../../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>

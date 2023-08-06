@@ -1,0 +1,663 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>skhubness.neighbors.classification &mdash; scikit-hubness 0.21.0a8 documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../../../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="scikit-hubness 0.21.0a8 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="fa fa-home"> scikit-hubness </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../../../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-source">Installation from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#supported-platforms">Supported platforms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/example.html">Quick start example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/documentation.html">scikit-hubness API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <h1>Source code for skhubness.neighbors.classification</h1><div class="highlight"><pre>
+<span></span><span class="c1"># SPDX-License-Identifier: BSD-3-Clause</span>
+
+<span class="sd">&quot;&quot;&quot;Nearest Neighbor Classification</span>
+<span class="sd">adapted from https://github.com/scikit-learn/scikit-learn/blob/0.21.X/sklearn/neighbors/classification.py&quot;&quot;&quot;</span>
+
+<span class="c1"># Authors: Jake Vanderplas &lt;vanderplas@astro.washington.edu&gt;</span>
+<span class="c1">#          Fabian Pedregosa &lt;fabian.pedregosa@inria.fr&gt;</span>
+<span class="c1">#          Alexandre Gramfort &lt;alexandre.gramfort@inria.fr&gt;</span>
+<span class="c1">#          Sparseness support by Lars Buitinck</span>
+<span class="c1">#          Multi-output support by Arnaud Joly &lt;a.joly@ulg.ac.be&gt;</span>
+<span class="c1">#          Hubness support by Roman Feldbauer &lt;roman.feldbauer@univie.ac.at&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># License: BSD 3 clause (C) INRIA, University of Amsterdam</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span>
+<span class="kn">from</span> <span class="nn">sklearn.utils.extmath</span> <span class="k">import</span> <span class="n">weighted_mode</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.neighbors.base</span> <span class="k">import</span> <span class="n">SupervisedIntegerMixin</span>
+<span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="k">import</span> <span class="n">ClassifierMixin</span>
+<span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="k">import</span> <span class="n">check_array</span>
+
+<span class="kn">from</span> <span class="nn">.base</span> <span class="k">import</span> \
+    <span class="n">_check_weights</span><span class="p">,</span> <span class="n">_get_weights</span><span class="p">,</span> \
+    <span class="n">NeighborsBase</span><span class="p">,</span> <span class="n">KNeighborsMixin</span><span class="p">,</span> <span class="n">RadiusNeighborsMixin</span>
+
+
+<div class="viewcode-block" id="KNeighborsClassifier"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.KNeighborsClassifier.html#skhubness.neighbors.KNeighborsClassifier">[docs]</a><span class="k">class</span> <span class="nc">KNeighborsClassifier</span><span class="p">(</span><span class="n">NeighborsBase</span><span class="p">,</span> <span class="n">KNeighborsMixin</span><span class="p">,</span>
+                           <span class="n">SupervisedIntegerMixin</span><span class="p">,</span> <span class="n">ClassifierMixin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Classifier implementing the k-nearest neighbors vote.</span>
+
+<span class="sd">    Read more in the `scikit-learn User Guide &lt;https://scikit-learn.org/stable/modules/neighbors.html#classification&gt;`_</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    n_neighbors: int, optional (default = 5)</span>
+<span class="sd">        Number of neighbors to use by default for :meth:`kneighbors` queries.</span>
+
+<span class="sd">    weights: str or callable, optional (default = &#39;uniform&#39;)</span>
+<span class="sd">        weight function used in prediction.  Possible values:</span>
+
+<span class="sd">        - &#39;uniform&#39;: uniform weights.  All points in each neighborhood</span>
+<span class="sd">          are weighted equally.</span>
+<span class="sd">        - &#39;distance&#39;: weight points by the inverse of their distance.</span>
+<span class="sd">          in this case, closer neighbors of a query point will have a</span>
+<span class="sd">          greater influence than neighbors which are further away.</span>
+<span class="sd">        - [callable]: a user-defined function which accepts an</span>
+<span class="sd">          array of distances, and returns an array of the same shape</span>
+<span class="sd">          containing the weights.</span>
+
+<span class="sd">    algorithm : {&#39;auto&#39;, &#39;hnsw&#39;, &#39;lsh&#39;, &#39;falconn_lsh&#39;, &#39;onng&#39;, &#39;rptree&#39;, &#39;ball_tree&#39;, &#39;kd_tree&#39;, &#39;brute&#39;}, optional</span>
+<span class="sd">        Algorithm used to compute the nearest neighbors:</span>
+
+<span class="sd">        - &#39;hnsw&#39; will use :class:`HNSW`</span>
+<span class="sd">        - &#39;lsh&#39; will use :class:`PuffinnLSH`</span>
+<span class="sd">        - &#39;falconn_lsh&#39; will use :class:`FalconnLSH`</span>
+<span class="sd">        - &#39;onng&#39; will use :class:`NNG`</span>
+<span class="sd">        - &#39;rptree&#39; will use :class:`RandomProjectionTree`</span>
+<span class="sd">        - &#39;ball_tree&#39; will use :class:`BallTree`</span>
+<span class="sd">        - &#39;kd_tree&#39; will use :class:`KDTree`</span>
+<span class="sd">        - &#39;brute&#39; will use a brute-force search.</span>
+<span class="sd">        - &#39;auto&#39; will attempt to decide the most appropriate exact algorithm</span>
+<span class="sd">          based on the values passed to :meth:`fit` method. This will not</span>
+<span class="sd">          select an approximate nearest neighbor algorithm.</span>
+
+<span class="sd">        Note: fitting on sparse input will override the setting of</span>
+<span class="sd">        this parameter, using brute force.</span>
+
+<span class="sd">    algorithm_params: dict, optional</span>
+<span class="sd">        Override default parameters of the NN algorithm.</span>
+<span class="sd">        For example, with algorithm=&#39;lsh&#39; and algorithm_params={n_candidates: 100}</span>
+<span class="sd">        one hundred approximate neighbors are retrieved with LSH.</span>
+<span class="sd">        If parameter hubness is set, the candidate neighbors are further reordered</span>
+<span class="sd">        with hubness reduction.</span>
+<span class="sd">        Finally, n_neighbors objects are used from the (optionally reordered) candidates.</span>
+
+<span class="sd">    hubness: {&#39;mutual_proximity&#39;, &#39;local_scaling&#39;, &#39;dis_sim_local&#39;, None}, optional</span>
+<span class="sd">        Hubness reduction algorithm</span>
+
+<span class="sd">        - &#39;mutual_proximity&#39; or &#39;mp&#39; will use :class:`MutualProximity`</span>
+<span class="sd">        - &#39;local_scaling&#39; or &#39;ls&#39; will use :class:`LocalScaling`</span>
+<span class="sd">        - &#39;dis_sim_local&#39; or &#39;dsl&#39; will use :class:`DisSimLocal`</span>
+
+<span class="sd">        If None, no hubness reduction will be performed (=vanilla kNN).</span>
+
+<span class="sd">    hubness_params: dict, optional</span>
+<span class="sd">        Override default parameters of the selected hubness reduction algorithm.</span>
+<span class="sd">        For example, with hubness=&#39;mp&#39; and hubness_params={&#39;method&#39;: &#39;normal&#39;}</span>
+<span class="sd">        a mutual proximity variant is used, which models distance distributions</span>
+<span class="sd">        with independent Gaussians.</span>
+
+<span class="sd">    leaf_size: int, optional (default = 30)</span>
+<span class="sd">        Leaf size passed to BallTree or KDTree.  This can affect the</span>
+<span class="sd">        speed of the construction and query, as well as the memory</span>
+<span class="sd">        required to store the tree.  The optimal value depends on the</span>
+<span class="sd">        nature of the problem.</span>
+
+<span class="sd">    p: integer, optional (default = 2)</span>
+<span class="sd">        Power parameter for the Minkowski metric. When p = 1, this is</span>
+<span class="sd">        equivalent to using manhattan_distance (l1), and euclidean_distance</span>
+<span class="sd">        (l2) for p = 2. For arbitrary p, minkowski_distance (l_p) is used.</span>
+
+<span class="sd">    metric: string or callable, default &#39;minkowski&#39;</span>
+<span class="sd">        the distance metric to use for the tree.  The default metric is</span>
+<span class="sd">        minkowski, and with p=2 is equivalent to the standard Euclidean</span>
+<span class="sd">        metric. See the documentation of the DistanceMetric class for a</span>
+<span class="sd">        list of available metrics.</span>
+
+<span class="sd">    metric_params: dict, optional (default = None)</span>
+<span class="sd">        Additional keyword arguments for the metric function.</span>
+
+<span class="sd">    n_jobs: int or None, optional (default=None)</span>
+<span class="sd">        The number of parallel jobs to run for neighbors search.</span>
+<span class="sd">        ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context.</span>
+<span class="sd">        ``-1`` means using all processors.</span>
+<span class="sd">        See `Glossary &lt;https://scikit-learn.org/stable/glossary.html#term-n-jobs&gt;`_ for more details.</span>
+<span class="sd">        Doesn&#39;t affect :meth:`fit` method.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; X = [[0], [1], [2], [3]]</span>
+<span class="sd">    &gt;&gt;&gt; y = [0, 0, 1, 1]</span>
+<span class="sd">    &gt;&gt;&gt; from skhubness.neighbors import KNeighborsClassifier</span>
+<span class="sd">    &gt;&gt;&gt; neigh = KNeighborsClassifier(n_neighbors=3)</span>
+<span class="sd">    &gt;&gt;&gt; neigh.fit(X, y) # doctest: +ELLIPSIS</span>
+<span class="sd">    KNeighborsClassifier(...)</span>
+<span class="sd">    &gt;&gt;&gt; print(neigh.predict([[1.1]]))</span>
+<span class="sd">    [0]</span>
+<span class="sd">    &gt;&gt;&gt; print(neigh.predict_proba([[0.9]]))</span>
+<span class="sd">    [[0.66666667 0.33333333]]</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    RadiusNeighborsClassifier</span>
+<span class="sd">    KNeighborsRegressor</span>
+<span class="sd">    RadiusNeighborsRegressor</span>
+<span class="sd">    NearestNeighbors</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    See `Nearest Neighbors &lt;https://scikit-learn.org/stable/modules/neighbors.html#neighbors&gt;`_</span>
+<span class="sd">    in the scikit-learn online documentation for a discussion</span>
+<span class="sd">    of the choice of ``algorithm`` and ``leaf_size``.</span>
+
+<span class="sd">    .. warning::</span>
+<span class="sd">       Regarding the Nearest Neighbors algorithms, if it is found that two</span>
+<span class="sd">       neighbors, neighbor `k+1` and `k`, have identical distances</span>
+<span class="sd">       but different labels, the results will depend on the ordering of the</span>
+<span class="sd">       training data.</span>
+
+<span class="sd">    https://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="KNeighborsClassifier.__init__"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.KNeighborsClassifier.html#skhubness.neighbors.KNeighborsClassifier.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_neighbors</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">weights</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;uniform&#39;</span><span class="p">,</span>
+                 <span class="n">algorithm</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">algorithm_params</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">hubness</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">hubness_params</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">leaf_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;minkowski&#39;</span><span class="p">,</span> <span class="n">metric_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">n_jobs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">n_neighbors</span><span class="o">=</span><span class="n">n_neighbors</span><span class="p">,</span>
+            <span class="n">algorithm</span><span class="o">=</span><span class="n">algorithm</span><span class="p">,</span>
+            <span class="n">algorithm_params</span><span class="o">=</span><span class="n">algorithm_params</span><span class="p">,</span>
+            <span class="n">hubness</span><span class="o">=</span><span class="n">hubness</span><span class="p">,</span>
+            <span class="n">hubness_params</span><span class="o">=</span><span class="n">hubness_params</span><span class="p">,</span>
+            <span class="n">leaf_size</span><span class="o">=</span><span class="n">leaf_size</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">,</span>
+            <span class="n">metric_params</span><span class="o">=</span><span class="n">metric_params</span><span class="p">,</span>
+            <span class="n">n_jobs</span><span class="o">=</span><span class="n">n_jobs</span><span class="p">,</span>
+            <span class="n">verbose</span><span class="o">=</span><span class="n">verbose</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">weights</span> <span class="o">=</span> <span class="n">_check_weights</span><span class="p">(</span><span class="n">weights</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="KNeighborsClassifier.predict"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.KNeighborsClassifier.html#skhubness.neighbors.KNeighborsClassifier.predict">[docs]</a>    <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Predict the class labels for the provided data</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: array-like, shape (n_query, n_features), \</span>
+<span class="sd">                or (n_query, n_indexed) if metric == &#39;precomputed&#39;</span>
+<span class="sd">            Test samples.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        y: array of shape [n_samples] or [n_samples, n_outputs]</span>
+<span class="sd">            Class labels for each data sample.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">accept_sparse</span><span class="o">=</span><span class="s1">&#39;csr&#39;</span><span class="p">)</span>
+
+        <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">kneighbors</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">classes_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span>
+        <span class="n">_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">outputs_2d_</span><span class="p">:</span>
+            <span class="n">_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+            <span class="n">classes_</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="p">]</span>
+
+        <span class="n">n_outputs</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">classes_</span><span class="p">)</span>
+        <span class="n">n_samples</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">weights</span> <span class="o">=</span> <span class="n">_get_weights</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">weights</span><span class="p">)</span>
+
+        <span class="n">y_pred</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">n_outputs</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">classes_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">classes_k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">classes_</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">weights</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">mode</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">_y</span><span class="p">[</span><span class="n">neigh_ind</span><span class="p">,</span> <span class="n">k</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">mode</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">weighted_mode</span><span class="p">(</span><span class="n">_y</span><span class="p">[</span><span class="n">neigh_ind</span><span class="p">,</span> <span class="n">k</span><span class="p">],</span> <span class="n">weights</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+            <span class="n">mode</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">mode</span><span class="o">.</span><span class="n">ravel</span><span class="p">(),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">intp</span><span class="p">)</span>
+            <span class="n">y_pred</span><span class="p">[:,</span> <span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">classes_k</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">outputs_2d_</span><span class="p">:</span>
+            <span class="n">y_pred</span> <span class="o">=</span> <span class="n">y_pred</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">y_pred</span></div>
+
+<div class="viewcode-block" id="KNeighborsClassifier.predict_proba"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.KNeighborsClassifier.html#skhubness.neighbors.KNeighborsClassifier.predict_proba">[docs]</a>    <span class="k">def</span> <span class="nf">predict_proba</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return probability estimates for the test data X.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: array-like, shape (n_query, n_features), \</span>
+<span class="sd">                or (n_query, n_indexed) if metric == &#39;precomputed&#39;</span>
+<span class="sd">            Test samples.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        p: array of shape = [n_samples, n_classes], or a list of n_outputs</span>
+<span class="sd">            of such arrays if n_outputs &gt; 1.</span>
+<span class="sd">            The class probabilities of the input samples. Classes are ordered</span>
+<span class="sd">            by lexicographic order.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">accept_sparse</span><span class="o">=</span><span class="s1">&#39;csr&#39;</span><span class="p">)</span>
+
+        <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">kneighbors</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+        <span class="n">classes_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span>
+        <span class="n">_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">outputs_2d_</span><span class="p">:</span>
+            <span class="n">_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+            <span class="n">classes_</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="p">]</span>
+
+        <span class="n">n_samples</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">weights</span> <span class="o">=</span> <span class="n">_get_weights</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">weights</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">weights</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">weights</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">)</span>
+
+        <span class="n">all_rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">probabilities</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">classes_k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">classes_</span><span class="p">):</span>
+            <span class="n">pred_labels</span> <span class="o">=</span> <span class="n">_y</span><span class="p">[:,</span> <span class="n">k</span><span class="p">][</span><span class="n">neigh_ind</span><span class="p">]</span>
+            <span class="n">proba_k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">classes_k</span><span class="o">.</span><span class="n">size</span><span class="p">))</span>
+
+            <span class="c1"># a simple &#39;:&#39; index doesn&#39;t work right</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">pred_labels</span><span class="o">.</span><span class="n">T</span><span class="p">):</span>  <span class="c1"># loop is O(n_neighbors)</span>
+                <span class="n">proba_k</span><span class="p">[</span><span class="n">all_rows</span><span class="p">,</span> <span class="n">idx</span><span class="p">]</span> <span class="o">+=</span> <span class="n">weights</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]</span>
+
+            <span class="c1"># normalize &#39;votes&#39; into real [0,1] probabilities</span>
+            <span class="n">normalizer</span> <span class="o">=</span> <span class="n">proba_k</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
+            <span class="n">normalizer</span><span class="p">[</span><span class="n">normalizer</span> <span class="o">==</span> <span class="mf">0.0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+            <span class="n">proba_k</span> <span class="o">/=</span> <span class="n">normalizer</span>
+
+            <span class="n">probabilities</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">proba_k</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">outputs_2d_</span><span class="p">:</span>
+            <span class="n">probabilities</span> <span class="o">=</span> <span class="n">probabilities</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">probabilities</span></div></div>
+
+
+<div class="viewcode-block" id="RadiusNeighborsClassifier"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.RadiusNeighborsClassifier.html#skhubness.neighbors.RadiusNeighborsClassifier">[docs]</a><span class="k">class</span> <span class="nc">RadiusNeighborsClassifier</span><span class="p">(</span><span class="n">NeighborsBase</span><span class="p">,</span> <span class="n">RadiusNeighborsMixin</span><span class="p">,</span>
+                                <span class="n">SupervisedIntegerMixin</span><span class="p">,</span> <span class="n">ClassifierMixin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Classifier implementing a vote among neighbors within a given radius</span>
+
+<span class="sd">    Read more in the `scikit-learn User Guide</span>
+<span class="sd">    &lt;https://scikit-learn.org/stable/modules/neighbors.html#classification&gt;`_</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    radius: float, optional (default = 1.0)</span>
+<span class="sd">        Range of parameter space to use by default for :meth:`radius_neighbors`</span>
+<span class="sd">        queries.</span>
+
+<span class="sd">    weights: str or callable</span>
+<span class="sd">        weight function used in prediction.  Possible values:</span>
+
+<span class="sd">        - &#39;uniform&#39;: uniform weights.  All points in each neighborhood</span>
+<span class="sd">          are weighted equally.</span>
+<span class="sd">        - &#39;distance&#39;: weight points by the inverse of their distance.</span>
+<span class="sd">          in this case, closer neighbors of a query point will have a</span>
+<span class="sd">          greater influence than neighbors which are further away.</span>
+<span class="sd">        - [callable]: a user-defined function which accepts an</span>
+<span class="sd">          array of distances, and returns an array of the same shape</span>
+<span class="sd">          containing the weights.</span>
+
+<span class="sd">        Uniform weights are used by default.</span>
+
+<span class="sd">    algorithm: {&#39;auto&#39;, &#39;falconn_lsh&#39;, &#39;ball_tree&#39;, &#39;kd_tree&#39;, &#39;brute&#39;}, optional</span>
+<span class="sd">        Algorithm used to compute the nearest neighbors:</span>
+
+<span class="sd">        - &#39;falconn_lsh&#39; will use :class:`FalconnLSH`</span>
+<span class="sd">        - &#39;ball_tree&#39; will use :class:`BallTree`</span>
+<span class="sd">        - &#39;kd_tree&#39; will use :class:`KDTree`</span>
+<span class="sd">        - &#39;brute&#39; will use a brute-force search.</span>
+<span class="sd">        - &#39;auto&#39; will attempt to decide the most appropriate algorithm</span>
+<span class="sd">          based on the values passed to :meth:`fit` method.</span>
+
+<span class="sd">        Note: fitting on sparse input will override the setting of</span>
+<span class="sd">        this parameter, using brute force.</span>
+
+<span class="sd">    algorithm_params: dict, optional</span>
+<span class="sd">        Override default parameters of the NN algorithm.</span>
+<span class="sd">        For example, with algorithm=&#39;lsh&#39; and algorithm_params={n_candidates: 100}</span>
+<span class="sd">        one hundred approximate neighbors are retrieved with LSH.</span>
+<span class="sd">        If parameter hubness is set, the candidate neighbors are further reordered</span>
+<span class="sd">        with hubness reduction.</span>
+<span class="sd">        Finally, n_neighbors objects are used from the (optionally reordered) candidates.</span>
+
+<span class="sd">    hubness: {&#39;mutual_proximity&#39;, &#39;local_scaling&#39;, &#39;dis_sim_local&#39;, None}, optional</span>
+<span class="sd">        Hubness reduction algorithm</span>
+
+<span class="sd">        - &#39;mutual_proximity&#39; or &#39;mp&#39; will use :class:`MutualProximity`</span>
+<span class="sd">        - &#39;local_scaling&#39; or &#39;ls&#39; will use :class:`LocalScaling`</span>
+<span class="sd">        - &#39;dis_sim_local&#39; or &#39;dsl&#39; will use :class:`DisSimLocal`</span>
+
+<span class="sd">        If None, no hubness reduction will be performed (=vanilla kNN).</span>
+
+<span class="sd">    hubness_params: dict, optional</span>
+<span class="sd">        Override default parameters of the selected hubness reduction algorithm.</span>
+<span class="sd">        For example, with hubness=&#39;mp&#39; and hubness_params={&#39;method&#39;: &#39;normal&#39;}</span>
+<span class="sd">        a mutual proximity variant is used, which models distance distributions</span>
+<span class="sd">        with independent Gaussians.</span>
+
+<span class="sd">    leaf_size: int, optional (default = 30)</span>
+<span class="sd">        Leaf size passed to BallTree or KDTree.  This can affect the</span>
+<span class="sd">        speed of the construction and query, as well as the memory</span>
+<span class="sd">        required to store the tree.  The optimal value depends on the</span>
+<span class="sd">        nature of the problem.</span>
+
+<span class="sd">    p: integer, optional (default = 2)</span>
+<span class="sd">        Power parameter for the Minkowski metric. When p = 1, this is</span>
+<span class="sd">        equivalent to using manhattan_distance (l1), and euclidean_distance</span>
+<span class="sd">        (l2) for p = 2. For arbitrary p, minkowski_distance (l_p) is used.</span>
+
+<span class="sd">    metric: string or callable, default &#39;minkowski&#39;</span>
+<span class="sd">        the distance metric to use for the tree.  The default metric is</span>
+<span class="sd">        minkowski, and with p=2 is equivalent to the standard Euclidean</span>
+<span class="sd">        metric. See the documentation of the DistanceMetric class for a</span>
+<span class="sd">        list of available metrics.</span>
+
+<span class="sd">    outlier_label: int, optional (default = None)</span>
+<span class="sd">        Label, which is given for outlier samples (samples with no</span>
+<span class="sd">        neighbors on given radius).</span>
+<span class="sd">        If set to None, ValueError is raised, when outlier is detected.</span>
+
+<span class="sd">    metric_params: dict, optional (default = None)</span>
+<span class="sd">        Additional keyword arguments for the metric function.</span>
+
+<span class="sd">    n_jobs: int or None, optional (default=None)</span>
+<span class="sd">        The number of parallel jobs to run for neighbors search.</span>
+<span class="sd">        ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context.</span>
+<span class="sd">        ``-1`` means using all processors.</span>
+<span class="sd">        See `Glossary &lt;https://scikit-learn.org/stable/glossary.html#term-n-jobs&gt;`_</span>
+<span class="sd">        for more details.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; X = [[0], [1], [2], [3]]</span>
+<span class="sd">    &gt;&gt;&gt; y = [0, 0, 1, 1]</span>
+<span class="sd">    &gt;&gt;&gt; from skhubness.neighbors import RadiusNeighborsClassifier</span>
+<span class="sd">    &gt;&gt;&gt; neigh = RadiusNeighborsClassifier(radius=1.0)</span>
+<span class="sd">    &gt;&gt;&gt; neigh.fit(X, y) # doctest: +ELLIPSIS</span>
+<span class="sd">    RadiusNeighborsClassifier(...)</span>
+<span class="sd">    &gt;&gt;&gt; print(neigh.predict([[1.5]]))</span>
+<span class="sd">    [0]</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    KNeighborsClassifier</span>
+<span class="sd">    RadiusNeighborsRegressor</span>
+<span class="sd">    KNeighborsRegressor</span>
+<span class="sd">    NearestNeighbors</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    See `Nearest Neighbors &lt;https://scikit-learn.org/stable/modules/neighbors.html#neighbors&gt;`_</span>
+<span class="sd">    in the scikit-learn online documentation for a discussion</span>
+<span class="sd">    of the choice of ``algorithm`` and ``leaf_size``.</span>
+
+<span class="sd">    https://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="RadiusNeighborsClassifier.__init__"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.RadiusNeighborsClassifier.html#skhubness.neighbors.RadiusNeighborsClassifier.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span>
+                 <span class="n">algorithm</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">algorithm_params</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">hubness</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">hubness_params</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">leaf_size</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;minkowski&#39;</span><span class="p">,</span>
+                 <span class="n">outlier_label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">metric_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">radius</span><span class="o">=</span><span class="n">radius</span><span class="p">,</span>
+            <span class="n">algorithm</span><span class="o">=</span><span class="n">algorithm</span><span class="p">,</span>
+            <span class="n">algorithm_params</span><span class="o">=</span><span class="n">algorithm_params</span><span class="p">,</span>
+            <span class="n">hubness</span><span class="o">=</span><span class="n">hubness</span><span class="p">,</span>
+            <span class="n">hubness_params</span><span class="o">=</span><span class="n">hubness_params</span><span class="p">,</span>
+            <span class="n">leaf_size</span><span class="o">=</span><span class="n">leaf_size</span><span class="p">,</span>
+            <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">,</span> <span class="n">metric_params</span><span class="o">=</span><span class="n">metric_params</span><span class="p">,</span>
+            <span class="n">n_jobs</span><span class="o">=</span><span class="n">n_jobs</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">weights</span> <span class="o">=</span> <span class="n">_check_weights</span><span class="p">(</span><span class="n">weights</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">outlier_label</span> <span class="o">=</span> <span class="n">outlier_label</span></div>
+
+<div class="viewcode-block" id="RadiusNeighborsClassifier.predict"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.RadiusNeighborsClassifier.html#skhubness.neighbors.RadiusNeighborsClassifier.predict">[docs]</a>    <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Predict the class labels for the provided data</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: array-like, shape (n_query, n_features), \</span>
+<span class="sd">                or (n_query, n_indexed) if metric == &#39;precomputed&#39;</span>
+<span class="sd">            Test samples.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        y: array of shape [n_samples] or [n_samples, n_outputs]</span>
+<span class="sd">            Class labels for each data sample.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">accept_sparse</span><span class="o">=</span><span class="s1">&#39;csr&#39;</span><span class="p">)</span>
+        <span class="n">n_samples</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius_neighbors</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">inliers</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">nind</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">)</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">nind</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
+        <span class="n">outliers</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">nind</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">)</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">nind</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+
+        <span class="n">classes_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span>
+        <span class="n">_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">outputs_2d_</span><span class="p">:</span>
+            <span class="n">_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_y</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+            <span class="n">classes_</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="p">]</span>
+        <span class="n">n_outputs</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">classes_</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">outlier_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">neigh_dist</span><span class="p">[</span><span class="n">outliers</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1e-6</span>
+        <span class="k">elif</span> <span class="n">outliers</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;No neighbors found for test samples </span><span class="si">%r</span><span class="s1">, &#39;</span>
+                             <span class="s1">&#39;you can try using larger radius, &#39;</span>
+                             <span class="s1">&#39;give a label for outliers, &#39;</span>
+                             <span class="s1">&#39;or consider removing them from your dataset.&#39;</span>
+                             <span class="o">%</span> <span class="n">outliers</span><span class="p">)</span>
+
+        <span class="n">weights</span> <span class="o">=</span> <span class="n">_get_weights</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">weights</span><span class="p">)</span>
+
+        <span class="n">y_pred</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">n_outputs</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">classes_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">classes_k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">classes_</span><span class="p">):</span>
+            <span class="n">pred_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
+            <span class="n">pred_labels</span><span class="p">[:]</span> <span class="o">=</span> <span class="p">[</span><span class="n">_y</span><span class="p">[</span><span class="n">ind</span><span class="p">,</span> <span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="n">neigh_ind</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">weights</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">mode</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">stats</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">pl</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+                                 <span class="k">for</span> <span class="n">pl</span> <span class="ow">in</span> <span class="n">pred_labels</span><span class="p">[</span><span class="n">inliers</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">mode</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span>
+                    <span class="p">[</span><span class="n">weighted_mode</span><span class="p">(</span><span class="n">pl</span><span class="p">,</span> <span class="n">w</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+                     <span class="k">for</span> <span class="p">(</span><span class="n">pl</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">pred_labels</span><span class="p">[</span><span class="n">inliers</span><span class="p">],</span> <span class="n">weights</span><span class="p">[</span><span class="n">inliers</span><span class="p">])</span>
+                     <span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int</span><span class="p">)</span>
+
+            <span class="n">mode</span> <span class="o">=</span> <span class="n">mode</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+
+            <span class="n">y_pred</span><span class="p">[</span><span class="n">inliers</span><span class="p">,</span> <span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">classes_k</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">outliers</span><span class="p">:</span>
+            <span class="n">y_pred</span><span class="p">[</span><span class="n">outliers</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">outlier_label</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">outputs_2d_</span><span class="p">:</span>
+            <span class="n">y_pred</span> <span class="o">=</span> <span class="n">y_pred</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">y_pred</span></div></div>
+</pre></div>
+
+	    </div>
+            <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Roman Feldbauer.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.21.0a8',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/language_data.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../../../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../../../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>

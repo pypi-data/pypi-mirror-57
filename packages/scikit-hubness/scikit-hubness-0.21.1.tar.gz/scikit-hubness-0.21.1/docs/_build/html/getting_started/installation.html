@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Installation &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Quick start example" href="example.html" />
+    <link rel="prev" title="scikit-hubness: high-dimensional data mining" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installation-from-pypi">
+<h2>Installation from PyPI<a class="headerlink" href="#installation-from-pypi" title="Permalink to this headline">¶</a></h2>
+<p>The current release of <code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code> can be installed from PyPI:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install scikit-hubness
+</pre></div>
+</div>
+</div>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>All strict dependencies of <code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code> are automatically installed
+by <code class="docutils literal notranslate"><span class="pre">pip</span></code>. Some optional dependencies (certain ANN libraries) may not
+yet be available from PyPI. If you require one of these libraries,
+please refer to the library’s documentation for building instructions.
+For example, at the time of writing, <code class="docutils literal notranslate"><span class="pre">puffinn</span></code> was not available on PyPI.
+Building and installing is straight-forward:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/puffinn/puffinn.git
+<span class="nb">cd</span> puffinn
+python3 setup.py build
+pip install .
+</pre></div>
+</div>
+</div>
+<div class="section" id="installation-from-source">
+<h2>Installation from source<a class="headerlink" href="#installation-from-source" title="Permalink to this headline">¶</a></h2>
+<p>You can always grab the latest version of <code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code> directly from GitHub:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> install_dir
+git clone git@github.com:VarIr/scikit-hubness.git
+<span class="nb">cd</span> scikit-hubness
+pip install -e .
+</pre></div>
+</div>
+<p>This is the recommended approach, if you want to contribute to the development of <code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code>.</p>
+</div>
+<div class="section" id="supported-platforms">
+<h2>Supported platforms<a class="headerlink" href="#supported-platforms" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code> currently supports all major operating systems:</p>
+<ul class="simple">
+<li><p>Linux</p></li>
+<li><p>MacOS X</p></li>
+<li><p>Windows</p></li>
+</ul>
+<p>Note, that not all approximate nearest neighbor algorithms used in <code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code>
+are available on all platforms.
+This is because we rely on third-party libraries, which in some cases are not
+available for all platforms.
+The table below indicates, which libraries and
+algorithms are currently supported on your operating system.
+All exact nearest neighbor algorithms (as provided by scikit-learn) are available on all platforms.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 29%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 20%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>library</p></td>
+<td><p>algorithm</p></td>
+<td><p>Linux</p></td>
+<td><p>MacOS</p></td>
+<td><p>Windows</p></td>
+</tr>
+<tr class="row-even"><td><p>nmslib</p></td>
+<td><p>hnsw</p></td>
+<td><p>x</p></td>
+<td><p>x</p></td>
+<td><p>x</p></td>
+</tr>
+<tr class="row-odd"><td><p>annoy</p></td>
+<td><p>rptree</p></td>
+<td><p>x</p></td>
+<td><p>x</p></td>
+<td><p>x</p></td>
+</tr>
+<tr class="row-even"><td><p>ngtpy</p></td>
+<td><p>nng</p></td>
+<td><p>x</p></td>
+<td><p>x</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>falconn</p></td>
+<td><p>falconn_lsh</p></td>
+<td><p>x</p></td>
+<td><p>x</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>puffinn</p></td>
+<td><p>lsh</p></td>
+<td><p>x</p></td>
+<td><p>x</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>sklearn</p></td>
+<td><p>(all exact)</p></td>
+<td><p>x</p></td>
+<td><p>x</p></td>
+<td><p>x</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="example.html">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/documentation.html">scikit-hubness API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../index.html" title="previous chapter"><cite>scikit-hubness</cite>: high-dimensional data mining</a></li>
+      <li>Next: <a href="example.html" title="next chapter">Quick start example</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/getting_started/installation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

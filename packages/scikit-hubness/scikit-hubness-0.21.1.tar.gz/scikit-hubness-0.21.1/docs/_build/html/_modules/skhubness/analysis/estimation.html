@@ -1,0 +1,851 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>skhubness.analysis.estimation &mdash; scikit-hubness 0.21.0a8 documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../../../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="scikit-hubness 0.21.0a8 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="fa fa-home"> scikit-hubness </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../../../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-source">Installation from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#supported-platforms">Supported platforms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/example.html">Quick start example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/documentation.html">scikit-hubness API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <h1>Source code for skhubness.analysis.estimation</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1"># SPDX-License-Identifier: BSD-3-Clause</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This file is part of scikit-hubness.</span>
+<span class="sd">The package is available at https://github.com/VarIr/scikit-hubness/</span>
+<span class="sd">and distributed under the terms of the BSD-3 license.</span>
+
+<span class="sd">(c) 2018-2019, Roman Feldbauer</span>
+<span class="sd">Austrian Research Institute for Artificial Intelligence (OFAI) and</span>
+<span class="sd">University of Vienna, Division of Computational Systems Biology (CUBE)</span>
+<span class="sd">Contact: &lt;roman.feldbauer@univie.ac.at&gt;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">annotations</span>
+<span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="k">import</span> <span class="n">cpu_count</span>
+<span class="kn">from</span> <span class="nn">tqdm.auto</span> <span class="k">import</span> <span class="n">tqdm</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="k">import</span> <span class="n">List</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span>
+<span class="kn">from</span> <span class="nn">scipy.sparse</span> <span class="k">import</span> <span class="n">csr_matrix</span>
+<span class="kn">from</span> <span class="nn">scipy.sparse.base</span> <span class="k">import</span> <span class="n">issparse</span>
+<span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="k">import</span> <span class="n">BaseEstimator</span>
+<span class="kn">from</span> <span class="nn">sklearn.utils.validation</span> <span class="k">import</span> <span class="n">check_random_state</span><span class="p">,</span> <span class="n">check_array</span><span class="p">,</span> <span class="n">check_is_fitted</span>
+<span class="kn">from</span> <span class="nn">skhubness.neighbors</span> <span class="k">import</span> <span class="n">NearestNeighbors</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Hubness&#39;</span><span class="p">,</span> <span class="s1">&#39;VALID_HUBNESS_MEASURES&#39;</span><span class="p">]</span>
+
+<span class="n">VALID_METRICS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;cosine&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;precomputed&#39;</span><span class="p">,</span>
+                 <span class="p">]</span>
+<span class="n">VALID_HUBNESS_MEASURES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;all&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;k_skewness&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;k_skewness_truncnorm&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;atkinson&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;gini&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;robinhood&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;antihubs&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;antihub_occurrence&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;hubs&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;hub_occurrence&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;groupie_ratio&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;k_neighbors&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;k_occurrence&#39;</span><span class="p">,</span>
+                          <span class="p">]</span>
+
+
+<div class="viewcode-block" id="Hubness"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.analysis.Hubness.html#skhubness.analysis.Hubness">[docs]</a><span class="k">class</span> <span class="nc">Hubness</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Examine hubness characteristics of data.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    k: int</span>
+<span class="sd">        Neighborhood size</span>
+
+<span class="sd">    return_value: str, default = &quot;k_skewness&quot;</span>
+<span class="sd">        Hubness measure to return by :meth:`score`</span>
+<span class="sd">        By default, this is the skewness of the k-occurrence histogram.</span>
+<span class="sd">        Use &quot;all&quot; to return a dict of all available measures,</span>
+<span class="sd">        or check `skhubness.analysis.VALID_HUBNESS_MEASURE`</span>
+<span class="sd">        for available measures.</span>
+
+<span class="sd">    hub_size: float</span>
+<span class="sd">        Hubs are defined as objects with k-occurrence &gt; hub_size * k.</span>
+
+<span class="sd">    metric: string, one of [&#39;euclidean&#39;, &#39;cosine&#39;, &#39;precomputed&#39;]</span>
+<span class="sd">        Metric to use for distance computation. Currently, only</span>
+<span class="sd">        Euclidean, cosine, and precomputed distances are supported.</span>
+
+<span class="sd">    store_k_neighbors: bool</span>
+<span class="sd">        Whether to save the k-neighbor lists. Requires O(n_test * k) memory.</span>
+
+<span class="sd">    store_k_occurrence: bool</span>
+<span class="sd">        Whether to save the k-occurrence. Requires O(n_test) memory.</span>
+
+<span class="sd">    algorithm: {&#39;auto&#39;, &#39;hnsw&#39;, &#39;lsh&#39;, &#39;ball_tree&#39;, &#39;kd_tree&#39;, &#39;brute&#39;}, optional</span>
+<span class="sd">        Algorithm used to compute the nearest neighbors:</span>
+
+<span class="sd">        - &#39;hnsw&#39; will use :class:`HNSW`</span>
+<span class="sd">        - &#39;lsh&#39; will use :class:`FalconnLSH`</span>
+<span class="sd">        - &#39;ball_tree&#39; will use :class:`BallTree`</span>
+<span class="sd">        - &#39;kd_tree&#39; will use :class:`KDTree`</span>
+<span class="sd">        - &#39;brute&#39; will use a brute-force search.</span>
+<span class="sd">        - &#39;auto&#39; will attempt to decide the most appropriate algorithm</span>
+<span class="sd">          based on the values passed to :meth:`fit` method.</span>
+
+<span class="sd">        Note: fitting on sparse input will override the setting of</span>
+<span class="sd">        this parameter, using brute force.</span>
+
+<span class="sd">    algorithm_params: dict, optional</span>
+<span class="sd">        Override default parameters of the NN algorithm.</span>
+<span class="sd">        For example, with algorithm=&#39;lsh&#39; and algorithm_params={n_candidates: 100}</span>
+<span class="sd">        one hundred approximate neighbors are retrieved with LSH.</span>
+<span class="sd">        If parameter hubness is set, the candidate neighbors are further reordered</span>
+<span class="sd">        with hubness reduction.</span>
+<span class="sd">        Finally, n_neighbors objects are used from the (optionally reordered) candidates.</span>
+
+<span class="sd">    hubness: {&#39;mutual_proximity&#39;, &#39;local_scaling&#39;, &#39;dis_sim_local&#39;, None}, optional</span>
+<span class="sd">        Hubness reduction algorithm</span>
+
+<span class="sd">        - &#39;mutual_proximity&#39; or &#39;mp&#39; will use :class:`MutualProximity`</span>
+<span class="sd">        - &#39;local_scaling&#39; or &#39;ls&#39; will use :class:`LocalScaling`</span>
+<span class="sd">        - &#39;dis_sim_local&#39; or &#39;dsl&#39; will use :class:`DisSimLocal`</span>
+
+<span class="sd">        If None, no hubness reduction will be performed (=vanilla kNN).</span>
+
+<span class="sd">    hubness_params: dict, optional</span>
+<span class="sd">        Override default parameters of the selected hubness reduction algorithm.</span>
+<span class="sd">        For example, with hubness=&#39;mp&#39; and hubness_params={&#39;method&#39;: &#39;normal&#39;}</span>
+<span class="sd">        a mutual proximity variant is used, which models distance distributions</span>
+<span class="sd">        with independent Gaussians.</span>
+
+<span class="sd">    random_state: int, RandomState instance or None, optional</span>
+<span class="sd">        If int, random_state is the seed used by the random number generator;</span>
+<span class="sd">        If RandomState instance, random_state is the random number generator;</span>
+<span class="sd">        If None, the random number generator is the RandomState instance used</span>
+<span class="sd">        by `np.random`.</span>
+
+<span class="sd">    shuffle_equal: bool, optional</span>
+<span class="sd">        If true and metric=&#39;precomputed&#39;, shuffle neighbors with identical distances</span>
+<span class="sd">        to avoid artifact hubness.</span>
+<span class="sd">        NOTE: This is especially useful for secondary distance measures</span>
+<span class="sd">        with a finite number of possible values, e.g. SNN or MP empiric.</span>
+
+<span class="sd">    n_jobs: int, optional</span>
+<span class="sd">        CURRENTLY IGNORED.</span>
+<span class="sd">        Number of processes for parallel computations.</span>
+<span class="sd">        - `1`: Don&#39;t use multiprocessing.</span>
+<span class="sd">        - `-1`: Use all CPUs</span>
+
+<span class="sd">    verbose: int, optional</span>
+<span class="sd">        Level of output messages</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    k_skewness: float</span>
+<span class="sd">        Hubness, measured as skewness of k-occurrence histogram [1]_</span>
+
+<span class="sd">    k_skewness_truncnorm: float</span>
+<span class="sd">        Hubness, measured as skewness of truncated normal distribution</span>
+<span class="sd">        fitted with k-occurrence histogram</span>
+
+<span class="sd">    atkinson_index: float</span>
+<span class="sd">        Hubness, measured as the Atkinson index of k-occurrence distribution</span>
+
+<span class="sd">    gini_index: float</span>
+<span class="sd">        Hubness, measured as the Gini index of k-occurrence distribution</span>
+
+<span class="sd">    robinhood_index: float</span>
+<span class="sd">        Hubness, measured as Robin Hood index of k-occurrence distribution [2]_</span>
+
+<span class="sd">    antihubs: int</span>
+<span class="sd">        Indices to antihubs</span>
+
+<span class="sd">    antihub_occurrence: float</span>
+<span class="sd">        Proportion of antihubs in data set</span>
+
+<span class="sd">    hubs: int</span>
+<span class="sd">        Indices to hubs</span>
+
+<span class="sd">    hub_occurrence: float</span>
+<span class="sd">        Proportion of k-nearest neighbor slots occupied by hubs</span>
+
+<span class="sd">    groupie_ratio: float</span>
+<span class="sd">        Proportion of objects with the largest hub in their neighborhood</span>
+
+<span class="sd">    k_occurrence: ndarray</span>
+<span class="sd">        Reverse neighbor count for each object</span>
+
+<span class="sd">    k_neighbors: ndarray</span>
+<span class="sd">        Indices to k-nearest neighbors for each object</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] `Radovanović, M.; Nanopoulos, A. &amp; Ivanovic, M.</span>
+<span class="sd">            Hubs in space: Popular nearest neighbors in high-dimensional data.</span>
+<span class="sd">            Journal of Machine Learning Research, 2010, 11, 2487-2531`</span>
+<span class="sd">    .. [2] `Feldbauer, R.; Leodolter, M.; Plant, C. &amp; Flexer, A.</span>
+<span class="sd">            Fast approximate hubness reduction for large high-dimensional data.</span>
+<span class="sd">            IEEE International Conference of Big Knowledge (2018).`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="Hubness.__init__"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.analysis.Hubness.html#skhubness.analysis.Hubness.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">return_value</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;k_skewness&#39;</span><span class="p">,</span>
+                 <span class="n">hub_size</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">2.</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span>
+                 <span class="n">store_k_neighbors</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">store_k_occurrence</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+                 <span class="n">algorithm</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">algorithm_params</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">hubness</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">hubness_params</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">verbose</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n_jobs</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">shuffle_equal</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">=</span> <span class="n">k</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="n">return_value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hub_size</span> <span class="o">=</span> <span class="n">hub_size</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">=</span> <span class="n">metric</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">store_k_neighbors</span> <span class="o">=</span> <span class="n">store_k_neighbors</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">store_k_occurrence</span> <span class="o">=</span> <span class="n">store_k_occurrence</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">algorithm</span> <span class="o">=</span> <span class="n">algorithm</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">algorithm_params</span> <span class="o">=</span> <span class="n">algorithm_params</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hubness</span> <span class="o">=</span> <span class="n">hubness</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hubness_params</span> <span class="o">=</span> <span class="n">hubness_params</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="o">=</span> <span class="n">verbose</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_jobs</span> <span class="o">=</span> <span class="n">n_jobs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">random_state</span> <span class="o">=</span> <span class="n">random_state</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">shuffle_equal</span> <span class="o">=</span> <span class="n">shuffle_equal</span></div>
+
+<div class="viewcode-block" id="Hubness.fit"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.analysis.Hubness.html#skhubness.analysis.Hubness.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Hubness</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Fit indexed objects.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: {array-like, sparse matrix}, shape (n_samples, n_features) or (n_query, n_indexed) if metric==&#39;precomputed&#39;</span>
+<span class="sd">            Training data vectors or distance matrix, if metric == &#39;precomputed&#39;.</span>
+
+<span class="sd">        y: ignored</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        self:</span>
+<span class="sd">            Fitted instance of :mod:Hubness</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">accept_sparse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="c1"># Making sure parameters have sensible values</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span>
+        <span class="k">if</span> <span class="n">k</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="mi">10</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Neighborhood size &#39;k&#39; must &quot;</span>
+                                 <span class="n">f</span><span class="s2">&quot;be &gt;= 1, but is </span><span class="si">{k}</span><span class="s2">.&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">=</span> <span class="n">k</span>
+
+        <span class="n">store_k_neighbors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">store_k_neighbors</span>
+        <span class="k">if</span> <span class="n">store_k_neighbors</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">store_k_neighbors</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">store_k_neighbors</span><span class="p">,</span> <span class="nb">bool</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;k_neighbors must be True or False.&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">store_k_neighbors</span> <span class="o">=</span> <span class="n">store_k_neighbors</span>
+
+        <span class="n">store_k_occurrence</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">store_k_occurrence</span>
+        <span class="k">if</span> <span class="n">store_k_occurrence</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">store_k_occurrence</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">store_k_occurrence</span><span class="p">,</span> <span class="nb">bool</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;k_occurrence must be True or False.&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">store_k_occurrence</span> <span class="o">=</span> <span class="n">store_k_occurrence</span>
+
+        <span class="n">return_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">return_value</span>
+        <span class="k">if</span> <span class="n">return_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">return_value</span> <span class="o">=</span> <span class="s1">&#39;k_skewness&#39;</span>
+        <span class="k">elif</span> <span class="n">return_value</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">VALID_HUBNESS_MEASURES</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Unknown return value: </span><span class="si">{return_value}</span><span class="s1">. &#39;</span>
+                             <span class="n">f</span><span class="s1">&#39;Allowed hubness measures: </span><span class="si">{VALID_HUBNESS_MEASURES}</span><span class="s1">.&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">return_value</span> <span class="o">==</span> <span class="s1">&#39;k_neighbors&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">store_k_neighbors</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Incompatible parameters return_value=</span><span class="si">{return_value}</span><span class="s1"> &#39;</span>
+                          <span class="n">f</span><span class="s1">&#39;and store_k_neighbors=</span><span class="si">{self.store_k_neighbors}</span><span class="s1">. &#39;</span>
+                          <span class="n">f</span><span class="s1">&#39;Overriding store_k_neighbor=True.&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">store_k_neighbors</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">elif</span> <span class="n">return_value</span> <span class="o">==</span> <span class="s1">&#39;k_occurrence&#39;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">store_k_occurrence</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Incompatible parameters return_value=</span><span class="si">{return_value}</span><span class="s1"> &#39;</span>
+                          <span class="n">f</span><span class="s1">&#39;and store_k_occurrence=</span><span class="si">{self.store_k_occurrence}</span><span class="s1">. &#39;</span>
+                          <span class="n">f</span><span class="s1">&#39;Overriding store_k_occurrence=True.&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">store_k_occurrence</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="n">return_value</span>
+
+        <span class="n">hub_size</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hub_size</span>
+        <span class="k">if</span> <span class="n">hub_size</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">hub_size</span> <span class="o">=</span> <span class="mf">2.</span>
+        <span class="k">elif</span> <span class="n">hub_size</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Hub size must be greater than zero.&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hub_size</span> <span class="o">=</span> <span class="n">hub_size</span>
+
+        <span class="n">metric</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span>
+        <span class="k">if</span> <span class="n">metric</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">metric</span> <span class="o">=</span> <span class="s1">&#39;euclidean&#39;</span>
+        <span class="k">if</span> <span class="n">metric</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">VALID_METRICS</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Unknown metric &#39;</span><span class="si">{metric}</span><span class="s2">&#39;. &quot;</span>
+                             <span class="n">f</span><span class="s2">&quot;Must be one of </span><span class="si">{VALID_METRICS}</span><span class="s2">.&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">=</span> <span class="n">metric</span>
+
+        <span class="n">n_jobs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_jobs</span>
+        <span class="k">if</span> <span class="n">n_jobs</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">n_jobs</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">elif</span> <span class="n">n_jobs</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">n_jobs</span> <span class="o">=</span> <span class="n">cpu_count</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="n">n_jobs</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">n_jobs</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Number of parallel processes &#39;n_jobs&#39; must be &quot;</span>
+                             <span class="n">f</span><span class="s2">&quot;a positive integer, or ``-1`` to use all local&quot;</span>
+                             <span class="n">f</span><span class="s2">&quot; CPU cores. Was </span><span class="si">{n_jobs}</span><span class="s2"> instead.&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_jobs</span> <span class="o">=</span> <span class="n">n_jobs</span>
+
+        <span class="n">verbose</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span>
+        <span class="k">if</span> <span class="n">verbose</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">verbose</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">elif</span> <span class="n">verbose</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">verbose</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="o">=</span> <span class="n">verbose</span>
+
+        <span class="c1"># check random state</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_random_state</span> <span class="o">=</span> <span class="n">check_random_state</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">random_state</span><span class="p">)</span>
+
+        <span class="n">shuffle_equal</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">shuffle_equal</span>
+        <span class="k">if</span> <span class="n">shuffle_equal</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">shuffle_equal</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">shuffle_equal</span><span class="p">,</span> <span class="nb">bool</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Parameter shuffle_equal must be True or False, &#39;</span>
+                             <span class="n">f</span><span class="s1">&#39;but was </span><span class="si">{shuffle_equal}</span><span class="s1">.&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">shuffle_equal</span> <span class="o">=</span> <span class="n">shuffle_equal</span>
+
+        <span class="c1"># Fit Hubness to training data: just store as indexed objects</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span> <span class="o">=</span> <span class="n">X</span>
+
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+    <span class="k">def</span> <span class="nf">_k_neighbors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X_test</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">X_train</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Return indices of nearest neighbors in X_train for each vector in X_test. &quot;&quot;&quot;</span>
+        <span class="n">nn</span> <span class="o">=</span> <span class="n">NearestNeighbors</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">metric</span><span class="p">,</span>
+                              <span class="n">algorithm</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">algorithm</span><span class="p">,</span> <span class="n">algorithm_params</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">algorithm_params</span><span class="p">,</span>
+                              <span class="n">hubness</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">hubness</span><span class="p">,</span> <span class="n">hubness_params</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">hubness_params</span><span class="p">)</span>
+        <span class="n">nn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+        <span class="c1"># if X_test is None, self distances are ignored</span>
+        <span class="n">indices</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">kneighbors</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">return_distance</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">indices</span>
+
+    <span class="k">def</span> <span class="nf">_k_neighbors_precomputed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">D</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">kth</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">start</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">end</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Return indices of nearest neighbors in precomputed distance matrix.</span>
+
+<span class="sd">        Note</span>
+<span class="sd">        ----</span>
+<span class="sd">        Parameters kth, start, end are used to ensure that objects are</span>
+<span class="sd">        not returned as their own nearest neighbors.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">n_test</span><span class="p">,</span> <span class="n">m_test</span> <span class="o">=</span> <span class="n">D</span><span class="o">.</span><span class="n">shape</span>
+        <span class="n">indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n_test</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">:</span>
+            <span class="n">range_n_test</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n_test</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">range_n_test</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_test</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">range_n_test</span><span class="p">:</span>
+            <span class="n">d</span> <span class="o">=</span> <span class="n">D</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+            <span class="n">d</span><span class="p">[</span><span class="o">~</span><span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">d</span><span class="p">)]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">shuffle_equal</span><span class="p">:</span>
+                <span class="c1"># Randomize equal values in the distance matrix rows to avoid</span>
+                <span class="c1"># the problem case if all numbers to sort are the same,</span>
+                <span class="c1"># which would yield high hubness, even if there is none.</span>
+                <span class="n">rp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_random_state</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">m_test</span><span class="p">)</span>
+                <span class="n">d2</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="n">rp</span><span class="p">]</span>
+                <span class="n">d2idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argpartition</span><span class="p">(</span><span class="n">d2</span><span class="p">,</span> <span class="n">kth</span><span class="o">=</span><span class="n">kth</span><span class="p">)</span>
+                <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">rp</span><span class="p">[</span><span class="n">d2idx</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">]]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">d_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argpartition</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">kth</span><span class="o">=</span><span class="n">kth</span><span class="p">)</span>
+                <span class="n">indices</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">d_idx</span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">end</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">indices</span>
+
+    <span class="k">def</span> <span class="nf">_k_neighbors_precomputed_sparse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">:</span> <span class="n">csr_matrix</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Find nearest neighbors in sparse distance matrix.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: sparse, shape = [n_test, n_indexed]</span>
+<span class="sd">            Sparse distance matrix. Only non-zero elements</span>
+<span class="sd">            may be considered neighbors.</span>
+
+<span class="sd">        n_samples: int</span>
+<span class="sd">            Number of sampled indexed objects, e.g.</span>
+<span class="sd">            in approximate hubness reduction.</span>
+<span class="sd">            If None, this is inferred from the first row of X.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        k_neighbors : ndarray</span>
+<span class="sd">            Flattened array of neighbor indices.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">issparse</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Matrix X is not sparse&#39;</span><span class="p">)</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">tocsr</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">n_samples</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">n_samples</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">indptr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">X</span><span class="o">.</span><span class="n">indptr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">n_test</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span>
+        <span class="c1"># To allow different number of explicit entries per row,</span>
+        <span class="c1"># we need to process the matrix row-by-row.</span>
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">indptr</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">-</span> <span class="n">X</span><span class="o">.</span><span class="n">indptr</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">n_samples</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">shuffle_equal</span><span class="p">:</span>
+            <span class="n">min_ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argpartition</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">n_test</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">),</span>
+                                      <span class="n">kth</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">),</span>
+                                      <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)[:,</span> <span class="p">:</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">]</span>
+            <span class="n">k_neighbors</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">indices</span><span class="p">[</span><span class="n">min_ind</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">indptr</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">repeats</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">)]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">k_neighbors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">n_test</span><span class="p">,),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">:</span>
+                <span class="n">range_n_test</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n_test</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">range_n_test</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_test</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">shuffle_equal</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">range_n_test</span><span class="p">:</span>
+                    <span class="n">x</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">getrow</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                    <span class="n">rp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_random_state</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">nnz</span><span class="p">)</span>
+                    <span class="n">d2</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">rp</span><span class="p">]</span>
+                    <span class="n">d2idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argpartition</span><span class="p">(</span><span class="n">d2</span><span class="p">,</span> <span class="n">kth</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">))</span>
+                    <span class="n">k_neighbors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">indices</span><span class="p">[</span><span class="n">rp</span><span class="p">[</span><span class="n">d2idx</span><span class="p">[:</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">]]]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">range_n_test</span><span class="p">:</span>
+                    <span class="n">x</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">getrow</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                    <span class="n">min_ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argpartition</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">kth</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">))[:</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">]</span>
+                    <span class="n">k_neighbors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">indices</span><span class="p">[</span><span class="n">min_ind</span><span class="p">]</span>
+            <span class="n">k_neighbors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">(</span><span class="n">k_neighbors</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">k_neighbors</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_calc_skewness_truncnorm</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Hubness measure; corrected for non-negativity of k-occurrence.</span>
+
+<span class="sd">        Hubness as skewness of truncated normal distribution</span>
+<span class="sd">        estimated from k-occurrence histogram.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        k_occurrence: ndarray</span>
+<span class="sd">            Reverse nearest neighbor count for each object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">clip_left</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">clip_right</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">iinfo</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">)</span><span class="o">.</span><span class="n">max</span>
+        <span class="n">k_occurrence_mean</span> <span class="o">=</span> <span class="n">k_occurrence</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+        <span class="n">k_occurrence_std</span> <span class="o">=</span> <span class="n">k_occurrence</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="n">clip_left</span> <span class="o">-</span> <span class="n">k_occurrence_mean</span><span class="p">)</span> <span class="o">/</span> <span class="n">k_occurrence_std</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="n">clip_right</span> <span class="o">-</span> <span class="n">k_occurrence_mean</span><span class="p">)</span> <span class="o">/</span> <span class="n">k_occurrence_std</span>
+        <span class="n">skew_truncnorm</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">truncnorm</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="n">moment</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">skew_truncnorm</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_calc_gini_index</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">limiting</span><span class="o">=</span><span class="s1">&#39;memory&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Hubness measure; Gini index</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        k_occurrence: ndarray</span>
+<span class="sd">            Reverse nearest neighbor count for each object.</span>
+<span class="sd">        limiting: &#39;memory&#39; or &#39;cpu&#39;</span>
+<span class="sd">            If &#39;cpu&#39;, use fast implementation with high memory usage,</span>
+<span class="sd">            if &#39;memory&#39;, use slighly slower, but memory-efficient implementation,</span>
+<span class="sd">            otherwise use naive implementation (slow, low memory usage)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">k_occurrence</span><span class="o">.</span><span class="n">size</span>
+        <span class="k">if</span> <span class="n">limiting</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;memory&#39;</span><span class="p">,</span> <span class="s1">&#39;space&#39;</span><span class="p">]:</span>
+            <span class="n">numerator</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">int</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+                <span class="n">numerator</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">[:]</span> <span class="o">-</span> <span class="n">k_occurrence</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+        <span class="k">elif</span> <span class="n">limiting</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="s1">&#39;cpu&#39;</span><span class="p">]:</span>
+            <span class="n">numerator</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">k_occurrence</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">k_occurrence</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># slow naive implementation</span>
+            <span class="n">n</span> <span class="o">=</span> <span class="n">k_occurrence</span><span class="o">.</span><span class="n">size</span>
+            <span class="n">numerator</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+                    <span class="n">numerator</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">k_occurrence</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+        <span class="n">denominator</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">n</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">numerator</span> <span class="o">/</span> <span class="n">denominator</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_calc_robinhood_index</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Hubness measure; Robin hood/Hoover/Schutz index.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        k_occurrence: ndarray</span>
+<span class="sd">            Reverse nearest neighbor count for each object.</span>
+
+<span class="sd">        Notes</span>
+<span class="sd">        -----</span>
+<span class="sd">        The Robin Hood index was proposed in [1]_ and is especially suited</span>
+<span class="sd">        for hubness estimation in large data sets. Additionally, it offers</span>
+<span class="sd">        straight-forward interpretability by answering the question:</span>
+<span class="sd">        What share of k-occurrence must be redistributed, so that all objects</span>
+<span class="sd">        are equally often nearest neighbors to others?</span>
+
+<span class="sd">        References</span>
+<span class="sd">        ----------</span>
+<span class="sd">        .. [1] `Feldbauer, R.; Leodolter, M.; Plant, C. &amp; Flexer, A.</span>
+<span class="sd">                Fast approximate hubness reduction for large high-dimensional data.</span>
+<span class="sd">                IEEE International Conference of Big Knowledge (2018).`</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">numerator</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">k_occurrence</span> <span class="o">-</span> <span class="n">k_occurrence</span><span class="o">.</span><span class="n">mean</span><span class="p">())))</span>
+        <span class="n">denominator</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">numerator</span> <span class="o">/</span> <span class="n">denominator</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_calc_atkinson_index</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">eps</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Hubness measure; Atkinson index.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        k_occurrence: ndarray</span>
+<span class="sd">            Reverse nearest neighbor count for each object.</span>
+<span class="sd">        eps: float, default = 0.5</span>
+<span class="sd">            &#39;Income&#39; weight. Turns the index into a normative measure.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">eps</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">term</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">prod</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">)</span> <span class="o">**</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">/</span> <span class="n">k_occurrence</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">term</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">k_occurrence</span> <span class="o">**</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">eps</span><span class="p">))</span> <span class="o">**</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">eps</span><span class="p">))</span>
+        <span class="k">return</span> <span class="mf">1.</span> <span class="o">-</span> <span class="mf">1.</span> <span class="o">/</span> <span class="n">k_occurrence</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="n">term</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_calc_antihub_occurrence</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="nb">float</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Proportion of antihubs in data set.</span>
+
+<span class="sd">        Antihubs are objects that are never among the nearest neighbors</span>
+<span class="sd">        of other objects.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        k_occurrence: ndarray</span>
+<span class="sd">            Reverse nearest neighbor count for each object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">antihubs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argwhere</span><span class="p">(</span><span class="n">k_occurrence</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+        <span class="n">antihub_occurrence</span> <span class="o">=</span> <span class="n">antihubs</span><span class="o">.</span><span class="n">size</span> <span class="o">/</span> <span class="n">k_occurrence</span><span class="o">.</span><span class="n">size</span>
+        <span class="k">return</span> <span class="n">antihubs</span><span class="p">,</span> <span class="n">antihub_occurrence</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">_calc_hub_occurrence</span><span class="p">(</span><span class="n">k</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">k_occurrence</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">n_test</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">hub_size</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Proportion of nearest neighbor slots occupied by hubs.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        k: int</span>
+<span class="sd">            Specifies the number of nearest neighbors</span>
+<span class="sd">        k_occurrence: ndarray</span>
+<span class="sd">            Reverse nearest neighbor count for each object.</span>
+<span class="sd">        n_test: int</span>
+<span class="sd">            Number of queries (or objects in a test set)</span>
+<span class="sd">        hub_size: float</span>
+<span class="sd">            Factor to determine hubs</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">hubs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argwhere</span><span class="p">(</span><span class="n">k_occurrence</span> <span class="o">&gt;=</span> <span class="n">hub_size</span> <span class="o">*</span> <span class="n">k</span><span class="p">)</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+        <span class="n">hub_occurrence</span> <span class="o">=</span> <span class="n">k_occurrence</span><span class="p">[</span><span class="n">hubs</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">k</span> <span class="o">/</span> <span class="n">n_test</span>
+        <span class="k">return</span> <span class="n">hubs</span><span class="p">,</span> <span class="n">hub_occurrence</span>
+
+<div class="viewcode-block" id="Hubness.score"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.analysis.Hubness.html#skhubness.analysis.Hubness.score">[docs]</a>    <span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">has_self_distances</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">dict</span><span class="p">]:</span>
+        <span class="sd">&quot;&quot;&quot; Estimate hubness in a data set.</span>
+
+<span class="sd">        Hubness is estimated from the distances between all objects in X to all objects in Y.</span>
+<span class="sd">        If Y is None, all-against-all distances between the objects in X are used.</span>
+<span class="sd">        If self.metric == &#39;precomputed&#39;, X must be a distance matrix.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X: ndarray, shape (n_query, n_features) or (n_query, n_indexed)</span>
+<span class="sd">            Array of query vectors, or distance, if self.metric == &#39;precomputed&#39;</span>
+
+<span class="sd">        y: ignored</span>
+
+<span class="sd">        has_self_distances: bool, default = False</span>
+<span class="sd">            Define, whether a precomputed distance matrix contains self distances,</span>
+<span class="sd">            which need to be excluded.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        hubness_measure: float or dict</span>
+<span class="sd">            Return the hubness measure as indicated by `return_value`.</span>
+<span class="sd">            Additional hubness indices are provided as attributes</span>
+<span class="sd">            (e.g. :func:`robinhood_index_`).</span>
+<span class="sd">            if return_value is &#39;all&#39;, a dict of all hubness measures is returned.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">check_is_fitted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;X_train_&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">X_test</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">X_test</span> <span class="o">=</span> <span class="n">X</span>
+        <span class="n">X_test</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">accept_sparse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">X_train</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span>
+
+        <span class="n">kth</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">)</span>
+        <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">end</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;precomputed&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;No X must be passed with metric==&quot;precomputed&quot;.&#39;</span><span class="p">)</span>
+            <span class="n">n_test</span><span class="p">,</span> <span class="n">n_train</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span>
+            <span class="k">if</span> <span class="n">has_self_distances</span><span class="p">:</span>
+                <span class="n">kth</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="n">start</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="n">end</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="c1"># Self distances do occur in this case</span>
+                <span class="n">kth</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="n">start</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="n">end</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">n_test</span><span class="p">,</span> <span class="n">m_test</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">shape</span>
+            <span class="n">n_train</span><span class="p">,</span> <span class="n">m_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span>
+            <span class="k">if</span> <span class="n">m_test</span> <span class="o">!=</span> <span class="n">m_train</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Number of features do not match: X_train.shape=</span><span class="si">{self.X_train_.shape}</span><span class="s1">, &#39;</span>
+                                 <span class="n">f</span><span class="s1">&#39;X_test.shape=</span><span class="si">{X.shape}</span><span class="s1">.&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;precomputed&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">issparse</span><span class="p">(</span><span class="n">X_test</span><span class="p">):</span>
+                <span class="n">k_neighbors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_k_neighbors_precomputed_sparse</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">k_neighbors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_k_neighbors_precomputed</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">kth</span><span class="p">,</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">k_neighbors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_k_neighbors</span><span class="p">(</span><span class="n">X_train</span><span class="o">=</span><span class="n">X_test</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">k_neighbors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_k_neighbors</span><span class="p">(</span><span class="n">X_test</span><span class="o">=</span><span class="n">X_test</span><span class="p">,</span> <span class="n">X_train</span><span class="o">=</span><span class="n">X_train</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">store_k_neighbors</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">k_neighbors</span> <span class="o">=</span> <span class="n">k_neighbors</span>
+
+        <span class="n">k_occurrence</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span>
+            <span class="n">k_neighbors</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="o">.</span><span class="n">ravel</span><span class="p">(),</span> <span class="n">minlength</span><span class="o">=</span><span class="n">n_train</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">store_k_occurrence</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">k_occurrence</span> <span class="o">=</span> <span class="n">k_occurrence</span>
+
+        <span class="c1"># traditional skewness measure</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">k_skewness</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">skew</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">)</span>
+
+        <span class="c1"># new skewness measure (truncated normal distribution)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">k_skewness_truncnorm</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_skewness_truncnorm</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">)</span>
+
+        <span class="c1"># Gini index</span>
+        <span class="n">limiting</span> <span class="o">=</span> <span class="s1">&#39;space&#39;</span> <span class="k">if</span> <span class="n">k_occurrence</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10_000</span> <span class="k">else</span> <span class="s1">&#39;time&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">gini_index</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_gini_index</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">,</span> <span class="n">limiting</span><span class="p">)</span>
+
+        <span class="c1"># Robin Hood index</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">robinhood_index</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_robinhood_index</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">)</span>
+
+        <span class="c1"># Atkinson index</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">atkinson_index</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_calc_atkinson_index</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">)</span>
+
+        <span class="c1"># anti-hub occurrence</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">antihubs</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">antihub_occurrence</span> <span class="o">=</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">_calc_antihub_occurrence</span><span class="p">(</span><span class="n">k_occurrence</span><span class="p">)</span>
+
+        <span class="c1"># hub occurrence</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hubs</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hub_occurrence</span> <span class="o">=</span> \
+            <span class="bp">self</span><span class="o">.</span><span class="n">_calc_hub_occurrence</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">k</span><span class="p">,</span> <span class="n">k_occurrence</span><span class="o">=</span><span class="n">k_occurrence</span><span class="p">,</span>
+                                      <span class="n">n_test</span><span class="o">=</span><span class="n">n_test</span><span class="p">,</span> <span class="n">hub_size</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">hub_size</span><span class="p">)</span>
+
+        <span class="c1"># Largest hub</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">groupie_ratio</span> <span class="o">=</span> <span class="n">k_occurrence</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">/</span> <span class="n">n_test</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span>
+
+        <span class="c1"># Dictionary of all hubness measures</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hubness_measures</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;k_skewness&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">k_skewness</span><span class="p">,</span>
+                                 <span class="s1">&#39;k_skewness_truncnorm&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">k_skewness_truncnorm</span><span class="p">,</span>
+                                 <span class="s1">&#39;atkinson&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">atkinson_index</span><span class="p">,</span>
+                                 <span class="s1">&#39;gini&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">gini_index</span><span class="p">,</span>
+                                 <span class="s1">&#39;robinhood&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">robinhood_index</span><span class="p">,</span>
+                                 <span class="s1">&#39;antihubs&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">antihubs</span><span class="p">,</span>
+                                 <span class="s1">&#39;antihub_occurrence&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">antihub_occurrence</span><span class="p">,</span>
+                                 <span class="s1">&#39;hubs&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">hubs</span><span class="p">,</span>
+                                 <span class="s1">&#39;hub_occurrence&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">hub_occurrence</span><span class="p">,</span>
+                                 <span class="s1">&#39;groupie_ratio&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">groupie_ratio</span><span class="p">,</span>
+                                 <span class="p">}</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;k_neighbors&#39;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">hubness_measures</span><span class="p">[</span><span class="s1">&#39;k_neighbors&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">k_neighbors</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;k_occurrence&#39;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">hubness_measures</span><span class="p">[</span><span class="s1">&#39;k_occurrence&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">k_occurrence</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">return_value</span> <span class="o">==</span> <span class="s1">&#39;all&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">hubness_measures</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">hubness_measures</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">return_value</span><span class="p">]</span></div></div>
+</pre></div>
+
+	    </div>
+            <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Roman Feldbauer.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.21.0a8',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/language_data.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../../../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../../../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>

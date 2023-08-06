@@ -1,0 +1,363 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>skhubness.reduction.dis_sim &mdash; scikit-hubness 0.21.0a8 documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../../../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="scikit-hubness 0.21.0a8 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="fa fa-home"> scikit-hubness </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../../../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-source">Installation from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#supported-platforms">Supported platforms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/example.html">Quick start example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/documentation.html">scikit-hubness API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <h1>Source code for skhubness.reduction.dis_sim</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1"># SPDX-License-Identifier: BSD-3-Clause</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">annotations</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">euclidean_distances</span>
+<span class="kn">from</span> <span class="nn">sklearn.utils.extmath</span> <span class="k">import</span> <span class="n">row_norms</span>
+<span class="kn">from</span> <span class="nn">sklearn.utils.validation</span> <span class="k">import</span> <span class="n">check_is_fitted</span><span class="p">,</span> <span class="n">check_consistent_length</span><span class="p">,</span> <span class="n">check_array</span>
+
+<span class="kn">from</span> <span class="nn">.base</span> <span class="k">import</span> <span class="n">HubnessReduction</span>
+
+
+<div class="viewcode-block" id="DisSimLocal"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.reduction.DisSimLocal.html#skhubness.reduction.DisSimLocal">[docs]</a><span class="k">class</span> <span class="nc">DisSimLocal</span><span class="p">(</span><span class="n">HubnessReduction</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Hubness reduction with DisSimLocal [1]_.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    k: int, default = 5</span>
+<span class="sd">        Number of neighbors to consider for the local centroids</span>
+
+<span class="sd">    squared: bool, default = True</span>
+<span class="sd">        DisSimLocal operates on squared Euclidean distances.</span>
+<span class="sd">        If True, return (quasi) squared Euclidean distances;</span>
+<span class="sd">        if False, return (quasi) Eucldean distances.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] Hara K, Suzuki I, Kobayashi K, Fukumizu K, Radovanović M (2016)</span>
+<span class="sd">           Flattening the density gradient for eliminating spatial centrality to reduce hubness.</span>
+<span class="sd">           In: Proceedings of the 30th AAAI conference on artificial intelligence, pp 1659–1665.</span>
+<span class="sd">           https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/viewPaper/12055</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<div class="viewcode-block" id="DisSimLocal.__init__"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.reduction.DisSimLocal.html#skhubness.reduction.DisSimLocal.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">squared</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">=</span> <span class="n">k</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">squared</span> <span class="o">=</span> <span class="n">squared</span></div>
+
+<div class="viewcode-block" id="DisSimLocal.fit"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.reduction.DisSimLocal.html#skhubness.reduction.DisSimLocal.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">neigh_dist</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">neigh_ind</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
+            <span class="n">assume_sorted</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DisSimLocal</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Fit the model using X, neigh_dist, and neigh_ind as training data.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        neigh_dist: np.ndarray, shape (n_samples, n_neighbors)</span>
+<span class="sd">            Distance matrix of training objects (rows) against their</span>
+<span class="sd">            individual k nearest neighbors (colums).</span>
+
+<span class="sd">        neigh_ind: np.ndarray, shape (n_samples, n_neighbors)</span>
+<span class="sd">            Neighbor indices corresponding to the values in neigh_dist.</span>
+
+<span class="sd">        X: np.ndarray, shape (n_samples, n_features)</span>
+<span class="sd">            Training data, where n_samples is the number of vectors,</span>
+<span class="sd">            and n_features their dimensionality (number of features).</span>
+
+<span class="sd">        assume_sorted: bool, default = True</span>
+<span class="sd">            Assume input matrices are sorted according to neigh_dist.</span>
+<span class="sd">            If False, these are sorted here.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Check equal number of rows and columns</span>
+        <span class="n">check_consistent_length</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">,</span> <span class="n">neigh_dist</span><span class="p">)</span>
+        <span class="n">check_consistent_length</span><span class="p">(</span><span class="n">neigh_ind</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">neigh_dist</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Expected k &gt; 0. Got </span><span class="si">{self.k}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Expected k: int &gt; 0. Got </span><span class="si">{self.k}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="n">k</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span>
+        <span class="k">if</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="n">neigh_ind</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Neighborhood parameter k larger than provided neighbors in neigh_dist, neigh_ind. &#39;</span>
+                          <span class="n">f</span><span class="s1">&#39;Will reduce to k=</span><span class="si">{neigh_ind.shape[1]}</span><span class="s1">.&#39;</span><span class="p">)</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="n">neigh_ind</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="c1"># Calculate local neighborhood centroids among the training points</span>
+        <span class="k">if</span> <span class="n">assume_sorted</span><span class="p">:</span>
+            <span class="n">knn</span> <span class="o">=</span> <span class="n">neigh_ind</span><span class="p">[:,</span> <span class="p">:</span><span class="n">k</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argpartition</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">,</span> <span class="n">kth</span><span class="o">=</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)[:,</span> <span class="p">:</span><span class="n">k</span><span class="p">]</span>
+            <span class="n">knn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">take_along_axis</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">centroids</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">knn</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">dist_to_cent</span> <span class="o">=</span> <span class="n">row_norms</span><span class="p">(</span><span class="n">X</span> <span class="o">-</span> <span class="n">centroids</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span> <span class="o">=</span> <span class="n">X</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">X_train_centroids_</span> <span class="o">=</span> <span class="n">centroids</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">X_train_dist_to_centroids_</span> <span class="o">=</span> <span class="n">dist_to_cent</span>
+
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+<div class="viewcode-block" id="DisSimLocal.transform"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.reduction.DisSimLocal.html#skhubness.reduction.DisSimLocal.transform">[docs]</a>    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">neigh_dist</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">neigh_ind</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span>
+                  <span class="n">assume_sorted</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Transform distance between test and training data with DisSimLocal.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        neigh_dist: np.ndarray, shape (n_query, n_neighbors)</span>
+<span class="sd">            Distance matrix of test objects (rows) against their individual</span>
+<span class="sd">            k nearest neighbors among the training data (columns).</span>
+
+<span class="sd">        neigh_ind: np.ndarray, shape (n_query, n_neighbors)</span>
+<span class="sd">            Neighbor indices corresponding to the values in neigh_dist</span>
+
+<span class="sd">        X: np.ndarray, shape (n_query, n_features)</span>
+<span class="sd">            Test data, where n_query is the number of vectors,</span>
+<span class="sd">            and n_features their dimensionality (number of features).</span>
+
+<span class="sd">        assume_sorted: ignored</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        hub_reduced_dist, neigh_ind</span>
+<span class="sd">            DisSimLocal distances, and corresponding neighbor indices</span>
+
+<span class="sd">        Notes</span>
+<span class="sd">        -----</span>
+<span class="sd">        The returned distances are NOT sorted! If you use this class directly,</span>
+<span class="sd">        you will need to sort the returned matrices according to hub_reduced_dist.</span>
+<span class="sd">        Classes from :mod:`skhubness.neighbors` do this automatically.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">check_is_fitted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;X_train_&#39;</span><span class="p">,</span> <span class="s1">&#39;X_train_centroids_&#39;</span><span class="p">,</span> <span class="s1">&#39;X_train_dist_to_centroids_&#39;</span><span class="p">])</span>
+        <span class="k">if</span> <span class="n">X</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+        <span class="n">n_test</span><span class="p">,</span> <span class="n">n_indexed</span> <span class="o">=</span> <span class="n">neigh_dist</span><span class="o">.</span><span class="n">shape</span>
+
+        <span class="k">if</span> <span class="n">n_indexed</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Cannot perform hubness reduction with a single neighbor per query. &#39;</span>
+                          <span class="n">f</span><span class="s1">&#39;Skipping hubness reduction, and returning untransformed distances.&#39;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span>
+
+        <span class="n">k</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">k</span>
+        <span class="k">if</span> <span class="n">k</span> <span class="o">&gt;</span> <span class="n">neigh_ind</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Neighborhood parameter k larger than provided neighbors in neigh_dist, neigh_ind. &#39;</span>
+                          <span class="n">f</span><span class="s1">&#39;Will reduce to k=</span><span class="si">{neigh_ind.shape[1]}</span><span class="s1">.&#39;</span><span class="p">)</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="n">neigh_ind</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="c1"># Calculate local neighborhood centroids for test objects among training objects</span>
+        <span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argpartition</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">,</span> <span class="n">kth</span><span class="o">=</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="c1"># neigh_dist = np.take_along_axis(neigh_dist, mask, axis=1)</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ind</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">):</span>
+            <span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">euclidean_distances</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_train_</span><span class="p">[</span><span class="n">ind</span><span class="p">],</span> <span class="n">squared</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">neigh_ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">take_along_axis</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">knn</span> <span class="o">=</span> <span class="n">neigh_ind</span><span class="p">[:,</span> <span class="p">:</span><span class="n">k</span><span class="p">]</span>
+        <span class="n">centroids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_train_centroids_</span><span class="p">[</span><span class="n">knn</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">X_test</span> <span class="o">=</span> <span class="n">X</span> <span class="o">-</span> <span class="n">centroids</span>
+        <span class="n">X_test</span> <span class="o">**=</span> <span class="mi">2</span>
+        <span class="n">X_test_dist_to_centroids</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">X_train_dist_to_centroids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">X_train_dist_to_centroids_</span><span class="p">[</span><span class="n">neigh_ind</span><span class="p">]</span>
+
+        <span class="n">hub_reduced_dist</span> <span class="o">=</span> <span class="n">neigh_dist</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">hub_reduced_dist</span> <span class="o">-=</span> <span class="n">X_test_dist_to_centroids</span><span class="p">[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
+        <span class="n">hub_reduced_dist</span> <span class="o">-=</span> <span class="n">X_train_dist_to_centroids</span>
+
+        <span class="c1"># DisSimLocal can yield negative dissimilarities, which can cause problems with</span>
+        <span class="c1"># certain scikit-learn routines (e.g. in metric=&#39;precomputed&#39; usages).</span>
+        <span class="c1"># We, therefore, shift dissimilarities to non-negative values, if necessary.</span>
+        <span class="n">min_dist</span> <span class="o">=</span> <span class="n">hub_reduced_dist</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">min_dist</span> <span class="o">&lt;</span> <span class="mf">0.</span><span class="p">:</span>
+            <span class="n">hub_reduced_dist</span> <span class="o">+=</span> <span class="p">(</span><span class="o">-</span><span class="n">min_dist</span><span class="p">)</span>
+
+        <span class="c1"># Return Euclidean or squared Euclidean distances?</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">squared</span><span class="p">:</span>
+            <span class="n">hub_reduced_dist</span> <span class="o">**=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+
+        <span class="c1"># Return the hubness reduced distances</span>
+        <span class="c1"># These must be sorted downstream</span>
+        <span class="k">return</span> <span class="n">hub_reduced_dist</span><span class="p">,</span> <span class="n">neigh_ind</span></div></div>
+</pre></div>
+
+	    </div>
+            <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Roman Feldbauer.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.21.0a8',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/language_data.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../../../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../../../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>

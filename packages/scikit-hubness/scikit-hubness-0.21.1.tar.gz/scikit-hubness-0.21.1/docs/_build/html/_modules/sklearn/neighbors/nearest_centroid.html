@@ -1,0 +1,385 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>sklearn.neighbors.nearest_centroid &mdash; scikit-hubness 0.21.0a8 documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../../../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="scikit-hubness 0.21.0a8 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="fa fa-home"> scikit-hubness </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../../../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-source">Installation from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#supported-platforms">Supported platforms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/example.html">Quick start example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/documentation.html">scikit-hubness API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <h1>Source code for sklearn.neighbors.nearest_centroid</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Nearest Centroid Classification</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># Author: Robert Layton &lt;robertlayton@gmail.com&gt;</span>
+<span class="c1">#         Olivier Grisel &lt;olivier.grisel@ensta.org&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># License: BSD 3 clause</span>
+
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">sparse</span> <span class="k">as</span> <span class="n">sp</span>
+
+<span class="kn">from</span> <span class="nn">..base</span> <span class="k">import</span> <span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">ClassifierMixin</span>
+<span class="kn">from</span> <span class="nn">..metrics.pairwise</span> <span class="k">import</span> <span class="n">pairwise_distances</span>
+<span class="kn">from</span> <span class="nn">..preprocessing</span> <span class="k">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">..utils.validation</span> <span class="k">import</span> <span class="n">check_array</span><span class="p">,</span> <span class="n">check_X_y</span><span class="p">,</span> <span class="n">check_is_fitted</span>
+<span class="kn">from</span> <span class="nn">..utils.sparsefuncs</span> <span class="k">import</span> <span class="n">csc_median_axis_0</span>
+<span class="kn">from</span> <span class="nn">..utils.multiclass</span> <span class="k">import</span> <span class="n">check_classification_targets</span>
+
+<div class="viewcode-block" id="NearestCentroid"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.NearestCentroid.html#skhubness.neighbors.NearestCentroid">[docs]</a><span class="k">class</span> <span class="nc">NearestCentroid</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">ClassifierMixin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Nearest centroid classifier.</span>
+
+<span class="sd">    Each class is represented by its centroid, with test samples classified to</span>
+<span class="sd">    the class with the nearest centroid.</span>
+
+<span class="sd">    Read more in the :ref:`User Guide &lt;nearest_centroid_classifier&gt;`.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    metric : string, or callable</span>
+<span class="sd">        The metric to use when calculating distance between instances in a</span>
+<span class="sd">        feature array. If metric is a string or callable, it must be one of</span>
+<span class="sd">        the options allowed by metrics.pairwise.pairwise_distances for its</span>
+<span class="sd">        metric parameter.</span>
+<span class="sd">        The centroids for the samples corresponding to each class is the point</span>
+<span class="sd">        from which the sum of the distances (according to the metric) of all</span>
+<span class="sd">        samples that belong to that particular class are minimized.</span>
+<span class="sd">        If the &quot;manhattan&quot; metric is provided, this centroid is the median and</span>
+<span class="sd">        for all other metrics, the centroid is now set to be the mean.</span>
+
+<span class="sd">    shrink_threshold : float, optional (default = None)</span>
+<span class="sd">        Threshold for shrinking centroids to remove features.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    centroids_ : array-like, shape = [n_classes, n_features]</span>
+<span class="sd">        Centroid of each class</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; from sklearn.neighbors.nearest_centroid import NearestCentroid</span>
+<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">    &gt;&gt;&gt; X = np.array([[-1, -1], [-2, -1], [-3, -2], [1, 1], [2, 1], [3, 2]])</span>
+<span class="sd">    &gt;&gt;&gt; y = np.array([1, 1, 1, 2, 2, 2])</span>
+<span class="sd">    &gt;&gt;&gt; clf = NearestCentroid()</span>
+<span class="sd">    &gt;&gt;&gt; clf.fit(X, y)</span>
+<span class="sd">    NearestCentroid(metric=&#39;euclidean&#39;, shrink_threshold=None)</span>
+<span class="sd">    &gt;&gt;&gt; print(clf.predict([[-0.8, -1]]))</span>
+<span class="sd">    [1]</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    sklearn.neighbors.KNeighborsClassifier: nearest neighbors classifier</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    When used for text classification with tf-idf vectors, this classifier is</span>
+<span class="sd">    also known as the Rocchio classifier.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    Tibshirani, R., Hastie, T., Narasimhan, B., &amp; Chu, G. (2002). Diagnosis of</span>
+<span class="sd">    multiple cancer types by shrunken centroids of gene expression. Proceedings</span>
+<span class="sd">    of the National Academy of Sciences of the United States of America,</span>
+<span class="sd">    99(10), 6567-6572. The National Academy of Sciences.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="NearestCentroid.__init__"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.NearestCentroid.html#skhubness.neighbors.NearestCentroid.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span> <span class="n">shrink_threshold</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">=</span> <span class="n">metric</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">shrink_threshold</span> <span class="o">=</span> <span class="n">shrink_threshold</span></div>
+
+<div class="viewcode-block" id="NearestCentroid.fit"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.NearestCentroid.html#skhubness.neighbors.NearestCentroid.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Fit the NearestCentroid model according to the given training data.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X : {array-like, sparse matrix}, shape = [n_samples, n_features]</span>
+<span class="sd">            Training vector, where n_samples is the number of samples and</span>
+<span class="sd">            n_features is the number of features.</span>
+<span class="sd">            Note that centroid shrinking cannot be used with sparse matrices.</span>
+<span class="sd">        y : array, shape = [n_samples]</span>
+<span class="sd">            Target values (integers)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;precomputed&#39;</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Precomputed is not supported.&quot;</span><span class="p">)</span>
+        <span class="c1"># If X is sparse and the metric is &quot;manhattan&quot;, store it in a csc</span>
+        <span class="c1"># format is easier to calculate the median.</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s1">&#39;manhattan&#39;</span><span class="p">:</span>
+            <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">check_X_y</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;csc&#39;</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">check_X_y</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;csr&#39;</span><span class="p">,</span> <span class="s1">&#39;csc&#39;</span><span class="p">])</span>
+        <span class="n">is_X_sparse</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">issparse</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">is_X_sparse</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">shrink_threshold</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;threshold shrinking not supported&quot;</span>
+                             <span class="s2">&quot; for sparse input&quot;</span><span class="p">)</span>
+        <span class="n">check_classification_targets</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+        <span class="n">n_samples</span><span class="p">,</span> <span class="n">n_features</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span>
+        <span class="n">le</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+        <span class="n">y_ind</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span> <span class="o">=</span> <span class="n">classes</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">classes_</span>
+        <span class="n">n_classes</span> <span class="o">=</span> <span class="n">classes</span><span class="o">.</span><span class="n">size</span>
+        <span class="k">if</span> <span class="n">n_classes</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;The number of classes has to be greater than&#39;</span>
+                             <span class="s1">&#39; one; got </span><span class="si">%d</span><span class="s1"> class&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">n_classes</span><span class="p">))</span>
+
+        <span class="c1"># Mask mapping each class to its members.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">centroids_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">n_classes</span><span class="p">,</span> <span class="n">n_features</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
+        <span class="c1"># Number of clusters in each class.</span>
+        <span class="n">nk</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n_classes</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">cur_class</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_classes</span><span class="p">):</span>
+            <span class="n">center_mask</span> <span class="o">=</span> <span class="n">y_ind</span> <span class="o">==</span> <span class="n">cur_class</span>
+            <span class="n">nk</span><span class="p">[</span><span class="n">cur_class</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">center_mask</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">is_X_sparse</span><span class="p">:</span>
+                <span class="n">center_mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">center_mask</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+
+            <span class="c1"># XXX: Update other averaging methods according to the metrics.</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">==</span> <span class="s2">&quot;manhattan&quot;</span><span class="p">:</span>
+                <span class="c1"># NumPy does not calculate median of sparse matrices.</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">is_X_sparse</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">centroids_</span><span class="p">[</span><span class="n">cur_class</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">center_mask</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">centroids_</span><span class="p">[</span><span class="n">cur_class</span><span class="p">]</span> <span class="o">=</span> <span class="n">csc_median_axis_0</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">center_mask</span><span class="p">])</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">!=</span> <span class="s1">&#39;euclidean&#39;</span><span class="p">:</span>
+                    <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;Averaging for metrics other than &quot;</span>
+                                  <span class="s2">&quot;euclidean and manhattan not supported. &quot;</span>
+                                  <span class="s2">&quot;The average is set to be the mean.&quot;</span>
+                                  <span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">centroids_</span><span class="p">[</span><span class="n">cur_class</span><span class="p">]</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">center_mask</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">shrink_threshold</span><span class="p">:</span>
+            <span class="n">dataset_centroid_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+            <span class="c1"># m parameter for determining deviation</span>
+            <span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="mf">1.</span> <span class="o">/</span> <span class="n">nk</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">/</span> <span class="n">n_samples</span><span class="p">))</span>
+            <span class="c1"># Calculate deviation using the standard deviation of centroids.</span>
+            <span class="n">variance</span> <span class="o">=</span> <span class="p">(</span><span class="n">X</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">centroids_</span><span class="p">[</span><span class="n">y_ind</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span>
+            <span class="n">variance</span> <span class="o">=</span> <span class="n">variance</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">variance</span> <span class="o">/</span> <span class="p">(</span><span class="n">n_samples</span> <span class="o">-</span> <span class="n">n_classes</span><span class="p">))</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="c1"># To deter outliers from affecting the results.</span>
+            <span class="n">mm</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">m</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Reshape to allow broadcasting.</span>
+            <span class="n">ms</span> <span class="o">=</span> <span class="n">mm</span> <span class="o">*</span> <span class="n">s</span>
+            <span class="n">deviation</span> <span class="o">=</span> <span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">centroids_</span> <span class="o">-</span> <span class="n">dataset_centroid_</span><span class="p">)</span> <span class="o">/</span> <span class="n">ms</span><span class="p">)</span>
+            <span class="c1"># Soft thresholding: if the deviation crosses 0 during shrinking,</span>
+            <span class="c1"># it becomes zero.</span>
+            <span class="n">signs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">deviation</span><span class="p">)</span>
+            <span class="n">deviation</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">deviation</span><span class="p">)</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">shrink_threshold</span><span class="p">)</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">deviation</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">deviation</span><span class="p">)</span>
+            <span class="n">deviation</span> <span class="o">*=</span> <span class="n">signs</span>
+            <span class="c1"># Now adjust the centroids using the deviation</span>
+            <span class="n">msd</span> <span class="o">=</span> <span class="n">ms</span> <span class="o">*</span> <span class="n">deviation</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">centroids_</span> <span class="o">=</span> <span class="n">dataset_centroid_</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">,</span> <span class="p">:]</span> <span class="o">+</span> <span class="n">msd</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+<div class="viewcode-block" id="NearestCentroid.predict"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.NearestCentroid.html#skhubness.neighbors.NearestCentroid.predict">[docs]</a>    <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Perform classification on an array of test vectors X.</span>
+
+<span class="sd">        The predicted class C for each sample in X is returned.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X : array-like, shape = [n_samples, n_features]</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        C : array, shape = [n_samples]</span>
+
+<span class="sd">        Notes</span>
+<span class="sd">        -----</span>
+<span class="sd">        If the metric constructor parameter is &quot;precomputed&quot;, X is assumed to</span>
+<span class="sd">        be the distance matrix between the data to be predicted and</span>
+<span class="sd">        ``self.centroids_``.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">check_is_fitted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;centroids_&#39;</span><span class="p">)</span>
+
+        <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">accept_sparse</span><span class="o">=</span><span class="s1">&#39;csr&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="p">[</span><span class="n">pairwise_distances</span><span class="p">(</span>
+            <span class="n">X</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">centroids_</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">metric</span><span class="p">)</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span></div></div>
+</pre></div>
+
+	    </div>
+            <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Roman Feldbauer.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.21.0a8',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/language_data.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../../../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../../../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>

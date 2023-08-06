@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Face recognition (Olivetti faces) &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Example: Approximate nearest neighbor search" href="../ann.html" />
+    <link rel="prev" title="Example: skhubness in Pipelines" href="pipelines.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-documentation-auto-examples-hr-olivetti-faces-py"><span class="std std-ref">here</span></a> to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="face-recognition-olivetti-faces">
+<span id="sphx-glr-documentation-auto-examples-hr-olivetti-faces-py"></span><h1>Face recognition (Olivetti faces)<a class="headerlink" href="#face-recognition-olivetti-faces" title="Permalink to this headline">¶</a></h1>
+<p>This dataset contains a set of face images taken between April 1992
+and April 1994 at AT&amp;T Laboratories Cambridge.
+Image data is typically embedded in very high-dimensional spaces,
+which might be prone to hubness.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">olivetti_faces</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span><span class="p">,</span> <span class="n">StratifiedKFold</span><span class="p">,</span> <span class="n">RandomizedSearchCV</span>
+
+<span class="kn">from</span> <span class="nn">skhubness</span> <span class="k">import</span> <span class="n">Hubness</span>
+<span class="kn">from</span> <span class="nn">skhubness.neighbors</span> <span class="k">import</span> <span class="n">KNeighborsClassifier</span>
+
+<span class="c1"># Fetch data and have a look</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">olivetti_faces</span><span class="o">.</span><span class="n">fetch_olivetti_faces</span><span class="p">()</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Data shape: </span><span class="si">{X.shape}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Label shape: </span><span class="si">{y.shape}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="c1"># (400, 4096)</span>
+<span class="c1"># (400,)</span>
+
+<span class="c1"># The data is embedded in a high-dimensional space.</span>
+<span class="c1"># Is there hubness, and can we reduce it?</span>
+<span class="k">for</span> <span class="n">hubness</span> <span class="ow">in</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;dsl&#39;</span><span class="p">,</span> <span class="s1">&#39;ls&#39;</span><span class="p">,</span> <span class="s1">&#39;mp&#39;</span><span class="p">]:</span>
+    <span class="n">hub</span> <span class="o">=</span> <span class="n">Hubness</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">hubness</span><span class="o">=</span><span class="n">hubness</span><span class="p">,</span> <span class="n">return_value</span><span class="o">=</span><span class="s1">&#39;k_skewness&#39;</span><span class="p">)</span>
+    <span class="n">hub</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="n">hub</span><span class="o">.</span><span class="n">score</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Hubness (10-skew): </span><span class="si">{score:.3f}</span><span class="s1"> with hubness reduction: </span><span class="si">{hubness}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="c1"># Hubness (10-skew): 1.972 with hubness reduction: None</span>
+<span class="c1"># Hubness (10-skew): 1.526 with hubness reduction: dsl</span>
+<span class="c1"># Hubness (10-skew): 0.943 with hubness reduction: ls</span>
+<span class="c1"># Hubness (10-skew): 0.184 with hubness reduction: mp</span>
+
+<span class="c1"># There is some hubness, and all hubness reduction methods can reduce it (to varying degree)</span>
+<span class="c1"># Let&#39;s assess the best kNN strategy and its estimated performance.</span>
+<span class="n">cv_perf</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">7263</span><span class="p">)</span>
+<span class="n">cv_select</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">32634</span><span class="p">)</span>
+
+<span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">algorithm_params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;n_candidates&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">})</span>
+
+<span class="c1"># specify parameters and distributions to sample from</span>
+<span class="n">param_dist</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;n_neighbors&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">26</span><span class="p">),</span>
+              <span class="s2">&quot;weights&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;uniform&#39;</span><span class="p">,</span> <span class="s1">&#39;distance&#39;</span><span class="p">],</span>
+              <span class="s2">&quot;hubness&quot;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;dsl&#39;</span><span class="p">,</span> <span class="s1">&#39;ls&#39;</span><span class="p">,</span> <span class="s1">&#39;mp&#39;</span><span class="p">]}</span>
+
+<span class="c1"># Inner cross-validation to select best hyperparameters (incl hubness reduction method)</span>
+<span class="n">search</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">knn</span><span class="p">,</span>
+                            <span class="n">param_distributions</span><span class="o">=</span><span class="n">param_dist</span><span class="p">,</span>
+                            <span class="n">n_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+                            <span class="n">cv</span><span class="o">=</span><span class="n">cv_select</span><span class="p">,</span>
+                            <span class="n">random_state</span><span class="o">=</span><span class="mi">2345</span><span class="p">,</span>
+                            <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Outer cross-validation to estimate performance</span>
+<span class="n">score</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">search</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">cv_perf</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Scores: </span><span class="si">{score}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Mean acc = {score.mean():.3f} +/- {score.std():.3f}&#39;</span><span class="p">)</span>
+
+<span class="c1"># Select model that maximizes accuracy</span>
+<span class="n">search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># The best model&#39;s parameters</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="c1"># Does it correspond to the results of hubness reduction above?</span>
+<span class="c1"># Scores: [0.95   0.9625 1.     0.95   0.925 ]</span>
+<span class="c1"># Mean acc = 0.957 +/- 0.024</span>
+<span class="c1"># {&#39;weights&#39;: &#39;distance&#39;, &#39;n_neighbors&#39;: 23, &#39;hubness&#39;: &#39;mp&#39;}</span>
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.000 seconds)</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-documentation-auto-examples-hr-olivetti-faces-py">
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/7c57808b065ab8824bfe894ee30cdb6a/olivetti_faces.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">olivetti_faces.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/5d792a6302e9cb2c17d0ba48a1b4cb4a/olivetti_faces.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">olivetti_faces.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/example.html">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../user_guide.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../concepts.html">Core concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../analysis.html">Hubness analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reduction.html">Hubness reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nearestneighbors.html">Nearest neighbors</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../examples.html">Examples</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../hr.html">Example: Hubness reduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ann.html">Example: Approximate nearest neighbor search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ahr.html">Example: Approximate hubness reduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sklearn.html">Example: From sklearn to skhubness</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../documentation.html">scikit-hubness API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../user_guide.html">User guide</a><ul>
+  <li><a href="../examples.html">Examples</a><ul>
+  <li><a href="../hr.html">Example: Hubness reduction</a><ul>
+      <li>Previous: <a href="pipelines.html" title="previous chapter">Example: skhubness in Pipelines</a></li>
+      <li>Next: <a href="../ann.html" title="next chapter">Example: Approximate nearest neighbor search</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/documentation/auto_examples_hr/olivetti_faces.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

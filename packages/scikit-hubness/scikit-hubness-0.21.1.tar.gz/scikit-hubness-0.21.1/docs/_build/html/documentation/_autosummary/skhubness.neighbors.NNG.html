@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>skhubness.neighbors.NNG &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="skhubness.neighbors.PuffinnLSH" href="skhubness.neighbors.PuffinnLSH.html" />
+    <link rel="prev" title="skhubness.neighbors.NearestNeighbors" href="skhubness.neighbors.NearestNeighbors.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="skhubness-neighbors-nng">
+<h1>skhubness.neighbors.NNG<a class="headerlink" href="#skhubness-neighbors-nng" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="skhubness.neighbors.NNG">
+<em class="property">class </em><code class="sig-prename descclassname">skhubness.neighbors.</code><code class="sig-name descname">NNG</code><span class="sig-paren">(</span><em class="sig-param">n_candidates: int = 5</em>, <em class="sig-param">metric: str = 'euclidean'</em>, <em class="sig-param">index_dir: str = 'auto'</em>, <em class="sig-param">optimize: bool = False</em>, <em class="sig-param">edge_size_for_creation: int = 80</em>, <em class="sig-param">edge_size_for_search: int = 40</em>, <em class="sig-param">num_incoming: int = -1</em>, <em class="sig-param">num_outgoing: int = -1</em>, <em class="sig-param">epsilon: float = 0.1</em>, <em class="sig-param">n_jobs: int = 1</em>, <em class="sig-param">verbose: int = 0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/VarIr/scikit-hubness/blob/f1729a0/skhubness/neighbors/nng.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#skhubness.neighbors.NNG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper for ngtpy and NNG variants.</p>
+<p>By default, the graph is an ANNG. Only when the <cite>optimize</cite> parameter is set,
+the graph is optimized to obtain an ONNG.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>n_candidates: int, default = 5</strong></dt><dd><p>Number of neighbors to retrieve</p>
+</dd>
+<dt><strong>metric: str, default = ‘euclidean’</strong></dt><dd><p>Distance metric, allowed are ‘manhattan’, ‘L1’, ‘euclidean’, ‘L2’, ‘minkowski’,
+‘Angle’, ‘Normalized Angle’, ‘Hamming’, ‘Jaccard’, ‘Cosine’ or ‘Normalized Cosine’.</p>
+</dd>
+<dt><strong>index_dir: str, default = ‘auto’</strong></dt><dd><p>Store the index in the given directory.
+If None, keep the index in main memory (NON pickleable index),
+If index_dir is a string, it is interpreted as a directory to store the index into,
+if ‘auto’, create a temp dir for the index, preferably in /dev/shm on Linux.
+Note: The directory/the index will NOT be deleted automatically.</p>
+</dd>
+<dt><strong>optimize: bool, default = False</strong></dt><dd><p>Use ONNG method by optimizing the ANNG graph.
+May require long time for index creation.</p>
+</dd>
+<dt><strong>edge_size_for_creation: int, default = 80</strong></dt><dd><p>Increasing ANNG edge size improves retrieval accuracy at the cost of more time</p>
+</dd>
+<dt><strong>edge_size_for_search: int, default = 40</strong></dt><dd><p>Increasing ANNG edge size improves retrieval accuracy at the cost of more time</p>
+</dd>
+<dt><strong>epsilon: float, default 0.1</strong></dt><dd><p>Trade-off in ANNG between higher accuracy (larger epsilon) and shorter query time (smaller epsilon)</p>
+</dd>
+<dt><strong>num_incoming: int</strong></dt><dd><p>Number of incoming edges in ONNG graph</p>
+</dd>
+<dt><strong>num_outgoing: int</strong></dt><dd><p>Number of outgoing edges in ONNG graph</p>
+</dd>
+<dt><strong>n_jobs: int, default = 1</strong></dt><dd><p>Number of parallel jobs</p>
+</dd>
+<dt><strong>verbose: int, default = 0</strong></dt><dd><p>Verbosity level. If verbose &gt; 0, show tqdm progress bar on indexing and querying.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>NNG stores the index to a directory specified in <cite>index_dir</cite>.
+The index is persistent, and will NOT be deleted automatically.
+It is the user’s responsibility to take care of deletion,
+when required.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>valid_metrics:</strong></dt><dd><p>List of valid distance metrics/measures</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="method">
+<dt id="skhubness.neighbors.NNG.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">n_candidates: 'int' = 5</em>, <em class="sig-param">metric: 'str' = 'euclidean'</em>, <em class="sig-param">index_dir: 'str' = 'auto'</em>, <em class="sig-param">optimize: 'bool' = False</em>, <em class="sig-param">edge_size_for_creation: 'int' = 80</em>, <em class="sig-param">edge_size_for_search: 'int' = 40</em>, <em class="sig-param">num_incoming: 'int' = -1</em>, <em class="sig-param">num_outgoing: 'int' = -1</em>, <em class="sig-param">epsilon: 'float' = 0.1</em>, <em class="sig-param">n_jobs: 'int' = 1</em>, <em class="sig-param">verbose: 'int' = 0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/VarIr/scikit-hubness/blob/f1729a0/skhubness/neighbors/nng.py#L84"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#skhubness.neighbors.NNG.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skhubness.neighbors.NNG.__init__" title="skhubness.neighbors.NNG.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self, n_candidates, metric, …)</p></td>
+<td><p>Initialize self.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skhubness.neighbors.NNG.fit" title="skhubness.neighbors.NNG.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(self, X[, y])</p></td>
+<td><p>Build the ngtpy.Index and insert data from X.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skhubness.neighbors.NNG.get_params" title="skhubness.neighbors.NNG.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>(self[, deep])</p></td>
+<td><p>Get parameters for this estimator.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skhubness.neighbors.NNG.kneighbors" title="skhubness.neighbors.NNG.kneighbors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kneighbors</span></code></a>(self[, X, n_candidates, …])</p></td>
+<td><p>Retrieve k nearest neighbors.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skhubness.neighbors.NNG.set_params" title="skhubness.neighbors.NNG.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(self, \*\*params)</p></td>
+<td><p>Set the parameters of this estimator.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">internal_distance_type</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">valid_metrics</span></code></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="skhubness.neighbors.NNG.fit">
+<code class="sig-name descname">fit</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">X</em>, <em class="sig-param">y=None</em><span class="sig-paren">)</span> &#x2192; 'NNG'<a class="reference external" href="https://github.com/VarIr/scikit-hubness/blob/f1729a0/skhubness/neighbors/nng.py#L113"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#skhubness.neighbors.NNG.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build the ngtpy.Index and insert data from X.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X: np.array</strong></dt><dd><p>Data to be indexed</p>
+</dd>
+<dt><strong>y: any</strong></dt><dd><p>Ignored</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>self: NNG</dt><dd><p>An instance of NNG with a built index</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="skhubness.neighbors.NNG.get_params">
+<code class="sig-name descname">get_params</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">deep=True</em><span class="sig-paren">)</span><a class="headerlink" href="#skhubness.neighbors.NNG.get_params" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get parameters for this estimator.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>deep</strong><span class="classifier">boolean, optional</span></dt><dd><p>If True, will return the parameters for this estimator and
+contained subobjects that are estimators.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>params</strong><span class="classifier">mapping of string to any</span></dt><dd><p>Parameter names mapped to their values.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="skhubness.neighbors.NNG.kneighbors">
+<code class="sig-name descname">kneighbors</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">X=None</em>, <em class="sig-param">n_candidates=None</em>, <em class="sig-param">return_distance=True</em><span class="sig-paren">)</span> &#x2192; 'Union[Tuple[np.array, np.array], np.array]'<a class="reference external" href="https://github.com/VarIr/scikit-hubness/blob/f1729a0/skhubness/neighbors/nng.py#L196"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#skhubness.neighbors.NNG.kneighbors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve k nearest neighbors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X: np.array or None, optional, default = None</strong></dt><dd><p>Query objects. If None, search among the indexed objects.</p>
+</dd>
+<dt><strong>n_candidates: int or None, optional, default = None</strong></dt><dd><p>Number of neighbors to retrieve.
+If None, use the value passed during construction.</p>
+</dd>
+<dt><strong>return_distance: bool, default = True</strong></dt><dd><p>If return_distance, will return distances and indices to neighbors.
+Else, only return the indices.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="skhubness.neighbors.NNG.set_params">
+<code class="sig-name descname">set_params</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">**params</em><span class="sig-paren">)</span><a class="headerlink" href="#skhubness.neighbors.NNG.set_params" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the parameters of this estimator.</p>
+<p>The method works on simple estimators as well as on nested objects
+(such as pipelines). The latter have parameters of the form
+<code class="docutils literal notranslate"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it’s possible to update each
+component of a nested object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>self</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/example.html">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../documentation.html">scikit-hubness API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.BallTree.html">skhubness.neighbors.BallTree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.DistanceMetric.html">skhubness.neighbors.DistanceMetric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.KDTree.html">skhubness.neighbors.KDTree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.HNSW.html">skhubness.neighbors.HNSW</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.KNeighborsClassifier.html">skhubness.neighbors.KNeighborsClassifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.KNeighborsRegressor.html">skhubness.neighbors.KNeighborsRegressor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.FalconnLSH.html">skhubness.neighbors.FalconnLSH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.NearestCentroid.html">skhubness.neighbors.NearestCentroid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.NearestNeighbors.html">skhubness.neighbors.NearestNeighbors</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">skhubness.neighbors.NNG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.PuffinnLSH.html">skhubness.neighbors.PuffinnLSH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.RadiusNeighborsClassifier.html">skhubness.neighbors.RadiusNeighborsClassifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.RadiusNeighborsRegressor.html">skhubness.neighbors.RadiusNeighborsRegressor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.RandomProjectionTree.html">skhubness.neighbors.RandomProjectionTree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.kneighbors_graph.html">skhubness.neighbors.kneighbors_graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.radius_neighbors_graph.html">skhubness.neighbors.radius_neighbors_graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.KernelDensity.html">skhubness.neighbors.KernelDensity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.LocalOutlierFactor.html">skhubness.neighbors.LocalOutlierFactor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.NeighborhoodComponentsAnalysis.html">skhubness.neighbors.NeighborhoodComponentsAnalysis</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../documentation.html">API Documentation</a><ul>
+      <li>Previous: <a href="skhubness.neighbors.NearestNeighbors.html" title="previous chapter">skhubness.neighbors.NearestNeighbors</a></li>
+      <li>Next: <a href="skhubness.neighbors.PuffinnLSH.html" title="next chapter">skhubness.neighbors.PuffinnLSH</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/documentation/_autosummary/skhubness.neighbors.NNG.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hubness reduction &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Nearest neighbors" href="nearestneighbors.html" />
+    <link rel="prev" title="Hubness analysis" href="analysis.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="hubness-reduction">
+<h1>Hubness reduction<a class="headerlink" href="#hubness-reduction" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference internal" href="documentation.html#module-skhubness.reduction" title="skhubness.reduction"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a> subpackage provides several hubness reduction methods.
+Currently, the supported methods are</p>
+<ul class="simple">
+<li><p>Mutual proximity (independent Gaussian distance distribution),
+provided by <a class="reference internal" href="_autosummary/skhubness.reduction.MutualProximity.html#skhubness.reduction.MutualProximity" title="skhubness.reduction.MutualProximity"><code class="xref py py-class docutils literal notranslate"><span class="pre">MutualProximity</span></code></a> with <code class="docutils literal notranslate"><span class="pre">method='normal'</span></code> (default),</p></li>
+<li><p>Mutual proximity (empiric distance distribution),
+provided by <a class="reference internal" href="_autosummary/skhubness.reduction.MutualProximity.html#skhubness.reduction.MutualProximity" title="skhubness.reduction.MutualProximity"><code class="xref py py-class docutils literal notranslate"><span class="pre">MutualProximity</span></code></a> with <code class="docutils literal notranslate"><span class="pre">method='empiric'</span></code>,</p></li>
+<li><p>Local scaling,
+provided by <a class="reference internal" href="_autosummary/skhubness.reduction.LocalScaling.html#skhubness.reduction.LocalScaling" title="skhubness.reduction.LocalScaling"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocalScaling</span></code></a> with <code class="docutils literal notranslate"><span class="pre">method='standard'</span></code> (default),</p></li>
+<li><p>Non-iterative contextual dissimilarity measure,
+provided by <a class="reference internal" href="_autosummary/skhubness.reduction.LocalScaling.html#skhubness.reduction.LocalScaling" title="skhubness.reduction.LocalScaling"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocalScaling</span></code></a> with <code class="docutils literal notranslate"><span class="pre">method='nicdm'</span></code>,</p></li>
+<li><p>DisSim Local,
+provided by <a class="reference internal" href="_autosummary/skhubness.reduction.DisSimLocal.html#skhubness.reduction.DisSimLocal" title="skhubness.reduction.DisSimLocal"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisSimLocal</span></code></a>,</p></li>
+</ul>
+<p>which represent the most successful hubness reduction methods as identified in
+our paper “A comprehensive empirical comparison of hubness reduction in high-dimensional spaces”,
+KAIS (2019), <a class="reference external" href="https://doi.org/10.1007/s10115-018-1205-y">DOI</a>.
+This survey paper also comes with an overview of how the individual methods work.</p>
+<p>There are two ways to use perform hubness reduction in scikit-hubness:</p>
+<ul class="simple">
+<li><p>Implicitly, using the classes in <a class="reference internal" href="documentation.html#module-skhubness.neighbors" title="skhubness.neighbors"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a>
+(see <a class="reference internal" href="nearestneighbors.html#nearest-neighbors"><span class="std std-ref">User Guide: Nearest neighbors</span></a>),</p></li>
+<li><p>Explicitly, using the classes in <a class="reference internal" href="documentation.html#module-skhubness.reduction" title="skhubness.reduction"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a>.</p></li>
+</ul>
+<p>The former is the common approach, if you simply want to improve your learning task
+by hubness reduction. Most examples here also do so.
+The latter may, however, be more useful for researchers, who would like to
+investigate the hubness phenomenon itself.</p>
+<p>All hubness reducers inherit from a common base class
+<code class="xref py py-class docutils literal notranslate"><span class="pre">HubnessReduction</span></code>.
+This abstract class defines two important methods:
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">fit</span></code> and
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">transform</span></code>,
+thus allowing to transform previously unseen data after the initial fit.
+Most hubness reduction methods do not operate on vector data,
+but manipulate pre-computed distances, in order to obtain <cite>secondary distances</cite>.
+Therefore, <code class="docutils literal notranslate"><span class="pre">fit</span></code> and <code class="docutils literal notranslate"><span class="pre">transform</span></code> take neighbor graphs as input, instead of vectors.
+Have a look at their signatures:</p>
+<div class="highlight-Python3 notranslate"><div class="highlight"><pre><span></span><span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">assume_sorted</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">pass</span>  <span class="c1"># pragma: no cover</span>
+
+<span class="nd">@abstractmethod</span>
+<span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">assume_sorted</span><span class="p">,</span> <span class="n">return_distance</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="k">pass</span>  <span class="c1"># pragma: no cover</span>
+</pre></div>
+</div>
+<p>The arguments <code class="docutils literal notranslate"><span class="pre">neigh_dist</span></code> and <code class="docutils literal notranslate"><span class="pre">neigh_ind</span></code> are two arrays representing the nearest neighbor graph
+with shape <code class="docutils literal notranslate"><span class="pre">(n_indexed,</span> <span class="pre">n_neighbors)</span></code> during fit, and
+shape <code class="docutils literal notranslate"><span class="pre">(n_query,</span> <span class="pre">n_neighbors)</span></code> during transform.
+The i-th row in each array corresponds to the i-th object in the data set.
+The j-th column in <code class="docutils literal notranslate"><span class="pre">neigh_ind</span></code> contains the index of one of the k-nearest neighbors among the indexed objects,
+while the j-th column in <code class="docutils literal notranslate"><span class="pre">neigh_dist</span></code> contains the corresponding distance.
+Note, that this is the same format as obtained by scikit-learn’s <code class="docutils literal notranslate"><span class="pre">kneighbors(return_distances=True)</span></code>
+method.</p>
+<p>This way, the user has full flexibility on how to calculate primary distances (Euclidean, cosine, KL divergence, etc).
+<a class="reference internal" href="_autosummary/skhubness.reduction.DisSimLocal.html#skhubness.reduction.DisSimLocal" title="skhubness.reduction.DisSimLocal"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisSimLocal</span></code></a> (DSL) is the exception to this rule,
+because it is formulated specifically for Euclidean distances.
+DSL, therefore, also requires the training vectors in <code class="docutils literal notranslate"><span class="pre">fit(...,</span> <span class="pre">X=X_train)</span></code>,
+and the test set vectors in <code class="docutils literal notranslate"><span class="pre">transform(...,</span> <span class="pre">X=X_test)</span></code>.
+Argument <code class="docutils literal notranslate"><span class="pre">X</span></code> is ignored in the other hubness reduction methods.</p>
+<p>When the neighbor graph is already sorted (lowest to highest distance),
+<code class="docutils literal notranslate"><span class="pre">assume_sorted=True</span></code> should be set, so that hubness reduction methods
+will not sort the arrays again, thus saving computational time.</p>
+<p>Hubness reduction methods transform the primary distance graph,
+and return secondary distances.
+Note that for efficiency reasons, the returned arrays are not sorted.
+Please make sure to sort the arrays, if downstream tasks assume sorted arrays.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/example.html">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="user_guide.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="concepts.html">Core concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">Hubness analysis</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Hubness reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nearestneighbors.html">Nearest neighbors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">scikit-hubness API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="user_guide.html">User guide</a><ul>
+      <li>Previous: <a href="analysis.html" title="previous chapter">Hubness analysis</a></li>
+      <li>Next: <a href="nearestneighbors.html" title="next chapter">Nearest neighbors</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/documentation/reduction.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

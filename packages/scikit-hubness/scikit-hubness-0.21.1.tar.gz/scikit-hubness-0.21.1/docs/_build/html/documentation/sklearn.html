@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>scikit-learn examples adapted for scikit-hubness &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Nearest Neighbors regression" href="auto_examples/plot_regression.html" />
+    <link rel="prev" title="Example: Approximate hubness reduction" href="auto_examples_ahr/high_dim_gaussian.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="scikit-learn-examples-adapted-for-scikit-hubness">
+<span id="sphx-glr-documentation-auto-examples"></span><h1>scikit-learn examples adapted for scikit-hubness<a class="headerlink" href="#scikit-learn-examples-adapted-for-scikit-hubness" title="Permalink to this headline">¶</a></h1>
+<p>Examples concerning using <a class="reference internal" href="documentation.html#module-skhubness.neighbors" title="skhubness.neighbors"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a>
+as drop-in replacement for <code class="xref py py-mod docutils literal notranslate"><span class="pre">sklearn.neighbors</span></code>.</p>
+<p>These examples are taken from scikit-learn and demonstrate the ease of transition
+from <code class="docutils literal notranslate"><span class="pre">sklearn.neighbors</span></code> to <code class="docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code>.
+You will find that many examples require no more than modifying an import line,
+and/or adding one argument when instantiating an estimator.</p>
+<p>Note, that these examples are not intended to demonstrate improved learning performance
+due to hubness reduction (the data are rather low-dimensional).</p>
+<div class="sphx-glr-thumbcontainer" tooltip="Demonstrate the resolution of a regression problem using a k-Nearest Neighbor and the interpola..."><div class="figure align-default" id="id1">
+<img alt="../_images/sphx_glr_plot_regression_thumb.png" src="../_images/sphx_glr_plot_regression_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="auto_examples/plot_regression.html#sphx-glr-documentation-auto-examples-plot-regression-py"><span class="std std-ref">Nearest Neighbors regression</span></a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="Sample usage of Nearest Centroid classification. It will plot the decision boundaries for each ..."><div class="figure align-default" id="id2">
+<img alt="../_images/sphx_glr_plot_nearest_centroid_thumb.png" src="../_images/sphx_glr_plot_nearest_centroid_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="auto_examples/plot_nearest_centroid.html#sphx-glr-documentation-auto-examples-plot-nearest-centroid-py"><span class="std std-ref">Nearest Centroid Classification</span></a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="Adapted from `&lt;https://scikit-learn.org/stable/auto_examples/neighbors/plot_classification.html..."><div class="figure align-default" id="id3">
+<img alt="../_images/sphx_glr_plot_classification_thumb.png" src="../_images/sphx_glr_plot_classification_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="auto_examples/plot_classification.html#sphx-glr-documentation-auto-examples-plot-classification-py"><span class="std std-ref">Nearest Neighbors Classification</span></a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="Sample usage of Neighborhood Components Analysis for dimensionality reduction."><div class="figure align-default" id="id4">
+<img alt="../_images/sphx_glr_plot_nca_dim_reduction_thumb.png" src="../_images/sphx_glr_plot_nca_dim_reduction_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="auto_examples/plot_nca_dim_reduction.html#sphx-glr-documentation-auto-examples-plot-nca-dim-reduction-py"><span class="std std-ref">Dimensionality Reduction with Neighborhood Components Analysis</span></a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="This example shows the use of multi-output estimator to complete images. The goal is to predict..."><div class="figure align-default" id="id5">
+<img alt="../_images/sphx_glr_plot_multioutput_face_completion_thumb.png" src="../_images/sphx_glr_plot_multioutput_face_completion_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="auto_examples/plot_multioutput_face_completion.html#sphx-glr-documentation-auto-examples-plot-multioutput-face-completion-py"><span class="std std-ref">Face completion with a multi-output estimators</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="An example comparing nearest neighbors classification with and without Neighborhood Components ..."><div class="figure align-default" id="id6">
+<img alt="../_images/sphx_glr_plot_nca_classification_thumb.png" src="../_images/sphx_glr_plot_nca_classification_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="auto_examples/plot_nca_classification.html#sphx-glr-documentation-auto-examples-plot-nca-classification-py"><span class="std std-ref">Comparing Nearest Neighbors with and without Neighborhood Components Analysis</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="sphx-glr-thumbcontainer" tooltip="An illustration of various embeddings on the digits dataset."><div class="figure align-default" id="id7">
+<img alt="../_images/sphx_glr_plot_lle_digits_thumb.png" src="../_images/sphx_glr_plot_lle_digits_thumb.png" />
+<p class="caption"><span class="caption-text"><a class="reference internal" href="auto_examples/plot_lle_digits.html#sphx-glr-documentation-auto-examples-plot-lle-digits-py"><span class="std std-ref">Manifold learning on handwritten digits: Locally Linear Embedding, Isomap…</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div style='clear:both'></div><div class="sphx-glr-footer class sphx-glr-footer-gallery docutils container">
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/1b04b205714bc336be0b894ac75c0a9c/auto_examples_python.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">all</span> <span class="pre">examples</span> <span class="pre">in</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">auto_examples_python.zip</span></code></a></p>
+</div>
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/5825ad4a9074334576ef01bd49073957/auto_examples_jupyter.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">all</span> <span class="pre">examples</span> <span class="pre">in</span> <span class="pre">Jupyter</span> <span class="pre">notebooks:</span> <span class="pre">auto_examples_jupyter.zip</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/example.html">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="user_guide.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="concepts.html">Core concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">Hubness analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reduction.html">Hubness reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nearestneighbors.html">Nearest neighbors</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="examples.html">Examples</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="hr.html">Example: Hubness reduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ann.html">Example: Approximate nearest neighbor search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ahr.html">Example: Approximate hubness reduction</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Example: From sklearn to skhubness</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">scikit-hubness API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="user_guide.html">User guide</a><ul>
+  <li><a href="examples.html">Examples</a><ul>
+      <li>Previous: <a href="auto_examples_ahr/high_dim_gaussian.html" title="previous chapter">Example: Approximate hubness reduction</a></li>
+      <li>Next: <a href="auto_examples/plot_regression.html" title="next chapter">Nearest Neighbors regression</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/documentation/sklearn.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

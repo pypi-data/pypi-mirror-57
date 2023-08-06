@@ -1,0 +1,708 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>sklearn.neighbors.nca &mdash; scikit-hubness 0.21.0a8 documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../../../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="scikit-hubness 0.21.0a8 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="fa fa-home"> scikit-hubness </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../../../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-source">Installation from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#supported-platforms">Supported platforms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/example.html">Quick start example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/documentation.html">scikit-hubness API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <h1>Source code for sklearn.neighbors.nca</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Neighborhood Component Analysis</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># Authors: William de Vazelhes &lt;wdevazelhes@gmail.com&gt;</span>
+<span class="c1">#          John Chiotellis &lt;ioannis.chiotellis@in.tum.de&gt;</span>
+<span class="c1"># License: BSD 3 clause</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
+
+<span class="kn">from</span> <span class="nn">warnings</span> <span class="k">import</span> <span class="n">warn</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">numbers</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="k">import</span> <span class="n">minimize</span>
+<span class="kn">from</span> <span class="nn">..utils.extmath</span> <span class="k">import</span> <span class="n">softmax</span>
+<span class="kn">from</span> <span class="nn">..metrics</span> <span class="k">import</span> <span class="n">pairwise_distances</span>
+<span class="kn">from</span> <span class="nn">..base</span> <span class="k">import</span> <span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span>
+<span class="kn">from</span> <span class="nn">..preprocessing</span> <span class="k">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">..decomposition</span> <span class="k">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">..utils.multiclass</span> <span class="k">import</span> <span class="n">check_classification_targets</span>
+<span class="kn">from</span> <span class="nn">..utils.random</span> <span class="k">import</span> <span class="n">check_random_state</span>
+<span class="kn">from</span> <span class="nn">..utils.validation</span> <span class="k">import</span> <span class="p">(</span><span class="n">check_is_fitted</span><span class="p">,</span> <span class="n">check_array</span><span class="p">,</span> <span class="n">check_X_y</span><span class="p">,</span>
+                                <span class="n">check_scalar</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">..exceptions</span> <span class="k">import</span> <span class="n">ConvergenceWarning</span>
+
+
+<div class="viewcode-block" id="NeighborhoodComponentsAnalysis"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.NeighborhoodComponentsAnalysis.html#skhubness.neighbors.NeighborhoodComponentsAnalysis">[docs]</a><span class="k">class</span> <span class="nc">NeighborhoodComponentsAnalysis</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Neighborhood Components Analysis</span>
+
+<span class="sd">    Neighborhood Component Analysis (NCA) is a machine learning algorithm for</span>
+<span class="sd">    metric learning. It learns a linear transformation in a supervised fashion</span>
+<span class="sd">    to improve the classification accuracy of a stochastic nearest neighbors</span>
+<span class="sd">    rule in the transformed space.</span>
+
+<span class="sd">    Read more in the :ref:`User Guide &lt;nca&gt;`.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    n_components : int, optional (default=None)</span>
+<span class="sd">        Preferred dimensionality of the projected space.</span>
+<span class="sd">        If None it will be set to ``n_features``.</span>
+
+<span class="sd">    init : string or numpy array, optional (default=&#39;auto&#39;)</span>
+<span class="sd">        Initialization of the linear transformation. Possible options are</span>
+<span class="sd">        &#39;auto&#39;, &#39;pca&#39;, &#39;lda&#39;, &#39;identity&#39;, &#39;random&#39;, and a numpy array of shape</span>
+<span class="sd">        (n_features_a, n_features_b).</span>
+
+<span class="sd">        &#39;auto&#39;</span>
+<span class="sd">            Depending on ``n_components``, the most reasonable initialization</span>
+<span class="sd">            will be chosen. If ``n_components &lt;= n_classes`` we use &#39;lda&#39;, as</span>
+<span class="sd">            it uses labels information. If not, but</span>
+<span class="sd">            ``n_components &lt; min(n_features, n_samples)``, we use &#39;pca&#39;, as</span>
+<span class="sd">            it projects data in meaningful directions (those of higher</span>
+<span class="sd">            variance). Otherwise, we just use &#39;identity&#39;.</span>
+
+<span class="sd">        &#39;pca&#39;</span>
+<span class="sd">            ``n_components`` principal components of the inputs passed</span>
+<span class="sd">            to :meth:`fit` will be used to initialize the transformation.</span>
+<span class="sd">            (See `decomposition.PCA`)</span>
+
+<span class="sd">        &#39;lda&#39;</span>
+<span class="sd">            ``min(n_components, n_classes)`` most discriminative</span>
+<span class="sd">            components of the inputs passed to :meth:`fit` will be used to</span>
+<span class="sd">            initialize the transformation. (If ``n_components &gt; n_classes``,</span>
+<span class="sd">            the rest of the components will be zero.) (See</span>
+<span class="sd">            `discriminant_analysis.LinearDiscriminantAnalysis`)</span>
+
+<span class="sd">        &#39;identity&#39;</span>
+<span class="sd">            If ``n_components`` is strictly smaller than the</span>
+<span class="sd">            dimensionality of the inputs passed to :meth:`fit`, the identity</span>
+<span class="sd">            matrix will be truncated to the first ``n_components`` rows.</span>
+
+<span class="sd">        &#39;random&#39;</span>
+<span class="sd">            The initial transformation will be a random array of shape</span>
+<span class="sd">            `(n_components, n_features)`. Each value is sampled from the</span>
+<span class="sd">            standard normal distribution.</span>
+
+<span class="sd">        numpy array</span>
+<span class="sd">            n_features_b must match the dimensionality of the inputs passed to</span>
+<span class="sd">            :meth:`fit` and n_features_a must be less than or equal to that.</span>
+<span class="sd">            If ``n_components`` is not None, n_features_a must match it.</span>
+
+<span class="sd">    warm_start : bool, optional, (default=False)</span>
+<span class="sd">        If True and :meth:`fit` has been called before, the solution of the</span>
+<span class="sd">        previous call to :meth:`fit` is used as the initial linear</span>
+<span class="sd">        transformation (``n_components`` and ``init`` will be ignored).</span>
+
+<span class="sd">    max_iter : int, optional (default=50)</span>
+<span class="sd">        Maximum number of iterations in the optimization.</span>
+
+<span class="sd">    tol : float, optional (default=1e-5)</span>
+<span class="sd">        Convergence tolerance for the optimization.</span>
+
+<span class="sd">    callback : callable, optional (default=None)</span>
+<span class="sd">        If not None, this function is called after every iteration of the</span>
+<span class="sd">        optimizer, taking as arguments the current solution (flattened</span>
+<span class="sd">        transformation matrix) and the number of iterations. This might be</span>
+<span class="sd">        useful in case one wants to examine or store the transformation</span>
+<span class="sd">        found after each iteration.</span>
+
+<span class="sd">    verbose : int, optional (default=0)</span>
+<span class="sd">        If 0, no progress messages will be printed.</span>
+<span class="sd">        If 1, progress messages will be printed to stdout.</span>
+<span class="sd">        If &gt; 1, progress messages will be printed and the ``disp``</span>
+<span class="sd">        parameter of :func:`scipy.optimize.minimize` will be set to</span>
+<span class="sd">        ``verbose - 2``.</span>
+
+<span class="sd">    random_state : int or numpy.RandomState or None, optional (default=None)</span>
+<span class="sd">        A pseudo random number generator object or a seed for it if int. If</span>
+<span class="sd">        ``init=&#39;random&#39;``, ``random_state`` is used to initialize the random</span>
+<span class="sd">        transformation. If ``init=&#39;pca&#39;``, ``random_state`` is passed as an</span>
+<span class="sd">        argument to PCA when initializing the transformation.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    components_ : array, shape (n_components, n_features)</span>
+<span class="sd">        The linear transformation learned during fitting.</span>
+
+<span class="sd">    n_iter_ : int</span>
+<span class="sd">        Counts the number of iterations performed by the optimizer.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; from sklearn.neighbors.nca import NeighborhoodComponentsAnalysis</span>
+<span class="sd">    &gt;&gt;&gt; from sklearn.neighbors import KNeighborsClassifier</span>
+<span class="sd">    &gt;&gt;&gt; from sklearn.datasets import load_iris</span>
+<span class="sd">    &gt;&gt;&gt; from sklearn.model_selection import train_test_split</span>
+<span class="sd">    &gt;&gt;&gt; X, y = load_iris(return_X_y=True)</span>
+<span class="sd">    &gt;&gt;&gt; X_train, X_test, y_train, y_test = train_test_split(X, y,</span>
+<span class="sd">    ... stratify=y, test_size=0.7, random_state=42)</span>
+<span class="sd">    &gt;&gt;&gt; nca = NeighborhoodComponentsAnalysis(random_state=42)</span>
+<span class="sd">    &gt;&gt;&gt; nca.fit(X_train, y_train) # doctest: +ELLIPSIS</span>
+<span class="sd">    NeighborhoodComponentsAnalysis(...)</span>
+<span class="sd">    &gt;&gt;&gt; knn = KNeighborsClassifier(n_neighbors=3)</span>
+<span class="sd">    &gt;&gt;&gt; knn.fit(X_train, y_train) # doctest: +ELLIPSIS</span>
+<span class="sd">    KNeighborsClassifier(...)</span>
+<span class="sd">    &gt;&gt;&gt; print(knn.score(X_test, y_test)) # doctest: +ELLIPSIS</span>
+<span class="sd">    0.933333...</span>
+<span class="sd">    &gt;&gt;&gt; knn.fit(nca.transform(X_train), y_train) # doctest: +ELLIPSIS</span>
+<span class="sd">    KNeighborsClassifier(...)</span>
+<span class="sd">    &gt;&gt;&gt; print(knn.score(nca.transform(X_test), y_test)) # doctest: +ELLIPSIS</span>
+<span class="sd">    0.961904...</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] J. Goldberger, G. Hinton, S. Roweis, R. Salakhutdinov.</span>
+<span class="sd">           &quot;Neighbourhood Components Analysis&quot;. Advances in Neural Information</span>
+<span class="sd">           Processing Systems. 17, 513-520, 2005.</span>
+<span class="sd">           http://www.cs.nyu.edu/~roweis/papers/ncanips.pdf</span>
+
+<span class="sd">    .. [2] Wikipedia entry on Neighborhood Components Analysis</span>
+<span class="sd">           https://en.wikipedia.org/wiki/Neighbourhood_components_analysis</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="NeighborhoodComponentsAnalysis.__init__"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.NeighborhoodComponentsAnalysis.html#skhubness.neighbors.NeighborhoodComponentsAnalysis.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_components</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">warm_start</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                 <span class="n">max_iter</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                 <span class="n">random_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_components</span> <span class="o">=</span> <span class="n">n_components</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">init</span> <span class="o">=</span> <span class="n">init</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">warm_start</span> <span class="o">=</span> <span class="n">warm_start</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_iter</span> <span class="o">=</span> <span class="n">max_iter</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tol</span> <span class="o">=</span> <span class="n">tol</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">callback</span> <span class="o">=</span> <span class="n">callback</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="o">=</span> <span class="n">verbose</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">random_state</span> <span class="o">=</span> <span class="n">random_state</span></div>
+
+<div class="viewcode-block" id="NeighborhoodComponentsAnalysis.fit"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.NeighborhoodComponentsAnalysis.html#skhubness.neighbors.NeighborhoodComponentsAnalysis.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Fit the model according to the given training data.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X : array-like, shape (n_samples, n_features)</span>
+<span class="sd">            The training samples.</span>
+
+<span class="sd">        y : array-like, shape (n_samples,)</span>
+<span class="sd">            The corresponding training labels.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        self : object</span>
+<span class="sd">            returns a trained NeighborhoodComponentsAnalysis model.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># Verify inputs X and y and NCA parameters, and transform a copy if</span>
+        <span class="c1"># needed</span>
+        <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">init</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_validate_params</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+        <span class="c1"># Initialize the random generator</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">random_state_</span> <span class="o">=</span> <span class="n">check_random_state</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">random_state</span><span class="p">)</span>
+
+        <span class="c1"># Measure the total training time</span>
+        <span class="n">t_train</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+        <span class="c1"># Compute a mask that stays fixed during optimization:</span>
+        <span class="n">same_class_mask</span> <span class="o">=</span> <span class="n">y</span><span class="p">[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span> <span class="o">==</span> <span class="n">y</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">,</span> <span class="p">:]</span>
+        <span class="c1"># (n_samples, n_samples)</span>
+
+        <span class="c1"># Initialize the transformation</span>
+        <span class="n">transformation</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_initialize</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">init</span><span class="p">)</span>
+
+        <span class="c1"># Create a dictionary of parameters to be passed to the optimizer</span>
+        <span class="n">disp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="o">-</span> <span class="mi">2</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="n">optimizer_params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;method&#39;</span><span class="p">:</span> <span class="s1">&#39;L-BFGS-B&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;fun&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_loss_grad_lbfgs</span><span class="p">,</span>
+                            <span class="s1">&#39;args&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">same_class_mask</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">),</span>
+                            <span class="s1">&#39;jac&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+                            <span class="s1">&#39;x0&#39;</span><span class="p">:</span> <span class="n">transformation</span><span class="p">,</span>
+                            <span class="s1">&#39;tol&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">tol</span><span class="p">,</span>
+                            <span class="s1">&#39;options&#39;</span><span class="p">:</span> <span class="nb">dict</span><span class="p">(</span><span class="n">maxiter</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">max_iter</span><span class="p">,</span> <span class="n">disp</span><span class="o">=</span><span class="n">disp</span><span class="p">),</span>
+                            <span class="s1">&#39;callback&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_callback</span>
+                            <span class="p">}</span>
+
+        <span class="c1"># Call the optimizer</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_iter_</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">opt_result</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="o">**</span><span class="n">optimizer_params</span><span class="p">)</span>
+
+        <span class="c1"># Reshape the solution found by the optimizer</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">components_</span> <span class="o">=</span> <span class="n">opt_result</span><span class="o">.</span><span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+        <span class="c1"># Stop timer</span>
+        <span class="n">t_train</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t_train</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">:</span>
+            <span class="n">cls_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+
+            <span class="c1"># Warn the user if the algorithm did not converge</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">opt_result</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
+                <span class="n">warn</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">{}</span><span class="s1">] NCA did not converge: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                    <span class="n">cls_name</span><span class="p">,</span> <span class="n">opt_result</span><span class="o">.</span><span class="n">message</span><span class="p">),</span>
+                     <span class="n">ConvergenceWarning</span><span class="p">)</span>
+
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">{}</span><span class="s1">] Training took </span><span class="si">{:8.2f}</span><span class="s1">s.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cls_name</span><span class="p">,</span> <span class="n">t_train</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+<div class="viewcode-block" id="NeighborhoodComponentsAnalysis.transform"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.NeighborhoodComponentsAnalysis.html#skhubness.neighbors.NeighborhoodComponentsAnalysis.transform">[docs]</a>    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Applies the learned transformation to the given data.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X : array-like, shape (n_samples, n_features)</span>
+<span class="sd">            Data samples.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        X_embedded: array, shape (n_samples, n_components)</span>
+<span class="sd">            The data samples transformed.</span>
+
+<span class="sd">        Raises</span>
+<span class="sd">        ------</span>
+<span class="sd">        NotFittedError</span>
+<span class="sd">            If :meth:`fit` has not been called before.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">check_is_fitted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;components_&#39;</span><span class="p">])</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">components_</span><span class="o">.</span><span class="n">T</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_validate_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Validate parameters as soon as :meth:`fit` is called.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X : array-like, shape (n_samples, n_features)</span>
+<span class="sd">            The training samples.</span>
+
+<span class="sd">        y : array-like, shape (n_samples,)</span>
+<span class="sd">            The corresponding training labels.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        X : array, shape (n_samples, n_features)</span>
+<span class="sd">            The validated training samples.</span>
+
+<span class="sd">        y : array, shape (n_samples,)</span>
+<span class="sd">            The validated training labels, encoded to be integers in</span>
+<span class="sd">            the range(0, n_classes).</span>
+
+<span class="sd">        init : string or numpy array of shape (n_features_a, n_features_b)</span>
+<span class="sd">            The validated initialization of the linear transformation.</span>
+
+<span class="sd">        Raises</span>
+<span class="sd">        -------</span>
+<span class="sd">        TypeError</span>
+<span class="sd">            If a parameter is not an instance of the desired type.</span>
+
+<span class="sd">        ValueError</span>
+<span class="sd">            If a parameter&#39;s value violates its legal value range or if the</span>
+<span class="sd">            combination of two or more given parameters is incompatible.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># Validate the inputs X and y, and converts y to numerical classes.</span>
+        <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">check_X_y</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">ensure_min_samples</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">check_classification_targets</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+        <span class="c1"># Check the preferred dimensionality of the projected space</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_components</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">check_scalar</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">n_components</span><span class="p">,</span> <span class="s1">&#39;n_components&#39;</span><span class="p">,</span> <span class="n">numbers</span><span class="o">.</span><span class="n">Integral</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_components</span> <span class="o">&gt;</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;The preferred dimensionality of the &#39;</span>
+                                 <span class="s1">&#39;projected space `n_components` (</span><span class="si">{}</span><span class="s1">) cannot &#39;</span>
+                                 <span class="s1">&#39;be greater than the given data &#39;</span>
+                                 <span class="s1">&#39;dimensionality (</span><span class="si">{}</span><span class="s1">)!&#39;</span>
+                                 <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_components</span><span class="p">,</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+
+        <span class="c1"># If warm_start is enabled, check that the inputs are consistent</span>
+        <span class="n">check_scalar</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">warm_start</span><span class="p">,</span> <span class="s1">&#39;warm_start&#39;</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">warm_start</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;components_&#39;</span><span class="p">):</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">components_</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;The new inputs dimensionality (</span><span class="si">{}</span><span class="s1">) does not &#39;</span>
+                                 <span class="s1">&#39;match the input dimensionality of the &#39;</span>
+                                 <span class="s1">&#39;previously learned transformation (</span><span class="si">{}</span><span class="s1">).&#39;</span>
+                                 <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                                         <span class="bp">self</span><span class="o">.</span><span class="n">components_</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+
+        <span class="n">check_scalar</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">max_iter</span><span class="p">,</span> <span class="s1">&#39;max_iter&#39;</span><span class="p">,</span> <span class="n">numbers</span><span class="o">.</span><span class="n">Integral</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">check_scalar</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tol</span><span class="p">,</span> <span class="s1">&#39;tol&#39;</span><span class="p">,</span> <span class="n">numbers</span><span class="o">.</span><span class="n">Real</span><span class="p">,</span> <span class="mf">0.</span><span class="p">)</span>
+        <span class="n">check_scalar</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">,</span> <span class="s1">&#39;verbose&#39;</span><span class="p">,</span> <span class="n">numbers</span><span class="o">.</span><span class="n">Integral</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">callback</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">callable</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">callback</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;`callback` is not callable.&#39;</span><span class="p">)</span>
+
+        <span class="c1"># Check how the linear transformation should be initialized</span>
+        <span class="n">init</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">init</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">init</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+            <span class="n">init</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">init</span><span class="p">)</span>
+
+            <span class="c1"># Assert that init.shape[1] = X.shape[1]</span>
+            <span class="k">if</span> <span class="n">init</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                    <span class="s1">&#39;The input dimensionality (</span><span class="si">{}</span><span class="s1">) of the given &#39;</span>
+                    <span class="s1">&#39;linear transformation `init` must match the &#39;</span>
+                    <span class="s1">&#39;dimensionality of the given inputs `X` (</span><span class="si">{}</span><span class="s1">).&#39;</span>
+                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">init</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+
+            <span class="c1"># Assert that init.shape[0] &lt;= init.shape[1]</span>
+            <span class="k">if</span> <span class="n">init</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">init</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                    <span class="s1">&#39;The output dimensionality (</span><span class="si">{}</span><span class="s1">) of the given &#39;</span>
+                    <span class="s1">&#39;linear transformation `init` cannot be &#39;</span>
+                    <span class="s1">&#39;greater than its input dimensionality (</span><span class="si">{}</span><span class="s1">).&#39;</span>
+                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">init</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">init</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_components</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="c1"># Assert that self.n_components = init.shape[0]</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_components</span> <span class="o">!=</span> <span class="n">init</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                    <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;The preferred dimensionality of the &#39;</span>
+                                     <span class="s1">&#39;projected space `n_components` (</span><span class="si">{}</span><span class="s1">) does&#39;</span>
+                                     <span class="s1">&#39; not match the output dimensionality of &#39;</span>
+                                     <span class="s1">&#39;the given linear transformation &#39;</span>
+                                     <span class="s1">&#39;`init` (</span><span class="si">{}</span><span class="s1">)!&#39;</span>
+                                     <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_components</span><span class="p">,</span>
+                                             <span class="n">init</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="k">elif</span> <span class="n">init</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="s1">&#39;pca&#39;</span><span class="p">,</span> <span class="s1">&#39;lda&#39;</span><span class="p">,</span> <span class="s1">&#39;identity&#39;</span><span class="p">,</span> <span class="s1">&#39;random&#39;</span><span class="p">]:</span>
+            <span class="k">pass</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;`init` must be &#39;auto&#39;, &#39;pca&#39;, &#39;lda&#39;, &#39;identity&#39;, &#39;random&#39; &quot;</span>
+                <span class="s2">&quot;or a numpy array of shape (n_components, n_features).&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">init</span>
+
+    <span class="k">def</span> <span class="nf">_initialize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">init</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize the transformation.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X : array-like, shape (n_samples, n_features)</span>
+<span class="sd">            The training samples.</span>
+
+<span class="sd">        y : array-like, shape (n_samples,)</span>
+<span class="sd">            The training labels.</span>
+
+<span class="sd">        init : string or numpy array of shape (n_features_a, n_features_b)</span>
+<span class="sd">            The validated initialization of the linear transformation.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        transformation : array, shape (n_components, n_features)</span>
+<span class="sd">            The initialized linear transformation.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">transformation</span> <span class="o">=</span> <span class="n">init</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">warm_start</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s1">&#39;components_&#39;</span><span class="p">):</span>
+            <span class="n">transformation</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">components_</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">init</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+            <span class="k">pass</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">n_samples</span><span class="p">,</span> <span class="n">n_features</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span>
+            <span class="n">n_components</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_components</span> <span class="ow">or</span> <span class="n">n_features</span>
+            <span class="k">if</span> <span class="n">init</span> <span class="o">==</span> <span class="s1">&#39;auto&#39;</span><span class="p">:</span>
+                <span class="n">n_classes</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+                <span class="k">if</span> <span class="n">n_components</span> <span class="o">&lt;=</span> <span class="nb">min</span><span class="p">(</span><span class="n">n_features</span><span class="p">,</span> <span class="n">n_classes</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+                    <span class="n">init</span> <span class="o">=</span> <span class="s1">&#39;lda&#39;</span>
+                <span class="k">elif</span> <span class="n">n_components</span> <span class="o">&lt;</span> <span class="nb">min</span><span class="p">(</span><span class="n">n_features</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">):</span>
+                    <span class="n">init</span> <span class="o">=</span> <span class="s1">&#39;pca&#39;</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">init</span> <span class="o">=</span> <span class="s1">&#39;identity&#39;</span>
+            <span class="k">if</span> <span class="n">init</span> <span class="o">==</span> <span class="s1">&#39;identity&#39;</span><span class="p">:</span>
+                <span class="n">transformation</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="n">n_components</span><span class="p">,</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="k">elif</span> <span class="n">init</span> <span class="o">==</span> <span class="s1">&#39;random&#39;</span><span class="p">:</span>
+                <span class="n">transformation</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">random_state_</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_components</span><span class="p">,</span>
+                                                          <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="k">elif</span> <span class="n">init</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;pca&#39;</span><span class="p">,</span> <span class="s1">&#39;lda&#39;</span><span class="p">}:</span>
+                <span class="n">init_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+                <span class="k">if</span> <span class="n">init</span> <span class="o">==</span> <span class="s1">&#39;pca&#39;</span><span class="p">:</span>
+                    <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span>
+                              <span class="n">random_state</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">random_state_</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">:</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Finding principal components... &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+                        <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+                    <span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+                    <span class="n">transformation</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">components_</span>
+                <span class="k">elif</span> <span class="n">init</span> <span class="o">==</span> <span class="s1">&#39;lda&#39;</span><span class="p">:</span>
+                    <span class="kn">from</span> <span class="nn">..discriminant_analysis</span> <span class="k">import</span> <span class="p">(</span>
+                        <span class="n">LinearDiscriminantAnalysis</span><span class="p">)</span>
+                    <span class="n">lda</span> <span class="o">=</span> <span class="n">LinearDiscriminantAnalysis</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">:</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Finding most discriminative components... &#39;</span><span class="p">,</span>
+                              <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+                        <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+                    <span class="n">lda</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+                    <span class="n">transformation</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">scalings_</span><span class="o">.</span><span class="n">T</span><span class="p">[:</span><span class="n">n_components</span><span class="p">]</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;done in </span><span class="si">{:5.2f}</span><span class="s1">s&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">init_time</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">transformation</span>
+
+    <span class="k">def</span> <span class="nf">_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">transformation</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called after each iteration of the optimizer.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        transformation : array, shape=(n_components * n_features,)</span>
+<span class="sd">            The solution computed by the optimizer in this iteration.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">callback</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">callback</span><span class="p">(</span><span class="n">transformation</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_iter_</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_iter_</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">_loss_grad_lbfgs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">transformation</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">same_class_mask</span><span class="p">,</span> <span class="n">sign</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute the loss and the loss gradient w.r.t. ``transformation``.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        transformation : array, shape (n_components * n_features,)</span>
+<span class="sd">            The raveled linear transformation on which to compute loss and</span>
+<span class="sd">            evaluate gradient.</span>
+
+<span class="sd">        X : array, shape (n_samples, n_features)</span>
+<span class="sd">            The training samples.</span>
+
+<span class="sd">        same_class_mask : array, shape (n_samples, n_samples)</span>
+<span class="sd">            A mask where ``mask[i, j] == 1`` if ``X[i]`` and ``X[j]`` belong</span>
+<span class="sd">            to the same class, and ``0`` otherwise.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        loss : float</span>
+<span class="sd">            The loss computed for the given transformation.</span>
+
+<span class="sd">        gradient : array, shape (n_components * n_features,)</span>
+<span class="sd">            The new (flattened) gradient of the loss.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_iter_</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">n_iter_</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">:</span>
+                <span class="n">header_fields</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Iteration&#39;</span><span class="p">,</span> <span class="s1">&#39;Objective Value&#39;</span><span class="p">,</span> <span class="s1">&#39;Time(s)&#39;</span><span class="p">]</span>
+                <span class="n">header_fmt</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{:&gt;10}</span><span class="s1"> </span><span class="si">{:&gt;20}</span><span class="s1"> </span><span class="si">{:&gt;10}</span><span class="s1">&#39;</span>
+                <span class="n">header</span> <span class="o">=</span> <span class="n">header_fmt</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">header_fields</span><span class="p">)</span>
+                <span class="n">cls_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">{}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cls_name</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">{}</span><span class="s1">] </span><span class="si">{}</span><span class="se">\n</span><span class="s1">[</span><span class="si">{}</span><span class="s1">] </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cls_name</span><span class="p">,</span> <span class="n">header</span><span class="p">,</span>
+                                                <span class="n">cls_name</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">header</span><span class="p">)))</span>
+
+        <span class="n">t_funcall</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+        <span class="n">transformation</span> <span class="o">=</span> <span class="n">transformation</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">X_embedded</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">transformation</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>  <span class="c1"># (n_samples, n_components)</span>
+
+        <span class="c1"># Compute softmax distances</span>
+        <span class="n">p_ij</span> <span class="o">=</span> <span class="n">pairwise_distances</span><span class="p">(</span><span class="n">X_embedded</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">fill_diagonal</span><span class="p">(</span><span class="n">p_ij</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+        <span class="n">p_ij</span> <span class="o">=</span> <span class="n">softmax</span><span class="p">(</span><span class="o">-</span><span class="n">p_ij</span><span class="p">)</span>  <span class="c1"># (n_samples, n_samples)</span>
+
+        <span class="c1"># Compute loss</span>
+        <span class="n">masked_p_ij</span> <span class="o">=</span> <span class="n">p_ij</span> <span class="o">*</span> <span class="n">same_class_mask</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">masked_p_ij</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># (n_samples, 1)</span>
+        <span class="n">loss</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+
+        <span class="c1"># Compute gradient of loss w.r.t. `transform`</span>
+        <span class="n">weighted_p_ij</span> <span class="o">=</span> <span class="n">masked_p_ij</span> <span class="o">-</span> <span class="n">p_ij</span> <span class="o">*</span> <span class="n">p</span>
+        <span class="n">weighted_p_ij_sym</span> <span class="o">=</span> <span class="n">weighted_p_ij</span> <span class="o">+</span> <span class="n">weighted_p_ij</span><span class="o">.</span><span class="n">T</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">fill_diagonal</span><span class="p">(</span><span class="n">weighted_p_ij_sym</span><span class="p">,</span> <span class="o">-</span><span class="n">weighted_p_ij</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+        <span class="n">gradient</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">X_embedded</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">weighted_p_ij_sym</span><span class="p">)</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="c1"># time complexity of the gradient: O(n_components x n_samples x (</span>
+        <span class="c1"># n_samples + n_features))</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">:</span>
+            <span class="n">t_funcall</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t_funcall</span>
+            <span class="n">values_fmt</span> <span class="o">=</span> <span class="s1">&#39;[</span><span class="si">{}</span><span class="s1">] </span><span class="si">{:&gt;10}</span><span class="s1"> </span><span class="si">{:&gt;20.6e}</span><span class="s1"> </span><span class="si">{:&gt;10.2f}</span><span class="s1">&#39;</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">values_fmt</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_iter_</span><span class="p">,</span>
+                                    <span class="n">loss</span><span class="p">,</span> <span class="n">t_funcall</span><span class="p">))</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="n">sign</span> <span class="o">*</span> <span class="n">loss</span><span class="p">,</span> <span class="n">sign</span> <span class="o">*</span> <span class="n">gradient</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span></div>
+</pre></div>
+
+	    </div>
+            <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Roman Feldbauer.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.21.0a8',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/language_data.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../../../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../../../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>

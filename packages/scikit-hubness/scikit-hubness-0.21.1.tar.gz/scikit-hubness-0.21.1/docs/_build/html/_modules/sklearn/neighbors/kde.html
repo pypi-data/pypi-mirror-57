@@ -1,0 +1,437 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>sklearn.neighbors.kde &mdash; scikit-hubness 0.21.0a8 documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../../../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="scikit-hubness 0.21.0a8 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="fa fa-home"> scikit-hubness </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../../../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-source">Installation from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#supported-platforms">Supported platforms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/example.html">Quick start example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/documentation.html">scikit-hubness API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <h1>Source code for sklearn.neighbors.kde</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Kernel Density Estimation</span>
+<span class="sd">-------------------------</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># Author: Jake Vanderplas &lt;jakevdp@cs.washington.edu&gt;</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="k">import</span> <span class="n">gammainc</span>
+<span class="kn">from</span> <span class="nn">..base</span> <span class="k">import</span> <span class="n">BaseEstimator</span>
+<span class="kn">from</span> <span class="nn">..utils</span> <span class="k">import</span> <span class="n">check_array</span><span class="p">,</span> <span class="n">check_random_state</span><span class="p">,</span> <span class="n">check_consistent_length</span>
+
+<span class="kn">from</span> <span class="nn">..utils.extmath</span> <span class="k">import</span> <span class="n">row_norms</span>
+<span class="kn">from</span> <span class="nn">.ball_tree</span> <span class="k">import</span> <span class="n">BallTree</span><span class="p">,</span> <span class="n">DTYPE</span>
+<span class="kn">from</span> <span class="nn">.kd_tree</span> <span class="k">import</span> <span class="n">KDTree</span>
+
+
+<span class="n">VALID_KERNELS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;gaussian&#39;</span><span class="p">,</span> <span class="s1">&#39;tophat&#39;</span><span class="p">,</span> <span class="s1">&#39;epanechnikov&#39;</span><span class="p">,</span> <span class="s1">&#39;exponential&#39;</span><span class="p">,</span> <span class="s1">&#39;linear&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;cosine&#39;</span><span class="p">]</span>
+<span class="n">TREE_DICT</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;ball_tree&#39;</span><span class="p">:</span> <span class="n">BallTree</span><span class="p">,</span> <span class="s1">&#39;kd_tree&#39;</span><span class="p">:</span> <span class="n">KDTree</span><span class="p">}</span>
+
+
+<span class="c1"># TODO: implement a brute force version for testing purposes</span>
+<span class="c1"># TODO: bandwidth estimation</span>
+<span class="c1"># TODO: create a density estimation base class?</span>
+<div class="viewcode-block" id="KernelDensity"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.KernelDensity.html#skhubness.neighbors.KernelDensity">[docs]</a><span class="k">class</span> <span class="nc">KernelDensity</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Kernel Density Estimation</span>
+
+<span class="sd">    Read more in the :ref:`User Guide &lt;kernel_density&gt;`.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    bandwidth : float</span>
+<span class="sd">        The bandwidth of the kernel.</span>
+
+<span class="sd">    algorithm : string</span>
+<span class="sd">        The tree algorithm to use.  Valid options are</span>
+<span class="sd">        [&#39;kd_tree&#39;|&#39;ball_tree&#39;|&#39;auto&#39;].  Default is &#39;auto&#39;.</span>
+
+<span class="sd">    kernel : string</span>
+<span class="sd">        The kernel to use.  Valid kernels are</span>
+<span class="sd">        [&#39;gaussian&#39;|&#39;tophat&#39;|&#39;epanechnikov&#39;|&#39;exponential&#39;|&#39;linear&#39;|&#39;cosine&#39;]</span>
+<span class="sd">        Default is &#39;gaussian&#39;.</span>
+
+<span class="sd">    metric : string</span>
+<span class="sd">        The distance metric to use.  Note that not all metrics are</span>
+<span class="sd">        valid with all algorithms.  Refer to the documentation of</span>
+<span class="sd">        :class:`BallTree` and :class:`KDTree` for a description of</span>
+<span class="sd">        available algorithms.  Note that the normalization of the density</span>
+<span class="sd">        output is correct only for the Euclidean distance metric. Default</span>
+<span class="sd">        is &#39;euclidean&#39;.</span>
+
+<span class="sd">    atol : float</span>
+<span class="sd">        The desired absolute tolerance of the result.  A larger tolerance will</span>
+<span class="sd">        generally lead to faster execution. Default is 0.</span>
+
+<span class="sd">    rtol : float</span>
+<span class="sd">        The desired relative tolerance of the result.  A larger tolerance will</span>
+<span class="sd">        generally lead to faster execution.  Default is 1E-8.</span>
+
+<span class="sd">    breadth_first : boolean</span>
+<span class="sd">        If true (default), use a breadth-first approach to the problem.</span>
+<span class="sd">        Otherwise use a depth-first approach.</span>
+
+<span class="sd">    leaf_size : int</span>
+<span class="sd">        Specify the leaf size of the underlying tree.  See :class:`BallTree`</span>
+<span class="sd">        or :class:`KDTree` for details.  Default is 40.</span>
+
+<span class="sd">    metric_params : dict</span>
+<span class="sd">        Additional parameters to be passed to the tree for use with the</span>
+<span class="sd">        metric.  For more information, see the documentation of</span>
+<span class="sd">        :class:`BallTree` or :class:`KDTree`.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<div class="viewcode-block" id="KernelDensity.__init__"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.KernelDensity.html#skhubness.neighbors.KernelDensity.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bandwidth</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+                 <span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;gaussian&#39;</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s2">&quot;euclidean&quot;</span><span class="p">,</span> <span class="n">atol</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+                 <span class="n">breadth_first</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">leaf_size</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">metric_params</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">algorithm</span> <span class="o">=</span> <span class="n">algorithm</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bandwidth</span> <span class="o">=</span> <span class="n">bandwidth</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">kernel</span> <span class="o">=</span> <span class="n">kernel</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">metric</span> <span class="o">=</span> <span class="n">metric</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">atol</span> <span class="o">=</span> <span class="n">atol</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rtol</span> <span class="o">=</span> <span class="n">rtol</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">breadth_first</span> <span class="o">=</span> <span class="n">breadth_first</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">leaf_size</span> <span class="o">=</span> <span class="n">leaf_size</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">metric_params</span> <span class="o">=</span> <span class="n">metric_params</span>
+
+        <span class="c1"># run the choose algorithm code so that exceptions will happen here</span>
+        <span class="c1"># we&#39;re using clone() in the GenerativeBayes classifier,</span>
+        <span class="c1"># so we can&#39;t do this kind of logic in __init__</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_choose_algorithm</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">algorithm</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">bandwidth</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;bandwidth must be positive&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">kernel</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">VALID_KERNELS</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;invalid kernel: &#39;</span><span class="si">{0}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kernel</span><span class="p">))</span></div>
+
+    <span class="k">def</span> <span class="nf">_choose_algorithm</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">algorithm</span><span class="p">,</span> <span class="n">metric</span><span class="p">):</span>
+        <span class="c1"># given the algorithm string + metric string, choose the optimal</span>
+        <span class="c1"># algorithm to compute the result.</span>
+        <span class="k">if</span> <span class="n">algorithm</span> <span class="o">==</span> <span class="s1">&#39;auto&#39;</span><span class="p">:</span>
+            <span class="c1"># use KD Tree if possible</span>
+            <span class="k">if</span> <span class="n">metric</span> <span class="ow">in</span> <span class="n">KDTree</span><span class="o">.</span><span class="n">valid_metrics</span><span class="p">:</span>
+                <span class="k">return</span> <span class="s1">&#39;kd_tree&#39;</span>
+            <span class="k">elif</span> <span class="n">metric</span> <span class="ow">in</span> <span class="n">BallTree</span><span class="o">.</span><span class="n">valid_metrics</span><span class="p">:</span>
+                <span class="k">return</span> <span class="s1">&#39;ball_tree&#39;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;invalid metric: &#39;</span><span class="si">{0}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">metric</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">algorithm</span> <span class="ow">in</span> <span class="n">TREE_DICT</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">metric</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">TREE_DICT</span><span class="p">[</span><span class="n">algorithm</span><span class="p">]</span><span class="o">.</span><span class="n">valid_metrics</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;invalid metric for </span><span class="si">{0}</span><span class="s2">: &quot;</span>
+                                 <span class="s2">&quot;&#39;</span><span class="si">{1}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">TREE_DICT</span><span class="p">[</span><span class="n">algorithm</span><span class="p">],</span>
+                                                <span class="n">metric</span><span class="p">))</span>
+            <span class="k">return</span> <span class="n">algorithm</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;invalid algorithm: &#39;</span><span class="si">{0}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">algorithm</span><span class="p">))</span>
+
+<div class="viewcode-block" id="KernelDensity.fit"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.KernelDensity.html#skhubness.neighbors.KernelDensity.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Fit the Kernel Density model on the data.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X : array_like, shape (n_samples, n_features)</span>
+<span class="sd">            List of n_features-dimensional data points.  Each row</span>
+<span class="sd">            corresponds to a single data point.</span>
+<span class="sd">        sample_weight : array_like, shape (n_samples,), optional</span>
+<span class="sd">            List of sample weights attached to the data X.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">algorithm</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_choose_algorithm</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">algorithm</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric</span><span class="p">)</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">DTYPE</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">sample_weight</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">sample_weight</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">sample_weight</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">DTYPE</span><span class="p">,</span>
+                                        <span class="n">ensure_2d</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">sample_weight</span><span class="o">.</span><span class="n">ndim</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;the shape of sample_weight must be (</span><span class="si">{0}</span><span class="s2">,),&quot;</span>
+                                 <span class="s2">&quot; but was </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+                                                       <span class="n">sample_weight</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+            <span class="n">check_consistent_length</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">sample_weight</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">sample_weight</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;sample_weight must have positive values&quot;</span><span class="p">)</span>
+
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">metric_params</span>
+        <span class="k">if</span> <span class="n">kwargs</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tree_</span> <span class="o">=</span> <span class="n">TREE_DICT</span><span class="p">[</span><span class="n">algorithm</span><span class="p">](</span><span class="n">X</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">metric</span><span class="p">,</span>
+                                          <span class="n">leaf_size</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">leaf_size</span><span class="p">,</span>
+                                          <span class="n">sample_weight</span><span class="o">=</span><span class="n">sample_weight</span><span class="p">,</span>
+                                          <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+<div class="viewcode-block" id="KernelDensity.score_samples"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.KernelDensity.html#skhubness.neighbors.KernelDensity.score_samples">[docs]</a>    <span class="k">def</span> <span class="nf">score_samples</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Evaluate the density model on the data.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X : array_like, shape (n_samples, n_features)</span>
+<span class="sd">            An array of points to query.  Last dimension should match dimension</span>
+<span class="sd">            of training data (n_features).</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        density : ndarray, shape (n_samples,)</span>
+<span class="sd">            The array of log(density) evaluations. These are normalized to be</span>
+<span class="sd">            probability densities, so values will be low for high-dimensional</span>
+<span class="sd">            data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># The returned density is normalized to the number of points.</span>
+        <span class="c1"># For it to be a probability, we must scale it.  For this reason</span>
+        <span class="c1"># we&#39;ll also scale atol.</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">check_array</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">DTYPE</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">tree_</span><span class="o">.</span><span class="n">sample_weight</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">N</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tree_</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">N</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tree_</span><span class="o">.</span><span class="n">sum_weight</span>
+        <span class="n">atol_N</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">atol</span> <span class="o">*</span> <span class="n">N</span>
+        <span class="n">log_density</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tree_</span><span class="o">.</span><span class="n">kernel_density</span><span class="p">(</span>
+            <span class="n">X</span><span class="p">,</span> <span class="n">h</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">bandwidth</span><span class="p">,</span> <span class="n">kernel</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">kernel</span><span class="p">,</span> <span class="n">atol</span><span class="o">=</span><span class="n">atol_N</span><span class="p">,</span>
+            <span class="n">rtol</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">rtol</span><span class="p">,</span> <span class="n">breadth_first</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">breadth_first</span><span class="p">,</span> <span class="n">return_log</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">log_density</span> <span class="o">-=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">log_density</span></div>
+
+<div class="viewcode-block" id="KernelDensity.score"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.KernelDensity.html#skhubness.neighbors.KernelDensity.score">[docs]</a>    <span class="k">def</span> <span class="nf">score</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Compute the total log probability density under the model.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        X : array_like, shape (n_samples, n_features)</span>
+<span class="sd">            List of n_features-dimensional data points.  Each row</span>
+<span class="sd">            corresponds to a single data point.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        logprob : float</span>
+<span class="sd">            Total log-likelihood of the data in X. This is normalized to be a</span>
+<span class="sd">            probability density, so the value will be low for high-dimensional</span>
+<span class="sd">            data.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">score_samples</span><span class="p">(</span><span class="n">X</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="KernelDensity.sample"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.KernelDensity.html#skhubness.neighbors.KernelDensity.sample">[docs]</a>    <span class="k">def</span> <span class="nf">sample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_samples</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Generate random samples from the model.</span>
+
+<span class="sd">        Currently, this is implemented only for gaussian and tophat kernels.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        n_samples : int, optional</span>
+<span class="sd">            Number of samples to generate. Defaults to 1.</span>
+
+<span class="sd">        random_state : int, RandomState instance or None. default to None</span>
+<span class="sd">            If int, random_state is the seed used by the random number</span>
+<span class="sd">            generator; If RandomState instance, random_state is the random</span>
+<span class="sd">            number generator; If None, the random number generator is the</span>
+<span class="sd">            RandomState instance used by `np.random`.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        X : array_like, shape (n_samples, n_features)</span>
+<span class="sd">            List of samples.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># TODO: implement sampling for other valid kernel shapes</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">kernel</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;gaussian&#39;</span><span class="p">,</span> <span class="s1">&#39;tophat&#39;</span><span class="p">]:</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tree_</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+        <span class="n">rng</span> <span class="o">=</span> <span class="n">check_random_state</span><span class="p">(</span><span class="n">random_state</span><span class="p">)</span>
+        <span class="n">u</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">n_samples</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">tree_</span><span class="o">.</span><span class="n">sample_weight</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="p">(</span><span class="n">u</span> <span class="o">*</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">cumsum_weight</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tree_</span><span class="o">.</span><span class="n">sample_weight</span><span class="p">))</span>
+            <span class="n">sum_weight</span> <span class="o">=</span> <span class="n">cumsum_weight</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">searchsorted</span><span class="p">(</span><span class="n">cumsum_weight</span><span class="p">,</span> <span class="n">u</span> <span class="o">*</span> <span class="n">sum_weight</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">kernel</span> <span class="o">==</span> <span class="s1">&#39;gaussian&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">atleast_2d</span><span class="p">(</span><span class="n">rng</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">bandwidth</span><span class="p">))</span>
+
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">kernel</span> <span class="o">==</span> <span class="s1">&#39;tophat&#39;</span><span class="p">:</span>
+            <span class="c1"># we first draw points from a d-dimensional normal distribution,</span>
+            <span class="c1"># then use an incomplete gamma function to map them to a uniform</span>
+            <span class="c1"># d-dimensional tophat distribution.</span>
+            <span class="n">dim</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">X</span> <span class="o">=</span> <span class="n">rng</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">dim</span><span class="p">))</span>
+            <span class="n">s_sq</span> <span class="o">=</span> <span class="n">row_norms</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">correction</span> <span class="o">=</span> <span class="p">(</span><span class="n">gammainc</span><span class="p">(</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">dim</span><span class="p">,</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">s_sq</span><span class="p">)</span> <span class="o">**</span> <span class="p">(</span><span class="mf">1.</span> <span class="o">/</span> <span class="n">dim</span><span class="p">)</span>
+                          <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">bandwidth</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">s_sq</span><span class="p">))</span>
+            <span class="k">return</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">X</span> <span class="o">*</span> <span class="n">correction</span><span class="p">[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span></div></div>
+</pre></div>
+
+	    </div>
+            <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Roman Feldbauer.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.21.0a8',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/language_data.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../../../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../../../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>

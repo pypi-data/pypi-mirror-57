@@ -1,0 +1,470 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>skhubness.neighbors.graph &mdash; scikit-hubness 0.21.0a8 documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../../../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="scikit-hubness 0.21.0a8 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="fa fa-home"> scikit-hubness </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../../../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-source">Installation from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#supported-platforms">Supported platforms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/example.html">Quick start example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/documentation.html">scikit-hubness API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <h1>Source code for skhubness.neighbors.graph</h1><div class="highlight"><pre>
+<span></span><span class="c1"># SPDX-License-Identifier: BSD-3-Clause</span>
+
+<span class="sd">&quot;&quot;&quot;Nearest Neighbors graph functions&quot;&quot;&quot;</span>
+
+<span class="c1"># Author: Jake Vanderplas &lt;vanderplas@astro.washington.edu&gt;</span>
+<span class="c1">#         Roman Feldbauer &lt;roman.feldbauer@univie.ac.at&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># License of sklearn code: BSD 3 clause (C) INRIA, University of Amsterdam</span>
+
+<span class="kn">from</span> <span class="nn">.base</span> <span class="k">import</span> <span class="n">KNeighborsMixin</span><span class="p">,</span> <span class="n">RadiusNeighborsMixin</span>
+<span class="kn">from</span> <span class="nn">.unsupervised</span> <span class="k">import</span> <span class="n">NearestNeighbors</span>
+
+
+<span class="k">def</span> <span class="nf">_check_params</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">metric</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">metric_params</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Check the validity of the input parameters&quot;&quot;&quot;</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">([</span><span class="s1">&#39;metric&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;metric_params&#39;</span><span class="p">],</span>
+                 <span class="p">[</span><span class="n">metric</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">metric_params</span><span class="p">])</span>
+    <span class="n">est_params</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">param_name</span><span class="p">,</span> <span class="n">func_param</span> <span class="ow">in</span> <span class="n">params</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">func_param</span> <span class="o">!=</span> <span class="n">est_params</span><span class="p">[</span><span class="n">param_name</span><span class="p">]:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;Got </span><span class="si">%s</span><span class="s2"> for </span><span class="si">%s</span><span class="s2">, while the estimator has </span><span class="si">%s</span><span class="s2"> for &quot;</span>
+                <span class="s2">&quot;the same parameter.&quot;</span> <span class="o">%</span> <span class="p">(</span>
+                    <span class="n">func_param</span><span class="p">,</span> <span class="n">param_name</span><span class="p">,</span> <span class="n">est_params</span><span class="p">[</span><span class="n">param_name</span><span class="p">]))</span>
+
+
+<span class="k">def</span> <span class="nf">_query_include_self</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">include_self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return the query based on include_self param&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">include_self</span><span class="p">:</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">_fit_X</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">return</span> <span class="n">query</span>
+
+
+<div class="viewcode-block" id="kneighbors_graph"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.kneighbors_graph.html#skhubness.neighbors.kneighbors_graph">[docs]</a><span class="k">def</span> <span class="nf">kneighbors_graph</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">n_neighbors</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;connectivity&#39;</span><span class="p">,</span>
+                     <span class="n">algorithm</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">algorithm_params</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                     <span class="n">hubness</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">hubness_params</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                     <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;minkowski&#39;</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">metric_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                     <span class="n">include_self</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Computes the (weighted) graph of k-Neighbors for points in X</span>
+
+<span class="sd">    Read more in the</span>
+<span class="sd">    `scikit-learn User Guide &lt;https://scikit-learn.org/stable/modules/neighbors.html#unsupervised-neighbors&gt;`_</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    X: array-like or BallTree, shape = [n_samples, n_features]</span>
+<span class="sd">        Sample data, in the form of a numpy array or a precomputed</span>
+<span class="sd">        :class:`BallTree`.</span>
+
+<span class="sd">    n_neighbors: int</span>
+<span class="sd">        Number of neighbors for each sample.</span>
+
+<span class="sd">    mode: {&#39;connectivity&#39;, &#39;distance&#39;}, optional</span>
+<span class="sd">        Type of returned matrix: &#39;connectivity&#39; will return the connectivity</span>
+<span class="sd">        matrix with ones and zeros, and &#39;distance&#39; will return the distances</span>
+<span class="sd">        between neighbors according to the given metric.</span>
+
+<span class="sd">    algorithm: {&#39;auto&#39;, &#39;hnsw&#39;, &#39;lsh&#39;, &#39;falconn_lsh&#39;, &#39;ball_tree&#39;, &#39;kd_tree&#39;, &#39;brute&#39;}, optional</span>
+<span class="sd">        Algorithm used to compute the nearest neighbors:</span>
+
+<span class="sd">        - &#39;hnsw&#39; will use :class:`HNSW`</span>
+<span class="sd">        - &#39;lsh&#39; will use :class:`PuffinnLSH`</span>
+<span class="sd">        - &#39;falconn_lsh&#39; will use :class:`FalconnLSH`</span>
+<span class="sd">        - &#39;ball_tree&#39; will use :class:`BallTree`</span>
+<span class="sd">        - &#39;kd_tree&#39; will use :class:`KDTree`</span>
+<span class="sd">        - &#39;brute&#39; will use a brute-force search.</span>
+<span class="sd">        - &#39;auto&#39; will attempt to decide the most appropriate algorithm</span>
+<span class="sd">          based on the values passed to :meth:`fit` method.</span>
+
+<span class="sd">        Note: fitting on sparse input will override the setting of</span>
+<span class="sd">        this parameter, using brute force.</span>
+
+<span class="sd">    algorithm_params: dict, optional</span>
+<span class="sd">        Override default parameters of the NN algorithm.</span>
+<span class="sd">        For example, with algorithm=&#39;lsh&#39; and algorithm_params={n_candidates: 100}</span>
+<span class="sd">        one hundred approximate neighbors are retrieved with LSH.</span>
+<span class="sd">        If parameter hubness is set, the candidate neighbors are further reordered</span>
+<span class="sd">        with hubness reduction.</span>
+<span class="sd">        Finally, n_neighbors objects are used from the (optionally reordered) candidates.</span>
+
+<span class="sd">    hubness: {&#39;mutual_proximity&#39;, &#39;local_scaling&#39;, &#39;dis_sim_local&#39;, None}, optional</span>
+<span class="sd">        Hubness reduction algorithm</span>
+
+<span class="sd">        - &#39;mutual_proximity&#39; or &#39;mp&#39; will use :class:`MutualProximity`</span>
+<span class="sd">        - &#39;local_scaling&#39; or &#39;ls&#39; will use :class:`LocalScaling`</span>
+<span class="sd">        - &#39;dis_sim_local&#39; or &#39;dsl&#39; will use :class:`DisSimLocal`</span>
+
+<span class="sd">        If None, no hubness reduction will be performed (=vanilla kNN).</span>
+
+<span class="sd">    hubness_params: dict, optional</span>
+<span class="sd">        Override default parameters of the selected hubness reduction algorithm.</span>
+<span class="sd">        For example, with hubness=&#39;mp&#39; and hubness_params={&#39;method&#39;: &#39;normal&#39;}</span>
+<span class="sd">        a mutual proximity variant is used, which models distance distributions</span>
+<span class="sd">        with independent Gaussians.</span>
+
+<span class="sd">    metric: string, default &#39;minkowski&#39;</span>
+<span class="sd">        The distance metric used to calculate the k-Neighbors for each sample</span>
+<span class="sd">        point. The DistanceMetric class gives a list of available metrics.</span>
+<span class="sd">        The default distance is &#39;euclidean&#39; (&#39;minkowski&#39; metric with the p</span>
+<span class="sd">        param equal to 2.)</span>
+
+<span class="sd">    p: int, default 2</span>
+<span class="sd">        Power parameter for the Minkowski metric. When p = 1, this is</span>
+<span class="sd">        equivalent to using manhattan_distance (l1), and euclidean_distance</span>
+<span class="sd">        (l2) for p = 2. For arbitrary p, minkowski_distance (l_p) is used.</span>
+
+<span class="sd">    metric_params: dict, optional</span>
+<span class="sd">        additional keyword arguments for the metric function.</span>
+
+<span class="sd">    include_self: bool, default=False.</span>
+<span class="sd">        Whether or not to mark each sample as the first nearest neighbor to</span>
+<span class="sd">        itself. If `None`, then True is used for mode=&#39;connectivity&#39; and False</span>
+<span class="sd">        for mode=&#39;distance&#39; as this will preserve backwards compatibility.</span>
+
+<span class="sd">    n_jobs: int or None, optional (default=None)</span>
+<span class="sd">        The number of parallel jobs to run for neighbors search.</span>
+<span class="sd">        ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context.</span>
+<span class="sd">        ``-1`` means using all processors.</span>
+<span class="sd">        See `Glossary &lt;https://scikit-learn.org/stable/glossary.html#term-n-jobs&gt;`_ for more details.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    A: sparse matrix in CSR format, shape = [n_samples, n_samples]</span>
+<span class="sd">        A[i, j] is assigned the weight of edge that connects i to j.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; X = [[0], [3], [1]]</span>
+<span class="sd">    &gt;&gt;&gt; from skhubness.neighbors import kneighbors_graph</span>
+<span class="sd">    &gt;&gt;&gt; A = kneighbors_graph(X, 2, mode=&#39;connectivity&#39;, include_self=True)</span>
+<span class="sd">    &gt;&gt;&gt; A.toarray()</span>
+<span class="sd">    array([[1., 0., 1.],</span>
+<span class="sd">           [0., 1., 1.],</span>
+<span class="sd">           [1., 0., 1.]])</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    radius_neighbors_graph</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">KNeighborsMixin</span><span class="p">):</span>
+        <span class="n">knn</span> <span class="o">=</span> <span class="n">NearestNeighbors</span><span class="p">(</span><span class="n">n_neighbors</span><span class="p">,</span>
+                               <span class="n">algorithm</span><span class="o">=</span><span class="n">algorithm</span><span class="p">,</span> <span class="n">algorithm_params</span><span class="o">=</span><span class="n">algorithm_params</span><span class="p">,</span>
+                               <span class="n">hubness</span><span class="o">=</span><span class="n">hubness</span><span class="p">,</span> <span class="n">hubness_params</span><span class="o">=</span><span class="n">hubness_params</span><span class="p">,</span>
+                               <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">,</span>
+                               <span class="n">metric_params</span><span class="o">=</span><span class="n">metric_params</span><span class="p">,</span>
+                               <span class="n">n_jobs</span><span class="o">=</span><span class="n">n_jobs</span><span class="p">,</span>
+                               <span class="n">include_self</span><span class="o">=</span><span class="n">include_self</span><span class="p">,</span>
+                               <span class="p">)</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">_check_params</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">metric</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">metric_params</span><span class="p">)</span>
+
+    <span class="n">query</span> <span class="o">=</span> <span class="n">_query_include_self</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">include_self</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">X</span><span class="o">.</span><span class="n">kneighbors_graph</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">query</span><span class="p">,</span> <span class="n">n_neighbors</span><span class="o">=</span><span class="n">n_neighbors</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="radius_neighbors_graph"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.neighbors.radius_neighbors_graph.html#skhubness.neighbors.radius_neighbors_graph">[docs]</a><span class="k">def</span> <span class="nf">radius_neighbors_graph</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;connectivity&#39;</span><span class="p">,</span>
+                           <span class="n">algorithm</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">algorithm_params</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                           <span class="n">hubness</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">hubness_params</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                           <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;minkowski&#39;</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">metric_params</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                           <span class="n">include_self</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Computes the (weighted) graph of Neighbors for points in X</span>
+
+<span class="sd">    Neighborhoods are restricted the points at a distance lower than</span>
+<span class="sd">    radius.</span>
+
+<span class="sd">    Read more in the</span>
+<span class="sd">    `scikit-learn User Guide &lt;https://scikit-learn.org/stable/modules/neighbors.html#unsupervised-neighbors&gt;`_</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    X: array-like or BallTree, shape = [n_samples, n_features]</span>
+<span class="sd">        Sample data, in the form of a numpy array or a precomputed</span>
+<span class="sd">        :class:`BallTree`.</span>
+
+<span class="sd">    radius: float</span>
+<span class="sd">        Radius of neighborhoods.</span>
+
+<span class="sd">    mode: {&#39;connectivity&#39;, &#39;distance&#39;}, optional</span>
+<span class="sd">        Type of returned matrix: &#39;connectivity&#39; will return the connectivity</span>
+<span class="sd">        matrix with ones and zeros, and &#39;distance&#39; will return the distances</span>
+<span class="sd">        between neighbors according to the given metric.</span>
+
+<span class="sd">    algorithm: {&#39;auto&#39;, &#39;falconn_lsh&#39;, &#39;ball_tree&#39;, &#39;kd_tree&#39;, &#39;brute&#39;}, optional</span>
+<span class="sd">        Algorithm used to compute the nearest neighbors:</span>
+
+<span class="sd">        - &#39;falconn_lsh&#39; will use :class:`FalconnLSH`</span>
+<span class="sd">        - &#39;ball_tree&#39; will use :class:`BallTree`</span>
+<span class="sd">        - &#39;kd_tree&#39; will use :class:`KDTree`</span>
+<span class="sd">        - &#39;brute&#39; will use a brute-force search.</span>
+<span class="sd">        - &#39;auto&#39; will attempt to decide the most appropriate algorithm</span>
+<span class="sd">          based on the values passed to :meth:`fit` method.</span>
+
+<span class="sd">        Note: fitting on sparse input will override the setting of</span>
+<span class="sd">        this parameter, using brute force.</span>
+
+<span class="sd">    algorithm_params: dict, optional</span>
+<span class="sd">        Override default parameters of the NN algorithm.</span>
+<span class="sd">        For example, with algorithm=&#39;lsh&#39; and algorithm_params={n_candidates: 100}</span>
+<span class="sd">        one hundred approximate neighbors are retrieved with LSH.</span>
+<span class="sd">        If parameter hubness is set, the candidate neighbors are further reordered</span>
+<span class="sd">        with hubness reduction.</span>
+<span class="sd">        Finally, n_neighbors objects are used from the (optionally reordered) candidates.</span>
+
+<span class="sd">    hubness: {&#39;mutual_proximity&#39;, &#39;local_scaling&#39;, &#39;dis_sim_local&#39;, None}, optional</span>
+<span class="sd">        Hubness reduction algorithm</span>
+
+<span class="sd">        - &#39;mutual_proximity&#39; or &#39;mp&#39; will use :class:`MutualProximity`</span>
+<span class="sd">        - &#39;local_scaling&#39; or &#39;ls&#39; will use :class:`LocalScaling`</span>
+<span class="sd">        - &#39;dis_sim_local&#39; or &#39;dsl&#39; will use :class:`DisSimLocal`</span>
+
+<span class="sd">        If None, no hubness reduction will be performed (=vanilla kNN).</span>
+
+<span class="sd">    hubness_params: dict, optional</span>
+<span class="sd">        Override default parameters of the selected hubness reduction algorithm.</span>
+<span class="sd">        For example, with hubness=&#39;mp&#39; and hubness_params={&#39;method&#39;: &#39;normal&#39;}</span>
+<span class="sd">        a mutual proximity variant is used, which models distance distributions</span>
+<span class="sd">        with independent Gaussians.</span>
+
+<span class="sd">    metric: string, default &#39;minkowski&#39;</span>
+<span class="sd">        The distance metric used to calculate the neighbors within a</span>
+<span class="sd">        given radius for each sample point. The DistanceMetric class</span>
+<span class="sd">        gives a list of available metrics. The default distance is</span>
+<span class="sd">        &#39;euclidean&#39; (&#39;minkowski&#39; metric with the param equal to 2.)</span>
+
+<span class="sd">    p: int, default 2</span>
+<span class="sd">        Power parameter for the Minkowski metric. When p = 1, this is</span>
+<span class="sd">        equivalent to using manhattan_distance (l1), and euclidean_distance</span>
+<span class="sd">        (l2) for p = 2. For arbitrary p, minkowski_distance (l_p) is used.</span>
+
+<span class="sd">    metric_params: dict, optional</span>
+<span class="sd">        additional keyword arguments for the metric function.</span>
+
+<span class="sd">    include_self: bool, default=False</span>
+<span class="sd">        Whether or not to mark each sample as the first nearest neighbor to</span>
+<span class="sd">        itself. If `None`, then True is used for mode=&#39;connectivity&#39; and False</span>
+<span class="sd">        for mode=&#39;distance&#39; as this will preserve backwards compatibility.</span>
+
+<span class="sd">    n_jobs: int or None, optional (default=None)</span>
+<span class="sd">        The number of parallel jobs to run for neighbors search.</span>
+<span class="sd">        ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context.</span>
+<span class="sd">        ``-1`` means using all processors. See</span>
+<span class="sd">        `Glossary &lt;https://scikit-learn.org/stable/glossary.html#term-n-jobs&gt;`_</span>
+<span class="sd">        for more details.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    A: sparse matrix in CSR format, shape = [n_samples, n_samples]</span>
+<span class="sd">        A[i, j] is assigned the weight of edge that connects i to j.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; X = [[0], [3], [1]]</span>
+<span class="sd">    &gt;&gt;&gt; from skhubness.neighbors import radius_neighbors_graph</span>
+<span class="sd">    &gt;&gt;&gt; A = radius_neighbors_graph(X, 1.5, mode=&#39;connectivity&#39;,</span>
+<span class="sd">    ...                            include_self=True)</span>
+<span class="sd">    &gt;&gt;&gt; A.toarray()</span>
+<span class="sd">    array([[1., 0., 1.],</span>
+<span class="sd">           [0., 1., 0.],</span>
+<span class="sd">           [1., 0., 1.]])</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    kneighbors_graph</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">RadiusNeighborsMixin</span><span class="p">):</span>
+        <span class="n">X</span> <span class="o">=</span> <span class="n">NearestNeighbors</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="n">radius</span><span class="p">,</span>
+                             <span class="n">algorithm</span><span class="o">=</span><span class="n">algorithm</span><span class="p">,</span> <span class="n">algorithm_params</span><span class="o">=</span><span class="n">algorithm_params</span><span class="p">,</span>
+                             <span class="n">hubness</span><span class="o">=</span><span class="n">hubness</span><span class="p">,</span> <span class="n">hubness_params</span><span class="o">=</span><span class="n">hubness_params</span><span class="p">,</span>
+                             <span class="n">metric</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">,</span>
+                             <span class="n">metric_params</span><span class="o">=</span><span class="n">metric_params</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=</span><span class="n">n_jobs</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">_check_params</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">metric</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">metric_params</span><span class="p">)</span>
+
+    <span class="n">query</span> <span class="o">=</span> <span class="n">_query_include_self</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">include_self</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">X</span><span class="o">.</span><span class="n">radius_neighbors_graph</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="n">mode</span><span class="p">)</span></div>
+</pre></div>
+
+	    </div>
+            <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Roman Feldbauer.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.21.0a8',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/language_data.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../../../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../../../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>

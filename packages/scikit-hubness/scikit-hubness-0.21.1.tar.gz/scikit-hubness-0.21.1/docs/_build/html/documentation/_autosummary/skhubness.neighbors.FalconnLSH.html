@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>skhubness.neighbors.FalconnLSH &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="../../_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="skhubness.neighbors.NearestCentroid" href="skhubness.neighbors.NearestCentroid.html" />
+    <link rel="prev" title="skhubness.neighbors.KNeighborsRegressor" href="skhubness.neighbors.KNeighborsRegressor.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="skhubness-neighbors-falconnlsh">
+<h1>skhubness.neighbors.FalconnLSH<a class="headerlink" href="#skhubness-neighbors-falconnlsh" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="skhubness.neighbors.FalconnLSH">
+<em class="property">class </em><code class="sig-prename descclassname">skhubness.neighbors.</code><code class="sig-name descname">FalconnLSH</code><span class="sig-paren">(</span><em class="sig-param">n_candidates: int = 5</em>, <em class="sig-param">radius: float = 1.0</em>, <em class="sig-param">metric: str = 'euclidean'</em>, <em class="sig-param">num_probes: int = 50</em>, <em class="sig-param">n_jobs: int = 1</em>, <em class="sig-param">verbose: int = 0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/VarIr/scikit-hubness/blob/f1729a0/skhubness/neighbors/lsh.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#skhubness.neighbors.FalconnLSH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper for using falconn LSH</p>
+<p>Falconn is an approximate nearest neighbor library,
+that uses multiprobe locality-sensitive hashing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>n_candidates: int, default = 5</strong></dt><dd><p>Number of neighbors to retrieve</p>
+</dd>
+<dt><strong>radius: float or None, optional, default = None</strong></dt><dd><p>Retrieve neighbors within this radius.
+Can be negative: See Notes.</p>
+</dd>
+<dt><strong>metric: str, default = ‘euclidean’</strong></dt><dd><p>Distance metric, allowed are “angular”, “euclidean”, “manhattan”, “hamming”, “dot”</p>
+</dd>
+<dt><strong>num_probes: int, default = 50</strong></dt><dd><p>The number of buckets the query algorithm probes.
+The higher number of probes is, the better accuracy one gets,
+but the slower queries are.</p>
+</dd>
+<dt><strong>n_jobs: int, default = 1</strong></dt><dd><p>Number of parallel jobs</p>
+</dd>
+<dt><strong>verbose: int, default = 0</strong></dt><dd><p>Verbosity level. If verbose &gt; 0, show tqdm progress bar on indexing and querying.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>From the falconn docs: radius can be negative, and for the distance function
+‘negative_inner_product’ it actually makes sense.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>valid_metrics:</strong></dt><dd><p>List of valid distance metrics/measures</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="method">
+<dt id="skhubness.neighbors.FalconnLSH.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">n_candidates: 'int' = 5</em>, <em class="sig-param">radius: 'float' = 1.0</em>, <em class="sig-param">metric: 'str' = 'euclidean'</em>, <em class="sig-param">num_probes: 'int' = 50</em>, <em class="sig-param">n_jobs: 'int' = 1</em>, <em class="sig-param">verbose: 'int' = 0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/VarIr/scikit-hubness/blob/f1729a0/skhubness/neighbors/lsh.py#L280"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#skhubness.neighbors.FalconnLSH.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skhubness.neighbors.FalconnLSH.__init__" title="skhubness.neighbors.FalconnLSH.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self, n_candidates, radius, metric, …)</p></td>
+<td><p>Initialize self.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skhubness.neighbors.FalconnLSH.fit" title="skhubness.neighbors.FalconnLSH.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(self, X, y)</p></td>
+<td><p>Setup the LSH index from training data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#skhubness.neighbors.FalconnLSH.kneighbors" title="skhubness.neighbors.FalconnLSH.kneighbors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kneighbors</span></code></a>(self, X, n_candidates, …)</p></td>
+<td><p>Retrieve k nearest neighbors.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#skhubness.neighbors.FalconnLSH.radius_neighbors" title="skhubness.neighbors.FalconnLSH.radius_neighbors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">radius_neighbors</span></code></a>(self, X, radius, …)</p></td>
+<td><p>Retrieve neighbors within a certain radius.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">valid_metrics</span></code></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="skhubness.neighbors.FalconnLSH.fit">
+<code class="sig-name descname">fit</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">X: 'np.ndarray'</em>, <em class="sig-param">y: 'np.ndarray' = None</em><span class="sig-paren">)</span> &#x2192; 'FalconnLSH'<a class="reference external" href="https://github.com/VarIr/scikit-hubness/blob/f1729a0/skhubness/neighbors/lsh.py#L295"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#skhubness.neighbors.FalconnLSH.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup the LSH index from training data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X: np.array</strong></dt><dd><p>Data to be indexed</p>
+</dd>
+<dt><strong>y: any</strong></dt><dd><p>Ignored</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>self: FalconnLSH</dt><dd><p>An instance of LSH with a built index</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="skhubness.neighbors.FalconnLSH.kneighbors">
+<code class="sig-name descname">kneighbors</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">X: 'np.ndarray' = None</em>, <em class="sig-param">n_candidates: 'int' = None</em>, <em class="sig-param">return_distance: 'bool' = True</em><span class="sig-paren">)</span> &#x2192; 'Union[Tuple[np.array, np.array], np.array]'<a class="reference external" href="https://github.com/VarIr/scikit-hubness/blob/f1729a0/skhubness/neighbors/lsh.py#L338"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#skhubness.neighbors.FalconnLSH.kneighbors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve k nearest neighbors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X: np.array or None, optional, default = None</strong></dt><dd><p>Query objects. If None, search among the indexed objects.</p>
+</dd>
+<dt><strong>n_candidates: int or None, optional, default = None</strong></dt><dd><p>Number of neighbors to retrieve.
+If None, use the value passed during construction.</p>
+</dd>
+<dt><strong>return_distance: bool, default = True</strong></dt><dd><p>If return_distance, will return distances and indices to neighbors.
+Else, only return the indices.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="skhubness.neighbors.FalconnLSH.radius_neighbors">
+<code class="sig-name descname">radius_neighbors</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">X: 'np.ndarray' = None</em>, <em class="sig-param">radius: 'float' = None</em>, <em class="sig-param">return_distance: 'bool' = True</em><span class="sig-paren">)</span> &#x2192; 'Union[Tuple[np.array, np.array], np.array]'<a class="reference external" href="https://github.com/VarIr/scikit-hubness/blob/f1729a0/skhubness/neighbors/lsh.py#L423"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#skhubness.neighbors.FalconnLSH.radius_neighbors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve neighbors within a certain radius.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X: np.array or None, optional, default = None</strong></dt><dd><p>Query objects. If None, search among the indexed objects.</p>
+</dd>
+<dt><strong>radius: float or None, optional, default = None</strong></dt><dd><p>Retrieve neighbors within this radius.
+Can be negative: See Notes.</p>
+</dd>
+<dt><strong>return_distance: bool, default = True</strong></dt><dd><p>If return_distance, will return distances and indices to neighbors.
+Else, only return the indices.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>From the falconn docs: radius can be negative, and for the distance function
+‘negative_inner_product’ it actually makes sense.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/example.html">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../documentation.html">scikit-hubness API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.BallTree.html">skhubness.neighbors.BallTree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.DistanceMetric.html">skhubness.neighbors.DistanceMetric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.KDTree.html">skhubness.neighbors.KDTree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.HNSW.html">skhubness.neighbors.HNSW</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.KNeighborsClassifier.html">skhubness.neighbors.KNeighborsClassifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.KNeighborsRegressor.html">skhubness.neighbors.KNeighborsRegressor</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">skhubness.neighbors.FalconnLSH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.NearestCentroid.html">skhubness.neighbors.NearestCentroid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.NearestNeighbors.html">skhubness.neighbors.NearestNeighbors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.NNG.html">skhubness.neighbors.NNG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.PuffinnLSH.html">skhubness.neighbors.PuffinnLSH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.RadiusNeighborsClassifier.html">skhubness.neighbors.RadiusNeighborsClassifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.RadiusNeighborsRegressor.html">skhubness.neighbors.RadiusNeighborsRegressor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.RandomProjectionTree.html">skhubness.neighbors.RandomProjectionTree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.kneighbors_graph.html">skhubness.neighbors.kneighbors_graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.radius_neighbors_graph.html">skhubness.neighbors.radius_neighbors_graph</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.KernelDensity.html">skhubness.neighbors.KernelDensity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.LocalOutlierFactor.html">skhubness.neighbors.LocalOutlierFactor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="skhubness.neighbors.NeighborhoodComponentsAnalysis.html">skhubness.neighbors.NeighborhoodComponentsAnalysis</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../documentation.html">API Documentation</a><ul>
+      <li>Previous: <a href="skhubness.neighbors.KNeighborsRegressor.html" title="previous chapter">skhubness.neighbors.KNeighborsRegressor</a></li>
+      <li>Next: <a href="skhubness.neighbors.NearestCentroid.html" title="next chapter">skhubness.neighbors.NearestCentroid</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/documentation/_autosummary/skhubness.neighbors.FalconnLSH.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

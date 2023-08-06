@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Core Concepts &#8212; scikit-hubness 0.21.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/rtd_sphinx_search.min.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/js/rtd_sphinx_search.min.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hubness analysis" href="analysis.html" />
+    <link rel="prev" title="User guide" href="user_guide.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="core-concepts">
+<h1>Core Concepts<a class="headerlink" href="#core-concepts" title="Permalink to this headline">¶</a></h1>
+<p>There are three main parts of <code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code>. Before we describe the corresponding subpackages,
+we briefly introduce the <cite>hubness</cite> phenomenon itself.</p>
+<div class="section" id="the-hubness-phenomenon">
+<h2>The hubness phenomenon<a class="headerlink" href="#the-hubness-phenomenon" title="Permalink to this headline">¶</a></h2>
+<p><cite>Hubness</cite> is a phenomenon of intrinsically high-dimensional data,
+detrimental to data mining and learning tasks.
+It refers to the tendency of <cite>hub</cite> and <cite>antihub</cite> emergence in k-nearest neighbor graphs (kNNGs):
+Hubs are objects that appear unwontedly often among the k-nearest neighbor lists of other objects,
+while antihubs hardly or never appear in these lists.
+Thus, hubs propagate their metainformation (such as class labels) widely within a kNNG.
+Conversely, information carried by antihubs is effectively lost.
+As a result, hubness leads to semantically distorted spaces,
+that negatively impact a large variety of tasks.</p>
+<p>Music information retrieval is a show-case example for hubness:
+It has been shown, that recommendation lists based on music similarity scores
+tend to completely ignore certain songs (<cite>antihubs</cite>).
+On the other hand, different songs are recommended over and over again (<cite>hubs</cite>),
+sometimes even when they do not fit.
+Both effects are problematic: Users are provided with unsuitable (hub) recommendations,
+while artists that (unknowingly) producing antihub songs, may remain fameless unjustifiably.</p>
+</div>
+<div class="section" id="the-scikit-hubness-package">
+<h2>The scikit-hubness package<a class="headerlink" href="#the-scikit-hubness-package" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code> reflects our effort to make hubness analysis and
+hubness reduction readily available and easy-to-use for both machine learning
+researchers and practitioners.</p>
+<p>The package builds upon <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>.
+When feasible, their design decisions, code style, development practise etc. are
+adopted, so that new users can work their way into <code class="docutils literal notranslate"><span class="pre">scikit-hubness</span></code> rapidly.
+Workflows, therefore, comprise the well-known <code class="docutils literal notranslate"><span class="pre">fit</span></code>, <code class="docutils literal notranslate"><span class="pre">predict</span></code>, and <code class="docutils literal notranslate"><span class="pre">score</span></code> methods.</p>
+<p>Two subpackages offer complementary functionality to <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="documentation.html#module-skhubness.analysis" title="skhubness.analysis"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a> allows to estimate hubness in data</p></li>
+<li><p><a class="reference internal" href="documentation.html#module-skhubness.reduction" title="skhubness.reduction"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a> provides hubness reduction algorithms</p></li>
+</ul>
+<p>The <a class="reference internal" href="documentation.html#module-skhubness.neighbors" title="skhubness.neighbors"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a> subpackage, on the other hand, acts as a drop-in
+replacement for <code class="docutils literal notranslate"><span class="pre">sklearn.neighbors</span></code>. It provides all of its functionality,
+and adds two major components:</p>
+<ul class="simple">
+<li><p>transparent hubness reduction</p></li>
+<li><p>approximate nearest neighbor (ANN) search</p></li>
+</ul>
+<p>and combinations of both. From the coding point-of-view,
+this is achieved by adding a handful new parameters to most classes
+(<a class="reference internal" href="_autosummary/skhubness.neighbors.KNeighborsClassifier.html#skhubness.neighbors.KNeighborsClassifier" title="skhubness.neighbors.KNeighborsClassifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">KNeighborsClassifier</span></code></a>,
+<a class="reference internal" href="_autosummary/skhubness.neighbors.RadiusNeighborsRegressor.html#skhubness.neighbors.RadiusNeighborsRegressor" title="skhubness.neighbors.RadiusNeighborsRegressor"><code class="xref py py-class docutils literal notranslate"><span class="pre">RadiusNeighborRegressor</span></code></a>,
+<a class="reference internal" href="_autosummary/skhubness.neighbors.NearestNeighbors.html#skhubness.neighbors.NearestNeighbors" title="skhubness.neighbors.NearestNeighbors"><code class="xref py py-class docutils literal notranslate"><span class="pre">NearestNeighbors</span></code></a>,
+etc).</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">hubness</span></code> defines the hubness reduction algorithm used to compute the nearest neighbor graph (kNNG).
+Supported algorithms and corresponding parameter values are presented <a class="reference internal" href="#hubness-reduction-methods"><span class="std std-ref">here</span></a>,
+and are available as a Python list in <code class="xref py py-const docutils literal notranslate"><span class="pre">&lt;skhubness.reduction.hubness_algorithms&gt;</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">algorithm</span></code> defines the kNNG construction algorithm similarly to the
+way <code class="docutils literal notranslate"><span class="pre">sklearn</span></code> does it. That is, all of <code class="docutils literal notranslate"><span class="pre">sklearn</span></code>’s algorithms are available,
+but in addition, several approximate nearest neighbor algorithms are provided as well.
+<a class="reference internal" href="#approximate-nearest-neighbor-search-methods"><span class="std std-ref">See below</span></a> for a list of
+currently supported algorithms and their corresponding parameter values.</p></li>
+</ul>
+<p>By providing the two arguments above, you select algorithms
+for hubness reduction and nearest neighbor search, respectively.
+Most of these algorithms can be further tuned by individual hyperparameters.
+These are not explicitly made accessible in high-level classes  like <code class="docutils literal notranslate"><span class="pre">KNeighborsClassifier</span></code>,
+in order to avoid very long lists of arguments,
+because they differ from algorithm to algorithm.
+Instead, two dictionaries</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">hubness_params</span></code> and</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">algorithm_params</span></code></p></li>
+</ul>
+<p>are available in all high-level classes to set the nested arguments
+for ANN and hubness reduction methods.</p>
+<p>The following example shows how to perform approximate hubness estimation
+(1) without, and (2) with hubness reduction by local scaling
+in an artificial data set.</p>
+<p>In part 1, we estimate hubness in the original data.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">make_classification</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">make_classification</span><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">1</span><span class="n">_000_000</span><span class="p">,</span>
+                           <span class="n">n_features</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+                           <span class="n">n_informative</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span>
+                           <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">456</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">skhubness.analysis</span> <span class="kn">import</span> <span class="n">Hubness</span>
+<span class="n">hub</span> <span class="o">=</span> <span class="n">Hubness</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                   <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span>
+                   <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;hnsw&#39;</span><span class="p">,</span>
+                   <span class="n">algorithm_params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;n_candidates&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+                                     <span class="s1">&#39;metric&#39;</span><span class="p">:</span> <span class="s1">&#39;euclidean&#39;</span><span class="p">,</span>
+                                     <span class="s1">&#39;post_processing&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                                     <span class="p">},</span>
+                   <span class="n">return_value</span><span class="o">=</span><span class="s1">&#39;robinhood&#39;</span><span class="p">,</span>
+                   <span class="n">n_jobs</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
+                   <span class="p">)</span>
+<span class="n">hub</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">robin_hood</span> <span class="o">=</span> <span class="n">hub</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">robin_hood</span><span class="p">)</span>
+<span class="mf">0.7873205555555555</span>  <span class="c1"># before hubness reduction</span>
+</pre></div>
+</div>
+<p>There is high hubness in this dataset. In part 2, we estimate hubness after reduction by local scaling.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">hub</span> <span class="o">=</span> <span class="n">Hubness</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+              <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">,</span>
+<span class="hll">              <span class="n">hubness</span><span class="o">=</span><span class="s1">&#39;local_scaling&#39;</span><span class="p">,</span>
+</span><span class="hll">              <span class="n">hubness_params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;k&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">},</span>
+</span>              <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;hnsw&#39;</span><span class="p">,</span>
+              <span class="n">algorithm_params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;n_candidates&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+                                <span class="s1">&#39;metric&#39;</span><span class="p">:</span> <span class="s1">&#39;euclidean&#39;</span><span class="p">,</span>
+                                <span class="s1">&#39;post_processing&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                               <span class="p">},</span>
+              <span class="n">return_value</span><span class="o">=</span><span class="s1">&#39;robinhood&#39;</span><span class="p">,</span>
+              <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span>
+              <span class="p">)</span>
+<span class="n">hub</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">robin_hood</span> <span class="o">=</span> <span class="n">hub</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">robin_hood</span><span class="p">)</span>
+<span class="hll"><span class="mf">0.6614583333333331</span>  <span class="c1"># after hubness reduction</span>
+</span></pre></div>
+</div>
+</div>
+<div class="section" id="approximate-nearest-neighbor-search-methods">
+<h2>Approximate nearest neighbor search methods<a class="headerlink" href="#approximate-nearest-neighbor-search-methods" title="Permalink to this headline">¶</a></h2>
+<p>Set the parameter <code class="docutils literal notranslate"><span class="pre">algorithm</span></code> to one of the following in order to enable ANN in
+most of the classes from <a class="reference internal" href="documentation.html#module-skhubness.neighbors" title="skhubness.neighbors"><code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a> or <a class="reference internal" href="_autosummary/skhubness.analysis.Hubness.html#skhubness.analysis.Hubness" title="skhubness.analysis.Hubness"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hubness</span></code></a>:</p>
+<ul class="simple">
+<li><p>‘hnsw’ uses <cite>hierarchical navigable small-world graphs</cite> (provided by the <code class="docutils literal notranslate"><span class="pre">nmslib</span></code> library)
+in the wrapper class <a class="reference internal" href="_autosummary/skhubness.neighbors.HNSW.html#skhubness.neighbors.HNSW" title="skhubness.neighbors.HNSW"><code class="xref py py-class docutils literal notranslate"><span class="pre">HNSW</span></code></a>.</p></li>
+<li><p>‘lsh’ uses <cite>locality sensitive hashing</cite> (provided by the  <code class="docutils literal notranslate"><span class="pre">puffinn</span></code> library)
+in the wrapper class <a class="reference internal" href="_autosummary/skhubness.neighbors.PuffinnLSH.html#skhubness.neighbors.PuffinnLSH" title="skhubness.neighbors.PuffinnLSH"><code class="xref py py-class docutils literal notranslate"><span class="pre">PuffinnLSH</span></code></a>.</p></li>
+<li><p>‘falconn_lsh’ uses <cite>locality sensitive hashing</cite> (provided by the <code class="docutils literal notranslate"><span class="pre">falconn</span></code> library)
+in the wrapper class <a class="reference internal" href="_autosummary/skhubness.neighbors.FalconnLSH.html#skhubness.neighbors.FalconnLSH" title="skhubness.neighbors.FalconnLSH"><code class="xref py py-class docutils literal notranslate"><span class="pre">FalconnLSH</span></code></a>.</p></li>
+<li><p>‘nng’ uses ANNG or ONNG (provided by the <code class="docutils literal notranslate"><span class="pre">NGT</span></code> library)
+in the wrapper class <a class="reference internal" href="_autosummary/skhubness.neighbors.NNG.html#skhubness.neighbors.NNG" title="skhubness.neighbors.NNG"><code class="xref py py-class docutils literal notranslate"><span class="pre">NNG</span></code></a>.</p></li>
+<li><p>‘rptree’ uses random projections trees (provided by the <code class="docutils literal notranslate"><span class="pre">annoy</span></code> library)
+in the wrapper class <a class="reference internal" href="_autosummary/skhubness.neighbors.RandomProjectionTree.html#skhubness.neighbors.RandomProjectionTree" title="skhubness.neighbors.RandomProjectionTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomProjectionTree</span></code></a>.</p></li>
+</ul>
+<p>Configure parameters of the chosen algorithm with <code class="docutils literal notranslate"><span class="pre">algorithm_params</span></code>.
+This dictionary is passed to the corresponding wrapper class.
+Take a look at their documentation in order to see, which parameters are available
+for each individual class.</p>
+</div>
+<div class="section" id="hubness-reduction-methods">
+<h2>Hubness reduction methods<a class="headerlink" href="#hubness-reduction-methods" title="Permalink to this headline">¶</a></h2>
+<p>Set the parameter <code class="docutils literal notranslate"><span class="pre">hubness</span></code> to one of the following identifiers
+in order to use the corresponding hubness reduction algorithm:</p>
+<ul class="simple">
+<li><p>‘mp’ or ‘mutual_proximity’ use <cite>mutual proximity</cite> (Gaussian or empiric distribution)
+as implemented in <a class="reference internal" href="_autosummary/skhubness.reduction.MutualProximity.html#skhubness.reduction.MutualProximity" title="skhubness.reduction.MutualProximity"><code class="xref py py-class docutils literal notranslate"><span class="pre">MutualProximity</span></code></a>.</p></li>
+<li><p>‘ls’ or ‘local_scaling’ use <cite>local scaling</cite> or <cite>NICDM</cite>
+as implemented in <a class="reference internal" href="_autosummary/skhubness.reduction.LocalScaling.html#skhubness.reduction.LocalScaling" title="skhubness.reduction.LocalScaling"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocalScaling</span></code></a>.</p></li>
+<li><p>‘dsl’ or ‘dis_sim_local’ use <cite>DisSim Local</cite>
+as implemented in <a class="reference internal" href="_autosummary/skhubness.reduction.DisSimLocal.html#skhubness.reduction.DisSimLocal" title="skhubness.reduction.DisSimLocal"><code class="xref py py-class docutils literal notranslate"><span class="pre">DisSimLocal</span></code></a>.</p></li>
+</ul>
+<p>Variants and additional parameters are set with the <code class="docutils literal notranslate"><span class="pre">hubness_params</span></code> dictionary.
+Have a look at the individual hubness reduction classes for available parameters.</p>
+</div>
+<div class="section" id="approximate-hubness-reduction">
+<h2>Approximate hubness reduction<a class="headerlink" href="#approximate-hubness-reduction" title="Permalink to this headline">¶</a></h2>
+<p><em>Exact</em> hubness reduction scales at least quadratically with the number of samples.
+To reduce computational complexity, <em>approximate</em> hubness reduction can be applied,
+as described in the paper “Fast approximate hubness reduction for large high-dimensional data”
+(ICBK2018, <a class="reference external" href="https://ieeexplore.ieee.org/document/8588814">on IEEE Xplore</a>,
+also available as <a class="reference external" href="http://www.ofai.at/cgi-bin/tr-online?number+2018-02">technical report</a>).</p>
+<p>The general idea behind approximate hubness reduction works as follows:</p>
+<ol class="arabic simple">
+<li><p>retrieve <code class="docutils literal notranslate"><span class="pre">n_candidates</span></code>-nearest neighbors using an ANN method</p></li>
+<li><p>refine and reorder the candidate list by hubness reduction</p></li>
+<li><p>return <code class="docutils literal notranslate"><span class="pre">n_neighbors</span></code> nearest neighbors from the reordered candidate list</p></li>
+</ol>
+<p>The procedure is implemented in scikit-hubness by simply passing both
+<code class="docutils literal notranslate"><span class="pre">algorithm</span></code> and <code class="docutils literal notranslate"><span class="pre">hubness</span></code> parameters to the relevant classes.</p>
+<p>Also consider passing <code class="docutils literal notranslate"><span class="pre">algorithm_params={'n_candidates':</span> <span class="pre">n_candidates}</span></code>.
+Make sure to set the <code class="docutils literal notranslate"><span class="pre">n_candidates</span></code> high enough, for high sensitivity
+(towards “good” nearest neighbors). Too large values may, however, lead
+to long query times. As a rule of thumb for this trade-off, you can
+start by retrieving ten times as many candidates as you need nearest neighbors.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">scikit-hubness</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/example.html">Quick start example</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="user_guide.html">User Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Core concepts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-hubness-phenomenon">The hubness phenomenon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-scikit-hubness-package">The scikit-hubness package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#approximate-nearest-neighbor-search-methods">Approximate nearest neighbor search methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hubness-reduction-methods">Hubness reduction methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#approximate-hubness-reduction">Approximate hubness reduction</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">Hubness analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reduction.html">Hubness reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nearestneighbors.html">Nearest neighbors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">scikit-hubness API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="user_guide.html">User guide</a><ul>
+      <li>Previous: <a href="user_guide.html" title="previous chapter">User guide</a></li>
+      <li>Next: <a href="analysis.html" title="next chapter">Hubness analysis</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Roman Feldbauer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/documentation/concepts.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

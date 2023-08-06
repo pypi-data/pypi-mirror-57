@@ -1,0 +1,345 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="" lang="" version="-//W3C//DTD XHTML 1.1//EN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>skhubness.reduction.mutual_proximity &mdash; scikit-hubness 0.21.0a8 documentation</title>
+  
+
+  
+
+  
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="../../../_static/css/pdj.css" type="text/css" />
+
+  
+    <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="scikit-hubness 0.21.0a8 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="robots" content="follow, all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  </head>
+
+  <body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="fa fa-home"> scikit-hubness </a>
+        <div role="search">
+	  <form id ="rtd-search-form" class="wy-form"
+		action="../../../search.html" method="get">
+	    <input type="text" name="q" placeholder="Search docs" />
+	    <input type="hidden" name="check_keywords" value="yes" />
+	    <input type="hidden" name="area" value="default" />
+	  </form>
+	</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	
+          
+          
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-pypi">Installation from PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#installation-from-source">Installation from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../getting_started/installation.html#supported-platforms">Supported platforms</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/example.html">Quick start example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/history.html">History</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../documentation/documentation.html">scikit-hubness API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.analysis">Analysis: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.analysis</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.neighbors">Neighbors: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.neighbors</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../documentation/documentation.html#module-skhubness.reduction">Reduction: <code class="xref py py-mod docutils literal notranslate"><span class="pre">skhubness.reduction</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../development/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/VarIr/scikit-hubness">Github Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">What's new (Changelog)</a></li>
+</ul>
+
+          
+        
+
+      </div>
+      &nbsp;
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      <nav class="wy-nav-top" id="barra-mobile" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="#">Porão do Juca</a>
+      </nav>
+
+      <div class="wy-nav-content">
+	<div class="fundo-claro">
+	</div>
+	<div class="fundo-escuro">
+	</div>
+
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+	    
+	    <!-- <ul class="wy-breadcrumbs"> -->
+	    <!--   <li><a href="#">Docs</a> &raquo;</li> -->
+
+	    <!--   <li>Features</li> -->
+	    <!--   <li class="wy-breadcrumbs-aside"> -->
+
+	    <!-- 	<a href="_sources/index.txt" rel="nofollow"> View page source</a> -->
+
+	    <!--   </li> -->
+	    <!-- </ul> -->
+	    <!-- <hr/> -->
+	  </div>
+
+          <div role="main" class="">
+
+	    <div id="content" class="hfeed entry-container hentry">
+  <h1>Source code for skhubness.reduction.mutual_proximity</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1"># SPDX-License-Identifier: BSD-3-Clause</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">annotations</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span>
+<span class="kn">from</span> <span class="nn">sklearn.utils.validation</span> <span class="k">import</span> <span class="n">check_is_fitted</span><span class="p">,</span> <span class="n">check_consistent_length</span><span class="p">,</span> <span class="n">check_array</span>
+<span class="kn">from</span> <span class="nn">tqdm.auto</span> <span class="k">import</span> <span class="n">tqdm</span>
+
+<span class="kn">from</span> <span class="nn">.base</span> <span class="k">import</span> <span class="n">HubnessReduction</span>
+
+
+<div class="viewcode-block" id="MutualProximity"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.reduction.MutualProximity.html#skhubness.reduction.MutualProximity">[docs]</a><span class="k">class</span> <span class="nc">MutualProximity</span><span class="p">(</span><span class="n">HubnessReduction</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Hubness reduction with Mutual Proximity [1]_.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    method: &#39;normal&#39; or &#39;empiric&#39;, default = &#39;normal&#39;</span>
+<span class="sd">        Model distance distribution with &#39;method&#39;.</span>
+
+<span class="sd">        - &#39;normal&#39; or &#39;gaussi&#39; model distance distributions with independent Gaussians (fast)</span>
+<span class="sd">        - &#39;empiric&#39; or &#39;exact&#39; model distances with the empiric distributions (slow)</span>
+
+<span class="sd">    verbose: int, default = 0</span>
+<span class="sd">        If verbose &gt; 0, show progress bar.</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    .. [1] Schnitzer, D., Flexer, A., Schedl, M., &amp; Widmer, G. (2012).</span>
+<span class="sd">           Local and global scaling reduce hubs in space. The Journal of Machine</span>
+<span class="sd">           Learning Research, 13(1), 2871–2902.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="MutualProximity.__init__"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.reduction.MutualProximity.html#skhubness.reduction.MutualProximity.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;normal&#39;</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="o">=</span> <span class="n">method</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="o">=</span> <span class="n">verbose</span></div>
+
+<div class="viewcode-block" id="MutualProximity.fit"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.reduction.MutualProximity.html#skhubness.reduction.MutualProximity.fit">[docs]</a>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span><span class="p">,</span> <span class="n">X</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">assume_sorted</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MutualProximity</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot; Fit the model using neigh_dist and neigh_ind as training data.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        neigh_dist: np.ndarray, shape (n_samples, n_neighbors)</span>
+<span class="sd">            Distance matrix of training objects (rows) against their</span>
+<span class="sd">            individual k nearest neighbors (columns).</span>
+
+<span class="sd">        neigh_ind: np.ndarray, shape (n_samples, n_neighbors)</span>
+<span class="sd">            Neighbor indices corresponding to the values in neigh_dist.</span>
+
+<span class="sd">        X: ignored</span>
+
+<span class="sd">        assume_sorted: ignored</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Check equal number of rows and columns</span>
+        <span class="n">check_consistent_length</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">,</span> <span class="n">neigh_dist</span><span class="p">)</span>
+        <span class="n">check_consistent_length</span><span class="p">(</span><span class="n">neigh_ind</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">neigh_dist</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+        <span class="n">check_array</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">,</span> <span class="n">force_all_finite</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">check_array</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">n_train</span> <span class="o">=</span> <span class="n">neigh_dist</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;exact&#39;</span><span class="p">,</span> <span class="s1">&#39;empiric&#39;</span><span class="p">]:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;empiric&#39;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">neigh_dist_train_</span> <span class="o">=</span> <span class="n">neigh_dist</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">neigh_ind_train_</span> <span class="o">=</span> <span class="n">neigh_ind</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;normal&#39;</span><span class="p">,</span> <span class="s1">&#39;gaussi&#39;</span><span class="p">]:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;normal&#39;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mu_train_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sd_train_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanstd</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ddof</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Mutual proximity method &quot;</span><span class="si">{self.method}</span><span class="s1">&quot; not recognized. Try &quot;normal&quot; or &quot;empiric&quot;.&#39;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+<div class="viewcode-block" id="MutualProximity.transform"><a class="viewcode-back" href="../../../documentation/_autosummary/skhubness.reduction.MutualProximity.html#skhubness.reduction.MutualProximity.transform">[docs]</a>    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span><span class="p">,</span> <span class="n">X</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">assume_sorted</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Transform distance between test and training data with Mutual Proximity.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        neigh_dist: np.ndarray</span>
+<span class="sd">            Distance matrix of test objects (rows) against their individual</span>
+<span class="sd">            k nearest neighbors among the training data (columns).</span>
+
+<span class="sd">        neigh_ind: np.ndarray</span>
+<span class="sd">            Neighbor indices corresponding to the values in neigh_dist</span>
+
+<span class="sd">        X: ignored</span>
+
+<span class="sd">        assume_sorted: ignored</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        hub_reduced_dist, neigh_ind</span>
+<span class="sd">            Mutual Proximity distances, and corresponding neighbor indices</span>
+
+<span class="sd">        Notes</span>
+<span class="sd">        -----</span>
+<span class="sd">        The returned distances are NOT sorted! If you use this class directly,</span>
+<span class="sd">        you will need to sort the returned matrices according to hub_reduced_dist.</span>
+<span class="sd">        Classes from :mod:`skhubness.neighbors` do this automatically.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">check_is_fitted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;mu_train_&#39;</span><span class="p">,</span> <span class="s1">&#39;sd_train_&#39;</span><span class="p">,</span> <span class="s1">&#39;neigh_dist_train_&#39;</span><span class="p">,</span> <span class="s1">&#39;neigh_ind_train_&#39;</span><span class="p">],</span> <span class="n">all_or_any</span><span class="o">=</span><span class="nb">any</span><span class="p">)</span>
+        <span class="n">check_array</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">,</span> <span class="n">force_all_finite</span><span class="o">=</span><span class="s1">&#39;allow-nan&#39;</span><span class="p">)</span>
+        <span class="n">check_array</span><span class="p">(</span><span class="n">neigh_ind</span><span class="p">)</span>
+
+        <span class="n">n_test</span><span class="p">,</span> <span class="n">n_indexed</span> <span class="o">=</span> <span class="n">neigh_dist</span><span class="o">.</span><span class="n">shape</span>
+
+        <span class="k">if</span> <span class="n">n_indexed</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Cannot perform hubness reduction with a single neighbor per query. &#39;</span>
+                          <span class="n">f</span><span class="s1">&#39;Skipping hubness reduction, and returning untransformed distances.&#39;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">neigh_dist</span><span class="p">,</span> <span class="n">neigh_ind</span>
+
+        <span class="n">hub_reduced_dist</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty_like</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">)</span>
+
+        <span class="c1"># Show progress in hubness reduction loop</span>
+        <span class="n">disable_tqdm</span> <span class="o">=</span> <span class="kc">False</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">verbose</span> <span class="k">else</span> <span class="kc">True</span>
+        <span class="n">range_n_test</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n_test</span><span class="p">),</span>
+                            <span class="n">desc</span><span class="o">=</span><span class="n">f</span><span class="s1">&#39;MP (</span><span class="si">{self.method}</span><span class="s1">)&#39;</span><span class="p">,</span>
+                            <span class="n">disable</span><span class="o">=</span><span class="n">disable_tqdm</span><span class="p">,</span>
+                            <span class="p">)</span>
+
+        <span class="c1"># Calculate MP with independent Gaussians</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;normal&#39;</span><span class="p">:</span>
+            <span class="n">mu_train</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mu_train_</span>
+            <span class="n">sd_train</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sd_train_</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">range_n_test</span><span class="p">:</span>
+                <span class="n">j_mom</span> <span class="o">=</span> <span class="n">neigh_ind</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="n">mu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanmean</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="n">sd</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nanstd</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">ddof</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+                <span class="n">p1</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">sf</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:],</span> <span class="n">mu</span><span class="p">,</span> <span class="n">sd</span><span class="p">)</span>
+                <span class="n">p2</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">sf</span><span class="p">(</span><span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:],</span> <span class="n">mu_train</span><span class="p">[</span><span class="n">j_mom</span><span class="p">],</span> <span class="n">sd_train</span><span class="p">[</span><span class="n">j_mom</span><span class="p">])</span>
+                <span class="n">hub_reduced_dist</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">p1</span> <span class="o">*</span> <span class="n">p2</span><span class="p">)</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
+        <span class="c1"># Calculate MP empiric (slow)</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;empiric&#39;</span><span class="p">:</span>
+            <span class="n">max_ind</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">neigh_ind_train_</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">range_n_test</span><span class="p">:</span>
+                <span class="n">dI</span> <span class="o">=</span> <span class="n">neigh_dist</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:][</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">,</span> <span class="p">:]</span>  <span class="c1"># broadcasted afterwards</span>
+                <span class="n">dJ</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">dI</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">n_indexed</span><span class="p">))</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_indexed</span><span class="p">):</span>
+                    <span class="n">tmp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">max_ind</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">neigh_dist_train_</span><span class="p">[</span><span class="n">neigh_ind</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mf">1e-6</span><span class="p">)</span>
+                    <span class="n">tmp</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">neigh_ind_train_</span><span class="p">[</span><span class="n">neigh_ind</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]]]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">neigh_dist_train_</span><span class="p">[</span><span class="n">neigh_ind</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]]</span>
+                    <span class="n">dJ</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">tmp</span><span class="p">[</span><span class="n">neigh_ind</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+                <span class="c1"># dJ = self.neigh_dist_train_[neigh_ind[i], :n_indexed]</span>
+                <span class="n">d</span> <span class="o">=</span> <span class="n">dI</span><span class="o">.</span><span class="n">T</span>
+                <span class="n">hub_reduced_dist</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="mf">1.</span> <span class="o">-</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">dI</span> <span class="o">&gt;</span> <span class="n">d</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">dJ</span> <span class="o">&gt;</span> <span class="n">d</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_indexed</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Internal: Invalid method </span><span class="si">{self.method}</span><span class="s2">.&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Return the hubness reduced distances</span>
+        <span class="c1"># These must be sorted downstream</span>
+        <span class="k">return</span> <span class="n">hub_reduced_dist</span><span class="p">,</span> <span class="n">neigh_ind</span></div></div>
+</pre></div>
+
+	    </div>
+            <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Roman Feldbauer.
+    </p>
+  </div>
+
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/jucacrispim/sphinx_pdj_theme">theme</a> provided by <a href="http://poraodojuca.net">Porão do Juca</a>.
+
+</footer>
+	</div>
+	</div>
+	  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.21.0a8',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/underscore.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/doctools.js">
+
+    </script>
+    <script type="text/javascript" src="../../../_static/language_data.js">
+
+    </script>
+
+  
+
+   <script type="text/javascript"
+           src="../../../_static/js/theme.js"></script>
+
+   <script type="text/javascript"
+           src="../../../_static/js/pdj.js"></script>
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+  </body>
+</html>
