@@ -1,0 +1,33 @@
+Python module
+=============
+
+
+Communication functions
+-----------------------
+.. automodule:: worklab.com
+    :members:
+
+Kinetics functions
+------------------
+.. automodule:: worklab.kin
+    :members:
+
+Kinematics functions
+--------------------
+.. automodule:: worklab.move
+    :members:
+
+Physiology functions
+--------------------
+.. automodule:: worklab.physio
+    :members:
+
+Plotting functions
+------------------
+.. automodule:: worklab.plots
+    :members:
+
+Utility functions
+-----------------
+.. automodule:: worklab.utils
+    :members:
