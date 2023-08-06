@@ -1,0 +1,303 @@
+Metadata-Version: 1.2
+Name: setupdocx
+Version: 0.1.20
+Summary: Support of documentation commands and extensions for setuptools / distutils.
+Home-page: https://sourceforge.net/projects/setupdocx/
+Author: Arno-Can Uestuensoez
+Author-email: acue_sf2@sourceforge.net
+Maintainer: acue
+Maintainer-email: acue_sf2@sourceforge.net
+License: Artistic-License-2.0 + Forced-Fairplay-Constraints
+Download-URL: https://sourceforge.net/projects/setupdocx/files/
+Project-URL: home, https://sourceforge.net/projects/setupdocx"
+Project-URL: documents, https://setupdocx.sourceforge.io/
+Project-URL: runtimerepo, https://pypi.org/project/setupdocx/
+Project-URL: downloads, https://pypi.org/project/setupdocx/
+Project-URL: downloads1, https://sourceforge.net/projects/setupdocx/
+Project-URL: source, https://github.com/ArnoCan/setupdocx/
+Project-URL: source1, https://sourceforge.net/projects/setupdocx/
+Project-URL: source2, https://bitbucket.org/acue/setupdocx/
+Project-URL: tracker, https://github.com/ArnoCan/setupdocx/issues
+Description: 
+        setupdocx
+        =========
+        
+        The ‘setupdocx‘ provides a control layer for continuous documentation by the simplified creation, packaging, and installation of documentation.
+        The provided commands are distributed as entry points and optional base classes for further customization into *setup.py* - setuptools / distutils. 
+        
+        The current release supports the following commands:
+        
+        * **build_docx** - Enhanced documentation.
+        
+          Supports the first integration of *Epydoc* into *Sphinx* for combined *Javadoc* style 
+          documentation of *Python* and *Java*.
+          Manages arbitrary document templates for the supported builder,
+          supports multiple builds with arbitrary document layouts, designs, and patched contents.
+        
+        * **install_docx** - Installs local documentation.
+        
+          Installs documentation locally from build directory, see PEP-0370. 
+        
+        * **dist_docx** - Documentation packaging. 
+        
+          Creates distribution packages for documentation.
+        
+        * **build_apidoc** - Standalone Generator for API Documentation 
+        
+          Extracts the inline documentation only.
+          Manages arbitrary document templates for the supported builder,
+          supports multiple builds with arbitrary document layouts, designs, and patched contents.
+        
+        * **build_apiref** - Standalone Generator for API Reference  
+        
+          Extracts the inline documentation as JavaDoc style API reference.
+          Manages arbitrary document templates for the supported builder,
+          supports multiple builds with arbitrary document layouts, designs, and patched contents.
+        
+        For more extensions refer to the online documentation.
+        
+        **Online documentation**:
+        
+        * https://setupdocx.sourceforge.io/
+        
+        **Runtime-Repository**:
+        
+        * PyPI: https://pypi.org/project/setupdocx/
+        
+          Install: *pip install setupdocx*, see also section 'Install' of the online documentation.
+        
+        
+        **Downloads**:
+        
+        * sourceforge.net: https://sourceforge.net/projects/setupdocx/files/
+        
+        * bitbucket.org: https://bitbucket.org/acue/setupdocx
+        
+        * github.com: https://github.com/ArnoCan/setupdocx/
+        
+        * pypi.org: https://pypi.org/project/setupdocx/
+        
+        
+        Project Data
+        ------------
+        
+        * PROJECT: 'setupdocx'
+        
+        * MISSION: Command extension of *setup.py* for multi-platform and documentation deployments.
+        
+        * VERSION: 00.01
+        
+        * RELEASE: 00.01.020
+        
+        * STATUS: beta
+        
+        * AUTHOR: Arno-Can Uestuensoez
+        
+        * COPYRIGHT: Copyright (C) 2019 Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez
+        
+        * LICENSE: Artistic-License-2.0 + Forced-Fairplay-Constraints
+        
+        Concepts and enumeration values are migrated from the 
+        
+        * *UnifiedSessionsManager* (C) 2008 Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez.  
+        
+        Sphinx
+        ------
+        Tested with Sphinx-1.7 on Python2.7.14, and Python3.6.5.
+        
+        Runtime Environment
+        -------------------
+        For a comprehensive list refer to the documentation.
+        
+        **Python Syntax Support**
+        
+        *  Python2.7, and Python3
+        
+        **Python Implementation Support**
+        
+        *  CPython, IPython, IronPython, Jython, and PyPy
+        
+        **OS on Server, Workstation, Laptops, Virtual Machines, and Containers**
+        
+        * Linux: AlpineLinux, ArchLinux, CentOS, Debian, Fedora, Gentoo, OpenSUSE, Raspbian, RHEL, Slackware, SLES, Ubuntu, ...  
+        
+        * BSD: DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, GhostBSD, TrueOS, NomadBSD
+        
+        * OS-X: Snow Leopard
+        
+        * Windows: Win10, Win8.1, Win7, WinXP, Win2019, Win2016, Win2012, Win2008, Win2000
+        
+        * WSL-1.0: Alpine, Debian, KaliLinux, openSUSE, SLES, Ubuntu
+        
+        * Cygwin
+        
+        * UNIX: Solaris10, Solaris11
+        
+        * Minix: Minix3
+        
+        * ReactOS
+        
+        **Network and Security**
+        
+        * Network Devices: OpenWRT
+        
+        * Security: KaliLinux, pfSense
+        
+        **OS on Embedded Devices**
+        
+        * RaspberryPI: ArchLinux, CentOS, OpenBSD, OpenWRT, Raspbian
+        
+        * ASUS-TinkerBoard: Armbian
+        
+        Current Release
+        ---------------
+        
+        REMARK:
+           Currently tested by application to the other projects of the author.
+           So for now no package tests defined.
+        
+        Major Changes:
+        
+        * Initial version.
+        
+        Issues:
+        
+        * Current release supports *shell* only and is released for *bash*, so
+          safe to use on *POSIX* platforms.
+          So may should on *Windows-10* et.al. / *NT-10.0*, in any case in *WSL*.
+          General support for *Windows* platforms is coming soon - so the full scale
+          of platforms will be supported.
+        
+        ToDo:
+        
+        * make all templates completely generic for any package - some like 'man' contain hardcoded names for setupdocx
+        * Add optional gzip to man pages.
+        * Add rpm, deb, apk.
+        
+        Known Issues:
+        
+        * Not yet
+        
+        
+        
+Keywords: ARM,GhostBSD,LinuxMint,Manjaro,TrueOS,Aix,Alpine,AlpineLinux,Arch,ArchLinux,ArchLinuxARM,Armbian,BSD,BlackArch,BlackArchLinux,CPython,CentOS,Cygwin,Darwin,Debian,Distribution,DragonFlyBSD,Fedora,FigureWrap,FreeBSD,Gentoo,HP-UX,IPython,ImageWrap,IronPython,Java,Java,Jython,Kali,KaliLinux,Linux,MacOS,Minix,Minx3,NetBSD,OS-X,OpenBSD,OpenSUSE,OpenWRT,PyPy,Python2,Python3,RHEL,Raspbian,ReactOS,SLES,Scriptin,SnowLeopard,Solaris,Sphinx,Sphinx,SuSE,SunOS,SunOS5,Ubuntu,Unix,WSL,WSL 1.0,WSL 2.0,WSL-1.0,WSL-2.0,Windows,Windows10,Windows2003,Windows2008,Windows2010,Windows2012,Windows2016,Windows2019,Windows2019se,Windows7,Windows8,WindowsXP,bitarray,bitmask,build_apidoc,build_apiref,build_docx,commands,distutils,doc,documentation,docx,enumerate,epydoc,extension,hexvalue,image,imagewrap,info,install_docx,list,literalincludewrap,mkdocs,pandoc,pkg_docx,setup,setup commands,setup.py,setuplib,setuplib.dist.Distribution,setuptools,show,sphinx,sphinx extensions,sphinx-apidoc,sphinx-build,sphinx.ext.imagewrap,sphinx.ext.literalincludewrap
+Platform: Aix
+Platform: GhostBSD
+Platform: LinuxMint
+Platform: Manjaro
+Platform: TrueOS
+Platform: AlpineLinux
+Platform: ArchLinux
+Platform: ArchLinuxARM
+Platform: Armbian
+Platform: BlackArchLinux
+Platform: CentOS
+Platform: Cygwin
+Platform: Darwin
+Platform: Debian
+Platform: DragonFlyBSD
+Platform: FedoraLinux
+Platform: FreeBSD
+Platform: GentooLinux
+Platform: HP-UX
+Platform: KaliLinux
+Platform: MacOS
+Platform: Minix
+Platform: Minx3
+Platform: NetBSD
+Platform: OS-X
+Platform: OpenBSD
+Platform: OpenSUSE
+Platform: OpenWRT
+Platform: RHEL
+Platform: Raspbian
+Platform: ReactOS
+Platform: SLES
+Platform: Solaris
+Platform: SuSE
+Platform: SunOS
+Platform: SunOS5
+Platform: Ubuntu
+Platform: Unix
+Platform: Windows10
+Platform: Windows2003
+Platform: Windows2008
+Platform: Windows2010
+Platform: Windows2012
+Platform: Windows2016
+Platform: Windows2019
+Platform: Windows2019se
+Platform: Windows7
+Platform: Windows8
+Platform: WindowsXP
+Classifier: Framework :: Setuptools Plugin
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Other Environment
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Free To Use But Restricted
+Classifier: License :: OSI Approved :: Artistic License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Other OS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: POSIX :: BSD :: OpenBSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: Other
+Classifier: Operating System :: POSIX :: SunOS/Solaris
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Java
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: IronPython
+Classifier: Programming Language :: Python :: Implementation :: Jython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Internet
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Java Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: pygame
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Operating System
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: System :: Software Distribution
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
