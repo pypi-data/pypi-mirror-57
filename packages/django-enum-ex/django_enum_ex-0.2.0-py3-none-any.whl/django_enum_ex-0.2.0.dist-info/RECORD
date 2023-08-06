@@ -1,0 +1,7 @@
+django_enum_ex/__init__.py,sha256=q1FP2bIvQyw80GPdkTk_4jIFRbh8Q0hKvavC13vFWs4,64
+django_enum_ex/enums.py,sha256=a5N-Lk94-nVhbFfJYtGiJVrwVQG8iDqZwlgEJtPEtok,4265
+django_enum_ex/fields.py,sha256=X59sjZSlJs-Pgj2wdyOHlXCMBexK3zEZS5nzTht7X2w,2775
+django_enum_ex-0.2.0.dist-info/LICENSE,sha256=cGLEhQATH2vX0Wyb8xafmWND-qRnZl-lokMB13_SaXc,1062
+django_enum_ex-0.2.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+django_enum_ex-0.2.0.dist-info/METADATA,sha256=4FJQxkllT6cIlfiXeF2Jw9wz2CyEWlPkDFeNVAwWgdY,1227
+django_enum_ex-0.2.0.dist-info/RECORD,,
