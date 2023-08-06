@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ems-eploy
+Version: 0.0.4
+Summary: A small deploy utility package
+Home-page: https://github.com/
+Author: Jesper Halkjær Jensen
+Author-email: gedemagt@gmail.com
+License: MIT
+Description: Nice project
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
