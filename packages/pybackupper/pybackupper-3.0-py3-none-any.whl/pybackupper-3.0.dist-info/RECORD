@@ -1,0 +1,13 @@
+pybackupper/__init__.py,sha256=fFr_IXowC1hcHSnGMzrJrwXUNeUicBU5zSpjpCah66A,31
+pybackupper/Google/GAuth.py,sha256=SJ7cfHgq89bmJvzWvAQynMMCHWOgm6qHFDHaOzq9BW0,1464
+pybackupper/Google/GMain.py,sha256=eEU-szaS2WAYhFbjoXhkGhNqvfEj__61E6abqZbIxDg,2458
+pybackupper/Google/GRequests.py,sha256=w_pT7qfC8NrWCoS_eeDBrlkfLjXSAzU7sq23fp1F_i0,3509
+pybackupper/Google/__init__.py,sha256=0JLC-hfGngX79u5UfkxZxgqqIZQUTbVCHt2Fuh1KurQ,42
+pybackupper/Yandex/YAuth.py,sha256=dDSnVlGyGQToxqRFeFcCemlwdtXdLhhh-ESK_7uiZM0,2140
+pybackupper/Yandex/YMain.py,sha256=52GhZPpsuv5pCBtEPaETyJdASZJMm0p-uiwZ9T5aMFw,4146
+pybackupper/Yandex/YRequests.py,sha256=z70MBGNyLYn5VqesEkwlR-Z-n1Z98JrQ-7j23l3Zp9w,2708
+pybackupper/Yandex/__init__.py,sha256=UsOVF-Gf57ID3iwlC2spoe3hXYA_EcqoZ0Ad5Fl75MA,42
+pybackupper-3.0.dist-info/METADATA,sha256=iH0j0y80aaIwN2_i3fBQm9jp4fc-k9KaW9s_BoUlUjk,1251
+pybackupper-3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pybackupper-3.0.dist-info/top_level.txt,sha256=cv5BQY34QEtekmdAlTy0I_nZTvIvUIdAvOHe_k15xdc,12
+pybackupper-3.0.dist-info/RECORD,,
