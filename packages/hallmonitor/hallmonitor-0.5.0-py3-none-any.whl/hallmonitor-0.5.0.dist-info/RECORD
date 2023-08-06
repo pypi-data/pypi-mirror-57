@@ -1,0 +1,11 @@
+hallmonitor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hallmonitor/addons.py,sha256=9npL-CCR3cKFzXDI2wgO07v-Iy62XwV08kiCXw1EMBs,1103
+hallmonitor/api.py,sha256=XEG1PDSG_WOCZlYayEu1LacgcBD3X2DqyBQG4lx-31A,1440
+hallmonitor/hallmonitor.py,sha256=wWEQ8BqfnctnP1QR3y4H2wctc3jv-GTC7Lz0VHjax2Q,4998
+hallmonitor/wsgi.py,sha256=YyDIfOjrTPAW7KNB7yU3BHsEWe6XcGnTk9js7I_NnMU,62
+hallmonitor-0.5.0.data/scripts/hallmonitor,sha256=hHPITQ8B4PCLgY6_EY7nhJVmFRgjgRUbL5f3Dx9CqHw,4984
+hallmonitor-0.5.0.dist-info/METADATA,sha256=gQznXg4x0fHk1yssarDyVYsnk3GDQsvdHm_RDnt2n1A,345
+hallmonitor-0.5.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+hallmonitor-0.5.0.dist-info/pbr.json,sha256=dX6AWypgUsk0MekZsBG-HUAz1JHhdmrTKfPfynP6l3Q,47
+hallmonitor-0.5.0.dist-info/top_level.txt,sha256=T9dgtHC5UupTf0LWWSmdwU0NZOJ2TCzmYVI8uNUayAM,12
+hallmonitor-0.5.0.dist-info/RECORD,,
