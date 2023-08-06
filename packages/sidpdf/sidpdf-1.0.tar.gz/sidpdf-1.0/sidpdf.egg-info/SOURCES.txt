@@ -1,0 +1,9 @@
+README.md
+setup.py
+sidpdf/__init__.py
+sidpdf/pdf2image.py
+sidpdf/pdf2text.py
+sidpdf.egg-info/PKG-INFO
+sidpdf.egg-info/SOURCES.txt
+sidpdf.egg-info/dependency_links.txt
+sidpdf.egg-info/top_level.txt
