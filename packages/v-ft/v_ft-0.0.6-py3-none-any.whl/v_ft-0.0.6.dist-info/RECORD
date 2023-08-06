@@ -1,0 +1,14 @@
+.DS_Store,sha256=P8UPNgXBlvZDFCriandHdjWY3oRevxVsZ6HAaKvnPZk,6148
+v_ft/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+v_ft/custom_primitives.py,sha256=JjdSoGfbBl1WEaQb8Qx1jfoKgO54e7ovsk5G7JlmO6w,2689
+v_ft/ft_case2case.json,sha256=xh0Ye45ivyynu2KQWOiP8bTmhKIotx8WRa8ijNOL_s0,75356
+v_ft/ft_case2entity.json,sha256=fjES2ZWBqbcOH-cdlnCQ64AAH-kmcs38NWcEbNhA6l4,237456
+v_ft/ft_case2entity_window .json,sha256=1XP5SBYvzbUvScdf2Eqohu4Afvxvc_XqEoViyCn8ukQ,173882
+v_ft/ft_rec2case.json,sha256=u10hgd7BS-aSg0tlo_wYupln9_nI_7hTHZ6mhN0MzaI,76038
+v_ft/load.py,sha256=lST98TMFQf_CznUrHDdwQOZQMmMoK-1-mUc4LrdsowU,445
+v_ft/time_unit.py,sha256=OfvhsX4nR83BIq4RYeOAfSzHQ0QUEl-stEhDCcrKDRM,672
+v_ft-0.0.6.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+v_ft-0.0.6.dist-info/METADATA,sha256=CAaRXBEg_ec2lFmVMNKqlt2D-E5toI4RI155-lsyuZo,541
+v_ft-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+v_ft-0.0.6.dist-info/top_level.txt,sha256=H8dWKQ6Jw7i0zF5W9LgS9_Q5iZ73yZMVT3T-WT7kfWE,5
+v_ft-0.0.6.dist-info/RECORD,,
