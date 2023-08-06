@@ -1,0 +1,14 @@
+slipoframes/__init__.py,sha256=fSNL_ztXnWydlR-GovfL0MtWyXpVvQNtVoNePgFFL5k,46
+slipoframes/__version__.py,sha256=zlUaUeWdInGTRKET7mQBh6X2OOzmwRUmaDvxJ7RZWME,54
+slipoframes/context.py,sha256=cv5Ai58YSlZpzhbt3RdOYD-EYL7NL3Yl94znV7bF_Y4,33336
+slipoframes/model.py,sha256=HBF5IF4-toxaa653rOhsMojuohajf7x84BtjoIIjP5E,8470
+slipoframes/utils.py,sha256=QTu1_UnTXmLZgHmdV4lKwZzFJGobjGJuRG0tLpUofJw,511
+slipoframes/templates/iframe.html.j2,sha256=F6ZD88P_BfWuFRdXjmTGXArRY_ORDoRbqE4gJoT7e90,182
+slipoframes/templates/workflow.html.j2,sha256=v9a952Tt9n9f-4Ro7xJoppLGp20MGkscqye0qd8VLY8,892
+slipoframes/templates/css/workflow.css.j2,sha256=nKYEpOjt6SsGWIG6d3lyVPMyj1h5H16jdprtl08rPnQ,1552
+slipoframes/templates/js/workflow.js.j2,sha256=es-YImYufJzs8ClrhcjrBG8l8IZiOOcfeISVN1iYPzM,5085
+slipoframes-0.2.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+slipoframes-0.2.4.dist-info/METADATA,sha256=bi8-CCxBZ-3y48Q0WyYZF2MqASurMlnnF7Qg_swmVNI,1397
+slipoframes-0.2.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+slipoframes-0.2.4.dist-info/top_level.txt,sha256=ldzpwDKj0meeREwo5NHVIRmlxfeD6mIf4VSVV86c_vk,12
+slipoframes-0.2.4.dist-info/RECORD,,
