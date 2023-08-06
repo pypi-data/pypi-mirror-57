@@ -1,0 +1,8 @@
+airflow_ecr_plugin/__init__.py,sha256=eLmE8LT9h32jZuIcvu_wLL-dwhkp2GTen9XO-R1wXrY,253
+airflow_ecr_plugin/hooks.py,sha256=XmwfVm4_eOzO6cazKgYj-dEPUFZLOr1tBm8xzjXGFBw,1569
+airflow_ecr_plugin/operators.py,sha256=zOpDrhixLzaXA3i3Dvs_Bn0CyRQqQdLRM8VMZRNGc0A,1877
+airflow_ecr_plugin/tests/test_hooks.py,sha256=Gbentx6DPQ3wmjoTGtMIcHSaP7SAkoP4ejzUEkjoUM0,973
+airflow_ecr_plugin-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+airflow_ecr_plugin-0.1.2.dist-info/WHEEL,sha256=QMHkjGvxv3VzbxS3PLXUS4g079erQ43qD1oit7eHsL0,89
+airflow_ecr_plugin-0.1.2.dist-info/METADATA,sha256=uS3PA8uMPE9YTe88Fqm3RPVIUg58lP5SnBDDs7JUPw0,1155
+airflow_ecr_plugin-0.1.2.dist-info/RECORD,,
