@@ -1,0 +1,3 @@
+[console_scripts]
+ubx-serial = ubxserial:write_config
+
