@@ -1,0 +1,7 @@
+[console_scripts]
+_gdbplugin_loader = gdbplugin.loader:load_plugins
+
+[gdb.plugins]
+python = gdbplugin.python:main
+ruby = gdbplugin.ruby:main
+
