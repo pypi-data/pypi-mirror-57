@@ -1,0 +1,10 @@
+torch
+transformers
+torchvision
+av
+pandas
+tqdm
+loguru
+numpy
+ray
+modin[ray]
