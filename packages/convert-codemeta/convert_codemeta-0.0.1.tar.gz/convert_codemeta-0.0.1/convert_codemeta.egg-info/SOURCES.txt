@@ -1,0 +1,12 @@
+README.md
+setup.py
+convert_codemeta/__init__.py
+convert_codemeta/codemeta_schema.jsonld
+convert_codemeta/convert.py
+convert_codemeta/crosswalk.csv
+convert_codemeta/validate.py
+convert_codemeta.egg-info/PKG-INFO
+convert_codemeta.egg-info/SOURCES.txt
+convert_codemeta.egg-info/dependency_links.txt
+convert_codemeta.egg-info/requires.txt
+convert_codemeta.egg-info/top_level.txt
