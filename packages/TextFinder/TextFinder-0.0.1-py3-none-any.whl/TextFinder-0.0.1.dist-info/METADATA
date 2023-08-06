@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: TextFinder
+Version: 0.0.1
+Summary: Cuts text given a keyword and endpoint.
+Home-page: https://github.com/petafam69/TextFinder
+Author: Athul Raj Suresh
+Author-email: theraj2003@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+To use, call Finder.searcher(text, keyword, ending)
+
+Text is the text to look at
+
+Keyword is the keyword to find
+
+Ending is the word to end with
+
