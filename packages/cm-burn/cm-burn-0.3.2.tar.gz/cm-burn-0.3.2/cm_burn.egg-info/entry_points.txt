@@ -1,0 +1,4 @@
+[console_scripts]
+cm-burn = cmburn.general.cmburn:main
+cm-pi-burn = cmburn.pi.cmpiburn:main
+

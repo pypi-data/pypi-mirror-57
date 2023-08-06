@@ -1,0 +1,13 @@
+python-hostlist
+docopt
+prompter
+requests
+pyyaml
+oyaml
+cloudmesh-common
+
+[dev]
+check-manifest
+
+[test]
+coverage
