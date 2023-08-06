@@ -1,0 +1,15 @@
+uberspace_takeout/__init__.py,sha256=Pl3JTsXGDSRZOLDbQUx5LP2TSlBPCLy_QNCOu3EgPck,1936
+uberspace_takeout/__main__.py,sha256=iwdCm5XTqfb7KyYShra3XRzdfg90Zz_jji-JFzyW_JE,1265
+uberspace_takeout/compat.py,sha256=DBv3-_Zma8IiIyYMo__1dSi2jE5lpyb8OBOhUQaZbGc,351
+uberspace_takeout/storage.py,sha256=nNNoEN8Zw06cJYRkPq6b_Ctjs4K9H8M2icPRVYEl3Ak,7828
+uberspace_takeout/items/__init__.py,sha256=WGHV-b4ClBGJh132u5nIt0d6OGG5Y6cub0jJAMl4K78,79
+uberspace_takeout/items/base.py,sha256=FhBt1RMeEkKaefc1cN_VxH2S4UxJeRSa2nit11P8afA,1546
+uberspace_takeout/items/common.py,sha256=tntr-JoAeEhFjPf6sBLsMQaWKGIqNOeAE97wd3hylJw,2416
+uberspace_takeout/items/u6.py,sha256=kWYF0br0QOHTf9q5vS2CrLSoSRNTx62Qa5_Wj2ChpME,1984
+uberspace_takeout/items/u7.py,sha256=YD2ch-dMK_LogwRgDaREQDbA8revd6tczcUADE902k4,3518
+uberspace_takeout-0.0.3.dist-info/METADATA,sha256=r8hVQqz9zcvy5g8DSa4nlmi7ibwbzWN9fiMOiDFcfKU,914
+uberspace_takeout-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+uberspace_takeout-0.0.3.dist-info/entry_points.txt,sha256=FS9wWknJ7EVIYfCqxPWEdlLH0kld_jcxmeQcOz2979k,71
+uberspace_takeout-0.0.3.dist-info/top_level.txt,sha256=lXQ91qb9z-_bEBI2Z6WGT6LeySmU21vEDMF8FsJKdvE,18
+uberspace_takeout-0.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+uberspace_takeout-0.0.3.dist-info/RECORD,,
