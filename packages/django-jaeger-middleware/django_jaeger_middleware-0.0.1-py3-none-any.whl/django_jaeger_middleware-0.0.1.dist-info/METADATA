@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: django-jaeger-middleware
+Version: 0.0.1
+Summary: python(django) tracing middleware tool: django-jaeger-middleware
+Home-page: https://github.com/GalphaXie/django-jaeger-middleware
+Author: guang
+Author-email: galphaxie@gmail.com
+License: MIT
+Download-URL: https://github.com/GalphaXie/django-jaeger-middleware
+Keywords: django,jaeger,jaegertracing
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jaeger-client
+Requires-Dist: opentracing
+
+# django-jaeger-middleware
+
+This is a simple jaeger tracing middleware for Django applications. 
+
+I read Jaeger - Distributed Tracing System on [github](https://github.com/jaegertracing/jaeger-client-python) and make it plus.
+
+## Installing
+
+```bash
+$ pip install django-jaeger-middleware
+```
+
+Then add ```django-jaeger-middleware.middleware.JaegerMiddleWare``` to the end your ```MIDDLEWARE``` in `settings.py`. 
+
+For example:
+
+```
+MIDDLEWARE = [
+	...
+	'django-jaeger-middleware.middleware.JaegerMiddleWare'
+]
+```
+
+## Enjoy!
+
+Email me with any questions: [galphaxie@gmail.com](galphaxie@gmail.com).
+
+
