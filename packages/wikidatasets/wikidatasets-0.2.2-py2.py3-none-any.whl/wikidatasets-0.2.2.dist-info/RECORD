@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=KCVoPoQga0wFxzUGhjr0MwLFNcigIpUduCq_OjSim1s,67
+tests/test_wikidatasets.py,sha256=8Rm4zUpHk9LNutfNgVqXZth_wfFLniZgbXwkREtanMM,397
+wikidatasets/__init__.py,sha256=efGperPrUoS_6eVY4ama8x4DpWfEb4A_Uuz3WBW495g,332
+wikidatasets/exceptions.py,sha256=P-w26BQ7cKRGQ10_P8G_Q0S871KooSJnrfV8TfwSEXg,44
+wikidatasets/processFunctions.py,sha256=XFxnaCd9CwxqSGeJlC9zgvZgMfgSpWd5bq7FHUVXUiw,7212
+wikidatasets/utils.py,sha256=N7iD3rR6r9AOku-6BOGn0evAE_tvwgMXjt66knUSv-8,8640
+wikidatasets-0.2.2.dist-info/LICENSE,sha256=xIO3iKB70GEILc00S2aMHEE0uxvVpInHGoGdzlKnXIU,1508
+wikidatasets-0.2.2.dist-info/METADATA,sha256=ufK6yAf_3j-ES1BTXproVHzbI27ZALYFYyTaQ0NbHSA,2316
+wikidatasets-0.2.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+wikidatasets-0.2.2.dist-info/top_level.txt,sha256=gQxEgGAw3w4_bO6QeerV0It4ICB5LO4E5Bnzx_-Pec4,19
+wikidatasets-0.2.2.dist-info/RECORD,,
