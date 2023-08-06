@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: ggtools
+Version: 1.1.0
+Summary: A package to handle the GRACE and GRACE-FO GSM data and GLDAS grid data
+Home-page: https://github.com/lcx366/GGTOOLS
+Author: Chunxiao Li
+Author-email: lcx366@126.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: cartopy
+Requires-Dist: pyshtools
+Requires-Dist: GPy
+Requires-Dist: xarray
+Requires-Dist: h5py
+Requires-Dist: oct2py
+Requires-Dist: requests
+Requires-Dist: astropy
+Requires-Dist: pySphericalPolygon
+Requires-Dist: datetime
+
+# Welcome to the GRACE & GLDAS Tools
+
+The ggtools package is an archive of scientific routines that can be used to
+handle the GRACE(Gravity Recovery and Climate Experiment) and GRACE-FO(Follow-on) GSM data(RL06 Level-2 monthly solutions) and GLDAS grid data. For more details, please refer to [GGTOOLS](https://github.com/lcx366/GGTOOLS) in GitHub.
+
+
+
