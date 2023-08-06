@@ -1,0 +1,17 @@
+README.md
+setup.py
+AutoDiff_StanAndyJohn.egg-info/PKG-INFO
+AutoDiff_StanAndyJohn.egg-info/SOURCES.txt
+AutoDiff_StanAndyJohn.egg-info/dependency_links.txt
+AutoDiff_StanAndyJohn.egg-info/requires.txt
+AutoDiff_StanAndyJohn.egg-info/top_level.txt
+autoDiff/__init__.py
+autoDiff/autoDiff.py
+autoDiff/element_func.py
+autoDiff/operator.py
+autoDiff/optimization.py
+tests/__init__.py
+tests/test_autoDiff.py
+tests/test_element_funcs.py
+tests/test_operators.py
+tests/test_optimization.py
