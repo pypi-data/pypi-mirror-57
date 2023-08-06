@@ -1,0 +1,9 @@
+torch
+gym[mujoco]
+tqdm
+matplotlib
+box2d-py
+ipython
+scipy
+gym
+keras
