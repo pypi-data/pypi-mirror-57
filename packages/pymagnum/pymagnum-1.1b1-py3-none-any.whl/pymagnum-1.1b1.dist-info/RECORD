@@ -1,0 +1,14 @@
+magnum/__init__.py,sha256=-I2NM9VlOVf0yOe9QZ-pXGR48222xlqNvjzSmmzx5lM,135
+magnum/magdump.py,sha256=Zhvcts3220vToaeyXsKAzl0tWo2yF_daTwMXh7oNscg,5871
+magnum/magnum.py,sha256=9e59EbhMybft7yMCE2PW1a2zKPhym1NRU65tK9hL9Bk,47769
+magnum/magtest.py,sha256=rQkKrD4oNVzgt7oDfZVeALhaEx4ecFwaELborBrnmps,2866
+magnum/tools/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+magnum/tools/magdump.py,sha256=aijmhcXmaXUQlhdIpTiRWs1V0w9Sujq-2Z-V4MV0Li4,5967
+magnum/tools/magtest.py,sha256=ytynQMv3Vvv9RWpUwknaPNODPsKoUNH-ozEGI6oZcno,2944
+magnum/tools/test_packets.py,sha256=at8vmANIEGCJdC94AoLgq00jGOrPQ8AOUOLPi0iqT_k,1572
+pymagnum-1.1b1.dist-info/LICENSE,sha256=u1abXqpTsC1887oIMeWgXXHkyKBL5dSIQDKsmSAy2Ic,1923
+pymagnum-1.1b1.dist-info/METADATA,sha256=XbRpo8aPVm7H28pKqG24qbm7xBz1BuSOX2Uvp_6JoVQ,1285
+pymagnum-1.1b1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pymagnum-1.1b1.dist-info/entry_points.txt,sha256=hmN58tOuHEHanMPDLBpG8DkPEMZU0g98N3Oew1t2mJQ,91
+pymagnum-1.1b1.dist-info/top_level.txt,sha256=egne9yxxZdrOUUx069RNhCVDTVkMIrzl_D7J9cLkN_c,7
+pymagnum-1.1b1.dist-info/RECORD,,
