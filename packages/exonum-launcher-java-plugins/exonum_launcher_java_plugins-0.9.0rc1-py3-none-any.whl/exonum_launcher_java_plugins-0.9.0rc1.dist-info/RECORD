@@ -1,0 +1,11 @@
+exonum_instance_configuration_plugin/__init__.py,sha256=wMF5cAINZl5DjhZ65-E0wdUrpca1z7INlfzmDzPMQFs,39
+exonum_instance_configuration_plugin/plugin.py,sha256=eWCSGzB2w6wYpq3Sw5xZqzyKg8L537KgEvALB8OXHVk,4505
+exonum_java_runtime_plugin/__init__.py,sha256=P_lQEU1lKcDtrYboPuKUOGLIN0NwSW_YR6NNcZgBXHk,41
+exonum_java_runtime_plugin/plugin.py,sha256=xkiRVvV5H3TgHgxlCvNEeQ4-cRxY32-vpyRrWRYjQZE,1141
+exonum_java_runtime_plugin/proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exonum_java_runtime_plugin/proto/deploy_arguments_pb2.py,sha256=CXSA4z6cff3Rrv6Rh9A37EePIFVyETH7eT_MZWfjZ8U,2242
+exonum_launcher_java_plugins-0.9.0rc1.dist-info/LICENSE,sha256=dp-Atby0LtCvTk0v104ayb-EPLgMWikhnR7zVEQoprs,10846
+exonum_launcher_java_plugins-0.9.0rc1.dist-info/METADATA,sha256=cVXvz_nBayG23k2uDl6KyU6tXWzmkYDhVaddju2wqko,1487
+exonum_launcher_java_plugins-0.9.0rc1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+exonum_launcher_java_plugins-0.9.0rc1.dist-info/top_level.txt,sha256=Y6t9hzTjDo0XcOLmDMEDEyyCjFY_P1osojeL6gk8Pjg,64
+exonum_launcher_java_plugins-0.9.0rc1.dist-info/RECORD,,
