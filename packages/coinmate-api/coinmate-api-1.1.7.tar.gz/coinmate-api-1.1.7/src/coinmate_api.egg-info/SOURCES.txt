@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/coinmate_api.egg-info/PKG-INFO
+src/coinmate_api.egg-info/SOURCES.txt
+src/coinmate_api.egg-info/dependency_links.txt
+src/coinmate_api.egg-info/top_level.txt
