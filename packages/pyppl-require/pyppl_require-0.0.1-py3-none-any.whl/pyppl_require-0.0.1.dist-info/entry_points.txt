@@ -1,0 +1,4 @@
+[console_scripts]
+pyppl-require=pyppl_require:console
+pyppl_require=pyppl_require:console
+
