@@ -1,0 +1,9 @@
+thoth/analyzer/__init__.py,sha256=Apify0gpjhkj9MvuT_UKhIV4_d78ASL3T4D8ubIqYpc,238
+thoth/analyzer/cli.py,sha256=ildzHsfDJBETc_EhtdnVRgUsfJJYdwcTW4EQmnrQu4A,5283
+thoth/analyzer/command.py,sha256=1N7j1VgSPqr_w5jKfFBTU7Sy3qkMQplmJhoOxrpkwT0,3603
+thoth_analyzer-0.1.6.dist-info/DESCRIPTION.rst,sha256=OTdu_HcBojCrNiYfwJB-_dM-IA8RLWrikX22Yy1QYGc,797
+thoth_analyzer-0.1.6.dist-info/METADATA,sha256=W9Fm3XwPzTYmxbshnU1mDvMjTbD4SYPi0wAho_LDJrs,1180
+thoth_analyzer-0.1.6.dist-info/RECORD,,
+thoth_analyzer-0.1.6.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+thoth_analyzer-0.1.6.dist-info/metadata.json,sha256=aSgTOWnn4imtGGh1dWphKDRnbyYGJ64_ekQ21kTRr0w,528
+thoth_analyzer-0.1.6.dist-info/top_level.txt,sha256=c8JaaYuJlrd-trXiXD9l4fSkVuHvV1zFYn_x4Ij-0I0,6
