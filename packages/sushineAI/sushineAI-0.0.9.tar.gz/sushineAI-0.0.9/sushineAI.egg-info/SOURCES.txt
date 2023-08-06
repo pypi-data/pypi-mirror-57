@@ -1,0 +1,11 @@
+README.md
+setup.py
+sushineAI/__init__.py
+sushineAI/callbacks.py
+sushineAI/losses.py
+sushineAI/sushineAI.py
+sushineAI.egg-info/PKG-INFO
+sushineAI.egg-info/SOURCES.txt
+sushineAI.egg-info/dependency_links.txt
+sushineAI.egg-info/requires.txt
+sushineAI.egg-info/top_level.txt
