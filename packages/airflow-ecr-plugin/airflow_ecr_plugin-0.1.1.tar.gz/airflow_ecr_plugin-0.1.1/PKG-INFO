@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: airflow-ecr-plugin
+Version: 0.1.1
+Summary: Airflow ECR plugin
+Home-page: https://github.com/asandeep/airflow-ecr-plugin
+License: Apache-2.0
+Author: Sandeep Aggarwal
+Author-email: asandeep.me@gmail.com
+Requires-Python: >=2.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: airflow
+Requires-Dist: apache-airflow (>=1.10,<2.0); extra == "airflow"
+Requires-Dist: boto3 (>=1.10,<2.0)
+Project-URL: Repository, https://github.com/asandeep/airflow-ecr-plugin.git
+Description-Content-Type: text/markdown
+
+
