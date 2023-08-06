@@ -1,0 +1,3 @@
+[console_scripts]
+toronto-hydro-green-button = toronto_hydro_green_button:main
+
