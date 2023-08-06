@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: arxiv2bibpy
+Version: 0.2
+Summary: Search arxiv via api and save as bib
+Home-page: https://github.com/code-fury/arxiv2bib
+Author: Duong Nhu
+Author-email: d.binhnhu@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: arxiv,bibtext,bib
+Platform: UNKNOWN
