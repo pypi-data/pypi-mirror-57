@@ -1,0 +1,10 @@
+gp.recipe.node-13.3.0.1-py3.7-nspkg.pth,sha256=7eSUiO-fUhIaXjIFlb0RPvLoHcNimn3NEWR1ihhL4xw,1640
+gp/recipe/node/README.txt,sha256=ANnJvckbsrTEiWX4NpWcZxZNsJqQNbP15S8zX-DL0_I,1825
+gp/recipe/node/__init__.py,sha256=zBiwYM05p5IB2DGmFDxQxRGSe4qIHLPMfqqEvpGn-3k,10983
+gp/recipe/node/script.py,sha256=cEOoJ2q99r7BQ71MG0Wwq9jQCOWJRT7OFZPtgurA6Co,1416
+gp.recipe.node-13.3.0.1.dist-info/METADATA,sha256=FY5wDY_e7ZKKTgr_veiO7UrdEQLoPF7SR_4H_vOuyvw,5211
+gp.recipe.node-13.3.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+gp.recipe.node-13.3.0.1.dist-info/entry_points.txt,sha256=PaweyepU8Aq-D7oRKp-Ol1qTQmXrOsULrRokhHhjyfc,47
+gp.recipe.node-13.3.0.1.dist-info/namespace_packages.txt,sha256=9GzIVZSdRpUY3x5Q9k1_eIBqN51yeczKxJiYk6Ww35w,13
+gp.recipe.node-13.3.0.1.dist-info/top_level.txt,sha256=assBi-rPeHPOF1DELwZJfAVFrVMlRrz_JTlc1hH5KBM,3
+gp.recipe.node-13.3.0.1.dist-info/RECORD,,
