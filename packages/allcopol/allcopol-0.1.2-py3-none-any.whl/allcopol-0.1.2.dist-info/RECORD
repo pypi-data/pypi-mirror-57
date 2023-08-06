@@ -1,0 +1,15 @@
+allcopol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+allcopol/align_clusters.py,sha256=hDmbS23VUCn0vU1lZSOfM9dDJGE2zcR9uJ8HOR1QjcU,6656
+allcopol/allcopol.py,sha256=OKtidCEq_U10fQBuARHGugLMCfbCKvDorlHJcvxzDak,16861
+allcopol/create_indfile.py,sha256=X5CWD3y9j8G2lqIx2MwxJzsslJ1FNaEMy5vSjaBBrNs,1842
+allcopol/relabel_trees.py,sha256=W67OJyLBsjSHFPzO4O4NZi05JKGOyGqX4sJz2qELOcg,1167
+allcopol/utils/__init__.py,sha256=eK5EABpzRcjKcYv0TL_c54AplVik9x4kBXf20TxzX1M,115
+allcopol/utils/optimization.py,sha256=LqnwO4iPCZwTrnMZmPkJpgh3Gtqpgb9WB9YsLTa6A9Q,4601
+allcopol/utils/phylonet.py,sha256=U0IWLH3NNs7HLqPnnGSTAlnpnx95l0aR0SwdbgSKGvo,7145
+allcopol/utils/utils.py,sha256=qoh7OiwsyGfErXNxAeDfJuETF1yQVevTP_iSD75oM8I,8821
+allcopol-0.1.2.dist-info/LICENSE,sha256=Iru91UgONhSNVcUX95yY3D8-RTBSgsmjzpaUbiJAoSs,1077
+allcopol-0.1.2.dist-info/METADATA,sha256=_Jcmi6ycqJFkOaoPbLCHwNqaJHiJq0KtQoj7C24g7X0,6406
+allcopol-0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+allcopol-0.1.2.dist-info/entry_points.txt,sha256=YAQJ4WqW_y_zGOpwD_Cv1S7g40jcYfAS_utx15vGEFs,189
+allcopol-0.1.2.dist-info/top_level.txt,sha256=SWKLMoFIlUqPdBnZ9OQkf9kNs4CaTRaRvTQxV-Xf5_Y,9
+allcopol-0.1.2.dist-info/RECORD,,
