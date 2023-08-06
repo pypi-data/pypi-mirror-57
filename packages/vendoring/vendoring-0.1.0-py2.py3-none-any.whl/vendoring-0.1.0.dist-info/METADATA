@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: vendoring
+Version: 0.1.0
+Summary: Simplify vendoring dependencies for bootstrapping.
+Home-page: https://github.com/pradyunsg/vendoring
+License: UNKNOWN
+Author: Pradyun Gedam
+Author-email: pradyunsg@gmail.com
+Requires-Python: ~= 3.8.0
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: click
+Requires-Dist: toml
