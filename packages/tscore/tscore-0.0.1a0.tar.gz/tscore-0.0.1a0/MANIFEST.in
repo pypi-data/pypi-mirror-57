@@ -1,0 +1,5 @@
+include ReadMe.md
+include setpu.py
+include CONTRIBUTORS
+include LICENSE
+include *.txt
