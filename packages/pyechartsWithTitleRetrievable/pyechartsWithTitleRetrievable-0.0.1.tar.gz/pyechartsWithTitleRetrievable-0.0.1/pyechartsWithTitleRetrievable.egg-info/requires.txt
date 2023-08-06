@@ -1,0 +1,10 @@
+pyecharts
+
+[images]
+PIL
+
+[phantomjs]
+snapshot-phantomjs
+
+[selenium]
+snapshot-selenium
