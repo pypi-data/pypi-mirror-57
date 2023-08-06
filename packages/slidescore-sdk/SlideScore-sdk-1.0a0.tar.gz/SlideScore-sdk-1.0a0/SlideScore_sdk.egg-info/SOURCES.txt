@@ -1,0 +1,9 @@
+README.md
+setup.py
+SlideScore/__init__.py
+SlideScore/slidescore.py
+SlideScore_sdk.egg-info/PKG-INFO
+SlideScore_sdk.egg-info/SOURCES.txt
+SlideScore_sdk.egg-info/dependency_links.txt
+SlideScore_sdk.egg-info/requires.txt
+SlideScore_sdk.egg-info/top_level.txt
