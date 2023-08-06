@@ -1,0 +1,9 @@
+README.md
+setup.py
+class_cli/__init__.py
+class_cli.egg-info/PKG-INFO
+class_cli.egg-info/SOURCES.txt
+class_cli.egg-info/dependency_links.txt
+class_cli.egg-info/not-zip-safe
+class_cli.egg-info/requires.txt
+class_cli.egg-info/top_level.txt
