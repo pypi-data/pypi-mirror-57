@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mercaripy
+Version: 1.0.1
+Summary: mercari web scraping program.
+Home-page: https://github.com/nanato12/mercaripy
+Author: nanato12
+Author-email: admin@nanato12.info
+License: MIT
+Keywords: mercari mercaripy
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+
+# mercaripy
+メルカリのWebスクレイピングライブラリ
+
+
