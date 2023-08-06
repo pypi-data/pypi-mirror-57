@@ -1,0 +1,14 @@
+EasyDiff/__init__.py,sha256=1zmz4XB-vyyFfWRyeGGV1LWWFt0Z7F50Er0_F1n4E2I,118
+EasyDiff/ad.py,sha256=dqYuerBWFm3zBco5pXKPDai3TZ9ZVZ5s89lk_oSzxo4,6319
+EasyDiff/rev_var.py,sha256=AkyS3orTW8qETp2yHcjJHnTThT00kthnb_uqfnv6GxA,30245
+EasyDiff/var.py,sha256=jDXz9BnDX_oAGijAFARYqIPQy766wgauZZfjPnzxc8k,26042
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ad.py,sha256=KlOndNMxtldc5B6ZiZGySR-VBbVC3ypYxi1JCoAPqjI,959
+tests/test_rev_ad.py,sha256=JJjpuD9EIueTHTbq6YxH8aPSPZ2gzN6ONo4jdNp6J1g,1174
+tests/test_rev_var.py,sha256=l_rYVD-rnCGYzQLOmiq3dipB4O8E0GBFyy1X4rxnZgE,6190
+tests/test_var.py,sha256=PEMK0ge3FV8MjuLlgFCfdfuIHYT5hEqdvOiSGD92s6s,4782
+easydiff-0.0.3.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+easydiff-0.0.3.dist-info/METADATA,sha256=mSq-scwSHSdRAKSIrFJjS1HdLWLzpUkOHHE6TDkz3GM,4212
+easydiff-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+easydiff-0.0.3.dist-info/top_level.txt,sha256=x31CbHBdHcZACmF8_9VOnbDdEBR-Y7S6N20UURG_GMo,15
+easydiff-0.0.3.dist-info/RECORD,,
