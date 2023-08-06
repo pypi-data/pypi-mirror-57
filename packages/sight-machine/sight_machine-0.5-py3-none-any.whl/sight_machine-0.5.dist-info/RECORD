@@ -1,0 +1,13 @@
+sight_machine/__init__.py,sha256=YiwNxqN3T6T7lnqWvO2iDHSpkkPYnhRcoEFW9pd1GHo,145
+sight_machine/binary_loggable.py,sha256=FcuFPVmnVomu2kFsH1WEZfu_RQf_Le3pHPKSDTRJ2Qw,396
+sight_machine/binary_logger.py,sha256=1y3kCWJ7lPLr6uXGvErATfO8OzBUMOHfUJ2IQ_ID77o,4655
+sight_machine/binary_logger_bis.py,sha256=-zr1zcopQX_z1oQuXfTA3qAvxXNNYQg0lFZe9NuCB94,4284
+sight_machine/in_action.py,sha256=1S_p_VaQa7PSyYBAXFs7Df6fQKAn2ivda5Y5QV02oDU,1797
+sight_machine/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sight_machine/tests/test_binary_logger.py,sha256=YVpsVPrg185fiW2WJV81RDX8EwEf0Iwh9tQ50-ASdis,8947
+sight_machine/tests/test_binary_logger_bis.py,sha256=kT98_9msDdQ_WlEf2PJ9ZkxtS9U9KKTMKCfkD8xWiV8,6398
+sight_machine-0.5.dist-info/LICENSE,sha256=IaISEiHSo13y2NMz0Aph7SQERrYQcJJ0H_mWlBrNyRk,1022
+sight_machine-0.5.dist-info/METADATA,sha256=Pi4lpXvD3wuG-5pbiw99r0E_rYkl9SC7fS8P4wDa7XI,759
+sight_machine-0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sight_machine-0.5.dist-info/top_level.txt,sha256=PU0tS1COksKdqmnku26f6Yw74Vz39b2MOAiGqTjyD4k,14
+sight_machine-0.5.dist-info/RECORD,,
