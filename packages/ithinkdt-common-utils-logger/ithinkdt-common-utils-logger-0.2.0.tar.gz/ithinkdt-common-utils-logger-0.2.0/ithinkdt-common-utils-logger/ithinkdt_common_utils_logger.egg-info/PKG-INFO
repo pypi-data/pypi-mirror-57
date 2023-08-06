@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ithinkdt-common-utils-logger
+Version: 0.2.0
+Summary: python utils of logger handler
+Home-page: UNKNOWN
+Author: huiLi
+Author-email: lihui@ithinkdt.com
+License: MIT
+Description: python libs of record logger
+Platform: any
