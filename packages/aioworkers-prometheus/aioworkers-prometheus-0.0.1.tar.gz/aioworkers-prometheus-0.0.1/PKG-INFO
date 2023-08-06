@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: aioworkers-prometheus
+Version: 0.0.1
+Summary: aioworkers prometheus integration
+Home-page: https://github.com/aioworkers/aioworkers-prometheus
+Author: Alexander Malev
+Author-email: aamalev@gmail.com
+License: Apache Software License 2.0
+Description: aioworkers-prometheus
+        =====================
+        
+        .. image:: https://travis-ci.org/aioworkers/aioworkers-prometheus.svg?branch=master
+          :target: https://travis-ci.org/aioworkers/aioworkers-prometheus
+        
+        .. image:: https://img.shields.io/pypi/pyversions/aioworkers-prometheus.svg
+          :target: https://pypi.python.org/pypi/aioworkers-prometheus
+          :alt: Python versions
+        
+        .. image:: https://img.shields.io/pypi/v/aioworkers-prometheus.svg
+          :target: https://pypi.python.org/pypi/aioworkers-prometheus
+        
+        
+        Development
+        -----------
+        
+        Install dev requirements:
+        
+        
+        .. code-block:: shell
+        
+            pipenv install --dev --skip-lock
+        
+        
+        Run tests:
+        
+        .. code-block:: shell
+        
+            pipenv run pytest
+        
+Keywords: aioworkers
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
