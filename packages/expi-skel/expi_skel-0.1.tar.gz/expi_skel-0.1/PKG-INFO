@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: expi_skel
+Version: 0.1
+Summary: A package template for use with expi.
+Home-page: https://2665093.ca
+Author: 2665093 Ontario Inc.
+Author-email: author@2665093.ca
+License: UNKNOWN
+Download-URL: https://expi.2665093.ca/poplar/expi_skel
+Description: 
+                This is the long description of the package.  It can
+                span multiple lines and include `rst`_.
+        
+                .. _rst: http://docutils.sourceforge.net/docs/ref/rst/directives.html
+            
+Keywords: Orchid,Extender,Sage 300,Automation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.4
