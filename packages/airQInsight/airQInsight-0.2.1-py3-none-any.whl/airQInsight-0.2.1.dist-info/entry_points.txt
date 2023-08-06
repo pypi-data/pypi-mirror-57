@@ -1,0 +1,3 @@
+[console_scripts]
+airQInsight=airQInsight.app:main
+
