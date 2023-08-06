@@ -1,0 +1,12 @@
+wilmes/__init__.py,sha256=p70TQWgmLA30deRA9vGPwfxamDdW-JqLNPHRwgQCyVI,361
+wilmes/__main__.py,sha256=kav0wzBukpaB8o7a1_J_pNVR7tRR8IALT54yx4dUEWI,2077
+wilmes/_bs_utils.py,sha256=DgDzl19HpRUWYAEDch35w3qL3Xv_MOqZnRRqE7WUWu8,555
+wilmes/_client.py,sha256=n0EW_VK-hJGQydn012X0Rn_VRduQOrRZIjqdAEvoo5s,9615
+wilmes/_settings.py,sha256=EzX4NHTtxLLcAErdtZ-bpaV1nHO8eQ0g3KS6jjPC2aY,51
+wilmes/_types.py,sha256=HnGO9dl1vi6iRKuwz9IWJmG5ISpZP7F4d03_5eCUzu0,2331
+wilmes/py.typed,sha256=8PjyZ1aVoQpRVvt71muvuq5qE-jTFZkK-GLHkhdebmc,26
+wilmes-0.5.0.dist-info/entry_points.txt,sha256=RH0Q3tePp3yJNV3dcLJrhc1_VuKAEkwYsRHufcdP4II,47
+wilmes-0.5.0.dist-info/LICENSE,sha256=zciT1HcRIkkXI2OBVmqYIlGDtDhppjB-YNVDKKrVtnA,1071
+wilmes-0.5.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+wilmes-0.5.0.dist-info/METADATA,sha256=ZlyrV4X-RkwfpIAYczOPM8sSzbqq7ugEAGvdl0ZFpMQ,815
+wilmes-0.5.0.dist-info/RECORD,,
