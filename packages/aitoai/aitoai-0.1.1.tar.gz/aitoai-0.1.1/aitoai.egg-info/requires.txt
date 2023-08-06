@@ -1,0 +1,8 @@
+python-dotenv
+requests
+aiohttp
+pandas
+ndjson
+xlrd
+langdetect
+argcomplete
