@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+dual_quaternions/__init__.py
+dual_quaternions/dual_quaternions.py
+dual_quaternions.egg-info/PKG-INFO
+dual_quaternions.egg-info/SOURCES.txt
+dual_quaternions.egg-info/dependency_links.txt
+dual_quaternions.egg-info/not-zip-safe
+dual_quaternions.egg-info/requires.txt
+dual_quaternions.egg-info/top_level.txt
+dual_quaternions/tests/__init__.py
+dual_quaternions/tests/test_dual_quaternions.py
