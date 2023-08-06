@@ -1,0 +1,15 @@
+README.md
+setup.py
+fishscale/__init__.py
+fishscale/__version__.py
+fishscale/combine.py
+fishscale/move_non.py
+fishscale/remove_non.py
+fishscale/reverse.py
+fishscale/split.py
+fishscale.egg-info/PKG-INFO
+fishscale.egg-info/SOURCES.txt
+fishscale.egg-info/dependency_links.txt
+fishscale.egg-info/entry_points.txt
+fishscale.egg-info/requires.txt
+fishscale.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+[console_scripts]
+fscombine = fishscale.combine:main
+fsremove = fishscale.remove_non:main
+fsreverse = fishscale.reverse:main
+fssplit = fishscale.split:main
+

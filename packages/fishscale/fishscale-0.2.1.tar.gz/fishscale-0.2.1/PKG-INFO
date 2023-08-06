@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: fishscale
+Version: 0.2.1
+Summary: A tool to split large image, especially useful with image segmentation
+Home-page: https://github.com/seonon/fishscale
+Author: seonon
+Author-email: nanttery@gmail.com
+License: MIT
+Description: 
+        # Fishscale
+        
+        Fishscale is a tool to split large image into smaller tiles. it was developed to facilitate pre and post image processing for imange segmentation.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
