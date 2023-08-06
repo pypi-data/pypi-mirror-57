@@ -1,0 +1,4 @@
+configsuite
+numpy
+pandas
+six
