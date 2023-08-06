@@ -1,0 +1,10 @@
+solrcli/__init__.py,sha256=I8lxyNiBnHOcbneuLkja2q6Qm59j4kMLhSQR30DmBR0,91
+solrcli/commons.py,sha256=RFzrwpRV0m_DQPX62T2SymmsUJcCOFXxri4DyHYwqjU,6085
+solrcli/configurations.py,sha256=E1vrbYJnklenTQMSSLRRKG6zVvMCXHnUGnISjN2HQv4,858
+solrcli/sanity_checks.py,sha256=5Mwvsx0wwh_3_41H2RVTDWcHclsXiCxLyV01UA0nZOM,1414
+solrcli-0.1.11.data/scripts/solrcli,sha256=eIQ9V4nwQCbaBgECLOIWzQzIMHUkGyzS2LiROaDUAm0,2870
+solrcli-0.1.11.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+solrcli-0.1.11.dist-info/METADATA,sha256=vPeab1ft3o5MUhpOtzwy1WvWruO0Cq-Gn7ZVoHkHyME,5971
+solrcli-0.1.11.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+solrcli-0.1.11.dist-info/top_level.txt,sha256=mEr-daAFushfyBXJzANKdwWdKG5qRh1SoNhHWzMd9fI,8
+solrcli-0.1.11.dist-info/RECORD,,
