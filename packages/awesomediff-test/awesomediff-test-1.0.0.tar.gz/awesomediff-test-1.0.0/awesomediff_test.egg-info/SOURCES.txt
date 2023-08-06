@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+awesomediff/__init__.py
+awesomediff/core.py
+awesomediff/func.py
+awesomediff/solvers.py
+awesomediff_test.egg-info/PKG-INFO
+awesomediff_test.egg-info/SOURCES.txt
+awesomediff_test.egg-info/dependency_links.txt
+awesomediff_test.egg-info/top_level.txt
+tests/__init__.py
+tests/test_evaluate.py
+tests/test_function_methods.py
+tests/test_functions.py
+tests/test_solvers.py
+tests/test_variable_methods.py
