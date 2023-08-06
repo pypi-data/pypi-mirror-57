@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: auditing
+Version: 0.0.1
+Summary: A simple auditing library intended for use with Flask-based application
+Home-page: https://github.com/
+Author: Emil Haldrup Eriksen
+Author-email: emil.h.eriksen@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
