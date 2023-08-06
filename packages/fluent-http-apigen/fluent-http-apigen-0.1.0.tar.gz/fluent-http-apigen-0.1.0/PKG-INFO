@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fluent-http-apigen
+Version: 0.1.0
+Summary: App generate HTTP documentation from fluent-http code
+Home-page: https://github.com/ICIJ/fluent-http-apigen
+Author: Sabrina Sahli, Bruno Thomas
+Author-email: sahli.sabrina@gmail.com, bthomas@icij.org
+License: LICENSE.txt
+Description: About
+        =====
+        
+        .. image:: https://circleci.com/gh/ICIJ/fluent-http-apigen.png?style=shield&circle-token=0d24d3ece1add1d2d22cccafd04c0b0024550a20
+           :alt: Circle CI
+           :target: https://circleci.com/gh/ICIJ/fluent-http-apigen
+        
+        
+        This is a small tool to generate HTTP API documentation for https://github.com/CodeStory/fluent-http
+        
+        Develop
+        -------
+        
+        To develop, just run::
+        
+            virtualenv --python=python3 venv
+            source venv/bin/activate
+            python setup.py develop
+            pip install -e ".[dev]"
+            nosetests
+        
+Keywords: icij,fluent-http,documentation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Provides-Extra: dev
