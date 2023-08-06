@@ -1,0 +1,9 @@
+README.md
+setup.py
+mroi_fd/__init__.py
+mroi_fd/_utils.py
+mroi_fd/face_detector.py
+mroi_fd_amenji.egg-info/PKG-INFO
+mroi_fd_amenji.egg-info/SOURCES.txt
+mroi_fd_amenji.egg-info/dependency_links.txt
+mroi_fd_amenji.egg-info/top_level.txt
