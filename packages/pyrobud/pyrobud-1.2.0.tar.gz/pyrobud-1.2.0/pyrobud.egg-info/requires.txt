@@ -1,0 +1,17 @@
+aiohttp
+colorlog
+telethon
+toml
+cryptg
+async_generator
+msgpack
+plyvel
+gitpython
+ratelimit
+sentry-sdk
+pillow
+speedtest-cli
+meval
+
+[fast]
+uvloop
