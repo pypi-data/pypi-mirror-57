@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+fasthangul/__init__.py
+fasthangul/jamo.cc
+fasthangul.egg-info/PKG-INFO
+fasthangul.egg-info/SOURCES.txt
+fasthangul.egg-info/dependency_links.txt
+fasthangul.egg-info/top_level.txt
