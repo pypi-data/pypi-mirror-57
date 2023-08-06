@@ -1,0 +1,17 @@
+awesomediff/__init__.py,sha256=stUbTRvNoTS68RYsJsCf2xdgPoNtShk95tF99o8R7C4,1667
+awesomediff/core.py,sha256=2GgA8Tfeyf3gmt_IUDjbBP_5RMhz4ZnQ5LoK46uEWQY,12736
+awesomediff/func.py,sha256=Ot9DPxjxPyrQblfUcUB8SQFllK-P14Flklre71U2FCg,8601
+awesomediff/solvers.py,sha256=ZYF7MNc3u9dOjKCNUOFwRjGf5xJ4dd6Jlh6u1CTtP98,14050
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_core.py,sha256=1szaQFnLhrHEbVqOR5RvyLwoE5Q0WopD-m66PtJ1JYo,10413
+tests/test_evaluate.py,sha256=akHO73pdsQc7W_bYy31DQFUcuM4T7-FW22Obm8O7bso,4462
+tests/test_func.py,sha256=IEQHL6dDv3jfMRAdOMRZkLaz1dgxUIv_EratqEOjpUw,6365
+tests/test_function_methods.py,sha256=lv5r3gHOe4GYDceOFhqF7KNbQ7FabkH4XO51BQyM_Wk,3077
+tests/test_functions.py,sha256=NBMi4nC87k9RKpvaXHX1qVHX7-5J3Bshs5GGLZ3Qyhk,3226
+tests/test_solvers.py,sha256=Gf4zCfyXCOEVG547xFECA4-_qGAfVUKLzbq3OIAWp-8,1131
+tests/test_variable_methods.py,sha256=rRJ5aiLUk2jbf0zd9C46PoCK80fspmME6dngwhy82eU,1968
+awesomediff-1.1.0.dist-info/LICENSE.txt,sha256=-cTHe6o4KABO5UuKTy2y6I7USmI3pJOWW_VR-sD8ti0,1023
+awesomediff-1.1.0.dist-info/METADATA,sha256=saB7dCuGUeYR-JZEAEDhOR1V4qTUIOzAdPlA4lqdOaw,1893
+awesomediff-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+awesomediff-1.1.0.dist-info/top_level.txt,sha256=z5kwtW_XDbVXPr3lkHVBTL4rrTsqH2LsxirGUC2pHPo,18
+awesomediff-1.1.0.dist-info/RECORD,,
