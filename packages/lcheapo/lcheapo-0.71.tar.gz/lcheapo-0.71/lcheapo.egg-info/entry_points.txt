@@ -1,0 +1,3 @@
+[console_scripts]
+lcfix=lcheapo.lcfix:mainlcdump=lcheapo.lcdump:mainlcheader = lcheapo.lcheader:main
+
