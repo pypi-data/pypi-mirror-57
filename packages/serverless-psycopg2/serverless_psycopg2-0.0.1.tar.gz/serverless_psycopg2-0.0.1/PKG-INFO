@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: serverless_psycopg2
+Version: 0.0.1
+Summary: psycopg2 wrapper intended to be used in aws lambda
+Home-page: https://gitlab.com/point1304/serverless-psycopg2
+Author: Gyeongsu Yim
+Author-email: point1304@gmail.com
+License: UNKNOWN
+Description: psycopg2 wrapper
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
