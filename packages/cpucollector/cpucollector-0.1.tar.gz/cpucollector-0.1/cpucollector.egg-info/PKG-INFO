@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: cpucollector
+Version: 0.1
+Summary: CPU information system
+Home-page: https://github.com/dikopylov/cpu-collector
+Author: Dmitry Kopylov
+Author-email: dikopylov10@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: cpu
+Platform: UNKNOWN

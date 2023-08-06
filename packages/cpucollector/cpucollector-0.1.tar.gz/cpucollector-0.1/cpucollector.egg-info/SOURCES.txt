@@ -1,0 +1,8 @@
+README.md
+setup.py
+cpucollector.egg-info/PKG-INFO
+cpucollector.egg-info/SOURCES.txt
+cpucollector.egg-info/dependency_links.txt
+cpucollector.egg-info/not-zip-safe
+cpucollector.egg-info/requires.txt
+cpucollector.egg-info/top_level.txt
