@@ -1,0 +1,11 @@
+mypy_boto3_robomaker/__init__.py,sha256=XyEpqPC0Fmn4RJPREpCALhhDaLIK1bis7a8OxqUhiNQ,562
+mypy_boto3_robomaker/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_robomaker/client.py,sha256=v9hgYOgM9AJh8NoSqJPCh5_qt-oIz5j1JkrMcVbVyvc,24635
+mypy_boto3_robomaker/paginator.py,sha256=GsKFZl6wo3np47746Aw0vgJza-RdU70XZG4ezBlRRvY,5218
+mypy_boto3_robomaker/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_robomaker/type_defs.py,sha256=1A8-g_heDrMVTE7DTWwTwqL7A3dkRldiMNRnTE7mPSU,72893
+mypy_boto3_robomaker/version.py,sha256=ay4Kxw86xwUJX0iINQwdgWtfO2c2SwRu6FytnOmjRJY,55
+mypy_boto3_robomaker-1.10.33.dist-info/METADATA,sha256=kYEoIgzx6bYgdlA5oxjhX1Cv3bUwFtrPY6uUdBTb8zk,1211
+mypy_boto3_robomaker-1.10.33.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_robomaker-1.10.33.dist-info/top_level.txt,sha256=WlfY_6GvTb2TkGTRVzqd2baMeTSrElZkDIN7dtoF1NI,21
+mypy_boto3_robomaker-1.10.33.dist-info/RECORD,,
