@@ -1,0 +1,29 @@
+﻿{
+    "autoSub":true,
+    "autoSel":true,
+    "canPrint":true,
+    "canReAuth":true,
+    "canPrintScn":true,
+    "canCopy":true,
+    "canOfflineUse":false,
+    "setEndTime":false,
+    "files_list": [
+        {
+            "file": "C:\\Users\\Administrator\\Desktop\\wa.txt"
+        }
+    ],
+   "group_list": [
+        {
+            "groupId": "3",
+            "groupName": "luo"
+        },
+        {
+            "groupId": "12",
+            "groupName": "luo1"
+        },
+        {
+            "groupId": "13",
+            "groupName": "luo2"
+        }
+    ]
+}
