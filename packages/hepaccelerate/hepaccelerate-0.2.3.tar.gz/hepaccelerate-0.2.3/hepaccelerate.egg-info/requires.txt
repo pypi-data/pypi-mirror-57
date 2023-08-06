@@ -1,0 +1,14 @@
+uproot
+awkward
+numba
+xxhash
+lz4
+requests
+
+[cuda]
+cupy
+cudatoolkit
+
+[dask]
+dask
+distributed
