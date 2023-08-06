@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: quit-store
+Version: 0.24.0
+Summary: Distributed Version Control for RDF Knowledge Bases
+Home-page: https://github.com/AKSW/QuitStore
+Author: Natanael Arndt, Norman Radtke
+Author-email: arndtn@gmail.com
+License: GPLv3+
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: System :: Archiving
+Classifier: Topic :: System :: Distributed Computing
+Requires-Dist: rdflib (>=4.2.2)
+Requires-Dist: Flask
+Requires-Dist: Flask-Cors
+Requires-Dist: sortedcontainers
+Requires-Dist: uritools
+Requires-Dist: pygit2 (>=1.0.0)
+
+
+Quit Store
+----------------
+
+Quads in Git - Distributed Version Control for RDF Knowledge Bases
+
+The Quit Store (stands for Quads in Git) provides a workspace for distributed
+collaborative Linked Data knowledge engineering. You are able to read and write
+RDF datasets (aka. multiple Named Graphs) through a standard SPARQL 1.1 Query
+and Update interface. To collaborate you can create multiple branches of the
+dataset and share your repository with your collaborators as you know it from
+Git.
+
+

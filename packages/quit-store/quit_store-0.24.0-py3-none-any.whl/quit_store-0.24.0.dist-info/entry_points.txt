@@ -1,0 +1,3 @@
+[console_scripts]
+quit-store = quit.run:main
+
