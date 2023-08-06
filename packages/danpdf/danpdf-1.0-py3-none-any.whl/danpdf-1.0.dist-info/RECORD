@@ -1,0 +1,8 @@
+danpdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+danpdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+danpdf/pdf2text.py,sha256=yXB2S3GiaVaYOwGnkolGIISVjQkD4eOO_1Z8TSDUUZA,37
+danpdf-1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+danpdf-1.0.dist-info/METADATA,sha256=9XhzTAA_b013fp9IapNoRQYwKhGtwA9ZXqJf3fmFEOw,195
+danpdf-1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+danpdf-1.0.dist-info/top_level.txt,sha256=7uNVoi8Bny2JPqmPLjwJOuFNyAKQCk_gfIWyisYECSA,7
+danpdf-1.0.dist-info/RECORD,,
