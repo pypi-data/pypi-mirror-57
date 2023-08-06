@@ -1,0 +1,7 @@
+rm dist/*
+python setup.py sdist bdist_wheel
+python -m twine upload dist/
+
+python setup.py sdist bdist_wheel
+python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+pip install --index-url https://test.pypi.org/simple/ --upgrade pyemddf
