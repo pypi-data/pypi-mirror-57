@@ -1,0 +1,10 @@
+Bio
+matplotlib
+networkx
+numpy
+gensim
+pyLDAvis
+pandas
+scipy
+seabornstatsmodels
+sympy
