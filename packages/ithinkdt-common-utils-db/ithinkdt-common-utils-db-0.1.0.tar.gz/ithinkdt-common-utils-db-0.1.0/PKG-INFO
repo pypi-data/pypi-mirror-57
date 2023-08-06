@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ithinkdt-common-utils-db
+Version: 0.1.0
+Summary: python utils of db connect
+Home-page: UNKNOWN
+Author: huiLi
+Author-email: lihui@ithinkdt.com
+License: MIT
+Description: python libs of connect database
+Platform: any
