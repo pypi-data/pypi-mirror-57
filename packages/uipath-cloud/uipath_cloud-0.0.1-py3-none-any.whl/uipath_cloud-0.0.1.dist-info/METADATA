@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: uipath-cloud
+Version: 0.0.1
+Summary: UiPath cloud SDK
+Home-page: https://github.com/AndreiBarbuOz/uipath-cloud-token
+Author: Andrei Barbu
+Author-email: and.barbu@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# UiPath Cloud SDK
+
+UiPath Cloud Orchestrator SDK 
+
+
+
