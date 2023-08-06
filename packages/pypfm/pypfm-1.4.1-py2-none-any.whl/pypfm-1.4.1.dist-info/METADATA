@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: pypfm
+Version: 1.4.1
+Summary: Python pfm files reader
+Home-page: https://github.com/Wats0ns/pypfm
+Author: Wats0ns
+Author-email: Wats0ns@github.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pyzfp
+
+UNKNOWN
+
+
