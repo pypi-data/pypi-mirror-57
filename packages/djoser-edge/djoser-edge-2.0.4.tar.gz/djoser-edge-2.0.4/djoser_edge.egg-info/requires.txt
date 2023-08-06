@@ -1,0 +1,2 @@
+django-templated-mail
+drf-yasg-edge>=2.0
