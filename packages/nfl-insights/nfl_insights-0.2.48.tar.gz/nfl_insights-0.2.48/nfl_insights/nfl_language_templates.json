@@ -1,0 +1,2405 @@
+{
+  "config": {
+    "interestThreshold": 1
+  },
+  "templates": {
+    "statements": {
+      "stat": {
+        "positive": [
+          "{The} {subject} {ObjectDescription} {beingForm} {rankText} with {X} {statnameText} {calculationText} {dimprep} {dimensionText}",
+          "{The} {subject} {ObjectDescription} {beingForm} {rankText} with {X} {dimensionText} {statnameText} {calculationText}",
+          "{The} {subject} {ObjectDescription} {beingForm} {rankText} when it comes to {dimensionText} {statnameText} {calculationText} with {X}",
+          "{The} {subject} {ObjectDescription} {actionText} {X} {dimensionText} {statnameText} {calculationText}. {pronoun} {rankText}"
+        ],
+        "negative": [
+          "{The} {subject} {ObjectDescription} {beingForm} {rankText} with {X} {statnameText} {adverbText} {calculationText} {dimprep} {dimensionText}",
+          "{The} {subject} {ObjectDescription} {beingForm} {rankText} with {X} {dimensionText} {statnameText} {adverbText} {calculationText}",
+          "{The} {subject} {ObjectDescription} {actionText} {X} {dimensionText} {statnameText} {calculationText}. {pronoun} {rankText}"
+        ]
+      },
+      "ratio": {
+        "positive": [
+          "{The} {subject} {ObjectDescription} {beingForm} {rankText} with {X} {statnameText} {calculationText} {dimprep} {dimensionText}",
+          "{The} {subject} {ObjectDescription} {beingForm} {rankText} with {X} {dimensionText} {statnameText} {calculationText}",
+          "{The} {subject} {ObjectDescription} {beingForm} {rankText} when it comes to {dimensionText} {statnameText} {calculationText} with {X}",
+          "{The} {subject} {ObjectDescription} {actionText} {X} {dimensionText} {statnameText} {calculationText}. {pronoun} {rankText}"
+        ],
+        "negative": [
+          "{The} {subject} {ObjectDescription} {beingForm} {rankText} with {X} {statnameText} {adverbText} {calculationText} {dimprep} {dimensionText}",
+          "{The} {subject} {ObjectDescription} {beingForm} {rankText} with {X} {dimensionText} {statnameText} {adverbText} {calculationText}",
+          "{The} {subject} {ObjectDescription} {actionText} {X} {dimensionText} {statnameText} {calculationText}. {pronoun} {rankText}"
+        ]
+      },
+      "pct": {
+        "positive": [
+          "{subject} {ObjectDescription} {actionText} {X} of {pronounPossessive} {statnameText} {dimprep} {dimensionText}. {pronoun} {rankText}",
+          "{subject} {ObjectDescription} {actionText} {X} of {pronounPossessive} {dimensionText} {statnameText} . {pronoun} {rankText}"
+        ],
+        "negative": [
+          "{subject} {ObjectDescription} {actionText} {X} of {pronounPossessive} {statnameText} {dimprep} {dimensionText}. {pronoun} {rankText}",
+          "{subject} {ObjectDescription} {actionText} {X} of {pronounPossessive} {dimensionText} {statnameText} . {pronoun} {rankText}"
+        ]
+      },
+      "rate": {
+        "positive": [
+          "{subject} {ObjectDescription} {actionText} {X} {statnameText} {dimprep} {dimensionText} {calculationText}. {pronoun} {rankText}"
+        ],
+        "negative": [
+          "{subject} {ObjectDescription} {actionText} {X} {statnameText} {dimprep} {dimensionText} {calculationText}. {pronoun} {rankText}"
+        ]
+      }
+    },
+    "questions": {
+      "option": "{subject}",
+      "answer": {
+        "team": [
+          "{sentence1} vs. {subject2} {ObjectDescription} who {beingForm} {rankText2} with {X2}",
+          "{sentence1} while {subject2} {ObjectDescription} {beingForm} ranked {rankText2} with {X2}"
+        ],
+        "player": [
+          "{sentence1} vs. {subject2} {ObjectDescription} who {actionText} {X2}",
+          "{sentence1} while {subject2} {ObjectDescription} {actionText} {X2}"
+        ]
+      },
+      "all": [
+        "Which {objectText} {actionText} {sentimentText} {statnameText} {calculationText} {dimprep} {dimensionText}?",
+        "Which {objectText} {actionText} {sentimentText} {dimensionText} {statnameText} {calculationText}?"
+      ],
+      "stat": {
+        "positive": [
+          "Which {objectText} {actionText} more {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ],
+        "negative": [
+          "Which {objectText} {actionText} less {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ]
+      },
+      "ratio": {
+        "positive": [
+          "Which {objectText} {actionText} more {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ],
+        "negative": [
+          "Which {objectText} {actionText} less {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ]
+      },
+      "rate": {
+        "positive": [
+          "Which {objectText} {actionText} higher {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ],
+        "negative": [
+          "Which {objectText} {actionText} lower {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ]
+      },
+      "pct": {
+        "positive": [
+          "Which {objectText} {actionText} higher {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ],
+        "negative": [
+          "Which {objectText} {actionText} lower {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ]
+      }
+    }
+  },
+  "entities": {
+    "entity": {
+      "team": {
+        "The": "The",
+        "beingForm": "are",
+        "pronoun": "They are",
+        "pronounPossessive": "their"
+      },
+      "player": {
+        "objectText": "player",
+        "The": "",
+        "beingForm": "is",
+        "pronoun": "He is",
+        "pronounPossessive": "his"
+      }
+    },
+    "seasons": {
+      "2019-regular": {
+        "texts": [
+          "this season"
+        ]
+      },
+      "other": [
+        "in {seasonName} season"
+      ]
+    },
+    "subjects": {},
+    "objectDefinitions": {
+      "offenseTeam": {
+        "descriptions": [
+          ""
+        ]
+      },
+      "defenseTeam": {
+        "descriptions": [
+          ""
+        ]
+      },
+      "kickingTeam": {
+        "descriptions": [
+          "special teams"
+        ]
+      },
+      "returnTeam": {
+        "descriptions": [
+          "speacial teams"
+        ]
+      },
+      "fumblingTeam": {
+        "descriptions": [
+          ""
+        ]
+      },
+      "forcedByTeam": {
+        "descriptions": [
+          ""
+        ]
+      },
+      "recoveringTeam": {
+        "descriptions": [
+          ""
+        ]
+      }
+    },
+    "calculations": {
+      "stat": {
+        "texts": [
+          "this season"
+        ],
+        "sentimantTexts": {
+          "positive": "more",
+          "negative": "less"
+        }
+      },
+      "ratio": {
+        "texts": [
+          "this season"
+        ],
+        "sentimantTexts": {
+          "positive": "more",
+          "negative": "less"
+        }
+      },
+      "rate": {
+        "texts": [
+          "this season"
+        ],
+        "sentimantTexts": {
+          "positive": "higher",
+          "negative": "lower"
+        }
+      },
+      "per_game": {
+        "texts": [
+          "per game"
+        ],
+        "sentimantTexts": {
+          "positive": "more",
+          "negative": "less"
+        },
+        "format": "{:.1f}",
+        "valueThreshold": 2
+      },
+      "per_drive": {
+        "texts": [
+          "per drive"
+        ],
+        "sentimantTexts": {
+          "positive": "more",
+          "negative": "less"
+        },
+        "format": "{:.1f}",
+        "valueThreshold": 1
+      },
+      "per_play": {
+        "texts": [
+          "per play"
+        ],
+        "sentimantTexts": {
+          "positive": "more",
+          "negative": "less"
+        },
+        "format": "{:.1f}",
+        "valueThreshold": 1
+      },
+      "pct": {
+        "texts": [
+          "percentage this season"
+        ],
+        "sentimantTexts": {
+          "positive": "higher",
+          "negative": "lower"
+        },
+        "format": "{:.1f}%"
+      }
+    },
+    "ranks": {
+      "1": [
+        "leading the league",
+        "atop the NFL",
+        "1st in the NFL",
+        "no. 1"
+      ],
+      "2": [
+        "second place",
+        "no. 2",
+        "2nd in the NFL",
+        "in the top 3"
+      ],
+      "3": [
+        "third place",
+        "no. 3",
+        "3rd in the NFL",
+        "in the top 3"
+      ],
+      "4": [
+        "fourth place",
+        "no. 4",
+        "4th in the NFL",
+        "in the top 5"
+      ],
+      "5": [
+        "fifth place",
+        "no. 5",
+        "5th in the NFL",
+        "in the top 5"
+      ],
+      "6": [
+        "6th in the NFL"
+      ],
+      "7": [
+        "7th in the NFL"
+      ],
+      "8": [
+        "8th in the NFL"
+      ],
+      "9": [
+        "9th in the NFL"
+      ],
+      "10": [
+        "10th in the NFL"
+      ],
+      "11": [
+        "11th in the NFL"
+      ],
+      "12": [
+        "12th in the NFL"
+      ],
+      "13": [
+        "13th in the NFL"
+      ],
+      "14": [
+        "14th in the NFL"
+      ],
+      "15": [
+        "15th in the NFL"
+      ],
+      "16": [
+        "16th in the NFL"
+      ],
+      "17": [
+        "17th in the NFL"
+      ],
+      "18": [
+        "18th in the NFL"
+      ],
+      "19": [
+        "19th in the NFL"
+      ],
+      "20": [
+        "20th in the NFL"
+      ],
+      "21": [
+        "21th in the NFL"
+      ],
+      "22": [
+        "22th in the NFL"
+      ],
+      "23": [
+        "23th in the NFL"
+      ],
+      "24": [
+        "24th in the NFL"
+      ],
+      "25": [
+        "25th in the NFL"
+      ],
+      "26": [
+        "26th in the NFL"
+      ],
+      "27": [
+        "27th in the NFL"
+      ],
+      "28": [
+        "in the bottom 5",
+        "only 28th",
+        "just 28th"
+      ],
+      "29": [
+        "in the bottom 5",
+        "only 29th",
+        "just 29th"
+      ],
+      "30": [
+        "in the bottom 5",
+        "only 30th",
+        "just 30th"
+      ],
+      "31": [
+        "in the bottom 5",
+        "only 31st",
+        "just 31st"
+      ],
+      "32": [
+        "trailing the league",
+        "rock bottom in the NFL",
+        "last in the NFL"
+      ],
+      "tophalf": [
+        "top half"
+      ],
+      "bottomhalf": [
+        "bottom half"
+      ]
+    },
+    "statnames": {
+      "offensePoints": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "points on offense"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "scores "
+          ],
+          "presActionPlural": [
+            "score "
+          ],
+          "pastAction": [
+            "scored"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "points on defense"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        }
+      },
+      "defensePoints": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "points on turnovers"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "points on defense"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "scores "
+          ],
+          "presActionPlural": [
+            "score "
+          ],
+          "pastAction": [
+            "scored"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "kickingPoints": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "points from kicking"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "scores "
+          ],
+          "presActionPlural": [
+            "score "
+          ],
+          "pastAction": [
+            "scored"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "returnPoints": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "points on returns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "points from returns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "scores "
+          ],
+          "presActionPlural": [
+            "score "
+          ],
+          "pastAction": [
+            "scored"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "passAttempts": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "passing attempts"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "makes"
+          ],
+          "presActionPlural": [
+            "make "
+          ],
+          "pastAction": [
+            "made"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "completions": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "pass completions"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "pass completions"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        }
+      },
+      "yardsPassed": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "passing yards",
+            "yards in the air"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "passing yards",
+            "yards in the air"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        }
+      },
+      "yardsAfterPass": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "yards after the catch"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "yards after the catch"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        }
+      },
+      "totalYardsGained": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "total yards"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "total yards"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        }
+      },
+      "rushes": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "rushes"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "yardsRushed": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "rushing yards",
+            "yards on the ground"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "rushing yards",
+            "yards on the ground"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        }
+      },
+      "passTD": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "passing touchdowns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "scores"
+          ],
+          "presActionPlural": [
+            "score"
+          ],
+          "pastAction": [
+            "scored"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "passing touchdowns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        }
+      },
+      "rushTD": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "rushing touchdowns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "scores"
+          ],
+          "presActionPlural": [
+            "score"
+          ],
+          "pastAction": [
+            "scored"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "rushing touchdowns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        }
+      },
+      "offenseTD": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "touchdowns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "offense",
+          "presActionSingle": [
+            "scores"
+          ],
+          "presActionPlural": [
+            "score"
+          ],
+          "pastAction": [
+            "scored"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "touchdowns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "defense",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        }
+      },
+      "defenseTD": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "touchdowns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "offense",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "touchdowns on defense"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "defense",
+          "presActionSingle": [
+            "scores"
+          ],
+          "presActionPlural": [
+            "score"
+          ],
+          "pastAction": [
+            "scored"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "returnTD": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "retrun touchdowns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "kicking team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "retrun touchdowns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "return team",
+          "presActionSingle": [
+            "scores"
+          ],
+          "presActionPlural": [
+            "score"
+          ],
+          "pastAction": [
+            "scored"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "fumbles": {
+        "fumblingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "fumbles forced by opponents"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "forces"
+          ],
+          "presActionPlural": [
+            "force"
+          ],
+          "pastAction": [
+            "forced"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "recoveringTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "fumbles"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "forces"
+          ],
+          "presActionPlural": [
+            "force"
+          ],
+          "pastAction": [
+            "forced"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "forcedByTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "fumbles"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "forces"
+          ],
+          "presActionPlural": [
+            "force"
+          ],
+          "pastAction": [
+            "forced"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "fumblesRecoveredOffense": {
+        "recoveringTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "fumble recoveries on offense"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "fumblesRecoveredDefense": {
+        "recoveringTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "fumble recoveries on defense"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "fumbledYardsDefense": {
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "fumble return yards"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "Interceptions": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "interceptions"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "throws"
+          ],
+          "presActionPlural": [
+            "throw"
+          ],
+          "pastAction": [
+            "threw"
+          ],
+          "adverbText": [
+            "thrown"
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "interceptions"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "catches"
+          ],
+          "presActionPlural": [
+            "catch"
+          ],
+          "pastAction": [
+            "caught"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "interceptionReturnYds": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "yards after interceptions"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "isAllowed": true,
+          "presActionSingle": [
+            "gives up"
+          ],
+          "presActionPlural": [
+            "give up"
+          ],
+          "pastAction": [
+            "gave up"
+          ],
+          "adverbText": [
+            "given up"
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "yards after interceptions"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "sacks": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "sacks"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "gives up"
+          ],
+          "presActionPlural": [
+            "give up"
+          ],
+          "pastAction": [
+            "gave up"
+          ],
+          "adverbText": [
+            "given up"
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "sacks"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "yardsSacked": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "total yards on sacks"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "loses"
+          ],
+          "presActionPlural": [
+            "lose"
+          ],
+          "pastAction": [
+            "lost"
+          ],
+          "adverbText": [
+            "lost"
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "total yards on sacks"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "gains "
+          ],
+          "presActionPlural": [
+            "gain"
+          ],
+          "pastAction": [
+            "gained "
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "rushFumbles": {
+        "fumblingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "rushing fumbles forced by opponents"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "forces"
+          ],
+          "presActionPlural": [
+            "force"
+          ],
+          "pastAction": [
+            "forced"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "forcedByTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "rushing fumbles"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "forces"
+          ],
+          "presActionPlural": [
+            "force"
+          ],
+          "pastAction": [
+            "forced"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "passFumbles": {
+        "fumblingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "fumbles forced by opponents after completion",
+            "fumbles forced by opponents on pass plays"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "forces"
+          ],
+          "presActionPlural": [
+            "force"
+          ],
+          "pastAction": [
+            "forced"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "forcedByTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "fumbles on pass plays"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "forces"
+          ],
+          "presActionPlural": [
+            "force"
+          ],
+          "pastAction": [
+            "forced"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "totalPlays": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "total plays from scrimage"
+          ],
+          "format": "{:.0f}",
+          "presActionSingle": [
+            "plays"
+          ],
+          "presActionPlural": [
+            "play"
+          ],
+          "pastAction": [
+            "played"
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "total plays from scrimage"
+          ],
+          "format": "{:.0f}",
+          "presActionSingle": [
+            "plays"
+          ],
+          "presActionPlural": [
+            "play"
+          ],
+          "pastAction": [
+            "played"
+          ]
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "punts": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "punts"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "kicked"
+          ],
+          "adverbText": [
+            "kicked"
+          ]
+        }
+      },
+      "yardsPunted": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "punt yards"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "yardsReturnedPunt": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "yards on punt returns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "isAllowed": true,
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "punt return yards"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "netYardsPunt": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "net yards on punts"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "yardsKicked": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "kickoff yardage"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "has"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "yardsReturnedKick": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "yards on kick-off returns"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "isAllowed": true,
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "conceded",
+            " allowed"
+          ],
+          "adverbText": [
+            "conceded",
+            " allowed"
+          ]
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "return yards"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "netYardsKick": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "net kickoff yards"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "fieldGoals": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "field goals"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "attempts"
+          ],
+          "presActionPlural": [
+            "attempt"
+          ],
+          "pastAction": [
+            "attempted"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "fieldGoalsMade": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "good field goals"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "makes"
+          ],
+          "presActionPlural": [
+            "make"
+          ],
+          "pastAction": [
+            "made"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "fieldGoalsMissed": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "field goals"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "misses"
+          ],
+          "presActionPlural": [
+            "miss"
+          ],
+          "pastAction": [
+            "missed"
+          ],
+          "adverbText": [
+            "missed"
+          ]
+        }
+      },
+      "fieldGoalsBlocked": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "blocked field goals"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "forces"
+          ],
+          "presActionPlural": [
+            "force"
+          ],
+          "pastAction": [
+            "forced"
+          ],
+          "adverbText": [
+            "forced"
+          ]
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "blocked field goals"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "fieldGoalYards": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "field goal yardage"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "extrapointAttempt": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "extra point attempts"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "extraPointMade": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "good extra points"
+          ],
+          "format": "{:.0f}",
+          "presActionSingle": [
+            "makes"
+          ],
+          "presActionPlural": [
+            "make"
+          ],
+          "pastAction": [
+            "made"
+          ]
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "extrapointMissed": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "extra points"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "misses"
+          ],
+          "presActionPlural": [
+            "miss"
+          ],
+          "pastAction": [
+            "missed"
+          ],
+          "adverbText": [
+            "missed"
+          ]
+        }
+      },
+      "extrapointBlocked": {
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "blocked extra points"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "kicks"
+          ],
+          "presActionPlural": [
+            "kick"
+          ],
+          "pastAction": [
+            "kicked"
+          ],
+          "adverbText": [
+            "kicked"
+          ]
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "blocked extra points"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "forces"
+          ],
+          "presActionPlural": [
+            "force"
+          ],
+          "pastAction": [
+            "forced"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "completionRate": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "Completion Rate"
+          ],
+          "format": "{:.0f}%",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "Completion Rate"
+          ],
+          "format": "{:.0f}%",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows"
+          ],
+          "presActionPlural": [
+            "allow"
+          ],
+          "pastAction": [
+            "allowed"
+          ],
+          "adverbText": [
+            "allowed"
+          ]
+        }
+      },
+      "yardsPerCatch": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "yards per completion"
+          ],
+          "format": "{:.1f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "achieves"
+          ],
+          "presActionPlural": [
+            "achieve"
+          ],
+          "pastAction": [
+            "achieved"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "statDescriptions": [
+            "yards per completion"
+          ],
+          "format": "{:.1f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "allows",
+            "concedes"
+          ],
+          "presActionPlural": [
+            "allow",
+            "concede"
+          ],
+          "pastAction": [
+            "allowed",
+            "conceded"
+          ],
+          "adverbText": [
+            "allowed",
+            "conceded"
+          ]
+        }
+      },
+      "rushpassRatio": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "Rush/Pass ratio"
+          ],
+          "format": "{:.0f}%",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "Rush/Pass ratio"
+          ],
+          "format": "{:.0f}%",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "passrushRatio": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "Pass/Rush ratio"
+          ],
+          "format": "{:.0f}%",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "Pass/Rush ratio"
+          ],
+          "format": "{:.0f}%",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "tackles": {
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "tackles"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      },
+      "assists": {
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "statDescriptions": [
+            "tackle assists"
+          ],
+          "format": "{:.0f}",
+          "ObjectText": "team",
+          "presActionSingle": [
+            "has"
+          ],
+          "presActionPlural": [
+            "have"
+          ],
+          "pastAction": [
+            "had"
+          ],
+          "adverbText": [
+            ""
+          ]
+        }
+      }
+    },
+    "dimensions": {
+      "all": {
+        "prep": "",
+        "text": ""
+      },
+      "1stDown": {
+        "prep": "on",
+        "text": "1st down"
+      },
+      "2ndDown": {
+        "prep": "on",
+        "text": "2nd down"
+      },
+      "3rdDown": {
+        "prep": "on",
+        "text": "3rd down"
+      },
+      "4thDown": {
+        "prep": "on",
+        "text": "4th down"
+      },
+      "redZone": {
+        "prep": "in the",
+        "text": "red zone"
+      },
+      "own10Yards": {
+        "prep": "from",
+        "text": "inside their own 10 yard line"
+      },
+      "oppTerritory": {
+        "prep": "in the",
+        "text": "oppoenent's territory"
+      },
+      "ownTerritory": {
+        "prep": "in their",
+        "text": "own territory"
+      },
+      "1stQ": {
+        "prep": "in the ",
+        "text": "first quarter"
+      },
+      "2ndQ": {
+        "prep": "in the ",
+        "text": "second quarter"
+      },
+      "3rdQ": {
+        "prep": "in the ",
+        "text": "third quarter"
+      },
+      "4thQ": {
+        "prep": "in the ",
+        "text": "fourth quarter"
+      },
+      "Overtime": {
+        "prep": "in",
+        "text": "overtime"
+      },
+      "1stH": {
+        "prep": "in the ",
+        "text": "first half"
+      },
+      "2ndH": {
+        "prep": "in the ",
+        "text": "second half"
+      },
+      "gameOnTheLine": {
+        "prep": "with the",
+        "text": "game on the line"
+      },
+      "CloseGame": {
+        "prep": "in a",
+        "text": "close game"
+      },
+      "trailing": {
+        "prep": "while",
+        "text": "trailing"
+      },
+      "leading": {
+        "prep": "while",
+        "text": "leading"
+      },
+      "conversion": {
+        "prep": "for a",
+        "text": "conversion"
+      },
+      "conversion1": {
+        "prep": "for a",
+        "text": "1st down conversion"
+      },
+      "conversion2": {
+        "prep": "for a",
+        "text": "2nd down conversion"
+      },
+      "conversion3": {
+        "prep": "for a",
+        "text": "3rd down conversion"
+      },
+      "conversion4": {
+        "prep": "for a",
+        "text": "4th down conversion"
+      },
+      "rightPass": {
+        "prep": "to the",
+        "text": "right side"
+      },
+      "leftPass": {
+        "prep": "to the",
+        "text": "left side"
+      },
+      "middlePass": {
+        "prep": "",
+        "text": "up the middle"
+      },
+      "deepPass": {
+        "prep": "throwing",
+        "text": "deep"
+      },
+      "shortPass": {
+        "prep": "throwing",
+        "text": "short"
+      },
+      "toWR": {
+        "prep": "to a",
+        "text": "wide receiver"
+      },
+      "toRB": {
+        "prep": "to a",
+        "text": "running back"
+      },
+      "toTE": {
+        "prep": "to a",
+        "text": "tight end"
+      },
+      "rightRush": {
+        "prep": "to the",
+        "text": "right"
+      },
+      "leftRush": {
+        "prep": "to the",
+        "text": "left"
+      },
+      "middleRush": {
+        "prep": "",
+        "text": "up the middle"
+      },
+      "tackleRush": {
+        "prep": "behind the",
+        "text": "tackles"
+      },
+      "guardRush": {
+        "prep": "behind",
+        "text": "the guards"
+      },
+      "wideRush": {
+        "prep": "",
+        "text": "wide"
+      },
+      "10Yards": {
+        "prep": "for more than",
+        "text": "10 yards"
+      },
+      "20Yards": {
+        "prep": "for more than",
+        "text": "20 yards"
+      },
+      "lostYards": {
+        "prep": "for a",
+        "text": "loss of yards"
+      },
+      "TD": {
+        "prep": "for a",
+        "text": "touchdown"
+      },
+      "fairCatch": {
+        "prep": "for a",
+        "text": "fair catch"
+      },
+      "touchBack": {
+        "prep": "for a",
+        "text": "touchback"
+      },
+      "returned": {
+        "prep": "for a",
+        "text": "return"
+      }
+    },
+    "timeframes": {},
+    "comparisons": {
+      "average": [
+        "This is {diff} {position} than the average in the league."
+      ],
+      "leader": [
+        "This is {diff} behind the league leader {compentity}."
+      ],
+      "trailer": [
+        "{pronoun} {diff} better than {compentity} who are in last place."
+      ],
+      "next": [
+        "They have {diff} {position} {compentity} who are {comprank}."
+      ],
+      "entity": [
+        "{pronoun} {diff} {position} {compentity} who are {rankText}."
+      ],
+      "constant": [
+        "{pronoun} the {rankText} to have passed the {constant} mark."
+      ]
+    }
+  }
+}
