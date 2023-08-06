@@ -1,0 +1,9 @@
+README.md
+setup.py
+Urlfiddler/__init__.py
+Urlfiddler/ex.py
+Urlfiddler/urlfiddler.py
+urlfiddler.egg-info/PKG-INFO
+urlfiddler.egg-info/SOURCES.txt
+urlfiddler.egg-info/dependency_links.txt
+urlfiddler.egg-info/top_level.txt
