@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: essay_eval
+Version: 0.0.1
+Summary: Evaluation of essays using NLP
+Home-page: https://github.com/SidharthMacherla/essay_eval
+Author: Sidharth Macherla
+Author-email: msidharthrasik@gmail.com
+License: UNKNOWN
+Description: # essay_eval
+        
+        Evaluation of essays using NLP
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

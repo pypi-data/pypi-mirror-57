@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+inlcude setup.py
+include essay_eval/data/mrc_psycholing.pkl
