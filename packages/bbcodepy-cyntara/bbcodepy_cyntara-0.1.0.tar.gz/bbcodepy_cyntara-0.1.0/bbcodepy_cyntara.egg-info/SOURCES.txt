@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+bbcodepy/__init__.py
+bbcodepy/parser.py
+bbcodepy/renderer.py
+bbcodepy/tags.py
+bbcodepy_cyntara.egg-info/PKG-INFO
+bbcodepy_cyntara.egg-info/SOURCES.txt
+bbcodepy_cyntara.egg-info/dependency_links.txt
+bbcodepy_cyntara.egg-info/top_level.txt
