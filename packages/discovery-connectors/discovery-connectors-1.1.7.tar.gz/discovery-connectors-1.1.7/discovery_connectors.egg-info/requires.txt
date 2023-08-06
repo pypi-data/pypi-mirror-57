@@ -1,0 +1,6 @@
+discovery-foundation
+pandas>0.25
+pymongo
+boto3
+pyyaml
+pyhive
