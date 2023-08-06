@@ -1,0 +1,7 @@
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include HISTORY.rst
+include LICENSE
+include README.md
+recursive-include django_grpc *py
+recursive-include django_grpc_testtools *py
