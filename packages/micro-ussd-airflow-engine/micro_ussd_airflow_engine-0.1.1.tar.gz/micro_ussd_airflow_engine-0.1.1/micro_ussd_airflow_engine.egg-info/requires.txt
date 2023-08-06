@@ -1,0 +1,12 @@
+PyConfigure>=0.5.9
+PyStaticConfiguration>=0.10.2
+PyYaml>=5.1.2
+attrs>=18.2.0
+celery>=4.0.0rc3
+django-annoying>=0.10.3
+django>=2.2.6
+djangorestframework>=3.10.2
+jinja2>=2.8
+requests>=2.20.0
+simplekv
+structlog>=16.1.0
