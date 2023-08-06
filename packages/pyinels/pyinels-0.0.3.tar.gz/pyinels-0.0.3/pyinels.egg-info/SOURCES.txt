@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+inels3/__init__.py
+inels3/const.py
+inels3/device.py
+inels3/server.py
+pyinels.egg-info/PKG-INFO
+pyinels.egg-info/SOURCES.txt
+pyinels.egg-info/dependency_links.txt
+pyinels.egg-info/not-zip-safe
+pyinels.egg-info/top_level.txt
