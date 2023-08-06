@@ -1,0 +1,16 @@
+timeseriesql/__init__.py,sha256=ykqVHge2EmIDTMOd96h2DyGHaM_gpp_wKz3K1MlZZic,64
+timeseriesql/ast.py,sha256=k7Nv7b_AMWx52zWWJWpXO867FN30Sz1-52cTZ7x4Md0,9219
+timeseriesql/decompiler.py,sha256=y7F91YCWYf6TqF_bRDl64WN4NmEPfcuyD9zisT6TX-Q,7916
+timeseriesql/np_array.py,sha256=ARWS6h8AyOnQNnXFjKx1Bd_NaU10KmTBJopaptedpI0,908
+timeseriesql/query.py,sha256=3sv8qmLwbJ3NAUEZw_4XnmretyIBmLFlfAGsggcOd4E,6078
+timeseriesql/time.py,sha256=4pvw-HYDFTiD5wP409y6O7b0YbIdLK6440EFq9JiGhg,1289
+timeseriesql/time_chunk.py,sha256=DGWTkI1PvfBoIub44oW6fWQEtRMYV5hszZCXStqlnVM,485
+timeseriesql/timeseries.py,sha256=pV0XvBFv4ikcpk4VKwF2WC3m5f1laBuyUdQDHPtckaA,25454
+timeseriesql/timeseries_collection.py,sha256=lp8jLPYqXw-3NpYLqJ2Ce60H6AlHLVsEf71EWiVwj9I,3333
+timeseriesql/backends/ao_backend.py,sha256=5EJ3uwPazEntpqA0VDB2YTrk-GgUW6aeT8xRHG9VxHQ,8759
+timeseriesql/backends/csv_backend.py,sha256=Uhu0RniaKUL-Fl6ygo2BsSbGbCLQrD-t120TRdj6gmE,4281
+timeseriesql/data/README.rst,sha256=vfzYkgExnGrvKzDhTec50r-A5--k_jdxZR-s00Tgx4E,246
+timeseriesql-0.1.3.dist-info/METADATA,sha256=6n7vm1fKTztgCYAvHgBszrj3ZCGgqz6QT3Ye7InaVEA,11682
+timeseriesql-0.1.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+timeseriesql-0.1.3.dist-info/top_level.txt,sha256=IxfYaY9QwZkY7b3M-Mku33cIomfyoO9xHcyaiE3IOuo,13
+timeseriesql-0.1.3.dist-info/RECORD,,
