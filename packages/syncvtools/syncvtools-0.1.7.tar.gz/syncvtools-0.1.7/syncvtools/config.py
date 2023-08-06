@@ -1,0 +1,1 @@
+ANNOTATION_DIR = '/home/data-store/synapse-cloudfactory'
