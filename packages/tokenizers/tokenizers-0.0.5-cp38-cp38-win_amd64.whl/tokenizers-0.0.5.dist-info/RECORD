@@ -1,0 +1,6 @@
+tokenizers/__init__.py,sha256=QQWc4cX0Es2zlbeIYmmfgIOLsdJ_L50-9MC7qLR7TiI,104
+tokenizers/tokenizers.cp38-win_amd64.pyd,sha256=R8TPJx2bJ0Io3vsSoGTpXqnJ6E6UlhKAviOj4_rdaMU,2152448
+tokenizers-0.0.5.dist-info/METADATA,sha256=uJTHUG2NcXPn79lvRsWfLh6C5SoB7sanndVB8rdXy6I,2889
+tokenizers-0.0.5.dist-info/WHEEL,sha256=z-ezgbNu1Y2ixypRrBmFDHP9mmiBhiGywozViqVfAIc,105
+tokenizers-0.0.5.dist-info/top_level.txt,sha256=JcOIHPbSqrQvqcDyFOnNNcee6wJlpDZvyk-BSCeX4QA,11
+tokenizers-0.0.5.dist-info/RECORD,,
