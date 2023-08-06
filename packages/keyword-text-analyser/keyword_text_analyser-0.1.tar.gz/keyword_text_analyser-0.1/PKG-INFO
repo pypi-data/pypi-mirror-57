@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: keyword_text_analyser
+Version: 0.1
+Summary: A Library which extracts keywords from a given string using the TextRank algorithm which is based on the PageRank algorithm
+Home-page: https://github.com/AlenKAOs
+Author: Alena Osipova
+Author-email: x19114877@student.ncirl.ie
+License: MIT
+Download-URL: https://github.com/AlenKAOs/keyword_text_analyser/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: PageRank,TextRank,Keywords,Extractor
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
