@@ -1,0 +1,17 @@
+README.md
+setup.py
+ADPYNE/AutoDiff.py
+ADPYNE/Dual.py
+ADPYNE/Hessian.py
+ADPYNE/__init__.py
+ADPYNE/elemFunctions.py
+ADPYNE/tests/AutoDiff_test.py
+ADPYNE/tests/Dual_test.py
+ADPYNE/tests/__init__.py
+ADPYNE/tests/elemFunctions_Dual_test.py
+ADPYNE/tests/elemFunctions_test.py
+ADPYNE_207.egg-info/PKG-INFO
+ADPYNE_207.egg-info/SOURCES.txt
+ADPYNE_207.egg-info/dependency_links.txt
+ADPYNE_207.egg-info/requires.txt
+ADPYNE_207.egg-info/top_level.txt
