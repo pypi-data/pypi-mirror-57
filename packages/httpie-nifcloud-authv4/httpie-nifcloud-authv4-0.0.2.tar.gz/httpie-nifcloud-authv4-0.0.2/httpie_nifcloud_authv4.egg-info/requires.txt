@@ -1,0 +1,2 @@
+httpie>=1.0.3
+aws-requests-auth>=0.4.2

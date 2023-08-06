@@ -1,0 +1,11 @@
+README.md
+httpie_nifcloud_authv4.py
+setup.cfg
+setup.py
+httpie_nifcloud_authv4.egg-info/PKG-INFO
+httpie_nifcloud_authv4.egg-info/SOURCES.txt
+httpie_nifcloud_authv4.egg-info/dependency_links.txt
+httpie_nifcloud_authv4.egg-info/entry_points.txt
+httpie_nifcloud_authv4.egg-info/not-zip-safe
+httpie_nifcloud_authv4.egg-info/requires.txt
+httpie_nifcloud_authv4.egg-info/top_level.txt
