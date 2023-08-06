@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: kaga-logger-kagamino
+Version: 0.1.1
+Summary: A simple colored logger for python projects
+Home-page: https://github.com/martinlehoux/kaga-logger
+Author: Martin Kagamino Lehoux
+Author-email: martin@lehoux.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Use kaga-logger
+
+```python
+from kaga_logger import Logger
+logger = Logger(DEBUG)
+
+logger.warn("a warning message")
+```
+
