@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: pysm3
+Version: 3.1.dev234
+Summary: Python Sky Model for Microwave and Submm experiments
+Home-page: https://github.com/healpy/pysm
+Author: Ben Thorne, David Alonso, Sigurd Naess, Jo Dunkley, Andrea Zonca
+Author-email: 
+License: BSD 3-Clause
+Description: [![Build Status](https://travis-ci.org/healpy/pysm.svg?branch=master)](https://travis-ci.org/healpy/pysm)
+        [![Documentation Status](https://readthedocs.org/projects/pysm3/badge/?version=latest)](https://pysm3.readthedocs.io/en/latest/?badge=latest)
+        
+        # PySM 3
+        
+        PySM generates full-sky simulations of Galactic emissions in intensity and polarization relevant to CMB experiments.
+        It is a large refactor of [PySM 2](https://github.com/bthorne93/PySM_public) focused on reducing memory usage,
+        improving performance and run in parallel with MPI.
+        
+        See the documentation at <https://pysm3.readthedocs.io>
+        
+Platform: UNKNOWN
+Requires-Python: >=3.5
