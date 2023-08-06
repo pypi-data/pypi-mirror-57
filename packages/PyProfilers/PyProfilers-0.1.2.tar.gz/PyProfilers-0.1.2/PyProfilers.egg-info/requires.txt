@@ -1,0 +1,3 @@
+cython
+line_profiler@ git+https://github.com/andreasfelix/line_profiler@pyproject
+yappi
