@@ -1,0 +1,5 @@
+prettytable
+requests
+setuptools
+six
+urllib3
