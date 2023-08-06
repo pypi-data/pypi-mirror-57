@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: wasabi2d
+Version: 1.3.0
+Summary: A convenient 2D OpenGL games framework
+Home-page: https://github.com/lordmauve/wasabi2d
+Author: Daniel Pope
+Author-email: mauve@mauveweb.co.uk
+License: UNKNOWN
+Description: # ![Wasabi 2D](https://raw.githubusercontent.com/lordmauve/wasabi2d/master/docs/_static/wasabi2d.png)
+        
+        ![PyPI](https://img.shields.io/pypi/v/wasabi2d) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/wasabi2d) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/wasabi2d) 
+        
+        A fast, cutting-edge 2D game engine for Python.
+        
+        Current features include:
+        
+        * Rotate, scale, move and colorize all primitives:
+          * Sprites
+          * Text labels
+          * Stroked and solid-filled polygons, circles, stars, and rectangles
+        * A [coroutine programming model]() for easy animated effects.
+        * [Particle systems](https://wasabi2d.readthedocs.io/en/latest/coros.html)
+        * [Built-in post-processing effects](https://wasabi2d.readthedocs.io/en/latest/effects.html) using GLSL shaders.
+        * Sound, music and tone generation.
+        * Event driven input handling for keyboard and mouse.
+        * Animation/tweening.
+        * "Local storage" to easily save state.
+        
+        Wasabi2D is based on [moderngl], with [pygame 2.0] for some supporting functions, and supporting APIs ported from [Pygame Zero](https://github.com/lordmauve/pgzero).
+        
+        ![Screenshot as of Wasabi2d 1.0.0](https://github.com/lordmauve/wasabi2d/raw/master/docs/2019-09-21-screenshot.png)
+        
+        
+        [moderngl]: https://github.com/moderngl/moderngl
+        [pygame 2.0]: https://www.pygame.org/news
+        
+        
+        ## Installation
+        
+        
+        Use pip to install Wasabi2d from PyPI:
+        
+        ```
+        pip install wasabi2d
+        ```
+        
+        Please make sure your `requirements.txt` pins a major version, as Wasabi2D may
+        continue to make breaking API and graphical changes in major versions.
+        
+        
+        ## Documentation
+        
+        Documentation is available at https://wasabi2d.readthedocs.io/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Education
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
