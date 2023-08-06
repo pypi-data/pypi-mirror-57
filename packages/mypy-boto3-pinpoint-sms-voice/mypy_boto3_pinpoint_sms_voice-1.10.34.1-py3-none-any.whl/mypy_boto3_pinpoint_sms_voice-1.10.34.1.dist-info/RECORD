@@ -1,0 +1,10 @@
+mypy_boto3_pinpoint_sms_voice/__init__.py,sha256=njKuw9F5plckt5oRffrPBA57TDBnpfp9F2WmQ-cCV7o,129
+mypy_boto3_pinpoint_sms_voice/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_pinpoint_sms_voice/client.py,sha256=nXkAw56oal26Um3Bm90FDIITwonBC-EVzUVznjPgWIA,5500
+mypy_boto3_pinpoint_sms_voice/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_pinpoint_sms_voice/type_defs.py,sha256=WS2FpCtdy8E1OlCCGg-6B5uC-zc2jUPfD7roXv0kMEg,2985
+mypy_boto3_pinpoint_sms_voice/version.py,sha256=ymCrbZY71sTQrCS-9U028JQmpplk8ZUagkBRKbAuHZo,57
+mypy_boto3_pinpoint_sms_voice-1.10.34.1.dist-info/METADATA,sha256=XpeL599yzZ6SwtM_VthNCVGzHMstAkC6wSvsKspu1Lw,1233
+mypy_boto3_pinpoint_sms_voice-1.10.34.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_pinpoint_sms_voice-1.10.34.1.dist-info/top_level.txt,sha256=wJNoUxRqkG1xE_LpBIPmNJPHLbqzyIfe8U_fHSY756s,30
+mypy_boto3_pinpoint_sms_voice-1.10.34.1.dist-info/RECORD,,
