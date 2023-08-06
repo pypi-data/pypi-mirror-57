@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: do-py
+Version: 0.0.2
+Summary: Standardized data structures for Python.
+Home-page: https://github.com/do-py-together/do-py
+Author: Tim Davis
+Author-email: author@example.com
+License: UNKNOWN
+Keywords: development,OO
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Description-Content-Type: text/markdown
+
+# do-py
+A data-validation and standardization library wrapping Python dictionaries.
+
+## Quick Start
+
+```python
+from do import DataObject
+
+class A(DataObject):
+    _restrictions = {
+        'x': [int],
+        'y': ([int], None),
+        'z': [0, 1]
+        }
+```
+
+
+---
+
+## Development
+Install do-py in development mode: `python setup.py develop`  
+Test: `pipenv run pytest --cov ./do/ --cov-report html ./tests/ `
+
+
