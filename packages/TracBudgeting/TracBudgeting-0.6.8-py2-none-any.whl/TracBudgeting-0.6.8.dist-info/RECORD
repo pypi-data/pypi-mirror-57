@@ -1,0 +1,11 @@
+ticketbudgeting/__init__.py,sha256=Rj0Wy2q1RODTttrGVIjUHN-frNh1M39FykSfn_K7y4A,89
+ticketbudgeting/ticketbudgeting.py,sha256=7hIXtTn7O3ZtC1fv6UErAC3nx6gEWbhP3tQN53tFn6k,32549
+ticketbudgeting/htdocs/js/budgeting.js,sha256=8ElNjP5aJhY_xR-9o7F6_p8trsg3mWF2aAptWv7knEM,5597
+ticketbudgeting/locale/messages.pot,sha256=nNu6gZVZNObGQ0_QWHH3DI_KUGut52HCtMbHBGYtCCE,1917
+ticketbudgeting/locale/de_DE/LC_MESSAGES/ticketbudgeting.po,sha256=hOpTDrrxCwliQrtnuj2noyGq7JhgEcbOAUUUQ38tqZc,2190
+TracBudgeting-0.6.8.dist-info/COPYING.txt,sha256=sIvknV9HsGx1c3mH6fafag75GFP5dXnVy1eUnOwDZiY,1437
+TracBudgeting-0.6.8.dist-info/METADATA,sha256=jAhrb8S8HzvBdxJ9gUqPboZjOv4J-DT-1M6BxdeN5I0,370
+TracBudgeting-0.6.8.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+TracBudgeting-0.6.8.dist-info/entry_points.txt,sha256=ZtjGYtmqzv-Cve02j-vzukQtHh2T8EnzrcRifHfKJPw,70
+TracBudgeting-0.6.8.dist-info/top_level.txt,sha256=gSJa7KAL43HSEBVED2Q45PdRZCPP1MuxN3suNWdcmB4,16
+TracBudgeting-0.6.8.dist-info/RECORD,,
