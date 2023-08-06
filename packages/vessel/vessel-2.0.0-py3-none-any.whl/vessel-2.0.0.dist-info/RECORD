@@ -1,0 +1,13 @@
+vessel/__init__.py,sha256=EMHWxv7WZkRTwbcAkcQX1R9v1Qc-zQ5eGcZ34hZ6r34,461
+vessel/access.py,sha256=_mYDrqjPl_Wk60c8zXWtzhz03KXK2Ld_nzoj3qvp3Pc,938
+vessel/cache.py,sha256=sXXu7V5JjSJYWoi4Gj2KIFIYs1aLjYQHLz6Mh7JE0Vg,7092
+vessel/helpers.py,sha256=s5S7062ye4xtBbV9uPNTtuUZ2z2jFpyqOW2qyZbE8mM,873
+vessel/tools.py,sha256=l1G0tzhBK8p83k8g7pTVbOi1-T69XtktHyFDg3vLXa0,2196
+vessel/types.py,sha256=6NJyfbC4LD3WNr0MBqgubuWKmEn5EKk3_hw_yFYoO-4,3986
+vessel/updates.py,sha256=0nS9rwG8XfNr_7tpGHVf8P5ldU5wMHvi1JNIiis5GhE,3296
+vessel/utils.py,sha256=eND7ELqGP94_9i4dS3KKyc6y2U2IoOjmbDRl0Y6IlS0,4254
+vessel-2.0.0.dist-info/LICENCE,sha256=nc2u5Ll9ZSVE7wcwVOenq4RyQTkTwMSbhdAZqKIEkto,1078
+vessel-2.0.0.dist-info/METADATA,sha256=Q6btRyIRVTfq7Zc0narxhBrsG4EHzosSXKOaZ6o_f_U,1324
+vessel-2.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+vessel-2.0.0.dist-info/top_level.txt,sha256=Cvx4V2hEN2QFRRyhTlky2cbVpw2D2l6WS2Zp1CkYWWY,7
+vessel-2.0.0.dist-info/RECORD,,
