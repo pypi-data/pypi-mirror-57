@@ -1,0 +1,7 @@
+README.md
+setup.py
+krishtradinga/__init__.py
+krishtradinga.egg-info/PKG-INFO
+krishtradinga.egg-info/SOURCES.txt
+krishtradinga.egg-info/dependency_links.txt
+krishtradinga.egg-info/top_level.txt
