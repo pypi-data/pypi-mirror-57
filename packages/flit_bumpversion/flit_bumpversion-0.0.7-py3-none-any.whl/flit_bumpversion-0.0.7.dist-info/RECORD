@@ -1,0 +1,8 @@
+flit_bumpversion/__init__.py,sha256=JLrHMNTvvDsZXEovA266eipYG70fuKTPPm-nJzZ94Zg,53
+flit_bumpversion/__main__.py,sha256=6RzJqXOHbiXFxT1FPQGR6Eku4Lv68wBd_fXW8A8mGS0,1891
+flit_bumpversion/utils.py,sha256=iAzCqbiCOmqjy4KJV_K3YSiZzEY496BK750ZysWROZg,1198
+flit_bumpversion-0.0.7.dist-info/entry_points.txt,sha256=XXZSVTZ-X6s-VMMmrgwYnTPKM0CkWnsqBPdhgCpoUdI,66
+flit_bumpversion-0.0.7.dist-info/LICENSE,sha256=US8iR2FakQBRla9kJfZNi6dZmETwSJ-uGZORSfdMJ_U,1070
+flit_bumpversion-0.0.7.dist-info/WHEEL,sha256=bH-u_BY_RnUj9Z3s1FehhR3OifYy3H_vQHEtDkXLu84,81
+flit_bumpversion-0.0.7.dist-info/METADATA,sha256=JpTZnCQ6RTfu1NO0F4Xh40HKe2L4GO1GNTTlEy8JNCw,260
+flit_bumpversion-0.0.7.dist-info/RECORD,,
