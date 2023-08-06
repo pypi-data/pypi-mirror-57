@@ -1,0 +1,13 @@
+httpx_oauth/__init__.py,sha256=T_tlNIYk4BM9jXhiKmLDjrsJ-rqhSpNbnI6-pC4LFgU,60
+httpx_oauth/oauth2.py,sha256=iJFmk4aTxE6jsEzrVx7ImCy2Qx4p6M3ToOCgmCFdRjc,4378
+httpx_oauth/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httpx_oauth/clients/facebook.py,sha256=CtaTCA4tyQSlM3ooXWrzE_lV5I_v_FKIUw1W7OkAMB4,1192
+httpx_oauth/clients/github.py,sha256=bDCNzW9h8JANWvkd5g9ajq5_GOn3yoQLSYH-blduYzs,557
+httpx_oauth/clients/google.py,sha256=tiNs65Kmv2-vMuyOOEl0jRiTgOfwHeQnEAMhoe_YfS0,856
+httpx_oauth/clients/linkedin.py,sha256=a_b_rBRJ4W_n5NplztMz3kLAc6FNwf_B74hl3Pl-wZk,516
+httpx_oauth/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+httpx_oauth/integrations/fastapi.py,sha256=jG7SwtRim8GTbI70Zw4tLoccr8TPHdS1LAdui8PeRUg,837
+httpx_oauth-0.1.0.dist-info/LICENSE,sha256=1Ab_EseBiCgQhVU0sUqAUEI8R-6XUparTcolGpPJU9k,1074
+httpx_oauth-0.1.0.dist-info/WHEEL,sha256=bH-u_BY_RnUj9Z3s1FehhR3OifYy3H_vQHEtDkXLu84,81
+httpx_oauth-0.1.0.dist-info/METADATA,sha256=CRaOl2wstVINGylsdiD6-sQII9mE10XJ7Yot41CS9AI,2139
+httpx_oauth-0.1.0.dist-info/RECORD,,
