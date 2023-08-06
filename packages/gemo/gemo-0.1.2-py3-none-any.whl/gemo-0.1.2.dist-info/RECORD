@@ -1,0 +1,14 @@
+gemo/__init__.py,sha256=EPzY-ruHhwsH5rufZiNx5cxXuYgkK77J8Td0yHn1PUU,97
+gemo/_version.py,sha256=mdp2CftfqYbdKtP-eWv1z7rAUycYv6X1ntXSMUf8Kss,22
+gemo/camera.py,sha256=LYs0G9MYab17UGcAzMq9PyRlDTLmFmKVmNNF5-yRFEM,12344
+gemo/gemo.py,sha256=qtBRFRDxGOvnZoABaVEBJoOki9wRTKStP588F7cEz24,24773
+gemo/geometries.py,sha256=8objUqYSXhIJoNxCqnkwhcbDq93-hz8o9A4pYYsLHBo,6037
+gemo/utils.py,sha256=-Rx0G-nzro8lMiuSENwKQRnP73xZgiW2qwcZM0htMok,4030
+gemo/backends/__init__.py,sha256=dKdzgqEmcGSYr89lQj-M5f7U7pYhDR9_5VJ1zgkrH7g,399
+gemo/backends/matplotlib.py,sha256=gHeyQoq0qeZHY9NEoaTtKL8wpJ1ZkZDZlSl_MXqs53U,71
+gemo/backends/plotly.py,sha256=eN7tHuKT_7OPoMynqpt2teasr_88mDpnEtxdgig-O6Q,3250
+gemo-0.1.2.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+gemo-0.1.2.dist-info/METADATA,sha256=CY_nttJAVWKmaWnys-8RowsnLFHVYZfudROPnO5Npmg,1191
+gemo-0.1.2.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+gemo-0.1.2.dist-info/top_level.txt,sha256=Ere5NOuOnf0nWKp0ZFQJdGHGRgYiUGes3HoOIq0SVnk,5
+gemo-0.1.2.dist-info/RECORD,,
