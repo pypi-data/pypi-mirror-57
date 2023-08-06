@@ -1,0 +1,2 @@
+import sys; exec('try:\n    import blursed\nexcept ImportError:\n    pass\nelse:\n    blursed.register()\n')
+
