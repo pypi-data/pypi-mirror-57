@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tape_proteins.egg-info/PKG-INFO
+tape_proteins.egg-info/SOURCES.txt
+tape_proteins.egg-info/dependency_links.txt
+tape_proteins.egg-info/entry_points.txt
+tape_proteins.egg-info/requires.txt
+tape_proteins.egg-info/top_level.txt
