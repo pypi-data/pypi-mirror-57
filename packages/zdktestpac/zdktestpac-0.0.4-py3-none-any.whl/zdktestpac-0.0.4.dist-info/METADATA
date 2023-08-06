@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zdktestpac
+Version: 0.0.4
+Summary: A test package for GBM data analysis
+Home-page: https://github.com/ZDKplayer/test
+Author: ZDK
+Author-email: zhoudk@ihep.ac.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.x
+Description-Content-Type: text/markdown
+
+# zdktestpac
+a repository that test my code.
+
+
