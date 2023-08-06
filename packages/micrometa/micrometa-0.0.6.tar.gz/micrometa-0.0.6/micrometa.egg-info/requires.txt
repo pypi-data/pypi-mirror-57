@@ -1,0 +1,8 @@
+configparser
+natsort
+pyyaml
+
+[dev]
+black
+pytest-cov
+pytest
