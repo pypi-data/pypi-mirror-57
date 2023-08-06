@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: song-toollib2
+Version: 1.0.0
+Summary: this is a xxx lib
+Home-page: http://www.baidu.com
+Author: songzixue
+Author-email: 10806186@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+=====
+NoahV
+=====
+
+提供的功
+========
+
+能覆盖了从开
+**************
+
+
+发到线上运行各
+
+开发阶段提供
+了组件、模版、研发工具，最佳实践、解决方案，从多个维度帮助开发者提升开发效率，简化开发过程。
+
+构建和部署阶段提供了规范的打包构建方案，按需加载的功能、部署实践指南。
+
+线上运行阶段集成了百度统计等统计工具对用户情况进行统计分析。
+
