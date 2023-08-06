@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+stancmd/__init__.py
+stancmd/stan.py
+stancmd.egg-info/PKG-INFO
+stancmd.egg-info/SOURCES.txt
+stancmd.egg-info/dependency_links.txt
+stancmd.egg-info/entry_points.txt
+stancmd.egg-info/top_level.txt
