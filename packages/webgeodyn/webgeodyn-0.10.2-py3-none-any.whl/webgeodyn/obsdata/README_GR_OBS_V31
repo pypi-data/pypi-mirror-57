@@ -1,0 +1,39 @@
+README on GO dataset V31
+
+Chris Finlay 21.08.2019
+
+- Derived from BGS checked Hourly means 1997 to July 2019 taken from  
+
+ftp://ftp.nerc-murchison.ac.uk/geomag/Swarm/AUX_OBS/hour/
+
+Robust 4 monthly means from HMV, after subtracting CM4 SQ preds and CHAOS-6-x9 ext model, with input from RC index RC_1997-2019_August_v3.dat.  See Olsen et al. (2014) for details. 
+
+Note robust means are computed in 4 month bins, not 1 month bins.
+
+-----
+In folder 4monthlyRM_V31:
+-----
+
+Basic file 4 monthly robust means file: GR_OBS_RMM_MF_less_bias_V31_4month.10
+
+This is with the estimated crustal bias removed, calculated by median residual from CHAOS for each component at each obs.
+
+Associated diagonal covariance matrix.  As for previous version, listed in order B_r for all observations, then B_theta, then B_phi, derived from covariances from detrended residuals from CHAOS core field, are found in
+
+GR_OBS_RMM_MF_COV_V31_4month.10
+
+SV estimates from annual diffs of 4 monthly RMM. Last SV data with only a small number of observatories available is 2019.00.  These are found in:
+
+GR_OBS_RMM_SV_V31_4month.10
+
+With covariances computed in a similar way and provided in
+
+GR_OBS_RMM_SV_COV_V31_4month.10
+
+-----
+In directory 4monthlyRM_nomag_V31:
+-----
+Same but without the magnetospheric field correction from CHAOS applied
+
+
+
