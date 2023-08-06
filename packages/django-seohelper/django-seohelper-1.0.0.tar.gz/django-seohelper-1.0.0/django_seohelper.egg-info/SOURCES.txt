@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_seohelper.egg-info/PKG-INFO
+django_seohelper.egg-info/SOURCES.txt
+django_seohelper.egg-info/dependency_links.txt
+django_seohelper.egg-info/not-zip-safe
+django_seohelper.egg-info/top_level.txt
+seohelper/__init__.py
+seohelper/admin.py
+seohelper/models.py
+seohelper/fixtures/seohelper_testdata.json
