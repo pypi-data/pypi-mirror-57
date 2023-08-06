@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: airQ
+Version: 0.3.0
+Summary: airQ - Air Quality monitoring data ( for India ) collection system, written in Python3.
+Home-page: https://github.com/itzmeanjan/airQ
+Author: Anjan Roy
+Author-email: anjanroy@yandex.com
