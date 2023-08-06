@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: odoo12-addon-theme_light
+Version: 12.0.1.0.0.99.dev1
+Summary: Theme light
+Home-page: https://coopiteasy.be
+Author: Houssine BAKKALI
+License: UNKNOWN
+Description: extract of the theme zen
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Python: >=3.5
