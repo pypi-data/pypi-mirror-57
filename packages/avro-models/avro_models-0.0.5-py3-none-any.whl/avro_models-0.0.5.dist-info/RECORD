@@ -1,0 +1,8 @@
+avro_models/__init__.py,sha256=KCZ2X43weDstSH0ZGOFtDf6xzZP27FS0IccVVJC7TgI,100
+avro_models/core.py,sha256=VKOIyu6iqfRE2uoYisLAkUY5udMMwYECFmrqWIlRcyo,2069
+avro_models/models.py,sha256=iISucWRO205XNQOnNhGbEuJwvlwnnf0goKlTR5Rn1Uw,5657
+avro_models/utils.py,sha256=L9bILgRQhXwT7nNt190WQ7J4hn55uNka6CXOLMh3mVE,340
+avro_models-0.0.5.dist-info/METADATA,sha256=CyIBsFn9yqwP_cE0xA8R9YCnlZplajO5i0-EnUfZ1BQ,6266
+avro_models-0.0.5.dist-info/RECORD,,
+avro_models-0.0.5.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+avro_models-0.0.5.dist-info/top_level.txt,sha256=wKJ2lLJRCk330A9U1LuK3naXMT9_ANq59-xvEp70Ln4,12
