@@ -1,0 +1,6 @@
+[console_scripts]
+giotto_prepare_annot = giotto_viewer.prepare_annot:main
+giotto_read_matrix_custom = giotto_viewer.read_matrix_custom:main
+giotto_setup_image = giotto_viewer.giotto_setup_image:main
+giotto_setup_viewer = giotto_viewer.giotto_setup_viewer:main
+
