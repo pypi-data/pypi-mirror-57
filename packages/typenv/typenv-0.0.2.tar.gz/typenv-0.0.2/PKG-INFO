@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: typenv
+Version: 0.0.2
+Summary: TODO:
+Home-page: https://github.com/hukkinj1/typenv
+Author: hukkinj1
+Author-email: hukkinj1@users.noreply.github.com
+License: UNKNOWN
+Project-URL: Changelog, https://github.com/hukkinj1/typenv/blob/master/CHANGELOG.md
+Description: # typenv
+        
+        ## Acknowledgments
+        The public API of this library is almost an exact copy of [environs](https://github.com/sloria/environs), which is based on [envparse](https://github.com/rconradharris/envparse) and [django-environ](https://github.com/joke2k/django-environ). Credit for the interface goes to the authors of those libraries.
+Keywords: todo-keyword todo-another-keyword
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
