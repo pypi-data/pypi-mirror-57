@@ -1,0 +1,2 @@
+This should make the intro scan logic return 'null' since there is 
+no 'builddir' or 'meson.build' at root.
