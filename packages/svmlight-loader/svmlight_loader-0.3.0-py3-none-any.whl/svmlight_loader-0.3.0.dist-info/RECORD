@@ -1,0 +1,9 @@
+svmlight_loader/__init__.py,sha256=8NnbQqLHt7So1YTc41bFoMJ-SwOcAEOctGuoNh1sYlw,302
+svmlight_loader/_api.py,sha256=XqPcOBVIlX9BjQi2xmK-zGIDE5yaaCUzzUbc0FAv6rI,2818
+svmlight_loader/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svmlight_loader/tests/test_api.py,sha256=VgKYriL7Zk1zHGvpof-0qWXToqY4binkLUJBTbvpAlw,5202
+svmlight_loader-0.3.0.dist-info/COPYING,sha256=aJtU0WW4EihEQhEnxtGa_8pzit5Fhfz3CMOXgo7SeUg,1057
+svmlight_loader-0.3.0.dist-info/METADATA,sha256=8E5DosCiV83lV5r32suRnQErf4D2H0kg2vujr3pGMA4,2307
+svmlight_loader-0.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+svmlight_loader-0.3.0.dist-info/top_level.txt,sha256=T9MBYAXpED_sh28DqQVAKBwcvA60Med9hPXnmr633Ys,16
+svmlight_loader-0.3.0.dist-info/RECORD,,
