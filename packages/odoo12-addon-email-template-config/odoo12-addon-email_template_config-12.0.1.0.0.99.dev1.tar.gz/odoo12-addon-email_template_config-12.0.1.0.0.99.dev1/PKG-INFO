@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: odoo12-addon-email_template_config
+Version: 12.0.1.0.0.99.dev1
+Summary: Email Configuration
+Home-page: https://coopiteasy.be
+Author: Coop IT Easy SCRLfs
+License: AGPL-3
+Description: 
+            This module extends the email in order to force some behaviours
+            configured in the mail template(e.g. force send mail or not).
+            
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.5
