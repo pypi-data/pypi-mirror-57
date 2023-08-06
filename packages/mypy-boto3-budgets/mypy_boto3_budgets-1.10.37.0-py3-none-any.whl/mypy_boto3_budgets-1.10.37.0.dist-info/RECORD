@@ -1,0 +1,11 @@
+mypy_boto3_budgets/__init__.py,sha256=G8S9hQyzwVKSZFiFJOtG5S-i9nJvsShWxXxjGhmxH3w,465
+mypy_boto3_budgets/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_budgets/client.py,sha256=9QQUTvsQ2LHQxHy3GliQC60mREpFnyc6yU1N8G2RU6w,10299
+mypy_boto3_budgets/paginator.py,sha256=wqw4d-ZeWIG6wF_PegHIIHYtwDtcv8fk9J5DQRnuiX0,2906
+mypy_boto3_budgets/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_budgets/type_defs.py,sha256=y7xcB_dNHs6Ldhw6fwi_wND1dBzd51gxEI3lf_Ogykk,4988
+mypy_boto3_budgets/version.py,sha256=TIXH_Ij_ACc4EJwGIPin448HhFGiM7HiY4Pcejo61CA,57
+mypy_boto3_budgets-1.10.37.0.dist-info/METADATA,sha256=vyjwXt7VkfvraCBs84GrOp_Dv_f3b7OKypcDAf9oe7o,1211
+mypy_boto3_budgets-1.10.37.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_budgets-1.10.37.0.dist-info/top_level.txt,sha256=1KiRyBcVJgzf1UK2yCTI7vWcS9vw_SfZlbFy6BoEQ1E,19
+mypy_boto3_budgets-1.10.37.0.dist-info/RECORD,,
