@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: bin_by_median
+Version: 0.1
+Summary: Calculate min-max values for each records in your dataset.
+Home-page: https://github.com/sachinthakur9614/bin_by_median.git
+Author: Sachin Thakur
+Author-email: sachin.thakur@mca.christuniversity.in
+License: MIT
+Download-URL: https://github.com/sachinthakur9614/bin_by_median/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: binning method,bin_by_median,python,Data Mining
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
