@@ -1,0 +1,10 @@
+scrapy_link_filter/__init__.py,sha256=C7FLy5OObapgXRi2II3_vRPTCBST1B5HL8p_s7-d34E,59
+scrapy_link_filter/__version__.py,sha256=64ozm8LOjf9u7pPpOMvkrvDywCJuu_rZwX808gBCZRA,63
+scrapy_link_filter/middleware.py,sha256=b35-mHx7w6vpDVy1esZaNvTzJ2YpxT9h5FMzIv7q2wk,2554
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_mw.py,sha256=gjj5nA9YwYEO_XM0bWlMJ2JDh4Lv9RSqQ8DaTppY9a4,2366
+scrapy_link_filter-0.2.0.dist-info/LICENSE,sha256=GK3sCYYmRyXmWcZJ6rYigV0dr03DM_XeXfvmqf8JeSw,1525
+scrapy_link_filter-0.2.0.dist-info/METADATA,sha256=KZZLw_ka3-LY8YBCQe7FQYbWbxPJ9QAs4NGSqKGNRjE,4271
+scrapy_link_filter-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+scrapy_link_filter-0.2.0.dist-info/top_level.txt,sha256=YVxzRPmR8mVn49tEsq_NkuRhXEiYtoreQE2Me1Mb_9I,24
+scrapy_link_filter-0.2.0.dist-info/RECORD,,
