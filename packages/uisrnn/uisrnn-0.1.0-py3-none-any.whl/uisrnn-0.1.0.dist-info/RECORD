@@ -1,0 +1,14 @@
+uisrnn/__init__.py,sha256=aabvxDG5AbJH0On2IwKpjoHEzwvAMpnSL6NwDPpn1KY,1119
+uisrnn/arguments.py,sha256=D1SSdFatOW4-KxjEujd0gqvlPv29tbwOXldEs1_995A,6871
+uisrnn/evals.py,sha256=UVzaME8mZtV9A429XAksyuHBh279RuTmxUznXExzmGY,2536
+uisrnn/loss_func.py,sha256=pHNPhL_4z9LVBtaPveCHmoliBar2S5X_TYeRc7P330g,2386
+uisrnn/uisrnn.py,sha256=8cX5vyeGMHCrgBANs-Ikx5NpYeEwuq6lsNsT36LKabE,25034
+uisrnn/utils.py,sha256=4Hyq7Yj1jXOS_nQF4HzhoQxXqoqBAx87kkJ0QGXxAJY,11674
+uisrnn/contrib/__init__.py,sha256=iweePbuTXVVoO_lNQnOLa6Pe_0K3CaL2tHPn2KfxDrE,809
+uisrnn/contrib/contrib_template.py,sha256=cu0uofx1sVaXTthvA21_yldMcokATsbSS_VaomfLTfY,271
+uisrnn/contrib/range_search_crp_alpha.py,sha256=zKUYGrGbkjZSlJCwDm33-8Qg9z25zJE2SVmg0GvnrAg,5447
+uisrnn-0.1.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+uisrnn-0.1.0.dist-info/METADATA,sha256=ch0-pVTaF1dUzR1j2_TZ7OPzP6zAUX9XH0joCfztdNc,11665
+uisrnn-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+uisrnn-0.1.0.dist-info/top_level.txt,sha256=K0n8kqDGHQR7GNrNF32HK4RyoRCBDRo620I9NP6Ix2U,7
+uisrnn-0.1.0.dist-info/RECORD,,
