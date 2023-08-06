@@ -1,0 +1,11 @@
+mypy_boto3_clouddirectory/__init__.py,sha256=8c-RbqwUd_XrHcrgDWAayfxNeXVrB11BQ-eMy-bMlbk,1605
+mypy_boto3_clouddirectory/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_clouddirectory/client.py,sha256=G0uzzUsBE_X3_hMPWVzG4iVAXGXnqDp24v2bdHyIiGU,46594
+mypy_boto3_clouddirectory/paginator.py,sha256=mRcGkqpJpq4JNtSjyREPO8oJIsdQ27qjP7Qu0ZctPjQ,17672
+mypy_boto3_clouddirectory/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_clouddirectory/type_defs.py,sha256=D2AiFM5GNXtOIIx334hvUDUXphRi_wYtzUEE0z6SD4s,34306
+mypy_boto3_clouddirectory/version.py,sha256=TIXH_Ij_ACc4EJwGIPin448HhFGiM7HiY4Pcejo61CA,57
+mypy_boto3_clouddirectory-1.10.37.0.dist-info/METADATA,sha256=tXj8PlIt7yLmer8mq4rpheS1nN-JEE_Fp0dJeXlmII4,1225
+mypy_boto3_clouddirectory-1.10.37.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_clouddirectory-1.10.37.0.dist-info/top_level.txt,sha256=D0ykIITBiPCSc5L91I7pRNa5bcG6ObhiQOM4mMMrCh4,26
+mypy_boto3_clouddirectory-1.10.37.0.dist-info/RECORD,,
