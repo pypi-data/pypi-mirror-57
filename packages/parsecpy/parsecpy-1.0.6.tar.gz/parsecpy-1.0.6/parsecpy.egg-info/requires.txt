@@ -1,0 +1,11 @@
+pbr>=1.8
+psutil
+cpufreq
+numpy
+pandas
+xarray
+matplotlib
+scikit-learn
+bitstring
+scipy
+ghalton==0.6.1
