@@ -1,0 +1,10 @@
+mypy_boto3_kinesis_video_signaling/__init__.py,sha256=D7mED0irM2uWOAVyVIZWeTDJixfV8Oa0njYOJl5LQeo,266
+mypy_boto3_kinesis_video_signaling/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kinesis_video_signaling/client.py,sha256=cQBDp3mMimHICe1-RKsIgbnOM2acM20-AsvoSsSxO3E,3188
+mypy_boto3_kinesis_video_signaling/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kinesis_video_signaling/type_defs.py,sha256=plBPhJODSYpWtYpX0q-JXnd7bcp7EzaB7XsNXZoLXUw,669
+mypy_boto3_kinesis_video_signaling/version.py,sha256=TIXH_Ij_ACc4EJwGIPin448HhFGiM7HiY4Pcejo61CA,57
+mypy_boto3_kinesis_video_signaling-1.10.37.0.dist-info/METADATA,sha256=B9s6xK7BZmpwlK9sK6GAibYt45N9-m_7Y35fCh5Q63A,1243
+mypy_boto3_kinesis_video_signaling-1.10.37.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_kinesis_video_signaling-1.10.37.0.dist-info/top_level.txt,sha256=7ME6-Sax_Le72gmGdzjamS3BJ9U0OGw_9oRaJL-9zZw,35
+mypy_boto3_kinesis_video_signaling-1.10.37.0.dist-info/RECORD,,
