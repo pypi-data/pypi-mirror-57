@@ -1,0 +1,9 @@
+setup.py
+attabox/__init__.py
+attabox/helloworld.py
+attabox.egg-info/PKG-INFO
+attabox.egg-info/SOURCES.txt
+attabox.egg-info/dependency_links.txt
+attabox.egg-info/not-zip-safe
+attabox.egg-info/requires.txt
+attabox.egg-info/top_level.txt
