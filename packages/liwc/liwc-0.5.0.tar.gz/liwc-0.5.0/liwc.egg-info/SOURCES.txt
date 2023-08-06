@@ -1,0 +1,16 @@
+.gitignore
+.travis.yml
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+liwc/__init__.py
+liwc/dic.py
+liwc/trie.py
+liwc.egg-info/PKG-INFO
+liwc.egg-info/SOURCES.txt
+liwc.egg-info/dependency_links.txt
+liwc.egg-info/top_level.txt
+liwc.egg-info/zip-safe
+test/alpha.dic
+test/test_alpha_dic.py
