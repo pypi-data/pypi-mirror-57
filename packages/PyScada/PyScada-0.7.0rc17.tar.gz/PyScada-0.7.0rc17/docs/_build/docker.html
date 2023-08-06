@@ -1,0 +1,155 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Docker &#8212; PyScada 0.7.0rc16 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="0.6.x to 0.7.x" href="update.html" />
+    <link rel="prev" title="Nginx Setup" href="nginx_setup.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="update.html" title="0.6.x to 0.7.x"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="nginx_setup.html" title="Nginx Setup"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PyScada 0.7.0rc16 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">This Version of PyScada is BETA software and may have serious bugs which may cause damage to your computer,
+automation hardware and data. It is not intended for use in production systems! You use this Software on your own risk!</p>
+</div>
+<div class="section" id="docker">
+<h1>Docker<a class="headerlink" href="#docker" title="Permalink to this headline">¶</a></h1>
+<p>This guide covers the basic setup of PyScada with <a class="reference external" href="https://www.docker.com/">Docker</a> and <a class="reference external" href="https://docs.docker.com/compose/">Docker Compose</a>.</p>
+<div class="section" id="download-the-necessary-files">
+<h2>Download the necessary files<a class="headerlink" href="#download-the-necessary-files" title="Permalink to this headline">¶</a></h2>
+<p>First of all download the docker config files for building your images.</p>
+<p>Using Git.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">trombastic</span><span class="o">/</span><span class="n">PyScada</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="n">PyScada</span><span class="o">/</span><span class="n">docker</span>
+</pre></div>
+</div>
+<p>Using wget.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="o">-</span><span class="n">qO</span><span class="o">-</span> <span class="o">-</span><span class="n">O</span> <span class="n">tmp</span><span class="o">.</span><span class="n">zip</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">trombastic</span><span class="o">/</span><span class="n">PyScada</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="mf">0.7</span><span class="o">.</span><span class="n">x</span><span class="o">.</span><span class="n">zip</span> <span class="o">&amp;&amp;</span> <span class="n">unzip</span> <span class="n">tmp</span><span class="o">.</span><span class="n">zip</span> <span class="o">&amp;&amp;</span> <span class="n">rm</span> <span class="n">tmp</span><span class="o">.</span><span class="n">zip</span>
+<span class="n">cd</span> <span class="n">PyScada</span><span class="o">-</span><span class="n">dev</span><span class="o">-</span><span class="mf">0.7</span><span class="o">.</span><span class="n">x</span><span class="o">/</span><span class="n">docker</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="generating-ssl-certificates">
+<h2>Generating SSL Certificates<a class="headerlink" href="#generating-ssl-certificates" title="Permalink to this headline">¶</a></h2>
+<p>Generate ssl certificates for using ssl.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">nginx</span><span class="o">/</span><span class="n">ssl</span>
+<span class="n">openssl</span> <span class="n">req</span> <span class="o">-</span><span class="n">x509</span> <span class="o">-</span><span class="n">nodes</span> <span class="o">-</span><span class="n">days</span> <span class="mi">1780</span> <span class="o">-</span><span class="n">newkey</span> <span class="n">rsa</span><span class="p">:</span><span class="mi">2048</span> <span class="o">-</span><span class="n">keyout</span> <span class="o">./</span><span class="n">pyscada_server</span><span class="o">.</span><span class="n">key</span> <span class="o">-</span><span class="n">out</span> <span class="o">./</span><span class="n">pyscada_server</span><span class="o">.</span><span class="n">crt</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="build-and-run-the-image">
+<h2>Build and Run the Image<a class="headerlink" href="#build-and-run-the-image" title="Permalink to this headline">¶</a></h2>
+<p>Build the PyScada Docker Image.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="n">build</span>
+</pre></div>
+</div>
+<p>After the Images have been successfully build we need to initialize the Database and Create a superuser.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="n">run</span> <span class="n">pyscada</span> <span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">pyscada</span><span class="o">/</span><span class="n">pyscada_init</span>
+<span class="n">sudo</span> <span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="n">run</span> <span class="n">pyscada</span> <span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">pyscada</span><span class="o">/</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">createsuperuser</span>
+</pre></div>
+</div>
+<p>The last step is to start the Container.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="n">up</span> <span class="o">-</span><span class="n">d</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Docker</a><ul>
+<li><a class="reference internal" href="#download-the-necessary-files">Download the necessary files</a></li>
+<li><a class="reference internal" href="#generating-ssl-certificates">Generating SSL Certificates</a></li>
+<li><a class="reference internal" href="#build-and-run-the-image">Build and Run the Image</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="nginx_setup.html"
+                        title="previous chapter">Nginx Setup</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="update.html"
+                        title="next chapter">0.6.x to 0.7.x</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/docker.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="update.html" title="0.6.x to 0.7.x"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="nginx_setup.html" title="Nginx Setup"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">PyScada 0.7.0rc16 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Martin Schröder.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+    </div>
+  </body>
+</html>
