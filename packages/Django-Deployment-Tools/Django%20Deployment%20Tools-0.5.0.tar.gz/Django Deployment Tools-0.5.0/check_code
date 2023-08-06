@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+CURDIR=$(pwd)
+SELFDIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+cd $SELFDIR
+for DIRNAME in "django_deploy_tools"; do
+    python -m pycodestyle $DIRNAME
+    if [[ $1 = '-v' ]]; then
+        python -m pylint --rcfile=pylintrc --reports=yes $DIRNAME
+    else
+        python -m pylint --rcfile=pylintrc $DIRNAME
+    fi
+done
+cd $CURDIR

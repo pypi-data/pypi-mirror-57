@@ -1,0 +1,44 @@
+CHANGES
+=======
+
+v0.5.0
+------
+
+* Added doc (#1)
+
+v0.4
+----
+
+* Improved doc
+* Improved README.md
+
+v0.3
+----
+
+* Create pythonpublish.yml
+* Disabled some pylint errors when python < 3.5
+* Modify test names
+
+v0.2
+----
+
+* Removed home page
+
+v0.1
+----
+
+* Fixed typo in name
+* Loosser requirements
+* Updated setup.cf (again)
+* Updated setup.cfg
+* Create pythonpackage.yml
+* Updated check\_code
+* Added LICENCE file
+* Fill in README.md
+* Added make\_apache\_conf command
+* Python 2.7 compatibility
+* automatic python 2 or 3 compatible sgi file
+* Use real executable in shebang
+* Moved to make\_sgi with wsgi and asgi support
+* Added make\_wsgi
+* First Commit
