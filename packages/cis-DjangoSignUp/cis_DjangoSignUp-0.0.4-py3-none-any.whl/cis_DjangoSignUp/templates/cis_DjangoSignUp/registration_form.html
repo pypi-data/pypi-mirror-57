@@ -1,0 +1,47 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/registration_form.css' %}" />
+<style type="text/css">
+  ul li{
+    list-style-type: none;
+  }
+</style>
+<div class="container" id='registration_container'>
+  <form id="form_register">
+      {% csrf_token %}
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      {% for field in form.visible_fields %}
+        <div class="label_tag">
+          {{ field.label_tag }}
+          <span class="form_style">{{ field }}</span>
+        </div>
+      {% endfor %}
+    <button type="submit" class="btn btn-primary btn-block" id="signup_button">Register</button>
+  </form>
+</div>
+{% if AJAX_POST %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+{% endif %}
+<script type="text/javascript">
+$('#signup_button').click(function(event){
+  event.preventDefault();
+  $.ajax({
+    type: "POST",
+    url: '/user_registration',
+    data: $("#form_register").serialize(),
+    success: function(data) 
+    {
+      if(data.is_valid == false){
+        notify('warning','Warnings',data.form_errors); 
+        }
+      else{
+        notify('success','Success',data.message)
+        var message = data.message.split(",");
+        var val = ("<b>" + message[0] + "</b><hr><p>" + message[1] + "</p>");
+        $("#registration_container").html(val);
+      }    
+    }
+  });
+});
+</script>
+

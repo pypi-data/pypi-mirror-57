@@ -1,0 +1,64 @@
+Metadata-Version: 2.0
+Name: cis-DjangoSignUp
+Version: 0.0.4
+Summary: A simple Django app to conduct Web-based polls.
+Home-page: UNKNOWN
+Author: harish r
+Author-email: harish.r@imailt.com
+License: BSD License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+
+Django sign up testing package
+==============================
+
+**Description:**
+
+     The main motive is to upload our own package on PyPI. so for doing testing, I have
+     uploaded it on this platform.
+
+**installation:**
+
+Just run a command on the terminal 
+
+            pip install cis_DjangoSignUp.
+
+In settings.py,
+
+1. Add in the installed app
+
+          'cis_DjangoSignUp',
+
+ 2. Add in context processor
+
+          'cis_DjangoSignUp.context_processors.AJAX_POST',
+          'cis_DjangoSignUp.context_processors.reg_form'
+
+3. Also, set email backend to activate account 
+
+        EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+        EMAIL_HOST = 'smtp.gmail.com'
+        EMAIL_USE_TLS = True
+        EMAIL_PORT = 
+        EMAIL_HOST_USER = ''
+        EMAIL_HOST_PASSWORD = ''
+        SUCCESS_SIGNUP_URL = '' 
+        AJAX_POST = True  
+
+In main urls.py :
+
+        path('', include('cis_DjangoSignUp.url')), 
+
+After then add it in the template where you want :
+
+        {% include 'cis_DjangoSignUp/register.html' %}
+
+
