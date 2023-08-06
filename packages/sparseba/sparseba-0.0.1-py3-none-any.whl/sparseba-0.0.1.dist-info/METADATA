@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sparseba
+Version: 0.0.1
+Summary: SBA
+Home-page: http://github.com/IshitaTakeshi/SBA
+Author: Takeshi Ishita
+Author-email: ishitah.takeshi@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+UNKNOWN
+
+

@@ -1,0 +1,9 @@
+sparseba/__init__.py,sha256=m9JNXsUJqDsToUz7M-xun4Gq29ZAHEMOt56S4qTaeQk,68
+sparseba/core.py,sha256=gtV6y-7xbMBbO_HeSomQvF3W7pxcLxVKoa1Qs9ndcVE,8871
+sparseba/indices.py,sha256=eGzbT-pFxNuUo3fTXaA25WD1H6DrLd6M_VB4duNwiFc,4322
+sparseba/utils.py,sha256=7rm6iDQzRBAt0wmd7IcPTV0r1ryk1ZjmJdZiMZBGUhA,1241
+sparseba-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sparseba-0.0.1.dist-info/METADATA,sha256=Yb3AD0t9xhD0Ytr8H8CmvLPeFuqfW-5383jbMDwPaww,245
+sparseba-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sparseba-0.0.1.dist-info/top_level.txt,sha256=7Rx393n-not_JpwhK49prBFbHVBnQlurmvPtKgOlOAs,9
+sparseba-0.0.1.dist-info/RECORD,,
