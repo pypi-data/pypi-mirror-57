@@ -1,0 +1,8 @@
+setup.py
+catstest/__init__.py
+catstest/cats.py
+catstest.egg-info/PKG-INFO
+catstest.egg-info/SOURCES.txt
+catstest.egg-info/dependency_links.txt
+catstest.egg-info/not-zip-safe
+catstest.egg-info/top_level.txt
