@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: varseries
+Version: 2.0.3
+Summary: An utility to build and display variation series
+Home-page: https://github.com/cyrillelamal/varseries
+Author: Cyrille Kossyguine
+Author-email: lambda_man@outlook.fr
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: plotly (>=4.3.0)
+
+# VarSeries
+An utility to build and display variation series
+
+
+## Some examples
+```python3
+from varseries import DiscreteVS, ContinuousVS
+
+v = DiscreteVS([1, 1, 1.11, 1.23, 2, 2.3, 4, 5.1, 5.1, 5 ... 8])
+v.draw_polygon()
+print(v.vs)  # Variation series representation
+print(v.acc_frequencies)  # Accumulated frequencies list
+# etc.
+
+v1 = ContinuousVS(
+    [1, 1, 1.11, 1.23, 2, 2.3, 4, 5.1, 5.1, 5 ... 8],
+    precision=4
+    )
+v1.draw_hist()
+v.draw_cumulate()
+print(v.mode)  # Mode of the variation series
+# etc
+```
+
+
