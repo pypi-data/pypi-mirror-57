@@ -1,0 +1,11 @@
+npxarr/__init__.py,sha256=70j3CuUYkY9nK1i7DT6wmWIhJuNpR2D1kt8SbmHrfAk,65
+npxarr/array2Ast.py,sha256=upiSSVtHZxGFUaux37yuZAo_7ns8O6sfXPTOlJIkFLQ,5420
+npxarr/definedTypes.py,sha256=bOFKj-89R-x5SUlnBvEyFjmpvcHzZzXKMnnF36VA92U,360
+npxarr/indexConverter.py,sha256=j5pIIWRTH1yrKXt_tRrnKL_q3bmJPVonCjuiYsF5XlA,5398
+npxarr/utils.py,sha256=ZuAtUXqWS72OJ2o5MRoSROF8vgSDdudspgik3ClNSuc,1430
+npxarr/xArray.py,sha256=fcYWI8GnET6mgAqfzooOi5HYUJOPYSGhpHd997yz2f0,19664
+np_xarr-0.1.4.dist-info/LICENSE,sha256=8Q-Vs35RG2lAxvpuT9vpIMeyDOOSxlkUTYwdozETc9o,1085
+np_xarr-0.1.4.dist-info/METADATA,sha256=mN4u9US0rbHHwvt08LCsseVOIzOcDKh-0O7rNzfPlKg,4116
+np_xarr-0.1.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+np_xarr-0.1.4.dist-info/top_level.txt,sha256=_sXlK6F931Zs4mGbFom-Uo01-ckplRFuZ0bjtLxxDlc,7
+np_xarr-0.1.4.dist-info/RECORD,,
