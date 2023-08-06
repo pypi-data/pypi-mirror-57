@@ -1,0 +1,893 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# Manually added message ids for `dm.zope.reseller`
+# FIRST AUTHOR dieter@handshake.de, 2017
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-11-21 10:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Dieter Maurer <dieter@handshake.de>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: dm_zope_reseller\n"
+
+#: ./browser/traversal.py:37
+msgid "%s ${obj_title}"
+msgstr ""
+
+#: ./browser/configure.zcml:369
+msgid "@Admin"
+msgstr ""
+
+#: ./browser/configure.zcml:367
+msgid "@Articles"
+msgstr ""
+
+#: ./browser/configure.zcml:274
+msgid "@Client"
+msgstr ""
+
+#: ./browser/configure.zcml:365
+msgid "@Clients"
+msgstr ""
+
+#: ./browser/configure.zcml:364
+msgid "@Deliveries"
+msgstr ""
+
+#: ./browser/configure.zcml:363
+msgid "@Orders"
+msgstr ""
+
+#: ./browser/configure.zcml:366
+msgid "@Providers"
+msgstr ""
+
+#: ./browser/configure.zcml:368
+msgid "@Stock"
+msgstr ""
+
+#: ./browser/configure.zcml:151
+msgid "@client.Client"
+msgstr ""
+
+#: ./browser/configure.zcml:174
+msgid "@delivery.Client"
+msgstr ""
+
+#: ./browser/configure.zcml:322
+msgid "@delivery.Delivery"
+msgstr ""
+
+#: ./browser/configure.zcml:250
+msgid "@order.Order"
+msgstr ""
+
+#: ./browser/configure.zcml:109
+msgid "@provider.Provider"
+msgstr ""
+
+#: ./browser/client.py:57
+#: ./browser/configure.zcml:140
+#: ./browser/delivery.py:291
+msgid "Account"
+msgstr ""
+
+#: ./interfaces.py:378
+msgid "Account date"
+msgstr ""
+
+#: ./interfaces.py:80
+msgid "Active"
+msgstr ""
+
+#: ./interfaces.py:201
+msgid "Address"
+msgstr ""
+
+#: ./browser/configure.zcml:346
+msgid "Admin"
+msgstr ""
+
+#: ./interfaces.py:190
+msgid "Allowed unit number in stock"
+msgstr ""
+
+#: ./interfaces.py:380
+msgid "Amount"
+msgstr ""
+
+#: ./browser/view.py:84
+msgid "Apply"
+msgstr ""
+
+#: ./browser/order.py:232
+#: ./browser/stock.py:31
+#: ./interfaces.py:159
+msgid "Article"
+msgstr ""
+
+msgid "Article ${obj_title}"
+msgstr ""
+
+#: ./article.py:79
+#: ./browser/order.py:63
+msgid "Article does not exist"
+msgstr ""
+
+#: ./interfaces.py:153
+msgid "Article id"
+msgstr ""
+
+#: ./interfaces.py:160
+msgid "Article order number"
+msgstr ""
+
+#: ./browser/stock.py:31
+#: ./interfaces.py:159
+msgid "Article title"
+msgstr ""
+
+#: ./article.py:97
+msgid "Article title does not correspond (ignored)"
+msgstr ""
+
+#: ./browser/configure.zcml:182
+msgid "Articles"
+msgstr ""
+
+#: ./interfaces.py:336
+msgid "Ass-B"
+msgstr ""
+
+#: ./browser/delivery.py:144
+msgid "Assign"
+msgstr ""
+
+#: ./interfaces.py:275
+msgid "Assigned"
+msgstr ""
+
+#: ./browser/configure.zcml:262
+msgid "Assigned order items"
+msgstr ""
+
+#: ./interfaces.py:350
+msgid "Assigned#"
+msgstr ""
+
+#: ./browser/order.py:232
+msgid "Available units"
+msgstr ""
+
+#: ./browser/order.py:611
+msgid "Bad integer value (ignored)"
+msgstr ""
+
+#: ./browser/order.py:628
+msgid "Bad price value (ignored)"
+msgstr ""
+
+#: ./interfaces.py:185
+msgid "Catalog price (without tax)"
+msgstr ""
+
+#: ./interfaces.py:328
+msgid "Catalog price at delivery time (without tax)"
+msgstr ""
+
+#: ./interfaces.py:155
+msgid "Catalog price at order time (without tax)"
+msgstr ""
+
+#: ./browser/delivery.py:77
+msgid "Change"
+msgstr ""
+
+#: ./interfaces.py:230
+msgid "Client"
+msgstr ""
+
+msgid "Client ${obj_title}"
+msgstr ""
+
+#: ./interfaces.py:268
+msgid "Client delivery id"
+msgstr ""
+
+#: ./interfaces.py:221
+msgid "Client id"
+msgstr ""
+
+#: ./interfaces.py:349
+msgid "Client name"
+msgstr ""
+
+#: ./interfaces.py:348
+msgid "Client short name"
+msgstr ""
+
+#: ./interfaces.py:282
+msgid "Client title"
+msgstr ""
+
+#: ./interfaces.py:165
+msgid "Client#"
+msgstr ""
+
+#: ./browser/configure.zcml:117
+#: ./browser/order.py:354
+msgid "Clients"
+msgstr ""
+
+#: ./interfaces.py:276
+msgid "Confirmed"
+msgstr ""
+
+#: ./browser/delivery.py:254
+msgid "Deliver"
+msgstr ""
+
+#: ./browser/configure.zcml:138
+msgid "Deliveries"
+msgstr ""
+
+#: ./browser/configure.zcml:237
+#: ./browser/delivery.py:287
+#: ./interfaces.py:250
+msgid "Delivery"
+msgstr ""
+
+#: ./browser/delivery.py:263
+msgid "Delivery ${delivery_date} for order ${order_title}"
+msgstr ""
+
+msgid "Delivery ${obj_title}"
+msgstr ""
+
+#: ./interfaces.py:272
+msgid "Delivery State"
+msgstr ""
+
+#: ./interfaces.py:243
+msgid "Delivery date"
+msgstr ""
+
+#: ./browser/configure.zcml:310
+msgid "Delivery receipts"
+msgstr ""
+
+#: ./browser/order.py:232
+#: ./interfaces.py:181
+msgid "Description"
+msgstr ""
+
+#: ./browser/delivery.py:289
+msgid "Difference"
+msgstr ""
+
+#: ./interfaces.py:335
+msgid "Difference between available and proposed/assigned units"
+msgstr ""
+
+#: ./interfaces.py:336
+msgid "Difference between proposed and assigned units"
+msgstr ""
+
+#: ./interfaces.py:199
+msgid "Email"
+msgstr ""
+
+#: ./browser/configure.zcml:239
+#: ./browser/delivery.py:220
+#: ./browser/order.py:342
+msgid "Emails"
+msgstr ""
+
+#: ./browser/order.py:663
+msgid "File is not an XLS file"
+msgstr ""
+
+#: ./interfaces.py:81
+msgid "For technical (database) reasons, this field has values `True` and `None`"
+msgstr ""
+
+#: ./browser/order.py:416
+msgid "How the new order items interact with existing ones: `update` (the `unit` and `max` fields of a new item overrides that of a corresponding existing one); `replace` (all existing order items are deleted before the import); `add` (the values of `unit` and `max` of new items are added to those of corresponding existing ones)."
+msgstr ""
+
+#: ./browser/delivery.py:41
+msgid "If set, empty input fields will be filled from the order; i.e. this field means `delivered as ordered`"
+msgstr ""
+
+#: ./browser/order.py:574
+msgid "Import"
+msgstr ""
+
+#: ./browser/order.py:409
+msgid "Import file"
+msgstr ""
+
+#: ./browser/order.py:404
+msgid "Include unassigned items"
+msgstr ""
+
+#: ./browser/order.py:523
+msgid "Invalid units specification (must be >= 0)"
+msgstr ""
+
+#: ./article.py:72
+msgid "Item# ${item_no}"
+msgstr ""
+
+#: ./browser/order.py:513
+msgid "Item# ${item_no}, order# ${order_no}, specified price ${sprice}, catalog price ${cprice}"
+msgstr ""
+
+#: ./browser/order.py:612
+msgid "Item# ${item_no}, order# ${provider_order_no}, field ${field}, value ${value}"
+msgstr ""
+
+#: ./browser/order.py:534
+msgid "Item# ${item_no}, order# ${provider_order_no}, max_units ${max_units}, units ${units}"
+msgstr ""
+
+#: ./browser/order.py:524
+msgid "Item# ${item_no}, order# ${provider_order_no}, units ${units}"
+msgstr ""
+
+#: ./browser/order.py:629
+msgid "Item# ${item_no}, order# ${provider_order_no}, value ${unit_price}"
+msgstr ""
+
+#: ./article.py:98
+msgid "Item# ${item_no}, specified title ${stitle}, catalog title ${ctitle}, order# ${order_no}"
+msgstr ""
+
+#: ./interfaces.py:164
+msgid "M-c-units"
+msgstr ""
+
+#: ./browser/order.py:394
+#: ./interfaces.py:225
+msgid "Max units"
+msgstr ""
+
+#: ./interfaces.py:166
+msgid "Max-Stock"
+msgstr ""
+
+#: ./interfaces.py:166
+msgid "Maximal number of stockable units"
+msgstr ""
+
+#: ./interfaces.py:164
+msgid "Maximal number of units ordered by clients"
+msgstr ""
+
+#: ./browser/configure.zcml:64
+msgid "Menu bar"
+msgstr ""
+
+#: ./browser/order.py:415
+msgid "Mode"
+msgstr ""
+
+#: ./interfaces.py:198
+msgid "Name"
+msgstr ""
+
+#: ./browser/delivery.py:303
+msgid "New account"
+msgstr ""
+
+#: ./browser/order.py:318
+#: ./interfaces.py:154
+msgid "No"
+msgstr ""
+
+#: ./browser/order.py:395
+#: ./interfaces.py:226
+msgid "Note"
+msgstr ""
+
+#: ./interfaces.py:350
+msgid "Number of client order items assigned to this order"
+msgstr ""
+
+#: ./interfaces.py:351
+msgid "Number of client order items not yet assigned"
+msgstr ""
+
+#: ./interfaces.py:165
+msgid "Number of clients which have ordered this item"
+msgstr ""
+
+#: ./interfaces.py:327
+msgid "Number of delivered packages"
+msgstr ""
+
+#: ./interfaces.py:270
+msgid "Number of delivered units"
+msgstr ""
+
+#: ./interfaces.py:247
+msgid "Number of items in state `assigned`"
+msgstr ""
+
+#: ./interfaces.py:248
+msgid "Number of items in state `confirmed`"
+msgstr ""
+
+#: ./interfaces.py:246
+msgid "Number of items in state `proposed`"
+msgstr ""
+
+#: ./interfaces.py:154
+msgid "Number of ordered packages"
+msgstr ""
+
+#: ./interfaces.py:163
+msgid "Number of units ordered by clients"
+msgstr ""
+
+#: ./interfaces.py:161
+msgid "Number of units ordered with the providers"
+msgstr ""
+
+#: ./interfaces.py:158
+msgid "Number of units per package"
+msgstr ""
+
+#: ./browser/delivery.py:77
+msgid "Number of units to add/remove"
+msgstr ""
+
+#: ./interfaces.py:333
+msgid "O-Price"
+msgstr ""
+
+#: ./browser/delivery.py:40
+msgid "Ok"
+msgstr ""
+
+#: ./browser/delivery.py:301
+msgid "Old account"
+msgstr ""
+
+#: ./browser/delivery.py:288
+#: ./browser/order.py:228
+#: ./interfaces.py:249
+msgid "Order"
+msgstr ""
+
+msgid "Order ${obj_title}"
+msgstr ""
+
+#: ./interfaces.py:100
+msgid "Order date"
+msgstr ""
+
+#: ./interfaces.py:223
+msgid "Order id"
+msgstr ""
+
+#: ./order.py:150
+msgid "Order is closed"
+msgstr ""
+
+#: ./browser/order.py:391
+#: ./interfaces.py:184
+msgid "Order number"
+msgstr ""
+
+#: ./browser/order.py:232
+msgid "Order units:"
+msgstr ""
+
+#: ./browser/order.py:232
+#: ./browser/stock.py:32
+#: ./interfaces.py:160
+msgid "Order#"
+msgstr ""
+
+#: ./article.py:80
+msgid "Order# ${provider_order_no}"
+msgstr ""
+
+#: ./interfaces.py:332
+msgid "Ordered"
+msgstr ""
+
+#: ./interfaces.py:287
+msgid "Ordered maximal units"
+msgstr ""
+
+#: ./interfaces.py:286
+msgid "Ordered units"
+msgstr ""
+
+#: ./browser/configure.zcml:200
+msgid "Orders"
+msgstr ""
+
+#: ./browser/order.py:232
+#: ./interfaces.py:158
+msgid "P-Size"
+msgstr ""
+
+#: ./interfaces.py:188
+msgid "Package size"
+msgstr ""
+
+#: ./interfaces.py:200
+msgid "Phone"
+msgstr ""
+
+#: ./browser/order.py:232
+#: ./interfaces.py:155
+msgid "Price"
+msgstr ""
+
+#: ./browser/order.py:396
+#: ./interfaces.py:227
+msgid "Price per unit"
+msgstr ""
+
+#: ./interfaces.py:335
+msgid "Prop-B"
+msgstr ""
+
+#: ./interfaces.py:274
+msgid "Proposed"
+msgstr ""
+
+#: ./browser/order.py:232
+#: ./interfaces.py:93
+msgid "Provider"
+msgstr ""
+
+msgid "Provider ${obj_title}"
+msgstr ""
+
+#: ./article.py:63
+msgid "Provider ${provider_title}"
+msgstr ""
+
+#: ./interfaces.py:269
+msgid "Provider delivery item id"
+msgstr ""
+
+#: ./interfaces.py:98
+msgid "Provider id"
+msgstr ""
+
+#: ./browser/configure.zcml:73
+msgid "Providers"
+msgstr ""
+
+#: ./interfaces.py:189
+msgid "Ratio"
+msgstr ""
+
+#: ./interfaces.py:189
+msgid "Ratio between package and catalog price"
+msgstr ""
+
+#: ./browser/view.py:359
+msgid "Reset"
+msgstr ""
+
+#: ./browser/view.py:359
+msgid "Reset form"
+msgstr ""
+
+#: ./browser/view.py:353
+msgid "Search"
+msgstr ""
+
+#: ./browser/view.py:370
+msgid "Search empty"
+msgstr ""
+
+#: ./interfaces.py:197
+msgid "Short name"
+msgstr ""
+
+#: ./interfaces.py:202
+msgid "Special"
+msgstr ""
+
+#: ./browser/order.py:512
+msgid "Specified price differs from catalog price"
+msgstr ""
+
+#: ./interfaces.py:272
+msgid "State"
+msgstr ""
+
+#: ./browser/configure.zcml:330
+#: ./browser/delivery.py:164
+#: ./interfaces.py:162
+msgid "Stock"
+msgstr ""
+
+#: ./browser/delivery.py:138
+msgid "Stock capacity ${capacity} exceeded"
+msgstr ""
+
+#: ./interfaces.py:197
+msgid "Tag"
+msgstr ""
+
+#: ./interfaces.py:234
+msgid "Target"
+msgstr ""
+
+#: ./interfaces.py:97
+msgid "Target date"
+msgstr ""
+
+#: ./interfaces.py:186
+msgid "Tax"
+msgstr ""
+
+#: ./interfaces.py:186
+msgid "Tax code"
+msgstr ""
+
+#: ./browser/order.py:410
+msgid "The (xls) file containing the order items to be imported"
+msgstr ""
+
+#: ./interfaces.py:325
+msgid "The delivery id"
+msgstr ""
+
+#: ./browser/order.py:647
+msgid "The last sheet does not seem to contain an order"
+msgstr ""
+
+#: ./article.py:62
+msgid "The provider does not exist"
+msgstr ""
+
+#: ./browser/delivery.py:122
+msgid "The sum of all changes must be 0"
+msgstr ""
+
+#: ./article.py:91
+msgid "There are several matching articles (please use Order# instead)"
+msgstr ""
+
+#: ./browser/order.py:504
+msgid "There is already a corresponding order item. Please edit this one rather than add a new item with order# ${provider_order_no}"
+msgstr ""
+
+#: ./browser/list.pt:9
+msgid "This list is empty"
+msgstr ""
+
+#: ./interfaces.py:180
+msgid "Title"
+msgstr ""
+
+#: ./browser/order.py:441
+#: ./browser/view.py:453
+msgid "Total price"
+msgstr ""
+
+#: ./interfaces.py:281
+msgid "Total price (including tax)"
+msgstr ""
+
+#: ./interfaces.py:157
+msgid "Total price (without tax)"
+msgstr ""
+
+#: ./browser/delivery.py:286
+msgid "Total price summary"
+msgstr ""
+
+#: ./browser/configure.zcml:139
+msgid "Unassigned order items"
+msgstr ""
+
+#: ./interfaces.py:351
+msgid "Unassigned#"
+msgstr ""
+
+#: ./browser/order.py:232
+#: ./interfaces.py:187
+msgid "Unit"
+msgstr ""
+
+#: ./interfaces.py:187
+msgid "Unit description"
+msgstr ""
+
+#: ./interfaces.py:162
+msgid "Unit number available on stock"
+msgstr ""
+
+#: ./browser/delivery.py:135
+msgid "Unit number for client ${client} becomes negative"
+msgstr ""
+
+#: ./browser/article.py:20
+msgid "Unit price (with tax)"
+msgstr ""
+
+#: ./interfaces.py:271
+msgid "Unit price at delivery time (with tax)"
+msgstr ""
+
+#: ./interfaces.py:285
+msgid "Unit price at order time (with tax)"
+msgstr ""
+
+#: ./browser/order.py:393
+#: ./browser/stock.py:30
+#: ./interfaces.py:224
+msgid "Units"
+msgstr ""
+
+#: ./browser/admin.py:18
+msgid "Updated"
+msgstr ""
+
+#: ./interfaces.py:373
+msgid "Value"
+msgstr ""
+
+#: ./browser/provider.py:28
+msgid "We already have an article with this provider order no"
+msgstr ""
+
+#: ./browser/order.py:71
+msgid "We already have an order item for this article"
+msgstr ""
+
+#: ./browser/order.py:405
+msgid "Whether unassigned items should be first imported (they are always `added`."
+msgstr ""
+
+#: ./article.py:71
+msgid "You must specify either the Order# (prefered) or the article"
+msgstr ""
+
+#: ./browser/order.py:419
+msgid "add"
+msgstr ""
+
+#: ./browser/configure.zcml:238
+msgid "add Delivery"
+msgstr ""
+
+#: ./browser/configure.zcml:234
+msgid "adjust"
+msgstr ""
+
+#: ./interfaces.py:247
+msgid "ass#"
+msgstr ""
+
+#: ./browser/order.py:703
+msgid "assigned_order_items"
+msgstr ""
+
+#: ./interfaces.py:163
+msgid "c-units"
+msgstr ""
+
+#: ./interfaces.py:248
+msgid "conf#"
+msgstr ""
+
+#: ./interfaces.py:271
+msgid "d-price"
+msgstr ""
+
+#: ./interfaces.py:270
+msgid "d-units"
+msgstr ""
+
+#: ./browser/configure.zcml:208
+msgid "deactivated"
+msgstr ""
+
+#: ./browser/view.py:316
+msgid "deactivated "
+msgstr ""
+
+msgid "deactivated Deliveries"
+msgstr ""
+
+msgid "deactivated Orders"
+msgstr ""
+
+msgid "export"
+msgstr ""
+
+msgid "export csv"
+msgstr ""
+
+#: ./browser/configure.zcml:233
+msgid "export excel"
+msgstr ""
+
+#: ./browser/configure.zcml:236
+msgid "export provider order"
+msgstr ""
+
+#: ./browser/configure.zcml:80
+msgid "manage"
+msgstr ""
+
+#: ./browser/order.py:232
+msgid "max"
+msgstr ""
+
+#: ./browser/order.py:533
+msgid "max_units smaller than `units`"
+msgstr ""
+
+#: ./interfaces.py:287
+msgid "o-M-units"
+msgstr ""
+
+#: ./interfaces.py:285
+msgid "o-price"
+msgstr ""
+
+#: ./interfaces.py:286
+msgid "o-units"
+msgstr ""
+
+#: ./browser/configure.zcml:235
+msgid "order"
+msgstr ""
+
+#: ./interfaces.py:161
+msgid "p-units"
+msgstr ""
+
+#: ./interfaces.py:246
+msgid "prop#"
+msgstr ""
+
+#: ./browser/order.py:418
+msgid "replace"
+msgstr ""
+
+#: ./browser/configure.zcml:98
+msgid "search"
+msgstr ""
+
+#: ./browser/order.py:318
+#: ./interfaces.py:157
+msgid "t-price"
+msgstr ""
+
+#: ./browser/article.py:20
+msgid "u-price"
+msgstr ""
+
+#: ./browser/order.py:721
+msgid "unassigned_order_items"
+msgstr ""
+
+#: ./browser/configure.zcml:353
+#: ./browser/order.py:417
+msgid "update"
+msgstr ""
+
+#: ./browser/order.py:232
+msgid "wish"
+msgstr ""
