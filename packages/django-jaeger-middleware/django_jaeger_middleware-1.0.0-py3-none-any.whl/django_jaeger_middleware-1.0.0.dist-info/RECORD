@@ -1,0 +1,8 @@
+django_jaeger_middleware/__init__.py,sha256=JAUBzQzQa3gcgaEwr3-TKvh9gIlU7S0zqjfCY-zCasY,653
+django_jaeger_middleware/metadata.py,sha256=7qAwYaNK1s78s-W79BtkYl_3KS2JHlz2m2bNjYwm3pU,145
+django_jaeger_middleware/middleware.py,sha256=8LJFPffgKYT_FoT1NBIrclI7Pg2ZNe3nfF1wtP-wIUw,1482
+django_jaeger_middleware-1.0.0.dist-info/LICENSE,sha256=nzEaq7cIkW41fGhZak2BxoL0q455uC_uk2WRTCKwcbc,1066
+django_jaeger_middleware-1.0.0.dist-info/METADATA,sha256=ooJBPf_Pb4VzVK0_LHd6B4Wy4KPz2oBbRzYCGg9J6lc,1292
+django_jaeger_middleware-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_jaeger_middleware-1.0.0.dist-info/top_level.txt,sha256=ZclrjiNGMvzdMknNfalEyDxCaWUnZ1CwVr7XcM3ijhU,25
+django_jaeger_middleware-1.0.0.dist-info/RECORD,,
