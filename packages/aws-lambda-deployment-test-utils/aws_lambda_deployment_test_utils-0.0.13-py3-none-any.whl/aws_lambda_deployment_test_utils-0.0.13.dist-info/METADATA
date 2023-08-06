@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aws-lambda-deployment-test-utils
+Version: 0.0.13
+Summary: A package of tools which help developers make pre and post integration tests for AWS Lambda functions.
+Home-page: https://bitbucket.org/salimfadhley_ecs/aws_lambda_deployment_test_utils/src/master/
+Author: Salim Fadhley
+Author-email: salimfadhley@ecs.co.uk
+License: GPL4
+Platform: UNKNOWN
+Requires-Dist: boto3
+Requires-Dist: timeout-decorator (==0.4.1)
+
+A package of tools which help developers make pre and post integration tests for AWS Lambda functions.
+
+
