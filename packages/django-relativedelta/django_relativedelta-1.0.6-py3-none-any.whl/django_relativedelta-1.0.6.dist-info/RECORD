@@ -1,0 +1,10 @@
+relativedeltafield/__init__.py,sha256=PnDqPWoTP_l80j-linYiNIGA2H3wzCKnlxmlDIXYLpQ,4729
+relativedeltafield/tests/__init__.py,sha256=B012uwiJ419ZslOeG8cT9FILSzzGJ4Xba7yVaDPV2vQ,1575
+relativedeltafield/tests/test_relativedeltafield.py,sha256=lYChrtBN24tIVTEFUaYqbQWHRnyIgE-grmC8RVRnqGI,6915
+tests/__init__.py,sha256=tMGvMhofSh2mxy9lavfxFnTEC6FpISm3S6RZu5S8Sp4,1537
+tests/test_relativedeltafield.py,sha256=lYChrtBN24tIVTEFUaYqbQWHRnyIgE-grmC8RVRnqGI,6915
+django_relativedelta-1.0.6.dist-info/LICENSE,sha256=FqE7Ga8ZKZKLY_8gvHQpii-wZb3EBR5U5brUXklCzMU,1073
+django_relativedelta-1.0.6.dist-info/METADATA,sha256=5HYzHwYRjPyMVPijgYBnLLec0IwO138JM9W39X6CgyU,5334
+django_relativedelta-1.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_relativedelta-1.0.6.dist-info/top_level.txt,sha256=_r7Y1yHW_aoEv2PG3nXoXMxrtazzKFPV2_YYrT9a85k,25
+django_relativedelta-1.0.6.dist-info/RECORD,,
