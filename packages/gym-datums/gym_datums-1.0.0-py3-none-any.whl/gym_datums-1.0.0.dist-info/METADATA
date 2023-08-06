@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gym-datums
+Version: 1.0.0
+Summary: Gym environments focused around time series.
+Home-page: https://github.com/SwamyDev/gym-datums
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: gym
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+[![Build Status](https://travis-ci.com/SwamyDev/gym-datums.svg?branch=master)](https://travis-ci.com/SwamyDev/gym-datums) [![Coverage Status](https://coveralls.io/repos/github/SwamyDev/gym-datums/badge.svg?branch=master)](https://coveralls.io/github/SwamyDev/gym-datums?branch=master)
+# gym_datums
+Gym environemnts that are converned with time series data such as asset portoflio management.
+
+
