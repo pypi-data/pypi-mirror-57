@@ -1,0 +1,15 @@
+fwup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fwup/core.py,sha256=cUIWb2AdC6LXWTe-UvR2rhoMG2VH4kWQ7dH9TysJ6F4,3457
+fwup/dfu.py,sha256=ZI_o3YY6L5ZlKIVyyyeC8yisUm5W3IgzFs5jqQqPIM0,8752
+fwup/errors.py,sha256=pe8Uy5orD8Pk8LtswwCCQEvQGaJMfNwBAXK97U8AZt4,291
+fwup/fx3.py,sha256=QjBUaSlBB6nqDSJTVtBnNNNJQnL5uCXzLGo36XB39c0,5972
+fwup/lpc43xx.py,sha256=h4Zphx_i_JAht6x_i2phvuLxM9nUekZ7DFBAT1XPSVE,1608
+fwup/micronucleus.py,sha256=J0WYd_0mUnvfOoWEMH8Wv0aqtJ79INh2dQ7fsCxsXKY,17004
+fwup_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fwup_utils/fwup_util.py,sha256=R_e7NE24o737oMJRvi1f1ns_Nfwu6-yIxvcrXg-Q2i4,4966
+fwup_utils/microprog.py,sha256=paqQ8i_BnVF6cn722acKpHdjR47cwCpSjo7etiWpMF0,3997
+pyfwup-0.3.0.dist-info/METADATA,sha256=NAzoQayp7wHN6j4B7vG6WI8qh-nz6mbJKpKmSstryuk,891
+pyfwup-0.3.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pyfwup-0.3.0.dist-info/entry_points.txt,sha256=SgUHfdMdTW1fDSHquRviwR6S-qnZ8meyBHVzA1SxrQY,170
+pyfwup-0.3.0.dist-info/top_level.txt,sha256=-RNAWmpISwoPNgLyllDtXsIXZ2fVwoE7fGHIPTjKsew,16
+pyfwup-0.3.0.dist-info/RECORD,,
