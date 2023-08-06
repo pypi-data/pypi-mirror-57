@@ -1,0 +1,7 @@
+README.md
+setup.py
+django_query_chunk.egg-info/PKG-INFO
+django_query_chunk.egg-info/SOURCES.txt
+django_query_chunk.egg-info/dependency_links.txt
+django_query_chunk.egg-info/top_level.txt
+query_chunk/__init__.py

@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: django-query-chunk
+Version: 0.0.1
+Summary: Part QuerySets into small chunks.
+Home-page: https://github.com/imbue/django-query-chunk
+Author: imbue
+Author-email: liamboer@outlook.com
+License: UNKNOWN
+Description: # Django Query Chunk
+        Django Query Chunk is used to split big queries into multiple chunks for prevent (too high) memory usage. The chunk function will split the query set into several isolated queries.
+        
+        
+        ## Requirements
+        * **Python**: >=3.6
+        * **Django**: >=2.0
+        
+        
+        ## Installation
+        
+        ```
+        pip install django-query-chunk
+        ```
+        
+        
+        ## Usage
+        
+        ```python
+        from query_chunk import chunk
+        
+        chunk_size = 300
+        
+        for book in chunk(Book.objects.all(), chunk_size):
+            # process book
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
