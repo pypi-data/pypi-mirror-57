@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: bin_boundary
+Version: 0.1
+Summary: This package perform one of the smoothing method of Binning method(Bin by Boundaries).It ask for file name and column name 
+Home-page: https://github.com/Vikash29Singh/bin_boundary.git
+Author: VIKASH SINGH
+Author-email: vikashlikes18@gmail.com
+License: MIT
+Download-URL: https://github.com/Vikash29Singh/bin_boundary/archive/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: bin,boundary,python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
