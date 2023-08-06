@@ -1,0 +1,12 @@
+mlx.xunit2rst-0.2.0-py3.7-nspkg.pth,sha256=UsVvor4_T6srpv6IW6vGvM-hxEOev1mrVeFhjvLCrwk,524
+mlx/__main__.py,sha256=iRLj0h4x2aUU1aGygHvbZjYa1dEIjMhVep7voeQvCzg,113
+mlx/__xunit2rst_version__.py,sha256=z0_f3qh06J54uiTVyMcIdxGifpehNFTOsVLXmOmWrZk,116
+mlx/xunit2rst.mako,sha256=Tt7Y-CEPzvcNweftuNELcn-7gwu9fcpg8yoi3c220fQ,1423
+mlx/xunit2rst.py,sha256=LEWlMHrNgaAoE4CqFjqMbrBZRk4Ah0sT8M5bYgQvzPQ,4783
+mlx.xunit2rst-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mlx.xunit2rst-0.2.0.dist-info/METADATA,sha256=SiIr9O8usbmeMuDBoIFix0QOxK04kXS2MMUdcSEm8tY,2926
+mlx.xunit2rst-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+mlx.xunit2rst-0.2.0.dist-info/entry_points.txt,sha256=ay-Uhy_s-GdeGqwkuWSoS86Jljdv4KhG4hDigqG8dCE,54
+mlx.xunit2rst-0.2.0.dist-info/namespace_packages.txt,sha256=NCVZzyms-obPlDq2Sa--m3oyfnnmLma38KCnE6gmcFE,4
+mlx.xunit2rst-0.2.0.dist-info/top_level.txt,sha256=NCVZzyms-obPlDq2Sa--m3oyfnnmLma38KCnE6gmcFE,4
+mlx.xunit2rst-0.2.0.dist-info/RECORD,,
