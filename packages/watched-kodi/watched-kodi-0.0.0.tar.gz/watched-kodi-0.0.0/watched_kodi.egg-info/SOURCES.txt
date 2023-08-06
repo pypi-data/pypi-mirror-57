@@ -1,0 +1,16 @@
+README.md
+setup.py
+watched_kodi/KodiAddon.py
+watched_kodi/__init__.py
+watched_kodi/common.py
+watched_kodi/watched_local.py
+watched_kodi/xbmc.py
+watched_kodi/xbmcaddon.py
+watched_kodi/xbmcgui.py
+watched_kodi/xbmcplugin.py
+watched_kodi/xbmcvfs.py
+watched_kodi.egg-info/PKG-INFO
+watched_kodi.egg-info/SOURCES.txt
+watched_kodi.egg-info/dependency_links.txt
+watched_kodi.egg-info/requires.txt
+watched_kodi.egg-info/top_level.txt

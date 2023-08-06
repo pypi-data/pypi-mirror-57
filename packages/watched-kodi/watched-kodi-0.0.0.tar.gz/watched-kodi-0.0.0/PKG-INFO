@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: watched-kodi
+Version: 0.0.0
+Summary: WATCHED.com Kodi SDK
+Home-page: https://github.com/watchedcom/sdk-kodi
+Author: WATCHED
+Author-email: dev@watched.com
+License: UNKNOWN
+Description: # WATCHED.com Kodi SDK
+        
+        Migrate Kodi addons to WATCHED.
+        
+        ## Python 2 code
+        
+        The little tool [2to3](https://docs.python.org/2/library/2to3.html) is your friend.
+        However, it is beyond perfect, so please double check your code.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
