@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+build-requirements.txt
+changelog.md
+requirements.txt
+securedrop-log
+securedrop.Log
+setup.py
+securedrop_log/VERSION
+securedrop_log/__init__.py
+securedrop_log.egg-info/PKG-INFO
+securedrop_log.egg-info/SOURCES.txt
+securedrop_log.egg-info/dependency_links.txt
+securedrop_log.egg-info/top_level.txt
