@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: autobench2
+Version: 0.1.2
+Summary: HTTP benchmarking suite for wrk2
+Home-page: https://github.com/cattail/autobench2
+Author: Chiyu Zhong
+Author-email: zhongchiyu@gmail.com
+License: MIT License
+Description: Autobench2
+        ========================
+        
+        HTTP benchmarking suite for `wrk2 <https://github.com/giltene/wrk2>`_.
+Platform: UNKNOWN
