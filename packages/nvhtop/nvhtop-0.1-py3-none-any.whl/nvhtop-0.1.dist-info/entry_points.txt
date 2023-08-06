@@ -1,0 +1,3 @@
+[console_scripts]
+nvhtop = nvhtop.run:run
+
