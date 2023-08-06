@@ -1,0 +1,8 @@
+README.md
+jiraya
+setup.py
+jiraya.egg-info/PKG-INFO
+jiraya.egg-info/SOURCES.txt
+jiraya.egg-info/dependency_links.txt
+jiraya.egg-info/requires.txt
+jiraya.egg-info/top_level.txt
