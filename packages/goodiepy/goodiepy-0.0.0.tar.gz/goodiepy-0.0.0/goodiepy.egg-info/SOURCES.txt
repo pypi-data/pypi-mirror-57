@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+goodiepy/__init__.py
+goodiepy.egg-info/PKG-INFO
+goodiepy.egg-info/SOURCES.txt
+goodiepy.egg-info/dependency_links.txt
+goodiepy.egg-info/entry_points.txt
+goodiepy.egg-info/top_level.txt
+goodiepy.egg-info/zip-safe
