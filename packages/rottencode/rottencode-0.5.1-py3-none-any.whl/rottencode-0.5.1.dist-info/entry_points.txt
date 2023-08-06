@@ -1,0 +1,6 @@
+[console_scripts]
+rottencode = rottencode.cli.base:main
+
+[rottencode.plugins.1]
+default = rottencode.cli.default
+
