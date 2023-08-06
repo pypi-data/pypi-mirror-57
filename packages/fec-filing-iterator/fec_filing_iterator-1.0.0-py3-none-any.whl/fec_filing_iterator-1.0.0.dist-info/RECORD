@@ -1,0 +1,10 @@
+fec_filing_iterator/__init__.py,sha256=DYldhf7XHPzoY_XUc6RDMklH5q81IcgwZT9QNaUC5Nk,1463
+fec_filing_iterator/_version.py,sha256=D701hRUWjR0ulXFSxQe6u2ryCMqtsTlM5QzogjHiGNU,80
+fec_filing_iterator/errors.py,sha256=U68U4k86E5hvgP_XOHiDfy98XE20ZvubmYN-DLsCp0U,505
+fec_filing_iterator/factories.py,sha256=KCu68TpQfQxnn_U5gzy6OgpHXcKk19eC5ov_I8sNaWE,5094
+fec_filing_iterator/filing_iterator.py,sha256=0Dp-obu0CnrxBC8MK6zsZYIQ2ZcQAyPIPyFAiCcuq5Y,3714
+fec_filing_iterator-1.0.0.dist-info/LICENSE,sha256=V_fSqHjmYH7gjmLGDWSWF401GY8mWTCkc6yX9hclBH8,769
+fec_filing_iterator-1.0.0.dist-info/METADATA,sha256=WXZBewke8u4uJZqwbqqtCcJhE9LI38dtLcrjU6Qz9n0,2964
+fec_filing_iterator-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fec_filing_iterator-1.0.0.dist-info/top_level.txt,sha256=VrdAhzCKnHg8hBSjANsmLGXzn6bZkqp-DgaGfcBqNI0,20
+fec_filing_iterator-1.0.0.dist-info/RECORD,,
