@@ -1,0 +1,8 @@
+README.md
+setup.py
+deploy/deploy.py
+ems_eploy.egg-info/PKG-INFO
+ems_eploy.egg-info/SOURCES.txt
+ems_eploy.egg-info/dependency_links.txt
+ems_eploy.egg-info/entry_points.txt
+ems_eploy.egg-info/top_level.txt
