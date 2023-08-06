@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+meld_all.py
+setup.cfg
+setup.py
+meldutils/__init__.py
+meldutils/base.py
+meldutils.egg-info/PKG-INFO
+meldutils.egg-info/SOURCES.txt
+meldutils.egg-info/dependency_links.txt
+meldutils.egg-info/entry_points.txt
+meldutils.egg-info/requires.txt
+meldutils.egg-info/top_level.txt
