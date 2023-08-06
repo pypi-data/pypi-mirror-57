@@ -1,0 +1,4 @@
+lmdb
+ujson
+bson
+Pipfile
