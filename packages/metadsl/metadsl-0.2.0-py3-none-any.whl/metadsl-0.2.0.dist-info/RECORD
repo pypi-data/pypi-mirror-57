@@ -1,0 +1,14 @@
+metadsl/__init__.py,sha256=lgLg5DChw-VnLhola9uwpc6c3QCMAInhY818bUCv_Rg,195
+metadsl/dict_tools.py,sha256=RhtzCuvQj6ETmgvvAc5MmpxW20fg7HCvB0VE-qM05nE,1889
+metadsl/expressions.py,sha256=qO0qz7h46Rx3_vgYIeHxioJBUJifM1_TZHffjxpxB30,4878
+metadsl/expressions_test.py,sha256=rAjgRn7F6XwQQW-MRc912ZsYbhp1btY8Zw3xqK2Cfaw,3436
+metadsl/matching.py,sha256=n__mgpfrBoDnoixtog48IoQI8qTuTephcWgHIzukP9g,12965
+metadsl/matching_test.py,sha256=jl9O-lHphkV0pn9n7Z7t6HC8UhS5tQoER36prhsK_KE,14673
+metadsl/normalized.py,sha256=phPSV8BqdgP47oowDYZIHXnqo2fdEmY4SUdKOuArzOk,12543
+metadsl/normalized_test.py,sha256=kkHtmOEqXLEsegyJBBa0FktQVGvIPdM91fVh87v4xTM,4167
+metadsl/rules.py,sha256=cjewiS0PvEiCv6IMxcVLUF1qtYe_zm8WDXSmWtwh2ak,7311
+metadsl/typing_tools.py,sha256=15JpjTCkjrv15R6VGZHtvzpTbv-MZ_KhEwzTbHVeW88,25250
+metadsl/typing_tools_test.py,sha256=fJjz9Rm-BicAnl2k-IDuZdvhUp0GZtjUDA7AADk6kgA,5635
+metadsl-0.2.0.dist-info/WHEEL,sha256=bH-u_BY_RnUj9Z3s1FehhR3OifYy3H_vQHEtDkXLu84,81
+metadsl-0.2.0.dist-info/METADATA,sha256=pwbM6byNJ5gHxpiqhWJPGluWsqccz2OFZBLbLLy67lc,1444
+metadsl-0.2.0.dist-info/RECORD,,
