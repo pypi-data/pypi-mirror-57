@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: google-deputy-api-python-client
+Version: 0.0.1
+Summary: A pythonic library for interacting with Deputy.com's API.
+Home-page: https://github.com/google/deputy-api-python-client
+Author: Google
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: absl-py
+Requires-Dist: attrs (>=19)
+Requires-Dist: parameterized
+Requires-Dist: python-dateutil
+Requires-Dist: pytype
+Requires-Dist: urllib3
+
+# Deputy API Python Client
+
+This is a Python3 client library for interacting with the
+[Deputy.com api](https://www.deputy.com/api-doc/API/Getting_Started).
+
+At best, it allows one to easily transcribe responses from the API into Python 
+objects. At worst, it simplifies building and making queries to the API in a 
+more object-oriented way.
+
+This is not an official, or supported, Google product.
+
+# Installation
+
+To install all dependencies:
+
+  pip3 install absl-py urllib3 pytype attrs parameterized python-dateutil
+
+# Contributing
+
+Contributions to this project are welcome. Please see 
+[CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+
+# Licensing
+
+See [LICENSE](LICENSE)
+
+
