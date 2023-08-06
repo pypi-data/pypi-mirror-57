@@ -1,0 +1,9 @@
+sgx/__init__.py,sha256=jes_WnKux6cmzQ-q9tsWIKSa_CV4eSy2FRb75VNDXPY,51
+sgx/sgx.py,sha256=L-Tash2mnBoyXEzgJLsCRgLIbmA-25SdpG551XJVfHA,6114
+sgx/sgxRPCHandler.py,sha256=fN2tkSwIN5_O-g1KsyXokX4qpByv8KBIr8XCSmORiwk,6155
+sgx/sgx_utils.py,sha256=D4B8Ta5hCTQnHfj-5eY5yaTJS4dUUiWuFvxFQ8n0Cbc,1375
+sgx.py-0.2.dev8.dist-info/LICENSE,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+sgx.py-0.2.dev8.dist-info/METADATA,sha256=uWEBitMIQPTtOn3MxbVIY3ihSAO4-RsgRlVD3D2bwNA,574
+sgx.py-0.2.dev8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sgx.py-0.2.dev8.dist-info/top_level.txt,sha256=oW7o1QqOhaMx1mmI_s0gUsUQrfxj-1UUvnZAZeOPhhw,4
+sgx.py-0.2.dev8.dist-info/RECORD,,
