@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyliter
+Version: 0.1.1
+Summary: 
+License: Apache-2.0
+Author: jnyjny
+Author-email: erik.oshaughnessy@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: colorama (>=0.4.3,<0.5.0)
+Requires-Dist: pyyaml (>=5.2,<6.0)
