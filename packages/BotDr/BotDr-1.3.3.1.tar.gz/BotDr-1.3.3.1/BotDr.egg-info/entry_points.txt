@@ -1,0 +1,3 @@
+[console_scripts]
+botdr = BotDr:super_main
+
