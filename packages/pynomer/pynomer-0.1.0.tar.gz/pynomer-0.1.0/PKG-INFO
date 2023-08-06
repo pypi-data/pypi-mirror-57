@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: pynomer
+Version: 0.1.0
+Summary: A python wrapper for nomer
+Home-page: https://github.com/nleguillarme/pynomer
+Author: nleguillarme
+Author-email: nicolas.leguillarme@univ-grenoble-alpes.fr
+License: MIT
+Download-URL: https://github.com/nleguillarme/pynomer/archive/0.1.0.tar.gz
+Description: pynomer
+        =======
+        
+        .. image:: https://img.shields.io/pypi/v/pynomer.svg
+            :target: https://pypi.python.org/pypi/pynomer
+            :alt: Latest PyPI version
+        
+        .. image:: https://travis-ci.org/borntyping/cookiecutter-pypackage-minimal.png
+           :target: https://travis-ci.org/borntyping/cookiecutter-pypackage-minimal
+           :alt: Latest Travis CI build status
+        
+        A python wrapper for nomer
+        
+        Usage
+        -----
+        
+        Installation
+        ------------
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        Compatibility
+        -------------
+        
+        Licence
+        -------
+        
+        Authors
+        -------
+        
+        `pynomer` was written by `nleguillarme <nicolas.leguillarme@univ-grenoble-alpes.fr>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
