@@ -1,0 +1,8 @@
+gdal2numpy/__init__.py,sha256=dOXMoP27qA4JHGFFOTsD30Yi0evzFkJVqKthlrLmIU4,999
+gdal2numpy/filesystem.py,sha256=RYWtEy1g0a27iHowh-Fxqfhj87WYg90o16dhQKmjTCo,1850
+gdal2numpy/module.py,sha256=qgQKA3GCSdSram79cw33TA-EWpqET4xk-g33mMbNHqg,6847
+gdal2numpy-0.0.14.dist-info/LICENSE,sha256=djyKbJMN4U8g5Xuc34qSLM6hoBP4OLVITS8OfKi7uq4,1091
+gdal2numpy-0.0.14.dist-info/METADATA,sha256=NItFrUkAX7e72PtBJpsrAqF7NmU2yPSspd3SGjmEDOY,461
+gdal2numpy-0.0.14.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+gdal2numpy-0.0.14.dist-info/top_level.txt,sha256=Pof-rVqz6g4ji4mK7y5IDDD0Uak_S8oab30ksYs1CI0,11
+gdal2numpy-0.0.14.dist-info/RECORD,,
