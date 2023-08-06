@@ -1,0 +1,16 @@
+README.md
+setup.py
+d120_provider/__init__.py
+d120_provider/admin.py
+d120_provider/apps.py
+d120_provider/models.py
+d120_provider/provider.py
+d120_provider/signals.py
+d120_provider/tests.py
+d120_provider/urls.py
+d120_provider/views.py
+django_allauth_d120.egg-info/PKG-INFO
+django_allauth_d120.egg-info/SOURCES.txt
+django_allauth_d120.egg-info/dependency_links.txt
+django_allauth_d120.egg-info/requires.txt
+django_allauth_d120.egg-info/top_level.txt
