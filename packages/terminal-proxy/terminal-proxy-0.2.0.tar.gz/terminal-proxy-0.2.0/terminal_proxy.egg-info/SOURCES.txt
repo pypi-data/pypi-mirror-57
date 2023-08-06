@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+proxy/__init__.py
+proxy/__main__.py
+proxy/proxy.py
+proxy/utils.py
+terminal_proxy.egg-info/PKG-INFO
+terminal_proxy.egg-info/SOURCES.txt
+terminal_proxy.egg-info/dependency_links.txt
+terminal_proxy.egg-info/entry_points.txt
+terminal_proxy.egg-info/requires.txt
+terminal_proxy.egg-info/top_level.txt
