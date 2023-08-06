@@ -1,0 +1,9 @@
+README.md
+setup.py
+pycvi/__init__.py
+pycvi.egg-info/PKG-INFO
+pycvi.egg-info/SOURCES.txt
+pycvi.egg-info/dependency_links.txt
+pycvi.egg-info/not-zip-safe
+pycvi.egg-info/requires.txt
+pycvi.egg-info/top_level.txt
