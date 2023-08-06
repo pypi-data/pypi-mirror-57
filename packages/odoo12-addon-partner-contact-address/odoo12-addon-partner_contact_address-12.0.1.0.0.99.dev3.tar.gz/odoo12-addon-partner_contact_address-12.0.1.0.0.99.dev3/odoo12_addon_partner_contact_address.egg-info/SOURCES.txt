@@ -1,0 +1,11 @@
+setup.py
+odoo/addons/partner_contact_address/__init__.py
+odoo/addons/partner_contact_address/__manifest__.py
+odoo/addons/partner_contact_address/models/__init__.py
+odoo/addons/partner_contact_address/models/partner.py
+odoo12_addon_partner_contact_address.egg-info/PKG-INFO
+odoo12_addon_partner_contact_address.egg-info/SOURCES.txt
+odoo12_addon_partner_contact_address.egg-info/dependency_links.txt
+odoo12_addon_partner_contact_address.egg-info/not-zip-safe
+odoo12_addon_partner_contact_address.egg-info/requires.txt
+odoo12_addon_partner_contact_address.egg-info/top_level.txt
