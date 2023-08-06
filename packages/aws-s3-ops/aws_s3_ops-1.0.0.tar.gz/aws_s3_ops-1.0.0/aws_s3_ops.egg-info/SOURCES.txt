@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+aws_s3_ops/__init__.py
+aws_s3_ops/aws_s3_ops.py
+aws_s3_ops/exceptions.py
+aws_s3_ops.egg-info/PKG-INFO
+aws_s3_ops.egg-info/SOURCES.txt
+aws_s3_ops.egg-info/dependency_links.txt
+aws_s3_ops.egg-info/requires.txt
+aws_s3_ops.egg-info/top_level.txt

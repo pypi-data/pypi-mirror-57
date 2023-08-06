@@ -1,0 +1,8 @@
+boto3
+pandas
+
+[dev]
+check-manifest
+
+[test]
+coverage
