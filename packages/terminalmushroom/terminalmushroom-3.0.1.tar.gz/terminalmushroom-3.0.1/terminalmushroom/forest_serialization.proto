@@ -1,0 +1,34 @@
+// TerminalMushroom - Forest Serialization Format
+
+syntax = "proto3";
+package terminalmushroom.forest;
+option csharp_namespace = "VioletPines.TerminalMushroom.Serialization";
+
+message Tree {
+	string identifier = 1;
+	repeated uint32 branches = 3;
+}
+
+message Entity {
+	string identifier = 1;
+	string alias = 2;
+	oneof count {
+		int32 increment = 3;
+		int32 set = 4;
+	}
+}
+
+message Node {
+	oneof contents {
+		Tree tree = 1;
+		Entity entity = 2;
+		string literal = 3;
+		string metadata = 4;
+	}
+}
+
+message Forest {
+	repeated uint32 entry_points = 1;
+	repeated string entities = 2;
+	map<uint32, Node> nodes = 3;
+}
