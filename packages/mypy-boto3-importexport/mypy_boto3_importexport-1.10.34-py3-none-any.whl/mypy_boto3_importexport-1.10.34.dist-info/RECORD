@@ -1,0 +1,11 @@
+mypy_boto3_importexport/__init__.py,sha256=MRpXuyrkAYtNFwqPZk1WQnh2O9Y5TsEz2B0dewkWcQ8,201
+mypy_boto3_importexport/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_importexport/client.py,sha256=4sSyAbu4Aa5g-NCAXJDvBNXmnNz59RT3NGrnzSVFf-U,6186
+mypy_boto3_importexport/paginator.py,sha256=_5vIpmAA70MvFwZ1h41LhESrYPmyyWfgIHvBve1f9z0,864
+mypy_boto3_importexport/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_importexport/type_defs.py,sha256=dZXFvPrxY9yQQim99Ve9yY778zpt2OjB4HCnvp_1AbI,3423
+mypy_boto3_importexport/version.py,sha256=FMH1uWn0ppvgG9pl60zz1fbdvmiqTjJn78jjp7vlJxo,55
+mypy_boto3_importexport-1.10.34.dist-info/METADATA,sha256=FHkQBEC8SGWzz6BwgZrq-jMY9UKockflVTpL0qBiF68,1217
+mypy_boto3_importexport-1.10.34.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_importexport-1.10.34.dist-info/top_level.txt,sha256=WJtOzHFlfytVAre6sYOcIDyDmssXF_wjg1WyIViMOhE,24
+mypy_boto3_importexport-1.10.34.dist-info/RECORD,,
