@@ -1,0 +1,12 @@
+aegis/__init__.py,sha256=YfpWJkr89In5x-tz1iXbra_ybqmya8QC5fLv4n_2fyM,57
+aegis/aegis.py,sha256=LtrhaQnBqxUKXEe6dkSRdmrgHqPsznVllbtXszM_cMY,11873
+aegis/database.py,sha256=4R_gLGHvqETypGfGFlUbWFd569Ax_SHjcrRcgY3-EkA,20792
+aegis/model.py,sha256=yjTP6NS_iipVLLGE0KsqPMXS6901_rwE48STxKxthOM,7485
+aegis/stdlib.py,sha256=JpO1SvTnRo83gQhNuWa6Iln9DUyeQIgPkhOgWNF_fIQ,7880
+aegis/webapp.py,sha256=jTXbVMi74G_peq8ki9I6ST59LJ1dz6a58cN6C6M4l-c,15806
+aegis_tools-0.0.4.dist-info/LICENSE,sha256=3lOiaHM19cjOD5DpAqelfwt4sgxjrsvXM_xOFiyDuBU,1073
+aegis_tools-0.0.4.dist-info/METADATA,sha256=O_WtkSXG26Y0io4yZLVTH4ZeKACh5Ggx_8IArnBkNbg,874
+aegis_tools-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aegis_tools-0.0.4.dist-info/entry_points.txt,sha256=PvFz_Gv4kBNBMA6aVo3imaI8QQ3lQTiZ-thsElUfuCQ,44
+aegis_tools-0.0.4.dist-info/top_level.txt,sha256=xJ_9qGNwDmFV53Gsa6EQD1iu_CVoT-xbT-DZhmMPpIU,6
+aegis_tools-0.0.4.dist-info/RECORD,,
