@@ -1,0 +1,11 @@
+odoo/addons/easy_my_coop_loan_website/__init__.py,sha256=joy2piuBU19sOiVMlLlNhtBHMbuI66ATwKRpEYcotxI,27
+odoo/addons/easy_my_coop_loan_website/__manifest__.py,sha256=rpHS-O8tc8s7Ktc8pdovBwzm-03UC4ipBzkYhUkHAvg,794
+odoo/addons/easy_my_coop_loan_website/controllers/__init__.py,sha256=PkFNS_7cd16DfWXeT5pEMgZk2qPkmLfvoLyk81sj4JY,20
+odoo/addons/easy_my_coop_loan_website/controllers/main.py,sha256=J6qLGR7ZN9RIUY1wBrxlhifAiU52jnluLGTVQ6I5N6w,3540
+odoo/addons/easy_my_coop_loan_website/data/website_loan_data.xml,sha256=SVnYvdAWcPsQm2Ez6GMg2Fc-1Jn95aUYw7ht9Kq9bHY,668
+odoo/addons/easy_my_coop_loan_website/static/src/js/loan_issue.js,sha256=PMiEZAkL0yb-oeS-Ik38vGgn9rkAp8-v-mRoEROe7ws,751
+odoo/addons/easy_my_coop_loan_website/template/loan_issue_template.xml,sha256=JG4IE5TmFacTMGBBTGkHIPObbrdaLYEJwW1nHRaMpFA,2842
+odoo12_addon_easy_my_coop_loan_website-12.0.1.0.1.99.dev1.dist-info/METADATA,sha256=wXwn4mDXrsAgcuTz6yxcf3UnbD60GetTDFZivYPvktg,624
+odoo12_addon_easy_my_coop_loan_website-12.0.1.0.1.99.dev1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+odoo12_addon_easy_my_coop_loan_website-12.0.1.0.1.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_easy_my_coop_loan_website-12.0.1.0.1.99.dev1.dist-info/RECORD,,
