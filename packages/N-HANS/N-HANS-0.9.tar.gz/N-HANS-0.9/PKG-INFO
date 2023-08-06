@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: N-HANS
+Version: 0.9
+Summary: Neuro-Holistic Audio-eNhancement System
+Home-page: https://github.com/N-HANS/N-HANS
+Author: Shuo Liu, Gil Keren, Bjoern Schuller
+Author-email: shuo.liu@informatik.uni-augsburg.de
+License: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description: UNKNOWN
+Platform: linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
