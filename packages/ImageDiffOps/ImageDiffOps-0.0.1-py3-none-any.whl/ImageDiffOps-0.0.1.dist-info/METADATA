@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ImageDiffOps
+Version: 0.0.1
+Summary: A library to find similarity between two Image files and finding changes in them.
+Home-page: https://github.com/nikhil130yadav/
+Author: nikhil130yadav
+Author-email: nikhil.nikhil2008@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: scikit-image
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+UNKNOWN
+
+
