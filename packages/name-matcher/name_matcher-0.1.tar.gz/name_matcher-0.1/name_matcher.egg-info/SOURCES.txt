@@ -1,0 +1,9 @@
+setup.py
+name_matcher/__init__.py
+name_matcher/cleanup.py
+name_matcher/name_matcher.py
+name_matcher.egg-info/PKG-INFO
+name_matcher.egg-info/SOURCES.txt
+name_matcher.egg-info/dependency_links.txt
+name_matcher.egg-info/not-zip-safe
+name_matcher.egg-info/top_level.txt
