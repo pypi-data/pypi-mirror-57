@@ -1,0 +1,9 @@
+README.md
+setup.py
+savanhdb/__init__.py
+savanhdb/eventgridsinkwriter.py
+savanhdb.egg-info/PKG-INFO
+savanhdb.egg-info/SOURCES.txt
+savanhdb.egg-info/dependency_links.txt
+savanhdb.egg-info/requires.txt
+savanhdb.egg-info/top_level.txt
