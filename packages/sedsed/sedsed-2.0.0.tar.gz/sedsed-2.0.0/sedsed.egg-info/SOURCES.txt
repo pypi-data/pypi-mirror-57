@@ -1,0 +1,10 @@
+README.md
+sedsed.py
+setup.cfg
+setup.py
+sedsed.egg-info/PKG-INFO
+sedsed.egg-info/SOURCES.txt
+sedsed.egg-info/dependency_links.txt
+sedsed.egg-info/entry_points.txt
+sedsed.egg-info/requires.txt
+sedsed.egg-info/top_level.txt
