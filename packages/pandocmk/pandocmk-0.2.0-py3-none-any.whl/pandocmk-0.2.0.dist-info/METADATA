@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pandocmk
+Version: 0.2.0
+Summary: A minimalistic make for pandoc
+Home-page: https://github.com/sergiocorreia/pandocmk
+Author: Sergio Correia
+Author-email: sergio.correia@gmail.com
+License: MIT
+Requires-Dist: panflute
+Requires-Dist: watchdog
+
+# `pandocmk`: a minmalist make tool for Pandoc
+
+

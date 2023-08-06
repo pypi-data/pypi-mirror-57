@@ -1,0 +1,14 @@
+pandocmk/__init__.py,sha256=qEYtT4pvMCRZaSpTkg-ZK-Xl-QpdSjyP7p3jMWJu5NU,1281
+pandocmk/cli.py,sha256=8UXd4wO_bZQLpg9Oim4f-eyjDrluPP--ckfFoyPO9_Y,2235
+pandocmk/core.py,sha256=JHWGvjpi6e1S8sRjzEqqGjTAmG3fr8PQ5exLhGAA32k,1489
+pandocmk/metadata.py,sha256=-RpceqD8bE0Pyeo5t8jhcIQr5s37fGeg4Y_r1xE8E1Q,2890
+pandocmk/utils.py,sha256=laViy0pmr1AcAjBKl5x58Vh6ZgD1QatnYCuWW5EkPiE,659
+pandocmk/version.py,sha256=nFQ-lvmH5J4a9IIVGLgySJTL3zw4Fd0fzWVZ7QjiwCA,53
+pandocmk/view.py,sha256=kSkCsOPVuHzR51FamEfBYDJG7AKb_KiruHI__06j6T4,580
+pandocmk/watch.py,sha256=KXLMX7DdgkoMlp-N-_MClueCjMcX5ddEUMWLVsNUOF0,2504
+pandocmk-0.2.0.dist-info/LICENSE,sha256=nS8DVXyHYdekIYjwr7li8kOStIx8RWvLixTfioxl8p8,1092
+pandocmk-0.2.0.dist-info/METADATA,sha256=rbT020SQZYiHJhl62REB52IdUM9ZOjnL4w9cpC9csFo,318
+pandocmk-0.2.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pandocmk-0.2.0.dist-info/entry_points.txt,sha256=iLORipWDv3FYAGFCY1iId2L9PMH0Tdh-BnMPLpr3TnA,44
+pandocmk-0.2.0.dist-info/top_level.txt,sha256=N2c9ppb9YnmdEwDEULWD2cuwMRbffi1IpaYKeCIW_4I,9
+pandocmk-0.2.0.dist-info/RECORD,,
