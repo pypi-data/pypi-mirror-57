@@ -1,0 +1,13 @@
+altair_data_server/__init__.py,sha256=TqFgrznye_LgPKl34IZF4KjNhIISTugCzsMls30mYeg,196
+altair_data_server/_altair_server.py,sha256=nU9YSdsqCRNPd7qgsW8D5MNbaqP2iid2QvSyxRUnOec,2151
+altair_data_server/_background_server.py,sha256=49uVXapg3zycKdMAGcetY5WXzxh0TMpu_h-YDILjzE8,4909
+altair_data_server/_provide.py,sha256=je_XZxvWNOOW890Lvn6ZF8iEoZt9Bq-LgajeGdhpAYY,6750
+altair_data_server/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+altair_data_server/tests/test_altair_server.py,sha256=eXE9EZVRZCKzDraIGgU8s16dRWpkplnEJpOElgyUOtQ,1403
+altair_data_server/tests/test_entrypoint.py,sha256=F5YthJxdXaysikVBb_XylUQHMVA3feQ7REeAtzfUYHs,587
+altair_data_server-0.3.0.dist-info/LICENSE,sha256=BRTG8d58fdYAYqbtu4slkPb1F0-3KXtJyy6TfjabUZA,1510
+altair_data_server-0.3.0.dist-info/METADATA,sha256=JNbVnITKWR2E5muprNdkO1Dd6NG6pTe20A8vVBaT6FY,3668
+altair_data_server-0.3.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+altair_data_server-0.3.0.dist-info/entry_points.txt,sha256=nTXgdVPD3eOBzzRPeWV-Dyap23s5gPdJUz3j9NkmwI0,435
+altair_data_server-0.3.0.dist-info/top_level.txt,sha256=cTtO28LFK5fBML8ISTuIYpdn0bDVwA60_BCUqXw-W68,19
+altair_data_server-0.3.0.dist-info/RECORD,,
