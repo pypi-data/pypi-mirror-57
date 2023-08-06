@@ -1,0 +1,14 @@
+spytex/__init__.py,sha256=JPHYvns6-mVpGKD4ggvEja3xn7M12i-WWbV2TzImg1I,44
+spytex/__main__.py,sha256=z3OQolCKD8rUd3pKYp_FISq2VctFhFl1mV-DVnaoNOM,29
+spytex/api.py,sha256=ftW2wNXdgtSkCmN38cE152-88SHSvcP08s5WQjztx3U,589
+spytex/cli.py,sha256=Ua6ITK8F2WW9WIY4u15DNB4B_nUN3FeCQliAR6fLMWc,1004
+spytex/compile.py,sha256=52xhyWC0t7nIr7UhV1rIAuiUpYB71tvV86Z0eiYUTgc,2674
+spytex/context.py,sha256=YWnI91XAeXginF22720036auLSfVwJ_wDiw8ns72Pug,501
+spytex/defs.py,sha256=Gkhcj3HrWldtyNvBcqcGXucYHanJ1SxFjoEOD___19c,4051
+spytex/magics.py,sha256=hY9I6NJ3CMhycpsy44NVSwMBKHJ0pHen9i3Rr8oD1Yc,898
+spytex-0.1.6.dist-info/LICENSE,sha256=Y2Jx98wDLGxGHeM1o2hpWbkkU-DWup_oUIChkE-o_l8,1073
+spytex-0.1.6.dist-info/METADATA,sha256=GALjugE-asGOpeUgJZn9l88x-b8HkYBzTXDRHjjWgz8,7183
+spytex-0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+spytex-0.1.6.dist-info/entry_points.txt,sha256=C8qLhEuFQ9xXtdaLq8PDftboj80fraU5li58UVYlGCY,44
+spytex-0.1.6.dist-info/top_level.txt,sha256=ic_RlLf_UYcMlK0U0bJLNqw2Zgm-cnVFyRST1f7Ojik,7
+spytex-0.1.6.dist-info/RECORD,,
