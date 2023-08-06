@@ -1,0 +1,3 @@
+[console_scripts]
+midiknobs_gui = midiknobs.__main__:main
+

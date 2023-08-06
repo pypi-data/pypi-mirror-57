@@ -1,0 +1,10 @@
+README.md
+setup.py
+midiknobs/__init__.py
+midiknobs/__main__.py
+midiknobs.egg-info/PKG-INFO
+midiknobs.egg-info/SOURCES.txt
+midiknobs.egg-info/dependency_links.txt
+midiknobs.egg-info/entry_points.txt
+midiknobs.egg-info/requires.txt
+midiknobs.egg-info/top_level.txt
