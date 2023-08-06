@@ -1,0 +1,9 @@
+future>=0.18.2
+
+[dev]
+pytest>=5.1.1
+setuptools_setup_versions>=0.0.28
+
+[test]
+pytest>=5.1.1
+setuptools_setup_versions>=0.0.28
