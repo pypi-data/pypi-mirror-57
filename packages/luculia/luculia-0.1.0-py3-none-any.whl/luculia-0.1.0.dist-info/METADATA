@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: luculia
+Version: 0.1.0
+Summary: A personal note-taking engine.
+Home-page: UNKNOWN
+Author: Stephen Malone
+Author-email: mail@luculia.org
+License: UNKNOWN
+Project-URL: Changelog, https://github.com/luculia/luculia/blob/master/changes.md
+Project-URL: Issues, https://github.com/luculia/luculia/issues
+Project-URL: License, https://github.com/luculia/luculia/blob/master/license.md
+Project-URL: Releases, https://github.com/luculia/luculia/releases
+Keywords: personal command-line note databse
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Database
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Requires-Dist: Click (>=7.0)
+Requires-Dist: toml (>=0.10.0)
+
+Luculia
+=====
+
+[![Commits](https://img.shields.io/github/last-commit/luculia/luculia)][co]
+[![Tracker](https://img.shields.io/github/issues/luculia/luculia)][is]
+[![Version](https://img.shields.io/pypi/v/luculia)][pp]
+[![PythonV](https://img.shields.io/pypi/pyversions/luculia)][py]
+[![License](https://img.shields.io/badge/license-BSD--3-blue)][li]
+
+**Luculia** is a personal note-taking engine, written in [Python][py] by Stephen Malone. Use it to create, edit and organise your text files, all from the command-line!
+
+Installation
+------------
+
+1. Install [Python][py] and run `pip install luculia`.
+1. Run `luculia init` to run the interactive setup tool.
+
+Alternately, you can download the [latest source release][re] and install it yourself.
+
+Usage
+-----
+
+### Basic Concepts
+
+Luculia expects to you have a bunch of text files using a single extension in a single directory. These files are always referenced by name, lowercase and without extension.
+
+For example, if you have a directory like this:
+
+~~~text
+- notes/
+  - alpha.txt
+  - bravo.txt
+  - charlie.txt
+~~~
+
+You can manipulate them like this:
+
+~~~text
+$ luculia list
+alpha
+bravo
+charlie
+
+$ luculia show charlie
+Chaaaarliiiie!
+
+$ luculia open delta
+(this opens "notes/delta.txt" in your default editor)
+~~~
+
+### Configuration Files
+
+The default configuration file location is `~/.luculia` (i.e.: a file named `.luculia` in your home directory). If you'd like to put your configuration file somewhere else, set the environment variable `LUCULIA` to the file's path.
+
+<details><summary>Example configuration file.</summary>
+
+~~~toml
+# # # # # # # # # # # # # # # #
+# Luculia Configuration File. #
+# # # # # # # # # # # # # # # #
+
+# The path to your notes directory.
+directory = "~/notes"
+
+# The extension your note files use.
+extension = "txt"
+~~~
+
+</details>
+
+### Command Guide
+
+#### `list`
+
+List all existing notes in alphabetical order.
+
+<details><summary>Example.</summary>
+
+~~~text
+$ luculia list
+alpha
+bravo
+charlie
+~~~
+
+</details>
+
+Contribution
+------------
+
+Please submit any bugs or proposals to the [public issue tracker][is]. Thank you!
+
+[co]: https://github.com/luculia/luculia/commits/master
+[is]: https://github.com/luculia/luculia/issues
+[li]: https://github.com/luculia/luculia/blob/master/license.md
+[pp]: https://pypi.org/project/luculia/
+[py]: https://python.org
+[re]: https://github.com/luculia/luculia/releases
+
+
