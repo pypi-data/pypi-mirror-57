@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: evilpackages
+Version: 0.0.1
+Summary: Detect possible malicious pypi packages
+Home-page: https://github.com/johannestaas/evilpackages
+Author: Johan Nestaas
+Author-email: johannestaas@gmail.com
+License: GPLv3
+Description: evilpackages
+        ============
+        
+        Detect possible malicious pypi packages
+        
+        Installation
+        ------------
+        
+        From the project root directory::
+        
+            $ python setup.py install
+        
+        Usage
+        -----
+        
+        Simply run it::
+        
+            $ evilpackages
+        
+        Use --help/-h to view info on the arguments::
+        
+            $ evilpackages --help
+        
+        Release Notes
+        -------------
+        
+        :0.0.1:
+            Project created
+        
+Keywords: some key words
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python

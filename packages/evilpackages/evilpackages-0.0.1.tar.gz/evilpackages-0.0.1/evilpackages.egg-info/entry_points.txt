@@ -1,0 +1,3 @@
+[console_scripts]
+evilpackages = evilpackages:main
+

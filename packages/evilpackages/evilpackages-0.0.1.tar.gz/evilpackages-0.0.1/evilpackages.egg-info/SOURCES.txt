@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+tox.ini
+evilpackages/__init__.py
+evilpackages/exceptions.py
+evilpackages/pypi_stats.py
+evilpackages.egg-info/PKG-INFO
+evilpackages.egg-info/SOURCES.txt
+evilpackages.egg-info/dependency_links.txt
+evilpackages.egg-info/entry_points.txt
+evilpackages.egg-info/requires.txt
+evilpackages.egg-info/top_level.txt
