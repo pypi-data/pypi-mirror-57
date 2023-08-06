@@ -1,0 +1,13 @@
+rdchiral/__init__.py,sha256=WaZ1LOTSxdmZCNtqt6Ad3dUv1INdcFJwjm0yQ_Apwws,455
+rdchiral/bonds.py,sha256=r1mgRUe3fTBo1gfdKrXfMFeI8c_htQihLkjlFKavTrY,20187
+rdchiral/chiral.py,sha256=5y-TjThX9mG3Mzhw8NvbjfsM45VwBoFPCWFZAD4ws4c,5820
+rdchiral/clean.py,sha256=Ydek0FVqzKrcXFfQGwOY99PmcI97NmZMwTlA2il-zaM,3956
+rdchiral/initialization.py,sha256=BNvAsUiBZZxkj7sDWHD6Bhe08HfAb9ukLIf8apyQaEY,7338
+rdchiral/main.py,sha256=zQFquYNLx9YH8oKrtaBgwLx4fytHzyfvjl3l_XTCL94,28098
+rdchiral/utils.py,sha256=RNp85YC3wrEL4FYTmvgsHoMctLPufRx-_WINTYLo7_g,4230
+rdchiral/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rdchiral-1.0.0.dist-info/LICENSE,sha256=344su1xfCzaqbqvNMr2AyNustqALXSJpZ1cWqOGROKo,1069
+rdchiral-1.0.0.dist-info/METADATA,sha256=_hSHhIxCbmdguKmcFmSABKBvcPtiCUpE3gqE7uy8Nk8,987
+rdchiral-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+rdchiral-1.0.0.dist-info/top_level.txt,sha256=rF8MLmNkBC8DhS8XMoW3mQ6V9u_P-RhZDVEMzPIcfyU,9
+rdchiral-1.0.0.dist-info/RECORD,,
