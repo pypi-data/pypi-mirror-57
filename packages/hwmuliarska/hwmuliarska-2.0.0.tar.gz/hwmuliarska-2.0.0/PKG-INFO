@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: hwmuliarska
+Version: 2.0.0
+Summary: Five the most successful decades
+Home-page: UNKNOWN
+Author: Yana Muliarska
+Author-email: muliarska@ucu.edu.ua
+License: MIT
+Description: 
+            This package conducts the research based on file 'ratings.list'. 
+            It identifies five the most successful decades and their average rating based on the ratings of films made during each decade. 
+            It creates a pie chart rendering.
+            
+Platform: UNKNOWN
