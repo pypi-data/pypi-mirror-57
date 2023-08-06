@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/VarSeries.egg-info/PKG-INFO
+src/VarSeries.egg-info/SOURCES.txt
+src/VarSeries.egg-info/dependency_links.txt
+src/VarSeries.egg-info/requires.txt
+src/VarSeries.egg-info/top_level.txt
+src/varseries/__init__.py
+src/varseries/varseries.py
+src/varseries.egg-info/PKG-INFO
+src/varseries.egg-info/SOURCES.txt
+src/varseries.egg-info/dependency_links.txt
+src/varseries.egg-info/requires.txt
+src/varseries.egg-info/top_level.txt
