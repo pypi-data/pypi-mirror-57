@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: segment-config-api
+Version: 0.0.1
+Summary: A Python Wrapper for Segment's Config API
+Home-page: https://github.com/bufferapp/segment-config-api
+Author: Michael Erasmus
+Author-email: michael@buffer.com
+License: MIT
+Description: UNKNOWN
+Keywords: segment
+Platform: UNKNOWN
