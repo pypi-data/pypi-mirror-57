@@ -1,0 +1,6 @@
+observable_models/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+observable_models/apps.py,sha256=gk6dFt6SfrFoCyW9eQJMLxWrYaI5TAgkkZ56V7l_OdA,108
+observable_models/models.py,sha256=WGZmSJ1VvQ60gTxqJV2oEyexQwrjYOHCd4ro0UfjO1U,1473
+django_observable_models-0.3.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+django_observable_models-0.3.0.dist-info/METADATA,sha256=gzltw8Us7f_EvuWn6XChiHiY3boy452FPgaHCPyWhIA,1193
+django_observable_models-0.3.0.dist-info/RECORD,,
