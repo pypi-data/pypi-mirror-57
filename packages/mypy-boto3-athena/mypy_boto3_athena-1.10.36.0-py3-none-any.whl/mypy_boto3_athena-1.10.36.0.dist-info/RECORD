@@ -1,0 +1,11 @@
+mypy_boto3_athena/__init__.py,sha256=pDLDGJ__CeFozPFBbmxPoK02msKbo4g7TGGlBrOkPlc,351
+mypy_boto3_athena/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_athena/client.py,sha256=KkqKyPk6rtOEq5XJjWZdTYw5gWvxWOpe56GeVfGUq5I,11618
+mypy_boto3_athena/paginator.py,sha256=PfT1qIlLIYT--8zaX3W_zl964PFfRI2Dbe2Nfq26U6E,2429
+mypy_boto3_athena/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_athena/type_defs.py,sha256=BrKsulpmi4einRu3mq6pGRAvZl_jl-RL-YXMbjVKmYo,7882
+mypy_boto3_athena/version.py,sha256=sWKX2BV98mDKhEE-vx306wW6px5oyy-Rt8EEXgS78Ho,57
+mypy_boto3_athena-1.10.36.0.dist-info/METADATA,sha256=E4CcM2qo38LzwziqUwLH4TAPCm2VuGdEoVgQv_Lr2dI,1209
+mypy_boto3_athena-1.10.36.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_athena-1.10.36.0.dist-info/top_level.txt,sha256=zhATfWFKeSfNk0lB3FXaQgvfFX_G02p4RuEUJSe6u0Q,18
+mypy_boto3_athena-1.10.36.0.dist-info/RECORD,,
