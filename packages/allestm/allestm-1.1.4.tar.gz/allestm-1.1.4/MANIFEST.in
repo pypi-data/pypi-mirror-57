@@ -1,0 +1,2 @@
+include examples/1fx8_A.a3m
+recursive-include examples *.a3m
