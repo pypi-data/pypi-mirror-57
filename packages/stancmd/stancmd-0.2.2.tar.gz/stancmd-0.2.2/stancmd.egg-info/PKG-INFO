@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: stancmd
+Version: 0.2.2
+Summary: A useless command line patience tester
+Home-page: https://gitlab.com/quentin-dev/stan
+Author: Quentin Barbarat
+Author-email: q.barbarat@gmail.com
+License: UNKNOWN
+Description: # Stan
+        
+        ## Requirements
+        * Python 3
+        
+        ## What is Stan ?
+        Stan is a simple python package / script that launches the command you pass it
+        after waiting four hours. However, as it calls `subprocess` it does **not**
+        handle aliases or shell builtins. It also catches some signals in order to keep
+        waiting.
+        
+        ## Usage
+        ### As a script
+        `./stan.py cmd`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
