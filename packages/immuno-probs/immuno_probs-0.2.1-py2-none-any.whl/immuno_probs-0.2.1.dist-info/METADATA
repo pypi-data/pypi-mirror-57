@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: immuno-probs
+Version: 0.2.1
+Summary: Create IGoR models and calculate the generation probability of V(D)J and CDR3 sequences.
+Home-page: https://github.com/penuts7644/immuno-probs
+Author: Wout van Helvoirt
+Author-email: wout.van.helvoirt@icloud.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/penuts7644/immuno-probs/issues
+Keywords: Bio-Informatics,Recombination,Sequencing,Analysis,DNA,Model,Genes,Kmer,Immune,Probs,Probability
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy (==1.16.5)
+Requires-Dist: pandas (==0.24.*)
+Requires-Dist: scipy (==1.2.2)
+Requires-Dist: matplotlib (==2.2.4)
+Requires-Dist: biopython (==1.75)
+Requires-Dist: pathos (>=0.2.2.1)
+Requires-Dist: olga (>=1.0.2)
+Provides-Extra: development
+Requires-Dist: twine (==1.15.0) ; extra == 'development'
+
+ImmunoProbs
+===========
+
+|Test Status| |PyPI version| |PyPI pyversions| |PyPI license|
+
+Create IGoR models and calculate the generation probability of V(D)J and CDR3 sequences.
+
+For **installation**, **usage** and **use cases**, please have a look at the `ImmunoProbs documentation <https://penuts7644.github.io/immuno-probs/>`__.
+
+Development
+^^^^^^^^^^^
+
+If you would like to see new features, please open a new `issue <https://github.com/penuts7644/immuno-probs/issues/new>`__.
+
+It is also possible to help out ImmunoProbs development by forking this project and creating a `pull request <https://github.com/penuts7644/immuno-probs/compare>`__ to submit new features.
+
+When using a forked copy ImmunoProbs, make sure to have the correct Python version installed. Install the local Python development requirements using the ``make setup`` command.
+
+**Developed in collaboration with Sandve and Greiff labs.**
+
+.. |Test Status| image:: https://github.com/penuts7644/immuno-probs/workflows/test/badge.svg
+   :target: https://github.com/penuts7644/immuno-probs
+.. |PyPI version| image:: https://img.shields.io/pypi/v/immuno-probs
+   :target: https://pypi.python.org/pypi/immuno-probs/
+.. |PyPI pyversions| image:: https://img.shields.io/pypi/pyversions/immuno-probs
+   :target: https://pypi.python.org/pypi/immuno-probs/
+.. |PyPI license| image:: https://img.shields.io/pypi/l/immuno-probs
+   :target: https://pypi.python.org/pypi/immuno-probs/
+
+
