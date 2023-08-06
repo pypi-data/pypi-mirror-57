@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: juba
+Version: 0.2.0
+Summary: Juba Chinese Natural Language Processing
+Home-page: https://github.com/lihanju/juba
+Author: Hanju Li
+Author-email: 99959828@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: jieba
+Requires-Dist: requests
+
+UNKNOWN
+
+
