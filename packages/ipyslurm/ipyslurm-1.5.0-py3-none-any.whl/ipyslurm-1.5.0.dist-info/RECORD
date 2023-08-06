@@ -1,0 +1,9 @@
+ipyslurm/__init__.py,sha256=2I08sTeaI4bgHIiNYg26k9BrHzdtlqlNApKhqw6Ph48,131
+ipyslurm/client.py,sha256=QhJEcIEkeCZyhJsVigrD4nrui7SEmktiyAoq8dbw81Y,8653
+ipyslurm/ipyslurm.py,sha256=Q3W_JyAk9eOQSGr2lBcfWralEb4WGPNWog8AngM9p-Y,15587
+ipyslurm/progress.py,sha256=Dbyyqm_I6VSXjMww_WzvVlrzAsCkooWBkYpsw_BpBMk,1934
+ipyslurm-1.5.0.dist-info/LICENSE.md,sha256=hboBYAQBN4JXknNSSaKujFMDpKxKIHv8pYeTMBrOXj0,1077
+ipyslurm-1.5.0.dist-info/METADATA,sha256=zkiVn7mlsZK9pjsbEqrh-QQbiOUTtQ1UpWvfRJjKx64,1604
+ipyslurm-1.5.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ipyslurm-1.5.0.dist-info/top_level.txt,sha256=GVbkzgieShAmyRAIIQ3VlTn10K36LTyoaoPtMCUkApQ,9
+ipyslurm-1.5.0.dist-info/RECORD,,
