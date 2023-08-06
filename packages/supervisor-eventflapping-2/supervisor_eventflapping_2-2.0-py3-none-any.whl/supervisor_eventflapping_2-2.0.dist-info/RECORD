@@ -1,0 +1,7 @@
+supervisor_eventflapping/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+supervisor_eventflapping/exitedsendtonewrelic.py,sha256=5pYqcO38A6YRSqjGwdQwI5hrmn0JSdE8EAixUEE6rqk,3159
+supervisor_eventflapping/process_state_monitor.py,sha256=7PAO2tHUObPzmj5wxr9fhwIST8jv0SB7c85NI1D2V70,3344
+supervisor_eventflapping_2-2.0.dist-info/METADATA,sha256=dLnnXHQys_tMwPDa9bKbNT4iFQpYViEiyuVSXE2clpI,851
+supervisor_eventflapping_2-2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+supervisor_eventflapping_2-2.0.dist-info/top_level.txt,sha256=3J_RenxmK7jIkWpFuODRx9ICAhTApqktmjVmp12easc,25
+supervisor_eventflapping_2-2.0.dist-info/RECORD,,
