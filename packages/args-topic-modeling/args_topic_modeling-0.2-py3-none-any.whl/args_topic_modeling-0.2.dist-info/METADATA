@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: args-topic-modeling
+Version: 0.2
+Summary: modeling the topic of arguments
+Home-page: https://git.webis.de/args/args-topic-modeling
+Author: Yamen Ajjour
+Author-email: yamen.ajjour@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+read me
+
+
