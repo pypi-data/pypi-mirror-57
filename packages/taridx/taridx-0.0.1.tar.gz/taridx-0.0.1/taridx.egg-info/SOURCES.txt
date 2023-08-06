@@ -1,0 +1,10 @@
+README.md
+setup.py
+taridx/__init__.py
+taridx/taridx.py
+taridx.egg-info/PKG-INFO
+taridx.egg-info/SOURCES.txt
+taridx.egg-info/dependency_links.txt
+taridx.egg-info/entry_points.txt
+taridx.egg-info/requires.txt
+taridx.egg-info/top_level.txt

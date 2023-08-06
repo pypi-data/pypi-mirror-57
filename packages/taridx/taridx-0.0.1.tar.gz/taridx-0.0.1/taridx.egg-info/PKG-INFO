@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: taridx
+Version: 0.0.1
+Summary: Tar indexing for fast random file access
+Home-page: UNKNOWN
+Author: Bea Steers
+Author-email: bea.steers@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: tar index fast random access database sqlite dataset
+Platform: UNKNOWN
