@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: kueri
+Version: 0.5.2
+Summary: Helper scripts for CI pipeline operations
+Home-page: https://gitlab.mapan.io/data-eng/kueri
+Author: DE Team
+Author-email: data.eng@ruma.co.id
+License: MIT
+Description: 
+        # How to run unit test
+        Need to install berfore run unit test:
+          - pytest (pip install pytest)
+          - pytest-cov (pip install pytest-cov)
+        
+        Command to run unit test:
+          - pytest (Output only pass or failed testing)
+          - pytest --cov-report term --cov=kueri tests/  (Give percentage coverage of unit testing)
+          - pytest --cov-report term-missing --cov=kueri tests/ (Give line of code function that not covered in unit test)
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown
