@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: braincube-model-sdk
+Version: 0.1
+Summary: The Braincube Python Edge SDK
+Home-page: https://mybraincube.com
+Author: Flying Circus
+Author-email: contact@braincube.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >3.5
+Requires-Dist: python-socketio
+Requires-Dist: requests
+Requires-Dist: flask
+
+UNKNOWN
+
+
