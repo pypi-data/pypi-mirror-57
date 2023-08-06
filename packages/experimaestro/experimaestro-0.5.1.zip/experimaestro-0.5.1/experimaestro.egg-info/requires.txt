@@ -1,0 +1,14 @@
+click
+fasteners
+jsonstreams
+websockets
+
+[dev]
+docutils
+Pygments
+
+[ssh]
+paramiko
+
+[test]
+tox
