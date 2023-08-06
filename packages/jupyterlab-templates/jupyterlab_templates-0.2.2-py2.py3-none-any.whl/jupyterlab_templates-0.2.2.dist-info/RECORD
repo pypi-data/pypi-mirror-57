@@ -1,0 +1,11 @@
+jupyterlab_templates/__init__.py,sha256=chToK93-LzPRgM-o6nCwCsNOZJQi-zIamYRj0yxggXA,161
+jupyterlab_templates/_version.py,sha256=dYo-tAvjhBRbnfZEf3FDwCF-2jSb2McH_bdfKigfM10,677
+jupyterlab_templates/extension.py,sha256=63tqxyKgkJxVHqD_60zHEAF65lXku3qP4lcrELUBAEY,3334
+jupyterlab_templates/templates/jupyterlab_templates/Sample.ipynb,sha256=u3auV8rpxaE_Ry4d9MOBKmS14kbm4jwaVBQL0AjJkcI,1144
+jupyterlab_templates-0.2.2.data/data/etc/jupyter/jupyter_notebook_config.d/jupyterlab_templates.json,sha256=gdiRCF1x9fs4_wxwiRV51oyuFpMcI9uVuDBg7WAGumw,97
+jupyterlab_templates-0.2.2.data/data/share/jupyter/lab/extensions/jupyterlab_templates-0.2.2.tgz,sha256=7kcocbW35hdvPqYezPYflyg7Le0csCNoZ1l9t43LcZA,46411
+jupyterlab_templates-0.2.2.dist-info/LICENSE,sha256=AunL1oTsRfgskW23OX4LQWdgsu8mJbXsM6bmQnvt2RY,11363
+jupyterlab_templates-0.2.2.dist-info/METADATA,sha256=UnB-cgAnt7U7JL21yw63wGz99vIbIJz4ROeZinREBd8,2913
+jupyterlab_templates-0.2.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+jupyterlab_templates-0.2.2.dist-info/top_level.txt,sha256=B2Dxmx1fbV-e3JaQErJY_yj15k7phY_cB4lCgGjZuHk,21
+jupyterlab_templates-0.2.2.dist-info/RECORD,,
