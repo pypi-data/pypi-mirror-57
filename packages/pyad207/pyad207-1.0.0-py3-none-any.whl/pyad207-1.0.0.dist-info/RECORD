@@ -1,0 +1,16 @@
+pyad/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyad/forward_mode.py,sha256=ZmznJ1TQhu5o8Nz4uu72TtOjklABK4Da193ZQiSZFjM,23251
+pyad/graph_demo.py,sha256=xEAYv-xKLdweNHju3wEsujU1ern4siEn18gTjVkvtCA,208
+pyad/nn.py,sha256=xfRLoBchj-T8pim7lHykbYRWVkXIeDhuDgkebWwnOx8,9765
+pyad/random_testing.py,sha256=5LA2ouQvmGwoU59aqR9n-6mW2odh82d5rRGPNQm_UPo,277
+pyad/reverse_mode.py,sha256=GJW5ZtSeTKV1HoGNYr2sJQ9wj53VTtZXjaMeIhu1XIk,10956
+pyad/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyad/tests/test_forward_mode.py,sha256=T2WHMgzmfltHmZ1Xe0QOypH23yRcn75E7r2YvgQk8nc,20973
+pyad/tests/test_forward_mode_end2end.py,sha256=D4rplra1vYQ7I5lI3bD8LO8R7pq2jgYv8BrfWfDUPxg,1687
+pyad/tests/test_nn.py,sha256=bjRCEks858RtNQObQ_T-2kI3bXudGHkhU5wNEJSxcOw,4392
+pyad/tests/test_reverse.py,sha256=haY81hW8Zp5iRaUVGBjUJYF-FmpKdNntM9dAdVq2fss,15039
+pyad207-1.0.0.dist-info/LICENSE,sha256=qZQeo1ZZGDDbvfhkPURmYcERVHOgr3ucvPV_dPVdfWg,1085
+pyad207-1.0.0.dist-info/METADATA,sha256=2Od0N7lk_DNOxVPWlqxkVV1ShrSIbqpyPQCV-EUT5hE,381
+pyad207-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyad207-1.0.0.dist-info/top_level.txt,sha256=nRuluAlQ0ORm6J1nBi_n7OlMbbqTp7JDtl3g14wpSmI,5
+pyad207-1.0.0.dist-info/RECORD,,

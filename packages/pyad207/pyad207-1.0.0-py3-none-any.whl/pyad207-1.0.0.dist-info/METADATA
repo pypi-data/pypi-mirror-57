@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyad207
+Version: 1.0.0
+Summary: A simple package for auto-differentiation.
+Home-page: https://github.com/fire-breathing-rubber-lemons/cs207-FinalProject
+Author: CS207 Project Group 10
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.16.3)
+Requires-Dist: networkx (>=2.4)
+Requires-Dist: matplotlib (>=3.1.0)
+
+UNKNOWN
+
+
