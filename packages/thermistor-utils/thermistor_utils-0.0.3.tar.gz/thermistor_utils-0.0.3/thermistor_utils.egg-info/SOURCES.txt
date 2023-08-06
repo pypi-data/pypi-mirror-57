@@ -1,0 +1,9 @@
+README.md
+setup.py
+thermistor_utils/Beta_converter.py
+thermistor_utils/SH_converter.py
+thermistor_utils/__init__.py
+thermistor_utils.egg-info/PKG-INFO
+thermistor_utils.egg-info/SOURCES.txt
+thermistor_utils.egg-info/dependency_links.txt
+thermistor_utils.egg-info/top_level.txt
