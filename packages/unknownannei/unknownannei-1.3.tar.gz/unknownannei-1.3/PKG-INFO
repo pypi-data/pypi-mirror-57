@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: unknownannei
+Version: 1.3
+Summary: Forbidden!
+Home-page: https://github.com/
+Author: SaidapetSelva
+Author-email: unknownannei@unknownmail.com
+License: MIT
+Description: #Forbidden!
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
