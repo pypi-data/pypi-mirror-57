@@ -1,0 +1,13 @@
+watched_sdk/__init__.py,sha256=veLFDk117AhXmVaLxhAekQvCf4tRUfu4xW9kuCXaWX4,176
+watched_sdk/addon.py,sha256=xJcdMKO943L4alisxeumXF4tUhzICK4kc1oB6DhnxPE,2324
+watched_sdk/cache.py,sha256=Xa4R1SCZM3i5cE1XF5gSovEVDPImL4Xmn694aoDWvWc,1390
+watched_sdk/common.py,sha256=LemUT5Qo_kLCBjcAU6FndKQvvXDN2Iynq502EvZ7Feg,58
+watched_sdk/config.py,sha256=NjPZsvXzl4xukBxJSyxT1nq4GAro_NODeG-sKj2Fq5k,858
+watched_sdk/context.py,sha256=noe_fxrr6NUACx6rUbOwfzSxO0httoZ4-4CnrdKXmEY,1446
+watched_sdk/main.py,sha256=JYqMzGy6Nk47EkzXnbZ3UV79wWc82YqWOYBpyo6IbNc,1021
+watched_sdk/router.py,sha256=t7YOEcDwSfGwPE7oBWKjG02TX0ZjGs4fXnY-GY1SCoc,5261
+watched_sdk/test.py,sha256=S7YBRFDauuecRy-dhMId-aQxa0vLEINdkK5sN18qXvs,3236
+watched_sdk-0.0.4.dist-info/METADATA,sha256=fNiNFWRaAthya3A__gMPVKjRjOGKpWtPvalOjQ0P8Y8,435
+watched_sdk-0.0.4.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+watched_sdk-0.0.4.dist-info/top_level.txt,sha256=lsNfeOPr4-ypCb3ck3wjKbI2W4z7EbJovIzN0o1IooE,12
+watched_sdk-0.0.4.dist-info/RECORD,,
