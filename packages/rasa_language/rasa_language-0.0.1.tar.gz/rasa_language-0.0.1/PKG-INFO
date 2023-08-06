@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: rasa_language
+Version: 0.0.1
+Summary: An attempt of crafting a specific purpose language for describing rasa chatbots
+Home-page: https://github.com/icaropires/rasa-chatbot-description-language
+Author: Ícaro Pires e João Robson
+Author-email: None
