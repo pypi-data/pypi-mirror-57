@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: django-tckn-field
+Version: 0.0.1
+Summary: A Django app built to integrate Republic of Turkey Identification Number to your project.
+Home-page: https://github.com/enisbt/django-tckn-field
+Author: Enis B. Tuysuz
+Author-email: enisbtuysuz@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+
+# Django TCKN Field
+
+A Django app built to integrate Republic of Turkey Identification Number to your project.
+
+### Installation
+
+```bash
+pip install django-tckn-field
+```
+
+### Quick Start
+
+```python
+from tckn.fields import TCKNField
+
+class MyModel(models.Model):
+    tckn_field = TCKNField()
+```
+
+### License
+
+You can use this program under the terms of MIT License. See LICENSE for details.
+
+
+

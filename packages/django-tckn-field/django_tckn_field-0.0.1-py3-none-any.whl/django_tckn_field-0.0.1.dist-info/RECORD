@@ -1,0 +1,13 @@
+tckn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tckn/apps.py,sha256=qLsMwYh1DbIhfWHoi1wCwThfG5c9cKRcBjeYEkpRZXA,83
+tckn/fields.py,sha256=cInFbkEFTVjQpQhBD3XDLj7EWozGFb4ILuPntdLpHdU,476
+tckn/validators.py,sha256=Z0CgPhbczW2_N-QSnaH1dHZMyrBaZxvUJaTl26eJawg,870
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models.py,sha256=FVpqPQHMZchdkP4olmZf1-StEGFBRkbSi6WIkJSDB3A,119
+tests/settings.py,sha256=89uhO2nFroUUnNqZaJ8YEYWpDi-yBs50E5XPbXkued8,260
+tests/tests.py,sha256=GUTb0x0iVc2zA9Vih_ARiCkYqQjX-TGGE7J-ho3zdpA,761
+django_tckn_field-0.0.1.dist-info/LICENSE,sha256=pk2SdratdR5477mWdlP_wrANy8MyuLTC9UrW4avnqVo,1071
+django_tckn_field-0.0.1.dist-info/METADATA,sha256=6-xGME2UeAjQpHNIVTWm-O1y5xZU1y_dhNwy93-PCnk,911
+django_tckn_field-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_tckn_field-0.0.1.dist-info/top_level.txt,sha256=ACgWWRWosPQ5THZbRRtEAHmkqVR6CqcLUVJWuzIJies,11
+django_tckn_field-0.0.1.dist-info/RECORD,,
