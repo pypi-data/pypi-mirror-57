@@ -1,0 +1,12 @@
+README.md
+setup.py
+akapy/Colorer.py
+akapy/__init__.py
+akapy/aka.py
+akapy/helpers.py
+akapy/vmware_helpers.py
+python_aka.egg-info/PKG-INFO
+python_aka.egg-info/SOURCES.txt
+python_aka.egg-info/dependency_links.txt
+python_aka.egg-info/top_level.txt
+scripts/aka-cli.py
