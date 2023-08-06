@@ -1,0 +1,2 @@
+recursive-include hallgrimJS *.xsl README
+recursive-include hallgrimJS *.js
