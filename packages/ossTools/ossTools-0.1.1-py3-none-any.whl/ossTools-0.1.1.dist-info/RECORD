@@ -1,0 +1,10 @@
+ossTools/__init__.py,sha256=jHJxbUOXVNM9_OsYJePvsHqzh3WK87zyjH4knWv5Bfw,2052
+ossTools/_ossArchiveUtils.py,sha256=_TdZ42jcrDDB_eDVdrG8yffOzQqtXpxnL_kHcGDvm6Y,1445
+ossTools/_ossFile.py,sha256=SA5dqnOSWxGUIAHB-KpfCKjTE0QfVD6wh_L-LBxNnwM,3091
+ossTools/_ossIO.py,sha256=PEUnwcEpOkDehSyL-vHeCsNZg9lecVuvyDne4mYnkTM,6952
+ossTools/_ossOpenCVUtils.py,sha256=_DQiL2A94IarC8DL1tPxiw5fN3cogn8X3QTWvRkEvJg,958
+ossTools/_ossPath.py,sha256=MUWKrkriwKb3Sm-m7JuigsYGLprkm8qn5nCGbMBrfjY,1493
+ossTools-0.1.1.dist-info/METADATA,sha256=CzEP0z5r2kGYvtBsYH2_JQ_VQ4JQLN-X2j6T4p6sO0Y,661
+ossTools-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ossTools-0.1.1.dist-info/top_level.txt,sha256=FLcu-bkwGnMPQK8J-scCPhjzfg_ez6OK-US6Kb6aDj8,9
+ossTools-0.1.1.dist-info/RECORD,,

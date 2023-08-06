@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ossTools
+Version: 0.1.1
+Summary: Useful tools that simplify OSS file operation.
+Home-page: https://github.com/allankevinrichie/ossTools
+Author: Suyue (Ziheng Zhang)
+Author-email: suyue.zzh@alibaba-inc.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: oss2
+Requires-Dist: six
+
+UNKNOWN
+
+
