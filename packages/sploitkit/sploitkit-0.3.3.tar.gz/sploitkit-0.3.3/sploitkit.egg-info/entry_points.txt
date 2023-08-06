@@ -1,0 +1,3 @@
+[console_scripts]
+sploitkit-new = sploitkit.utils.new:main
+
