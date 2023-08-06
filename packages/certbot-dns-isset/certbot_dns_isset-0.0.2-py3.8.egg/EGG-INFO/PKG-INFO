@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: certbot-dns-isset
+Version: 0.0.2
+Summary: Certbot plugin for Isset DNS
+Home-page: http://isset.nl/
+Author: Gerben Geijteman
+Author-email: gerben@isset.nl
+License: UNKNOWN
+Description: # Isset Certbot plugin
+        
+        The Certbot Authenticator for the Isset Customer DNS API.
+        
+        ## How to use
+        
+        Ensure `isset.ini` contains:
+        ```shell script
+        certbot_dns_isset:dns_isset_endpoint="https://customer.isset.net/api"
+        certbot_dns_isset:dns_isset_token="<token>"
+        ```
+        
+        Fix credentials permissions:
+        ```shell script
+        chmod 600 isset.ini
+        ```
+        
+        Dry-run
+        ```shell script
+        certbot certonly --dry-run \
+          -a certbot-dns-isset:dns-isset --certbot-dns-isset:dns-isset-credentials isset.ini \
+          -m email@yourdomain.tld --agree-tos \
+          -d yourdomain.tld
+        ```
+        
+        Production (non-interactive)
+        ```shell script
+        certbot certonly -n \
+          -a certbot-dns-isset:dns-isset --certbot-dns-isset:dns-isset-credentials isset.ini \
+          -m email@yourdomain.tld --agree-tos \
+          -d yourdomain.tld
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
