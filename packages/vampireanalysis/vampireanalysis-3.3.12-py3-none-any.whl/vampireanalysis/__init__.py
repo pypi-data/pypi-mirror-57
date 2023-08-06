@@ -1,0 +1,1 @@
+from .vampire3 import vampire3
