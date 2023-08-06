@@ -1,0 +1,10 @@
+[frutils.callbacks]
+auto = frutils.tasks.callback:TasksCallbackAuto
+default = frutils.tasks.callback:TasksCallbackDefault
+json = frutils.tasks.callback:TasksCallbackJson
+log = frutils.tasks.callback:TasksCallbackLog
+logfile = frutils.tasks.callback:TasksCallbackLogfile
+plain = frutils.tasks.callback:TasksCallbackPlain
+silent = frutils.tasks.callback:TasksCallbackSilent
+spinner = frutils.tasks.callback:TasksCallbackSpinner
+

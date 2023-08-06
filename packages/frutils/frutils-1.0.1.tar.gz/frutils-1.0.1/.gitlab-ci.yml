@@ -1,0 +1,182 @@
+---
+
+include:
+  - template: Dependency-Scanning.gitlab-ci.yml
+  - template: License-Management.gitlab-ci.yml
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+image: python
+
+stages:
+  - test
+  - release
+
+python27:
+  image: python:2.7
+  stage: test
+  before_script:
+   - curl -O https://bootstrap.pypa.io/get-pip.py
+   - python get-pip.py
+   - pip install -U setuptools
+
+  script:
+    - pip install tox
+    - tox -e py27
+
+#python34:
+#  image: python:3.4
+#  stage: test
+#  script:
+#    - pip install tox
+#    - tox -e py34
+
+python35:
+  image: python:3.5
+  stage: test
+  before_script:
+   - curl -O https://bootstrap.pypa.io/get-pip.py
+   - python get-pip.py
+   - pip install -U setuptools
+  script:
+    - pip install tox
+    - tox -e py35
+
+python36:
+  image: python:3.6
+  stage: test
+  before_script:
+   - curl -O https://bootstrap.pypa.io/get-pip.py
+   - python get-pip.py
+   - pip install -U setuptools
+  script:
+    - pip install tox
+    - tox -e py36
+
+python37:
+  image: python:3.7
+  stage: test
+  before_script:
+   - curl -O https://bootstrap.pypa.io/get-pip.py
+   - python get-pip.py
+   - pip install -U setuptools
+  script:
+    - pip install tox
+    - tox -e py37
+
+#docs:
+#  before_script:
+#    - pip install Sphinx
+#  script:
+#    - python setup.py docs
+
+flake8:
+  image: python
+  stage: test
+  before_script:
+   - curl -O https://bootstrap.pypa.io/get-pip.py
+   - python get-pip.py
+   - pip install -U setuptools
+  script:
+    - pip install tox
+    - tox -e flake8
+
+commitlint:
+  stage: test
+  image: node:8
+  only:
+    - master
+    - merge_requests
+    - develop
+    - misc
+  script:
+    - npm install -g @commitlint/cli @commitlint/config-conventional
+    - export LAST_TAG=$(git describe --abbrev=0 --tags) # get last tag
+    - commitlint --from=$LAST_TAG   # check commit convention from last tag
+
+#    - echo CI_COMMIT_REF_NAME=${CI_COMMIT_REF_NAME}
+#    - echo CI_MERGE_REQUEST_SOURCE_BRANCH_SHA=${CI_MERGE_REQUEST_SOURCE_BRANCH_SHA}
+#    - echo CI_MERGE_REQUEST_TARGET_BRANCH_SHA=${CI_MERGE_REQUEST_TARGET_BRANCH_SHA}
+#    - echo CI_MERGE_REQUEST_SOURCE_BRANCH_NAME=${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME}
+#    - echo CI_MERGE_REQUEST_TARGET_BRANCH_NAME=${CI_MERGE_REQUEST_TARGET_BRANCH_NAME}
+#    - (if [[ ${CI_COMMIT_REF_NAME} = "master" ]] || [[ ${CI_COMMIT_REF_NAME} = "develop" ]]; then commitlint --from 939a7e7; fi)
+#      else
+#        git fetch origin ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME};
+#        git fetch origin ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME};
+#        commitlint --from=origin/${CI_MERGE_REQUEST_TARGET_BRANCH_NAME} -to=origin/${CI_MERGE_REQUEST_TARGET_BRANCH_NAME};
+#      fi
+
+
+build_dev:
+  stage: release
+  only:
+    - develop
+    - before_0.9
+  before_script:
+   - curl -O https://bootstrap.pypa.io/get-pip.py
+   - python get-pip.py
+   - pip install -U setuptools
+  script:
+    - pip install devpi-client
+    - rm -rf dist build
+    - devpi use https://pkgs.frkl.io/
+    - devpi login frkl --password="${DEVPI_PASSWORD}"
+    - devpi use /frkl/dev
+    - devpi upload
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 month
+
+build_stable:
+  stage: release
+  only:
+    - /^\d+\.\d+\.\d+$/
+  except:
+    - branches
+  before_script:
+   - curl -O https://bootstrap.pypa.io/get-pip.py
+   - python get-pip.py
+   - pip install -U setuptools
+  script:
+    - pip install devpi-client
+    - rm -rf dist build
+    - devpi use https://pkgs.frkl.io/
+    - devpi login frkl --password="${DEVPI_PASSWORD}"
+    - devpi use /frkl/stable
+    - devpi upload
+    - UPLOAD_FILE=(dist/frutils-*.tar.gz)
+    - "curl -F package=@${UPLOAD_FILE} https://${GEMFURY_TOKEN}@push.fury.io/frkl/"
+    - UPLOAD_FILE=(dist/frutils-*.whl)
+    - "curl -F package=@${UPLOAD_FILE} https://${GEMFURY_TOKEN}@push.fury.io/frkl/"
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 month
+
+build_beta:
+  stage: release
+  only:
+    - /^\d+\.\d+\.\d+b\d+$/
+  except:
+    - branches
+  before_script:
+   - curl -O https://bootstrap.pypa.io/get-pip.py
+   - python get-pip.py
+   - pip install -U setuptools
+  script:
+    - pip install devpi-client
+    - rm -rf dist build
+    - devpi use https://pkgs.frkl.io/
+    - devpi login frkl --password="${DEVPI_PASSWORD}"
+    - devpi use /frkl/beta
+    - devpi upload
+    - UPLOAD_FILE=(dist/frutils-*.tar.gz)
+    - "curl -F package=@${UPLOAD_FILE} https://${GEMFURY_TOKEN}@push.fury.io/frkl/"
+    - UPLOAD_FILE=(dist/frutils-*.whl)
+    - "curl -F package=@${UPLOAD_FILE} https://${GEMFURY_TOKEN}@push.fury.io/frkl/"
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 month
