@@ -1,0 +1,6 @@
+include LICENSE README.md requirements.txt requirements-test.txt setup.py VERSION
+
+recursive-exclude * __pycache__
+recursive-exclude * *.pyc
+recursive-exclude * *.pyo
+recursive-exclude * *.orig
