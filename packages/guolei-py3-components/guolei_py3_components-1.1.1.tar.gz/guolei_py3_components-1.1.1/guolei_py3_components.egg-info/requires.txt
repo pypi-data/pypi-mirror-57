@@ -1,0 +1,6 @@
+requests
+ipapi
+change_case
+PyMySQL
+redis
+inflect
