@@ -1,0 +1,5 @@
+click>=2.0
+six>=1.0
+configparser
+oyaml
+Jinja2
