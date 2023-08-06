@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pdf2tables
+Version: 0.3.1
+Summary: extract tables from pdf using camelot, if page is image-base, use ocr to extract
+Home-page: UNKNOWN
+Author: yitian.chen
+Author-email: 48295852@qq.com
+License: BSD License
+Description: UNKNOWN
+Platform: UNKNOWN
