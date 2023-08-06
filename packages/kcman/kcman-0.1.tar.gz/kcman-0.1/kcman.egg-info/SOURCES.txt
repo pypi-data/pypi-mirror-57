@@ -1,0 +1,16 @@
+README.md
+setup.py
+bin/kcman
+kcman/__init__.py
+kcman/clients_manager.py
+kcman/credentials_manager.py
+kcman/group_manager.py
+kcman/idp_utils.py
+kcman/migration_manager.py
+kcman/user_manager.py
+kcman.egg-info/PKG-INFO
+kcman.egg-info/SOURCES.txt
+kcman.egg-info/dependency_links.txt
+kcman.egg-info/not-zip-safe
+kcman.egg-info/requires.txt
+kcman.egg-info/top_level.txt
