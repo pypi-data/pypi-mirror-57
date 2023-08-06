@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mitch_dm_mypkg"
+version = "0.1.8"
+description = ""
+authors = ["Mitch Della Marta <mitchdellamarta@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+boto3 = "^1.10"
+click = "^7.0"
+cowsay = "^2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[tool.poetry.scripts]
+shusays = "mitch_dm_mypkg.main:cli"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
