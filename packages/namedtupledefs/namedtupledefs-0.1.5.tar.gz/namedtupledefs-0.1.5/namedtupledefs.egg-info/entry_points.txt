@@ -1,0 +1,3 @@
+[distutils.commands]
+list_entry_points = namedtupledefs.namedtupledefs:SetupListEntryPointsX
+
