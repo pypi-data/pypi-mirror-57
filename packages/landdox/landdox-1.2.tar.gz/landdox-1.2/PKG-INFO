@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: landdox
+Version: 1.2
+Summary: Simple wrapper around LandDox API
+Home-page: https://github.com/natefduncan/landdox
+Author: Nathan Duncan
+Author-email: nduncan@fifthpartners.com
+License: UNKNOWN
+Download-URL: https://github.com/natefduncan/landdox/archive/1.2.tar.gz
+Description: UNKNOWN
+Keywords: landdox,oil
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
