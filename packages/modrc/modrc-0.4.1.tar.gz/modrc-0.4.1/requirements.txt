@@ -1,0 +1,8 @@
+# package dependencies
+click
+distro
+pyyaml
+
+# dev dependencies
+parameterized
+pytest
