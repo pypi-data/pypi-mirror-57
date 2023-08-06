@@ -1,0 +1,14 @@
+bibtex_dblp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bibtex_dblp/config.py,sha256=8ijUulgJuSG5Kd3N_WSOOcTziQ94gUElEVnT8kO5QM8,252
+bibtex_dblp/database.py,sha256=Pjh521z4zi4MtwjKXF93OzGOIVih_oE0l3WsXLjgqLg,2169
+bibtex_dblp/dblp_api.py,sha256=PRvJE_IsAW6UfnpjSPvG_dUk5i4qK5bG8tefOZqGIo0,2260
+bibtex_dblp/dblp_data.py,sha256=YSoBAWbXRCCqMwFS0eQS0KqiFoqmrdbOz-VNAWSdH0w,2178
+bibtex_dblp/io.py,sha256=JS249qQ5FIYp9UlD2qZRu4FDYq72xCoSJQaUI5b1Shc,1168
+bibtex_dblp-0.5.data/scripts/convert_dblp.py,sha256=v4VWVI2ZM5vlKr3_y1vHM9Wxunj2PYdjOHXiAsGJpwA,1451
+bibtex_dblp-0.5.data/scripts/import_dblp.py,sha256=XsG5iTFzTvOsawX2BsRDUV8CT4fEUGMALhRS7Qob4hs,2792
+bibtex_dblp-0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bibtex_dblp-0.5.dist-info/METADATA,sha256=MoX5hdCdE0EIlxvhCkkUgtacLOF66S2TdeiPuj3crE8,1963
+bibtex_dblp-0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bibtex_dblp-0.5.dist-info/entry_points.txt,sha256=ZFfPsrB6oARo_Bs9KBfjKG1c61hYdEAQtSjlor8VI50,83
+bibtex_dblp-0.5.dist-info/top_level.txt,sha256=ii-1Ifo2R02pLbFLwG6McdW5zjZqxJh6ZLSUIm2Xr9M,12
+bibtex_dblp-0.5.dist-info/RECORD,,
