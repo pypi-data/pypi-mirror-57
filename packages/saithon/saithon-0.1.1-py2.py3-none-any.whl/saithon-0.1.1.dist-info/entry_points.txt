@@ -1,0 +1,3 @@
+[console_scripts]
+saithon = saithon.cli:cli
+
