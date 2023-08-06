@@ -1,0 +1,14 @@
+<root>
+  <l0>a</l0>
+  <l1>e</l1>
+  <l0>b</l0>
+  <l0>c</l0>
+  <sub0>
+	<subl1>a0</subl1>
+	<subl1>b0</subl1>
+	<subl1>c0</subl1>
+  </sub0>
+  <l1>d</l1>
+  <l1>e</l1>
+  <l2>a</l2>
+</root>

@@ -1,0 +1,38 @@
+{
+	"section3": {
+		"dict3": [
+			"A",
+			null,
+			true
+		]
+	},
+	"section1": {
+		"list1": [
+			{
+				"attr0": 7
+			},
+			{
+				"attr1": 9
+			}
+		],
+		"dict1": [
+			11,
+			22,
+			33
+		]
+	},
+	"section0": {
+		"dict0": [
+			123
+		],
+		"list1": [
+			{
+				"attr0": 122
+			}
+		],
+		"value3": null,
+		"value2": true,
+		"value1": false,
+		"value0": 21
+	}
+}

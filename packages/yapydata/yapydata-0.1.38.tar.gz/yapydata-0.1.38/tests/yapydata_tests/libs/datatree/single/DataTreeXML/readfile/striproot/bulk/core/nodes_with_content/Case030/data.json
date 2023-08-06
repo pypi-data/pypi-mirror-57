@@ -1,0 +1,24 @@
+{
+	"root": {
+		"l0": [
+			"a",
+			"b",
+			"c"
+		],
+		"l1": [
+			"e",
+			"d",
+			"e"
+		],
+		"sub0": {
+			"subl1": [
+				"a0",
+				"b0",
+				"c0"
+			],
+			"__content": "my-sub-text0a\n\t\n \tmy-sub-text0b\n\t\n\t\n \tmy-sub-text0c"
+		},
+		"l2": "a",
+		"__content": "my-text-top\n  \n  \n  my-text4\n  \n  my-text0\n  \n  \n  \n  my-text1\n  \n  my-text2\n  \n  my-text3"
+	}
+}
