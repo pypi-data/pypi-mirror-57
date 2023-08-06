@@ -1,0 +1,6 @@
+anytree
+geopandas
+pygeoprocessing
+natcap.invest
+rtree
+scipy
