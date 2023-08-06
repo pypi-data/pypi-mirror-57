@@ -1,0 +1,13 @@
+prenlp/__init__.py,sha256=MFZQ20ESy-VFRtjI4iDCt9KuxwZ_FrciWS4aFx9V-Rs,128
+prenlp/data/__init__.py,sha256=6OI6xyCaQ7zZ4bArznjlF8tPh6HRVAS_HuGqZIFM7lk,66
+prenlp/data/dataset.py,sha256=aLN4CP0p04vuQLN4nQ2SZgLCtys3vqF5YLhkPCteszQ,3642
+prenlp/data/normalization.py,sha256=3mVgA3I5t1ZOSGX0NyU19BbKerCb4-PrpgK3e-y4lOU,89648
+prenlp/data/normalizer.py,sha256=xZ-jlfSVPT8V_axThTHusFtzgp24wAFzH8ll0dy6aW8,91220
+prenlp/tokenizer/__init__.py,sha256=9lJ1_KiYFW_Z8Ybs6rg7ZEhu8ek8Ga8FHEs1StAkXr8,42
+prenlp/tokenizer/tokenizer.py,sha256=CIM5B8bzzLdRzLdzC5p2zzVVKFP9s5UKbzjzvkpDGTk,1054
+prenlp/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prenlp-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+prenlp-0.0.4.dist-info/METADATA,sha256=HpTz94OmgFT92i6KTYgRom0hvVHoZv5GXpWcWj2u1HA,3302
+prenlp-0.0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+prenlp-0.0.4.dist-info/top_level.txt,sha256=ROALmkklBwwnaLgE7pLGBxlHc03o3MJL1hypkZCJo_I,7
+prenlp-0.0.4.dist-info/RECORD,,
