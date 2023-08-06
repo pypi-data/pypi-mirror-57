@@ -1,0 +1,3 @@
+[console_scripts]
+mklcomp = mklcomp.mklcomp:main
+

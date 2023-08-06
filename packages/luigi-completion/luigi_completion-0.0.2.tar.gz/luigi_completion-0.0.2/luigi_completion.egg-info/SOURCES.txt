@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+yapf.ini
+bin/__init__.py
+bin/luigi_completion.bash
+bin/luigi_completion.zsh
+bin/mklcomp.py
+luigi_completion.egg-info/PKG-INFO
+luigi_completion.egg-info/SOURCES.txt
+luigi_completion.egg-info/dependency_links.txt
+luigi_completion.egg-info/entry_points.txt
+luigi_completion.egg-info/top_level.txt
