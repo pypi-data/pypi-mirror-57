@@ -1,0 +1,15 @@
+README.md
+setup.py
+AutoDiff/ForwardAD.py
+AutoDiff/__init__.py
+AutoDiff/optimize.py
+AutoDiff/root_finding.py
+AutoDifferentiate.egg-info/PKG-INFO
+AutoDifferentiate.egg-info/SOURCES.txt
+AutoDifferentiate.egg-info/dependency_links.txt
+AutoDifferentiate.egg-info/requires.txt
+AutoDifferentiate.egg-info/top_level.txt
+test/__init__.py
+test/test_ForwardAD.py
+test/test_optimize.py
+test/test_root.py

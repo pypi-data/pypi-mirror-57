@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AutoDifferentiate
+Version: 1.0.1
+Summary: An AutoDifferentiation package
+Home-page: https://github.com/BackPropagators/cs207-FinalProject.git
+Author: Lihong Zhang, Yichen Geng, Yingsi Jian, Matthieu Meeus  
+License: UNKNOWN
+Description: The software library uses the concept of automatic differentiation to solve differentiation problems in scientific computing. Additional features of an optimization suite and a root finding suite are also listed in this documentation.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
