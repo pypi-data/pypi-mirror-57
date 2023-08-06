@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+kame/__init__.py
+kame/routers.py
+kame/serializers.py
+kame/viewsets.py
+kame.egg-info/PKG-INFO
+kame.egg-info/SOURCES.txt
+kame.egg-info/dependency_links.txt
+kame.egg-info/top_level.txt
+kame/statics/css/base.css
+kame/statics/js/base.js
+kame/templates/base.html
+kame/templates/generic.html
+kame/templates/index.html
