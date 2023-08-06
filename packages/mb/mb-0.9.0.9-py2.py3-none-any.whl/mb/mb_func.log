@@ -1,0 +1,627 @@
+2019-12-07 17:04:22,731:lib_logger:DEBUG:called omm() with arg b.sn-704, yota or bit detected, result b.sn-704
+2019-12-07 17:04:22,732:lib_logger:DEBUG:called omm() with arg b.sn-704.MyBit, yota or bit detected, result b.sn-704.MyBit
+2019-12-07 17:04:22,733:lib_logger:DEBUG:called omm() with arg b.sn-704.5m.mp3, yota or bit detected, result b.sn-704.5m0s.mp3
+2019-12-07 17:04:22,734:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3.5m, yota or bit detected, result b.sn-704.5m0s.Security_Now_Quote.mp3
+2019-12-07 17:04:22,735:lib_logger:DEBUG:called omm() with arg b.sn-704.MyBit.mp3, yota or bit detected, result b.sn-704.MyBit.mp3
+2019-12-07 17:04:22,735:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3, yota or bit detected, result b.sn-704.Security_Now_Quote.mp3
+2019-12-07 17:04:22,736:lib_logger:DEBUG:called omm() with arg b.sn-704.5m.5m59s.mp3, yota or bit detected, result b.sn-704.5m0s.mp3.5m59s
+2019-12-07 17:04:22,737:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3.5m.2h, yota or bit detected, result b.sn-704.5m0s.Security_Now_Quote.mp3.2h
+2019-12-07 17:04:22,737:lib_logger:DEBUG:called omm() with arg b.sn-704.mp3, yota or bit detected, result b.sn-704.mp3
+2019-12-07 17:04:22,738:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3, yota or bit detected, result b.sn-704.Security_Now_Quote.mp3
+2019-12-07 17:04:22,738:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote, yota or bit detected, result b.sn-704.Security_Now_Quote
+2019-12-07 17:04:22,739:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.some.tags, yota or bit detected, result b.2NYwBFd.some.tags
+2019-12-07 17:04:22,740:lib_logger:DEBUG:called omm() with arg b.2NYwBFd, yota or bit detected, result b.2NYwBFd
+2019-12-07 17:04:22,740:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.MyTitle, yota or bit detected, result b.2NYwBFd.MyTitle
+2019-12-07 17:04:22,741:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.MyTitle.some.tags, yota or bit detected, result b.2NYwBFd.MyTitle.some.tags
+2019-12-07 17:04:22,742:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro, yota or bit detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro
+2019-12-07 17:04:22,743:lib_logger:DEBUG:called omm() with arg y.gCLoXNL-AAI.1s.Rocket Beans Live, yota or bit detected, result y.gCLoXNL-AAI.1s.Rocket_Beans_Live
+2019-12-07 17:04:22,744:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, yota or bit detected, result y.drRQVI58c-E.5m
+2019-12-07 17:04:22,744:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s, yota or bit detected, result y.Ufr7O0qtX9U.1s
+2019-12-07 17:04:22,745:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors, yota or bit detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors
+2019-12-07 17:04:22,745:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro, yota or bit detected, result y.8ZtHhF9Lt_8.1s.podcast.intro
+2019-12-07 17:04:22,746:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1m58s, yota or bit detected, result y.8ZtHhF9Lt_8.1m58s
+2019-12-07 17:04:22,747:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, yota or bit detected, result y.drRQVI58c-E.5m
+2019-12-07 17:04:22,747:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, yota or bit detected, result y.NI1L8ZJgA9o.7m
+2019-12-07 17:04:22,748:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, yota or bit detected, result y.drRQVI58c-E.5m
+2019-12-07 17:04:22,749:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m.8m, yota or bit detected, result y.NI1L8ZJgA9o.7m.8m
+2019-12-07 17:04:22,749:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.7m, yota or bit detected, result y.drRQVI58c-E.7m
+2019-12-07 17:04:22,750:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, yota or bit detected, result y.NI1L8ZJgA9o
+2019-12-07 17:04:22,750:lib_logger:DEBUG:called omm() with arg y.youtubehash.10s, yota or bit detected, result y.youtubehash.10s
+2019-12-07 17:04:22,751:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s, yota or bit detected, result y.youtubehash.5s
+2019-12-07 17:04:22,752:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.Koreans_on_Metoo.interview.asia.1m18s, yota or bit detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia
+2019-12-07 17:04:22,753:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, yota or bit detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-07 17:04:22,753:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.1m1s.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, yota or bit detected, result y._QYngRrbsKo.1m1s.My_YouTube_Clip.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s
+2019-12-07 17:04:22,754:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video.1m, yota or bit detected, result y._QYngRrbsKo.1m.My_YouTube_Clip.tags.video
+2019-12-07 17:04:22,755:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s, yota or bit detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s
+2019-12-07 17:04:22,755:lib_logger:DEBUG:called omm() with arg y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s, yota or bit detected, result y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s
+2019-12-07 17:04:22,756:lib_logger:DEBUG:called omm() with arg y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy, yota or bit detected, result y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy
+2019-12-07 17:04:22,757:lib_logger:DEBUG:called omm() with arg y.etkd57lPfPU.John_Oliver:_Trade.comedy, yota or bit detected, result y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-07 17:04:22,757:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy, Mixtape detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-07 17:04:22,758:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s, yota or bit detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s
+2019-12-07 17:04:22,759:lib_logger:DEBUG:called omm() with arg y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s, yota or bit detected, result y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s
+2019-12-07 17:04:22,760:lib_logger:DEBUG:called omm() with arg y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy, yota or bit detected, result y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy
+2019-12-07 17:04:22,760:lib_logger:DEBUG:called omm() with arg y.etkd57lPfPU.John_Oliver:_Trade.comedy, yota or bit detected, result y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-07 17:04:22,761:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy, Mixtape detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-07 17:04:22,762:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.sponsor.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.sponsor.10m13s
+2019-12-07 17:04:22,764:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.10s..y.Ufr7O0qtX9U.1s.10s, Mixtape detected, result y.Ufr7O0qtX9U.1s.10s..y.Ufr7O0qtX9U.1s.10s
+2019-12-07 17:04:22,765:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.10m13s
+2019-12-07 17:04:22,766:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.1m58s..y.8ZtHhF9Lt_8.1m59s.3m46s..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.1m58s..y.8ZtHhF9Lt_8.1m59s.3m46s..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s
+2019-12-07 17:04:22,767:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s
+2019-12-07 17:04:22,769:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.sponsor.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.sponsor.10m13s
+2019-12-07 17:04:22,770:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-07 17:04:22,771:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-07 17:04:22,772:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-07 17:04:22,773:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s, yota or bit detected, result y.NI1L8ZJgA9o.4m10s
+2019-12-07 17:04:22,774:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-07 17:04:22,775:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-07 17:04:22,776:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-07 17:04:22,777:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.4m30s, yota or bit detected, result y.NI1L8ZJgA9o.4m10s.4m30s
+2019-12-07 17:04:22,778:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-07 17:04:22,778:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, yota or bit detected, result y.NI1L8ZJgA9o
+2019-12-07 17:04:22,780:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.First Clip.4m30s..y.NI1L8ZJgA9o.5m10s.Second Clip.5m30s..y.NI1L8ZJgA9o.6m10s.Third Clip.6m30s, Mixtape detected, result y.NI1L8ZJgA9o.4m10s.First_Clip.4m30s..y.NI1L8ZJgA9o.5m10s.Second_Clip.5m30s..y.NI1L8ZJgA9o.6m10s.Third_Clip.6m30s
+2019-12-07 17:04:22,781:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.NI1L8ZJgA9o.5m, Mixtape detected, result y.drRQVI58c-E..y.NI1L8ZJgA9o.5m
+2019-12-07 17:04:22,783:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m..y.NI1L8ZJgA9o.5m, Mixtape detected, result y.drRQVI58c-E.5m..y.NI1L8ZJgA9o.5m
+2019-12-07 17:04:22,784:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.NI1L8ZJgA9o, Mixtape detected, result y.drRQVI58c-E..y.NI1L8ZJgA9o
+2019-12-07 17:04:22,785:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m..y.NI1L8ZJgA9o, Mixtape detected, result y.drRQVI58c-E.5m..y.NI1L8ZJgA9o
+2019-12-07 17:04:22,786:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s, yota or bit detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s
+2019-12-07 17:04:22,787:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1s.Rocket Beans Live.4s, yota or bit detected, result y.drRQVI58c-E.1s.Rocket_Beans_Live.4s
+2019-12-07 17:04:22,787:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.10s.30s, yota or bit detected, result y.NI1L8ZJgA9o.10s.30s
+2019-12-07 17:04:22,788:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.5m10s, yota or bit detected, result y.drRQVI58c-E.5m.5m10s
+2019-12-07 17:04:22,789:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.10s, yota or bit detected, result y.Ufr7O0qtX9U.1s.10s
+2019-12-07 17:04:22,790:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s, yota or bit detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s
+2019-12-07 17:04:22,790:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s, yota or bit detected, result y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s
+2019-12-07 17:04:22,791:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.1m58s, yota or bit detected, result y.8ZtHhF9Lt_8.1s.1m58s
+2019-12-07 17:04:22,792:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s.10s, yota or bit detected, result y.youtubehash.5s.10s
+2019-12-07 17:04:22,793:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s.10s, yota or bit detected, result y.youtubehash.5s.10s
+2019-12-07 17:04:22,793:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m3s, yota or bit detected, result y.drRQVI58c-E.5m.6m3s
+2019-12-07 17:04:22,794:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, yota or bit detected, result y.NI1L8ZJgA9o.7m
+2019-12-07 17:04:22,794:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m, yota or bit detected, result y.drRQVI58c-E.5m.6m
+2019-12-07 17:04:22,795:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m.8m, yota or bit detected, result y.NI1L8ZJgA9o.7m.8m
+2019-12-07 17:04:22,796:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m3s, yota or bit detected, result y.drRQVI58c-E.5m.6m3s
+2019-12-07 17:04:22,796:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, yota or bit detected, result y.NI1L8ZJgA9o
+2019-12-07 17:04:22,797:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.1h30m, yota or bit detected, result y.Ufr7O0qtX9U.1s.1h30m
+2019-12-07 17:04:22,797:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1h1m.1h2m, yota or bit detected, result y.Ufr7O0qtX9U.1h1m.1h2m
+2019-12-07 17:04:22,798:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, yota or bit detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-07 17:04:22,800:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-07 17:04:22,801:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.1m1s.1m10s.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, yota or bit detected, result y._QYngRrbsKo.1m1s.My_YouTube_Clip.video.1m10s.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s
+2019-12-07 17:04:22,802:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video.1m.2m, yota or bit detected, result y._QYngRrbsKo.1m.My_YouTube_Clip.tags.video.2m
+2019-12-07 17:04:22,802:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?v=Utu0RNjf_h8, YouTube URL detected, result y.Utu0RNjf_h8
+2019-12-07 17:04:22,802:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8, yota or bit detected, result y.Utu0RNjf_h8
+2019-12-07 17:04:22,804:srt_logger:DEBUG:searched subtitle file '/home/dd/anaconda3/lib/python3.7/site-packages/mb/srt/Introducing the Plunder Bug - A Smart LAN Tap by Hak5 - Hak5 2509-Utu0RNjf_h8.en.srt' for keyword 'kitchen', result ['https://youtu.be/Utu0RNjf_h8?t=10', 'https://youtu.be/Utu0RNjf_h8?t=383']
+2019-12-07 17:04:22,805:lib_logger:DEBUG:called omm() with arg https://youtu.be/Utu0RNjf_h8?t=10, YouTube URL detected, result y.Utu0RNjf_h8.10s
+2019-12-07 17:04:22,805:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s, yota or bit detected, result y.Utu0RNjf_h8.10s
+2019-12-07 17:04:22,805:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s.17s, yota or bit detected, result y.Utu0RNjf_h8.10s.17s
+2019-12-07 17:04:22,805:lib_logger:DEBUG:called omm() with arg https://youtu.be/Utu0RNjf_h8?t=383, YouTube URL detected, result y.Utu0RNjf_h8.383s
+2019-12-07 17:04:22,806:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.383s, yota or bit detected, result y.Utu0RNjf_h8.6m23s
+2019-12-07 17:04:22,806:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.6m23s.6m30s, yota or bit detected, result y.Utu0RNjf_h8.6m23s.6m30s
+2019-12-07 17:04:22,807:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s.17s..y.Utu0RNjf_h8.6m23s.6m30s, Mixtape detected, result y.Utu0RNjf_h8.10s.17s..y.Utu0RNjf_h8.6m23s.6m30s
+2019-12-07 17:04:22,808:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.Welcome_&_Sponsors.podcast.intro, yota or bit detected, result y.8ZtHhF9Lt_8.Welcome_&_Sponsors.podcast.intro
+2019-12-07 17:04:22,809:lib_logger:DEBUG:called omm() with arg y.gCLoXNL-AAI.Rocket Beans Live, yota or bit detected, result y.gCLoXNL-AAI.Rocket_Beans_Live
+2019-12-07 17:04:22,809:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, yota or bit detected, result y.drRQVI58c-E
+2019-12-07 17:04:22,810:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U, yota or bit detected, result y.Ufr7O0qtX9U
+2019-12-07 17:04:22,810:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.Welcome_&_Sponsors, yota or bit detected, result y.8ZtHhF9Lt_8.Welcome_&_Sponsors
+2019-12-07 17:04:22,811:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.podcast.intro, yota or bit detected, result y.8ZtHhF9Lt_8.podcast.intro
+2019-12-07 17:04:22,812:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8, yota or bit detected, result y.8ZtHhF9Lt_8
+2019-12-07 17:04:22,812:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, yota or bit detected, result y.drRQVI58c-E
+2019-12-07 17:04:22,813:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, yota or bit detected, result y.NI1L8ZJgA9o.7m
+2019-12-07 17:04:22,814:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, yota or bit detected, result y.drRQVI58c-E
+2019-12-07 17:04:22,814:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.4m30s, yota or bit detected, result y.NI1L8ZJgA9o.4m10s.4m30s
+2019-12-07 17:04:22,815:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, yota or bit detected, result y.drRQVI58c-E
+2019-12-07 17:04:22,815:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, yota or bit detected, result y.NI1L8ZJgA9o
+2019-12-07 17:04:22,816:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, yota or bit detected, result y.drRQVI58c-E
+2019-12-07 17:04:22,817:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.Koreans_on_Metoo.interview.asia.1m18s, yota or bit detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia
+2019-12-07 17:04:22,817:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.security.podcast, yota or bit detected, result y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.security.podcast
+2019-12-07 17:04:22,818:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, yota or bit detected, result y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s
+2019-12-07 17:04:22,819:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s, yota or bit detected, result y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s
+2019-12-07 17:04:22,820:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s, yota or bit detected, result y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s
+2019-12-07 17:04:22,821:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s, yota or bit detected, result y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s
+2019-12-07 17:04:22,822:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s, yota or bit detected, result y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s
+2019-12-07 17:04:22,822:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video, yota or bit detected, result y._QYngRrbsKo.My_YouTube_Clip.tags.video
+2019-12-07 17:04:22,822:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?v=NI1L8ZJgA9o, YouTube URL detected, result y.NI1L8ZJgA9o
+2019-12-07 17:04:22,822:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, yota or bit detected, result y.NI1L8ZJgA9o
+2019-12-07 17:04:22,822:lib_logger:DEBUG:called omm() with arg https://youtu.be/NI1L8ZJgA9o?t=60s, YouTube URL detected, result y.NI1L8ZJgA9o.60s
+2019-12-07 17:04:22,823:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.60s, yota or bit detected, result y.NI1L8ZJgA9o.1m
+2019-12-07 17:04:22,823:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?time_continue=60&v=drRQVI58c-E, YouTube URL detected, result y.drRQVI58c-E.60s
+2019-12-07 17:04:22,823:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.60s, yota or bit detected, result y.drRQVI58c-E.1m
+2019-12-07 17:04:22,823:lib_logger:DEBUG:called omm() with arg https://youtu.be/NI1L8ZJgA9o?t=120, YouTube URL detected, result y.NI1L8ZJgA9o.120s
+2019-12-07 17:04:22,823:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.120s, yota or bit detected, result y.NI1L8ZJgA9o.2m
+2019-12-09 21:21:40,725:lib_logger:DEBUG:called omm() with arg b.sn-704, returned Link
+2019-12-09 21:21:40,726:lib_logger:DEBUG:called omm() with arg b.sn-704.MyBit, returned Link
+2019-12-09 21:21:40,727:lib_logger:DEBUG:called omm() with arg b.sn-704.5m.mp3, returned Mp3
+2019-12-09 21:21:40,727:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3.5m, returned Mp3
+2019-12-09 21:21:40,728:lib_logger:DEBUG:called omm() with arg b.sn-704.MyBit.mp3, returned Mp3
+2019-12-09 21:21:40,728:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3, returned Mp3
+2019-12-09 21:21:40,728:lib_logger:DEBUG:called omm() with arg b.sn-704.5m.5m59s.mp3, returned Mp3
+2019-12-09 21:21:40,729:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3.5m.2h, returned Mp3
+2019-12-09 21:21:40,729:lib_logger:DEBUG:called omm() with arg b.sn-704.mp3, returned Mp3
+2019-12-09 21:21:40,730:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3, returned Mp3
+2019-12-09 21:21:40,730:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote, returned Link
+2019-12-09 21:21:40,731:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.some.tags, returned Link
+2019-12-09 21:21:40,731:lib_logger:DEBUG:called omm() with arg b.2NYwBFd, returned Link
+2019-12-09 21:21:40,732:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.MyTitle, returned Link
+2019-12-09 21:21:40,732:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.MyTitle.some.tags, returned Link
+2019-12-09 21:21:40,733:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro, returned Cue
+2019-12-09 21:21:40,734:lib_logger:DEBUG:called omm() with arg y.gCLoXNL-AAI.1s.Rocket Beans Live, returned Cue
+2019-12-09 21:21:40,734:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 21:21:40,735:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s, returned Cue
+2019-12-09 21:21:40,735:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors, returned Cue
+2019-12-09 21:21:40,736:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro, returned Cue
+2019-12-09 21:21:40,736:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1m58s, returned Cue
+2019-12-09 21:21:40,737:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 21:21:40,737:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 21:21:40,738:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 21:21:40,739:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m.8m, returned Sample
+2019-12-09 21:21:40,739:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.7m, returned Cue
+2019-12-09 21:21:40,739:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 21:21:40,740:lib_logger:DEBUG:called omm() with arg y.youtubehash.10s, returned Cue
+2019-12-09 21:21:40,740:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s, returned Cue
+2019-12-09 21:21:40,741:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.Koreans_on_Metoo.interview.asia.1m18s, returned Cue
+2019-12-09 21:21:40,741:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, returned Sample
+2019-12-09 21:21:40,742:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.1m1s.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Cue
+2019-12-09 21:21:40,743:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video.1m, returned Cue
+2019-12-09 21:21:40,744:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s, returned Sample
+2019-12-09 21:21:40,745:lib_logger:DEBUG:called omm() with arg y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s, returned Sample
+2019-12-09 21:21:40,745:lib_logger:DEBUG:called omm() with arg y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy, returned Cue
+2019-12-09 21:21:40,746:lib_logger:DEBUG:called omm() with arg y.etkd57lPfPU.John_Oliver:_Trade.comedy, returned Yota
+2019-12-09 21:21:40,747:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy, Mixtape detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-09 21:21:40,748:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s, returned Sample
+2019-12-09 21:21:40,748:lib_logger:DEBUG:called omm() with arg y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s, returned Sample
+2019-12-09 21:21:40,748:lib_logger:DEBUG:called omm() with arg y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy, returned Cue
+2019-12-09 21:21:40,749:lib_logger:DEBUG:called omm() with arg y.etkd57lPfPU.John_Oliver:_Trade.comedy, returned Yota
+2019-12-09 21:21:40,750:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy, Mixtape detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-09 21:21:40,751:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.sponsor.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.sponsor.10m13s
+2019-12-09 21:21:40,752:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.10s..y.Ufr7O0qtX9U.1s.10s, Mixtape detected, result y.Ufr7O0qtX9U.1s.10s..y.Ufr7O0qtX9U.1s.10s
+2019-12-09 21:21:40,754:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.10m13s
+2019-12-09 21:21:40,755:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.1m58s..y.8ZtHhF9Lt_8.1m59s.3m46s..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.1m58s..y.8ZtHhF9Lt_8.1m59s.3m46s..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s
+2019-12-09 21:21:40,757:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s
+2019-12-09 21:21:40,758:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.sponsor.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.sponsor.10m13s
+2019-12-09 21:21:40,760:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 21:21:40,760:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 21:21:40,762:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 21:21:40,762:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s, returned Cue
+2019-12-09 21:21:40,763:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 21:21:40,764:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 21:21:40,765:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 21:21:40,765:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.4m30s, returned Sample
+2019-12-09 21:21:40,766:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 21:21:40,766:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 21:21:40,767:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.First Clip.4m30s..y.NI1L8ZJgA9o.5m10s.Second Clip.5m30s..y.NI1L8ZJgA9o.6m10s.Third Clip.6m30s, Mixtape detected, result y.NI1L8ZJgA9o.4m10s.First_Clip.4m30s..y.NI1L8ZJgA9o.5m10s.Second_Clip.5m30s..y.NI1L8ZJgA9o.6m10s.Third_Clip.6m30s
+2019-12-09 21:21:40,768:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.NI1L8ZJgA9o.5m, Mixtape detected, result y.drRQVI58c-E..y.NI1L8ZJgA9o.5m
+2019-12-09 21:21:40,769:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m..y.NI1L8ZJgA9o.5m, Mixtape detected, result y.drRQVI58c-E.5m..y.NI1L8ZJgA9o.5m
+2019-12-09 21:21:40,770:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.NI1L8ZJgA9o, Mixtape detected, result y.drRQVI58c-E..y.NI1L8ZJgA9o
+2019-12-09 21:21:40,771:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m..y.NI1L8ZJgA9o, Mixtape detected, result y.drRQVI58c-E.5m..y.NI1L8ZJgA9o
+2019-12-09 21:21:40,771:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s, returned Sample
+2019-12-09 21:21:40,772:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1s.Rocket Beans Live.4s, returned Sample
+2019-12-09 21:21:40,772:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.10s.30s, returned Sample
+2019-12-09 21:21:40,773:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.5m10s, returned Sample
+2019-12-09 21:21:40,773:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.10s, returned Sample
+2019-12-09 21:21:40,774:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s, returned Sample
+2019-12-09 21:21:40,774:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s, returned Sample
+2019-12-09 21:21:40,775:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.1m58s, returned Sample
+2019-12-09 21:21:40,776:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s.10s, returned Sample
+2019-12-09 21:21:40,776:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s.10s, returned Sample
+2019-12-09 21:21:40,777:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m3s, returned Sample
+2019-12-09 21:21:40,777:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 21:21:40,778:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m, returned Sample
+2019-12-09 21:21:40,778:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m.8m, returned Sample
+2019-12-09 21:21:40,779:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m3s, returned Sample
+2019-12-09 21:21:40,779:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 21:21:40,780:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.1h30m, returned Sample
+2019-12-09 21:21:40,780:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1h1m.1h2m, returned Sample
+2019-12-09 21:21:40,781:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, returned Sample
+2019-12-09 21:21:40,781:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 21:21:40,782:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.1m1s.1m10s.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Sample
+2019-12-09 21:21:40,783:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video.1m.2m, returned Sample
+2019-12-09 21:21:40,783:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?v=Utu0RNjf_h8, YouTube URL detected, returned y.Utu0RNjf_h8
+2019-12-09 21:21:40,783:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8, returned Yota
+2019-12-09 21:21:40,784:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.Welcome_&_Sponsors.podcast.intro, returned Yota
+2019-12-09 21:21:40,785:lib_logger:DEBUG:called omm() with arg y.gCLoXNL-AAI.Rocket Beans Live, returned Yota
+2019-12-09 21:21:40,786:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 21:21:40,786:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U, returned Yota
+2019-12-09 21:21:40,787:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.Welcome_&_Sponsors, returned Yota
+2019-12-09 21:21:40,787:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.podcast.intro, returned Yota
+2019-12-09 21:21:40,788:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8, returned Yota
+2019-12-09 21:21:40,788:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 21:21:40,789:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 21:21:40,789:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 21:21:40,789:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.4m30s, returned Sample
+2019-12-09 21:21:40,790:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 21:21:40,790:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 21:21:40,790:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 21:21:40,791:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.Koreans_on_Metoo.interview.asia.1m18s, returned Cue
+2019-12-09 21:21:40,791:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.security.podcast, returned Yota
+2019-12-09 21:21:40,792:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Yota
+2019-12-09 21:21:40,793:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s, returned Yota
+2019-12-09 21:21:40,793:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s, returned Yota
+2019-12-09 21:21:40,794:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s, returned Yota
+2019-12-09 21:21:40,794:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s, returned Yota
+2019-12-09 21:21:40,794:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video, returned Yota
+2019-12-09 21:21:40,795:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?v=NI1L8ZJgA9o, YouTube URL detected, returned y.NI1L8ZJgA9o
+2019-12-09 21:21:40,795:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 21:21:40,795:lib_logger:DEBUG:called omm() with arg https://youtu.be/NI1L8ZJgA9o?t=60s, YouTube URL detected, returned y.NI1L8ZJgA9o.60s
+2019-12-09 21:21:40,795:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.60s, returned Cue
+2019-12-09 21:21:40,796:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?time_continue=60&v=drRQVI58c-E, YouTube URL detected, returned y.drRQVI58c-E.60s
+2019-12-09 21:21:40,796:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.60s, returned Cue
+2019-12-09 21:21:40,796:lib_logger:DEBUG:called omm() with arg https://youtu.be/NI1L8ZJgA9o?t=120, YouTube URL detected, returned y.NI1L8ZJgA9o.120s
+2019-12-09 21:21:40,796:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.120s, returned Cue
+2019-12-09 21:24:09,865:lib_logger:DEBUG:called omm() with arg b.sn-704, returned Link
+2019-12-09 21:24:09,867:lib_logger:DEBUG:called omm() with arg b.sn-704.MyBit, returned Link
+2019-12-09 21:24:09,868:lib_logger:DEBUG:called omm() with arg b.sn-704.5m.mp3, returned Mp3
+2019-12-09 21:24:09,870:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3.5m, returned Mp3
+2019-12-09 21:24:09,871:lib_logger:DEBUG:called omm() with arg b.sn-704.MyBit.mp3, returned Mp3
+2019-12-09 21:24:09,872:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3, returned Mp3
+2019-12-09 21:24:09,873:lib_logger:DEBUG:called omm() with arg b.sn-704.5m.5m59s.mp3, returned Mp3
+2019-12-09 21:24:09,874:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3.5m.2h, returned Mp3
+2019-12-09 21:24:09,875:lib_logger:DEBUG:called omm() with arg b.sn-704.mp3, returned Mp3
+2019-12-09 21:24:09,876:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3, returned Mp3
+2019-12-09 21:24:09,877:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote, returned Link
+2019-12-09 21:24:09,878:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.some.tags, returned Link
+2019-12-09 21:24:09,879:lib_logger:DEBUG:called omm() with arg b.2NYwBFd, returned Link
+2019-12-09 21:24:09,880:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.MyTitle, returned Link
+2019-12-09 21:24:09,881:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.MyTitle.some.tags, returned Link
+2019-12-09 21:24:09,882:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro, returned Cue
+2019-12-09 21:24:09,883:lib_logger:DEBUG:called omm() with arg y.gCLoXNL-AAI.1s.Rocket Beans Live, returned Cue
+2019-12-09 21:24:09,883:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 21:24:09,884:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s, returned Cue
+2019-12-09 21:24:09,885:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors, returned Cue
+2019-12-09 21:24:09,885:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro, returned Cue
+2019-12-09 21:24:09,886:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1m58s, returned Cue
+2019-12-09 21:24:09,888:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 21:24:09,889:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 21:24:09,890:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 21:24:09,891:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m.8m, returned Sample
+2019-12-09 21:24:09,892:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.7m, returned Cue
+2019-12-09 21:24:09,893:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 21:24:09,895:lib_logger:DEBUG:called omm() with arg y.youtubehash.10s, returned Cue
+2019-12-09 21:24:09,896:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s, returned Cue
+2019-12-09 21:24:09,897:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.Koreans_on_Metoo.interview.asia.1m18s, returned Cue
+2019-12-09 21:24:09,898:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, returned Sample
+2019-12-09 21:24:09,899:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.1m1s.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Cue
+2019-12-09 21:24:09,900:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video.1m, returned Cue
+2019-12-09 21:24:09,901:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s, returned Sample
+2019-12-09 21:24:09,902:lib_logger:DEBUG:called omm() with arg y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s, returned Sample
+2019-12-09 21:24:09,903:lib_logger:DEBUG:called omm() with arg y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy, returned Cue
+2019-12-09 21:24:09,903:lib_logger:DEBUG:called omm() with arg y.etkd57lPfPU.John_Oliver:_Trade.comedy, returned Yota
+2019-12-09 21:24:09,904:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy, Mixtape detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-09 21:24:09,905:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s, returned Sample
+2019-12-09 21:24:09,906:lib_logger:DEBUG:called omm() with arg y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s, returned Sample
+2019-12-09 21:24:09,906:lib_logger:DEBUG:called omm() with arg y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy, returned Cue
+2019-12-09 21:24:09,907:lib_logger:DEBUG:called omm() with arg y.etkd57lPfPU.John_Oliver:_Trade.comedy, returned Yota
+2019-12-09 21:24:09,908:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy, Mixtape detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-09 21:24:09,909:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.sponsor.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.sponsor.10m13s
+2019-12-09 21:24:09,911:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.10s..y.Ufr7O0qtX9U.1s.10s, Mixtape detected, result y.Ufr7O0qtX9U.1s.10s..y.Ufr7O0qtX9U.1s.10s
+2019-12-09 21:24:09,913:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.10m13s
+2019-12-09 21:24:09,914:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.1m58s..y.8ZtHhF9Lt_8.1m59s.3m46s..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.1m58s..y.8ZtHhF9Lt_8.1m59s.3m46s..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s
+2019-12-09 21:24:09,916:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s
+2019-12-09 21:24:09,918:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.sponsor.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.sponsor.10m13s
+2019-12-09 21:24:09,921:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 21:24:09,922:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 21:24:09,923:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 21:24:09,924:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s, returned Cue
+2019-12-09 21:24:09,925:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 21:24:09,926:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 21:24:09,928:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 21:24:09,928:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.4m30s, returned Sample
+2019-12-09 21:24:09,929:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 21:24:09,930:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 21:24:09,931:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.First Clip.4m30s..y.NI1L8ZJgA9o.5m10s.Second Clip.5m30s..y.NI1L8ZJgA9o.6m10s.Third Clip.6m30s, Mixtape detected, result y.NI1L8ZJgA9o.4m10s.First_Clip.4m30s..y.NI1L8ZJgA9o.5m10s.Second_Clip.5m30s..y.NI1L8ZJgA9o.6m10s.Third_Clip.6m30s
+2019-12-09 21:24:09,933:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.NI1L8ZJgA9o.5m, Mixtape detected, result y.drRQVI58c-E..y.NI1L8ZJgA9o.5m
+2019-12-09 21:24:09,935:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m..y.NI1L8ZJgA9o.5m, Mixtape detected, result y.drRQVI58c-E.5m..y.NI1L8ZJgA9o.5m
+2019-12-09 21:24:09,936:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.NI1L8ZJgA9o, Mixtape detected, result y.drRQVI58c-E..y.NI1L8ZJgA9o
+2019-12-09 21:24:09,938:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m..y.NI1L8ZJgA9o, Mixtape detected, result y.drRQVI58c-E.5m..y.NI1L8ZJgA9o
+2019-12-09 21:24:09,939:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s, returned Sample
+2019-12-09 21:24:09,939:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1s.Rocket Beans Live.4s, returned Sample
+2019-12-09 21:24:09,940:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.10s.30s, returned Sample
+2019-12-09 21:24:09,941:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.5m10s, returned Sample
+2019-12-09 21:24:09,942:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.10s, returned Sample
+2019-12-09 21:24:09,942:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s, returned Sample
+2019-12-09 21:24:09,943:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s, returned Sample
+2019-12-09 21:24:09,944:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.1m58s, returned Sample
+2019-12-09 21:24:09,944:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s.10s, returned Sample
+2019-12-09 21:24:09,945:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s.10s, returned Sample
+2019-12-09 21:24:09,946:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m3s, returned Sample
+2019-12-09 21:24:09,946:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 21:24:09,947:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m, returned Sample
+2019-12-09 21:24:09,948:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m.8m, returned Sample
+2019-12-09 21:24:09,948:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m3s, returned Sample
+2019-12-09 21:24:09,949:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 21:24:09,949:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.1h30m, returned Sample
+2019-12-09 21:24:09,950:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1h1m.1h2m, returned Sample
+2019-12-09 21:24:09,951:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, returned Sample
+2019-12-09 21:24:09,952:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 21:24:09,954:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.1m1s.1m10s.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Sample
+2019-12-09 21:24:09,955:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video.1m.2m, returned Sample
+2019-12-09 21:24:09,955:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?v=Utu0RNjf_h8, YouTube URL detected, returned y.Utu0RNjf_h8
+2019-12-09 21:24:09,955:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8, returned Yota
+2019-12-09 21:24:09,958:srt_logger:DEBUG:searched subtitle file '/home/dd/anaconda3/lib/python3.7/site-packages/mb/srt/Introducing the Plunder Bug - A Smart LAN Tap by Hak5 - Hak5 2509-Utu0RNjf_h8.en.srt' for keyword 'kitchen', result ['https://youtu.be/Utu0RNjf_h8?t=10', 'https://youtu.be/Utu0RNjf_h8?t=383']
+2019-12-09 21:24:09,958:lib_logger:DEBUG:called omm() with arg https://youtu.be/Utu0RNjf_h8?t=10, YouTube URL detected, returned y.Utu0RNjf_h8.10s
+2019-12-09 21:24:09,958:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s, returned Cue
+2019-12-09 21:24:09,959:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s.17s, returned Sample
+2019-12-09 21:24:09,959:lib_logger:DEBUG:called omm() with arg https://youtu.be/Utu0RNjf_h8?t=383, YouTube URL detected, returned y.Utu0RNjf_h8.383s
+2019-12-09 21:24:09,959:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.383s, returned Cue
+2019-12-09 21:24:09,960:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.6m23s.6m30s, returned Sample
+2019-12-09 21:24:09,961:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s.17s..y.Utu0RNjf_h8.6m23s.6m30s, Mixtape detected, result y.Utu0RNjf_h8.10s.17s..y.Utu0RNjf_h8.6m23s.6m30s
+2019-12-09 21:24:09,962:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.Welcome_&_Sponsors.podcast.intro, returned Yota
+2019-12-09 21:24:09,963:lib_logger:DEBUG:called omm() with arg y.gCLoXNL-AAI.Rocket Beans Live, returned Yota
+2019-12-09 21:24:09,963:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 21:24:09,964:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U, returned Yota
+2019-12-09 21:24:09,965:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.Welcome_&_Sponsors, returned Yota
+2019-12-09 21:24:09,965:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.podcast.intro, returned Yota
+2019-12-09 21:24:09,966:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8, returned Yota
+2019-12-09 21:24:09,967:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 21:24:09,967:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 21:24:09,968:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 21:24:09,969:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.4m30s, returned Sample
+2019-12-09 21:24:09,970:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 21:24:09,971:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 21:24:09,972:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 21:24:09,972:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.Koreans_on_Metoo.interview.asia.1m18s, returned Cue
+2019-12-09 21:24:09,973:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.security.podcast, returned Yota
+2019-12-09 21:24:09,974:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Yota
+2019-12-09 21:24:09,975:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s, returned Yota
+2019-12-09 21:24:09,976:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s, returned Yota
+2019-12-09 21:24:09,976:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s, returned Yota
+2019-12-09 21:24:09,977:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s, returned Yota
+2019-12-09 21:24:09,978:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video, returned Yota
+2019-12-09 21:24:09,978:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?v=NI1L8ZJgA9o, YouTube URL detected, returned y.NI1L8ZJgA9o
+2019-12-09 21:24:09,978:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 21:24:09,978:lib_logger:DEBUG:called omm() with arg https://youtu.be/NI1L8ZJgA9o?t=60s, YouTube URL detected, returned y.NI1L8ZJgA9o.60s
+2019-12-09 21:24:09,978:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.60s, returned Cue
+2019-12-09 21:24:09,978:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?time_continue=60&v=drRQVI58c-E, YouTube URL detected, returned y.drRQVI58c-E.60s
+2019-12-09 21:24:09,979:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.60s, returned Cue
+2019-12-09 21:24:09,979:lib_logger:DEBUG:called omm() with arg https://youtu.be/NI1L8ZJgA9o?t=120, YouTube URL detected, returned y.NI1L8ZJgA9o.120s
+2019-12-09 21:24:09,979:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.120s, returned Cue
+2019-12-09 22:45:01,918:lib_logger:DEBUG:called omm() with arg b.sn-704, returned Link
+2019-12-09 22:45:01,919:lib_logger:DEBUG:called omm() with arg b.sn-704.MyBit, returned Link
+2019-12-09 22:45:01,920:lib_logger:DEBUG:called omm() with arg b.sn-704.5m.mp3, returned Mp3
+2019-12-09 22:45:01,921:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3.5m, returned Mp3
+2019-12-09 22:45:01,921:lib_logger:DEBUG:called omm() with arg b.sn-704.MyBit.mp3, returned Mp3
+2019-12-09 22:45:01,922:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3, returned Mp3
+2019-12-09 22:45:01,923:lib_logger:DEBUG:called omm() with arg b.sn-704.5m.5m59s.mp3, returned Mp3
+2019-12-09 22:45:01,923:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3.5m.2h, returned Mp3
+2019-12-09 22:45:01,924:lib_logger:DEBUG:called omm() with arg b.sn-704.mp3, returned Mp3
+2019-12-09 22:45:01,925:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3, returned Mp3
+2019-12-09 22:45:01,925:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote, returned Link
+2019-12-09 22:45:01,926:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.some.tags, returned Link
+2019-12-09 22:45:01,927:lib_logger:DEBUG:called omm() with arg b.2NYwBFd, returned Link
+2019-12-09 22:45:01,927:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.MyTitle, returned Link
+2019-12-09 22:45:01,928:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.MyTitle.some.tags, returned Link
+2019-12-09 22:45:01,930:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro, returned Cue
+2019-12-09 22:45:01,930:lib_logger:DEBUG:called omm() with arg y.gCLoXNL-AAI.1s.Rocket Beans Live, returned Cue
+2019-12-09 22:45:01,931:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 22:45:01,932:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s, returned Cue
+2019-12-09 22:45:01,933:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors, returned Cue
+2019-12-09 22:45:01,933:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro, returned Cue
+2019-12-09 22:45:01,934:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1m58s, returned Cue
+2019-12-09 22:45:01,935:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 22:45:01,935:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 22:45:01,936:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 22:45:01,937:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m.8m, returned Sample
+2019-12-09 22:45:01,938:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.7m, returned Cue
+2019-12-09 22:45:01,938:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 22:45:01,939:lib_logger:DEBUG:called omm() with arg y.youtubehash.10s, returned Cue
+2019-12-09 22:45:01,940:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s, returned Cue
+2019-12-09 22:45:01,941:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.Koreans_on_Metoo.interview.asia.1m18s, returned Cue
+2019-12-09 22:45:01,942:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, returned Sample
+2019-12-09 22:45:01,943:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.1m1s.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Cue
+2019-12-09 22:45:01,944:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video.1m, returned Cue
+2019-12-09 22:45:01,945:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s, returned Sample
+2019-12-09 22:45:01,946:lib_logger:DEBUG:called omm() with arg y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s, returned Sample
+2019-12-09 22:45:01,946:lib_logger:DEBUG:called omm() with arg y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy, returned Cue
+2019-12-09 22:45:01,947:lib_logger:DEBUG:called omm() with arg y.etkd57lPfPU.John_Oliver:_Trade.comedy, returned Yota
+2019-12-09 22:45:01,948:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy, Mixtape detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-09 22:45:01,949:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s, returned Sample
+2019-12-09 22:45:01,949:lib_logger:DEBUG:called omm() with arg y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s, returned Sample
+2019-12-09 22:45:01,950:lib_logger:DEBUG:called omm() with arg y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy, returned Cue
+2019-12-09 22:45:01,951:lib_logger:DEBUG:called omm() with arg y.etkd57lPfPU.John_Oliver:_Trade.comedy, returned Yota
+2019-12-09 22:45:01,952:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy, Mixtape detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-09 22:45:01,953:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.sponsor.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.sponsor.10m13s
+2019-12-09 22:45:01,955:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.10s..y.Ufr7O0qtX9U.1s.10s, Mixtape detected, result y.Ufr7O0qtX9U.1s.10s..y.Ufr7O0qtX9U.1s.10s
+2019-12-09 22:45:01,957:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.10m13s
+2019-12-09 22:45:01,959:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.1m58s..y.8ZtHhF9Lt_8.1m59s.3m46s..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.1m58s..y.8ZtHhF9Lt_8.1m59s.3m46s..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s
+2019-12-09 22:45:01,961:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s
+2019-12-09 22:45:01,963:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.sponsor.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.sponsor.10m13s
+2019-12-09 22:45:01,965:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 22:45:01,966:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 22:45:01,968:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 22:45:01,968:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s, returned Cue
+2019-12-09 22:45:01,970:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 22:45:01,971:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 22:45:01,972:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 22:45:01,972:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.4m30s, returned Sample
+2019-12-09 22:45:01,973:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 22:45:01,974:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 22:45:01,976:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.First Clip.4m30s..y.NI1L8ZJgA9o.5m10s.Second Clip.5m30s..y.NI1L8ZJgA9o.6m10s.Third Clip.6m30s, Mixtape detected, result y.NI1L8ZJgA9o.4m10s.First_Clip.4m30s..y.NI1L8ZJgA9o.5m10s.Second_Clip.5m30s..y.NI1L8ZJgA9o.6m10s.Third_Clip.6m30s
+2019-12-09 22:45:01,977:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.NI1L8ZJgA9o.5m, Mixtape detected, result y.drRQVI58c-E..y.NI1L8ZJgA9o.5m
+2019-12-09 22:45:01,979:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m..y.NI1L8ZJgA9o.5m, Mixtape detected, result y.drRQVI58c-E.5m..y.NI1L8ZJgA9o.5m
+2019-12-09 22:45:01,980:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.NI1L8ZJgA9o, Mixtape detected, result y.drRQVI58c-E..y.NI1L8ZJgA9o
+2019-12-09 22:45:01,981:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m..y.NI1L8ZJgA9o, Mixtape detected, result y.drRQVI58c-E.5m..y.NI1L8ZJgA9o
+2019-12-09 22:45:01,982:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s, returned Sample
+2019-12-09 22:45:01,982:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1s.Rocket Beans Live.4s, returned Sample
+2019-12-09 22:45:01,983:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.10s.30s, returned Sample
+2019-12-09 22:45:01,984:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.5m10s, returned Sample
+2019-12-09 22:45:01,985:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.10s, returned Sample
+2019-12-09 22:45:01,986:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s, returned Sample
+2019-12-09 22:45:01,987:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s, returned Sample
+2019-12-09 22:45:01,988:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.1m58s, returned Sample
+2019-12-09 22:45:01,989:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s.10s, returned Sample
+2019-12-09 22:45:01,990:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s.10s, returned Sample
+2019-12-09 22:45:01,991:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m3s, returned Sample
+2019-12-09 22:45:01,992:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 22:45:01,992:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m, returned Sample
+2019-12-09 22:45:01,993:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m.8m, returned Sample
+2019-12-09 22:45:01,994:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m3s, returned Sample
+2019-12-09 22:45:01,994:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 22:45:01,995:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.1h30m, returned Sample
+2019-12-09 22:45:01,996:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1h1m.1h2m, returned Sample
+2019-12-09 22:45:01,997:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, returned Sample
+2019-12-09 22:45:01,998:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 22:45:01,999:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.1m1s.1m10s.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Sample
+2019-12-09 22:45:02,000:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video.1m.2m, returned Sample
+2019-12-09 22:45:02,000:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?v=Utu0RNjf_h8, YouTube URL detected, returned y.Utu0RNjf_h8
+2019-12-09 22:45:02,000:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8, returned Yota
+2019-12-09 22:45:02,002:srt_logger:DEBUG:searched subtitle file '/home/dd/anaconda3/lib/python3.7/site-packages/mb/srt/Introducing the Plunder Bug - A Smart LAN Tap by Hak5 - Hak5 2509-Utu0RNjf_h8.en.srt' for keyword 'kitchen', result ['https://youtu.be/Utu0RNjf_h8?t=10', 'https://youtu.be/Utu0RNjf_h8?t=383']
+2019-12-09 22:45:02,002:lib_logger:DEBUG:called omm() with arg https://youtu.be/Utu0RNjf_h8?t=10, YouTube URL detected, returned y.Utu0RNjf_h8.10s
+2019-12-09 22:45:02,002:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s, returned Cue
+2019-12-09 22:45:02,003:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s.17s, returned Sample
+2019-12-09 22:45:02,003:lib_logger:DEBUG:called omm() with arg https://youtu.be/Utu0RNjf_h8?t=383, YouTube URL detected, returned y.Utu0RNjf_h8.383s
+2019-12-09 22:45:02,003:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.383s, returned Cue
+2019-12-09 22:45:02,003:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.6m23s.6m30s, returned Sample
+2019-12-09 22:45:02,005:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s.17s..y.Utu0RNjf_h8.6m23s.6m30s, Mixtape detected, result y.Utu0RNjf_h8.10s.17s..y.Utu0RNjf_h8.6m23s.6m30s
+2019-12-09 22:45:02,005:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.Welcome_&_Sponsors.podcast.intro, returned Yota
+2019-12-09 22:45:02,006:lib_logger:DEBUG:called omm() with arg y.gCLoXNL-AAI.Rocket Beans Live, returned Yota
+2019-12-09 22:45:02,007:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 22:45:02,008:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U, returned Yota
+2019-12-09 22:45:02,008:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.Welcome_&_Sponsors, returned Yota
+2019-12-09 22:45:02,009:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.podcast.intro, returned Yota
+2019-12-09 22:45:02,009:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8, returned Yota
+2019-12-09 22:45:02,010:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 22:45:02,011:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 22:45:02,011:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 22:45:02,012:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.4m30s, returned Sample
+2019-12-09 22:45:02,013:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 22:45:02,013:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 22:45:02,014:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 22:45:02,015:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.Koreans_on_Metoo.interview.asia.1m18s, returned Cue
+2019-12-09 22:45:02,015:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.security.podcast, returned Yota
+2019-12-09 22:45:02,016:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Yota
+2019-12-09 22:45:02,017:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s, returned Yota
+2019-12-09 22:45:02,018:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s, returned Yota
+2019-12-09 22:45:02,018:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s, returned Yota
+2019-12-09 22:45:02,019:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s, returned Yota
+2019-12-09 22:45:02,020:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video, returned Yota
+2019-12-09 22:45:02,020:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?v=NI1L8ZJgA9o, YouTube URL detected, returned y.NI1L8ZJgA9o
+2019-12-09 22:45:02,020:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 22:45:02,020:lib_logger:DEBUG:called omm() with arg https://youtu.be/NI1L8ZJgA9o?t=60s, YouTube URL detected, returned y.NI1L8ZJgA9o.60s
+2019-12-09 22:45:02,020:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.60s, returned Cue
+2019-12-09 22:45:02,021:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?time_continue=60&v=drRQVI58c-E, YouTube URL detected, returned y.drRQVI58c-E.60s
+2019-12-09 22:45:02,021:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.60s, returned Cue
+2019-12-09 22:45:02,021:lib_logger:DEBUG:called omm() with arg https://youtu.be/NI1L8ZJgA9o?t=120, YouTube URL detected, returned y.NI1L8ZJgA9o.120s
+2019-12-09 22:45:02,021:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.120s, returned Cue
+2019-12-09 22:52:30,494:lib_logger:DEBUG:called omm() with arg b.sn-704, returned Link
+2019-12-09 22:52:30,495:lib_logger:DEBUG:called omm() with arg b.sn-704.MyBit, returned Link
+2019-12-09 22:52:30,497:lib_logger:DEBUG:called omm() with arg b.sn-704.5m.mp3, returned Mp3
+2019-12-09 22:52:30,497:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3.5m, returned Mp3
+2019-12-09 22:52:30,498:lib_logger:DEBUG:called omm() with arg b.sn-704.MyBit.mp3, returned Mp3
+2019-12-09 22:52:30,499:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3, returned Mp3
+2019-12-09 22:52:30,499:lib_logger:DEBUG:called omm() with arg b.sn-704.5m.5m59s.mp3, returned Mp3
+2019-12-09 22:52:30,500:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3.5m.2h, returned Mp3
+2019-12-09 22:52:30,500:lib_logger:DEBUG:called omm() with arg b.sn-704.mp3, returned Mp3
+2019-12-09 22:52:30,501:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote.mp3, returned Mp3
+2019-12-09 22:52:30,502:lib_logger:DEBUG:called omm() with arg b.sn-704.Security Now Quote, returned Link
+2019-12-09 22:52:30,503:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.some.tags, returned Link
+2019-12-09 22:52:30,503:lib_logger:DEBUG:called omm() with arg b.2NYwBFd, returned Link
+2019-12-09 22:52:30,504:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.MyTitle, returned Link
+2019-12-09 22:52:30,505:lib_logger:DEBUG:called omm() with arg b.2NYwBFd.MyTitle.some.tags, returned Link
+2019-12-09 22:52:30,506:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro, returned Cue
+2019-12-09 22:52:30,507:lib_logger:DEBUG:called omm() with arg y.gCLoXNL-AAI.1s.Rocket Beans Live, returned Cue
+2019-12-09 22:52:30,507:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 22:52:30,508:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s, returned Cue
+2019-12-09 22:52:30,509:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors, returned Cue
+2019-12-09 22:52:30,510:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro, returned Cue
+2019-12-09 22:52:30,511:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1m58s, returned Cue
+2019-12-09 22:52:30,511:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 22:52:30,512:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 22:52:30,513:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m, returned Cue
+2019-12-09 22:52:30,514:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m.8m, returned Sample
+2019-12-09 22:52:30,515:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.7m, returned Cue
+2019-12-09 22:52:30,515:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 22:52:30,516:lib_logger:DEBUG:called omm() with arg y.youtubehash.10s, returned Cue
+2019-12-09 22:52:30,517:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s, returned Cue
+2019-12-09 22:52:30,518:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.Koreans_on_Metoo.interview.asia.1m18s, returned Cue
+2019-12-09 22:52:30,518:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, returned Sample
+2019-12-09 22:52:30,519:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.1m1s.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Cue
+2019-12-09 22:52:30,520:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video.1m, returned Cue
+2019-12-09 22:52:30,521:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s, returned Sample
+2019-12-09 22:52:30,522:lib_logger:DEBUG:called omm() with arg y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s, returned Sample
+2019-12-09 22:52:30,523:lib_logger:DEBUG:called omm() with arg y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy, returned Cue
+2019-12-09 22:52:30,523:lib_logger:DEBUG:called omm() with arg y.etkd57lPfPU.John_Oliver:_Trade.comedy, returned Yota
+2019-12-09 22:52:30,525:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy, Mixtape detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-09 22:52:30,526:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s, returned Sample
+2019-12-09 22:52:30,526:lib_logger:DEBUG:called omm() with arg y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s, returned Sample
+2019-12-09 22:52:30,527:lib_logger:DEBUG:called omm() with arg y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy, returned Cue
+2019-12-09 22:52:30,528:lib_logger:DEBUG:called omm() with arg y.etkd57lPfPU.John_Oliver:_Trade.comedy, returned Yota
+2019-12-09 22:52:30,529:lib_logger:DEBUG:called omm() with arg y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy, Mixtape detected, result y.meq3Dn3TNs8.22s.No_Retreat_No_Surrender.movie.full.52s..y.xzVk56EKBUI.5m.La_theorie_synthetique.french.lecture.5m10s..y.9PK-netuhHA.3s.John_Oliver:_The_Lottery.comedy..y.etkd57lPfPU.John_Oliver:_Trade.comedy
+2019-12-09 22:52:30,531:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.sponsor.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.sponsor.10m13s
+2019-12-09 22:52:30,533:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.10s..y.Ufr7O0qtX9U.1s.10s, Mixtape detected, result y.Ufr7O0qtX9U.1s.10s..y.Ufr7O0qtX9U.1s.10s
+2019-12-09 22:52:30,535:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s..y.8ZtHhF9Lt_8.1m59s.Intro_banter.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.Overview.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.Sponsor:_ITPro_TV.10m13s
+2019-12-09 22:52:30,537:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.1m58s..y.8ZtHhF9Lt_8.1m59s.3m46s..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.1m58s..y.8ZtHhF9Lt_8.1m59s.3m46s..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s
+2019-12-09 22:52:30,539:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8..y.8ZtHhF9Lt_8.3m47s.6m16s..y.8ZtHhF9Lt_8.6m17s.10m13s
+2019-12-09 22:52:30,541:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.sponsor.10m13s, Mixtape detected, result y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s..y.8ZtHhF9Lt_8.1m59s.podcast.episode.overview.3m46s..y.8ZtHhF9Lt_8.3m47s.episode.overview.6m16s..y.8ZtHhF9Lt_8.6m17s.sponsor.10m13s
+2019-12-09 22:52:30,542:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 22:52:30,544:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 22:52:30,546:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 22:52:30,547:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s, returned Cue
+2019-12-09 22:52:30,548:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 22:52:30,549:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 22:52:30,550:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 22:52:30,551:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.4m30s, returned Sample
+2019-12-09 22:52:30,553:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.drRQVI58c-E, Mixtape detected, result y.drRQVI58c-E..y.drRQVI58c-E
+2019-12-09 22:52:30,553:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 22:52:30,555:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.First Clip.4m30s..y.NI1L8ZJgA9o.5m10s.Second Clip.5m30s..y.NI1L8ZJgA9o.6m10s.Third Clip.6m30s, Mixtape detected, result y.NI1L8ZJgA9o.4m10s.First_Clip.4m30s..y.NI1L8ZJgA9o.5m10s.Second_Clip.5m30s..y.NI1L8ZJgA9o.6m10s.Third_Clip.6m30s
+2019-12-09 22:52:30,556:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.NI1L8ZJgA9o.5m, Mixtape detected, result y.drRQVI58c-E..y.NI1L8ZJgA9o.5m
+2019-12-09 22:52:30,557:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m..y.NI1L8ZJgA9o.5m, Mixtape detected, result y.drRQVI58c-E.5m..y.NI1L8ZJgA9o.5m
+2019-12-09 22:52:30,559:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E..y.NI1L8ZJgA9o, Mixtape detected, result y.drRQVI58c-E..y.NI1L8ZJgA9o
+2019-12-09 22:52:30,560:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m..y.NI1L8ZJgA9o, Mixtape detected, result y.drRQVI58c-E.5m..y.NI1L8ZJgA9o
+2019-12-09 22:52:30,561:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.podcast.intro.1m58s, returned Sample
+2019-12-09 22:52:30,562:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1s.Rocket Beans Live.4s, returned Sample
+2019-12-09 22:52:30,563:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.10s.30s, returned Sample
+2019-12-09 22:52:30,564:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.5m10s, returned Sample
+2019-12-09 22:52:30,564:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.10s, returned Sample
+2019-12-09 22:52:30,565:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.Welcome_&_Sponsors.1m58s, returned Sample
+2019-12-09 22:52:30,566:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.podcast.intro.1m58s, returned Sample
+2019-12-09 22:52:30,567:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.1s.1m58s, returned Sample
+2019-12-09 22:52:30,568:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s.10s, returned Sample
+2019-12-09 22:52:30,569:lib_logger:DEBUG:called omm() with arg y.youtubehash.5s.10s, returned Sample
+2019-12-09 22:52:30,570:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m3s, returned Sample
+2019-12-09 22:52:30,571:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 22:52:30,572:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m, returned Sample
+2019-12-09 22:52:30,573:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m.8m, returned Sample
+2019-12-09 22:52:30,573:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.5m.6m3s, returned Sample
+2019-12-09 22:52:30,574:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 22:52:30,575:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1s.1h30m, returned Sample
+2019-12-09 22:52:30,575:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U.1h1m.1h2m, returned Sample
+2019-12-09 22:52:30,576:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, returned Sample
+2019-12-09 22:52:30,577:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m, Mixtape detected, result y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m..y.drRQVI58c-E.1m18s.Koreans_on_Metoo.interview.asia.2m
+2019-12-09 22:52:30,578:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.1m1s.1m10s.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Sample
+2019-12-09 22:52:30,579:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video.1m.2m, returned Sample
+2019-12-09 22:52:30,579:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?v=Utu0RNjf_h8, YouTube URL detected, returned y.Utu0RNjf_h8
+2019-12-09 22:52:30,579:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8, returned Yota
+2019-12-09 22:52:30,581:srt_logger:DEBUG:searched subtitle file '/home/dd/anaconda3/lib/python3.7/site-packages/mb/srt/Introducing the Plunder Bug - A Smart LAN Tap by Hak5 - Hak5 2509-Utu0RNjf_h8.en.srt' for keyword 'kitchen', result ['https://youtu.be/Utu0RNjf_h8?t=10', 'https://youtu.be/Utu0RNjf_h8?t=383']
+2019-12-09 22:52:30,581:lib_logger:DEBUG:called omm() with arg https://youtu.be/Utu0RNjf_h8?t=10, YouTube URL detected, returned y.Utu0RNjf_h8.10s
+2019-12-09 22:52:30,582:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s, returned Cue
+2019-12-09 22:52:30,582:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s.17s, returned Sample
+2019-12-09 22:52:30,582:lib_logger:DEBUG:called omm() with arg https://youtu.be/Utu0RNjf_h8?t=383, YouTube URL detected, returned y.Utu0RNjf_h8.383s
+2019-12-09 22:52:30,582:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.383s, returned Cue
+2019-12-09 22:52:30,583:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.6m23s.6m30s, returned Sample
+2019-12-09 22:52:30,585:lib_logger:DEBUG:called omm() with arg y.Utu0RNjf_h8.10s.17s..y.Utu0RNjf_h8.6m23s.6m30s, Mixtape detected, result y.Utu0RNjf_h8.10s.17s..y.Utu0RNjf_h8.6m23s.6m30s
+2019-12-09 22:52:30,585:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.Welcome_&_Sponsors.podcast.intro, returned Yota
+2019-12-09 22:52:30,586:lib_logger:DEBUG:called omm() with arg y.gCLoXNL-AAI.Rocket Beans Live, returned Yota
+2019-12-09 22:52:30,588:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 22:52:30,589:lib_logger:DEBUG:called omm() with arg y.Ufr7O0qtX9U, returned Yota
+2019-12-09 22:52:30,590:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.Welcome_&_Sponsors, returned Yota
+2019-12-09 22:52:30,591:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8.podcast.intro, returned Yota
+2019-12-09 22:52:30,591:lib_logger:DEBUG:called omm() with arg y.8ZtHhF9Lt_8, returned Yota
+2019-12-09 22:52:30,592:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 22:52:30,593:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.7m, returned Cue
+2019-12-09 22:52:30,593:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 22:52:30,594:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.4m10s.4m30s, returned Sample
+2019-12-09 22:52:30,594:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 22:52:30,595:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 22:52:30,596:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E, returned Yota
+2019-12-09 22:52:30,596:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.Koreans_on_Metoo.interview.asia.1m18s, returned Cue
+2019-12-09 22:52:30,597:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.security.podcast, returned Yota
+2019-12-09 22:52:30,599:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.Sec_Now.security.podcast.b.2TKY42w.Sec_Now.mp3.security.podcast.6m1s.7m25s.b.2TKY42w.Sec_Now.mp3.security.podcast.8m1s.9m25s, returned Yota
+2019-12-09 22:52:30,599:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s, returned Yota
+2019-12-09 22:52:30,600:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.b.2TKY42w.1s.SecNow.mp3.security.podcast.25s, returned Yota
+2019-12-09 22:52:30,601:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s, returned Yota
+2019-12-09 22:52:30,602:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.video.b.2TKY42w.Security_Now.mp3.security.podcast.1s.25s, returned Yota
+2019-12-09 22:52:30,602:lib_logger:DEBUG:called omm() with arg y._QYngRrbsKo.My_YouTube_Clip.tags.video, returned Yota
+2019-12-09 22:52:30,603:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?v=NI1L8ZJgA9o, YouTube URL detected, returned y.NI1L8ZJgA9o
+2019-12-09 22:52:30,603:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o, returned Yota
+2019-12-09 22:52:30,603:lib_logger:DEBUG:called omm() with arg https://youtu.be/NI1L8ZJgA9o?t=60s, YouTube URL detected, returned y.NI1L8ZJgA9o.60s
+2019-12-09 22:52:30,603:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.60s, returned Cue
+2019-12-09 22:52:30,603:lib_logger:DEBUG:called omm() with arg https://www.youtube.com/watch?time_continue=60&v=drRQVI58c-E, YouTube URL detected, returned y.drRQVI58c-E.60s
+2019-12-09 22:52:30,603:lib_logger:DEBUG:called omm() with arg y.drRQVI58c-E.60s, returned Cue
+2019-12-09 22:52:30,604:lib_logger:DEBUG:called omm() with arg https://youtu.be/NI1L8ZJgA9o?t=120, YouTube URL detected, returned y.NI1L8ZJgA9o.120s
+2019-12-09 22:52:30,604:lib_logger:DEBUG:called omm() with arg y.NI1L8ZJgA9o.120s, returned Cue
