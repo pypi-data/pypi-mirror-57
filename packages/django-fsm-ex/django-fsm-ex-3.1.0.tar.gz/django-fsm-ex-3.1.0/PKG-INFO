@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: django-fsm-ex
+Version: 3.1.0
+Summary: 一个基于 Django 有限状态管理工具库,基于 django-fsm 修改
+Home-page: https://github.com/banxi1988/django-fsm
+Keywords: Django,transition,FSMField
+Author: codetalks
+Author-email: banxi1988@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: commands
+Requires-Dist: django (>=2.2,<3.0)
+Requires-Dist: graphviz (>=0.10,<0.11); extra == "commands"
+Project-URL: Repository, https://github.com/banxi1988/django-fsm
+Description-Content-Type: text/markdown
+
+# Django friendly finite state machine support
+
+django-fsm-ex 基于 [django-fsm](https://github.com/kmmbvnr/django-fsm). 不过由于 django-fsm 基本停止开发了,
+本项目在原项目的基础上调整结构,去掉了部分兼容代码.
+调整了结构,增加了类型信息, 优化了错误信息(主要针对中文项目)
+
