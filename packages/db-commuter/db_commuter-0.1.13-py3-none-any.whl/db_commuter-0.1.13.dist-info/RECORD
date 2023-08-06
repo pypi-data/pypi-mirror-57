@@ -1,0 +1,9 @@
+db_commuter/__init__.py,sha256=vwAcimK0i4KxA-Tu1iYW_1-PHS7YChyuW6LGE2oJaDc,86
+db_commuter/commuters.py,sha256=bytbNEQtEQKmgITeHF1fuHsT9STrjZC-BS4s4ZfPXM4,20469
+db_commuter/connections.py,sha256=4nvQRIWCi7JhZ4e57q1qcvcpnlG-O0DB-vJB66PZFH4,4104
+db_commuter/version.py,sha256=khDKUuWafURKVs5EAZkpOMiUHI2-V7axlqrWLPUpuZo,23
+db_commuter-0.1.13.dist-info/LICENSE,sha256=-0cUrhARMsFBrwePEvYKtzZWvB33W7dFVrI8y9hM_m8,1071
+db_commuter-0.1.13.dist-info/METADATA,sha256=BvSLuhPnmVix4C5_XOjnSTDUSww9doZrnlyMaGywlqI,6518
+db_commuter-0.1.13.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+db_commuter-0.1.13.dist-info/top_level.txt,sha256=iOwh4GT5X5Ax664awcC2XnRnW29CCsAHiQZkYpiaZEE,12
+db_commuter-0.1.13.dist-info/RECORD,,
