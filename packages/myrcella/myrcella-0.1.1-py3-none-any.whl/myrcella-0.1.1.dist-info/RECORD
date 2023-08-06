@@ -1,0 +1,11 @@
+myrcella/__init__.py,sha256=1qfM1mJ_q2q93t7ryPPNmNpsjsXwi-5V7cfgnEahEUY,831
+myrcella/database.py,sha256=UpoJXQpYYphAM8QWRsDLdS9OIGv4__xmETjT1oJT6Lg,1196
+myrcella/main.py,sha256=E3vZ3jxrbcpTn1BKxM_FhCmD2U0avwEO6Ajv4YXt3lw,31
+myrcella/server.py,sha256=41mFdHxMr6NEObjADMVk0dydSIPkDB7Erd49-r2yzwo,1015
+myrcella/data_files/endpoints/example.yml,sha256=rxzHGX5MUS2LAocnB2Zl-9vRu8n1LeMve_RL8-3yLYA,155
+myrcella/data_files/settings/default.ini,sha256=JDUOvDjtMNCREbtpMX0DYzjM2alFG_DjJtDmQC8ZZNY,24
+myrcella-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+myrcella-0.1.1.dist-info/METADATA,sha256=qr5R3rv1pX28V1Tbn0UKNTcGbRoMFqfCcdDecYl1sNQ,1231
+myrcella-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+myrcella-0.1.1.dist-info/top_level.txt,sha256=0ADXc8IVoTLAsVqK099EaNkOv1u1YqPZFnOTVGApnoY,9
+myrcella-0.1.1.dist-info/RECORD,,
