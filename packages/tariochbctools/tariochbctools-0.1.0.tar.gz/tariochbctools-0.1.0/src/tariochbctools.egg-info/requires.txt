@@ -1,0 +1,9 @@
+beancount
+bitstampclient
+mt-940
+pyyaml
+tabula-py
+
+[testing]
+pytest
+pytest-cov
