@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+IteratedLearning/__init__.py
+IteratedLearning/version.py
+IteratedLearning.egg-info/PKG-INFO
+IteratedLearning.egg-info/SOURCES.txt
+IteratedLearning.egg-info/dependency_links.txt
+IteratedLearning.egg-info/requires.txt
+IteratedLearning.egg-info/top_level.txt

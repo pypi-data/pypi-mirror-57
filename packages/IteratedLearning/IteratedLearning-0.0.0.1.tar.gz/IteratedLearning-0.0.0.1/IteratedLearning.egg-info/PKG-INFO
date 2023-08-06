@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: IteratedLearning
+Version: 0.0.0.1
+Summary: Iterated Learning framework based on PyTorch
+Home-page: https://github.com/Shawn-Guo-CN/IteratedLearning
+Author: Shangmin Guo
+Author-email: sg955@cam.ac.uk
+License: GNU GENERAL PUBLIC LICENSE v3
+Description: # Neural Iterated Learning
+        
+        
+Keywords: NLP,Iterated Learning,MARL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
