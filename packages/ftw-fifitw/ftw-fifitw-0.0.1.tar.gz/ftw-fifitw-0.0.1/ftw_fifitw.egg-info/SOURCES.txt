@@ -1,0 +1,8 @@
+README.md
+setup.py
+ftw/__init__.py
+ftw/simple.py
+ftw_fifitw.egg-info/PKG-INFO
+ftw_fifitw.egg-info/SOURCES.txt
+ftw_fifitw.egg-info/dependency_links.txt
+ftw_fifitw.egg-info/top_level.txt
