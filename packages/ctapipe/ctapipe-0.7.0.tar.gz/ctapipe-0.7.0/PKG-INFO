@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: ctapipe
+Version: 0.7.0
+Summary: CTA Python pipeline experimental version
+Home-page: https://github.com/cta-observatory/ctapipe
+Author: ctapipe developers
+Author-email: karl.kosack@cea.fr
+License: BSD3
+Description: 
+        ctapipe - CTA Python pipeline experimental version
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6
