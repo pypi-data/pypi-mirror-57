@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: lcms
+Version: 0.1.0
+Summary: A minimalistic module utilize Little CMS (http://littlecms.com) to apply color profiles to 16 bit TIFF images
+Home-page: https://github.com/tasptz/py-lcms
+Author: Thomas Pönitz
+Author-email: tasptz@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
