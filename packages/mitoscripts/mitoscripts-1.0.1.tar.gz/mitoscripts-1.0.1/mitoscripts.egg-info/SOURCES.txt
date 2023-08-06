@@ -1,0 +1,7 @@
+README.md
+setup.py
+mitoscripts.egg-info/PKG-INFO
+mitoscripts.egg-info/SOURCES.txt
+mitoscripts.egg-info/dependency_links.txt
+mitoscripts.egg-info/requires.txt
+mitoscripts.egg-info/top_level.txt
