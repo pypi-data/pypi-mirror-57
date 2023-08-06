@@ -1,0 +1,5 @@
+argparse
+biopython
+configargparse
+numpy
+scipy
