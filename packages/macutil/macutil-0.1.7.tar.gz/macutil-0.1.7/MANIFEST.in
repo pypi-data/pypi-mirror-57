@@ -1,0 +1,5 @@
+include *.txt
+include *.md
+recursive-include Macutil/doc *.txt
+recursive-include Macutil/modules *.py
+recursive-exclude / *.DS_store
