@@ -1,0 +1,4 @@
+wai.common
+tensorflow
+Pillow
+contextlib2
