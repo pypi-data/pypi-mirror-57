@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: sublogs
+Version: 0.0.1
+Summary: 异步的日志组件，支持日志保存mongoPurely asynchronous high performance logging components，Support for mongo
+Home-page: https://github.com/time-yuan/sublogs-master
+Author: yuanYW
+Author-email: 1030327908@qq.com
+Maintainer: yuanYW
+Maintainer-email: 1030327908@qq.com
+License: MIT
+Description: UNKNOWN
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
