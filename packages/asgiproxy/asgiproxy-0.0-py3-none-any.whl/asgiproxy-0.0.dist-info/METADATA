@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: asgiproxy
+Version: 0.0
+Summary: UNKNOWN
+Home-page: https://github.com/valohai/asgiproxy
+Author: Valohai
+Author-email: dev@valohai.com
+Maintainer: Aarni Koskela
+Maintainer-email: akx@iki.fi
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: aiohttp
+Requires-Dist: starlette
+Requires-Dist: websockets
+Provides-Extra: dev
+Requires-Dist: asgiref ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+UNKNOWN
+
+
