@@ -1,0 +1,3 @@
+[console_scripts]
+bwpyro = bitwarden_pyro.bwpyro:run
+
