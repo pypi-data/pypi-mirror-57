@@ -1,0 +1,11 @@
+macvendor/__init__.py,sha256=hcDADTo_YnmBv04Kq32NcLrp1QwzvSw4pJ1ZjCTZe_o,29
+macvendor/macvendor.py,sha256=59LBltGUMuQWoXLl09LYgInrYFpl6mo_z9LCNrPbYcE,5056
+macvendor/data/prefix24,sha256=B5KwvyO8I91RS89PS9GrvzqCG6_O6AtaBlbuRTN6hxA,811794
+macvendor/data/prefix28,sha256=I-UQPQ4w3YIB2vLOkGX-3FnsyHJ9feMLnOkOF7yQRiM,97037
+macvendor/data/prefix36,sha256=9rPamc7ZhKTlJdDSgEJSmYiaTMpNUSTWP6AfgSy7uUw,249201
+macvendor-1.0.12.dist-info/LICENSE.txt,sha256=xHPYVAqAivDNABmb02b_rQM1r17oyVsC-OdCVpUt88E,1068
+macvendor-1.0.12.dist-info/METADATA,sha256=8ieLyOtpyqiYiKLFaXfxFj3Fa2wbRVx9qxEtkvWIYsw,3150
+macvendor-1.0.12.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+macvendor-1.0.12.dist-info/entry_points.txt,sha256=VX0D3qbv6RVqWD4merrCKkqwDEHJy5cut2GHz0TaA90,46
+macvendor-1.0.12.dist-info/top_level.txt,sha256=pYOsyq8W1l6-aOD49g7dBU-gKDIts2W04pvtOYVDikk,10
+macvendor-1.0.12.dist-info/RECORD,,
