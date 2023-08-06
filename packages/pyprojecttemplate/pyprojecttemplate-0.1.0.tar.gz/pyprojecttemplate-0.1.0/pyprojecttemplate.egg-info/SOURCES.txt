@@ -1,0 +1,11 @@
+README.rst
+setup.py
+pyprojecttemplate/__init__.py
+pyprojecttemplate/basicmath.py
+pyprojecttemplate/demo.py
+pyprojecttemplate.egg-info/PKG-INFO
+pyprojecttemplate.egg-info/SOURCES.txt
+pyprojecttemplate.egg-info/dependency_links.txt
+pyprojecttemplate.egg-info/not-zip-safe
+pyprojecttemplate.egg-info/requires.txt
+pyprojecttemplate.egg-info/top_level.txt
