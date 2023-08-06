@@ -1,0 +1,11 @@
+dpr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dpr/register.py,sha256=MmMw_dfRsY_Q0RmlDTw6kVymz-IMpU1lgCBURnNyh9M,11158
+dpr/utils.py,sha256=H-XAPjMqNoem4pfrHRCZS_190WSdnVJ79zEDyE_-pVM,3857
+dpr/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dpr/tests/test_register.py,sha256=kYLVSr4nTwAV1Uws76UUu1jSgz66knRqCFH3fJZ55Zo,1013
+dpr-0.1.2.data/scripts/dpr,sha256=H7ey2Fj0V6qrYd2Zys4HUVTEKWXHBN5oym5s9fJXAvQ,5085
+dpr-0.1.2.data/scripts/dpr_make_fancy_graph,sha256=oZYayBa4Wpv50Xdt7lpID1WzvT00P0g0d0Islo_ucP0,4599
+dpr-0.1.2.dist-info/METADATA,sha256=jhIO_xBgubp7Aw0eE8x6nA-X7rUMsvTowne9-wthcJQ,4694
+dpr-0.1.2.dist-info/RECORD,,
+dpr-0.1.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+dpr-0.1.2.dist-info/top_level.txt,sha256=j4hzEUgm_yiAhCfP-Jil2UmP8E5DPOMdZJVBKl4nGD8,4
