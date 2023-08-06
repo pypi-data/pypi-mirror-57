@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: dual-quaternions
+Version: 0.3.0
+Summary: Dual quaternion implementation
+Home-page: http://github.com/Achllle/dual_quaternions_ros/tree/master/dual_quaternions
+Author: Achille Verheye
+Author-email: achille.verheye@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: numpy-quaternion
+Requires-Dist: numba
+
+Dual Quaternions
+================
+
+Library for dual quaternion operations, interpolation, and conversions.
+
+Requirements
+------------
+
+* numpy-quaternion
+* scipy
+* numba
+
+Usage
+-----
+
+Import using::
+
+    from dual_quaternions import DualQuaternion
+
+
