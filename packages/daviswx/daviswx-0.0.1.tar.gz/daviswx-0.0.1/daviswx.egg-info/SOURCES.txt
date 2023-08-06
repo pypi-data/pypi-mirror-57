@@ -1,0 +1,10 @@
+README.md
+setup.py
+daviswx/__init__.py
+daviswx/getobs.py
+daviswx.egg-info/PKG-INFO
+daviswx.egg-info/SOURCES.txt
+daviswx.egg-info/dependency_links.txt
+daviswx.egg-info/top_level.txt
+external/remserial-1.3/remserial
+external/vproweather-0.6/vproweather
