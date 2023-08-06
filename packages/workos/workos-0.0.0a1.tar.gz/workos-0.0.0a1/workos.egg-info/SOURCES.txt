@@ -1,0 +1,8 @@
+README.md
+setup.py
+workos/__init__.py
+workos.egg-info/PKG-INFO
+workos.egg-info/SOURCES.txt
+workos.egg-info/dependency_links.txt
+workos.egg-info/not-zip-safe
+workos.egg-info/top_level.txt
