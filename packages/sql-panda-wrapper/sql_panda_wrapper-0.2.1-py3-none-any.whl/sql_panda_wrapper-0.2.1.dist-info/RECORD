@@ -1,0 +1,12 @@
+SQLPanda/__init__.py,sha256=sAVHtuKvIlulPcMVngmywBCkWXe4vKm8Iu0096pF5Ws,44
+SQLPanda/scripts.py,sha256=CCqIsSts109EjKYiuWJA6cPE5HmEJMpxyZ3s9wzjt_A,3284
+SQLPanda/BigPanda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SQLPanda/BigPanda/bigpanda.py,sha256=xQtlUD4Dk-EVoE7PDzMuLdhj0KQ1eColYmGvKc5sgnc,3178
+SQLPanda/LitePanda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SQLPanda/LitePanda/litepanda.py,sha256=MAOSJtM9S7WO9495ax6gHuwiiLxjl6A7h4gfQDSiJR8,477
+SQLPanda/api/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+SQLPanda/api/api.py,sha256=q1Mj5e1EQHOHOFO3ReVhCyhVWKE6weeW0cPK2RZjH3k,344
+sql_panda_wrapper-0.2.1.dist-info/METADATA,sha256=yKNw0R1EVAm-6j5brLEKextc01KnmyWHcHirmEteEV0,236
+sql_panda_wrapper-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sql_panda_wrapper-0.2.1.dist-info/top_level.txt,sha256=N5lEGrsCMX_IGVnMICbC_yojuOBUqHUktGnpcJnX5SU,9
+sql_panda_wrapper-0.2.1.dist-info/RECORD,,
