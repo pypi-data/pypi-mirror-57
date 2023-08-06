@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: text2cron
+Version: 0.1.1
+Summary: Convert readable text phrase to a cron expression.
+Home-page: https://github.com/kirbs-/text2cron
+Author: Chris Kirby
+Author-email: kirbycm@gmail.com
+License: MIT
+Description: text2cron
+        =========
+        Convert text phrase to a cron expression. Documentation at https://github.com/kirbs-/hide_code
+Keywords: cron text nlp
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
