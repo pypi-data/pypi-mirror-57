@@ -1,0 +1,4 @@
+mistune>=0.7
+pygments>=2
+requests>=2.8
+asciitomathml>=1.0
