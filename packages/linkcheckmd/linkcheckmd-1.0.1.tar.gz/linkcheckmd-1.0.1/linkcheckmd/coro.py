@@ -1,0 +1,67 @@
+from aiohttp_requests import requests
+import aiohttp
+import re
+import typing
+from pathlib import Path
+import warnings
+import asyncio
+import itertools
+import logging
+
+# tuples, not lists
+
+EXC = (aiohttp.client_exceptions.ClientConnectorError, aiohttp.client_exceptions.ServerDisconnectedError)
+OKE = asyncio.TimeoutError
+TIMEOUT = 10
+
+
+async def check_urls(
+    flist: typing.Iterable[Path], pat: str, ext: str, hdr: typing.Dict[str, str] = None, method: str = "get"
+) -> typing.List[typing.Tuple[str, str, typing.Any]]:
+
+    glob = re.compile(pat)
+
+    tasks = [check_url(fn, glob, ext, hdr, method=method) for fn in flist]
+
+    warnings.simplefilter("ignore")
+
+    urls = await asyncio.gather(*tasks)
+
+    warnings.resetwarnings()
+    return list(itertools.chain(*urls))  # flatten list of lists
+
+
+async def check_url(
+    fn: Path, glob, ext: str, hdr: typing.Dict[str, str] = None, *, method: str = "get"
+) -> typing.List[typing.Tuple[str, str, typing.Any]]:
+
+    urls = glob.findall(fn.read_text(errors="ignore"))
+    logging.debug(fn.name, " ".join(urls))
+    bad = []  # type: typing.List[typing.Tuple[str, str, typing.Any]]
+
+    for url in urls:
+        if ext == ".md":
+            url = url[1:-1]
+        try:
+            if method == "get":
+                # anti-crawling behavior doesn't like .head() method--.get() is slower but avoids lots of false positives
+                R = await requests.get(url, allow_redirects=True, timeout=TIMEOUT, headers=hdr, verify_ssl=False)
+            elif method == "head":
+                R = await requests.head(url, allow_redirects=True, timeout=TIMEOUT, headers=hdr, verify_ssl=False)
+            else:
+                raise ValueError(f"unknown method {method}")
+        except OKE:
+            continue
+        except EXC as e:
+            bad.append((fn.name, url, e))  # e, not str(e)
+            print("\n", bad[-1])
+            continue
+
+        code = R.status
+        if code != 200:
+            bad.append((fn.name, url, code))
+            print("\n", bad[-1])
+        else:
+            logging.info(f"OK: {url:80s}")
+
+    return bad
