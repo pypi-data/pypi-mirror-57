@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: autodiff-ADdictedtoCS
+Version: 2.2
+Summary: Automatic Differentiation Package
+Home-page: https://github.com/ADdictedtoCS/cs207-FinalProject
+Author: DAIKI INA
+Author-email: dina@hsph.harvard.edu
+License: MIT
+Keywords: automatic differentiation,forward mode,reverse mode,optimizer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# cs207-FinalProject
+
+**Group number**: 28
+
+**Team Members**:
+
+Josh Bodner
+
+Theo Guenais
+
+Daiki Ina
+
+Junzhi Gong
+
+### Download and use autodiff
+* Activate virtual environment
+* Install the package
+    ```bash
+    pip install "pip install autodiff-ADdictedtoCS"
+
+* (Optional) Run tests with pytest 
+    ```bash 
+    $pytest 
+
+* Enjoy the features and natural approach of ```autodiff``` for automatic differentiation. Refer to the documentation for further information, 
+or the demo.ipynb notebook for basic use case.
+
+
