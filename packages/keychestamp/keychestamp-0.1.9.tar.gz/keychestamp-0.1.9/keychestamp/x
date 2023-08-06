@@ -1,0 +1,4 @@
+{"msg": "KeyChestAmp started", "params": {}, "id": 1, "time": "2019-12-08 10:46:48", "host": "MacBook2018.local", "ip": "127.0.0.1", "version": "0.1.7", "backlog": 3, "log_time": "2019-12-08 10:46:49"}
+{"msg": "KeyChestAmp started", "params": {"x": 3, "y": "s"}, "id": 2, "time": "2019-12-08 10:46:48", "host": "MacBook2018.local", "ip": "127.0.0.1", "version": "0.1.7", "backlog": 2, "log_time": "2019-12-08 10:46:50"}
+{"msg": "x", "params": {"x": 3}, "id": 1, "time": "2019-12-08 12:01:14", "host": "MacBook2018.local", "ip": "127.0.0.1", "version": "0.1.8", "backlog": 1, "log_time": "2019-12-08 12:01:14"}
+{"msg": "x", "params": {"x": 3}, "id": 1, "time": "2019-12-08 12:01:58", "host": "MacBook2018.local", "ip": "127.0.0.1", "version": "0.1.8", "backlog": 1, "log_time": "2019-12-08 12:02:05"}
