@@ -1,0 +1,14 @@
+abritamr/AmrSetup.py,sha256=rgNJu_Hq-6fJHm6wYlkerV5wwesWpwMg_bSN5j9C9iU,9849
+abritamr/__init__.py,sha256=DsSnoUE2iohTx9pS_BbqMEdT1YML73XQPRznKZaatgs,73
+abritamr/abritamr.py,sha256=tbsrzNkqjFSwzspBS8BSj6ZpHJLtLBS23eK0EXlh0I0,3218
+abritamr/abritamr_logger.py,sha256=ElzmZs4R5Y8lvlfmCVz7QSi83ZMtw3LlsGZTNlUYSt8,628
+abritamr/db/refgenes_3.1.1b.csv,sha256=WFYPhYtMB31EtwpJ4eI_-HUqCWplPdJC3p614_8RsJ8,1048312
+abritamr/db/refgenes_latest.csv,sha256=NRHsF6ncTaZTM5cRUf_fsWdVml11IH3_hCPyTAfwRvw,1035428
+abritamr/templates/Snakefile,sha256=h4YGqbw4NEJBrMsexeQ2zS7pV-CpvsmQUqRqQe3unrc,1011
+abritamr/templates/config.yaml,sha256=b7y9yAw5LTYzkAGJsDbOzKtkb7QvfXcikhXrL_k0uic,112
+abritamr/utils/collate.py,sha256=cHh5Q1wpFN0gdzVXVzBoT31fDKZgbnkZUPIY4bJYXxw,22560
+abritamr-0.1.0.dist-info/METADATA,sha256=2X6NNO224-1c4_Vt5wJscsrQEFhr9dS87gqbPuBNuFU,4129
+abritamr-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+abritamr-0.1.0.dist-info/entry_points.txt,sha256=tEkEQG6Mvo3jeU6opAxfU6bj-1wmVOQbWqre9--h2A0,53
+abritamr-0.1.0.dist-info/top_level.txt,sha256=0q3ig11CRCXabHzZS0TCB1jnxTPFAqd5hPv-bh1Et-Y,9
+abritamr-0.1.0.dist-info/RECORD,,
