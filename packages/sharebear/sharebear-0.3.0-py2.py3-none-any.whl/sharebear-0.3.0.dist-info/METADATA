@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: sharebear
+Version: 0.3.0
+Summary: This project provides a simple api for setting and getting variables and objects from a text file.
+Home-page: https://github.com/bendhouseart/sharebear
+Author: Anthony Edward Galassi
+Author-email: anthony.galassi@protonmail.com
+License: BSD license
+Keywords: sharebear
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: requirements.txt
+
+=========
+ShareBear
+=========
+
+
+.. image:: https://img.shields.io/pypi/v/sharebear.svg
+        :target: https://pypi.python.org/pypi/sharebear
+
+.. image:: https://img.shields.io/travis/bendhouseart/sharebear.svg
+        :target: https://travis-ci.org/bendhouseart/sharebear
+
+.. image:: https://readthedocs.org/projects/sharebear/badge/?version=latest
+        :target: https://sharebear.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+This project provides a simple api for setting and getting variables and objects from a text file.
+
+
+* Free software: BSD license
+* Documentation: https://sharebear.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2019-12-06)
+------------------
+
+* First release on PyPI.
+
+
