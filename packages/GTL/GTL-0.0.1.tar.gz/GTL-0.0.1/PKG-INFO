@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: GTL
+Version: 0.0.1
+Summary: GENERATORE TIPOGRAFICO di LIBERTÀ
+Home-page: UNKNOWN
+Author: Giovanni Abbatepaolo, Puria Nafisi Azizi, Daniele Capo
+Author-email: puria@dyne.org
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/puria/GTL
+Project-URL: Scuola Open Source, https://lascuolaopensource.xyz
+Description: UNKNOWN
+Keywords: Typography,Generative Art,Generative typography,chaos
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Artistic Software
+Description-Content-Type: text/markdown
