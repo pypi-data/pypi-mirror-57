@@ -1,0 +1,15 @@
+README.md
+setup.py
+guolei_py3_components/__init__.py
+guolei_py3_components/database.py
+guolei_py3_components/logger.py
+guolei_py3_components/mail.py
+guolei_py3_components/taobao.py
+guolei_py3_components/util.py
+guolei_py3_components/wechat.py
+guolei_py3_components.egg-info/PKG-INFO
+guolei_py3_components.egg-info/SOURCES.txt
+guolei_py3_components.egg-info/dependency_links.txt
+guolei_py3_components.egg-info/not-zip-safe
+guolei_py3_components.egg-info/requires.txt
+guolei_py3_components.egg-info/top_level.txt
