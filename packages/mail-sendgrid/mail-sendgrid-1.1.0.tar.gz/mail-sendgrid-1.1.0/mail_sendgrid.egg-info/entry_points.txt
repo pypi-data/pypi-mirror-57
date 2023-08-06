@@ -1,0 +1,3 @@
+[console_scripts]
+mail-sendgrid = mail_sendgrid:main
+

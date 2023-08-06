@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+mail_sendgrid/__init__.py
+mail_sendgrid/__main__.py
+mail_sendgrid/validate.py
+mail_sendgrid.egg-info/PKG-INFO
+mail_sendgrid.egg-info/SOURCES.txt
+mail_sendgrid.egg-info/dependency_links.txt
+mail_sendgrid.egg-info/entry_points.txt
+mail_sendgrid.egg-info/requires.txt
+mail_sendgrid.egg-info/top_level.txt
+tests/__init__.py
