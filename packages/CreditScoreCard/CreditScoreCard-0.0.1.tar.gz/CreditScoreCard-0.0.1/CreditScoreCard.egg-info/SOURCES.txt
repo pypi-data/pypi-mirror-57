@@ -1,0 +1,9 @@
+README.md
+setup.py
+CreditScoreCard/LogisticScoreCard.py
+CreditScoreCard/__init__.py
+CreditScoreCard.egg-info/PKG-INFO
+CreditScoreCard.egg-info/SOURCES.txt
+CreditScoreCard.egg-info/dependency_links.txt
+CreditScoreCard.egg-info/requires.txt
+CreditScoreCard.egg-info/top_level.txt
