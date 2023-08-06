@@ -1,0 +1,9 @@
+README.md
+setup.py
+salpdf/__init__.py
+salpdf/pdf2image.py
+salpdf/pdf2text.py
+salpdf.egg-info/PKG-INFO
+salpdf.egg-info/SOURCES.txt
+salpdf.egg-info/dependency_links.txt
+salpdf.egg-info/top_level.txt
