@@ -1,0 +1,12 @@
+oss2
+six
+
+[archive-utils]
+tempfile
+tarfile
+
+[opencv-utils]
+opencv-python
+
+[tensorboard-utils]
+tensorboardX
