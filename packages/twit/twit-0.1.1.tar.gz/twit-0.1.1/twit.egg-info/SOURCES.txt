@@ -1,0 +1,8 @@
+README.md
+setup.py
+twit.egg-info/PKG-INFO
+twit.egg-info/SOURCES.txt
+twit.egg-info/dependency_links.txt
+twit.egg-info/top_level.txt
+x64/Debug/twitc.lib
+x64/Release/twitc.lib
