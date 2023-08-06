@@ -1,0 +1,17 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+config_templater/__init__.py
+config_templater/__main__.py
+config_templater/config_templater.py
+config_templater.egg-info/PKG-INFO
+config_templater.egg-info/SOURCES.txt
+config_templater.egg-info/dependency_links.txt
+config_templater.egg-info/not-zip-safe
+config_templater.egg-info/requires.txt
+config_templater.egg-info/top_level.txt
