@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: safeu
+Version: 0.1.0
+Summary: Safe learning for unlabeled data
+Home-page: https://git.nju.edu.cn/lamda/safeu
+Author: De-Ming Liang, Yu-Feng Li
+Author-email: liangdm@lamda.nju.edu.cn, liyf@lamda.nju.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.15.1)
+Requires-Dist: scipy (>=1.1.0)
+Requires-Dist: scikit-learn (>=0.19.2)
+Requires-Dist: cvxopt (>=1.2.0)
+
+# SafeU: A python toolkit of Safe Learning for Unlabeled Data
+[![language](https://img.shields.io/badge/python-3.6%7C3.7-blue.svg)](https://git.nju.edu.cn/lamda/safeu)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://git.nju.edu.cn/lamda/safeu)
+
+Authors: De-Ming Liang, Feng Shi, Hai-Yu Chen, Xiao-Shuang Lv, Yong-Nan Zhu, [Yu-Feng Li](https://cs.nju.edu.cn/liyf)
+
+## Introduction
+
+**SafeU** (Safe learning for Unlabeled data), is a python toolkit of safe machine learning algorithms utilizing unlebeled data (A brief introduction of safe semi-supervised learning can be found [**here**](http://www.lamda.nju.edu.cn/liyf/paper/FCS19-SafeSSL.pdf)). It builds in multiple safe semi-supervised learning algorithms, and provide a weakly-supervised learning experiment framework including some well-defined protocols for learning algorithms, experiments and evaluation metrics. With this toolkit, you build up your comparing experiments between learning algorithms with different learning settings like supervised, semi/weakly-supervised, as well as different tasks such as single/multi-label learning. We hope this toolkit could help you explore the classic semi-supervised learning algorithms and go further to test your ones.
+
+Submit bugs or suggestions in the Issues section or feel free to submit your contributions as a pull request.
+
+## Getting Start
+* For the latest news, blog posts, tutorials, papers, etc. related to SafeU, check out ([Need a official release website](https://git.nju.edu.cn/lamda/safeu))
+* Get [set up](https://git.nju.edu.cn/lamda/safeu#Setup) quickly
+* Try the ([tutorial](https://git.nju.edu.cn/lamda/SafeU/blob/develop/example/Tutorials.ipynb)).
+* Read the ([documents](https://git.nju.edu.cn/lamda/SafeU/blob/develop/docs/build/docs.zip)).
+
+
+## Setup
+
+You can get safeu simply by:
+
+```
+pip install SafeU
+```
+
+Or clone safeu source code to your local directory and build from source:
+
+```
+cd SafeU
+python setup.py safeu
+pip install dist/*.whl
+```
+
+The dependencies of SafeU are:
+1. Python dependency
+
+```
+python == 3.6 | 3.7
+```
+
+2. Basic Dependencies
+
+```
+numpy >= 1.15.1
+scipy >= 1.1.0
+scikit-learn >= 0.19.2
+cvxopt >= 1.2.0
+```
+
+## Examples
+We can use safeu for algorithm experiments. The following example shows a possible way to experiment based on built-in algorithms and data sets:
+```python
+import sys, os
+from safeu.Experiments import SslExperimentsWithoutGraph
+from safeu.model_uncertainty.S4VM import S4VM
+
+# algorithm configs
+configs = [
+        ('S4VM', S4VM(), {
+            'kernel': 'RBF',
+            'gamma':[0],
+            'C1': [50,100],
+            'C2': [0.05,0.1],
+            'sample_time':[100]
+        })
+    ]
+
+# datasets
+# name,feature_file,label_file,split_path,graph_file
+datasets = [
+	('house', None, None, None, None),
+	('isolet', None, None, None, None)
+	]
+
+# experiments
+experiments = SslExperimentsWithoutGraph(transductive=True, n_jobs=4)
+experiments.append_configs(configs)
+experiments.append_datasets(datasets)
+experiments.set_metric(performance_metric='accuracy_score')
+
+results = experiments.experiments_on_datasets(unlabel_ratio=0.75,test_ratio=0.2,
+	number_init=2)
+```
+
+## Reference
+
+[1] Yu-Feng Li, Lan-Zhe Guo, Zhi-Hua Zhou. Towards Safe Weakly Supervised Learning. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), In press.  
+[2] Yu-Feng Li and Zhi-Hua Zhou. Towards making unlabeled data never hurt. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 37(1):175-188, 2015.  
+[3] Yu-Feng Li, De-Ming Liang. Lightweight Label Propagation for Large-Scale Network Data. IEEE Transactions on Knowledge and Data Engineering (TKDE), in press.  
+[4] Tong Wei, Lan-Zhe Guo, Yu-Feng Li, Wei Gao. Learning safe multi-label prediction for weakly labeled data. Machine Learning (MLJ). 107(4): 703-725, 2018.  
+[5] Yu-Feng Li, Shao-Bo Wang, Zhi-Hua Zhou. Graph quality judgement: A large margin expedition. In: Proceedings of the 25th International Joint Conference on Artificial Intelligence (IJCAI'16), New York, NY, 2016, pp.1725-1731.  
+

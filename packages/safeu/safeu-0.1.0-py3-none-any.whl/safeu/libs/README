@@ -1,0 +1,6 @@
+windows:
+liblinear = CDLL(path.join(dirname, r'windows\liblinear.dll'))
+libsvm = CDLL(path.join(dirname, r'..\windows\libsvm.dll'))
+linux:
+liblinear = CDLL(path.join(dirname, 'linux/liblinear.so.3'))
+libsvm = CDLL(path.join(dirname, '../libsvm.so.2'))
