@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: iblscripts
+Version: 0.0.1
+Summary: Scripts and functions for data extraction for the International Brain Lab
+Home-page: https://github.com/int-brain-lab/iblscripts
+Author: Jai Bhagat
+Author-email: jai.bhagat@internationalbrainlab.org
+License: UNKNOWN
+Description: Scripts and functions for data extraction for the International Brain Lab
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
