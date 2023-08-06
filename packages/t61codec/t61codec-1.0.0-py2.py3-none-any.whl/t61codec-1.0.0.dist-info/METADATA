@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: t61codec
+Version: 1.0.0
+Summary: Python Character Mapping Codec for T61
+Home-page: https://github.com/exhuma/t61codec
+License: UNKNOWN
+Author: Michel Albert
+Author-email: michel@albert.lu
+Classifier: License :: OSI Approved :: MIT License
