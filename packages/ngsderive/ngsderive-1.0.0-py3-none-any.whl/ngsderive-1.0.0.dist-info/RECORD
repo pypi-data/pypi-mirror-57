@@ -1,0 +1,14 @@
+ngsderive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ngsderive/utils.py,sha256=LZVoQ1WmeAr2GywxQlKb39IVbBVNHp9A6WJkYGQaTrI,5400
+ngsderive/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ngsderive/commands/instrument.py,sha256=yOlE4tQghCmFJBQgtdTI1ewBKPVPQW5M1OQQyT6Wei0,7615
+ngsderive/commands/readlen.py,sha256=Y8OHxhX1sKLAArtWLf9teK3Ej2n-Nk0pjPK5P5rE_8E,2254
+ngsderive/commands/strandedness.py,sha256=N-QnqBHJity0rRXo73hcmAz7nckh7FfWmUjHkvgAMdo,9562
+ngsderive/readers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ngsderive/readers/bam.py,sha256=cp28xP0vxd6IfgR1yLLPqHsRp5xxnNHN0WYja2Re0HY,14
+ngsderive-1.0.0.data/scripts/ngsderive,sha256=-fZJ1GkYhMSmg_yZWD_2r9xwbof-eHOYNENgyFyKB0g,5621
+ngsderive-1.0.0.dist-info/LICENSE.md,sha256=LHycDDRdAwuW2rk_xjJZVkP8fWJYxKZt76YvJmSEN8Q,1077
+ngsderive-1.0.0.dist-info/METADATA,sha256=u5Pqxunl2JBVuPWYr5llkLrU_HN5mGVEIPEiwA3ELWs,10290
+ngsderive-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ngsderive-1.0.0.dist-info/top_level.txt,sha256=9MVYWsLf8LsjxUfbXh4gPhpk4OgP79oZaeK2sih0NjA,10
+ngsderive-1.0.0.dist-info/RECORD,,
