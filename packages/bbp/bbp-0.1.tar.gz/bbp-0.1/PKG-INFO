@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: bbp
+Version: 0.1
+Summary: A wrapper for boto3 paginators to iterate per resource
+Home-page: https://github.com/mlda065/bbp
+Author: Matthew Davis
+Author-email: bbp@mdavis.xyz
+License: GPLv3
+Download-URL: https://github.com/mlda065/bbp/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: boto3,boto,AWS,Amazon,paginator,pagination,page,api,cloud
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
