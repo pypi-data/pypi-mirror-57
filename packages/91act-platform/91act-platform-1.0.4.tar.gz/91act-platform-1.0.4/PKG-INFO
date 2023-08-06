@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: 91act-platform
+Version: 1.0.4
+Summary: A small Tools
+Home-page: https://github.com/PepperPapa/xinNotes
+Author: leo
+Author-email: leo@91act.com
+License: UNKNOWN
+Description: The author is  a real lazy dude!
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
