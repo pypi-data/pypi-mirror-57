@@ -1,0 +1,15 @@
+smoothnlp/__init__.py,sha256=7El2WRTiWGg91lYyPJoMKzqMqEyDmwUzrL-FAKMJzzA,1828
+smoothnlp/algorithm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+smoothnlp/algorithm/keyword/__init__.py,sha256=2m26t58IAInzxhw0fRB5eyDrLokkOwH53y9RKCRCcPc,216
+smoothnlp/algorithm/phrase/__init__.py,sha256=6PrlyvJ9-mQqNPWZiYc4dUSKEhmZZge6ncwexIk6mWI,180
+smoothnlp/algorithm/phrase/ngram_utils.py,sha256=YyN3KAFabS7J3BgmYMDgDGnTKsuWOnn4lpABCD2L3WQ,9286
+smoothnlp/algorithm/phrase/phrase_extraction.py,sha256=9Kq6FdqNCcobTtkTlyIMcepR9xYT5l-i8vfREsO83kU,2620
+smoothnlp/server/__init__.py,sha256=A3mQJatLtW8Uj6tU21C3dmwYYS66bqfb7Ni5CSx92r8,2596
+smoothnlp/static/__init__.py,sha256=_GcceoPFMi7irI5VBPMvmY5YnBHo9OC6NusIsjbb794,4732
+smoothnlp/static/jvm.py,sha256=pL0iYlAQWT6Dp2bhutM87T3pyTzENIH-hqWIWneAYRs,4781
+smoothnlp/utils/__init__.py,sha256=AxQdvz7KFYSeKIokOMuvBOmxjsvBADcrXG6sXdZoIHQ,2338
+SmoothNLP-0.2.20.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+SmoothNLP-0.2.20.dist-info/METADATA,sha256=rLn-G_TIDq83dwyR8E9EPoWnT4KiBIbVwEv0MapES0Y,4275
+SmoothNLP-0.2.20.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+SmoothNLP-0.2.20.dist-info/top_level.txt,sha256=zs_qR-SsohVZWD46hKOuiUE7K2YM4bESbg7iM7o6BN4,10
+SmoothNLP-0.2.20.dist-info/RECORD,,
