@@ -1,0 +1,5 @@
+alembic
+pyasn1
+python-ldap
+pyyaml
+sqlalchemy
