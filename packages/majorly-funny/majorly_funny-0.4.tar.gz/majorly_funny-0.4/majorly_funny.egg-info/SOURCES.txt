@@ -1,0 +1,9 @@
+README.md
+setup.py
+majorly_funny/__init__.py
+majorly_funny/text.py
+majorly_funny.egg-info/PKG-INFO
+majorly_funny.egg-info/SOURCES.txt
+majorly_funny.egg-info/dependency_links.txt
+majorly_funny.egg-info/not-zip-safe
+majorly_funny.egg-info/top_level.txt
