@@ -1,0 +1,882 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Develop a factory manager (agent) for the SCM world &mdash; scml 0.1.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SCML2019" href="../modules/scml2019.html" />
+    <link rel="prev" title="Run a session of the SCML world" href="01.run_scml2019.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> scml
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#id1">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#development">Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tutorials.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01.run_scml2019.html">Run a session of the SCML world</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Develop a factory manager (agent) for the SCM world</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#most-important-callbacks">Most important callbacks:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#more-details">More details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-can-the-agent-do-and-know">What can the agent do and know?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#participation-in-the-anac-2019-scm-league">Participation in the ANAC 2019 SCM league</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#more-information">More Information</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/scml2019.html">SCML2019</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modules/scml2019.html#module-scml.scml2019">scml.scml2019 Package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#simulation-steps">Simulation steps:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#remarks-about-re-negotiation-on-breaches">Remarks about re-negotiation on breaches:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#remarks-about-timing">Remarks about timing:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#remarks-about-anac-2019-scml-league">Remarks about ANAC 2019 SCML League:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.transaction.html">transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.temporary_transaction.html">temporary_transaction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.anac2019_world.html">anac2019_world</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.anac2019_tournament.html">anac2019_tournament</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.anac2019_collusion.html">anac2019_collusion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.anac2019_std.html">anac2019_std</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.balance_calculator.html">balance_calculator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.anac2019_sabotage.html">anac2019_sabotage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.pos_gauss.html">pos_gauss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019._safe_max.html">_safe_max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.zero_runs.html">zero_runs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#classes">Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.Product.html">Product</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.Process.html">Process</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.InputOutput.html">InputOutput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.RunningCommandInfo.html">RunningCommandInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.ManufacturingProfile.html">ManufacturingProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.ManufacturingProfileCompiled.html">ManufacturingProfileCompiled</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.ProductManufacturingInfo.html">ProductManufacturingInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.FactoryStatusUpdate.html">FactoryStatusUpdate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.Job.html">Job</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.ProductionNeed.html">ProductionNeed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.MissingInput.html">MissingInput</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.ProductionReport.html">ProductionReport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.ProductionFailure.html">ProductionFailure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.FinancialReport.html">FinancialReport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.SCMLAgreement.html">SCMLAgreement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.SCMLAction.html">SCMLAction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.CFP.html">CFP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.Loan.html">Loan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.InsurancePolicy.html">InsurancePolicy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.Factory.html">Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.FactoryState.html">FactoryState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.SCMLAWI.html">SCMLAWI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.FactoryManager.html">FactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.DoNothingFactoryManager.html">DoNothingFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.GreedyFactoryManager.html">GreedyFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.JavaFactoryManager.html">JavaFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.JavaDoNothingFactoryManager.html">JavaDoNothingFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.JavaGreedyFactoryManager.html">JavaGreedyFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.JavaDummyMiddleMan.html">JavaDummyMiddleMan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.FJ2FactoryManager.html">FJ2FactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.RaptFactoryManager.html">RaptFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.InsuranceFraudFactoryManager.html">InsuranceFraudFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.SAHAFactoryManager.html">SAHAFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.CheapBuyerFactoryManager.html">CheapBuyerFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.NVMFactoryManager.html">NVMFactoryManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.DefaultBank.html">DefaultBank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.Bank.html">Bank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.DefaultInsuranceCompany.html">DefaultInsuranceCompany</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.InsuranceCompany.html">InsuranceCompany</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.SCMLAgent.html">SCMLAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.FactorySimulator.html">FactorySimulator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.SlowFactorySimulator.html">SlowFactorySimulator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.FastFactorySimulator.html">FastFactorySimulator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.DefaultGreedyManager.html">DefaultGreedyManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.ScheduleInfo.html">ScheduleInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.Scheduler.html">Scheduler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.GreedyScheduler.html">GreedyScheduler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.SCMLWorld.html">SCMLWorld</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.Factory.html">Factory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.Consumer.html">Consumer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.ConsumptionProfile.html">ConsumptionProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.JustInTimeConsumer.html">JustInTimeConsumer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.Miner.html">Miner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.MiningProfile.html">MiningProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2019.ReactiveMiner.html">ReactiveMiner</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2019.html#class-inheritance-diagram">Class Inheritance Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/scml2020.html">SCML2020</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../modules/scml2020.html#module-scml.scml2020">scml.scml2020 Package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2020.html#classes">Classes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.RandomAgent.html">RandomAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.DoNothingAgent.html">DoNothingAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.IndependentNegotiationsAgent.html">IndependentNegotiationsAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.BuyCheapSellExpensiveAgent.html">BuyCheapSellExpensiveAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.DecentralizingAgent.html">DecentralizingAgent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.FactoryState.html">FactoryState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.SCML2020Agent.html">SCML2020Agent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.AWI.html">AWI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.SCML2020World.html">SCML2020World</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.FinancialReport.html">FinancialReport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.FactoryProfile.html">FactoryProfile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api/scml.scml2020.Factory.html">Factory</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../modules/scml2020.html#class-inheritance-diagram">Class Inheritance Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts.html">Command Line Scripts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../scripts.html#tournament-command-scml-tournament">Tournament Command (scml tournament)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../scripts.html#creating-a-tournament">Creating a tournament</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripts.html#running-a-tournament">Running a tournament</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripts.html#combining-tournament-results">Combining tournament results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../scripts.html#finding-the-winners-of-a-tournament">Finding the winners of a tournament</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../scripts.html#running-an-scml2020-world-scml-run2020">Running an SCML2020 world (scml run2020)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../scripts.html#running-an-scml2019-world-scml-run2019">Running an SCML2019 world (scml run2019)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/index.html">Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../reference/scml.html">scml</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contributing.html#bug-reports">Bug reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing.html#documentation-improvements">Documentation improvements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing.html#feature-requests-and-feedback">Feature requests and feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing.html#development">Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../contributing.html#pull-request-guidelines">Pull Request Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contributing.html#tips">Tips</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id1">0.1.3 (2019-12-08)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id2">0.1.2 (2019-12-01)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id3">0.1.1 (2019-11-25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#id4">0.1.0 (2019-11-20)</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">scml</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../tutorials.html">Tutorials</a> &raquo;</li>
+        
+      <li>Develop a factory manager (agent) for the SCM world</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/02.develop_scml_agent2019.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="develop-a-factory-manager-agent-for-the-scm-world">
+<h1>Develop a factory manager (agent) for the SCM world<a class="headerlink" href="#develop-a-factory-manager-agent-for-the-scm-world" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial describes how to develop an agent for the SCM world, test
+it, and submit it to the ANAC 2019 SCM league.</p>
+<p>The first step is to install negmas</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install negmas
+</pre></div>
+</div>
+<p>Once you have this library installed, you can start developing your
+factory manager:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">negmas.apps.scml</span> <span class="kn">import</span> <span class="n">FactoryManager</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">class</span> <span class="nc">MyFactoryManager</span><span class="p">(</span><span class="n">FactoryManager</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;My factory manager&quot;&quot;&quot;</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="n">MyFactoryManager</span><span class="p">()</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Can</span><span class="s1">&#39;t instantiate abstract class MyFactoryManager with abstract methods confirm_contract_execution, confirm_loan, confirm_partial_execution, init, on_agent_bankrupt, on_cash_transfer, on_contract_breached, on_contract_cancelled, on_contract_executed, on_contract_nullified, on_contract_signed, on_inventory_change, on_neg_request_accepted, on_neg_request_rejected, on_negotiation_failure, on_negotiation_success, on_new_cfp, on_new_report, on_production_failure, on_production_success, on_remove_cfp, respond_to_negotiation_request, respond_to_renegotiation_request, set_renegotiation_agenda, sign_contract, step</span>
+</pre></div>
+</div>
+<p>You are told that you cannot instantiate your newly created class as did
+not implement the abstract (required) methods. These abstract methods
+are useful in giving you an idea of all the callback you should expect.</p>
+<p>If you want some default behavior implemented for you, you can inherit
+from one of the provided factory managers like
+<code class="docutils literal notranslate"><span class="pre">DoNothingFactoryManager</span></code> and <code class="docutils literal notranslate"><span class="pre">GreedyFactoryManager</span></code>. In this case,
+you only need to override the functions you modify</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">negmas.apps.scml</span> <span class="kn">import</span> <span class="n">DoNothingFactoryManager</span>
+<span class="k">class</span> <span class="nc">MyFactoryManager</span><span class="p">(</span><span class="n">DoNothingFactoryManager</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;My factory manager&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>As the
+<a class="reference external" href="http://www.yasserm.com/negmas/negmas.apps.scml.html?highlight=on_negotiation_request#negmas.apps.scml.SCMLAgent.on_negotiation_request">documentation</a>
+states, this function is called whenever your factory manager receives a
+request from another agent to negotiate. You can either return <code class="docutils literal notranslate"><span class="pre">None</span></code>
+if you do not want to accept this negotiation or create a <code class="docutils literal notranslate"><span class="pre">Negotiator</span></code>
+that represents your agent in it.</p>
+<p>Your do-nothing agent is almost ready. Let’s try it:</p>
+<p>The property <code class="docutils literal notranslate"><span class="pre">stats</span></code> in <code class="docutils literal notranslate"><span class="pre">SCML2020World</span></code> gives you several statistics
+about the world for every time-step of the simulation.</p>
+<p>Let’s check the contracts of this world:</p>
+<p>Let’s try to run a tournament with this do-nothing agent against the
+built-in greedy agent (in the “collusion” track setting):</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">negmas.apps.scml.utils</span> <span class="kn">import</span> <span class="n">anac2019_collusion</span>
+<span class="kn">from</span> <span class="nn">negmas.apps.scml</span> <span class="kn">import</span> <span class="n">GreedyFactoryManager</span>
+
+<span class="n">results</span> <span class="o">=</span> <span class="n">anac2019_collusion</span><span class="p">(</span><span class="n">competitors</span><span class="o">=</span><span class="p">(</span><span class="n">MyFactoryManager</span><span class="p">,</span> <span class="n">GreedyFactoryManager</span><span class="p">)</span>
+                              <span class="p">,</span> <span class="n">agent_names_reveal_type</span><span class="o">=</span><span class="kc">True</span>
+                              <span class="p">,</span> <span class="n">n_configs</span><span class="o">=</span><span class="mi">2</span>        <span class="c1"># create 10 different configs</span>
+                              <span class="p">,</span> <span class="n">max_worlds_per_config</span><span class="o">=</span><span class="mi">4</span> <span class="c1"># create no more then 4 worlds per config</span>
+                              <span class="p">,</span> <span class="n">n_runs_per_world</span><span class="o">=</span><span class="mi">1</span> <span class="c1"># number of runs of each configured world</span>
+                              <span class="p">,</span> <span class="n">n_steps</span><span class="o">=</span><span class="mi">50</span>              <span class="c1"># we are running each world for 50 steps only</span>
+                             <span class="p">)</span>
+</pre></div>
+</div>
+<p>You can see the scores that each individual factory manager got (just a
+random sample):</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">results</span><span class="o">.</span><span class="n">scores</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>agent_name</th>
+      <th>agent_type</th>
+      <th>log_file</th>
+      <th>score</th>
+      <th>stats_folder</th>
+      <th>world</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>75</th>
+      <td>greedy@3_0</td>
+      <td>greedy_factory_manager</td>
+      <td>/Users/yasser/code/projects/negmas/notebooks/t...</td>
+      <td>-0.00735</td>
+      <td>/Users/yasser/code/projects/negmas/notebooks/t...</td>
+      <td>20190524-225118nW5E00003</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>greedy@3_1</td>
+      <td>greedy_factory_manager</td>
+      <td>/Users/yasser/code/projects/negmas/notebooks/t...</td>
+      <td>-0.00627</td>
+      <td>/Users/yasser/code/projects/negmas/notebooks/t...</td>
+      <td>20190524-225118nW5E00003</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>my@3_2</td>
+      <td>my_factory_manager</td>
+      <td>/Users/yasser/code/projects/negmas/notebooks/t...</td>
+      <td>0.00000</td>
+      <td>/Users/yasser/code/projects/negmas/notebooks/t...</td>
+      <td>20190524-225118nW5E00003</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>greedy@3_3</td>
+      <td>greedy_factory_manager</td>
+      <td>/Users/yasser/code/projects/negmas/notebooks/t...</td>
+      <td>-0.00643</td>
+      <td>/Users/yasser/code/projects/negmas/notebooks/t...</td>
+      <td>20190524-225118nW5E00003</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>my@4_0</td>
+      <td>my_factory_manager</td>
+      <td>/Users/yasser/code/projects/negmas/notebooks/t...</td>
+      <td>0.00000</td>
+      <td>/Users/yasser/code/projects/negmas/notebooks/t...</td>
+      <td>20190524-225118nW5E00003</td>
+    </tr>
+  </tbody>
+</table>
+</div><p>You can also check the total scores for each factory manager type:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">results</span><span class="o">.</span><span class="n">total_scores</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>agent_type</th>
+      <th>score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>greedy_factory_manager</td>
+      <td>0.010756</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>my_factory_manager</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div><p>If you want, you can check if these differences are statistically
+significant using a t-test:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">results</span><span class="o">.</span><span class="n">ttest</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>a</th>
+      <th>b</th>
+      <th>p</th>
+      <th>t</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>greedy_factory_manager</td>
+      <td>my_factory_manager</td>
+      <td>0.33257</td>
+      <td>0.975009</td>
+    </tr>
+  </tbody>
+</table>
+</div><p>So the greedy factory manager is slightly better than the do-nothing
+factory manager for this short simulation getting an average gain of
+<em>1.1%</em> compared with nothing (<em>0%</em>) for the do-nothing factory manager
+(as expected). Moreover, this difference is <em>not</em> statistically
+significant as the p-value is <em>0.333 &gt; 0.05</em>. If you try running this
+this tournament for less than <em>20</em>, the greedy factory manager will most
+likely lose money. In the actual league, we will run each world
+simulation between <em>50</em> and <em>100</em> steps (more toward the later).</p>
+<p>You can just check the winner(s) list</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">results</span><span class="o">.</span><span class="n">winners</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;greedy_factory_manager&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>and what was its/their score:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">winners_scores</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mf">0.0107562</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>To run a tournament in the “standard”/“sabotage” track settings, use
+“anac2019_std”/“anac2019_sabotage” instead of “anac2019_collusion”.</p>
+<p>This information and much more is also stored in a log folder that gives
+details of every world and total scores, etc. The default location of
+this log folder is under negmas/logs/tournaments in your HOME directory
+(this can be changed by passing a <code class="docutils literal notranslate"><span class="pre">tournament_path</span></code> to the
+<code class="docutils literal notranslate"><span class="pre">anac2019_tournamet</span></code> function.</p>
+<p>The information stored in this folder is:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>File/Folder Name</p></th>
+<th class="head"><p>Format</p></th>
+<th class="head"><p>Content</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>base_configs</p></td>
+<td><p>FOLDER</p></td>
+<td><p>Contains one json
+file for each
+configuration tried
+during the tournament
+before assigning
+agents to factories.</p></td>
+</tr>
+<tr class="row-odd"><td><p>assigned_configs</p></td>
+<td><p>FOLDER</p></td>
+<td><p>Contains one json
+file for each
+configuration tried
+during the tournament
+after assigning
+agents to factories.
+You can re-run this
+world using
+<code class="docutils literal notranslate"><span class="pre">run_world</span></code>
+function in the
+<code class="docutils literal notranslate"><span class="pre">tournament</span></code>
+module.</p></td>
+</tr>
+<tr class="row-even"><td><p>params.json</p></td>
+<td><p>JSON</p></td>
+<td><p>The parameters used
+to create this
+tournament</p></td>
+</tr>
+<tr class="row-odd"><td><p>scores.csv</p></td>
+<td><p>CSV</p></td>
+<td><p>Scores of every agent
+in every world</p></td>
+</tr>
+<tr class="row-even"><td><p>total_scores.csv</p></td>
+<td><p>CSV</p></td>
+<td><p>Scores of every agent
+<strong>type</strong> averaged
+over all runs</p></td>
+</tr>
+<tr class="row-odd"><td><p>winners.csv</p></td>
+<td><p>CSV</p></td>
+<td><p>Winner <em>types</em> and
+their average scores</p></td>
+</tr>
+<tr class="row-even"><td><p>ttest.csv</p></td>
+<td><p>CSV</p></td>
+<td><p>Results of a
+factorial TTEST
+comparing the
+performance of all
+agent <em>types</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>Other than these files, a folder with the same number as the
+corresponding config file in the configs folder, keeps full
+statistics/log of every world with the following contents:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>File Name</p></th>
+<th class="head"><p>Format</p></th>
+<th class="head"><p>Content</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>all_contracts.csv</p></td>
+<td><p>CSV</p></td>
+<td><p>A record of all
+contracts</p></td>
+</tr>
+<tr class="row-odd"><td><p>contracts_full_info.c
+sv</p></td>
+<td><p>CSV</p></td>
+<td><p>A record of all
+contracts with added
+information about the
+CFPs</p></td>
+</tr>
+<tr class="row-even"><td><p>cancelled_contracts.c
+sv</p></td>
+<td><p>CSV</p></td>
+<td><p>Contracts that were
+cancelled because one
+partner refused to
+sign it</p></td>
+</tr>
+<tr class="row-odd"><td><p>signed_contracts.csv</p></td>
+<td><p>CSV</p></td>
+<td><p>Contracts that were
+actually signed</p></td>
+</tr>
+<tr class="row-even"><td><p>negotiations.csv</p></td>
+<td><p>CSV</p></td>
+<td><p>A record of all
+negotiations</p></td>
+</tr>
+<tr class="row-odd"><td><p>breaches.csv</p></td>
+<td><p>CSV</p></td>
+<td><p>A record of all
+breaches</p></td>
+</tr>
+<tr class="row-even"><td><p>stats.csv</p></td>
+<td><p>CSV</p></td>
+<td><p>Helpful statistics
+about the state of
+the world at every
+timestep (e.g. N.
+negotiations, N.
+Contracts Executed,
+etc) in CSV format</p></td>
+</tr>
+<tr class="row-odd"><td><p>stats.json</p></td>
+<td><p>JSON</p></td>
+<td><p>Helpful statistics
+about the state of
+the world at every
+timestep (e.g. N.
+negotiations, N.
+Contracts Executed,
+etc) in JSON format</p></td>
+</tr>
+<tr class="row-even"><td><p>params.json</p></td>
+<td><p>JSON</p></td>
+<td><p>The arguments used to
+run the world</p></td>
+</tr>
+<tr class="row-odd"><td><p>logs.txt</p></td>
+<td><p>TXT</p></td>
+<td><p>A log file giving
+details of most
+important events
+during the simulation</p></td>
+</tr>
+</tbody>
+</table>
+<p>To develop a more useful agent, you will need to override one or more of
+the available callbacks in <code class="docutils literal notranslate"><span class="pre">FactroyManager</span></code> and use methods available
+in the <code class="docutils literal notranslate"><span class="pre">SCMLAWI</span></code> (SCML Agent SCML2020World Interface) to act in the
+world in order to maximize your profit.</p>
+<div class="section" id="most-important-callbacks">
+<h2>Most important callbacks:<a class="headerlink" href="#most-important-callbacks" title="Permalink to this headline">¶</a></h2>
+<p>The most important callbacks that your class is expected to override to
+be useful as a factory manager are the following:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">init()</span></code> Called after the world is initialized, but before any
+simulation steps.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">step()</span></code> Called in the simulation loop. Simulates one step of the
+agent’s logic. You can use this call to be <em>proactive</em>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">on_new_cfp()</span></code> Called whenever a new Call for Proposals (CFP) is
+published on the bulletin board. The agent can specify a condition
+(e.g., buy CFPs only) such that only those CFPs that satisfy this
+condition will trigger this callback. By default your agent will only
+receive CFPs about products that it can use for production or can
+produce. You can override that by changing the
+<code class="docutils literal notranslate"><span class="pre">insteresting_products</span></code> property of your agent (probably in
+<code class="docutils literal notranslate"><span class="pre">init()</span></code>). This callback can be used for implementing <em>reactive</em>
+behavior.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">on_cfp_removed()</span></code> Called whenever a CFP is removed from the
+bulletin board.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">on_negotiation_request_accepted()/on_negotiation_request_rejected()</span></code>
+Called when a negotiation request initiated by the agent is
+accepted/rejected.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">on_negotiation_success()</span></code>/<code class="docutils literal notranslate"><span class="pre">on_negotiation_failure()</span></code> Called when
+a negotiation the agent is involved in terminates.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sign_contract()</span></code> Called by the simulator when it is time to sign a
+contract. The agent can refuse to sign. By default, agents sign the
+contract.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">on_contract_signed()</span></code>/<code class="docutils literal notranslate"><span class="pre">on_contract_canelled()</span></code> Called when a
+contract the agent is party to is signed/cancelled (contracts will be
+canceled if any of the partners party to it refused to sign it).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">on_production_failure()</span></code> Called whenever a production command
+scheduled by the agent cannot be executed (e.g. for lack of funds or
+need of input products).</p></li>
+</ul>
+</div>
+<div class="section" id="more-details">
+<h2>More details<a class="headerlink" href="#more-details" title="Permalink to this headline">¶</a></h2>
+<p><strong>You can download a skeleton for developing your factory manager in
+either python or
+java</strong><a class="reference external" href="http://www.yasserm.com/scml/scml.zip">here</a><strong>.</strong></p>
+<p>For more details, refer to <a class="reference external" href="http://www.yasserm.com/scml/scml.pdf">the detailed description of the SCM
+world</a> and the <code class="docutils literal notranslate"><span class="pre">Agent</span></code>,
+<code class="docutils literal notranslate"><span class="pre">SCMLAgent</span></code>, and <code class="docutils literal notranslate"><span class="pre">FactoryManager</span></code> documentation at <a class="reference external" href="http://negmas.readthedocs.io">NegMAS library
+documentation</a></p>
+</div>
+<div class="section" id="what-can-the-agent-do-and-know">
+<h2>What can the agent do and know?<a class="headerlink" href="#what-can-the-agent-do-and-know" title="Permalink to this headline">¶</a></h2>
+<p>The agent can act by calling various methods of its <code class="docutils literal notranslate"><span class="pre">awi</span></code> member
+(Agent SCML2020World Interface). The most important of these are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">request_negotiation()</span></code> Requests a negotiation with another partner</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">register_interest()</span></code> / <code class="docutils literal notranslate"><span class="pre">unregister_interest</span></code> By default the
+agent will receive <code class="docutils literal notranslate"><span class="pre">on_*_cfp</span></code> callbacks only on products that its
+factory consumes or produces. To override this behavior, you can use
+these two methods of the <code class="docutils literal notranslate"><span class="pre">awi</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">register_cfp()</span></code> / <code class="docutils literal notranslate"><span class="pre">remove_cfp()</span></code> Registers/removes a call for
+proposals indicating interest in buying/selling some product and
+giving the negotiation issues (e.g. deliver time, unit cost,
+quantity, penalty, signing delay).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">evaluate_insurance()</span></code> / <code class="docutils literal notranslate"><span class="pre">buy_insurance()</span></code> Gets the insurance
+premium for some potential contract or buys one</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">execute()</span></code> Executes an action in the world. The only supported
+actions are scheduling a production process to run at some future
+time-step, stopping (or canceling) a previously issued run command.</p></li>
+</ul>
+<p>The agent can also access some useful information through its
+<code class="docutils literal notranslate"><span class="pre">awi</span></code>’s properties. Some of the most important such properties are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">state</span></code> The state of the factory giving its current storage, cash
+in wallet, and standing loans as well as all scheduled production
+commands.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n_steps</span></code> SCML2020World simulation length</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">current_step</span></code> Current world simulation step</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">products</span></code>/<code class="docutils literal notranslate"><span class="pre">processes</span></code> Information about products/processes
+defined in this world (these are also accessible through local
+properties of the <code class="docutils literal notranslate"><span class="pre">FactoryManager</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cfps</span></code> All calls for proposals currently published in the bulletin
+board</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">breaches</span></code> All breaches currently published in the bulletin board</p></li>
+</ul>
+</div>
+<div class="section" id="participation-in-the-anac-2019-scm-league">
+<h2>Participation in the ANAC 2019 SCM league<a class="headerlink" href="#participation-in-the-anac-2019-scm-league" title="Permalink to this headline">¶</a></h2>
+<p>Now, you completed the development of your factory manager, tested it by
+running it in worlds and tournaments, what exactly should you do to
+participate in the SCM league &#64; ANAC 2019:</p>
+<p>You need to submit the following items:</p>
+<ul class="simple">
+<li><p>Names of all members of the team with their affiliations and email
+addresses</p></li>
+<li><p>Either a single python file with the whole implementation of your
+agent with any supporting code or a zip file with a single folder
+containing your code. In the later case, you will need to indicate
+the class name of your factory manager. Any factory manager names are
+accepted except (Insurance, Bank, MFactoryManager, CFactoryManager).</p></li>
+<li><p>A 2-pages academic report about your factory manager. Please check
+the submission website for details about this report.</p></li>
+</ul>
+<p>That is it folks! You can now start developing your own factory manager.
+Have fun.</p>
+<p><strong>You can download a skeleton for developing your factory manager in
+either python or
+java</strong><a class="reference external" href="http://www.yasserm.com/scml/scml.zip">here</a><strong>.</strong></p>
+</div>
+<div class="section" id="more-information">
+<h2>More Information<a class="headerlink" href="#more-information" title="Permalink to this headline">¶</a></h2>
+<p>For more information, please refer to the links in the
+<a class="reference external" href="http://www.yasserm.com/scml/cfp_scml.pdf">CFP</a></p>
+<p>Download <a class="reference download internal" download="" href="../_downloads/5fc3391611d925bbe5b62acc4aae78d1/02.develop_scml_agent2019.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Notebook</span></code></a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../modules/scml2019.html" class="btn btn-neutral float-right" title="SCML2019" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="01.run_scml2019.html" class="btn btn-neutral float-left" title="Run a session of the SCML world" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Yasser Mohammad
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
