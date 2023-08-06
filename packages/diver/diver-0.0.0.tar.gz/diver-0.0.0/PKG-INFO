@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: diver
+Version: 0.0.0
+Summary: diver is a series of tools to speed up common feature-set investigation, conditioning and encoding for common ML algorithms
+Home-page: https://github.com/ClearScore/diver
+Author: Tom Walker
+Author-email: tom.walker@clearscore.com
+License: MIT
+Download-URL: https://github.com/ClearScore/disc/archive/v_0.0.0.tar.gz
+Description: UNKNOWN
+Keywords: dataset,conditioner,feature engineering,data inspection
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
