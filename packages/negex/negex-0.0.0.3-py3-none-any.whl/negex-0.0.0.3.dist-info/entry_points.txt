@@ -1,0 +1,3 @@
+[console_scripts]
+negex = negex.main:main
+
