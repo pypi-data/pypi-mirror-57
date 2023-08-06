@@ -1,0 +1,17 @@
+{% filter indent(width=indent) %}
+while [[ -n "$1" ]]; do
+  case "$1" in
+{% for arg_name in func.args.keys() %}
+  --{{ arg_name | slugify }})
+    shift
+    {% if local_vars %}local {% endif %}{{ arg_name }}=${1}
+    ;;
+{% endfor %}
+  --)
+    shift
+    break
+    ;;
+  esac
+  shift
+done
+{% endfilter %}

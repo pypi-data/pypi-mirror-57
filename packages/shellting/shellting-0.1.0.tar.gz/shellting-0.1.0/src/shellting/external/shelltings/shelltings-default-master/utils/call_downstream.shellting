@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+#
+# doc:
+#   short_help: Starts the main method.
+#
+# meta:
+#   freckles:
+#     ignore: true
+
+# ============================
+# script execution entry point
+# ============================
+
+# adding PREFIX_COMMAND if necessary
+if [ -z ${PREFIX_COMMAND} ]; then
+    PREFIX_COMMAND=()
+fi
+
+for arg in "$@"; do
+    PREFIX_COMMAND+=(${arg})
+done
+
+if [ "$BASH_SOURCE" == "$0" ]; then
+    # run directly
+    main "${PREFIX_COMMAND[@]}"
+elif [ "$BASH_SOURCE" == "" ]; then
+    # piped in
+    main "${PREFIX_COMMAND[@]}"
+fi
+
+exit 0

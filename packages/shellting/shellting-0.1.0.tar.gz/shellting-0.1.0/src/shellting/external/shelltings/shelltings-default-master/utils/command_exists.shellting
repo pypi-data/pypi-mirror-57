@@ -1,0 +1,17 @@
+#
+# doc:
+#   short_help: Checks whether a command exists in the current path.
+#
+# args:
+#   command:
+#     doc:
+#       short_help: The command to check.
+#     type: string
+#     required: true
+#
+# meta:
+#   freckles:
+#     ignore: true
+
+
+type "${command}" > /dev/null 2>&1

@@ -1,0 +1,16 @@
+{% if skip_shebang is not defined or not skip_shebang %}#!/usr/bin/env bash{% endif %}
+
+{% for line in shellting.doc.get_help(use_short_help=True, default='n/a').split('\n') %}
+# {{ line }}
+{% endfor %}
+
+{% with func=shellting, indent=0 %}
+{% include "arg_parse.j2" %}
+{% endwith %}
+
+{% for func in functions %}
+{% include "function.j2" %}
+
+{% endfor %}
+
+{{ shellting.id }} {% for arg, value in args.items() %}--{{ arg | slugify }} "${{ arg }}" {% endfor %}

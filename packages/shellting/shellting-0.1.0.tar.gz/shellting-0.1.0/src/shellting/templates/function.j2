@@ -1,0 +1,6 @@
+function {{ func.id }} {
+{% with indent=4, local_vars=True %}
+{% include "body.j2" %}
+{% endwith %}
+
+}

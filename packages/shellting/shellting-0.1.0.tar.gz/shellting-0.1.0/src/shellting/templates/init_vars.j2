@@ -1,0 +1,40 @@
+function init_vars {
+    while [[ -n "$1" ]]; do
+      case "$1" in
+
+        --debug)
+          shift
+          DEBUG=true
+          ;;
+
+        --)
+          shift
+          break
+          ;;
+      esac
+      shift
+    done
+
+    # determine whether we run with sudo, or not
+    if [ "$EUID" != 0 ]; then
+        ROOT_PERMISSIONS=false
+        RUN_USER="$USER"
+    else
+        ROOT_PERMISSIONS=true
+        if [ -z "$SUDO_USER" ]; then
+            if [ ! -z "$USER" ]; then
+                RUN_USER="$USER"
+            else
+                RUN_USER="root"
+            fi
+        else
+            RUN_USER="$SUDO_USER"
+        fi
+    fi
+
+    RUN_USER_GROUP=$(id -ng ${INAUGURATE_USER})
+
+    RUN_USER_HOME="`eval echo ~$RUN_USER`"
+    FRECKLES_USER_DIR="$RUN_USER_HOME/.local/share/freckles"
+    LOCAL_BIN_PATH="$RUN_USER_HOME/.local/bin"
+}

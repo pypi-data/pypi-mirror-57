@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+#
+# doc:
+#   short_help: Download a file to the local filesystem.
+#
+# args:
+#   url:
+#     doc: The url to download.
+#     type: string
+#     required: true
+#   dest:
+#     doc: The destination path.
+#     type: string
+#     required: true
+#   skip_if_exists:
+#     doc: Skip download if target file already exists.
+#     type: boolean
+#     required: false
+#     default: false
+#
+# properties:
+#   desc:
+#     short: "downloading: {{:: url ::}} -> {{:: dest ::}}"
+#
+# resources:
+#   shellting:
+#     - command_exists
+#
+
+if [ "${skip_if_exists}" = true ]
+then
+  if [ -f "${dest}" ]
+  then
+    return 0
+  fi
+fi
+
+if command_exists --command curl; then
+    curl --silent -o "${dest}" "${url}"
+    return $?
+elif command_exists --command wget; then
+    wget -q -O "${dest}" "${url}"
+    return $?
+else
+    1>&2 echo "Could not find 'wget' nor 'curl' to download files. Exiting..."
+    return 1
+fi
