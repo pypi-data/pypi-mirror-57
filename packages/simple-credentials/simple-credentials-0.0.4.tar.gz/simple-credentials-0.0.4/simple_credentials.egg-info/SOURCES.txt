@@ -1,0 +1,9 @@
+README.md
+setup.py
+simple_credentials/__init__.py
+simple_credentials/__version__.py
+simple_credentials/utils.py
+simple_credentials.egg-info/PKG-INFO
+simple_credentials.egg-info/SOURCES.txt
+simple_credentials.egg-info/dependency_links.txt
+simple_credentials.egg-info/top_level.txt
