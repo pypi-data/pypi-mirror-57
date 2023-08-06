@@ -1,0 +1,7 @@
+redis_json_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redis_json_logger/formatter.py,sha256=5jsKptWzf344s_anlmI60TbPS4Lw8ch2BocpD_TaSMM,4032
+redis_json_logger/handler.py,sha256=ThiipC846mxO5TPxuDO3GApHw838ZV4rGb2XIWK6ixU,376
+redis_json_logger-0.1.0.dist-info/METADATA,sha256=0sMCABpgSVo5KK-duNGASGxLricXhFBMdbfnfgSw5Qc,585
+redis_json_logger-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+redis_json_logger-0.1.0.dist-info/top_level.txt,sha256=Z7G4asHTF2eYzRIBp12uaY8eWaBPi0wvFTX9oS6P_j4,18
+redis_json_logger-0.1.0.dist-info/RECORD,,
