@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: auditing
+Version: 0.0.2
+Summary: A simple auditing library intended for use with Flask-based application
+Home-page: https://github.com/
+Author: Emil Haldrup Eriksen
+Author-email: emil.h.eriksen@gmail.com
+License: MIT
+Description: The purpose of this library is to provide a simple mechanism for auditing of user actions in web applications. 
+        
+        ### Example
+        
+        To setup auditing, import the package and run the setup method with the appropriate arguments. As an example, consider a binding to a postgres database*
+        
+            import auditing
+        
+            args_to_postgres = dict(database="mydb", user="postgres", password="", host="127.0.0.1", port="5432")
+            auditing.setup("postgres_auto", args_to_postgres)
+        
+        The special "postgres_auto" driver creates the database and any needed tables automatically. If this is not needed, simply use the "postgres" driver instead. Subsequently, auditing can be performed as
+        
+            from auditing import audit
+            
+            audit("mytag", a="1", b="2")
+        
+        where "mytag" identifies the audit collection (in postgres sql it will map to the table name) while the following keyword arguments denotes the data (in the above example, the value "1" will be inserted in column "a" and the value "2" in column "b"). In addition to the specified data, a number of default data fields will also be injected,
+        
+        * ip (from "X-Forwarded-For" header)
+        * host (from Flask request)
+        * path (from Flask request)
+        * username (from Flask session)  
+        * datetime (defaults to datetime.now())
+        
+        [*] In addition to postgres, elastic search is supported. Other databases can be used, simply inject a driver via the "inject_driver" method. 
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
