@@ -1,0 +1,9 @@
+tox_pypi_filter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tox_pypi_filter/plugin.py,sha256=TRCKIRfU4k1n3ZDfT1vmr4wRa64t5lk9w5IQWBTVU7g,1936
+tox_pypi_filter-0.2.dist-info/LICENSE,sha256=AASVIhwyRAGPY3vugQSOo63liuhY8yYbnZ0tUSZpUuQ,1299
+tox_pypi_filter-0.2.dist-info/METADATA,sha256=7-wfVM8yQRusdg6LUQj0Mp5C-zWUxblTyruo4_ltBIY,1602
+tox_pypi_filter-0.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+tox_pypi_filter-0.2.dist-info/entry_points.txt,sha256=vNCKzKLr3-dnRlaNEvkAbDzyXDuIjUIg6d-3vR4A3HQ,44
+tox_pypi_filter-0.2.dist-info/top_level.txt,sha256=qdD-He7vClx5itI3sJrAhmmwhsOrpbkNjngitxdJxXA,16
+tox_pypi_filter-0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tox_pypi_filter-0.2.dist-info/RECORD,,
