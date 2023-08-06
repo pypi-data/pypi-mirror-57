@@ -1,0 +1,34 @@
+Metadata-Version: 2.0
+Name: card-cli
+Version: 1.1.8
+Summary: card-cli is a command line utility for reading smartcards and magnetic stripe cards.
+Home-page: https://github.com/WietseGielen/card-reader-cli
+Author: Wietse Gielen
+Author-email: giertz@inuits.eu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pyusb (==1.0.0b2)
+
+================================
+Card reader command-line utility
+================================
+Configured Readers
+------------------
+- ACS ACR122U (rfid)
+- pcProx RDR-7582AKU (rfid)
+
+Usage
+-----  
+**via command line:**
+::  
+card-cli --device-vendor-id 0x03f0 --device-product-id 0x2724
+
+card-cli is a command line utility for reading smartcards and magnetic stripe cards. 
+
+--device-vendor-id (-dvid) and --device-product-id (-dpid) is only required to connect msr device.
+
+
