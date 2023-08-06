@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: robot_commands
+Version: 0.1.1
+Summary: First version of eurobot status package
+Home-page: https://github.com/skprot/eurobot_status
+Author: skprot
+Author-email: sayanprotasov@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/skprot/eurobot_status/tarball/0.1
+Description: UNKNOWN
+Keywords: eurobot,status_commands,tests
+Platform: UNKNOWN
