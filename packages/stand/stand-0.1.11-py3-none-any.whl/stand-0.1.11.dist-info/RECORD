@@ -1,0 +1,15 @@
+stand/__init__.py,sha256=3AJ0IAdF9lEmI8SZtoPzoKJfvrP9kSsiOrZwifAWz0k,122
+stand/_base.py,sha256=kDK0xHnrR5gUBVQ-0pL9ysur4YqSUT1m3HipFw_GN5I,1752
+stand/_proxies.py,sha256=Xif35qSd5eDlXEh0JoB1gv7Np6kCYEJH0JW0frQv_2k,3718
+stand/config.py,sha256=qUQxZcWMQEZVWzKPDjHp-TpJAIAqcf7BEh7SKC2-7xU,260
+stand/crawler.py,sha256=UPX7z-XJIHzuxSMfp9T3rLPNMuzaHSl91wmN_2uMhzw,778
+stand/db.py,sha256=L156hPfvpCgRRBdUcEVTfP5oTIUEIxpbr1-nYSo59bg,2694
+stand/main.py,sha256=f3LiEWsbWHSLN2YmFlLzaHaWGYn2FVl9lDiGmaO7n3c,982
+stand/middlewares.py,sha256=-7feqPfNMnw7KVN837jwjCzE7octiUFGn4V2G5o7Jas,233
+stand/utils.py,sha256=_T_q5645YGe0cSivXus2FqkHeG2ZbZcgJN59nOO5BKw,2761
+stand/validator.py,sha256=ZoFfOU6IMkaHJlvCx7YWJrMZMMYGD63YUzT42rqM6iY,2288
+stand-0.1.11.dist-info/entry_points.txt,sha256=9SI7-WJQqQh0hDxO5MhZGlwFdroc0iXJgMmGaf-aOAQ,40
+stand-0.1.11.dist-info/LICENSE,sha256=5iLMMW4wxxmK7veqoP9aUmC-6h8cNp6pTQoIavWuYmc,1130
+stand-0.1.11.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+stand-0.1.11.dist-info/METADATA,sha256=IvkN4VEsLnOojvCgYLSw75KebAkgcBgudX-Ns4_yF-U,2024
+stand-0.1.11.dist-info/RECORD,,
