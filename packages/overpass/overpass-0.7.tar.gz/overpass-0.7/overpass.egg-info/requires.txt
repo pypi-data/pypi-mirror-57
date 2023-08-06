@@ -1,0 +1,6 @@
+requests>=2.3.0
+geojson>=1.0.9
+shapely>=1.6.4
+
+[test]
+pytest
