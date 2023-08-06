@@ -1,0 +1,6 @@
+rdflib>=4.2.2
+Flask
+Flask-Cors
+sortedcontainers
+uritools
+pygit2>=1.0.0
