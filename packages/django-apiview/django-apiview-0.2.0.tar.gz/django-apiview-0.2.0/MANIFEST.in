@@ -1,0 +1,8 @@
+include MANIFEST.in
+include README.md
+include requirements.txt
+graft apiview
+prune example
+prune examplepro
+global-exclude __pycache__
+global-exclude *.py[co]
