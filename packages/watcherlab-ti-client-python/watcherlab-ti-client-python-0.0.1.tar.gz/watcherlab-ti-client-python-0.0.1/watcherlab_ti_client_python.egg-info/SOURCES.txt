@@ -1,0 +1,8 @@
+README.md
+setup.py
+watcherlab/__init__.py
+watcherlab/feed.py
+watcherlab_ti_client_python.egg-info/PKG-INFO
+watcherlab_ti_client_python.egg-info/SOURCES.txt
+watcherlab_ti_client_python.egg-info/dependency_links.txt
+watcherlab_ti_client_python.egg-info/top_level.txt
