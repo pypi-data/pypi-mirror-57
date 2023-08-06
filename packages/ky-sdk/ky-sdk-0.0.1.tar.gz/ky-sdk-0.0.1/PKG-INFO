@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ky-sdk
+Version: 0.0.1
+Summary: KuaYue Express Python SDK
+Home-page: https://github.com/block-cat/ky-sdk
+Author: blackcat
+Author-email: kfx2007@163.com
+License: GNU
+Description: 
+        # KUAYUE Express Python SDK
+        
+        跨越速运 Python SDK
+        
+        ## TOKEN
+        
+        SDK 本身不存储token，若要存储，请使用_get_token()方法获取token并合理存储。
+Keywords: ky sdk
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Description-Content-Type: text/markdown
