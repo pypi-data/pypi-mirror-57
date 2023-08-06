@@ -1,0 +1,6 @@
+tensorflow==1.8.0
+tqdm
+keras==2.1.5
+numpy
+pandas
+scipy
