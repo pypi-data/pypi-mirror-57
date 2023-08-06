@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: fn-python-utils
+Version: 0.0.2
+Summary: Some python utilities.
+Home-page: https://github.com/fnoyez/fn_python_utils
+Author: François NOYEZ
+Author-email: francoisnoyez@gmail.com
+License: LGPL
+Download-URL: https://github.com/fnoyez/fn_python_utils/archive/0.0.2.tar.gz
+Description: UNKNOWN
+Keywords: Progress display
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
