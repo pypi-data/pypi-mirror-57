@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: LaplaceDiff
+Version: 0.1.0
+Summary: An automatic differentiation package.
+Home-page: https://github.com/Team-Laplace/cs207-FinalProject/tree/master/LaplaceDiff
+Author: TeamLaplace
+Author-email: yanlitao@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: numpy
+
+UNKNOWN
+
+

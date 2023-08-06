@@ -1,0 +1,10 @@
+LaplaceDiff/LaplaceDiff.py,sha256=98HyVg-AJJpSDZGT2336LLxisv0IY8tl5tRQiVRWRoM,10100
+LaplaceDiff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LaplaceDiff/elemental.py,sha256=VxcsddNoZ0u_1xCOlmv8muDCac61hpDW16Cx6koK3_k,6872
+LaplaceDiff/UnitTests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LaplaceDiff/UnitTests/test_LaplaceDiff.py,sha256=_pgLiiSR0rQgC8imav9n-Z6AixcqNcqRs8y2stGlUk4,3058
+LaplaceDiff/UnitTests/test_elemental.py,sha256=ZNfhVKgqvDQAOMk29YsBytSX2Ij6QV_gFW7_E-x1OAI,3657
+LaplaceDiff-0.1.0.dist-info/METADATA,sha256=ebY3SbXrGJHBjR8t8oPqBh88caekxLZOtlbWQ0GjVi8,696
+LaplaceDiff-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+LaplaceDiff-0.1.0.dist-info/top_level.txt,sha256=ZxBh8GBO6EMeGrIhi2m7B9JqWbRujqd-z_-nOcfsgrA,12
+LaplaceDiff-0.1.0.dist-info/RECORD,,
