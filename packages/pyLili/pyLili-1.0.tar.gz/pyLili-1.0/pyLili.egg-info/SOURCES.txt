@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyLili.egg-info/PKG-INFO
+pyLili.egg-info/SOURCES.txt
+pyLili.egg-info/dependency_links.txt
+pyLili.egg-info/top_level.txt
