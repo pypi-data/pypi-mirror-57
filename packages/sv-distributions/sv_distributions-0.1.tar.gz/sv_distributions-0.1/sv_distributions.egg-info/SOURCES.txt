@@ -1,0 +1,11 @@
+setup.py
+sv_distributions/Binomialdistribution.py
+sv_distributions/Binomialdistribution_challenge.py
+sv_distributions/Gaussiandistribution.py
+sv_distributions/Generaldistribution.py
+sv_distributions/__init__.py
+sv_distributions.egg-info/PKG-INFO
+sv_distributions.egg-info/SOURCES.txt
+sv_distributions.egg-info/dependency_links.txt
+sv_distributions.egg-info/not-zip-safe
+sv_distributions.egg-info/top_level.txt
