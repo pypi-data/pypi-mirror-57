@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: bldg-point-clustering
+Version: 0.0.2
+Summary: A Python 3.5+ wrapper for clustering building point labels using KMeans, DBScan, and Agglomerative clustering
+Home-page: UNKNOWN
+Author: Sriharsha Guduguntla
+Author-email: sguduguntla@berkeley.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-Levenshtein
+Requires-Dist: sklearn
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: pyyaml
+Requires-Dist: sphinxbootstrap4theme
+
+### bldg_point_clustering
+
+A Python 3.5+ wrapper for clustering building point labels
+using KMeans, DBScan, and Agglomerative clustering.
+
+
+
