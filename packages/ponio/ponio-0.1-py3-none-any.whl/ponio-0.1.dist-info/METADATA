@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ponio
+Version: 0.1
+Summary: Python Objects for Numerical IntegratOr
+Home-page: http://github.com/kivvix/miMas/ponio
+Author: Josselin Massot
+Author-email: josselin.massot@univ-rennes1.fr
+License: WTFPL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: sympy
+Requires-Dist: jinja2
+
+``ponio`` description
+=====================
+
+``ponio`` is a *Python* library for study of numerical integrators for
+solve linear transport equation :
+
+::
+
+     u_t + u_x = 0
+
+In time we consider only Runge-Kutta methods, of different order and
+number of stages. In space we consider first WENO methods, in particular
+WENO5, but tools develop here can be use in many linear space schemes.
+We can automatically compute CFL number of some couple of RK(s,n) -
+WENO5, and various other type of couple.
+
+
+
