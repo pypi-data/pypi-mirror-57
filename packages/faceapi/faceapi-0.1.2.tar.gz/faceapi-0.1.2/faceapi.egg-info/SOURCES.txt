@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+faceapi/add_face.py
+faceapi/demo.py
+faceapi/detector.py
+faceapi/recog.py
+faceapi.egg-info/PKG-INFO
+faceapi.egg-info/SOURCES.txt
+faceapi.egg-info/dependency_links.txt
+faceapi.egg-info/requires.txt
+faceapi.egg-info/top_level.txt
