@@ -1,0 +1,7 @@
+setup.py
+intranet_partner.egg-info/PKG-INFO
+intranet_partner.egg-info/SOURCES.txt
+intranet_partner.egg-info/dependency_links.txt
+intranet_partner.egg-info/top_level.txt
+models/__init__.py
+models/intranet_partner.py

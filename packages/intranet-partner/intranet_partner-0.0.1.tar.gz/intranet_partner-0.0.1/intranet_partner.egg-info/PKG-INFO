@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: intranet-partner
+Version: 0.0.1
+Summary: Add fields to connect to intranet client area
+Home-page: https://gitlab.com/sommobilitat/intranet_partner
+Author: Som Mobilitat
+Author-email: admin@sommobilitat.coop
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
