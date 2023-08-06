@@ -1,0 +1,11 @@
+mypy_boto3_alexaforbusiness/__init__.py,sha256=SBoX9SibiK61AO9y5A2YorROwUIhuySh0J2thd0tZQw,1059
+mypy_boto3_alexaforbusiness/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_alexaforbusiness/client.py,sha256=cNVlIViHrGmUNRNCABLveefXp0uvpdpJzNZtN7OulGQ,56992
+mypy_boto3_alexaforbusiness/paginator.py,sha256=U5uWCtZYXikt5WHoWsd6rVOD-5ren5SrX7SGcFcUtTs,11171
+mypy_boto3_alexaforbusiness/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_alexaforbusiness/type_defs.py,sha256=3JgWFrfEtOlbosZECpnSRBxLiLcIxx98T6nJ3ncSSD0,67703
+mypy_boto3_alexaforbusiness/version.py,sha256=FMH1uWn0ppvgG9pl60zz1fbdvmiqTjJn78jjp7vlJxo,55
+mypy_boto3_alexaforbusiness-1.10.34.dist-info/METADATA,sha256=rHsg-qcw_jgZZUj9ODTK7CCUU_VnwMFYNPMh8Bo195A,1225
+mypy_boto3_alexaforbusiness-1.10.34.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_alexaforbusiness-1.10.34.dist-info/top_level.txt,sha256=V6yzFq3Z5TcsaQSHgPcUIx2wRNl9py85g-6T9FQdwYo,28
+mypy_boto3_alexaforbusiness-1.10.34.dist-info/RECORD,,
