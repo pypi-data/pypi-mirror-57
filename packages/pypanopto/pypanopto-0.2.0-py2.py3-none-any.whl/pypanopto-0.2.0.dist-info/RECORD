@@ -1,0 +1,13 @@
+panopto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panopto/auth.py,sha256=_NcAgXx4ixxsX8zJcPZMgbHQcVjw3wyi1KvZ4C6p-NU,3249
+panopto/session.py,sha256=O2AYgmBZ4t_zf4pYnGVGCD4xZ7WSn9JdNAZln3bonbc,5173
+panopto/upload.py,sha256=2c-njQhkJodZizf4VQSfRatXjRql28Lu_KZYXy98Jvk,8468
+panopto/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+panopto/tests/patches.py,sha256=sQTjEts0m9sZnwwzOGBteXA2Dpp-8VFyZkr5hXn2bcQ,669
+panopto/tests/test_auth.py,sha256=6SVyD2wIIPhsPtptlsYhXED3xAarRCEbM2pPMhDwQUg,1228
+panopto/tests/test_upload.py,sha256=uPZzajPLwjL9zMzAKk6JhQ9k0vc0t3CAoMH6Xfj2ogo,1052
+pypanopto-0.2.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+pypanopto-0.2.0.dist-info/METADATA,sha256=qS4_V1WmXkM5YnjOHuFVrJZ-i32IXomibRBg2wAQiMg,260
+pypanopto-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pypanopto-0.2.0.dist-info/top_level.txt,sha256=BqxB7HEokwrb2HJjm0GWem7lTWIhlcgLNIf2KFExB88,8
+pypanopto-0.2.0.dist-info/RECORD,,
