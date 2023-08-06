@@ -1,0 +1,9 @@
+autodiffpy/__init__.py,sha256=zHI_9rZ_Cuuk5UwR_2K69Ncbn3wqZQuSkdCU3r2fIc4,215
+autodiffpy/demo.py,sha256=lVkGhSaf4iHUJiFTwOi7O_3GAQjYXe4-1gJMxTa_z2o,423
+autodiffpy/forward.py,sha256=9enwIu7B4mhLw8QvJSmQDGbT5616YZdqlewGg_dUtOY,9568
+autodiffpy/reverse.py,sha256=LQOtcbxSde4n8hqPlXBGluqx1X7hUr6HU_vXKdziC3s,8978
+autodiffpy_free_holmes-0.0.1.dist-info/LICENSE,sha256=-T3F2aYkYDd1K52KwhlOW3sQW4RLFoboYLR1nUcez48,1068
+autodiffpy_free_holmes-0.0.1.dist-info/METADATA,sha256=3bwpeJVaQ9vn1fXSOPfefOUDl_ZwGDNtG1NZRSCuBL8,207
+autodiffpy_free_holmes-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+autodiffpy_free_holmes-0.0.1.dist-info/top_level.txt,sha256=JRhgLuRgBNa4gProbV0PKmYd0xfkJAdmSVTwOMJ0SAs,11
+autodiffpy_free_holmes-0.0.1.dist-info/RECORD,,
