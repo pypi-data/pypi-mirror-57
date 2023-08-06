@@ -1,0 +1,8 @@
+README.md
+setup.py
+notepaper/__init__.py
+notepaper/paper.py
+notepaper.egg-info/PKG-INFO
+notepaper.egg-info/SOURCES.txt
+notepaper.egg-info/dependency_links.txt
+notepaper.egg-info/top_level.txt
