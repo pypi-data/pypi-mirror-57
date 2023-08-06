@@ -1,0 +1,11 @@
+model/MeasureDefinition.py,sha256=mc_5vtUb8XccHJWlAmrHQ2pB9T43nJvmA8yzXuRPZ74,1310
+model/Type.py,sha256=2A-U-xq4I6dSB7YOTuS5hw7251AZsMvufYmT4Mr2eHY,96
+model/__init__.py,sha256=wvzJlTq5a3LRGFQwlRX2gy-VDAti853qiGf4wsMEgVU,279
+model/measureComputer.py,sha256=p9j7LKlzbNg267WGpbfi3bQIYNuoF9VezCw0QsxmEVw,1211
+model/timeGrouper.py,sha256=ALGbYXcqyYQ0sfFtQpu1HLioDt4VRMhbDdwSCjRQzdA,258
+model/unitTest.py,sha256=ibTusoWDGtBGvCy7Teq1IGHRWQwm549-LRixwRjp6sM,4940
+PPINot4Py-0.0.8.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+PPINot4Py-0.0.8.dist-info/METADATA,sha256=qL2G5_OvkJiUhratKpjKgYhpnWscuNApl46bUMzSutg,698
+PPINot4Py-0.0.8.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+PPINot4Py-0.0.8.dist-info/top_level.txt,sha256=mK1hol42g7at8kdLAbvhwn3mqtLOOoD_QUD-RzwU5pE,6
+PPINot4Py-0.0.8.dist-info/RECORD,,
