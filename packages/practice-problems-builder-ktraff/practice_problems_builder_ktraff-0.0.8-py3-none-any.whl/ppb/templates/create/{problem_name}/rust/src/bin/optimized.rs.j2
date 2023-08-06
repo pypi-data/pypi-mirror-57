@@ -1,0 +1,28 @@
+#[derive(Debug)]
+struct RectangleOptimized {
+    width: u32,
+    height: u32,
+}
+
+impl RectangleOptimized {
+    fn can_hold(&self, other: &RectangleOptimized) -> bool {
+        self.width > other.width && self.height > other.height
+    }
+}
+
+fn main() {
+    println!("Hello, world!");
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn larger_can_hold_smaller_optimized() {
+        let larger = RectangleOptimized { width: 8, height: 7 };
+        let smaller = RectangleOptimized { width: 5, height: 1 };
+
+        assert!(larger.can_hold(&smaller));
+    }
+}
