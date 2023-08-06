@@ -1,0 +1,17 @@
+initpkg/__init__.py,sha256=5xvN_gb61nKeq5TER5dSfcArTP3DVasZGN_MQq5dNpA,23
+initpkg/cli.py,sha256=SL01Cl5YOGikiQ34rYo2fpWfIguXzwInjz5TdL1_uDw,845
+initpkg/template/LICENSE,sha256=GQxnmmpfBJhk8hbfphRv5oLqcNkDF0dUkwvqg_A2_ps,1091
+initpkg/template/README.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+initpkg/template/makefile,sha256=mQZuYRrNNTRBAGRwur4uXFvmVgU7H2EMiF4UTelMlWA,319
+initpkg/template/requirements.txt,sha256=4pREVAKRNNhko8CjqXLCGyPSStkdKQuReZFUYxunjfE,13
+initpkg/template/setup.cfg,sha256=KPh3poYdAZKUKnGqY3Zuh-2IVl-sBWdi-IHB_TtazTU,40
+initpkg/template/setup.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+initpkg/template/docs/keepit.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+initpkg/template/template/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+initpkg/template/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+initpkg-0.1.1.dist-info/LICENSE,sha256=GQxnmmpfBJhk8hbfphRv5oLqcNkDF0dUkwvqg_A2_ps,1091
+initpkg-0.1.1.dist-info/METADATA,sha256=zXE6yohVRLl-GLkYnBbF7MBGl2RBNCMCAeKkb2aQ-Qs,485
+initpkg-0.1.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+initpkg-0.1.1.dist-info/entry_points.txt,sha256=DANgV8QjVQqvo0vgt3er-6k9kyrJ2KGB57pYU4t_utE,46
+initpkg-0.1.1.dist-info/top_level.txt,sha256=NoAyeivnFKR9F0N92xu5wFoNztE1SCWq8_QNaF0U-zA,8
+initpkg-0.1.1.dist-info/RECORD,,
