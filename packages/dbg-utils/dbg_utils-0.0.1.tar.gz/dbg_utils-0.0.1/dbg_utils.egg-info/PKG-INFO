@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dbg-utils
+Version: 0.0.1
+Summary: dbg utils for gdb
+Home-page: UNKNOWN
+Author: Lavender-Tree
+Author-email: lavender.tree9988@gmail.com
+License: MIT Licence
+Description: ...
+Keywords: pip,pwn,dbg
+Platform: any
