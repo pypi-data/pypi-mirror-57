@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.py
+examples/HiLo.py
+p52/api.py
+p52/base.py
+p52/deck.py
+p52/exceptions.py
+p52/static.py
+p52.egg-info/PKG-INFO
+p52.egg-info/SOURCES.txt
+p52.egg-info/dependency_links.txt
+p52.egg-info/top_level.txt
+p52/__pycache__/api.cpython-37.pyc
+p52/__pycache__/base.cpython-37.pyc
+p52/__pycache__/deck.cpython-37.pyc
+p52/__pycache__/static.cpython-37.pyc
