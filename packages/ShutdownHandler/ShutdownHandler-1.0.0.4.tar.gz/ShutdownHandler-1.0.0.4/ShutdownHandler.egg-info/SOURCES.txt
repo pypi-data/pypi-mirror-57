@@ -1,0 +1,7 @@
+README.md
+setup.py
+ShutdownHandler/__init__.py
+ShutdownHandler.egg-info/PKG-INFO
+ShutdownHandler.egg-info/SOURCES.txt
+ShutdownHandler.egg-info/dependency_links.txt
+ShutdownHandler.egg-info/top_level.txt
