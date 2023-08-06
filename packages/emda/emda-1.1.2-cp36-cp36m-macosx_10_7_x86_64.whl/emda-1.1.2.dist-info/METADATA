@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: emda
+Version: 1.1.2
+Summary: Electron Microscopy map and model manipulation tools
+Home-page: UNKNOWN
+Author: Rangana Warshamanage, Garib N. Murshudov
+Author-email: ranganaw@mrc-lmb.cam.ac.uk, garib@mrc-lmb.cam.ac.uk
+License: MPL-2.0
+Platform: UNKNOWN
+Requires-Dist: pandas (==0.23.1)
+Requires-Dist: mrcfile
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+Python library for Electron Microscopy map and model
+manipulations. To work with MRC/CCP4.MAP and MTZ files. Map to map
+fitting and average/difference map calculation. Map and map-model validation
+using 3D correlations.
+
