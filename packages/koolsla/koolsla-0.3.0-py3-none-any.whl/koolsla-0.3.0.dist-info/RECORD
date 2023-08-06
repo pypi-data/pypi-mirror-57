@@ -1,0 +1,13 @@
+koolsla/__init__.py,sha256=om2ETixpBAWW0eTsHLzhTb1AS8_-ImNJMyLkdA3Yxu8,574
+koolsla/color_print.py,sha256=OuqqnBjXpbCp4vn6hs9G1Na_eMLFJ87Y-uAdNrzvJec,1031
+koolsla/data.py,sha256=Y7TFCoCdKrXXAH-G82cd25IelPpAEuZCuw51LlwBh5M,3491
+koolsla/recommender.py,sha256=Jy92HofyZZ4mLq-spDPgdR5eZFx60CjDzcp-ULeIK9g,1539
+koolsla/tfidf.py,sha256=qUUWaxcBH4LVX9Ug8pX3m2-eC-5bEd3u1KNKOOOdo3s,1583
+koolsla/dataset/dish.csv,sha256=H0oakSC-wdRUlbVXkssBOevkP8pnpRapB4DC2N02eQU,17474238
+koolsla-0.3.0.dist-info/COPYING,sha256=mPgn8EPNCIa4RpnlDFbfP34Sto-i-Wr7_vueQkeHez4,1071
+koolsla-0.3.0.dist-info/LICENSE,sha256=mPgn8EPNCIa4RpnlDFbfP34Sto-i-Wr7_vueQkeHez4,1071
+koolsla-0.3.0.dist-info/METADATA,sha256=KZJ_ecfszM31vhjg7R4xx8k_UFSlVkC0YaDTi2tPfLM,5243
+koolsla-0.3.0.dist-info/NOTICE,sha256=tUUqXRcIzaAzsnKDuB1hc7ekVU2F04fgu-1hCaFYdsM,91
+koolsla-0.3.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+koolsla-0.3.0.dist-info/top_level.txt,sha256=3Vx5gX2_cL4ZjPtzVui2zl49mu3tRh9hx709emVAcb0,8
+koolsla-0.3.0.dist-info/RECORD,,
