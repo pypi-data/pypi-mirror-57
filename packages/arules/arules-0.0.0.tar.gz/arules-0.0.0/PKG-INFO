@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: arules
+Version: 0.0.0
+Summary: multi-purpose association rules analysis
+Home-page: https://github.com/windward-ltd/arules
+Author: Abir Koren
+Author-email: abir@wnwd.com
+License: MIT
+Description: # Arules - multi-purpose association rules 
+        
+        Arules is an open-source python package for association rules creation. It allows creation of association rules over 
+        tabular data (pandas dataframe). While standard association rules require transactional data, arules considers 
+        association rules as an analysis utility for categorical data. The Package also supports association rules over 
+        continuous data by application of binning methods (some basic methods are included in the package but users can define
+        their own binning functions). 
+        ## Installation
+        
+        Python 3.6+ | Linux, Mac OS X, Windows
+        ```sh
+        pip install -U arules
+        ```
+        
+        ## Getting Started
+        
+        Let's create some association rules over some tabular data
+        
+        ```python
+        import pandas as pd
+        
+        anes96 = pd.read_csv("anes96.csv")
+        anes96.head()
+        
+        | popul | TVnews | selfLR                 | ClinLR            | DoleLR                | PID              | age  | educ                 | income                   | vote    | logpopul           |
+        |-------|--------|------------------------|-------------------|-----------------------|------------------|------|----------------------|--------------------------|---------|--------------------|
+        | 0.0   | 7.0    | Extremely Conservative | Extremely liberal | Conservative          | Strong Republica | 36.0 | High school graduate | None or less than $2,999 | Dole    | -2.302585092994045 |
+        | 190.0 | 1.0    | Slightly liberal       | Slightly liberal  | Slightly conservative | Weak Democrat    | 20.0 | Some college         | None or less than $2,999 | Clinton | 5.247550249494384  |
+        | 31.0  | 7.0    | Liberal                | Liberal           | Conservative          | Weak Democrat    | 24.0 | Master's degree      | None or less than $2,999 | Clinton | 3.4372078191851885 |
+        | 83.0  | 4.0    | Slightly liberal       | Moderate          | Slightly conservative | Weak Democrat    | 28.0 | Master's degree      | None or less than $2,999 | Clinton | 4.4200447018614035 |
+        | 640.0 | 7.0    | Slightly conservative  | Conservative      | Moderate              | Strong Democrat  | 68.0 | Master's degree      | None or less than $2,999 | Clinton | 6.461624414147957  |
+        ```
+        
+        
+        Note that the table contains both categorical and continuous fields (which can be handled using a selected binning 
+        method). Now we use arules to extract association rules according to a specification of interest
+        ```python
+        import arules as ar
+        from arules.utils import five_quantile_based_bins, top_bottom_10, top_5_variant_variables
+        
+        rules, supp_dict = ar.create_association_rules(anes96,max_cols=2,binning_method=five_quantile_based_bins)
+        
+        ```
+        
+        After the calculation is done we can present rules of selection for analysis purposes
+        
+        ```python
+        ar.present_rules_per_consequent(rules,consequent={'vote':'Clinton'},
+                                        selection_function=top_5_variant_variables, drop_dups=True,
+                                        plot=True)
+        ```
+        ![PID rules](https://raw.githubusercontent.com/windward-ltd/arules/master/examples/assets/PID.png?raw=true)
+        ![selfLR rules](https://raw.githubusercontent.com/windward-ltd/arules/master/examples/assets/selfLR.png?raw=true)
+        ![ClinLR rules](https://raw.githubusercontent.com/windward-ltd/arules/master/examples/assets/ClinLR.png?raw=true)
+        ![DoleLR rules](https://raw.githubusercontent.com/windward-ltd/arules/master/examples/assets/DoleLR.png?raw=true)
+        ![Income rules](https://raw.githubusercontent.com/windward-ltd/arules/master/examples/assets/Income.png?raw=true)
+        
+        As we set the consequent to be: {'vote':'Clinton'}, the presented rules reflect the likelihood of an individual to vote
+        for clinton given the respective feature. For example, if we consider the income variable above, a person with an income
+        of 3,000-4,999 (which populates, according to the barchart, 1% of the sample) is approximately 1.6 times more likely 
+        (w.r.t. the average) to vote for Clinton, while a person with an income of 90,000-104,999 (which populates, according 
+        to the barchart, 4% of the sample) is approximately 1.4 times less likely to vote for Clinton.
+        ## Contributing
+        
+        Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+        
+        ## Versioning
+        
+        We use [SemVer](http://semver.org/) for versioning. For the versions available. 
+        
+        ## Authors
+        
+        * **Abir Koren** - *Initial work* - [WindWard](https://github.com/windward-ltd)
+        
+        ## License
+        
+        This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
