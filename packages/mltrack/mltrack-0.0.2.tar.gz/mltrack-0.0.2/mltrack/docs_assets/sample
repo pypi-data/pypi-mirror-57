@@ -1,0 +1,18 @@
+digraph sample {
+	graph [rankdir=LR size="24,32"]
+	node [color=lightblue2 style=filled]
+	s3_data_source
+	"raw_data.tar.gz"
+	preprocessed_data
+	feature_1
+	feature_2
+	model_initial
+	model_final
+	s3_data_source -> "raw_data.tar.gz" [label="download_data.py"]
+	"raw_data.tar.gz" -> preprocessed_data [label="preprocess_data.py"]
+	preprocessed_data -> feature_1 [label="pca_transform.py"]
+	preprocessed_data -> feature_2 [label="svd_transform.py"]
+	feature_1 -> model_initial [label="model_initial.py"]
+	feature_2 -> model_initial [label="model_initial.py"]
+	model_initial -> model_final [label="model_final.py"]
+}

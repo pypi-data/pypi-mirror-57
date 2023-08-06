@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+from pathlib import Path
+from settings import data_dir_external, download_url, mnist_gz_filepath
+import urllib.request
+
+
+# takes downloaded data from data/external and splits to train, valid and test sets in data/raw
+
+def download_data():
+    """
+    Downloads Mnist dataset from url specified in settings.py
+    """
+    _ = urllib.request.urlretrieve(download_url, mnist_gz_filepath)
+    print(f"Downloaded {download_url} to {mnist_gz_filepath}")
+
+
+if __name__ == '__main__':
+    download_data()

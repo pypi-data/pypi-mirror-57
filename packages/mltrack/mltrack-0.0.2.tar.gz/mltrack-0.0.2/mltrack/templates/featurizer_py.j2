@@ -1,0 +1,22 @@
+
+class Featurizer(object):
+
+    def __init__(self, scaler, pca):
+        super().__init__()
+        self.scaler = scaler
+        self.pca = pca
+ 
+    def fit_on_x_train(self, x_train):
+        """
+        Make sure to call this ONLY on train set.
+        Remember to persist after learning scale / PCA parameters on training data.
+        """
+        self.scaler.fit(x_train) 
+        x_train_scaled = self.scaler.transform(x_train)
+        self.pca.fit(x_train_scaled)
+        print(f"fit Standard Scaler and PCA with n_components_ = {self.pca.n_components_} components, original components = {x_train.shape[1]}")
+    
+    def transform(self, x):
+        x_scaled = self.scaler.transform(x)
+        x_pca = self.pca.transform(x_scaled)
+        return x_pca
