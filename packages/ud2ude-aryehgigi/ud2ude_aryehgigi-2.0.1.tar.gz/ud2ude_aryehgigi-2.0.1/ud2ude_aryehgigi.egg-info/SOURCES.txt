@@ -1,0 +1,12 @@
+README.md
+setup.py
+ud2ude_aryehgigi/__init__.py
+ud2ude_aryehgigi/api.py
+ud2ude_aryehgigi/conllu_wrapper.py
+ud2ude_aryehgigi/converter.py
+ud2ude_aryehgigi/graph_token.py
+ud2ude_aryehgigi/matcher.py
+ud2ude_aryehgigi.egg-info/PKG-INFO
+ud2ude_aryehgigi.egg-info/SOURCES.txt
+ud2ude_aryehgigi.egg-info/dependency_links.txt
+ud2ude_aryehgigi.egg-info/top_level.txt
