@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: dj-kaggle-pipeline
+Version: 1.0.7
+Summary: Pipelines and utility classes for Kaggle and data science!
+Home-page: https://github.com/DhananjayAshok/KagglePipeline
+Author: Dhananjay Ashok
+Author-email: dhananjay.ashok99@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/DhananjayAshok/KagglePipeline/archive/1.0.7.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow
+Requires-Dist: keras
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: eli5
+Requires-Dist: lightgbm
+Requires-Dist: scikit-learn
+Requires-Dist: xgboost
+
+# Kaggle Pipeline for Data Science
+Quick Neural Networks and Ensembles for rapid deployment
+Also featuring pipelines for data exploration and processing.
+
+To use it please use please use "pip install dj-kaggle-pipeline" and then import KagglePipeline
+
+
+
+
