@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: bolides
+Version: 0.2
+Summary: Inspect things that go KABOOM. 💥
+Home-page: UNKNOWN
+Author: Clemens Rumpf & Geert Barentsen
+Author-email: hello@geert.io
+License: BSD
+Description: bolides
+        =======
+        
+        Inspect things that go KABOOM! 💥
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
