@@ -1,0 +1,10 @@
+mypy_boto3_marketplacecommerceanalytics/__init__.py,sha256=dGcVkdzdRs1asO7ss7A7jMl9DX5BD2qrYXmJJ-C98Ns,273
+mypy_boto3_marketplacecommerceanalytics/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_marketplacecommerceanalytics/client.py,sha256=Ny9_55c9bcVavTgmXbMG_QxQixFTLCmWCYfBqI1quwE,4731
+mypy_boto3_marketplacecommerceanalytics/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_marketplacecommerceanalytics/type_defs.py,sha256=ST_Iof9sljcyCuSnlMc7Y5Ieeowr-o_QwcSurbmpKfk,485
+mypy_boto3_marketplacecommerceanalytics/version.py,sha256=Z6XC3DHchYfroBLNSRF0xmvW5FEF7R8jIV1-D7BNbJ8,57
+mypy_boto3_marketplacecommerceanalytics-1.10.36.1.dist-info/METADATA,sha256=kDq4SzgTIsFiCsLnK5eot9oLrevFpFYvlr922VU-bHs,1253
+mypy_boto3_marketplacecommerceanalytics-1.10.36.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_marketplacecommerceanalytics-1.10.36.1.dist-info/top_level.txt,sha256=_y3lCd2XWE3qmwItXmYNPKeAl2m1zr8pSUbo3LszzHU,40
+mypy_boto3_marketplacecommerceanalytics-1.10.36.1.dist-info/RECORD,,
