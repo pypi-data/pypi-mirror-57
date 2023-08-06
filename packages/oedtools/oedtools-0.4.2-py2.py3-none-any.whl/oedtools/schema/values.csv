@@ -1,0 +1,829 @@
+column_name_regex,desc,group,id,key,sampling,validation
+^layerattachment$,all attachments,attachments,0e+0:3.40e+38,layer,column range,column range
+^constructioncode$,automobiles,construction codes,5850:5899,automobiles,column range,column range
+^constructioncode$,bridges,construction codes,5400:5449,bridges,column range,column range
+^constructioncode$,chimneys,construction codes,5700:5749,chimneys,column range,column range
+^constructioncode$,composite,construction codes,5250:5299,composite,column range,column range
+^constructioncode$,concrete,construction codes,5150:5199,concrete,column range,column range
+^constructioncode$,dams,construction codes,5500:5549,dams,column range,column range
+^constructioncode$,equipment,construction codes,5800:5849,equipment,column range,column range
+^constructioncode$,marine cargo combustible,construction codes,6100:6149,marine cargo combustible,column range,column range
+^constructioncode$,marine cargo general,construction codes,6000:6099,marine cargo general,column range,column range
+^constructioncode$,marine cargo non-combustible,construction codes,6150:6199,marine cargo non-combustible,column range,column range
+^constructioncode$,masonry,construction codes,5100:5149,masonry,column range,column range
+^constructioncode$,misc,construction codes,5950:5999,misc,column range,column range
+^constructioncode$,mobile homes,construction codes,5350:5399,mobile homes,column range,column range
+^constructioncode$,offshore,construction codes,7000:7999,offshore,column range,column range
+^constructioncode$,pipelines,construction codes,5650:5699,pipelines,column range,column range
+^constructioncode$,"roads, railroads, runways",construction codes,5450:5499,roads/railroads/runways,column range,column range
+^constructioncode$,special,construction codes,5300:5349,special,column range,column range
+^constructioncode$,steel,construction codes,5200:5249,steel,column range,column range
+^constructioncode$,storage tanks,construction codes,5600:5649,storage tanks,column range,column range
+^constructioncode$,towers,construction codes,5750:5799,towers,column range,column range
+^constructioncode$,tunnels,construction codes,5550:5599,tunnels,column range,column range
+^constructioncode$,unknown,construction codes,5000,unknown,column range,column range
+^constructioncode$,wood,construction codes,5050:5099,wood,column range,column range
+^constructioncode$,yachts,construction codes,5900:5949,yachts,column range,column range
+^countrycode$,Afghanistan,country codes,AF,afghanistan,column range,column range
+^countrycode$,Alaska Offshore,country codes,A1,alaska offshore,column range,column range
+^countrycode$,Albania,country codes,AL,albania,column range,column range
+^countrycode$,Algeria,country codes,DZ,algeria,column range,column range
+^countrycode$,American Samoa,country codes,AS,american samoa,column range,column range
+^countrycode$,Andorra,country codes,AD,andorra,column range,column range
+^countrycode$,Angola,country codes,AO,angola,column range,column range
+^countrycode$,Angola Offshore,country codes,A2,angola offshore,column range,column range
+^countrycode$,Anguilla,country codes,AI,anguilla,column range,column range
+^countrycode$,Antarctica,country codes,AQ,antarctica,column range,column range
+^countrycode$,Antigua and Barbuda,country codes,AG,antigua & barbuda,column range,column range
+^countrycode$,Arctic Offshore,country codes,A3,arctic offshore,column range,column range
+^countrycode$,Argentina,country codes,AR,argentina,column range,column range
+^countrycode$,Armenia,country codes,AM,armenia,column range,column range
+^countrycode$,Aruba,country codes,AW,aruba,column range,column range
+^countrycode$,Australasia Offshore,country codes,A4,australasia offshore,column range,column range
+^countrycode$,Australia,country codes,AU,australia,column range,column range
+^countrycode$,Austria,country codes,AT,austria,column range,column range
+^countrycode$,Azerbaijan,country codes,AZ,azerbaijan,column range,column range
+^countrycode$,Bahamas,country codes,BS,bahamas,column range,column range
+^countrycode$,Bahrain,country codes,BH,bahrain,column range,column range
+^countrycode$,Baltic Sea Offshore,country codes,B3,baltic sea offshore,column range,column range
+^countrycode$,Bangladesh,country codes,BD,bangladesh,column range,column range
+^countrycode$,Barbados,country codes,BB,barbados,column range,column range
+^countrycode$,Bay of Campeche Offshore,country codes,B1,bay of campeche offshore,column range,column range
+^countrycode$,Belarus,country codes,BY,belarus,column range,column range
+^countrycode$,Belgium,country codes,BE,belgium,column range,column range
+^countrycode$,Belize,country codes,BZ,belize,column range,column range
+^countrycode$,Benin,country codes,BJ,benin,column range,column range
+^countrycode$,Bermuda,country codes,BM,bermuda,column range,column range
+^countrycode$,Bhutan,country codes,BT,bhutan,column range,column range
+^countrycode$,Bolivia,country codes,BO,bolivia,column range,column range
+^countrycode$,Bonaire,country codes,XB,bonaire,column range,column range
+^countrycode$,Bosnia and Herzegovina,country codes,BA,bosnia & herzegovina,column range,column range
+^countrycode$,Botswana,country codes,BW,botswana,column range,column range
+^countrycode$,Bouvet Island,country codes,BV,bouvet island,column range,column range
+^countrycode$,Brazil,country codes,BR,brazil,column range,column range
+^countrycode$,Brazil Offshore,country codes,B2,brazil offshore,column range,column range
+^countrycode$,British Indian Ocean Territory,country codes,IO,british indian ocean territory,column range,column range
+^countrycode$,"Virgin Islands, British",country codes,VG,british virgin islands,column range,column range
+^countrycode$,Brunei,country codes,BN,brunei,column range,column range
+^countrycode$,Bulgaria,country codes,BG,bulgaria,column range,column range
+^countrycode$,Burkina Faso,country codes,BF,burkina faso,column range,column range
+^countrycode$,Burma,country codes,MM,burma,column range,column range
+^countrycode$,Burundi,country codes,BI,burundi,column range,column range
+^countrycode$,Cambodia,country codes,KH,cambodia,column range,column range
+^countrycode$,Cameroon,country codes,CM,cameroon,column range,column range
+^countrycode$,Canada,country codes,CA,canada,column range,column range
+^countrycode$,Canada Offshore,country codes,C1,canada offshore,column range,column range
+^countrycode$,Cape Verde,country codes,CV,cape verde,column range,column range
+^countrycode$,Cayman Islands,country codes,KY,cayman islands,column range,column range
+^countrycode$,Central African Republic,country codes,CF,central african republic,column range,column range
+^countrycode$,Chad,country codes,TD,chad,column range,column range
+^countrycode$,Chile,country codes,CL,chile,column range,column range
+^countrycode$,China,country codes,CN,china,column range,column range
+^countrycode$,China Offshore,country codes,C3,china offshore,column range,column range
+^countrycode$,Christmas Island,country codes,CX,christmas island,column range,column range
+^countrycode$,Cocos (Keeling) Islands,country codes,CC,cocos (keeling) islands,column range,column range
+^countrycode$,Colombia,country codes,CO,colombia,column range,column range
+^countrycode$,Comoros,country codes,KM,comoros,column range,column range
+^countrycode$,Congo,country codes,CG,congo,column range,column range
+^countrycode$,Cook Islands,country codes,CK,cook islands,column range,column range
+^countrycode$,Costa Rica,country codes,CR,costa rica,column range,column range
+^countrycode$,Croatia,country codes,HR,croatia,column range,column range
+^countrycode$,Cuba,country codes,CU,cuba,column range,column range
+^countrycode$,Cyprus,country codes,CY,cyprus,column range,column range
+^countrycode$,Czech Republic,country codes,CZ,czech republic,column range,column range
+^countrycode$,Côte d'Ivoire,country codes,CI,côte d'ivoire,column range,column range
+^countrycode$,Denmark,country codes,DK,denmark,column range,column range
+^countrycode$,Djibouti,country codes,DJ,djibouti,column range,column range
+^countrycode$,Dominica,country codes,DM,dominica,column range,column range
+^countrycode$,Dominican Republic,country codes,DO,dominican republic,column range,column range
+^countrycode$,East Africa Offshore,country codes,E1,east africa offshore,column range,column range
+^countrycode$,Ecuador,country codes,EC,ecuador,column range,column range
+^countrycode$,Egypt,country codes,EG,egypt,column range,column range
+^countrycode$,Egypt Offshore,country codes,E2,egypt offshore,column range,column range
+^countrycode$,El Salvador,country codes,SV,el salvador,column range,column range
+^countrycode$,Equatorial Guinea,country codes,GQ,equatorial guinea,column range,column range
+^countrycode$,Eritrea,country codes,ER,eritrea,column range,column range
+^countrycode$,Estonia,country codes,EE,estonia,column range,column range
+^countrycode$,Ethiopia,country codes,ET,ethiopia,column range,column range
+^countrycode$,Falkland Islands (Malvinas),country codes,FK,falklands,column range,column range
+^countrycode$,Far East Offshore,country codes,F1,far east offshore,column range,column range
+^countrycode$,Faroe Islands,country codes,FO,faroe islands,column range,column range
+^countrycode$,Fiji,country codes,FJ,fiji,column range,column range
+^countrycode$,Finland,country codes,FI,finland,column range,column range
+^countrycode$,France,country codes,FR,france,column range,column range
+^countrycode$,French Guiana,country codes,GF,french guiana,column range,column range
+^countrycode$,French Polynesia,country codes,PF,french polynesia,column range,column range
+^countrycode$,French Southern Territories,country codes,TF,french southern territories,column range,column range
+^countrycode$,Gabon,country codes,GA,gabon,column range,column range
+^countrycode$,Gabon Offshore,country codes,G1,gabon offshore,column range,column range
+^countrycode$,Gambia,country codes,GM,gambia,column range,column range
+^countrycode$,Georgia,country codes,GE,georgia,column range,column range
+^countrycode$,Germany,country codes,DE,germany,column range,column range
+^countrycode$,Ghana,country codes,GH,ghana,column range,column range
+^countrycode$,Gibraltar,country codes,GI,gibraltar,column range,column range
+^countrycode$,Greece,country codes,GR,greece,column range,column range
+^countrycode$,Greenland,country codes,GL,greenland,column range,column range
+^countrycode$,Grenada,country codes,GD,grenada,column range,column range
+^countrycode$,Guadeloupe,country codes,GP,guadeloupe,column range,column range
+^countrycode$,Guam,country codes,GU,guam,column range,column range
+^countrycode$,Guatemala,country codes,GT,guatemala,column range,column range
+^countrycode$,Guernsey,country codes,GG,guernsey,column range,column range
+^countrycode$,Guinea,country codes,GN,guinea,column range,column range
+^countrycode$,Guinea-Bissau,country codes,GW,guinea-bissau,column range,column range
+^countrycode$,Guyana,country codes,GY,guyana,column range,column range
+^countrycode$,Haiti,country codes,HT,haiti,column range,column range
+^countrycode$,Heard Island and McDonald Islands,country codes,HM,heard island & mcdonald islands,column range,column range
+^countrycode$,Honduras,country codes,HN,honduras,column range,column range
+^countrycode$,Hong Kong,country codes,HK,hong kong,column range,column range
+^countrycode$,Hungary,country codes,HU,hungary,column range,column range
+^countrycode$,Iceland,country codes,IS,iceland,column range,column range
+^countrycode$,India,country codes,IN,india,column range,column range
+^countrycode$,Indian Subcontinent Offshore,country codes,I1,indian subcontinent offshore,column range,column range
+^countrycode$,Indonesia,country codes,ID,indonesia,column range,column range
+^countrycode$,"Iran, Islamic Republic of",country codes,IR,iran,column range,column range
+^countrycode$,Iraq,country codes,IQ,iraq,column range,column range
+^countrycode$,Ireland,country codes,IE,ireland,column range,column range
+^countrycode$,Isle of Man,country codes,IM,isle of man,column range,column range
+^countrycode$,Israel,country codes,IL,israel,column range,column range
+^countrycode$,Italy,country codes,IT,italy,column range,column range
+^countrycode$,Jamaica,country codes,JM,jamaica,column range,column range
+^countrycode$,Japan,country codes,JP,japan,column range,column range
+^countrycode$,Japan/Korea Offshore,country codes,J1,japan/korea offshore,column range,column range
+^countrycode$,Jersey,country codes,JE,jersey,column range,column range
+^countrycode$,Jordan,country codes,JO,jordan,column range,column range
+^countrycode$,Kazakhstan,country codes,KZ,kazakhstan,column range,column range
+^countrycode$,Kenya,country codes,KE,kenya,column range,column range
+^countrycode$,Kiribati,country codes,KI,kiribati,column range,column range
+^countrycode$,Kuwait,country codes,KW,kuwait,column range,column range
+^countrycode$,Kyrgyzstan,country codes,KG,kyrgyzstan,column range,column range
+^countrycode$,Lao People's Democratic Republic,country codes,LA,laos,column range,column range
+^countrycode$,Latvia,country codes,LV,latvia,column range,column range
+^countrycode$,Lebanon,country codes,LB,lebanon,column range,column range
+^countrycode$,Lesotho,country codes,LS,lesotho,column range,column range
+^countrycode$,Liberia,country codes,LR,liberia,column range,column range
+^countrycode$,Libya,country codes,LY,libya,column range,column range
+^countrycode$,Liechtenstein,country codes,LI,liechtenstein,column range,column range
+^countrycode$,Lithuania,country codes,LT,lithuania,column range,column range
+^countrycode$,Luxembourg,country codes,LU,luxembourg,column range,column range
+^countrycode$,Macao,country codes,MO,macao,column range,column range
+^countrycode$,"Macedonia, the former Yugoslav Republic of",country codes,MK,macedonia,column range,column range
+^countrycode$,Madagascar,country codes,MG,madagascar,column range,column range
+^countrycode$,Malawi,country codes,MW,malawi,column range,column range
+^countrycode$,Malaysia,country codes,MY,malaysia,column range,column range
+^countrycode$,Maldives,country codes,MV,maldives,column range,column range
+^countrycode$,Mali,country codes,ML,mali,column range,column range
+^countrycode$,Malta,country codes,MT,malta,column range,column range
+^countrycode$,Marshall Islands,country codes,MH,marshall islands,column range,column range
+^countrycode$,Martinique,country codes,MQ,martinique,column range,column range
+^countrycode$,Mauritania,country codes,MR,mauritania,column range,column range
+^countrycode$,Mauritius,country codes,MU,mauritius,column range,column range
+^countrycode$,Mayotte,country codes,YT,mayotte,column range,column range
+^countrycode$,Mediterranean Offshore,country codes,M1,mediterranean offshore,column range,column range
+^countrycode$,Mexico,country codes,MX,mexico,column range,column range
+^countrycode$,Mexico Offshore,country codes,M3,mexico offshore,column range,column range
+^countrycode$,"Micronesia, Federated States of",country codes,FM,micronesia,column range,column range
+^countrycode$,Middle East Offshore,country codes,M2,middle east offshore,column range,column range
+^countrycode$,"Moldova, Republic of",country codes,MD,moldova,column range,column range
+^countrycode$,Monaco,country codes,MC,monaco,column range,column range
+^countrycode$,Mongolia,country codes,MN,mongolia,column range,column range
+^countrycode$,Montenegro,country codes,ME,montenegro,column range,column range
+^countrycode$,Montserrat,country codes,MS,montserrat,column range,column range
+^countrycode$,Morocco,country codes,MA,morocco,column range,column range
+^countrycode$,Mozambique,country codes,MZ,mozambique,column range,column range
+^countrycode$,Nauru,country codes,NR,nauru,column range,column range
+^countrycode$,Nepal,country codes,NP,nepal,column range,column range
+^countrycode$,Netherlands,country codes,NL,netherlands,column range,column range
+^countrycode$,Netherlands Antilles,country codes,AN,netherlands antilles,column range,column range
+^countrycode$,New Caledonia,country codes,NC,new caledonia,column range,column range
+^countrycode$,New Zealand,country codes,NZ,new zealand,column range,column range
+^countrycode$,Nicaragua,country codes,NI,nicaragua,column range,column range
+^countrycode$,Niger,country codes,NE,niger,column range,column range
+^countrycode$,Nigeria,country codes,NG,nigeria,column range,column range
+^countrycode$,Nigeria Offshore,country codes,N1,nigeria offshore,column range,column range
+^countrycode$,Niue,country codes,NU,niue,column range,column range
+^countrycode$,Norfolk Island,country codes,NF,norfolk island,column range,column range
+^countrycode$,"Korea, Democratic People's Republic of",country codes,KP,north korea,column range,column range
+^countrycode$,North Sea Offshore,country codes,N3,north sea offshore,column range,column range
+^countrycode$,Northern Mariana Islands,country codes,MP,northern mariana islands,column range,column range
+^countrycode$,Norway,country codes,NO,norway,column range,column range
+^countrycode$,Norway Offshore,country codes,N2,norway offshore,column range,column range
+^countrycode$,Oman,country codes,OM,oman,column range,column range
+^countrycode$,Pakistan,country codes,PK,pakistan,column range,column range
+^countrycode$,Palau,country codes,PW,palau,column range,column range
+^countrycode$,"Palestinian Territory, Occupied",country codes,PS,palestine,column range,column range
+^countrycode$,Panama,country codes,PA,panama,column range,column range
+^countrycode$,Papua New Guinea,country codes,PG,papua new guinea,column range,column range
+^countrycode$,Paraguay,country codes,PY,paraguay,column range,column range
+^countrycode$,Peru,country codes,PE,peru,column range,column range
+^countrycode$,Philippines,country codes,PH,philippines,column range,column range
+^countrycode$,Pitcairn,country codes,PN,pitcairn,column range,column range
+^countrycode$,Poland,country codes,PL,poland,column range,column range
+^countrycode$,Portugal,country codes,PT,portugal,column range,column range
+^countrycode$,Puerto Rico,country codes,PR,puerto rico,column range,column range
+^countrycode$,Qatar,country codes,QA,qatar,column range,column range
+^countrycode$,Romania,country codes,RO,romania,column range,column range
+^countrycode$,Russia,country codes,RU,russia,column range,column range
+^countrycode$,Russia Offshore,country codes,R1,russia offshore,column range,column range
+^countrycode$,Rwanda,country codes,RW,rwanda,column range,column range
+^countrycode$,Réunion,country codes,RE,réunion,column range,column range
+^countrycode$,Saba,country codes,XS,saba,column range,column range
+^countrycode$,"Saint Helena, Ascension and Tristan da Cunha",country codes,SH,"saint helena, ascension & tristan da cunha",column range,column range
+^countrycode$,Saint Kitts and Nevis,country codes,KN,saint kitts & nevis,column range,column range
+^countrycode$,Saint Lucia,country codes,LC,saint lucia,column range,column range
+^countrycode$,Saint Pierre and Miquelon,country codes,PM,saint pierre & miquelon,column range,column range
+^countrycode$,Saint Vincent and the Grenadines,country codes,VC,saint vincent & the grenadines,column range,column range
+^countrycode$,Samoa,country codes,WS,samoa,column range,column range
+^countrycode$,San Marino,country codes,SM,san marino,column range,column range
+^countrycode$,Sao Tome and Principe,country codes,ST,sao tome & principe,column range,column range
+^countrycode$,Saudi Arabia,country codes,SA,saudi arabia,column range,column range
+^countrycode$,Senegal,country codes,SN,senegal,column range,column range
+^countrycode$,Serbia,country codes,RS,serbia,column range,column range
+^countrycode$,Seychelles,country codes,SC,seychelles,column range,column range
+^countrycode$,Sierra Leone,country codes,SL,sierra leone,column range,column range
+^countrycode$,Singapore,country codes,SG,singapore,column range,column range
+^countrycode$,Slovakia,country codes,SK,slovakia,column range,column range
+^countrycode$,Slovenia,country codes,SI,slovenia,column range,column range
+^countrycode$,Solomon Islands,country codes,SB,solomon islands,column range,column range
+^countrycode$,Somalia,country codes,SO,somalia,column range,column range
+^countrycode$,South Africa,country codes,ZA,south africa,column range,column range
+^countrycode$,South America Offshore,country codes,S1,south america offshore,column range,column range
+^countrycode$,South Asia Offshore,country codes,S3,south asia offshore,column range,column range
+^countrycode$,South Georgia and the South Sandwich Islands,country codes,GS,south georgia & the south s&wich islands,column range,column range
+^countrycode$,South Korea,country codes,KR,south korea,column range,column range
+^countrycode$,Spain,country codes,ES,spain,column range,column range
+^countrycode$,Sri Lanka,country codes,LK,sri lanka,column range,column range
+^countrycode$,St Eustatius,country codes,XE,st eustatius,column range,column range
+^countrycode$,Sudan,country codes,SD,sudan,column range,column range
+^countrycode$,Suriname,country codes,SR,suriname,column range,column range
+^countrycode$,Svalbard and Jan Mayen,country codes,SJ,svalbard & jan mayen,column range,column range
+^countrycode$,Swaziland,country codes,SZ,swaziland,column range,column range
+^countrycode$,Sweden,country codes,SE,sweden,column range,column range
+^countrycode$,Sweden Offshore,country codes,S2,sweden offshore,column range,column range
+^countrycode$,Switzerland,country codes,CH,switzerland,column range,column range
+^countrycode$,Syrian Arab Republic,country codes,SY,syrian arab republic,column range,column range
+^countrycode$,Taiwan,country codes,TW,taiwan,column range,column range
+^countrycode$,Tajikistan,country codes,TJ,tajikistan,column range,column range
+^countrycode$,"Tanzania, United Republic of",country codes,TZ,tanzania,column range,column range
+^countrycode$,Thailand,country codes,TH,thailand,column range,column range
+^countrycode$,Timor-Leste,country codes,TL,timor-leste,column range,column range
+^countrycode$,Togo,country codes,TG,togo,column range,column range
+^countrycode$,Tokelau,country codes,TK,tokelau,column range,column range
+^countrycode$,Tonga,country codes,TO,tonga,column range,column range
+^countrycode$,Trinidad and Tobago,country codes,TT,trinidad & tobago,column range,column range
+^countrycode$,Trinidad and Tobago Offshore,country codes,T1,trinidad and tobago offshore,column range,column range
+^countrycode$,Tunisia,country codes,TN,tunisia,column range,column range
+^countrycode$,Turkey,country codes,TR,turkey,column range,column range
+^countrycode$,Turkmenistan,country codes,TM,turkmenistan,column range,column range
+^countrycode$,Turks and Caicos Islands,country codes,TC,turks & caicos islands,column range,column range
+^countrycode$,Tuvalu,country codes,TV,tuvalu,column range,column range
+^countrycode$,Uganda,country codes,UG,uganda,column range,column range
+^countrycode$,Ukraine,country codes,UA,ukraine,column range,column range
+^countrycode$,United Arab Emirates,country codes,AE,united arab emirates,column range,column range
+^countrycode$,United Kingdom,country codes,GB,united kingdom,column range,column range
+^countrycode$,United Kingdom Offshore,country codes,U1,united kingdom offshore,column range,column range
+^countrycode$,United States,country codes,US,united states,column range,column range
+^countrycode$,United States Minor Outlying Islands,country codes,UM,united states minor outlying islands,column range,column range
+^countrycode$,Uruguay,country codes,UY,uruguay,column range,column range
+^countrycode$,"Virgin Islands, U.S.",country codes,VI,us virgin islands,column range,column range
+^countrycode$,Uzbekistan,country codes,UZ,uzbekistan,column range,column range
+^countrycode$,Vanuatu,country codes,VU,vanuatu,column range,column range
+^countrycode$,Holy See (Vatican City State),country codes,VA,vatican city,column range,column range
+^countrycode$,Venezuela,country codes,VE,venezuela,column range,column range
+^countrycode$,Venezuela Offshore,country codes,V1,venezuela offshore,column range,column range
+^countrycode$,Viet Nam,country codes,VN,viet nam,column range,column range
+^countrycode$,Vietnam Offshore,country codes,V2,vietnam offshore,column range,column range
+^countrycode$,Wallis and Futuna,country codes,WF,wallis & futuna,column range,column range
+^countrycode$,West Africa Offshore,country codes,W4,west africa offshore,column range,column range
+^countrycode$,West US/California Offshore,country codes,W5,west us/california offshore,column range,column range
+^countrycode$,Western Sahara,country codes,EH,western sahara,column range,column range
+^countrycode$,Worldwide,country codes,XW,worldwide,column range,column range
+^countrycode$,Yemen,country codes,YE,yemen,column range,column range
+^countrycode$,Zambia,country codes,ZM,zambia,column range,column range
+^countrycode$,Zimbabwe,country codes,ZW,zimbabwe,column range,column range
+^nan,all (pd + bi),coverage types,6,all,column range,column range
+^nan,business interruption (bi),coverage types,4,bi,column range,column range
+^nan,buildings,coverage types,1,building,column range,column range
+^nan,contents,coverage types,3,contents,column range,column range
+^nan,no deductible / limit,coverage types,0,no coverage,column range,column range
+^nan,other (typically appurtenant structures),coverage types,2,other,column range,column range
+^nan,physical damage (pd: buildings + other + contents),coverage types,5,pd,column range,column range
+^(acc|loc|reins)currency$,Afghanistan - Afghani (AFA),currencies,AFA,afghanistan/afghani/afa,column range,column range
+^(acc|loc|reins)currency$,Afghanistan - Afghani (AFN),currencies,AFN,afghanistan/afghani/afn,column range,column range
+^(acc|loc|reins)currency$,Albania - Lek (ALL),currencies,ALL,albania/lek/all,column range,column range
+^(acc|loc|reins)currency$,Albania - Old lek (ALK),currencies,ALK,albania/old lek/alk,column range,column range
+^(acc|loc|reins)currency$,Algeria - Algerian dinar (DZD),currencies,DZD,algeria/algerian dinar/dzd,column range,column range
+^(acc|loc|reins)currency$,American samoa - Us dollar (USD),currencies,USD,american samoa/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Andorra - Andorran peseta (ADP),currencies,ADP,andorra/andorran peseta/adp,column range,column range
+^(acc|loc|reins)currency$,Andorra - Euro (EUR),currencies,EUR,andorra/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Andorra - French franc (FRF),currencies,FRF,andorra/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,Andorra - Spanish peseta (ESP),currencies,ESP,andorra/spanish peseta/esp,column range,column range
+^(acc|loc|reins)currency$,Angola - Kwanza reajustado (AOR),currencies,AOR,angola/kwanza reajustado/aor,column range,column range
+^(acc|loc|reins)currency$,Angola - Kwanza (AOA),currencies,AOA,angola/kwanza/aoa,column range,column range
+^(acc|loc|reins)currency$,Angola - Kwanza (AOK),currencies,AOK,angola/kwanza/aok,column range,column range
+^(acc|loc|reins)currency$,Angola - New kwanza (AON),currencies,AON,angola/new kwanza/aon,column range,column range
+^(acc|loc|reins)currency$,Anguilla - East caribbean dollar (XCD),currencies,XCD,anguilla/east caribbean dollar/xcd,column range,column range
+^(acc|loc|reins)currency$,Antarctica - No universal currency (),currencies,,antarctica/no universal currency/,column range,column range
+^(acc|loc|reins)currency$,Antigua and barbuda - East caribbean dollar (XCD),currencies,XCD,antigua and barbuda/east caribbean dollar/xcd,column range,column range
+^(acc|loc|reins)currency$,Argentina - Argentine peso (ARS),currencies,ARS,argentina/argentine peso/ars,column range,column range
+^(acc|loc|reins)currency$,Argentina - Austral (ARA),currencies,ARA,argentina/austral/ara,column range,column range
+^(acc|loc|reins)currency$,Argentina - Peso argentino (ARP),currencies,ARP,argentina/peso argentino/arp,column range,column range
+^(acc|loc|reins)currency$,Argentina - Peso (ARY),currencies,ARY,argentina/peso/ary,column range,column range
+^(acc|loc|reins)currency$,Armenia - Armenian dram (AMD),currencies,AMD,armenia/armenian dram/amd,column range,column range
+^(acc|loc|reins)currency$,Armenia - Russian ruble (RUR),currencies,RUR,armenia/russian ruble/rur,column range,column range
+^(acc|loc|reins)currency$,Aruba - Aruban florin (AWG),currencies,AWG,aruba/aruban florin/awg,column range,column range
+^(acc|loc|reins)currency$,Australia - Australian dollar (AUD),currencies,AUD,australia/australian dollar/aud,column range,column range
+^(acc|loc|reins)currency$,Austria - Euro (EUR),currencies,EUR,austria/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Austria - Schilling (ATS),currencies,ATS,austria/schilling/ats,column range,column range
+^(acc|loc|reins)currency$,Azerbaijan - Azerbaijan manat (AYM),currencies,AYM,azerbaijan/azerbaijan manat/aym,column range,column range
+^(acc|loc|reins)currency$,Azerbaijan - Azerbaijan manat (AZN),currencies,AZN,azerbaijan/azerbaijan manat/azn,column range,column range
+^(acc|loc|reins)currency$,Azerbaijan - Azerbaijanian manat (AZM),currencies,AZM,azerbaijan/azerbaijanian manat/azm,column range,column range
+^(acc|loc|reins)currency$,Azerbaijan - Russian ruble (RUR),currencies,RUR,azerbaijan/russian ruble/rur,column range,column range
+^(acc|loc|reins)currency$,Bahamas (the) - Bahamian dollar (BSD),currencies,BSD,bahamas (the)/bahamian dollar/bsd,column range,column range
+^(acc|loc|reins)currency$,Bahrain - Bahraini dinar (BHD),currencies,BHD,bahrain/bahraini dinar/bhd,column range,column range
+^(acc|loc|reins)currency$,Bangladesh - Taka (BDT),currencies,BDT,bangladesh/taka/bdt,column range,column range
+^(acc|loc|reins)currency$,Barbados - Barbados dollar (BBD),currencies,BBD,barbados/barbados dollar/bbd,column range,column range
+^(acc|loc|reins)currency$,Belarus - Belarusian ruble (BYB),currencies,BYB,belarus/belarusian ruble/byb,column range,column range
+^(acc|loc|reins)currency$,Belarus - Belarusian ruble (BYN),currencies,BYN,belarus/belarusian ruble/byn,column range,column range
+^(acc|loc|reins)currency$,Belarus - Belarusian ruble (BYR),currencies,BYR,belarus/belarusian ruble/byr,column range,column range
+^(acc|loc|reins)currency$,Belarus - Russian ruble (RUR),currencies,RUR,belarus/russian ruble/rur,column range,column range
+^(acc|loc|reins)currency$,Belgium - Belgian franc (BEF),currencies,BEF,belgium/belgian franc/bef,column range,column range
+^(acc|loc|reins)currency$,Belgium - Convertible franc (BEC),currencies,BEC,belgium/convertible franc/bec,column range,column range
+^(acc|loc|reins)currency$,Belgium - Euro (EUR),currencies,EUR,belgium/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Belgium - Financial franc (BEL),currencies,BEL,belgium/financial franc/bel,column range,column range
+^(acc|loc|reins)currency$,Belize - Belize dollar (BZD),currencies,BZD,belize/belize dollar/bzd,column range,column range
+^(acc|loc|reins)currency$,Benin - Cfa franc bceao (XOF),currencies,XOF,benin/cfa franc bceao/xof,column range,column range
+^(acc|loc|reins)currency$,Bermuda - Bermudian dollar (BMD),currencies,BMD,bermuda/bermudian dollar/bmd,column range,column range
+^(acc|loc|reins)currency$,Bhutan - Indian rupee (INR),currencies,INR,bhutan/indian rupee/inr,column range,column range
+^(acc|loc|reins)currency$,Bhutan - Ngultrum (BTN),currencies,BTN,bhutan/ngultrum/btn,column range,column range
+^(acc|loc|reins)currency$,Bolivia (plurinational state of) - Boliviano (BOB),currencies,BOB,bolivia (plurinational state of)/boliviano/bob,column range,column range
+^(acc|loc|reins)currency$,Bolivia (plurinational state of) - Mvdol (BOV),currencies,BOV,bolivia (plurinational state of)/mvdol/bov,column range,column range
+^(acc|loc|reins)currency$,Bolivia - Peso boliviano (BOP),currencies,BOP,bolivia/peso boliviano/bop,column range,column range
+^(acc|loc|reins)currency$,"Bonaire, sint eustatius and saba - Us dollar (USD)",currencies,USD,"bonaire, sint eustatius and saba/us dollar/usd",column range,column range
+^(acc|loc|reins)currency$,Bosnia and herzegovina - Convertible mark (BAM),currencies,BAM,bosnia and herzegovina/convertible mark/bam,column range,column range
+^(acc|loc|reins)currency$,Bosnia and herzegovina - Dinar (BAD),currencies,BAD,bosnia and herzegovina/dinar/bad,column range,column range
+^(acc|loc|reins)currency$,Botswana - Pula (BWP),currencies,BWP,botswana/pula/bwp,column range,column range
+^(acc|loc|reins)currency$,Bouvet island - Norwegian krone (NOK),currencies,NOK,bouvet island/norwegian krone/nok,column range,column range
+^(acc|loc|reins)currency$,Brazil - Brazilian real (BRL),currencies,BRL,brazil/brazilian real/brl,column range,column range
+^(acc|loc|reins)currency$,Brazil - Cruzado (BRC),currencies,BRC,brazil/cruzado/brc,column range,column range
+^(acc|loc|reins)currency$,Brazil - Cruzeiro real (BRR),currencies,BRR,brazil/cruzeiro real/brr,column range,column range
+^(acc|loc|reins)currency$,Brazil - Cruzeiro (BRB),currencies,BRB,brazil/cruzeiro/brb,column range,column range
+^(acc|loc|reins)currency$,Brazil - Cruzeiro (BRE),currencies,BRE,brazil/cruzeiro/bre,column range,column range
+^(acc|loc|reins)currency$,Brazil - New cruzado (BRN),currencies,BRN,brazil/new cruzado/brn,column range,column range
+^(acc|loc|reins)currency$,British indian ocean territory (the) - Us dollar (USD),currencies,USD,british indian ocean territory (the)/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Brunei darussalam - Brunei dollar (BND),currencies,BND,brunei darussalam/brunei dollar/bnd,column range,column range
+^(acc|loc|reins)currency$,Bulgaria - Bulgarian lev (BGN),currencies,BGN,bulgaria/bulgarian lev/bgn,column range,column range
+^(acc|loc|reins)currency$,Bulgaria - Lev a/52 (BGJ),currencies,BGJ,bulgaria/lev a/52/bgj,column range,column range
+^(acc|loc|reins)currency$,Bulgaria - Lev a/62 (BGK),currencies,BGK,bulgaria/lev a/62/bgk,column range,column range
+^(acc|loc|reins)currency$,Bulgaria - Lev (BGL),currencies,BGL,bulgaria/lev/bgl,column range,column range
+^(acc|loc|reins)currency$,Burkina faso - Cfa franc bceao (XOF),currencies,XOF,burkina faso/cfa franc bceao/xof,column range,column range
+^(acc|loc|reins)currency$,Burmaã‚ - Kyat (BUK),currencies,BUK,burmaã‚/kyat/buk,column range,column range
+^(acc|loc|reins)currency$,Burundi - Burundi franc (BIF),currencies,BIF,burundi/burundi franc/bif,column range,column range
+^(acc|loc|reins)currency$,Cabo verde - Cabo verde escudo (CVE),currencies,CVE,cabo verde/cabo verde escudo/cve,column range,column range
+^(acc|loc|reins)currency$,Cambodia - Riel (KHR),currencies,KHR,cambodia/riel/khr,column range,column range
+^(acc|loc|reins)currency$,Cameroon - Cfa franc beac (XAF),currencies,XAF,cameroon/cfa franc beac/xaf,column range,column range
+^(acc|loc|reins)currency$,Canada - Canadian dollar (CAD),currencies,CAD,canada/canadian dollar/cad,column range,column range
+^(acc|loc|reins)currency$,Cayman islands (the) - Cayman islands dollar (KYD),currencies,KYD,cayman islands (the)/cayman islands dollar/kyd,column range,column range
+^(acc|loc|reins)currency$,Central african republic (the) - Cfa franc beac (XAF),currencies,XAF,central african republic (the)/cfa franc beac/xaf,column range,column range
+^(acc|loc|reins)currency$,Chad - Cfa franc beac (XAF),currencies,XAF,chad/cfa franc beac/xaf,column range,column range
+^(acc|loc|reins)currency$,Chile - Chilean peso (CLP),currencies,CLP,chile/chilean peso/clp,column range,column range
+^(acc|loc|reins)currency$,Chile - Unidad de fomento (CLF),currencies,CLF,chile/unidad de fomento/clf,column range,column range
+^(acc|loc|reins)currency$,China - Yuan renminbi (CNY),currencies,CNY,china/yuan renminbi/cny,column range,column range
+^(acc|loc|reins)currency$,Christmas island - Australian dollar (AUD),currencies,AUD,christmas island/australian dollar/aud,column range,column range
+^(acc|loc|reins)currency$,Cocos (keeling) islands (the) - Australian dollar (AUD),currencies,AUD,cocos (keeling) islands (the)/australian dollar/aud,column range,column range
+^(acc|loc|reins)currency$,Colombia - Colombian peso (COP),currencies,COP,colombia/colombian peso/cop,column range,column range
+^(acc|loc|reins)currency$,Colombia - Unidad de valor real (COU),currencies,COU,colombia/unidad de valor real/cou,column range,column range
+^(acc|loc|reins)currency$,Comoros (the) - Comorian franc (KMF),currencies,KMF,comoros (the)/comorian franc/kmf,column range,column range
+^(acc|loc|reins)currency$,Congo (the democratic republic of the) - Congolese franc (CDF),currencies,CDF,congo (the democratic republic of the)/congolese franc/cdf,column range,column range
+^(acc|loc|reins)currency$,Congo (the) - Cfa franc beac (XAF),currencies,XAF,congo (the)/cfa franc beac/xaf,column range,column range
+^(acc|loc|reins)currency$,Cook islands (the) - New zealand dollar (NZD),currencies,NZD,cook islands (the)/new zealand dollar/nzd,column range,column range
+^(acc|loc|reins)currency$,Costa rica - Costa rican colon (CRC),currencies,CRC,costa rica/costa rican colon/crc,column range,column range
+^(acc|loc|reins)currency$,Croatia - Croatian dinar (HRD),currencies,HRD,croatia/croatian dinar/hrd,column range,column range
+^(acc|loc|reins)currency$,Croatia - Croatian kuna (HRK),currencies,HRK,croatia/croatian kuna/hrk,column range,column range
+^(acc|loc|reins)currency$,Croatia - Kuna (HRK),currencies,HRK,croatia/kuna/hrk,column range,column range
+^(acc|loc|reins)currency$,Cuba - Cuban peso (CUP),currencies,CUP,cuba/cuban peso/cup,column range,column range
+^(acc|loc|reins)currency$,Cuba - Peso convertible (CUC),currencies,CUC,cuba/peso convertible/cuc,column range,column range
+^(acc|loc|reins)currency$,Curaã‡ao - Netherlands antillean guilder (ANG),currencies,ANG,curaã‡ao/netherlands antillean guilder/ang,column range,column range
+^(acc|loc|reins)currency$,Cyprus - Cyprus pound (CYP),currencies,CYP,cyprus/cyprus pound/cyp,column range,column range
+^(acc|loc|reins)currency$,Cyprus - Euro (EUR),currencies,EUR,cyprus/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Czechia - Czech koruna (CZK),currencies,CZK,czechia/czech koruna/czk,column range,column range
+^(acc|loc|reins)currency$,Czechoslovakia - Koruna (CSK),currencies,CSK,czechoslovakia/koruna/csk,column range,column range
+^(acc|loc|reins)currency$,Czechoslovakia - Krona a/53 (CSJ),currencies,CSJ,czechoslovakia/krona a/53/csj,column range,column range
+^(acc|loc|reins)currency$,Cã”te d'ivoire - Cfa franc bceao (XOF),currencies,XOF,cã”te d'ivoire/cfa franc bceao/xof,column range,column range
+^(acc|loc|reins)currency$,Denmark - Danish krone (DKK),currencies,DKK,denmark/danish krone/dkk,column range,column range
+^(acc|loc|reins)currency$,Djibouti - Djibouti franc (DJF),currencies,DJF,djibouti/djibouti franc/djf,column range,column range
+^(acc|loc|reins)currency$,Dominica - East caribbean dollar (XCD),currencies,XCD,dominica/east caribbean dollar/xcd,column range,column range
+^(acc|loc|reins)currency$,Dominican republic (the) - Dominican peso (DOP),currencies,DOP,dominican republic (the)/dominican peso/dop,column range,column range
+^(acc|loc|reins)currency$,Ecuador - Sucre (ECS),currencies,ECS,ecuador/sucre/ecs,column range,column range
+^(acc|loc|reins)currency$,Ecuador - Unidad de valor constante (uvc) (ECV),currencies,ECV,ecuador/unidad de valor constante (uvc)/ecv,column range,column range
+^(acc|loc|reins)currency$,Ecuador - Us dollar (USD),currencies,USD,ecuador/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Egypt - Egyptian pound (EGP),currencies,EGP,egypt/egyptian pound/egp,column range,column range
+^(acc|loc|reins)currency$,El salvador - El salvador colon (SVC),currencies,SVC,el salvador/el salvador colon/svc,column range,column range
+^(acc|loc|reins)currency$,El salvador - Us dollar (USD),currencies,USD,el salvador/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Equatorial guinea - Cfa franc beac (XAF),currencies,XAF,equatorial guinea/cfa franc beac/xaf,column range,column range
+^(acc|loc|reins)currency$,Equatorial guinea - Ekwele (GQE),currencies,GQE,equatorial guinea/ekwele/gqe,column range,column range
+^(acc|loc|reins)currency$,Eritrea - Nakfa (ERN),currencies,ERN,eritrea/nakfa/ern,column range,column range
+^(acc|loc|reins)currency$,Estonia - Euro (EUR),currencies,EUR,estonia/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Estonia - Kroon (EEK),currencies,EEK,estonia/kroon/eek,column range,column range
+^(acc|loc|reins)currency$,Ethiopia - Ethiopian birr (ETB),currencies,ETB,ethiopia/ethiopian birr/etb,column range,column range
+^(acc|loc|reins)currency$,European monetary co-operation fund (emcf) - European currency unit (e.c.u) (XEU),currencies,XEU,european monetary co-operation fund (emcf)/european currency unit (e.c.u)/xeu,column range,column range
+^(acc|loc|reins)currency$,European union - Euro (EUR),currencies,EUR,european union/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Falkland islands (the) [malvinas] - Falkland islands pound (FKP),currencies,FKP,falkland islands (the) [malvinas]/falkland islands pound/fkp,column range,column range
+^(acc|loc|reins)currency$,Faroe islands (the) - Danish krone (DKK),currencies,DKK,faroe islands (the)/danish krone/dkk,column range,column range
+^(acc|loc|reins)currency$,Fiji - Fiji dollar (FJD),currencies,FJD,fiji/fiji dollar/fjd,column range,column range
+^(acc|loc|reins)currency$,Finland - Euro (EUR),currencies,EUR,finland/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Finland - Markka (FIM),currencies,FIM,finland/markka/fim,column range,column range
+^(acc|loc|reins)currency$,France - Euro (EUR),currencies,EUR,france/euro/eur,column range,column range
+^(acc|loc|reins)currency$,France - French franc (FRF),currencies,FRF,france/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,French  guiana - French franc (FRF),currencies,FRF,french  guiana/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,French guiana - Euro (EUR),currencies,EUR,french guiana/euro/eur,column range,column range
+^(acc|loc|reins)currency$,French polynesia - Cfp franc (XPF),currencies,XPF,french polynesia/cfp franc/xpf,column range,column range
+^(acc|loc|reins)currency$,French southern territories (the) - Euro (EUR),currencies,EUR,french southern territories (the)/euro/eur,column range,column range
+^(acc|loc|reins)currency$,French southern territories - French franc (FRF),currencies,FRF,french southern territories/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,Gabon - Cfa franc beac (XAF),currencies,XAF,gabon/cfa franc beac/xaf,column range,column range
+^(acc|loc|reins)currency$,Gambia (the) - Dalasi (GMD),currencies,GMD,gambia (the)/dalasi/gmd,column range,column range
+^(acc|loc|reins)currency$,Georgia - Georgian coupon (GEK),currencies,GEK,georgia/georgian coupon/gek,column range,column range
+^(acc|loc|reins)currency$,Georgia - Lari (GEL),currencies,GEL,georgia/lari/gel,column range,column range
+^(acc|loc|reins)currency$,Georgia - Russian ruble (RUR),currencies,RUR,georgia/russian ruble/rur,column range,column range
+^(acc|loc|reins)currency$,German democratic republic - Mark der ddr (DDM),currencies,DDM,german democratic republic/mark der ddr/ddm,column range,column range
+^(acc|loc|reins)currency$,Germany - Deutsche mark (DEM),currencies,DEM,germany/deutsche mark/dem,column range,column range
+^(acc|loc|reins)currency$,Germany - Euro (EUR),currencies,EUR,germany/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Ghana - Cedi (GHC),currencies,GHC,ghana/cedi/ghc,column range,column range
+^(acc|loc|reins)currency$,Ghana - Ghana cedi (GHP),currencies,GHP,ghana/ghana cedi/ghp,column range,column range
+^(acc|loc|reins)currency$,Ghana - Ghana cedi (GHS),currencies,GHS,ghana/ghana cedi/ghs,column range,column range
+^(acc|loc|reins)currency$,Gibraltar - Gibraltar pound (GIP),currencies,GIP,gibraltar/gibraltar pound/gip,column range,column range
+^(acc|loc|reins)currency$,Greece - Drachma (GRD),currencies,GRD,greece/drachma/grd,column range,column range
+^(acc|loc|reins)currency$,Greece - Euro (EUR),currencies,EUR,greece/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Greenland - Danish krone (DKK),currencies,DKK,greenland/danish krone/dkk,column range,column range
+^(acc|loc|reins)currency$,Grenada - East caribbean dollar (XCD),currencies,XCD,grenada/east caribbean dollar/xcd,column range,column range
+^(acc|loc|reins)currency$,Guadeloupe - Euro (EUR),currencies,EUR,guadeloupe/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Guadeloupe - French franc (FRF),currencies,FRF,guadeloupe/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,Guam - Us dollar (USD),currencies,USD,guam/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Guatemala - Quetzal (GTQ),currencies,GTQ,guatemala/quetzal/gtq,column range,column range
+^(acc|loc|reins)currency$,Guernsey - Pound sterling (GBP),currencies,GBP,guernsey/pound sterling/gbp,column range,column range
+^(acc|loc|reins)currency$,Guinea-bissau - Cfa franc bceao (XOF),currencies,XOF,guinea-bissau/cfa franc bceao/xof,column range,column range
+^(acc|loc|reins)currency$,Guinea-bissau - Guinea escudo (GWE),currencies,GWE,guinea-bissau/guinea escudo/gwe,column range,column range
+^(acc|loc|reins)currency$,Guinea-bissau - Guinea-bissau peso (GWP),currencies,GWP,guinea-bissau/guinea-bissau peso/gwp,column range,column range
+^(acc|loc|reins)currency$,Guinea - Guinean franc (GNF),currencies,GNF,guinea/guinean franc/gnf,column range,column range
+^(acc|loc|reins)currency$,Guinea - Syli (GNE),currencies,GNE,guinea/syli/gne,column range,column range
+^(acc|loc|reins)currency$,Guinea - Syli (GNS),currencies,GNS,guinea/syli/gns,column range,column range
+^(acc|loc|reins)currency$,Guyana - Guyana dollar (GYD),currencies,GYD,guyana/guyana dollar/gyd,column range,column range
+^(acc|loc|reins)currency$,Haiti - Gourde (HTG),currencies,HTG,haiti/gourde/htg,column range,column range
+^(acc|loc|reins)currency$,Haiti - Us dollar (USD),currencies,USD,haiti/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Heard island and mcdonald islands - Australian dollar (AUD),currencies,AUD,heard island and mcdonald islands/australian dollar/aud,column range,column range
+^(acc|loc|reins)currency$,Holy see (the) - Euro (EUR),currencies,EUR,holy see (the)/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Holy see (vatican city state) - Italian lira (ITL),currencies,ITL,holy see (vatican city state)/italian lira/itl,column range,column range
+^(acc|loc|reins)currency$,Honduras - Lempira (HNL),currencies,HNL,honduras/lempira/hnl,column range,column range
+^(acc|loc|reins)currency$,Hong kong - Hong kong dollar (HKD),currencies,HKD,hong kong/hong kong dollar/hkd,column range,column range
+^(acc|loc|reins)currency$,Hungary - Forint (HUF),currencies,HUF,hungary/forint/huf,column range,column range
+^(acc|loc|reins)currency$,Iceland - Iceland krona (ISK),currencies,ISK,iceland/iceland krona/isk,column range,column range
+^(acc|loc|reins)currency$,Iceland - Old krona (ISJ),currencies,ISJ,iceland/old krona/isj,column range,column range
+^(acc|loc|reins)currency$,India - Indian rupee (INR),currencies,INR,india/indian rupee/inr,column range,column range
+^(acc|loc|reins)currency$,Indonesia - Rupiah (IDR),currencies,IDR,indonesia/rupiah/idr,column range,column range
+^(acc|loc|reins)currency$,International monetary fund (imf) - Sdr (special drawing right) (XDR),currencies,XDR,international monetary fund (imf)/sdr (special drawing right)/xdr,column range,column range
+^(acc|loc|reins)currency$,Iran (islamic republic of) - Iranian rial (IRR),currencies,IRR,iran (islamic republic of)/iranian rial/irr,column range,column range
+^(acc|loc|reins)currency$,Iraq - Iraqi dinar (IQD),currencies,IQD,iraq/iraqi dinar/iqd,column range,column range
+^(acc|loc|reins)currency$,Ireland - Euro (EUR),currencies,EUR,ireland/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Ireland - Irish pound (IEP),currencies,IEP,ireland/irish pound/iep,column range,column range
+^(acc|loc|reins)currency$,Isle of man - Pound sterling (GBP),currencies,GBP,isle of man/pound sterling/gbp,column range,column range
+^(acc|loc|reins)currency$,Israel - New israeli sheqel (ILS),currencies,ILS,israel/new israeli sheqel/ils,column range,column range
+^(acc|loc|reins)currency$,Israel - Old shekel (ILR),currencies,ILR,israel/old shekel/ilr,column range,column range
+^(acc|loc|reins)currency$,Israel - Pound (ILP),currencies,ILP,israel/pound/ilp,column range,column range
+^(acc|loc|reins)currency$,Italy - Euro (EUR),currencies,EUR,italy/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Italy - Italian lira (ITL),currencies,ITL,italy/italian lira/itl,column range,column range
+^(acc|loc|reins)currency$,Jamaica - Jamaican dollar (JMD),currencies,JMD,jamaica/jamaican dollar/jmd,column range,column range
+^(acc|loc|reins)currency$,Japan - Yen (JPY),currencies,JPY,japan/yen/jpy,column range,column range
+^(acc|loc|reins)currency$,Jersey - Pound sterling (GBP),currencies,GBP,jersey/pound sterling/gbp,column range,column range
+^(acc|loc|reins)currency$,Jordan - Jordanian dinar (JOD),currencies,JOD,jordan/jordanian dinar/jod,column range,column range
+^(acc|loc|reins)currency$,Kazakhstan - Russian ruble (RUR),currencies,RUR,kazakhstan/russian ruble/rur,column range,column range
+^(acc|loc|reins)currency$,Kazakhstan - Tenge (KZT),currencies,KZT,kazakhstan/tenge/kzt,column range,column range
+^(acc|loc|reins)currency$,Kenya - Kenyan shilling (KES),currencies,KES,kenya/kenyan shilling/kes,column range,column range
+^(acc|loc|reins)currency$,Kiribati - Australian dollar (AUD),currencies,AUD,kiribati/australian dollar/aud,column range,column range
+^(acc|loc|reins)currency$,Korea (the democratic peopleâ€™s republic of) - North korean won (KPW),currencies,KPW,korea (the democratic peopleâ€™s republic of)/north korean won/kpw,column range,column range
+^(acc|loc|reins)currency$,Korea (the republic of) - Won (KRW),currencies,KRW,korea (the republic of)/won/krw,column range,column range
+^(acc|loc|reins)currency$,Kuwait - Kuwaiti dinar (KWD),currencies,KWD,kuwait/kuwaiti dinar/kwd,column range,column range
+^(acc|loc|reins)currency$,Kyrgyzstan - Russian ruble (RUR),currencies,RUR,kyrgyzstan/russian ruble/rur,column range,column range
+^(acc|loc|reins)currency$,Kyrgyzstan - Som (KGS),currencies,KGS,kyrgyzstan/som/kgs,column range,column range
+^(acc|loc|reins)currency$,Lao peopleâ€™s democratic republic (the) - Lao kip (LAK),currencies,LAK,lao peopleâ€™s democratic republic (the)/lao kip/lak,column range,column range
+^(acc|loc|reins)currency$,Lao - Pathet lao kip (LAJ),currencies,LAJ,lao/pathet lao kip/laj,column range,column range
+^(acc|loc|reins)currency$,Latvia - Euro (EUR),currencies,EUR,latvia/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Latvia - Latvian lats (LVL),currencies,LVL,latvia/latvian lats/lvl,column range,column range
+^(acc|loc|reins)currency$,Latvia - Latvian ruble (LVR),currencies,LVR,latvia/latvian ruble/lvr,column range,column range
+^(acc|loc|reins)currency$,Lebanon - Lebanese pound (LBP),currencies,LBP,lebanon/lebanese pound/lbp,column range,column range
+^(acc|loc|reins)currency$,Lesotho - Financial rand (ZAL),currencies,ZAL,lesotho/financial rand/zal,column range,column range
+^(acc|loc|reins)currency$,Lesotho - Loti (LSL),currencies,LSL,lesotho/loti/lsl,column range,column range
+^(acc|loc|reins)currency$,Lesotho - Loti (LSM),currencies,LSM,lesotho/loti/lsm,column range,column range
+^(acc|loc|reins)currency$,Lesotho - Rand (ZAR),currencies,ZAR,lesotho/rand/zar,column range,column range
+^(acc|loc|reins)currency$,Liberia - Liberian dollar (LRD),currencies,LRD,liberia/liberian dollar/lrd,column range,column range
+^(acc|loc|reins)currency$,Libya - Libyan dinar (LYD),currencies,LYD,libya/libyan dinar/lyd,column range,column range
+^(acc|loc|reins)currency$,Liechtenstein - Swiss franc (CHF),currencies,CHF,liechtenstein/swiss franc/chf,column range,column range
+^(acc|loc|reins)currency$,Lithuania - Euro (EUR),currencies,EUR,lithuania/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Lithuania - Lithuanian litas (LTL),currencies,LTL,lithuania/lithuanian litas/ltl,column range,column range
+^(acc|loc|reins)currency$,Lithuania - Talonas (LTT),currencies,LTT,lithuania/talonas/ltt,column range,column range
+^(acc|loc|reins)currency$,Luxembourg - Euro (EUR),currencies,EUR,luxembourg/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Luxembourg - Luxembourg convertible franc (LUC),currencies,LUC,luxembourg/luxembourg convertible franc/luc,column range,column range
+^(acc|loc|reins)currency$,Luxembourg - Luxembourg financial franc (LUL),currencies,LUL,luxembourg/luxembourg financial franc/lul,column range,column range
+^(acc|loc|reins)currency$,Luxembourg - Luxembourg franc (LUF),currencies,LUF,luxembourg/luxembourg franc/luf,column range,column range
+^(acc|loc|reins)currency$,Macao - Pataca (MOP),currencies,MOP,macao/pataca/mop,column range,column range
+^(acc|loc|reins)currency$,Macedonia (the former yugoslav republic of) - Denar (MKD),currencies,MKD,macedonia (the former yugoslav republic of)/denar/mkd,column range,column range
+^(acc|loc|reins)currency$,Madagascar - Malagasy ariary (MGA),currencies,MGA,madagascar/malagasy ariary/mga,column range,column range
+^(acc|loc|reins)currency$,Madagascar - Malagasy franc (MGF),currencies,MGF,madagascar/malagasy franc/mgf,column range,column range
+^(acc|loc|reins)currency$,Malawi - Kwacha (MWK),currencies,MWK,malawi/kwacha/mwk,column range,column range
+^(acc|loc|reins)currency$,Malawi - Malawi kwacha (MWK),currencies,MWK,malawi/malawi kwacha/mwk,column range,column range
+^(acc|loc|reins)currency$,Malaysia - Malaysian ringgit (MYR),currencies,MYR,malaysia/malaysian ringgit/myr,column range,column range
+^(acc|loc|reins)currency$,Maldives - Maldive rupee (MVQ),currencies,MVQ,maldives/maldive rupee/mvq,column range,column range
+^(acc|loc|reins)currency$,Maldives - Rufiyaa (MVR),currencies,MVR,maldives/rufiyaa/mvr,column range,column range
+^(acc|loc|reins)currency$,Mali - Cfa franc bceao (XOF),currencies,XOF,mali/cfa franc bceao/xof,column range,column range
+^(acc|loc|reins)currency$,Mali - Mali franc (MLF),currencies,MLF,mali/mali franc/mlf,column range,column range
+^(acc|loc|reins)currency$,Malta - Euro (EUR),currencies,EUR,malta/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Malta - Maltese lira (MTL),currencies,MTL,malta/maltese lira/mtl,column range,column range
+^(acc|loc|reins)currency$,Malta - Maltese pound (MTP),currencies,MTP,malta/maltese pound/mtp,column range,column range
+^(acc|loc|reins)currency$,Marshall islands (the) - Us dollar (USD),currencies,USD,marshall islands (the)/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Martinique - Euro (EUR),currencies,EUR,martinique/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Martinique - French franc (FRF),currencies,FRF,martinique/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,Mauritania - Ouguiya (MRO),currencies,MRO,mauritania/ouguiya/mro,column range,column range
+^(acc|loc|reins)currency$,Mauritius - Mauritius rupee (MUR),currencies,MUR,mauritius/mauritius rupee/mur,column range,column range
+^(acc|loc|reins)currency$,Mayotte - Euro (EUR),currencies,EUR,mayotte/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Mayotte - French franc (FRF),currencies,FRF,mayotte/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,Member countries of the african development bank group - Adb unit of account (XUA),currencies,XUA,member countries of the african development bank group/adb unit of account/xua,column range,column range
+^(acc|loc|reins)currency$,Mexico - Mexican peso (MXN),currencies,MXN,mexico/mexican peso/mxn,column range,column range
+^(acc|loc|reins)currency$,Mexico - Mexican peso (MXP),currencies,MXP,mexico/mexican peso/mxp,column range,column range
+^(acc|loc|reins)currency$,Mexico - Mexican unidad de inversion (udi) (MXV),currencies,MXV,mexico/mexican unidad de inversion (udi)/mxv,column range,column range
+^(acc|loc|reins)currency$,Micronesia (federated states of) - Us dollar (USD),currencies,USD,micronesia (federated states of)/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Moldova (the republic of) - Moldovan leu (MDL),currencies,MDL,moldova (the republic of)/moldovan leu/mdl,column range,column range
+^(acc|loc|reins)currency$,"Moldova, republic of - Russian ruble (RUR)",currencies,RUR,"moldova, republic of/russian ruble/rur",column range,column range
+^(acc|loc|reins)currency$,Monaco - Euro (EUR),currencies,EUR,monaco/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Monaco - French franc (FRF),currencies,FRF,monaco/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,Mongolia - Tugrik (MNT),currencies,MNT,mongolia/tugrik/mnt,column range,column range
+^(acc|loc|reins)currency$,Montenegro - Euro (EUR),currencies,EUR,montenegro/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Montserrat - East caribbean dollar (XCD),currencies,XCD,montserrat/east caribbean dollar/xcd,column range,column range
+^(acc|loc|reins)currency$,Morocco - Moroccan dirham (MAD),currencies,MAD,morocco/moroccan dirham/mad,column range,column range
+^(acc|loc|reins)currency$,Mozambique - Mozambique escudo (MZE),currencies,MZE,mozambique/mozambique escudo/mze,column range,column range
+^(acc|loc|reins)currency$,Mozambique - Mozambique metical (MZM),currencies,MZM,mozambique/mozambique metical/mzm,column range,column range
+^(acc|loc|reins)currency$,Mozambique - Mozambique metical (MZN),currencies,MZN,mozambique/mozambique metical/mzn,column range,column range
+^(acc|loc|reins)currency$,Myanmar - Kyat (MMK),currencies,MMK,myanmar/kyat/mmk,column range,column range
+^(acc|loc|reins)currency$,Namibia - Namibia dollar (NAD),currencies,NAD,namibia/namibia dollar/nad,column range,column range
+^(acc|loc|reins)currency$,Namibia - Rand (ZAR),currencies,ZAR,namibia/rand/zar,column range,column range
+^(acc|loc|reins)currency$,Nauru - Australian dollar (AUD),currencies,AUD,nauru/australian dollar/aud,column range,column range
+^(acc|loc|reins)currency$,Nepal - Nepalese rupee (NPR),currencies,NPR,nepal/nepalese rupee/npr,column range,column range
+^(acc|loc|reins)currency$,Netherlands (the) - Euro (EUR),currencies,EUR,netherlands (the)/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Netherlands antilles - Netherlands antillean guilder (ANG),currencies,ANG,netherlands antilles/netherlands antillean guilder/ang,column range,column range
+^(acc|loc|reins)currency$,Netherlands - Netherlands guilder (NLG),currencies,NLG,netherlands/netherlands guilder/nlg,column range,column range
+^(acc|loc|reins)currency$,New caledonia - Cfp franc (XPF),currencies,XPF,new caledonia/cfp franc/xpf,column range,column range
+^(acc|loc|reins)currency$,New zealand - New zealand dollar (NZD),currencies,NZD,new zealand/new zealand dollar/nzd,column range,column range
+^(acc|loc|reins)currency$,Nicaragua - Cordoba oro (NIO),currencies,NIO,nicaragua/cordoba oro/nio,column range,column range
+^(acc|loc|reins)currency$,Nicaragua - Cordoba (NIC),currencies,NIC,nicaragua/cordoba/nic,column range,column range
+^(acc|loc|reins)currency$,Niger (the) - Cfa franc bceao (XOF),currencies,XOF,niger (the)/cfa franc bceao/xof,column range,column range
+^(acc|loc|reins)currency$,Nigeria - Naira (NGN),currencies,NGN,nigeria/naira/ngn,column range,column range
+^(acc|loc|reins)currency$,Niue - New zealand dollar (NZD),currencies,NZD,niue/new zealand dollar/nzd,column range,column range
+^(acc|loc|reins)currency$,Norfolk island - Australian dollar (AUD),currencies,AUD,norfolk island/australian dollar/aud,column range,column range
+^(acc|loc|reins)currency$,Northern mariana islands (the) - Us dollar (USD),currencies,USD,northern mariana islands (the)/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Norway - Norwegian krone (NOK),currencies,NOK,norway/norwegian krone/nok,column range,column range
+^(acc|loc|reins)currency$,Oman - Rial omani (OMR),currencies,OMR,oman/rial omani/omr,column range,column range
+^(acc|loc|reins)currency$,Pakistan - Pakistan rupee (PKR),currencies,PKR,pakistan/pakistan rupee/pkr,column range,column range
+^(acc|loc|reins)currency$,Palau - Us dollar (USD),currencies,USD,palau/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,"Palestine, state of - No universal currency ()",currencies,,"palestine, state of/no universal currency/",column range,column range
+^(acc|loc|reins)currency$,Panama - Balboa (PAB),currencies,PAB,panama/balboa/pab,column range,column range
+^(acc|loc|reins)currency$,Panama - Us dollar (USD),currencies,USD,panama/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Papua new guinea - Kina (PGK),currencies,PGK,papua new guinea/kina/pgk,column range,column range
+^(acc|loc|reins)currency$,Paraguay - Guarani (PYG),currencies,PYG,paraguay/guarani/pyg,column range,column range
+^(acc|loc|reins)currency$,Peru - Inti (PEI),currencies,PEI,peru/inti/pei,column range,column range
+^(acc|loc|reins)currency$,Peru - Nuevo sol (PEN),currencies,PEN,peru/nuevo sol/pen,column range,column range
+^(acc|loc|reins)currency$,Peru - Sol (PEH),currencies,PEH,peru/sol/peh,column range,column range
+^(acc|loc|reins)currency$,Peru - Sol (PEN),currencies,PEN,peru/sol/pen,column range,column range
+^(acc|loc|reins)currency$,Peru - Sol (PES),currencies,PES,peru/sol/pes,column range,column range
+^(acc|loc|reins)currency$,Philippines (the) - Philippine piso (PHP),currencies,PHP,philippines (the)/philippine piso/php,column range,column range
+^(acc|loc|reins)currency$,Pitcairn - New zealand dollar (NZD),currencies,NZD,pitcairn/new zealand dollar/nzd,column range,column range
+^(acc|loc|reins)currency$,Poland - Zloty (PLN),currencies,PLN,poland/zloty/pln,column range,column range
+^(acc|loc|reins)currency$,Poland - Zloty (PLZ),currencies,PLZ,poland/zloty/plz,column range,column range
+^(acc|loc|reins)currency$,Portugal - Euro (EUR),currencies,EUR,portugal/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Portugal - Portuguese escudo (PTE),currencies,PTE,portugal/portuguese escudo/pte,column range,column range
+^(acc|loc|reins)currency$,Puerto rico - Us dollar (USD),currencies,USD,puerto rico/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Qatar - Qatari rial (QAR),currencies,QAR,qatar/qatari rial/qar,column range,column range
+^(acc|loc|reins)currency$,Romania - Leu a/52 (ROK),currencies,ROK,romania/leu a/52/rok,column range,column range
+^(acc|loc|reins)currency$,Romania - New romanian leu (RON),currencies,RON,romania/new romanian leu/ron,column range,column range
+^(acc|loc|reins)currency$,Romania - Old leu (ROL),currencies,ROL,romania/old leu/rol,column range,column range
+^(acc|loc|reins)currency$,Romania - Romanian leu (RON),currencies,RON,romania/romanian leu/ron,column range,column range
+^(acc|loc|reins)currency$,Russian federation (the) - Russian ruble (RUB),currencies,RUB,russian federation (the)/russian ruble/rub,column range,column range
+^(acc|loc|reins)currency$,Russian federation - Russian ruble (RUR),currencies,RUR,russian federation/russian ruble/rur,column range,column range
+^(acc|loc|reins)currency$,Rwanda - Rwanda franc (RWF),currencies,RWF,rwanda/rwanda franc/rwf,column range,column range
+^(acc|loc|reins)currency$,Rãƒâ€°union - French franc (FRF),currencies,FRF,rãƒâ€°union/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,Rã‰union - Euro (EUR),currencies,EUR,rã‰union/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Saint barthã‰lemy - Euro (EUR),currencies,EUR,saint barthã‰lemy/euro/eur,column range,column range
+^(acc|loc|reins)currency$,"Saint helena, ascension and tristan da cunha - Saint helena pound (SHP)",currencies,SHP,"saint helena, ascension and tristan da cunha/saint helena pound/shp",column range,column range
+^(acc|loc|reins)currency$,Saint kitts and nevis - East caribbean dollar (XCD),currencies,XCD,saint kitts and nevis/east caribbean dollar/xcd,column range,column range
+^(acc|loc|reins)currency$,Saint lucia - East caribbean dollar (XCD),currencies,XCD,saint lucia/east caribbean dollar/xcd,column range,column range
+^(acc|loc|reins)currency$,Saint martin (french part) - Euro (EUR),currencies,EUR,saint martin (french part)/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Saint martin - French franc (FRF),currencies,FRF,saint martin/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,Saint pierre and miquelon - Euro (EUR),currencies,EUR,saint pierre and miquelon/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Saint pierre and miquelon - French franc (FRF),currencies,FRF,saint pierre and miquelon/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,Saint vincent and the grenadines - East caribbean dollar (XCD),currencies,XCD,saint vincent and the grenadines/east caribbean dollar/xcd,column range,column range
+^(acc|loc|reins)currency$,Saint-barthãƒâ€°lemy - French franc (FRF),currencies,FRF,saint-barthãƒâ€°lemy/french franc/frf,column range,column range
+^(acc|loc|reins)currency$,Samoa - Tala (WST),currencies,WST,samoa/tala/wst,column range,column range
+^(acc|loc|reins)currency$,San marino - Euro (EUR),currencies,EUR,san marino/euro/eur,column range,column range
+^(acc|loc|reins)currency$,San marino - Italian lira (ITL),currencies,ITL,san marino/italian lira/itl,column range,column range
+^(acc|loc|reins)currency$,Sao tome and principe - Dobra (STD),currencies,STD,sao tome and principe/dobra/std,column range,column range
+^(acc|loc|reins)currency$,Saudi arabia - Saudi riyal (SAR),currencies,SAR,saudi arabia/saudi riyal/sar,column range,column range
+^(acc|loc|reins)currency$,Senegal - Cfa franc bceao (XOF),currencies,XOF,senegal/cfa franc bceao/xof,column range,column range
+^(acc|loc|reins)currency$,Serbia and montenegro - Euro (EUR),currencies,EUR,serbia and montenegro/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Serbia and montenegro - Serbian dinar (CSD),currencies,CSD,serbia and montenegro/serbian dinar/csd,column range,column range
+^(acc|loc|reins)currency$,Serbia - Serbian dinar (RSD),currencies,RSD,serbia/serbian dinar/rsd,column range,column range
+^(acc|loc|reins)currency$,Seychelles - Seychelles rupee (SCR),currencies,SCR,seychelles/seychelles rupee/scr,column range,column range
+^(acc|loc|reins)currency$,Sierra leone - Leone (SLL),currencies,SLL,sierra leone/leone/sll,column range,column range
+^(acc|loc|reins)currency$,Singapore - Singapore dollar (SGD),currencies,SGD,singapore/singapore dollar/sgd,column range,column range
+^(acc|loc|reins)currency$,Sint maarten (dutch part) - Netherlands antillean guilder (ANG),currencies,ANG,sint maarten (dutch part)/netherlands antillean guilder/ang,column range,column range
+^(acc|loc|reins)currency$,"Sistema unitario de compensacion regional de pagos ""sucre"" - Sucre (XSU)",currencies,XSU,"sistema unitario de compensacion regional de pagos ""sucre""/sucre/xsu",column range,column range
+^(acc|loc|reins)currency$,Slovakia - Euro (EUR),currencies,EUR,slovakia/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Slovakia - Slovak koruna (SKK),currencies,SKK,slovakia/slovak koruna/skk,column range,column range
+^(acc|loc|reins)currency$,Slovenia - Euro (EUR),currencies,EUR,slovenia/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Slovenia - Tolar (SIT),currencies,SIT,slovenia/tolar/sit,column range,column range
+^(acc|loc|reins)currency$,Solomon islands - Solomon islands dollar (SBD),currencies,SBD,solomon islands/solomon islands dollar/sbd,column range,column range
+^(acc|loc|reins)currency$,Somalia - Somali shilling (SOS),currencies,SOS,somalia/somali shilling/sos,column range,column range
+^(acc|loc|reins)currency$,South africa - Financial rand (ZAL),currencies,ZAL,south africa/financial rand/zal,column range,column range
+^(acc|loc|reins)currency$,South africa - Rand (ZAR),currencies,ZAR,south africa/rand/zar,column range,column range
+^(acc|loc|reins)currency$,South georgia and the south sandwich islands - No universal currency (),currencies,,south georgia and the south sandwich islands/no universal currency/,column range,column range
+^(acc|loc|reins)currency$,South sudan - South sudanese pound (SSP),currencies,SSP,south sudan/south sudanese pound/ssp,column range,column range
+^(acc|loc|reins)currency$,South sudan - Sudanese pound (SDG),currencies,SDG,south sudan/sudanese pound/sdg,column range,column range
+^(acc|loc|reins)currency$,Southern rhodesiaã‚ - Rhodesian dollar (RHD),currencies,RHD,southern rhodesiaã‚/rhodesian dollar/rhd,column range,column range
+^(acc|loc|reins)currency$,"Spain - ""a"" account (convertible peseta account) (ESB)",currencies,ESB,"spain/""a"" account (convertible peseta account)/esb",column range,column range
+^(acc|loc|reins)currency$,Spain - Euro (EUR),currencies,EUR,spain/euro/eur,column range,column range
+^(acc|loc|reins)currency$,Spain - Spanish peseta (ESA),currencies,ESA,spain/spanish peseta/esa,column range,column range
+^(acc|loc|reins)currency$,Spain - Spanish peseta (ESP),currencies,ESP,spain/spanish peseta/esp,column range,column range
+^(acc|loc|reins)currency$,Sri lanka - Sri lanka rupee (LKR),currencies,LKR,sri lanka/sri lanka rupee/lkr,column range,column range
+^(acc|loc|reins)currency$,Sudan (the) - Sudanese pound (SDG),currencies,SDG,sudan (the)/sudanese pound/sdg,column range,column range
+^(acc|loc|reins)currency$,Sudan - Sudanese dinar (SDD),currencies,SDD,sudan/sudanese dinar/sdd,column range,column range
+^(acc|loc|reins)currency$,Sudan - Sudanese pound (SDP),currencies,SDP,sudan/sudanese pound/sdp,column range,column range
+^(acc|loc|reins)currency$,Suriname - Surinam dollar (SRD),currencies,SRD,suriname/surinam dollar/srd,column range,column range
+^(acc|loc|reins)currency$,Suriname - Surinam guilder (SRG),currencies,SRG,suriname/surinam guilder/srg,column range,column range
+^(acc|loc|reins)currency$,Svalbard and jan mayen - Norwegian krone (NOK),currencies,NOK,svalbard and jan mayen/norwegian krone/nok,column range,column range
+^(acc|loc|reins)currency$,Swaziland - Lilangeni (SZL),currencies,SZL,swaziland/lilangeni/szl,column range,column range
+^(acc|loc|reins)currency$,Sweden - Swedish krona (SEK),currencies,SEK,sweden/swedish krona/sek,column range,column range
+^(acc|loc|reins)currency$,Switzerland - Swiss franc (CHF),currencies,CHF,switzerland/swiss franc/chf,column range,column range
+^(acc|loc|reins)currency$,Switzerland - Wir euro (CHE),currencies,CHE,switzerland/wir euro/che,column range,column range
+^(acc|loc|reins)currency$,Switzerland - Wir franc (for electronic) (CHC),currencies,CHC,switzerland/wir franc (for electronic)/chc,column range,column range
+^(acc|loc|reins)currency$,Switzerland - Wir franc (CHW),currencies,CHW,switzerland/wir franc/chw,column range,column range
+^(acc|loc|reins)currency$,Syrian arab republic - Syrian pound (SYP),currencies,SYP,syrian arab republic/syrian pound/syp,column range,column range
+^(acc|loc|reins)currency$,Taiwan (province of china) - New taiwan dollar (TWD),currencies,TWD,taiwan (province of china)/new taiwan dollar/twd,column range,column range
+^(acc|loc|reins)currency$,Tajikistan - Russian ruble (RUR),currencies,RUR,tajikistan/russian ruble/rur,column range,column range
+^(acc|loc|reins)currency$,Tajikistan - Somoni (TJS),currencies,TJS,tajikistan/somoni/tjs,column range,column range
+^(acc|loc|reins)currency$,Tajikistan - Tajik ruble (TJR),currencies,TJR,tajikistan/tajik ruble/tjr,column range,column range
+^(acc|loc|reins)currency$,"Tanzania, united republic of - Tanzanian shilling (TZS)",currencies,TZS,"tanzania, united republic of/tanzanian shilling/tzs",column range,column range
+^(acc|loc|reins)currency$,Thailand - Baht (THB),currencies,THB,thailand/baht/thb,column range,column range
+^(acc|loc|reins)currency$,Timor-leste - Rupiah (IDR),currencies,IDR,timor-leste/rupiah/idr,column range,column range
+^(acc|loc|reins)currency$,Timor-leste - Timor escudo (TPE),currencies,TPE,timor-leste/timor escudo/tpe,column range,column range
+^(acc|loc|reins)currency$,Timor-leste - Us dollar (USD),currencies,USD,timor-leste/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Togo - Cfa franc bceao (XOF),currencies,XOF,togo/cfa franc bceao/xof,column range,column range
+^(acc|loc|reins)currency$,Tokelau - New zealand dollar (NZD),currencies,NZD,tokelau/new zealand dollar/nzd,column range,column range
+^(acc|loc|reins)currency$,Tonga - Paâ€™anga (TOP),currencies,TOP,tonga/paâ€™anga/top,column range,column range
+^(acc|loc|reins)currency$,Trinidad and tobago - Trinidad and tobago dollar (TTD),currencies,TTD,trinidad and tobago/trinidad and tobago dollar/ttd,column range,column range
+^(acc|loc|reins)currency$,Tunisia - Tunisian dinar (TND),currencies,TND,tunisia/tunisian dinar/tnd,column range,column range
+^(acc|loc|reins)currency$,Turkey - New turkish lira (TRY),currencies,TRY,turkey/new turkish lira/try,column range,column range
+^(acc|loc|reins)currency$,Turkey - Old turkish lira (TRL),currencies,TRL,turkey/old turkish lira/trl,column range,column range
+^(acc|loc|reins)currency$,Turkey - Turkish lira (TRY),currencies,TRY,turkey/turkish lira/try,column range,column range
+^(acc|loc|reins)currency$,Turkmenistan - Russian ruble (RUR),currencies,RUR,turkmenistan/russian ruble/rur,column range,column range
+^(acc|loc|reins)currency$,Turkmenistan - Turkmenistan manat (TMM),currencies,TMM,turkmenistan/turkmenistan manat/tmm,column range,column range
+^(acc|loc|reins)currency$,Turkmenistan - Turkmenistan new manat (TMT),currencies,TMT,turkmenistan/turkmenistan new manat/tmt,column range,column range
+^(acc|loc|reins)currency$,Turks and caicos islands (the) - Us dollar (USD),currencies,USD,turks and caicos islands (the)/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Tuvalu - Australian dollar (AUD),currencies,AUD,tuvalu/australian dollar/aud,column range,column range
+^(acc|loc|reins)currency$,Uganda - Old shilling (UGW),currencies,UGW,uganda/old shilling/ugw,column range,column range
+^(acc|loc|reins)currency$,Uganda - Uganda shilling (UGS),currencies,UGS,uganda/uganda shilling/ugs,column range,column range
+^(acc|loc|reins)currency$,Uganda - Uganda shilling (UGX),currencies,UGX,uganda/uganda shilling/ugx,column range,column range
+^(acc|loc|reins)currency$,Ukraine - Hryvnia (UAH),currencies,UAH,ukraine/hryvnia/uah,column range,column range
+^(acc|loc|reins)currency$,Ukraine - Karbovanet (UAK),currencies,UAK,ukraine/karbovanet/uak,column range,column range
+^(acc|loc|reins)currency$,Union of soviet socialist republics - Rouble (SUR),currencies,SUR,union of soviet socialist republics/rouble/sur,column range,column range
+^(acc|loc|reins)currency$,United arab emirates (the) - Uae dirham (AED),currencies,AED,united arab emirates (the)/uae dirham/aed,column range,column range
+^(acc|loc|reins)currency$,United kingdom of great britain and northern ireland (the) - Pound sterling (GBP),currencies,GBP,united kingdom of great britain and northern ireland (the)/pound sterling/gbp,column range,column range
+^(acc|loc|reins)currency$,United states minor outlying islands (the) - Us dollar (USD),currencies,USD,united states minor outlying islands (the)/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,United states of america (the) - Us dollar (next day) (USN),currencies,USN,united states of america (the)/us dollar (next day)/usn,column range,column range
+^(acc|loc|reins)currency$,United states of america (the) - Us dollar (USD),currencies,USD,united states of america (the)/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,United states - Us dollar (same day) (USS),currencies,USS,united states/us dollar (same day)/uss,column range,column range
+^(acc|loc|reins)currency$,Uruguay - Old uruguay peso (UYN),currencies,UYN,uruguay/old uruguay peso/uyn,column range,column range
+^(acc|loc|reins)currency$,Uruguay - Peso uruguayo (UYU),currencies,UYU,uruguay/peso uruguayo/uyu,column range,column range
+^(acc|loc|reins)currency$,Uruguay - Uruguay peso en unidades indexadas (uruiurui) (UYI),currencies,UYI,uruguay/uruguay peso en unidades indexadas (uruiurui)/uyi,column range,column range
+^(acc|loc|reins)currency$,Uruguay - Uruguayan peso (UYP),currencies,UYP,uruguay/uruguayan peso/uyp,column range,column range
+^(acc|loc|reins)currency$,Uzbekistan - Russian ruble (RUR),currencies,RUR,uzbekistan/russian ruble/rur,column range,column range
+^(acc|loc|reins)currency$,Uzbekistan - Uzbekistan sum (UZS),currencies,UZS,uzbekistan/uzbekistan sum/uzs,column range,column range
+^(acc|loc|reins)currency$,Vanuatu - Vatu (VUV),currencies,VUV,vanuatu/vatu/vuv,column range,column range
+^(acc|loc|reins)currency$,Venezuela (bolivarian republic of) - Bolivar (VEF),currencies,VEF,venezuela (bolivarian republic of)/bolivar/vef,column range,column range
+^(acc|loc|reins)currency$,Venezuela (bolivarian republic of) - Bolã­var (VEF),currencies,VEF,venezuela (bolivarian republic of)/bolã­var/vef,column range,column range
+^(acc|loc|reins)currency$,Venezuela - Bolivar fuerte (VEF),currencies,VEF,venezuela/bolivar fuerte/vef,column range,column range
+^(acc|loc|reins)currency$,Venezuela - Bolivar (VEB),currencies,VEB,venezuela/bolivar/veb,column range,column range
+^(acc|loc|reins)currency$,Viet nam - Dong (VND),currencies,VND,viet nam/dong/vnd,column range,column range
+^(acc|loc|reins)currency$,Vietnam - Old dong (VNC),currencies,VNC,vietnam/old dong/vnc,column range,column range
+^(acc|loc|reins)currency$,Virgin islands (british) - Us dollar (USD),currencies,USD,virgin islands (british)/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Virgin islands (u.s.) - Us dollar (USD),currencies,USD,virgin islands (u.s.)/us dollar/usd,column range,column range
+^(acc|loc|reins)currency$,Wallis and futuna - Cfp franc (XPF),currencies,XPF,wallis and futuna/cfp franc/xpf,column range,column range
+^(acc|loc|reins)currency$,Western sahara - Moroccan dirham (MAD),currencies,MAD,western sahara/moroccan dirham/mad,column range,column range
+^(acc|loc|reins)currency$,"Yemen, democratic - Yemeni dinar (YDD)",currencies,YDD,"yemen, democratic/yemeni dinar/ydd",column range,column range
+^(acc|loc|reins)currency$,Yemen - Yemeni rial (YER),currencies,YER,yemen/yemeni rial/yer,column range,column range
+^(acc|loc|reins)currency$,Yugoslavia - New dinar (YUM),currencies,YUM,yugoslavia/new dinar/yum,column range,column range
+^(acc|loc|reins)currency$,Yugoslavia - New yugoslavian dinar (YUD),currencies,YUD,yugoslavia/new yugoslavian dinar/yud,column range,column range
+^(acc|loc|reins)currency$,Yugoslavia - Yugoslavian dinar (YUN),currencies,YUN,yugoslavia/yugoslavian dinar/yun,column range,column range
+^(acc|loc|reins)currency$,Zaire - New zaire (ZRN),currencies,ZRN,zaire/new zaire/zrn,column range,column range
+^(acc|loc|reins)currency$,Zaire - Zaire (ZRZ),currencies,ZRZ,zaire/zaire/zrz,column range,column range
+^(acc|loc|reins)currency$,Zambia - Zambian kwacha (ZMK),currencies,ZMK,zambia/zambian kwacha/zmk,column range,column range
+^(acc|loc|reins)currency$,Zambia - Zambian kwacha (ZMW),currencies,ZMW,zambia/zambian kwacha/zmw,column range,column range
+^(acc|loc|reins)currency$,Zimbabwe - Rhodesian dollar (ZWC),currencies,ZWC,zimbabwe/rhodesian dollar/zwc,column range,column range
+^(acc|loc|reins)currency$,Zimbabwe - Zimbabwe dollar (new) (ZWN),currencies,ZWN,zimbabwe/zimbabwe dollar (new)/zwn,column range,column range
+^(acc|loc|reins)currency$,Zimbabwe - Zimbabwe dollar (old) (ZWD),currencies,ZWD,zimbabwe/zimbabwe dollar (old)/zwd,column range,column range
+^(acc|loc|reins)currency$,Zimbabwe - Zimbabwe dollar (ZWD),currencies,ZWD,zimbabwe/zimbabwe dollar/zwd,column range,column range
+^(acc|loc|reins)currency$,Zimbabwe - Zimbabwe dollar (ZWL),currencies,ZWL,zimbabwe/zimbabwe dollar/zwl,column range,column range
+^(acc|loc|reins)currency$,Zimbabwe - Zimbabwe dollar (ZWR),currencies,ZWR,zimbabwe/zimbabwe dollar/zwr,column range,column range
+^(acc|loc|reins)currency$,Zz01_bond markets unit european_eurco - Bond markets unit european composite unit (eurco) (XBA),currencies,XBA,zz01_bond markets unit european_eurco/bond markets unit european composite unit (eurco)/xba,column range,column range
+^(acc|loc|reins)currency$,Zz01_gold-franc - Gold-franc (XFO),currencies,XFO,zz01_gold-franc/gold-franc/xfo,column range,column range
+^(acc|loc|reins)currency$,Zz02_bond markets unit european_emu-6 - Bond markets unit european monetary unit (e.m.u.-6) (XBB),currencies,XBB,zz02_bond markets unit european_emu-6/bond markets unit european monetary unit (e.m.u.-6)/xbb,column range,column range
+^(acc|loc|reins)currency$,Zz02_rinet funds code - Rinet funds code (XRE),currencies,XRE,zz02_rinet funds code/rinet funds code/xre,column range,column range
+^(acc|loc|reins)currency$,Zz03_bond markets unit european_eua-9 - Bond markets unit european unit of account 9 (e.u.a.-9) (XBC),currencies,XBC,zz03_bond markets unit european_eua-9/bond markets unit european unit of account 9 (e.u.a.-9)/xbc,column range,column range
+^(acc|loc|reins)currency$,Zz04_bond markets unit european_eua-17 - Bond markets unit european unit of account 17 (e.u.a.-17) (XBD),currencies,XBD,zz04_bond markets unit european_eua-17/bond markets unit european unit of account 17 (e.u.a.-17)/xbd,column range,column range
+^(acc|loc|reins)currency$,Zz05_uic-franc - Uic-franc (XFU),currencies,XFU,zz05_uic-franc/uic-franc/xfu,column range,column range
+^(acc|loc|reins)currency$,Zz06_testing_code - Codes specifically reserved for testing purposes (XTS),currencies,XTS,zz06_testing_code/codes specifically reserved for testing purposes/xts,column range,column range
+^(acc|loc|reins)currency$,Zz07_no_currency - The codes assigned for transactions where no currency is involved (XXX),currencies,XXX,zz07_no_currency/the codes assigned for transactions where no currency is involved/xxx,column range,column range
+^(acc|loc|reins)currency$,Zz08_gold - Gold (XAU),currencies,XAU,zz08_gold/gold/xau,column range,column range
+^(acc|loc|reins)currency$,Zz09_palladium - Palladium (XPD),currencies,XPD,zz09_palladium/palladium/xpd,column range,column range
+^(acc|loc|reins)currency$,Zz10_platinum - Platinum (XPT),currencies,XPT,zz10_platinum/platinum/xpt,column range,column range
+^(acc|loc|reins)currency$,Zz11_silver - Silver (XAG),currencies,XAG,zz11_silver/silver/xag,column range,column range
+^(acc|loc|reins)currency$,Ãƒâ€¦land islands - Markka (FIM),currencies,FIM,ãƒâ€¦land islands/markka/fim,column range,column range
+^(acc|loc|reins)currency$,Ã…land islands - Euro (EUR),currencies,EUR,ã…land islands/euro/eur,column range,column range
+^(acc|cond|loc|pol)dedcode\d+(building|other|contents|bi|pd|all)$,annual aggregate,deductible codes,1,annual aggregate,column range,column range
+^(acc|cond|loc|pol)dedcode\d+(building|other|contents|bi|pd|all)$,cea homeowners,deductible codes,5,cea homeowners,column range,column range
+^(acc|cond|loc|pol)dedcode\d+(building|other|contents|bi|pd|all)$,annual aggregate,deductible codes,6,cea homeowners choice,column range,column range
+^(acc|cond|loc|pol)dedcode\d+(building|other|contents|bi|pd|all)$,franchise deductible,deductible codes,2,franchise deductible,column range,column range
+^(acc|cond|loc|pol)dedcode\d+(building|other|contents|bi|pd|all)$,non-residential deductible,deductible codes,3,non-residential deductible,column range,column range
+^(acc|cond|loc|pol)dedcode\d+(building|other|contents|bi|pd|all)$,regular,deductible codes,0,regular,column range,column range
+^(acc|cond|loc|pol)dedcode\d+(building|other|contents|bi|pd|all)$,residential deductible,deductible codes,4,residential deductible,column range,column range
+^(acc|cond|loc|pol)dedtype\d+(building|other|contents|bi|pd|all)$,% loss,deductible types,1,% loss,column range,column range
+^(acc|cond|loc|pol)dedtype\d+(building|other|contents|bi|pd|all)$,% loss,deductible types,2,% tiv,column range,column range
+^(acc|cond|loc|pol)dedtype\d+(building|other|contents|bi|pd|all)$,flat monetary amount,deductible types,0,flat,column range,column range
+^(acc|cond|loc|pol)(min|max)?ded([1-6])(building|other|contents|bi|pd|all)$,all deductibles,deductibles,0e+0:3.40e+38,all,column range,column range
+^latitude$,latitude,geocoding,-90.0:90.0,latitude,column range,column range
+^longitude$,longitude,geocoding,-180.0:180.0,longitude,column range,column range
+^geocodequality$,geocoding quality,geocoding,0.0:1.0,quality,column range,column range
+^(acc|cond|loc|pol)limitcode\d+(building|other|contents|bi|pd|all)$,annual aggregate,limit codes,1,annual aggregate,column range,column range
+^(acc|cond|loc|pol)limitcode\d+(building|other|contents|bi|pd|all)$,regular,limit codes,0,regular,column range,column range
+^(acc|cond|loc|pol)limittype\d+(building|other|contents|bi|pd|all)$,% loss,limit types,1,% loss,column range,column range
+^(acc|cond|loc|pol)limittype\d+(building|other|contents|bi|pd|all)$,% loss,limit types,2,% tiv,column range,column range
+^(acc|cond|loc|pol)limittype\d+(building|other|contents|bi|pd|all)$,flat monetary amount,limit types,0,flat,column range,column range
+^layerlimit$,layer limits,limits,0e+0:3.40e+38,layer,column range,column range
+^(acc|cond|loc|pol)limit([1-6])(building|other|contents|bi|pd|all)$,all sublayer limits,limits,0e+0:3.40e+38,sublayer,column range,column range
+^isprimary$,Whether the location in LocGroup is the primary building in the group,location properties,0:1,is primary,column range,column range
+^istenant$,Whether property is occupied by a tenant or not,location properties,0:1,is tenant,column range,column range
+^occupancycode$,commercial,occupancy types,1100:1149,commercial,column range,column range
+^occupancycode$,industry,occupancy types,1150:1199,industrial,column range,column range
+^occupancycode$,industrial facility,occupancy types,2000:2799,industrial facility,column range,column range
+^occupancycode$,miscellaneous,occupancy types,1350:1399,misc,column range,column range
+^occupancycode$,offshore,occupancy types,3000:3999,offshore,column range,column range
+^occupancycode$,religion/government/education,occupancy types,1200:1249,religion/government/education,column range,column range
+^occupancycode$,residential,occupancy types,1050:1099,residential,column range,column range
+^occupancycode$,transportation,occupancy types,1250:1299,transportation,column range,column range
+^occupancycode$,unknown,occupancy types,1000,unknown,column range,column range
+^occupancycode$,utilities,occupancy types,1300:1349,utilities,column range,column range
+^(acc|loc|pol|reins)peril(scovered)?$,All perils,peril codes,AA1,all,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Convective Storm,peril codes,XX1,convective storm,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Convective storm (incl winter storm) - for RMS users,peril codes,XZ1,convective storm rms,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Straight-line / other convective wind,peril codes,XSL,convective wind,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Earthquake - Shake only,peril codes,QEQ,earthquake,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,All EQ perils,peril codes,QQ1,earthquake all,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Extra Tropical Cyclone,peril codes,WEC,extra tropical cyclone,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Fire Following,peril codes,QFF,fire following,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Flash / Surface / Pluvial Flood,peril codes,OSF,flash flood,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Flood w/o storm surge,peril codes,OO1,flood w/o storm surge,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Freeze,peril codes,ZFZ,freeze,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Hail,peril codes,XHL,hail,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Ice,peril codes,ZIC,ice,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Landslide,peril codes,QLS,landslide,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Lightning,peril codes,XLT,lightning,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Liquefaction,peril codes,QLF,liquefaction,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,NBCR Terrorism,peril codes,MNT,nbcr terrorism,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,NonCat,peril codes,BFR,noncat,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,River / Fluvial Flood,peril codes,ORF,river flood,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Smoke,peril codes,BSK,smoke,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Snow,peril codes,ZSN,snow,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Sprinkler Leakage,peril codes,QSL,sprinkler leakage,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Storm Surge,peril codes,WSS,storm surge,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Conventional Terrorism,peril codes,MTR,terrorism,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Terrorism,peril codes,MM1,terrorism all,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Tornado,peril codes,XTD,tornado,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Tropical Cyclone,peril codes,WTC,tropical cyclone,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Tsunami,peril codes,QTS,tsunami,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Wildfire / Bushfire,peril codes,BBF,wildfire,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Wildfire with smoke,peril codes,BB1,wildfire w/ smoke,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Windstorm with storm surge,peril codes,WW1,windstorm w/ storm surge,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Windstorm w/o storm surge,peril codes,WW2,windstorm w/o storm surge,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Winter storm,peril codes,ZZ1,winter storm,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^(acc|loc|pol|reins)peril(scovered)?$,Winter storm Wind,peril codes,ZST,winter storm wind,"{""func"": ""oedtools.utils.generate_token_sequence"", ""args"": [""<use range>"", 4, "";"", true]}",func:oedtools.utils.is_valid_token_sequence
+^cededpercent$,The percentage applied to the reinsurance loss after other reinsurance terms,reins percentages,0.0:1.0,ceded,column range,column range
+^placedpercent$,The percentage applied to the gross loss entering the reinsurance contracts before other reinsurance terms,reins percentages,0.0:1.0,placed,column range,column range
+^treatyshare$,The percentage applied to the reinsurance loss after other reinsurance terms,reins percentages,0.0:1.0,treatyshare,column range,column range
+^risklevel$,account level reinsurance treaty risk,reins risk levels,ACC,account,column range,column range
+^risklevel$,location level reinsurance treaty risk,reins risk levels,LOC,location,column range,column range
+^risklevel$,location group level reinsurance treaty risk,reins risk levels,LGR,location group,column range,column range
+^risklevel$,policy level reinsurance treaty risk,reins risk levels,POL,policy,column range,column range
+^reinstype$,AAn aggregate excess of loss contract applying per-period to a tranche of exposure defined using the reinsurance scope filter field,reins types,AXL,aggregate excess of loss,column range,column range
+^reinstype$,An excess of loss contract applying per-event to a tranche of exposure defined using the reinsurance scope filter fields.,reins types,CXL,catastrophe excess of loss,column range,column range
+^reinstype$,"Excess of loss contract (sometimes proportional) applicable at loc., loc. group, policy or account level",reins types,FAC,facultative,column range,column range
+^reinstype$,An excess of loss contract applying per-risk to a tranche of exposure defined using the reinsurance scope filter fields,reins types,PR,per risk treaty,column range,column range 
+^reinstype$,Proportional contract applicable to a tranche of exposure defined QS using the reinsurance scope filter fields,reins types,QS,quota share,column range,column range
+^reinstype$,A proportional contract where the proportion ceded varies by risk,reins types,SS,surplus share,column range,column range 
+^layerparticipation$,all shares (insurer share of (participation in) location or policy),shares,0.0:1.0,layer,column range,column range
+^locparticipation$,insurer's policy share for a location/site - % figure as decimal,shares,0.0:1.0,location,column range,column range
+^(building|contents|other|bi)tiv$,all total insured values (TIVs),tivs,0e+0:3.40e+38,all,column range,column range
+^(roofyearbuilt|yearbuilt|yearupgraded)$,built or upgraded,years,1000:9999,built or upgraded,column range,column range
