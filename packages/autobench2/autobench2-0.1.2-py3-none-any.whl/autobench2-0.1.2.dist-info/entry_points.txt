@@ -1,0 +1,3 @@
+[console_scripts]
+autobench = autobench2.cli:cli
+
