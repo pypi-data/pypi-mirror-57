@@ -1,0 +1,12 @@
+zensols/nlp/__init__.py,sha256=5cKEEK88ZSnF_zH3BvEjpbgmj8HgI3_UoUzMj9zUWFg,163
+zensols/nlp/feature.py,sha256=IYFAZjAZUT-eHe6bToLi9upZB-ugmOyo1zbzIs8bv-k,8643
+zensols/nlp/fnorm.py,sha256=yR0el7MKQCIFfrWSKs5aoy1wvkIiM4is3LTHfRLUs3Y,4739
+zensols/nlp/lang.py,sha256=L_Y0WsjD9YCXcJsbvEB8Kqjb0ni00ILbq7EJYD8yy3Q,8055
+zensols/nlp/norm.py,sha256=s5ZeU_Uc4sWBbyfwOYFVYudOaMMb8RMY1TonMHdDPWI,8753
+zensols/nlp/word2vec.py,sha256=pMXji_Ul4Rg8HJVSWoFXuDDZ-GKh0NAj4f16C9Y1CLo,3508
+zensols.nlp-0.0.5.dist-info/LICENSE.txt,sha256=-3nZ2PA1pRrguub2MCELSEpP3xiTYP4zwUc2W0CMUWo,1068
+zensols.nlp-0.0.5.dist-info/METADATA,sha256=4bSv_fmqiqNq6DZJt-j4d9AmB414NIsfHv0AqmO1lZE,2414
+zensols.nlp-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+zensols.nlp-0.0.5.dist-info/entry_points.txt,sha256=KMLEbh4AxbUQ7o6t-ulbPWjMW2kfC2y2bM3bOYBozF0,42
+zensols.nlp-0.0.5.dist-info/top_level.txt,sha256=NgD-P1jf-0xvfkWIxho1IVPkpl2JLBaIjIssgP_pkw8,12
+zensols.nlp-0.0.5.dist-info/RECORD,,
