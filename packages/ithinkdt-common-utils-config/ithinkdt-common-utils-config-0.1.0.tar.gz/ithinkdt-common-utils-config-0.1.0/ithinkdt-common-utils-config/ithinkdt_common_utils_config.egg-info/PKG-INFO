@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ithinkdt-common-utils-config
+Version: 0.1.0
+Summary: python utils of config handler
+Home-page: UNKNOWN
+Author: huiLi
+Author-email: lihui@ithinkdt.com
+License: MIT
+Description: python libs of parsing the configuration file
+Platform: any
