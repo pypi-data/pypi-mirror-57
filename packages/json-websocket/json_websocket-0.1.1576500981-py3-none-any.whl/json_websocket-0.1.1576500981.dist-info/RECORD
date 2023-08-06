@@ -1,0 +1,14 @@
+json_websocket/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_websocket/basic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_websocket/basic/abstract_json_socket.py,sha256=I0xS7d6wXz5ooxyxxbhgqNcVCfqNGmjxPj8foSJHVNU,4409
+json_websocket/basic/websocket.py,sha256=ktQtmbOOZf3EtAYxqhTa6911zk24GbISsSqfHTMPQk0,2318
+json_websocket/basic/websocket_data.js,sha256=bO03mTmVSMYF1gkG8E2m87XzIUfuU0AFAXtu_ZcvqH4,3576
+json_websocket/basic/websocket_styles.css,sha256=LKHvFSvF81QfDaVbq0WfvfSe4nqohjPts2o8KVPFfI0,120
+json_websocket/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_websocket/cmd/abstract_cmd_json_socket.py,sha256=KuQ9U2bcBPWueHVYS-lNAogMrjGZwKY536_5Guey6co,1179
+json_websocket/cmd/websocket.py,sha256=Dku-V3A9zpW7Wu4vRr6xsCeLFOP7wgkEAwaOvilzTlM,1241
+json_websocket/cmd/websocket_data.js,sha256=EiK3-uYJVIjM8tGiDLItysPYISKsKcepNM_unYcHBDk,939
+json_websocket-0.1.1576500981.dist-info/METADATA,sha256=p_Ao9EO_TrwgR5zHEtEMF422lmlJnYgXnTg5-KZST3U,496
+json_websocket-0.1.1576500981.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+json_websocket-0.1.1576500981.dist-info/top_level.txt,sha256=wty6v2es5mMP1m7Iucb4gG4mU-YodTHoey4oUTh_5bQ,15
+json_websocket-0.1.1576500981.dist-info/RECORD,,
