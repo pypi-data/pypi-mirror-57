@@ -1,0 +1,11 @@
+click
+pytest
+hypothesis
+negmas
+prettytable
+pulp
+python-constraint
+negmas
+
+[:python_version=="3.6"]
+dataclasses
