@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: django-enum-ex
+Version: 0.1.0
+Summary: 一个基于 Django 3.0 Choices 枚举类型的独立包
+Author: codetalks
+Author-email: banxi1988@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: django (>=2.2,<3.0)
