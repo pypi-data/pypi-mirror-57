@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: coconet-binning
+Version: 0.1
+Summary: A contig binning tool from viral metagenomes
+Home-page: https://github.com/Puumanamana/CoCoNet
+Author: Arisdakessian Cedric
+Author-email: carisdak@hawaii.edu
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
