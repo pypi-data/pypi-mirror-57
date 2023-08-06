@@ -1,0 +1,9 @@
+APT_stats/__init__.py,sha256=2bE1ce5YQMCjT6FbaA6kwipom8BFBaJxPsC2c1XuF90,72
+APT_stats/calc.py,sha256=p93KGp1H1326hYAwIgfZVX2MhoihKDjdF75J9wqVAVI,4880
+APT_stats/material.py,sha256=AkLHiKIBBViD2M6xpa1FfVWvJvjv3__NliGVCyqv4Cw,1399
+APT_stats/molecular.py,sha256=he5ZSs5B6GSFTP8kssZqJWhwoIF0Sl_FzxQUsEnU2Eo,1330
+APT_stats-0.0.4.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+APT_stats-0.0.4.dist-info/METADATA,sha256=SUOcz8Nt37TunfpZXt58gyiF7sYVGhvZL-TBWaETyhI,3311
+APT_stats-0.0.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+APT_stats-0.0.4.dist-info/top_level.txt,sha256=TkcL0NT8N631rslP8yuLOJCM2wjfRoVhckcRGBVKmL8,10
+APT_stats-0.0.4.dist-info/RECORD,,
