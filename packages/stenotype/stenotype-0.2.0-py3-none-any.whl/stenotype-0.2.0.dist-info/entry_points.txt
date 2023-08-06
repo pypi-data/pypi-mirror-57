@@ -1,0 +1,3 @@
+[console_scripts]
+stenotype=stenotype.cli:cli
+
