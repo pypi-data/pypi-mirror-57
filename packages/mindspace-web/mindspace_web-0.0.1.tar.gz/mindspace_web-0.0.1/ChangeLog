@@ -1,0 +1,13 @@
+CHANGES
+=======
+
+0.0.1
+-----
+
+* Separate out index and javascript functions, so they can be overridden
+* Ignore PBR files
+* Fixed name
+* Added tests
+* Renamed test.py
+* Working commit
+* Initial commit
