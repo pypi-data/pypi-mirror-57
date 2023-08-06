@@ -1,0 +1,7 @@
+sqlite-utils
+requests
+feedparser
+awesome-slugify
+
+[test]
+pytest
