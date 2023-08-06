@@ -1,0 +1,11 @@
+README.md
+setup.py
+fourier_artist/__init__.py
+fourier_artist/clean_data.py
+fourier_artist/draw.py
+fourier_artist.egg-info/PKG-INFO
+fourier_artist.egg-info/SOURCES.txt
+fourier_artist.egg-info/dependency_links.txt
+fourier_artist.egg-info/not-zip-safe
+fourier_artist.egg-info/requires.txt
+fourier_artist.egg-info/top_level.txt
