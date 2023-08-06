@@ -1,0 +1,15 @@
+_pydeform.cpython-37m-x86_64-linux-gnu.so,sha256=hI6RY1us8UmXZBk4zBlDiQs6ox4uVS-VxOoeiQelNLc,1375480
+_stk.cpython-37m-x86_64-linux-gnu.so,sha256=L8hyZ5FrwsMVlw70yIB_oU7yP_2yrq-RW1htXMiezmE,906296
+libz.so,sha256=Sdxg0Lt8EYL6BqoWzUKPXmCwiCIjXtjXdM7rQWvoMLo,112576
+libz.so.1.2.11,sha256=Sdxg0Lt8EYL6BqoWzUKPXmCwiCIjXtjXdM7rQWvoMLo,112576
+libz.so.1,sha256=Sdxg0Lt8EYL6BqoWzUKPXmCwiCIjXtjXdM7rQWvoMLo,112576
+.libslibz/libgomp-3300acd3.so.1.0.0,sha256=UeFYIEVyYUmIk-yi0ZDaTDMquk1yirgJwwQOQlWv1NU,63024
+pydeform/interruptible.py,sha256=ruYuruP7AgLpuKDuJYUML95uox2UJO15jb5KnofO3Wg,1472
+pydeform/sitk_api.py,sha256=LnpPO2mtxplt-vjcL1HOEsQKyebmIHl-CDLwcBap32w,12088
+pydeform/__init__.py,sha256=DWNlCO1xH-rhbCL0o75ON1OPnQoWiFxM9oANstPd_ts,143
+pydeform-0.5.1.dist-info/top_level.txt,sha256=aBQRorTXYrTPVzJK0EbsYcVssurF762DZXNI8rXtoJE,19
+pydeform-0.5.1.dist-info/RECORD,,
+pydeform-0.5.1.dist-info/METADATA,sha256=SztZdLL2CSsn9QXin7sLRSKf6OBYNBUMZHVHj3_Shq8,17282
+pydeform-0.5.1.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+.libs_stk/libgomp-3300acd3.so.1.0.0,sha256=UeFYIEVyYUmIk-yi0ZDaTDMquk1yirgJwwQOQlWv1NU,63024
+.libs_pydeform/libgomp-3300acd3.so.1.0.0,sha256=UeFYIEVyYUmIk-yi0ZDaTDMquk1yirgJwwQOQlWv1NU,63024
