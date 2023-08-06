@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+# Prepares raw data and stores it in data/raw 
+
+from pathlib import Path
+from settings import data_dir_external, data_dir_raw, download_url, mnist_gz_filepath 
+from settings import train_set_filepath, valid_set_filepath, test_set_filepath
+import gzip
+import pickle
+
+def make_dataset():
+    """
+    uncompresses the gzipped mnist file and places train, valid and test data in data/raw 
+    """
+    with gzip.open(mnist_gz_filepath, 'rb') as f:
+        train_set, valid_set, test_set = pickle.load(f, encoding='latin1')
+        print(f"train_set data: {train_set[0].shape}, train_set labels: {train_set[1].shape}")
+        print(f"valid_set data: {valid_set[0].shape}, valid_set labels: {valid_set[1].shape}")
+        print(f"test_set data: {test_set[0].shape}, test_set labels: {test_set[1].shape}")
+    
+    for filepath, dataset in [(train_set_filepath, train_set), (valid_set_filepath, valid_set), (test_set_filepath, test_set)]:
+        fh = open(filepath, 'wb')
+        pickle.dump(dataset, fh)
+    
+    print(f"saved raw train, valid and test splits in {data_dir_raw}")
+
+if __name__ == '__main__':
+    make_dataset()
+    

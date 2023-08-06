@@ -1,0 +1,141 @@
+bucket = '{{s3_bucketname}}'
+aws_profile = '{{aws_profile}}'
+
+import settings
+
+mlt_dependency_graph = {
+    'graph': [
+        # We will enumerate a list of graph nodes.
+        # Each node describes a dependency relation: the 'outputs' depend on the 'inputs'.
+        # 'actions' are commands that you would type in the terminal to generate the 'outputs' from the 'inputs'
+        # 
+        # Outputs of one node can be inputs to another, and multiple nodes can share multiple inputs / outputs
+        # However, we need to only describe local, first-order relationships - mltrack will compute the full graph 
+        # behind the scenes, and only run the parts of the graph that are outdated, based on file modification timestamps. 
+        #  
+        {   
+            
+            'outputs': ['clean'],
+            # inputs might be empty, like this (but you can't have empty outputs!) - 
+            # Note that mlt will always run outputs that have empty inputs - since no input file exists,
+            # mlt will always see the output as
+            'inputs': [], 
+            'actions': [
+                # you can have multiple actions, like so: 
+                'find . -type f -name "*.py[co]" -delete',
+                'find . -type d -name "__pycache__" -delete'
+            ],
+            # This help text will show up when we run mlt --help
+            'help': 'Deletes compiled Python files '
+        },
+
+        {
+            'outputs': ['sync_data_to_s3'],
+            # 'inputs': [] --> no need to specify 'inputs' if it is empty
+            'actions': [
+                # leverage f-strings to programatically fill in information like this -
+                f'aws s3 sync data/ s3://{bucket}/data/ --profile {aws_profile}'
+            ],
+            'help': f'Upload data to S3 bucket ({bucket})'
+        },
+
+        {
+            'outputs': ['sync_data_from_s3'],
+            'actions': [
+                f'aws s3 sync s3://{bucket}/data/ data/ --profile {aws_profile}'
+            ],
+            'help': f'Download data from S3 bucket ({bucket})'
+        },
+
+        # All of the following dependency graph nodes are auto-generated: modify them for your project
+        {
+            'outputs': ['data'],
+            # you can have multiple inputs, like so:
+            'inputs': ['download', 'rawpreprocess', 'featurize'],
+            # 'actions': []  --> no need to specify 'actions' if it is empty
+            'help': 'Run "mlt data" to download data, preprocess it and generate features '
+        },
+
+        {
+            'outputs': ['train_eval_model'],
+            'inputs': ['train_model', 'evaluate_model'],
+            'help': 'train and evaluate model'
+        },
+
+        {
+            'outputs': ['download'],
+            'inputs': ['data/external/mnist.pkl.gz'],
+            'help': 'Downloads an updated version of data/external/mnist.pkl.gz'
+        },
+
+        {
+            'outputs': ['data/external/mnist.pkl.gz'],
+            'inputs': ['settings.py', 'src/data/download_data.py'],
+            'actions': ['python -m src.data.download_data'],
+        },
+
+        {
+            'outputs': ['rawpreprocess'],
+            'inputs': ['data/raw/train_set.pkl', 'data/raw/valid_set.pkl', 'data/raw/test_set.pkl'],
+            'help': 'Run raw preprocessing'
+        },
+
+        {
+            'outputs': ['data/raw/train_set.pkl', 'data/raw/valid_set.pkl', 'data/raw/test_set.pkl'],
+            'inputs': ['settings.py', 'src/data/make_dataset.py', 'data/external/mnist.pkl.gz'],
+            'actions': ['python -m src.data.make_dataset']
+        },
+
+        {
+            'outputs': ['featurize'],
+            'inputs': [f"{settings.feature_data_filepath}"],  
+            'help': 'Generates features from raw data'
+        },
+
+        {
+            'outputs': [f"{settings.feature_data_filepath}"],
+            'inputs':  ['settings.py', 'src/features/build_features.py', 'data/interim/scaler_n_pca.pkl'], #, 'data/interim/pca.pkl', 'data/interim/scaler.pkl'
+            'actions': ['python -m src.features.build_features']
+        },
+
+        {
+            'outputs': ['learn_features'],
+            'inputs': ['data/interim/scaler_n_pca.pkl'],
+            'help': 'learn parameters to prepare for feature generation'
+        },
+
+        {
+            'outputs': ['data/interim/scaler_n_pca.pkl'], 
+            'inputs': ['settings.py',  'src/features/learn_features.py', 'src/features/featurizer.py', 
+                       'data/raw/train_set.pkl', 'data/raw/valid_set.pkl', 'data/raw/test_set.pkl'], # 'rawpreprocess'  
+            'actions': ['python -m src.features.learn_features'],  # 'python -m src.features.learn_features'
+        },
+
+        {
+            'outputs': ['train_model'],
+            'inputs': ['data/processed/model.pkl', f"{settings.feature_data_filepath}"],
+            'help': 'Trains and persists model'
+        },
+
+        {
+            'outputs': ['data/processed/model.pkl'],
+            'inputs': ['settings.py', 'src/models/train_model.py', f"{settings.feature_data_filepath}"],
+            'actions': ['python -m src.models.train_model']
+        },
+
+        {
+            'outputs':['evaluate_model'],
+            'inputs':['data/processed/model_evaluation.txt'],
+            'help': 'Evaluate model loss in test set'
+        },
+
+        {
+            'outputs':['data/processed/model_evaluation.txt'],
+            'inputs':['settings.py', 'src/models/eval_model.py', 'data/processed/model.pkl'],
+            'actions': ['python -m src.models.eval_model'],
+        }
+
+
+    ]
+
+}

@@ -1,0 +1,479 @@
+Metadata-Version: 2.1
+Name: mltrack
+Version: 0.0.1
+Summary: MLTrack: Track and organize your machine learning projects from the terminal
+Home-page: https://bitbucket.cloud.temasek/projects/BOOT/repos/mltrack/browse
+Author: S.Shankar
+Author-email: orthogonal.eigenvector@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jinja2
+
+# mltrack - Track and organize your machine learning projects from the terminal
+
+`mltrack` is a terminal based tool to track and organize machine learning pipelines. It does so by:
+
+- Expressing ML pipelines as a [directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG), and
+
+- Organizing your repository in an opinionated folder structure.
+
+It is designed to be extremely lightweight, using tools such as git, bash and make that are usually available by default in a standard unix distribution. It is written in pure python, offers a simple command line interface, and integrates easily with existing python codebases.
+
+## What are other similar tools?
+
+There are many, many build / workflow automation tools and data pipelining schedulers available that let one do similar things as `mltrack`. Apache Airflow, Luigi and Snakemake / Nextflow are notable examples. See [here](https://en.wikipedia.org/wiki/Workflow_management_system) and [here](https://en.wikipedia.org/wiki/List_of_build_automation_software) for more comprehensive lists.
+
+Most of these tools are fairly heavy-duty to install, configure and use, often requiring one to use a special domain specific language to specify the workflow. Many of them are meant to be used for big data processing in a distributed computing environment, or for compiling large codebases in C/C++. 
+
+`mltrack` is optimized towards machine learning pipelines that are collaboratively built by a medium-sized team that is trying to experiment and iterate rapidly.  
+
+The distinguishing feature of `mltrack` is that it lets one specify the workflow DAG as a list of plain Python dictionaries. That means the workflow / pipeline itself can be easily shared in a team setting,as well as made available for automatic versioning, testing and documentation. The pipelines can be programatically generated, nested within each other, and reconfigured at runtime.
+
+`mltrack` is extremely lightweight, and doesn't require you to install special runtimes / servers etc. After adopting it, most projects will end up using `mlt` as a top-level command line interface that runs and documents the project's workflow.
+
+`mltrack` generates a folder structure for new projects in a similar way to `cookiecutter`.
+
+## Benefits of `mltrack`
+
+- Specify ML pipelines / workflows as plain Python code.
+- Guaranteed reproducibility, testability and versioning for pipelines / workflows.
+- Use `mlt` as a CLI interface to your workflow. Easily define custom commands with help text to run and document sub-parts of your workflow.
+- Collaborate painlessly: common folder structure and shared knowledge of the `mlt` interface unifies project workflow and defines a common way of doing things.  
+- Save time with incremental processing: `mlt` will only run sub-parts of your workflow that need to be updated.
+- Apply the full power and flexibility of Python - generate and reconfigure workflows / pipelines dynamically based on external data, build arbitrarily large and complex task graphs.
+- Extremely lightweight: uses tools that are available by default in a standard Unix box such as git, bash, make and Python.
+- No need to learn a special domain specific language / protocol or install heavy duty software or servers.
+
+## Usage and installation
+
+`mltrack` is available on PyPI. The easiest way to install is with pip:
+
+```
+pip install --upgrade mltrack
+```
+
+To start with, `mlt help` will print help text:
+
+```
+~->mlt help
+
+
+ mlt - track and organize machine learning workflows from the terminal
+
+
+FORMAT -
+
+ mlt [command]
+
+mlt commands:
+  create:                     creates a new mlt repository
+  init:                       initializes existing repository for use with mlt
+  help:                       prints help text
+
+ No user defined commands available.
+
+Cannot find mlt repo, or repository info in .mlt might be corrupted. Type 'mlt init' to initialize new mlt repository. Delete existing .mlt folder if one exists.
+```
+
+Create a new project repository with `mlt create`:
+
+```
+(base) ubuntu@ip-172-31-32-135:~/mldk_dev$ mlt create
+What's your project's name? Yoda ML
+Enter repository name [recommended repository name: yoda_ml, press enter to use yoda_ml ]:
+Enter author name: Shankar
+Enter license type (optional, press enter for no license) [MIT (1), GPL (2), Apache (3)]: 1
+Enter AWS profile name (press enter to use 'default' ):
+Enter bucket name: shankar-test-ml
+repo_dir is : /home/ubuntu/mldk_dev/yoda_ml
+Successfully initialized mlt project...
+```
+
+A new project repository comes pre-loaded with a basic MNIST classification example.
+
+Let's change to the project directory and type `mlt help` again:
+
+```
+~/mldk_dev/yoda_ml->mlt help
+
+
+ mlt - track and organize machine learning workflows from the terminal
+
+
+FORMAT -
+
+ mlt [command]
+
+mlt commands:
+  create:                     creates a new mlt repository
+  init:                       initializes existing repository for use with mlt
+  help:                       prints help text
+
+ Commands defined in mlt_dependencies.py:
+
+  clean:                      Deletes compiled Python files
+  sync_data_to_s3:            Upload data to S3 bucket (default-bucket)
+  sync_data_from_s3:          Download data from S3 bucket (default-bucket)
+  data:                       Run "mlt data" to download data, preprocess it and generate features
+  train_eval_model:           train and evaluate model
+  download:                   Downloads an updated version of data/external/mnist.pkl.gz
+  rawpreprocess:              Run raw preprocessing
+  featurize:                  Generates features from raw data
+  learn_features:             learn parameters to prepare for feature generation
+  train_model:                Trains and persists model
+  evaluate_model:             Evaluate model loss in test set
+```
+
+Note that the help text now shows user defined commands. These commands are defined by the user in the project's `mlt_dependencies.py` file.
+
+Let's evaluate the model by running `mlt evaluate_model`. Before running this command, you can verify that the data directories are empty. In order to evaluate the model, we will first have to download data, preprocess it, generate features and train the model itself.
+
+These steps are defined as a dependency graph in `mlt_dependencies.py`, so `mlt` will execute them in the right order:
+
+```
+(base) ubuntu@ip-172-31-32-135:~/mldk_dev/yoda_ml$ mlt evaluate_model
+python -m src.data.download_data
+Downloaded http://deeplearning.net/data/mnist/mnist.pkl.gz to /home/ubuntu/mldk_dev/yoda_ml/data/external/mnist.pkl.gz
+python -m src.data.make_dataset
+train_set data: (50000, 784), train_set labels: (50000,)
+valid_set data: (10000, 784), valid_set labels: (10000,)
+test_set data: (10000, 784), test_set labels: (10000,)
+saved raw train, valid and test splits in /home/ubuntu/mldk_dev/yoda_ml/data/raw
+python -m src.features.learn_features
+fit Standard Scaler and PCA with n_components_ = 329 components, original components = 784
+python -m src.features.build_features
+python -m src.models.train_model
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:758: ConvergenceWarning: lbfgs failed to converge. Increase the number of iterations.
+  "of iterations.", ConvergenceWarning)
+starting model training...
+finished training model...
+train error (log loss) : 0.23456826576340226
+validation error (log loss): 0.28539054233742156
+python -m src.models.eval_model
+model evaluation completed:
+
+ Test set score for model LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=200, multi_class='multinomial',
+          n_jobs=None, penalty='l2', random_state=None, solver='lbfgs',
+          tol=0.0001, verbose=0, warm_start=False) = 0.31476026852394734
+
+
+(base) ubuntu@ip-172-31-32-135:~/mldk_dev/yoda_ml$
+```
+
+You can see that the full pipeline is run in the output above, and verify that the data directories now have the downloaded, preprocessed and final data / model files.
+
+If you run `mlt evaluate_model` again, it will do nothing because the pipeline is up to date:
+
+```
+(base) ubuntu@ip-172-31-32-135:~/mldk_dev/yoda_ml$ mlt evaluate_model
+mlt: Nothing to be done for 'evaluate_model'.
+```
+
+If you run `mlt featurize` now, `mlt` will recognize that nothing needs to be run, because the `featurize` step was a precursor to `evaluate_model`, and all files involved are up to date:
+
+```
+(base) ubuntu@ip-172-31-32-135:~/mldk_dev/yoda_ml$ mlt featurize
+mlt: Nothing to be done for 'featurize'.
+```
+
+Now let's edit and save `src/features/build_features.py` (for purposes of this demonstration, you can simply make an inconsequential edit, such as adding new line or space to the end of the file).
+
+`src/features/build_features.py` is used to learn and build features. Since we have updated it, the `featurize` step as well as all downstream steps which depend on the feature generation will need to be rerun in order to stay updated. 
+
+Let's now run `mlt rawpreprocess`. Since the `rawpreprocess` step is done prior to `featurize`, it is up to date, and `mlt` will not run anything:
+
+```
+(base) ubuntu@ip-172-31-32-135:~/mldk_dev/yoda_ml$ mlt rawpreprocess
+mlt: Nothing to be done for 'rawpreprocess'.
+```
+
+Let's run `mlt train_model`. Since the `train_model` step is a successor to `featurize`, `mlt` will rerun all steps between `featurize` and `train_model`:
+
+```
+(base) ubuntu@ip-172-31-32-135:~/mldk_dev/yoda_ml$ mlt train_model
+python -m src.features.build_features
+python -m src.models.train_model
+/home/ubuntu/anaconda3/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:758: ConvergenceWarning: lbfgs failed to converge. Increase the number of iterations.
+  "of iterations.", ConvergenceWarning)
+starting model training...
+finished training model...
+train error (log loss) : 0.23456826576340226
+validation error (log loss): 0.28539054233742156
+```
+
+Let's run `mlt train_eval_model`. This step trains and evaluates the model. Since we just trained our new model, `mlt` will skip the training step and proceed straight to model evaluation:
+
+```
+(base) ubuntu@ip-172-31-32-135:~/mldk_dev/yoda_ml$ mlt train_eval_model
+python -m src.models.eval_model
+model evaluation completed:
+
+ Test set score for model LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=200, multi_class='multinomial',
+          n_jobs=None, penalty='l2', random_state=None, solver='lbfgs',
+          tol=0.0001, verbose=0, warm_start=False) = 0.31476026852394734
+
+```
+
+The steps in the pipeline along with their dependencies are defined in `mlt_dependencies.py`. To learn how to write `mlt_dependencies.py` for your own project, let's first understand how to organize ML pipelines as a DAG.
+
+## Core principles: organizing ML pipelines as a DAG
+
+The core design philosophy behind `mltrack` is organize a machine learning pipeline as a [directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph) (DAG).
+
+ML pipelines naturally lend themselves to a DAG representation: one normally starts with a process to gather data, followed by preprocessing it, generating features from it, followed by producing a model file or binary.
+
+Each step might depend on the output of previous steps.
+
+If you update an intermediate step, all subsequent steps that depend on its outputs will need to be rerun and updated.
+
+`mltrack` will build the graph and keep track of which outputs are out of date, and only re-run the steps that are necessary - that way, you won't rerun your expensive 2-day training process which doesn't depend on the newest change to your pipeline.
+
+## Advantages of using plain Python to describe pipelines as DAGs
+
+The DAG representing ML pipelines in `mlt` is a plain Python dictionary. Since it is Python code, it can be versioned, linted and shared like any other piece of code.
+
+But perhaps more importantly, it allows one to bring the full power and expressivity of Python to bear on the problem of describing ML pipelines. You can configure the pipeline at dynamically at runtime, or create sub-pipelines within a larger pipeline based on say, user input or external data.
+
+Using plain Python also makes the pipeline easy to read and understand between developers working on different parts of a pipeline in a team.
+
+![Sample ML pipeline](./mltrack/docs_assets/sample.svg)
+
+In the sample pipeline above, `download_data.py` downloads a data source from s3 and `preprocess_data.py` generates `processed_data` from it. In the next step, `feature_1` and `feature_2` are generated, followed by `model_initial` and `model_final`.
+
+If we update `model_initial.py`, `mltrack` will remember to update `model_final` - at the same time, it will *not* rerun the process to generate `feature_1` or `feature_2`.
+
+## Walkthrough: describing ML pipelines as a DAG with `mlt_dependencies.py`
+
+Let us define a simple, 3 step pipeline and describe it as a DAG in the format `mlt` expects.
+
+Let's create a new directory:
+
+```
+~/mldk_dev->mkdir temp_ml
+~/mldk_dev->cd temp_ml/
+~/mldk_dev/temp_ml->ls
+~/mldk_dev/temp_ml->
+```
+
+In order to use `mlt` in your project, you must first initialize it with `mlt init`:
+
+```
+~/mldk_dev/temp_ml->mlt init
+What's your project's name? temp ml
+Successfully initialized mlt project. Define your project dependencies in mlt_dependencies.py to get started.
+~/mldk_dev/temp_ml->
+```
+
+Let's say that the first step in our pipeline is to generate `raw_data_1.txt` by running the python script `gen_raw_1.py`. Our Python script simply prints a list of numbers from 1 to 10:
+
+#### **`gen_raw_1.py`**
+```
+numbers = range(10)
+print(",".join(str(num) for num in numbers))
+```
+
+We generate `raw_data_1.txt` like so:
+
+```
+~/mldk_dev/temp_ml->python gen_raw_1.py
+0,1,2,3,4,5,6,7,8,9
+~/mldk_dev/temp_ml->python gen_raw_1.py > raw_data_1.txt
+~/mldk_dev/temp_ml->cat raw_data_1.txt
+0,1,2,3,4,5,6,7,8,9
+```
+
+This "pipeline" is represented as:
+
+![step 1 pipeline](./mltrack/docs_assets/step_1.svg)
+
+The output is `raw_data_1.txt`, and the action to produce this output is `python gen_raw_1.py > raw_data_1.txt`. This output only depends on the python script `gen_raw_1.py`.
+
+Here is the `mlt_dependencies.py` file that encodes these relationships:
+
+#### **`mlt_dependencies.py`**
+```
+mlt_dependency_graph = {
+    'graph': [
+        {
+            'outputs': ['raw_data_1.txt'],
+            'inputs': ['gen_raw_1.py'],
+            'actions': ['python gen_raw_1.py > raw_data_1.txt'],
+            'help': 'generate raw_data_1.txt'
+        }
+    ]
+}
+```
+
+As you can see, we added `'help': 'generate raw_data_1.txt'`. The `mlt` dependency graph is specified as a list of dictionaries. The `inputs` are the files that the `outputs` depend on.
+
+Adding a `help` tag (as we did here) make the `outputs` available as a user defined command. After you create the `mlt_dependencies.py` file, try `mlt help`:
+
+```
+~/mldk_dev/temp_ml->ls
+gen_raw_1.py  mlt_dependencies.py  raw_data_1.txt
+~/mldk_dev/temp_ml->mlt help
+
+
+ mlt - track and organize machine learning workflows from the terminal
+
+
+FORMAT -
+
+ mlt [command]
+
+mlt commands:
+  create:                     creates a new mlt repository
+  init:                       initializes existing repository for use with mlt
+  help:                       prints help text
+
+ Commands defined in mlt_dependencies.py:
+
+  raw_data_1.txt:             generate raw_data_1.txt
+~/mldk_dev/temp_ml->
+```
+
+For purposes of demonstration, let's delete `raw_data_1.txt` and generate it with `mlt`:
+
+```
+~/mldk_dev/temp_ml->rm raw_data_1.txt
+~/mldk_dev/temp_ml->ls
+__pycache__  gen_raw_1.py  mlt_dependencies.py
+~/mldk_dev/temp_ml->mlt raw_data_1.txt
+python gen_raw_1.py > raw_data_1.txt
+~/mldk_dev/temp_ml->ls
+__pycache__  gen_raw_1.py  mlt_dependencies.py  raw_data_1.txt
+~/mldk_dev/temp_ml->
+```
+
+What happens if you run `mlt raw_data_1.txt` again?
+
+```
+~/mldk_dev/temp_ml->mlt raw_data_1.txt
+mlt: 'raw_data_1.txt' is up to date.
+```
+
+`mlt` will correctly identify that your files are up to date, and that nothing needs to be rerun.
+
+Let's add another step to our pipeline. We will write a second Python script `gen_processed.py` that reads `raw_data_1.txt` and produces a file `processed.txt` that contains the sum of the numbers in `raw_data_1.txt`:
+
+#### **`gen_processed.py`**
+```
+from pathlib import Path
+import os
+fh = open('./raw_data_1.txt', 'r')
+data = [int(item) for item in fh.readline().split(',')]
+output_file = Path(os.getcwd()) / 'processed.txt'
+output_file.write_text(str(sum(data))+"\n")
+```
+
+```
+~/mldk_dev/temp_ml->ls
+__pycache__  gen_processed.py  gen_raw_1.py  mlt_dependencies.py  raw_data_1.txt
+~/mldk_dev/temp_ml->python gen_processed.py
+~/mldk_dev/temp_ml->cat processed.txt
+45
+```
+
+Our pipeline now looks like this: 
+
+![step 2 pipeline](./mltrack/docs_assets/step_2.svg)
+
+Let us add these steps to `mlt_dependencies.py`:
+
+
+#### **`mlt_dependencies.py`**
+```
+mlt_dependency_graph = {
+    'graph': [
+        {
+            'outputs': ['raw_data_1.txt'],
+            'inputs': ['gen_raw_1.py'],
+            'actions': ['python gen_raw_1.py > raw_data_1.txt'],
+            'help': 'generate raw_data_1.txt'
+        },
+
+        {
+            'outputs': ['processed.txt'],
+            'inputs': ['gen_processed.py', 'raw_data_1.txt'],
+            'actions': ['python gen_processed.py'],
+            'help': 'generate processed.txt'
+        }
+    ]
+}
+```
+
+Our output file `processed.txt` depends on the previous output file `raw_data_1.txt` and the source file `gen_processed.py`. The `actions` key `python gen_processed.py` encodes what you would type at the terminal to produce the output.
+
+```
+~/mldk_dev/temp_ml->mlt help
+
+
+ mlt - track and organize machine learning workflows from the terminal
+
+
+FORMAT -
+
+ mlt [command]
+
+mlt commands:
+  create:                     creates a new mlt repository
+  init:                       initializes existing repository for use with mlt
+  help:                       prints help text
+
+ Commands defined in mlt_dependencies.py:
+
+  raw_data_1.txt:             generate raw_data_1.txt
+  processed.txt:              generate processed.txt
+~/mldk_dev/temp_ml->
+```
+
+Let's generate the output with `mlt`:
+
+```
+~/mldk_dev/temp_ml->rm processed.txt
+~/mldk_dev/temp_ml->mlt processed.txt
+python gen_processed.py
+~/mldk_dev/temp_ml->cat processed.txt
+45
+~/mldk_dev/temp_ml->
+```
+
+What happens if we say, edit `gen_processed.py`? 
+
+#### **`gen_processed.py`**
+```
+from pathlib import Path
+import os
+fh = open('./raw_data_1.txt', 'r')
+data = [int(item) for item in fh.readline().split(',')]
+output_file = Path(os.getcwd()) / 'processed.txt'
+output_file.write_text(str(sum(data))+"\n")
+output_file.write_text("*******\n")   ## --> made changes to gen_processed.py
+```
+
+`mlt` will recognize that the last step in the pipeline needs to be rerun, but there is no need to regenerate `raw_data_1.txt`:
+
+```
+~/mldk_dev/temp_ml->ls
+__pycache__  gen_processed.py  gen_raw_1.py  mlt_dependencies.py  processed.txt  raw_data_1.txt
+~/mldk_dev/temp_ml->mlt processed.txt
+python gen_processed.py
+~/mldk_dev/temp_ml->cat processed.txt
+*******
+~/mldk_dev/temp_ml->
+```
+
+Running `mlt` again will not rerun anything:
+
+```
+~/mldk_dev/temp_ml->mlt processed.txt
+mlt: 'processed.txt' is up to date.
+```
+

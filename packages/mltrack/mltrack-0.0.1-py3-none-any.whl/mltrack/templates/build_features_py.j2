@@ -1,0 +1,48 @@
+#builds features from data in data/raw and stores them in data/interim
+
+from settings import scaler_pkl, pca_pkl
+from settings import train_set_filepath, valid_set_filepath, test_set_filepath, data_dir_interim, feature_data_filepath
+import pickle
+from src.features.featurizer import Featurizer 
+
+
+def build_persist_features():
+    #scaler = pickle.load(open(scaler_pkl, 'rb'))
+    #pca = pickle.load(open(pca_pkl, 'rb'))
+    scaler_n_pca = pickle.load(open( data_dir_interim / 'scaler_n_pca.pkl' , 'rb'))
+    scaler = scaler_n_pca["scaler"]
+    pca = scaler_n_pca["pca"]
+
+    featurizer = Featurizer(scaler=scaler, pca=pca)
+
+    train_set = pickle.load(open(train_set_filepath, 'rb'))
+    valid_set = pickle.load(open(valid_set_filepath, 'rb'))
+    test_set = pickle.load(open(test_set_filepath, 'rb')) 
+
+    x_train = train_set[0]
+    y_train = train_set[1]
+
+    x_valid = valid_set[0]
+    y_valid = valid_set[1]
+
+    x_test = test_set[0]
+    y_test = test_set[1]
+
+    x_train = featurizer.transform(x_train)
+    x_valid = featurizer.transform(x_valid)
+    x_test = featurizer.transform(x_test)
+
+    feature_data = {
+        "x_train": x_train,
+        "y_train": y_train,
+        "x_valid": x_valid,
+        "y_valid": y_valid,
+        "x_test": x_test,
+        "y_test": y_test
+    }
+
+    pickle.dump(feature_data, open(feature_data_filepath, 'wb'))
+    
+
+if __name__ == '__main__':
+    build_persist_features()

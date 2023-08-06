@@ -1,0 +1,47 @@
+
+{{project_name}}
+==============================
+
+{{repo_name}}
+
+
+Project Organization
+------------
+
+```
+    .
+    |-- mlt_dependencies.py           <- `mlt` file to represent ML pipelines as a DAG. This file also defines user defined commands.
+    |
+    │
+    |-- settings.py                   <-  Project-wide configuration parameters, such as paths for data folders, serialized models, etc. 
+    │
+    |-- data                           
+    |   |-- external                  <- Data from external sources such as s3 
+    |   |-- interim                   <- Intermediate data that has been transformed. 
+    |   |-- processed                 <- The final, canonical data sets for model training.
+    |   `-- raw                       <- The original, immutable data dump.
+    |
+    |-- docs                          <- Documentation folder
+    |
+    |-- LICENSE                       <- License file
+    |
+    |-- models                        <- Trained and serialized models
+    |
+    |-- notebooks                     <- Jupyter notebooks. Naming convention is a number (for ordering), the creator's initials, and a short `-` delimited description, e.g. `1.0-jqp-initial-data-exploration`.
+    `-- src                             <- Source code for use in this project.
+        |-- data                        <- Modules to download or generate data
+        |   |-- download_data.py
+        |   `-- make_dataset.py
+        |-- features                    <- Modules to turn raw data into features for modeling
+        |   |-- build_features.py
+        |   |-- featurizer.py
+        |   `-- learn_features.py
+        |-- models                      <- Modules for model training and predictions
+        |   |-- eval_model.py
+        |   |-- predict_model.py
+        |   `-- train_model.py
+        |
+        |-- tests                       <- Tests go here  
+        |
+        `-- visualization               <- Scripts for EDA and visualization 
+```
