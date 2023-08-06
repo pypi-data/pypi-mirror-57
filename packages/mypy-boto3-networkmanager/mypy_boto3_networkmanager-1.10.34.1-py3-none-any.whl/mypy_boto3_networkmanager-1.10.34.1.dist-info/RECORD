@@ -1,0 +1,11 @@
+mypy_boto3_networkmanager/__init__.py,sha256=smhU8QKmeWjwnF-w-v6Vd6WNzgWNDGKoMvcMj-kCZ08,657
+mypy_boto3_networkmanager/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_networkmanager/client.py,sha256=eeFBPgpqPqak5d3YkmhdPU8aBIN7yjmN18RMpVhGRog,19450
+mypy_boto3_networkmanager/paginator.py,sha256=BmVgYyq5NcB1stAp7n6mEf_g-Sa2XkfIySk2etlElLA,6251
+mypy_boto3_networkmanager/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_networkmanager/type_defs.py,sha256=PsSlWLvie14K-iyyVjdwXoC36iJPJFy2o7PLHFiiViM,7351
+mypy_boto3_networkmanager/version.py,sha256=ymCrbZY71sTQrCS-9U028JQmpplk8ZUagkBRKbAuHZo,57
+mypy_boto3_networkmanager-1.10.34.1.dist-info/METADATA,sha256=jZwPsWuWPmIw35GRvmvvnJ5gwWDd_vtvD-Ta6iVHk8E,1225
+mypy_boto3_networkmanager-1.10.34.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_networkmanager-1.10.34.1.dist-info/top_level.txt,sha256=1LA17Kdfnolve368jUWMstYskP4GemNqmhQfn6q0cew,26
+mypy_boto3_networkmanager-1.10.34.1.dist-info/RECORD,,
