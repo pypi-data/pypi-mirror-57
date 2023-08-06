@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: mhask
+Version: 0.0.0
+Summary: Micropython HTTP Asynchronous Service like Flask
+Home-page: https://github.com/damiencorpataux/micropython-mhask
+Author: Damien Corpataux
+License: MIT
+Description: micropython-mhask
+        =================
+        
+        Micropython HTTP Asynchronous Service like Flask
+        
+        Install
+        -------
+        ```
+        micropython -m upip install micropython-mhask
+        ```
+        
+        Usage
+        -----
+        ```
+        app = mhask.App(__name__)
+        
+        @app.route('/')
+        def index():
+            return 'Hello'
+        
+        app.run()
+        ```
+        See more examples at https://github.com/damiencorpataux/micropython-mhask/blob/master/examples.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
