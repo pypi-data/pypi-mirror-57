@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+marcdata/__init__.py
+marcdata/__version__.py
+marcdata/marcdata.py
+marcdata/utils.py
+marcdata.egg-info/PKG-INFO
+marcdata.egg-info/SOURCES.txt
+marcdata.egg-info/dependency_links.txt
+marcdata.egg-info/requires.txt
+marcdata.egg-info/top_level.txt
