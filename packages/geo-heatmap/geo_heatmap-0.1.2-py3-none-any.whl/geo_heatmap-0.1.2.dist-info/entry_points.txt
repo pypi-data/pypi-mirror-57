@@ -1,0 +1,3 @@
+[console_scripts]
+geo-heatmap=geo_heatmap.console:run
+
