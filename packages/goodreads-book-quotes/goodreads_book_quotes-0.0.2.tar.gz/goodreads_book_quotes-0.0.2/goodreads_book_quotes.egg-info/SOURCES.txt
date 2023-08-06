@@ -1,0 +1,8 @@
+README.md
+setup.py
+goodreads_book_quotes/__init__.py
+goodreads_book_quotes.egg-info/PKG-INFO
+goodreads_book_quotes.egg-info/SOURCES.txt
+goodreads_book_quotes.egg-info/dependency_links.txt
+goodreads_book_quotes.egg-info/requires.txt
+goodreads_book_quotes.egg-info/top_level.txt
