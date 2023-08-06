@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+LaplaceDiff/LaplaceDiff.py
+LaplaceDiff/__init__.py
+LaplaceDiff/elemental.py
+LaplaceDiff.egg-info/PKG-INFO
+LaplaceDiff.egg-info/SOURCES.txt
+LaplaceDiff.egg-info/dependency_links.txt
+LaplaceDiff.egg-info/requires.txt
+LaplaceDiff.egg-info/top_level.txt
+LaplaceDiff/UnitTests/__init__.py
+LaplaceDiff/UnitTests/test_LaplaceDiff.py
+LaplaceDiff/UnitTests/test_elemental.py
