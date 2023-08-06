@@ -1,0 +1,6 @@
+README.md
+setup.py
+tmuxi3.egg-info/PKG-INFO
+tmuxi3.egg-info/SOURCES.txt
+tmuxi3.egg-info/dependency_links.txt
+tmuxi3.egg-info/top_level.txt
