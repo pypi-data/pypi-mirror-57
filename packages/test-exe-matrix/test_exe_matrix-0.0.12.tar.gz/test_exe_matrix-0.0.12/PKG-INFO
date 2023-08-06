@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: test-exe-matrix
+Version: 0.0.12
+Summary: 
+Home-page: https://framagit.org/feth/test_exe_matrix
+Author: Feth AREZKI
+Author-email: text_exe_matrix@tuttu.info
+Requires-Python: >=3.5
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: PyYAML (>=5.2)
+Requires-Dist: pytest (==5.3.1)
+Project-URL: Repository, https://framagit.org/feth/test_exe_matrix
+Description-Content-Type: text/x-rst
+
+=======================================================
+Toy project to test executables defined in a yaml file
+=======================================================
+
+Run
+--------
+
+.. code-block:: console
+
+    usage: test_exe_matrix [-h] [testsuite [testsuite ...]]
+
+Without arguments, we'll test the default example file, running ```/bin/echo``` and ```/bin/sleep```.
+
+Parametrizing tests
+-------------------
+
+Put your test suites in a yaml, like matrix.yaml (provided), or in several.
+
+Extend the toy?
+---------------
+
+How about handling input, and even interaction (then you may like expect).
+
+Dev: Build the package
+-----------------------
+
+Upgrade the version number in pyproject.toml and run 'poetry build' (installing poetry is a poem, sorry).
+

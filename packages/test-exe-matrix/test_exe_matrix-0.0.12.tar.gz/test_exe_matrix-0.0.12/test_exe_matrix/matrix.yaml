@@ -1,0 +1,23 @@
+---
+- exe: '/bin/echo'
+  args:
+      - '-n'
+      - 'coincoin'
+
+  retcode: 0
+  stdout: 'coincoin'
+  stderr: ''
+- exe: '/bin/echo'
+  args:
+      - "with carriage return - actually it's yaml thing"
+  retcode: 0
+  stdout: |
+          with carriage return - actually it's yaml thing
+  stderr: ''
+- exe: '/bin/sleep'
+  args:
+      - '200'
+  retcode: 0
+  stdout:
+  stderr:
+  expect_too_long: true
