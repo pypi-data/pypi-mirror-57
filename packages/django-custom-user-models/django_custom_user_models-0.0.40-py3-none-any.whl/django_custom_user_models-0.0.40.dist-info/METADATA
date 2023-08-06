@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: django-custom-user-models
+Version: 0.0.40
+Summary: A custom user model for django authentication
+Home-page: https://github.com/MHolger77/django-auth
+Author: mohammad hosein shamsaei
+Author-email: mh.shamsaei.ms@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Django custom user model
+
+A Custom User model for authentication
+
+## Requirement
+* Python (3.5, 3.6, 3.7, 3.8)
+* Django (1.11, >2.0, 2.1, 2.2, 3.0, 3.1)
+
+## Installation
+Install using ``pip``
+
+    pip install django-custom-user-models
+
+add to ``INSTALLED_APPS`` setting
+
+    INSTALLED_APPS = {
+        ...
+        'CustomAuth',
+        ...
+    }
+
+set ``AUTH_USER_MODEL`` setting before first migrate
+
+    AUTH_USER_MODEL = 'CustomUser.User'
+
+migrate apps
+
+    py manage.py migrate
+
+### Status Handler
+add ``handler`` to ``yourproject/urls.py``
+```python
+from CustomAuth.urls import handler400, handler401, handler403, handler404, handler500
+```
+
+
+## License
+Uses the MIT license.
+
+* MIT: http://opensource.org/licenses/MIT
+
