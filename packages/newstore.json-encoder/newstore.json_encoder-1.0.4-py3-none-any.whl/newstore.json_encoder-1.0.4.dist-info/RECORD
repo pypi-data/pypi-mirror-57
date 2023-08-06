@@ -1,0 +1,10 @@
+newstore.json_encoder-1.0.4-py3.8-nspkg.pth,sha256=ntOjiCUY0hiWeFE5gRY05ua9XQgxmk-hC97h3n4-hOs,549
+newstore/json_encoder/__init__.py,sha256=m-4iCFaYdwlwY0W80AolpoMjwDaxikpAQYgX80DByds,84
+newstore/json_encoder/encoder.py,sha256=0mdVnAisB5IlKEIuvyVI1se-BN5YVw2UxV75sOiF6eE,1065
+newstore.json_encoder-1.0.4.dist-info/LICENSE,sha256=uJKPUWm6M1wdyIzKoSI0saz8ibyllWDftukPdBoqhTY,1069
+newstore.json_encoder-1.0.4.dist-info/METADATA,sha256=9Lf_Kik3pv5O2dNNrjhiBtnSttid1jhig7o34xwh-Os,1233
+newstore.json_encoder-1.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+newstore.json_encoder-1.0.4.dist-info/namespace_packages.txt,sha256=LqzbGjyKxgirbMvvpexptLbjFX3BQGiI54wqkk1I9HE,9
+newstore.json_encoder-1.0.4.dist-info/top_level.txt,sha256=LqzbGjyKxgirbMvvpexptLbjFX3BQGiI54wqkk1I9HE,9
+newstore.json_encoder-1.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+newstore.json_encoder-1.0.4.dist-info/RECORD,,
