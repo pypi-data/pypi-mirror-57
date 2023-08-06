@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<registry>
+
+    <records prefix="plone.resources/ftw-bridge-client-js"
+             interface="Products.CMFPlone.interfaces.IResourceRegistry"
+            remove="true" />
+
+    <records prefix="plone.bundles/ftw-bridge-client-resources" interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+        <value key="resources" purge="True"></value>
+        <value key="enabled">True</value>
+        <value key="depends">plone</value>
+        <value key="compile">False</value>
+        <value key="jscompilation">++resource++ftw.bridge.client-resources/bridge-client-compiled.js</value>
+        <value key="last_compilation">2019-12-09 16:00:00</value>
+        <value key="merge_with">default</value>
+    </records>
+</registry>
