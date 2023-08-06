@@ -1,0 +1,11 @@
+scope/__init__.py,sha256=meoClfRxkanbjAaI-fpO7U5GSD0vzlL1dYonh11GLWo,179
+scope/cli.py,sha256=L4MEoCVlFa2xVK52uM0jFXuABpuK1Q_o-z34wK9C24Q,2520
+scope/models.py,sha256=VWbQwkYQKbrLPi5Dk9cXegUpWv9RMY-PgZ1NG7_zmww,941
+scope/scope.py,sha256=nXfqW4Mhd3m0SbqJb86YmF1Rn1u3x0VBn3m-495C4Zs,18084
+scope_coupler-0.1.4.dist-info/AUTHORS.rst,sha256=BI8e70I8Gnr8UOsXDkOiaktpxCpbE99epwaZylDF9HY,55
+scope_coupler-0.1.4.dist-info/LICENSE,sha256=-89ZAx9jI3TL0_Fp_JqujJcIrTQlaBm2dO55qOsxNXQ,1597
+scope_coupler-0.1.4.dist-info/METADATA,sha256=ZDS-yCvy1YfnMtUGNj83KUJ2th_P9IWviwP3OLh3qK0,2447
+scope_coupler-0.1.4.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+scope_coupler-0.1.4.dist-info/entry_points.txt,sha256=LhTNVaJmvtJkZ7fuXpU1MDg1dDsIa-UX5Same4CSxvU,42
+scope_coupler-0.1.4.dist-info/top_level.txt,sha256=2CM6KU4wKPVS0iGdr72fQXzMA5Vn0U5FzuzOYCYth_8,6
+scope_coupler-0.1.4.dist-info/RECORD,,
