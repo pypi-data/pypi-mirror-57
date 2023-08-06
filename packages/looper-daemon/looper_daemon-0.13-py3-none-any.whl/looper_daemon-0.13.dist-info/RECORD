@@ -1,0 +1,9 @@
+looper/__init__.py,sha256=7Dm-nBCxjiovzjqkWzhNWcbXHvSIa6mUx52kDORrLPM,48
+looper/looper.py,sha256=VQjxmaqYuvkdgG3uxd-y4Io_Z-6comxgwTTvntMnFPc,1345
+looper-daemon/__init__.py,sha256=jGsJ4lpopU0YNC39EXigZU8QBVw1pzyIzLkla1gZxgg,55
+looper-daemon/looper.py,sha256=VQjxmaqYuvkdgG3uxd-y4Io_Z-6comxgwTTvntMnFPc,1345
+looper_daemon-0.13.dist-info/LICENSE,sha256=PazCaKVgc8nXgOiSkBu9452fCXDzNWCP4PYS-IpPw3s,1089
+looper_daemon-0.13.dist-info/METADATA,sha256=csHCc6X9Lx6J23xZrHis6QcU46TKL5p4GrZ3W01HaaE,258
+looper_daemon-0.13.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+looper_daemon-0.13.dist-info/top_level.txt,sha256=_ByhgxyQfkcpA7Pgtl_GCdlpg1CCK56aNaYJsApLQyQ,14
+looper_daemon-0.13.dist-info/RECORD,,
