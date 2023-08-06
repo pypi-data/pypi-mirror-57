@@ -1,0 +1,6 @@
+libkratos-runtime.so,sha256=0Io6RqHoElXU3cI8nlPUWdFiAgPKyJoia2w3g-RFQ2o,16158976
+kratos_runtime/__init__.py,sha256=v7SZb5MlAvaEOd3pRdhz0e7CuNjneeDDSboI_UtkMe4,2113
+kratos_runtime-0.0.4.dist-info/top_level.txt,sha256=CYltmJ6kxzB3l_OlyqDh62qgDtDXtFPnh3MfmAvfHeo,30
+kratos_runtime-0.0.4.dist-info/RECORD,,
+kratos_runtime-0.0.4.dist-info/METADATA,sha256=nQt8_K8pE6rj-jhDXEOYhsicIf7PD8Oc2ws2UovsGGc,2943
+kratos_runtime-0.0.4.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
