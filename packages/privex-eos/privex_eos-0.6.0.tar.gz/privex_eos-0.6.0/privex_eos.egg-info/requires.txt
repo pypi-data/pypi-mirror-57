@@ -1,0 +1,5 @@
+httpx>=0.8.0
+attrs
+privex-helpers>=2.6.0
+privex-coinhandlers
+privex-db>=0.9.1
