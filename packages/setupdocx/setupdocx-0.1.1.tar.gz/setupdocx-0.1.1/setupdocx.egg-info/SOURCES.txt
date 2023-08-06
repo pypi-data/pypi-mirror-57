@@ -1,0 +1,13 @@
+.gitignore
+ArtisticLicense20.html
+MANIFEST.in
+README.md
+licenses-amendments.txt
+setup.cfg
+setup.py
+dummy/__init__.py
+setupdocx.egg-info/PKG-INFO
+setupdocx.egg-info/SOURCES.txt
+setupdocx.egg-info/dependency_links.txt
+setupdocx.egg-info/not-zip-safe
+setupdocx.egg-info/top_level.txt
