@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: padmin
+Version: 0.0.1
+Summary: Project administration tool
+Home-page: https://github.com/dicaso/padmin
+Author: Christophe Van Neste
+Author-email: christophe.vanneste@kaust.edu.sa
+License: MIT
+Description: # padmin
+        
+        Project administration for CVN/dicaso projects.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: documentation

@@ -1,0 +1,10 @@
+README.md
+setup.py
+padmin/__init__.py
+padmin/templates.py
+padmin.egg-info/PKG-INFO
+padmin.egg-info/SOURCES.txt
+padmin.egg-info/dependency_links.txt
+padmin.egg-info/not-zip-safe
+padmin.egg-info/requires.txt
+padmin.egg-info/top_level.txt
