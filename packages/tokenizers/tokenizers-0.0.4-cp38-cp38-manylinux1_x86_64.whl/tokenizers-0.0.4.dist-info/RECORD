@@ -1,0 +1,9 @@
+tokenizers-0.0.4.dist-info/WHEEL,sha256=VEyGcIFAmk_1KbI6gaZGw_mMiT-pdGweASQLX-DzYaY,108
+tokenizers-0.0.4.dist-info/METADATA,sha256=EZlvNWl_9JGe5LFUpiFK9oy63mfVC0HsDe8uECFmJ-Q,2889
+tokenizers-0.0.4.dist-info/top_level.txt,sha256=JcOIHPbSqrQvqcDyFOnNNcee6wJlpDZvyk-BSCeX4QA,11
+tokenizers-0.0.4.dist-info/RECORD,,
+tokenizers/__init__.py,sha256=c_bu3G9lCLx5f1nJ1Clk6h9EvFyrc4reHqjwrZyVsHo,101
+tokenizers/tokenizers.cpython-35m-x86_64-linux-gnu.so,sha256=lDKRprHpbZARp2D1BRl_q1yvk3kkz48FA-Ymu1gGkE8,5091844
+tokenizers/tokenizers.cpython-38-x86_64-linux-gnu.so,sha256=uwtHHV34yfaxDI1d8kGmt-cWwypyHMlk7biTBjf9CoQ,5091841
+tokenizers/tokenizers.cpython-36m-x86_64-linux-gnu.so,sha256=T3fOJb3Es4Nerycv7lsd67Hcxu9LFYNBROPltsKw_rs,5091939
+tokenizers/tokenizers.cpython-37m-x86_64-linux-gnu.so,sha256=Q-gST_tMLJ_bVmF2DSBaADe_146TAMJukEusH7LtUbs,5091847
