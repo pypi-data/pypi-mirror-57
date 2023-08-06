@@ -1,0 +1,17 @@
+dask_gateway/__init__.py,sha256=9wlnm-hsE6sodafcto7SiXoeYMYA25aYLulwrwvQ5pY,346
+dask_gateway/_version.py,sha256=6FCAQdvyFOggGyIcl9lelp7z9Gw1tFTX4f_SGXoeiCo,497
+dask_gateway/auth.py,sha256=Evl_wtaCJP7rgIIsa7015VDUUIBXbpo6xzoW_N0-f2U,5133
+dask_gateway/client.py,sha256=h37IVZ5rP8bmRSK4lmLaFgvY6FOQ17OoeOne9Mm2RQA,38049
+dask_gateway/comm.py,sha256=KB86amZcdvbIQNluX8uKFyoZ98l2UCLycxyQinBhT_k,2931
+dask_gateway/config.py,sha256=-4v1VJ7WwEea16NFJCk7dMRXbgAMxJzeP1q4JTjHYFA,292
+dask_gateway/cookiejar.py,sha256=TbjvJErd4GW4mARyQh6ZmvNU3W0B32DGv1J-jC_OxKY,9659
+dask_gateway/dask_cli.py,sha256=FPtUs_ESczVnKGm6yW-cRLQ79KgvK1MW6G1PsBxAk6c,22092
+dask_gateway/gateway.yaml,sha256=4LpKzOWXgMC-hJRdUII-t8ifZZHJRxi2hCHUzd7-meE,1382
+dask_gateway/options.py,sha256=NR7gLFNuQ-yf1Qo5y_Es8vl4pMjjgEO7gkAtVoV8Fhc,9334
+dask_gateway/utils.py,sha256=Wfvf4FE6Tu0n30ZFbMyjt_WnjDIPjCdRb8ONVA1dsds,254
+dask_gateway-0.6.1.dist-info/LICENSE,sha256=hX4mV__1DsGOagtHPyEbWaNSWNrWaU987eXCtmlkQCE,1492
+dask_gateway-0.6.1.dist-info/METADATA,sha256=rmKZbFj5o7hIA3VEOOGaqjehCUhlu-s4xFT4wkqnVVg,1380
+dask_gateway-0.6.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dask_gateway-0.6.1.dist-info/entry_points.txt,sha256=WjuLv1UTfVqhpRdwCbP6MP-GhQBe3XtVhSjs_X35MJ8,127
+dask_gateway-0.6.1.dist-info/top_level.txt,sha256=rDv-HQxX43Mr8X6_z9jZPST1LPj8oaRMKII6nGjaWhU,13
+dask_gateway-0.6.1.dist-info/RECORD,,
