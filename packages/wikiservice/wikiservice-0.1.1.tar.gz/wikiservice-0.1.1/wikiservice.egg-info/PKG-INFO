@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: wikiservice
+Version: 0.1.1
+Summary: Lightweight library to work with MediaWiki-API
+Home-page: https://github.com/lrlunin/wikiservice
+Author: Leonid Lunin
+Author-email: lunin.leonid@gmail.com
+License: UNKNOWN
+Description: # WikiService
+        Lightweight python library for simple MediaWiki-API requests. 
+        
+        Example of usage
+        ------
+        ```python
+        from wikiservice import APIService
+        s = APIService.WikiAPIService(username='John Doe', password='seceretpass',
+        domain='INC-DOMAIN', api_url='https://wiki-url.org/api.php')
+        
+        s.login()
+        s.createPage(title='Sample page', text='There is a sample text')
+        
+        s.logout()
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

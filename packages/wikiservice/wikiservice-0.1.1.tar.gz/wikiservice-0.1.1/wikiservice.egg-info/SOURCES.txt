@@ -1,0 +1,9 @@
+README.md
+setup.py
+wikiservice/APIService.py
+wikiservice/__init__.py
+wikiservice.egg-info/PKG-INFO
+wikiservice.egg-info/SOURCES.txt
+wikiservice.egg-info/dependency_links.txt
+wikiservice.egg-info/requires.txt
+wikiservice.egg-info/top_level.txt
