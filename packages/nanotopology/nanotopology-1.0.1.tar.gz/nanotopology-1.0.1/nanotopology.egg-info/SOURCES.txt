@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nano_topology/__init__.py
+nano_topology/graph_equivalence.py
+nano_topology/nanosets.py
+nanotopology.egg-info/PKG-INFO
+nanotopology.egg-info/SOURCES.txt
+nanotopology.egg-info/dependency_links.txt
+nanotopology.egg-info/top_level.txt
