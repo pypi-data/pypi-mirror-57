@@ -1,0 +1,4 @@
+[console_scripts]
+copyFromManifest=distributionPackage.copyFromManifest:entrypoint
+makePackage=distributionPackage.makePackage:entrypoint
+
