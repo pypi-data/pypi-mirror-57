@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: anonmail
+Version: 1.2beta
+Summary: anonmail is a service which lets you use and integrate disposable emails for free.
+Home-page: https://github.com/TheSpeedX/anonmail
+Author: TheSpeedX
+Author-email: ggspeedx29@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/TheSpeedX/anonmail/archive/v1.2beta.tar.gz
+Description: UNKNOWN
+Keywords: anonmail,fakemail,tempmail,mailapi,disposable,secure,temporary
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
