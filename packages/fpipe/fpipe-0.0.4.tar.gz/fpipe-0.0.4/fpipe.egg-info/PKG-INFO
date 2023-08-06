@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: fpipe
+Version: 0.0.4
+Summary: Library for working with file-likes as piped streams
+Home-page: https://github.com/vkvam/fpipe
+Author: Vemund Kvam
+Author-email: vemund.kvam@gmail.com
+License: MIT
+Description: =====
+        fpipe
+        =====
+        
+        
+        Add a short description here!
+        
+        
+        Description
+        ===========
+        
+        A longer description of your project goes here...
+        
+        
+        Note
+        ====
+        
+        
+Keywords: pipe file stream
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
