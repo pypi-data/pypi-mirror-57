@@ -1,0 +1,146 @@
+Metadata-Version: 2.1
+Name: color2vec
+Version: 1.0.2
+Summary: Greendeck color to vector package.
+Home-page: UNKNOWN
+Author: chandan mishra
+Author-email: chandan.mishra@greendeck.co
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow (<2.0.0,>=1.8.0)
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: annoy
+Requires-Dist: keras (==2.1.5)
+Requires-Dist: scipy
+
+Color2Vec
+---
+**Right now this package is only for ```greendeck's``` internal use. This will help to get vectors for a color text or RGB value.**
+
+![Greendeck](https://greendeck-cdn.s3.ap-south-1.amazonaws.com/dumps/gd_transparent_blue_bg.png) 
+<!--![Color](https://s3.amazonaws.com/www-inside-design/uploads/2019/08/color_wheel-400x400.png)-->
+### Install from pip
+https://pypi.org/project/color2vec/
+
+```pip install color2vec```
+
+<!--Read details about all default parameters and core functions here in RabbitMQ official website. (https://www.rabbitmq.com)-->
+
+
+### How to use ?
+##### import the library
+```python
+import color2vec
+```
+
+##### import ```Color2Vec``` class
+```python
+from color2vec import Color2Vec
+```
+
+##### initialize ```Color2Vec``` object.
+
+```python
+color2vec = Color2Vec()
+
+```
+
+##### convert RGB to Vector
+```python
+
+# RGB2vec
+print("RGB2vec: \n")
+print(color2vec.RGB2vec([255.0, 0.0, 0.0]))
+```
+##### convert RGB to LAB color space.
+```python
+
+# RGB2LAB
+print("RGB2LAB: \n")
+print(color2vec.RGB2LAB([255.0, 0.0, 0.0]))
+```
+
+##### convert a color string to RGB color space.
+```python
+
+# string2RGB
+print("string2RGB: \n")
+print(color2vec.string2RGB("Greendeck"))
+
+```
+##### convert a color string to vector.
+```python
+
+# string2vec
+print("string2vec: \n")
+print(color2vec.string2vec("Greendeck"))
+
+```
+##### convert a color string to LAB color space.
+```python
+
+# string2LAB
+print("string2LAB: \n")
+print(color2vec.string2LAB("Greendeck"))
+
+```
+##### Build an Annoy index.
+```python
+
+# Annoy Index
+color2vec.buildAnnoy(items, type="string")
+
+'''
+Items is a list datatype. It can contains either list of color string or RGB colors. Type can be `string` or `RGB`
+'''
+
+```
+
+##### Find similar items from an annoy index.
+```python
+
+# Annoy Index
+color2vec.similar(target, build_annoy, k=5, include_distance=True)
+
+'''
+target can be a color string or RGB array, k is the no of similar items you want. Keep include distance `True` if you want distance across all similar items.
+'''
+
+```
+
+##### Find distance between two item.
+```python
+
+# Annoy Index
+color2vec.distance(items, type="string")
+
+
+
+'''
+Length of items array should be two. Type can be `string` or `RGB` based on items type.'''
+
+
+How to build your pip package
+
+* open an account here https://pypi.org/
+
+In the parent directory
+* ```python setup.py sdist bdist_wheel```
+* ```twine upload dist/*```
+
+Update your package
+* ```python setup.py sdist```
+* ```twine upload dist/*```
+
+references
+* https://medium.com/small-things-about-python/lets-talk-about-python-packaging-6d84b81f1bb5
+* https://packaging.python.org/tutorials/packaging-projects/RabbitMQ
+
+# Thank You
+
