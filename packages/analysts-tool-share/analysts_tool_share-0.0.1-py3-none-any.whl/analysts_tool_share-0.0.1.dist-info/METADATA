@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: analysts-tool-share
+Version: 0.0.1
+Summary: Tools for analyzing data, using Python.
+Home-page: https://github.com/james-w-balcomb/analysts-tool-share-python
+Author: James Balcomb
+Author-email: james.w.balcomb+ats@gmail.com
+License: MIT License
+Keywords: data analysis,data processing,data science,data software,data utilities,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Analyst's Tool Share, for Python
+Tools for analyzing data, using Python.
+
+
