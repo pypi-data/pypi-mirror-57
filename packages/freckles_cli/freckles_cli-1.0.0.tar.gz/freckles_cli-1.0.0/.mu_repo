@@ -1,0 +1,10 @@
+repo=../frutils
+repo=../frkl
+repo=../frkl-pkg
+repo=../ting
+repo=../nsbl
+repo=../freckles
+repo=../freckles-adapter-nsbl
+repo=../tempting
+repo=.
+serial=True
