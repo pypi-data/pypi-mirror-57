@@ -1,0 +1,3 @@
+[console_scripts]
+pactor = pactor.cli:main
+
