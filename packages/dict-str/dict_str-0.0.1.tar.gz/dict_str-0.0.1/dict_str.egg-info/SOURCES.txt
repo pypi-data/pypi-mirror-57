@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dict_str/__init__.py
+dict_str/str_dict_func.py
+dict_str.egg-info/PKG-INFO
+dict_str.egg-info/SOURCES.txt
+dict_str.egg-info/dependency_links.txt
+dict_str.egg-info/top_level.txt
