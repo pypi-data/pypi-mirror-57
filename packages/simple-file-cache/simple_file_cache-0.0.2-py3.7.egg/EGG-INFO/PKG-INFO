@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: simple-file-cache
+Version: 0.0.2
+Summary: Simple File Cache based on pickle or json
+Home-page: https://github.com/easyforgood/simple_file_cache
+Author: Sip
+Author-email: siplexy.pi@outlook.com
+License: UNKNOWN
+Description: # simple_file_cache
+        Python Simple cache based on pickle or json file
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
