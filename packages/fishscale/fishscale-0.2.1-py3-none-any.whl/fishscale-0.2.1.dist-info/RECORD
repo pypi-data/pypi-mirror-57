@@ -1,0 +1,13 @@
+fishscale/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fishscale/__version__.py,sha256=OQ6vzP4PBHkLUv1Tot4jDTf4ln2qZNhQYYOXLJxQ8H8,63
+fishscale/combine.py,sha256=-a6cdhyXKtxRSQZB_b62VeDgmobyzsJ1UM-_TEf-5cM,1374
+fishscale/move_non.py,sha256=oKQrWwwHMQ8wOxmR6Q-rPNcARRBA7iOsJm7_9RiCA9g,424
+fishscale/remove_non.py,sha256=8up6y3b60kXKr0-L3o5i3kCv-LsEIIdM6tyzjECzAXo,1071
+fishscale/reverse.py,sha256=kgN9JJlWDWGDH-XhfC0kPZia7kK145YV28KQn4fXtZk,888
+fishscale/split.py,sha256=-K7nTt0guQ6cLbjrwM9ZM24lDeOPUQIewJyUhq0Wn-Y,1643
+fishscale-0.2.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+fishscale-0.2.1.dist-info/METADATA,sha256=diu9bA0yfjOETI4tMhjrqRj0SPZMFkhl3e-mLU7W14I,1010
+fishscale-0.2.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fishscale-0.2.1.dist-info/entry_points.txt,sha256=za_ryCvzE33RXPDsxSw6WUxtsH0NOjGwcGrhXDHbZ8w,157
+fishscale-0.2.1.dist-info/top_level.txt,sha256=X5g_ggH8qqtB6m0r8D4xFBHhFxcb3BqQ0BmM2DvyQBw,10
+fishscale-0.2.1.dist-info/RECORD,,
