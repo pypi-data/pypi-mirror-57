@@ -1,0 +1,11 @@
+facebooklogger/__init__.py,sha256=5dS-LwHLtDTHM6T0yYcZ21V6FqkyjiauMiS8RPPwjKE,74
+facebooklogger/__main__.py,sha256=0BMp52DDK45ycgaxf548TeKqddtsZne2EJEGleY7cKc,81
+facebooklogger/_version.py,sha256=i1LGZE8DQDVa4CHroC5gUKHr93QEzqvYBCRA8FAPE9M,18
+facebooklogger/getuserid.py,sha256=YgWI3nVWjjZ2faxAzFUcJPJE7pwZFxfjr72ZCrwTqcU,2036
+facebooklogger/logger.py,sha256=LruostNItLUV9cMegmBcGyvAdkZeIF-0plLkEglU6ww,1837
+facebooklogger/settings.py,sha256=JjcS_8DdHXVwVC8VFvT65d5Nb0xfGKTDVfKwhyvQjSM,166
+facebooklogger-0.2.4.dist-info/LICENSE,sha256=B1Paxnj5hAacamOwyQk3xnihkbpghjlPbwNv1-7ENKs,1069
+facebooklogger-0.2.4.dist-info/METADATA,sha256=gNn77WWFmnBophADT4dkoAGcjC0BEL5zrAgU7qFl9fA,2643
+facebooklogger-0.2.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+facebooklogger-0.2.4.dist-info/top_level.txt,sha256=HTp2jjDgs4jwfGP7wEaMAbSTdd-ubuBEkCReb4oJakQ,15
+facebooklogger-0.2.4.dist-info/RECORD,,
