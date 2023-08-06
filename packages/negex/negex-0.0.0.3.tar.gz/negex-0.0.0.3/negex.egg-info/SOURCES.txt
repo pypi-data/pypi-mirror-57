@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+negex/__init__.py
+negex/main.py
+negex/negex.py
+negex.egg-info/PKG-INFO
+negex.egg-info/SOURCES.txt
+negex.egg-info/dependency_links.txt
+negex.egg-info/entry_points.txt
+negex.egg-info/not-zip-safe
+negex.egg-info/top_level.txt
