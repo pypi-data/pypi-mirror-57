@@ -1,0 +1,30 @@
+#! version:1 language:lua file_type:.lua #
+#
+# DEFAULT Template file for Lua
+#
+{
+    "config": {
+        "gap": "\n",
+        "indent": " ",
+        "useHeader" : true
+    },
+
+    "header": { "content" : "-- $name statemachine\n" },
+    "footer": { "content" : "" },
+
+    "states": {
+        "name": "",
+        "body": "",
+        "item": ""
+    },
+
+    "state": {
+        "name": "",
+        "body": ""
+    },
+
+    "transitions": {
+        "body": "function $name(s)\n$items\n return s\nend\n",
+        "item": " if s == \"$name\" then return \"$value\" end \n"
+    }
+}
