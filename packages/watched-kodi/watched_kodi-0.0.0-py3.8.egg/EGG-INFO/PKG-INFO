@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: watched-kodi
+Version: 0.0.0
+Summary: WATCHED.com Kodi SDK
+Home-page: https://github.com/watchedcom/sdk-kodi
+Author: WATCHED
+Author-email: dev@watched.com
+License: UNKNOWN
+Description: # WATCHED.com Kodi SDK
+        
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
