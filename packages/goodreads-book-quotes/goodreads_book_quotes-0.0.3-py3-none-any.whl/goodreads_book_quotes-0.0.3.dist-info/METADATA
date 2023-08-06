@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: goodreads-book-quotes
+Version: 0.0.3
+Summary: Given book name, this library will find quotes from goodreads.
+Home-page: https://github.com/gaoyunzhi/goodreads_quotes
+Author: Yunzhi Gao
+Author-email: gaoyunzhi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: bs4
+
+# goodreads_quotes
+
+Given book name, this library will find quotes from goodreads
+
+Will add more detail if more than 10 people star the repo.
+
+## how to install
+
+`pip3 install goodreads_quotes`
+
