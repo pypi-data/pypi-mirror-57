@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: QualitativeModelFitting
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/CiaranWelsh/QualitativeModelFitting
+Author: Ciaran Welsh
+Author-email: ciaran.welsh@newcastle.ac.uk
+License: MIT
+Description: package for unit testing sbml models
+Keywords: SBML,antimony,tellurium,qualitative modelling
+Platform: UNKNOWN

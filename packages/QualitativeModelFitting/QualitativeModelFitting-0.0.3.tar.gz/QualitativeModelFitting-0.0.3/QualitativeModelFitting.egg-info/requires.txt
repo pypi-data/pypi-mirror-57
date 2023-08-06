@@ -1,0 +1,6 @@
+tellurium
+pycotools3
+pandas
+numpy
+lark-parser
+sphinx_rtd_theme>=0.3.1
