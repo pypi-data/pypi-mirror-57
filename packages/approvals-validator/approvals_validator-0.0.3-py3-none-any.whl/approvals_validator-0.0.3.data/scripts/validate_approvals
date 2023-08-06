@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+
+proj_dir=$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")
+
+if [ ! -d "${proj_dir}/env/bin" ]; then
+    "${proj_dir}/bin/setup" --silent prod
+fi
+
+source "${proj_dir}/env/bin/activate"
+
+python "${proj_dir}/approval_validator/cli.py" $@
