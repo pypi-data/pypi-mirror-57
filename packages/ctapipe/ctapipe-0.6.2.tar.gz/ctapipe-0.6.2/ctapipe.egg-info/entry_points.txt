@@ -1,0 +1,9 @@
+[console_scripts]
+ctapipe-camdemo = ctapipe.tools.camdemo:main
+ctapipe-chargeres-extract = ctapipe.tools.extract_charge_resolution:main
+ctapipe-chargeres-plot = ctapipe.tools.plot_charge_resolution:main
+ctapipe-dump-instrument = ctapipe.tools.dump_instrument:main
+ctapipe-dump-triggers = ctapipe.tools.dump_triggers:main
+ctapipe-event-viewer = ctapipe.tools.bokeh.file_viewer:main
+ctapipe-info = ctapipe.tools.info:main
+
