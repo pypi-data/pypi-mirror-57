@@ -1,0 +1,3 @@
+[console_scripts]
+BotDr = BotCrypt.BotCrypt:super_main
+
