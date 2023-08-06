@@ -1,0 +1,10 @@
+README.md
+setup.py
+djspa/__init__.py
+djspa/exceptions.py
+djspa/urls.py
+djspa/views.py
+djspa.egg-info/PKG-INFO
+djspa.egg-info/SOURCES.txt
+djspa.egg-info/dependency_links.txt
+djspa.egg-info/top_level.txt
