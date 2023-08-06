@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: portfolio-report-SMACDOUGALL-BOT
+Version: 0.0.2
+Summary: Generates a CSV of portfilio holdings and their performance
+Home-page: UNKNOWN
+Author: Steve MacDougall
+Author-email: sgmacdougall@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pytest (>=4.3.1pylint>=2.3.1six>=1.12requests>=2requests-mock>=1)
+
+UNKNOWN
+
+
