@@ -1,0 +1,26 @@
+autodiffcc/ADmath.py,sha256=AKMh6EGpNLpW4N-jJadu6dAPsXnAR6dRSWjBLkBfEgY,8299
+autodiffcc/Matt's Tests.py,sha256=Vo5jQ9GQRI-w8hR-NK1VhQYE3QJ_YWahkWJcelsa5k8,1113
+autodiffcc/__init__.py,sha256=aqFPmFo6bbbR5n69TOjd2YHA3W4PkzxbDTwb7QuMV8Y,104
+autodiffcc/autodiffcc.py,sha256=aDgvptmU35JqPY_FNGuknGjd_ivB5bnilMN9NGGmvVU,7580
+autodiffcc/core.py,sha256=BcpazlcFV7fLKciMDdc_uTrsmnqB8HICz8RcPRGb0as,14107
+autodiffcc/root.py,sha256=32t_VSBc35JhtfBTtyuVWwwNKX1K5gVEQCj1jWDu9A8,3021
+autodiffcc/roottemp.py,sha256=u3V8bLwKEcSFc1zzhXYKqx9jC5N-DViJiChBJt2FHmQ,1977
+autodiffcc/solver.py,sha256=mBUDdGyRSRVC0lxb1wIkCJUZyFP_y0Y9fzJeYT6qTXg,1305
+autodiffcc/testmf.py,sha256=HWxPCJPynchSJ6TKeR2YjnySnHd_-MGguta6NRzykIg,87
+autodiffcc/Equation/__init__.py,sha256=4FcZO_L8Azvc2azrs4AXF53VgwP7BUTdaOSG7Ui29n8,3254
+autodiffcc/Equation/_info.py,sha256=sulHAJwCFHzNtSQXO3mTAvLVDgqr0upjlZv1XpGazbs,1062
+autodiffcc/Equation/core.py,sha256=Alnt8NFt9Wkq3MHf6COh9CB6ZjIubssYXCUo0tmYHWg,28874
+autodiffcc/Equation/equation_base.py,sha256=RKEef63kX-4Jm3RYvWJLeNQEVQwQ7IEykKp40KZqOmc,4806
+autodiffcc/Equation/equation_scipy.py,sha256=NnuzujQ8WOnTq1Or1s8VHLuIPbMQmDxrC1G-C-Fwf1I,1557
+autodiffcc/Equation/similar.py,sha256=k4etwl0J2eOkMIXgRsiTzgHLdFiYSgMIGQHfgRqJ_NE,2580
+autodiffcc/Equation/util.py,sha256=chIuqyTj6YB_hRNwLRXqtFcG4BWUFVhaQD_QPP-SzL0,1175
+autodiffcc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autodiffcc/tests/test_ADmath.py,sha256=iV4VBhiKgJzECcnTYDLq2XsutAY9U-3MW8P44gvKqJE,6573
+autodiffcc/tests/test_core.py,sha256=bbIjkFyFrAVx_vc9_Fe9tnDHHZ1SUA84ubJ1VbKUMGY,7893
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ADmath.py,sha256=dZmz6xAlEAxLS98Ccl0WaBZZdJ3JmKswSF3AI7rPLvw,5884
+tests/test_core.py,sha256=aJuZVKv0R_QwGb-cpP5mV-XDlG8CiExLKU_a8KN_7KM,7619
+AutoDiffCC-0.0.9.dist-info/METADATA,sha256=JEc9WnwTf-nnWwZFe4xB_AgBGU4k9iDpg3wg_ZCD1mQ,879
+AutoDiffCC-0.0.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+AutoDiffCC-0.0.9.dist-info/top_level.txt,sha256=1uCFjG0Su6cnYWFDtOgTRarVE1kgS2iuB3qFfXo5q-M,17
+AutoDiffCC-0.0.9.dist-info/RECORD,,
