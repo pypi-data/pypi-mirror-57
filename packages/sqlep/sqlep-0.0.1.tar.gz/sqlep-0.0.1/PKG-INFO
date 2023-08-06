@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sqlep
+Version: 0.0.1
+Summary: a tool for testing sql queries
+Home-page: https://github.com/cianru/sqlep
+Author: cian dream team
+Author-email: etl@cian.ru
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
