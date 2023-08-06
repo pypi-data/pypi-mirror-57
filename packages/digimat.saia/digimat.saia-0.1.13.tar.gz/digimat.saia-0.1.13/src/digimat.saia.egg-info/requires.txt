@@ -1,0 +1,6 @@
+future
+netifaces
+ipaddress
+ptable
+digimat.jobs
+setuptools
