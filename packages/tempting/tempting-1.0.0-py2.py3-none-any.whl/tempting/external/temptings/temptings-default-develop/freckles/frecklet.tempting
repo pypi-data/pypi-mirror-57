@@ -1,0 +1,24 @@
+---
+doc:
+  short_help: A minimal (single task) frecklet.
+
+args:
+  frecklet_name:
+    doc:
+      short_help: The name of the frecklet.
+    type: string
+    required: true
+  frecklet_vars:
+    doc:
+      short_help: The frecklet vars.
+    type: dict
+    keyschema:
+      type: string
+    empty: true
+    required: false
+
+---
+frecklets:
+  - {{:: frecklet_name ::}}{%:: if frecklet_vars is defined and frecklet_vars ::%}:
+{{:: frecklet_vars | to_yaml(true, 6) ::}}
+{%:: endif ::%}

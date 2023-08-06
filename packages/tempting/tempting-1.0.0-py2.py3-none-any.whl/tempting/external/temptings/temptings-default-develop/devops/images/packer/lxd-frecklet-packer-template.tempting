@@ -1,0 +1,48 @@
+---
+doc:
+  short_help: Packer template to create an LXD image from a frecklet.
+
+args:
+  image_name:
+    doc:
+      short_help: The name of the LXD image to create.
+    type: string
+    required: true
+  frecklet_path:
+    doc:
+      short_help: The path to the frecklet file.
+    type: string
+    required: true
+  source_image:
+    doc:
+      short_help: The name of the source LXD image.
+    type: string
+    required: false
+    default: "ubuntu:18.04"
+  freckles_extra_args:
+    doc:
+      short_help: Extra base args for the freckles run.
+    type: string
+    required: false
+---
+"""
+{
+  "builders": [
+    {
+        "type": "lxd",
+        "name": "{{:: image_name | slugify ::}}",
+        "image": "{{:: source_image ::}}",
+        "output_image": "{{:: image_name ::}}",
+        "publish_properties": {
+           "description": "built with freckles."
+        }
+    }
+  ],
+    "provisioners": [
+        {
+            "type": "shell-local",
+            "command": "freckles -c callback=default::full {%:: if freckles_extra_args ::%}{{:: freckles_extra_args ::}}{%:: endif ::%} -t lxd::packer-{{:: image_name | slugify ::}} {{:: frecklet_path ::}}"
+        }
+    ]
+}
+"""

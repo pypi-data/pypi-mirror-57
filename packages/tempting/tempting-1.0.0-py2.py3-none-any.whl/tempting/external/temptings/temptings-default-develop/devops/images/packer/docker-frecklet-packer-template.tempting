@@ -1,0 +1,49 @@
+---
+doc:
+  short_help: Packer template to create a Docker image from a frecklet.
+
+args:
+  image_name:
+    doc:
+      short_help: The name of the Docker image to create.
+    type: string
+    required: true
+  frecklet_path:
+    doc:
+      short_help: The path to the frecklet file.
+    type: string
+    required: true
+  source_image:
+    doc:
+      short_help: The name of the source Docker image.
+    type: string
+    required: false
+    default: "ubuntu"
+  freckles_extra_args:
+    doc:
+      short_help: Extra base args for the freckles run.
+    type: string
+    required: false
+---
+{
+  "builders": [
+    {
+      "type": "docker",
+        "image": "{{:: source_image ::}}",
+        "commit": true,
+        "run_command": ["--name", "packer-{{:: image_name | slugify ::}}", "-d", "-i", "-t", "--entrypoint=/bin/sh", "--", "{{:: source_image ::}}"]
+    }
+  ],
+    "provisioners": [
+        {
+            "type": "shell-local",
+            "command": "freckles -c callback=default::full {%:: if freckles_extra_args ::%}{{:: freckles_extra_args ::}}{%:: endif ::%} -t docker::packer-{{:: image_name | slugify ::}} {{:: frecklet_path ::}}"
+        }
+    ],
+  "post-processors": [
+    {
+      "type": "docker-tag",
+      "repository": "{{:: image_name ::}}"
+    }
+  ]
+}
