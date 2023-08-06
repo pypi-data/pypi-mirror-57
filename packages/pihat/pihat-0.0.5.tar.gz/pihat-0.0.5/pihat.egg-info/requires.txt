@@ -1,0 +1,4 @@
+fdt
+pyyaml
+schema
+setuptools
