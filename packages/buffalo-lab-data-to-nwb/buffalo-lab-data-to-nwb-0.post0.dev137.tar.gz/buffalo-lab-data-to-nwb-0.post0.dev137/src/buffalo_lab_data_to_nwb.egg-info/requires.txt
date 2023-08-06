@@ -1,0 +1,5 @@
+pynwb
+scipy
+tqdm
+natsort
+colorama
