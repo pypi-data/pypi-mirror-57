@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: aihems-pkg
+Version: 0.0.1
+Summary: AIHEMS
+Home-page: https://github.com/byungjin0826/ai-hems-new
+Author: byungjin0826
+Author-email: byungjin0826@gmail.com
+License: UNKNOWN
+Description: # AIHEMS Example Package
+        
+        This is a AIHEMS example package.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
