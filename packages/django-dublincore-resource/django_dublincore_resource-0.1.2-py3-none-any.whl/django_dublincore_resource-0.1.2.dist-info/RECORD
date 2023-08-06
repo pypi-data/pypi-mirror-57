@@ -1,0 +1,17 @@
+LICENSE,sha256=NPLv-xEuqT2FwoSdfrUwcI9SIDTVTEgdXBsfRJJUplQ,1075
+dublincore_resource/__init__.py,sha256=EakzEtggdhe3rb-d81vTHQJ_ZTCTDcNqFGefcWUwB8E,73
+dublincore_resource/admin.py,sha256=XMTmemM9HxejTbpb51tq_uHUhbx5ABZ2hdrUoPr6qHE,1487
+dublincore_resource/apps.py,sha256=pR1y4ajiLDVgIi4r8nOOLqRNsHuOHCHlscWOLMR01yc,154
+dublincore_resource/migrations/0001_initial.py,sha256=ye3sGVELKOHVTI_u0N5mdP8hv426dAzOhWT4wpVRWVM,5410
+dublincore_resource/migrations/0002_auto_20191211_0113.py,sha256=kGH5fCEQolgefOu51vjCHdeC2deqJ7Ps3bOp6BmulPg,804
+dublincore_resource/migrations/0003_auto_20191211_1449.py,sha256=uFHX_xQoD6-DA7HOI9hHxgb4WXWCp58-Vqv7eGPDVxg,2397
+dublincore_resource/migrations/0004_auto_20191211_1917.py,sha256=IRSg567mUPlFefdktRoA2H6aAuSGxcBweh5AtRJv9sg,992
+dublincore_resource/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dublincore_resource/models.py,sha256=1ZkklkkdcM1KhaTk0qe4-I2rGNaijsVYe4OyH3omdyc,7401
+dublincore_resource/settings.py,sha256=vFtCMRrcGciDEZH0bV0h7e3V65UwkdPhI0gc5140cGA,801
+dublincore_resource/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+dublincore_resource/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_dublincore_resource-0.1.2.dist-info/LICENSE,sha256=NPLv-xEuqT2FwoSdfrUwcI9SIDTVTEgdXBsfRJJUplQ,1075
+django_dublincore_resource-0.1.2.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+django_dublincore_resource-0.1.2.dist-info/METADATA,sha256=-WRO-hWElDc_ysbw8DT5ZHvy4SABGQpO-kTrXrtRF4o,3251
+django_dublincore_resource-0.1.2.dist-info/RECORD,,
