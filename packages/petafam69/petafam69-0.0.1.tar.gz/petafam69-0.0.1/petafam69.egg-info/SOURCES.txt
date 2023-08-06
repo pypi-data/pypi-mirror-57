@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+TextFinder/TextFinder.py
+TextFinder/__init__.py
+petafam69.egg-info/PKG-INFO
+petafam69.egg-info/SOURCES.txt
+petafam69.egg-info/dependency_links.txt
+petafam69.egg-info/top_level.txt
