@@ -1,0 +1,12 @@
+README.md
+setup.py
+superftp/__init__.py
+superftp/__main__.py
+superftp/blockmap.py
+superftp/ftp_file_download_manager.py
+superftp/superftp.py
+superftp.egg-info/PKG-INFO
+superftp.egg-info/SOURCES.txt
+superftp.egg-info/dependency_links.txt
+superftp.egg-info/entry_points.txt
+superftp.egg-info/top_level.txt
