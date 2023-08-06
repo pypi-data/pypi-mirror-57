@@ -1,0 +1,15 @@
+awesomediff/__init__.py,sha256=3l2VBp7Fda97quG4FMcRCzkY8MeLXEETC644XPGDy9w,692
+awesomediff/core.py,sha256=jY04KBnGNBKC5cVXfQT2TN9J_mprgMrHITy-WeC30bI,12919
+awesomediff/func.py,sha256=8CGnntYZNIFG7huOSc-SfWkmC6Gqdgm0wsPQGOKDd80,8050
+awesomediff/solvers.py,sha256=rVOhpAfwo_ohM2DS0KppgiFgq2w2OmzUfhre3PuMwuA,2110
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_evaluate.py,sha256=akHO73pdsQc7W_bYy31DQFUcuM4T7-FW22Obm8O7bso,4462
+tests/test_function_methods.py,sha256=ogG_x29Gy_eM4lgTNQQY3IO3i1Cp6uWAwMmDJsBlttk,6211
+tests/test_functions.py,sha256=NBMi4nC87k9RKpvaXHX1qVHX7-5J3Bshs5GGLZ3Qyhk,3226
+tests/test_solvers.py,sha256=Gf4zCfyXCOEVG547xFECA4-_qGAfVUKLzbq3OIAWp-8,1131
+tests/test_variable_methods.py,sha256=4bx_1qvftHfO5998hr8lzCq2yGn1hqoWwWU_TFHwBiI,2744
+awesomediff_test-1.0.0.dist-info/LICENSE.txt,sha256=-cTHe6o4KABO5UuKTy2y6I7USmI3pJOWW_VR-sD8ti0,1023
+awesomediff_test-1.0.0.dist-info/METADATA,sha256=Lzx5B9zuRuZ2yIanjG86R2SyEQvUo533u3XRsgMxMwg,1827
+awesomediff_test-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+awesomediff_test-1.0.0.dist-info/top_level.txt,sha256=z5kwtW_XDbVXPr3lkHVBTL4rrTsqH2LsxirGUC2pHPo,18
+awesomediff_test-1.0.0.dist-info/RECORD,,
