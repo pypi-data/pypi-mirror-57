@@ -1,0 +1,11 @@
+jsonnet
+torch
+transformers
+torchvision
+opencv_python
+av
+pandas
+ray
+modin[ray]
+tqdm
+loguru
