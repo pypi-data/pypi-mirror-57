@@ -1,0 +1,9 @@
+vin_parser/__init__.py,sha256=WnW4u72fx8-raxM-mBXeC8TZVosRHTI5OMPK2VY5Sik,315
+vin_parser/core.py,sha256=28msubr6Lqv30KwnI2qc1DdqvBw3w5Cq54RNzASTgTA,11498
+vin_parser/nhtsa.py,sha256=qTM6wPN0vzI4d3cSH1S0OjTpYuHGlhF5ZMvFJSObRAA,507
+vin_parser/data/wmi.csv,sha256=K6z61-3K3Yrn9MYC_knQTPtVF5sCV2KjzbWj025i4LI,11350
+vin_parser-0.0.1.dist-info/LICENCE.md,sha256=wn0YyiZf5QDnZ17IyX61gKCffxvuswuKPJ1lop_EIqs,1081
+vin_parser-0.0.1.dist-info/METADATA,sha256=fXiSoJJiKPZ0xPn8Y1fJn-XFxRL7llu9l92CcBUnfxQ,2823
+vin_parser-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+vin_parser-0.0.1.dist-info/top_level.txt,sha256=BCJvOcpTcwS3maTMgKzYHgzZvrbhd2u9kdb22zU2yNA,11
+vin_parser-0.0.1.dist-info/RECORD,,
