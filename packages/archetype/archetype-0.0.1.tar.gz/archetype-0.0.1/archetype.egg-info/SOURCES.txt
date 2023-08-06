@@ -1,0 +1,5 @@
+setup.py
+archetype.egg-info/PKG-INFO
+archetype.egg-info/SOURCES.txt
+archetype.egg-info/dependency_links.txt
+archetype.egg-info/top_level.txt
