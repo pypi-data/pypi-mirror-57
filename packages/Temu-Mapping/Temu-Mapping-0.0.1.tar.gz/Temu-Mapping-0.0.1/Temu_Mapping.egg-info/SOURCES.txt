@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+Mapping/__init__.py
+Temu_Mapping.egg-info/PKG-INFO
+Temu_Mapping.egg-info/SOURCES.txt
+Temu_Mapping.egg-info/dependency_links.txt
+Temu_Mapping.egg-info/top_level.txt
