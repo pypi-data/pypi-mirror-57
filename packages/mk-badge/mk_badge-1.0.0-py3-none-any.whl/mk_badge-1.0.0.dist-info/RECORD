@@ -1,0 +1,9 @@
+mk_badge/VERSION,sha256=WYVJhIUxBN9cNT4vaBoV_HkkdC-aLkaMKa8kjc5FzgM,6
+mk_badge/__init__.py,sha256=HRt-SQRlQ7A6nSOsXOCYHqqV-UMH3B5XqFoVyMzYoNU,8705
+mk_badge/main.py,sha256=ak6FQKICPcvrYUT9X4hU-K8CkaX-5_E_haKctzpBLDE,4319
+mk_badge-1.0.0.dist-info/LICENSE,sha256=12k2zC0qmATnicqyoRVDo5b24gzIvykH_BqOsQQkzD0,35090
+mk_badge-1.0.0.dist-info/METADATA,sha256=_Mlp5_rdWRaBfdgcXYMlPFwavdNPaMN7yoJf7gQGku8,1564
+mk_badge-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mk_badge-1.0.0.dist-info/entry_points.txt,sha256=FsqwYlio3ckSVWxIJVqA0x0qtKcf8nSKfAmlPvH6wso,49
+mk_badge-1.0.0.dist-info/top_level.txt,sha256=jyeluDaEPIYZWEt7V5YYrBBDjd6Q7yq8pzHxGMZXFGQ,9
+mk_badge-1.0.0.dist-info/RECORD,,
