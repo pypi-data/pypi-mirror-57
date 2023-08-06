@@ -1,0 +1,16 @@
+nnest/__init__.py,sha256=2EtIMApJHC7RgLNIOrea3wFXvnhof-HHerVkRJEi3hs,96
+nnest/mcmc.py,sha256=Cnl7AkKk5B_A-9lzn3fhnDiLA-ahUNM6wykwDy00V_g,6289
+nnest/nested.py,sha256=tArhyKQ9NdEbdz7y4KGDapRro39eIYLMTcdofn8-8Yw,14658
+nnest/networks.py,sha256=V_FNLVRWousaPxQwewSLAG3RO-eMGi3bSeSIleUV9Fo,11697
+nnest/sampler.py,sha256=eFkMtyLVAyx6p44yCGjZY7ZDCUdR1x2JZ6DZZn6bbBM,5635
+nnest/trainer.py,sha256=opw3R_xvLavacShY2nDzrB9q-MB_Q2SxjIvcO3Ax9PE,19483
+nnest/distributions/__init__.py,sha256=amMqOGqPkV6xoiaCGG--IlXmqchA4eeIrXJbzDmYOic,49
+nnest/distributions/generalised_normal.py,sha256=lKVeXCCuL3RWOigwLqa-7OOqMFgU-CKXo4_GIBH6TpQ,2870
+nnest/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nnest/utils/evaluation.py,sha256=J3k_vOZcvQ5Dgu-7zCmXob1truiBkr6FXfzXLV36Ww0,2391
+nnest/utils/logger.py,sha256=LMT250TDxw4Kqthsz7_vUAzBO_MZA3TkeDQD6jEVmBQ,2056
+nnest-0.2.0.dist-info/LICENSE,sha256=r7EUJuCdpAoa5Pj6F93Ma2pS0U3wTCm8W80G64cwYk0,1057
+nnest-0.2.0.dist-info/METADATA,sha256=LX4mt8carNcvHQI8kK1O-x6ftxmmTYkbsjnLrnipalg,545
+nnest-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nnest-0.2.0.dist-info/top_level.txt,sha256=J_bOkR-VJEKCsGXPc5ZgVgGUXf24_3CWeYg6o_jPWH8,6
+nnest-0.2.0.dist-info/RECORD,,

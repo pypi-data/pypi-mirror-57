@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nnest
+Version: 0.2.0
+Summary: Neural network nested sampling
+Home-page: https://github.com/adammoss/nnest/
+Author: Adam Moss
+Author-email: adam.moss@nottingham.ac.uk
+Maintainer: Adam Moss
+Maintainer-email: adam.moss@nottingham.ac.uk
+License: MIT
+Platform: UNKNOWN
+Provides: nnest
+Requires-Dist: torch (>=1.3.1)
+Requires-Dist: tensorboard (>=1.14)
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: scikitlearn
+Requires-Dist: tqdm
+Requires-Dist: pillow
+
+UNKNOWN
+
+
