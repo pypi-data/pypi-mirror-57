@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+prina/__init__.py
+prina/utils.py
+prina/utils_test.py
+prina.egg-info/PKG-INFO
+prina.egg-info/SOURCES.txt
+prina.egg-info/dependency_links.txt
+prina.egg-info/requires.txt
+prina.egg-info/top_level.txt
+prina.egg-info/zip-safe
