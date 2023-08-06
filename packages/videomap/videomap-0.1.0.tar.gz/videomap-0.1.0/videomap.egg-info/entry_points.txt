@@ -1,0 +1,3 @@
+[console_scripts]
+videomap = videomap.cli:cli
+
