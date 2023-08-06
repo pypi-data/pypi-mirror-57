@@ -1,0 +1,20 @@
+include *.py
+include *.rst
+include *.txt
+
+include .coveragerc
+exclude .coveragerc
+
+include buildout.cfg
+exclude buildout.cfg
+
+include pytest.ini
+exclude pytest.ini
+
+include tox.ini
+exclude tox.ini
+
+recursive-include doc *.py
+recursive-include doc *.txt
+recursive-include src *.css
+recursive-include src *.js
