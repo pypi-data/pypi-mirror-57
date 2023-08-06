@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+vin_parser/__init__.py
+vin_parser/core.py
+vin_parser/nhtsa.py
+vin_parser.egg-info/PKG-INFO
+vin_parser.egg-info/SOURCES.txt
+vin_parser.egg-info/dependency_links.txt
+vin_parser.egg-info/requires.txt
+vin_parser.egg-info/top_level.txt
+vin_parser/data/wmi.csv
