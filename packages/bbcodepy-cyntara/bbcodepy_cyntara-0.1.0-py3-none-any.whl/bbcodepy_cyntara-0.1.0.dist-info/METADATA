@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bbcodepy-cyntara
+Version: 0.1.0
+Summary: Python Library for rendering BBCode.
+Home-page: https://github.com/vishnevskiy/bbcodepy
+Author: Stanislav Vishnevskiy
+Author-email: vishnevskiy@gmail.com
+License: MIT
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+Python Library for rendering BBCode.
+
+
