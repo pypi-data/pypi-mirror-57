@@ -1,0 +1,21 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* chore: add tqdm to test requirements
+* docs: update algorithm description
+* fix+test: throws exception on zero size array + test for it
+* fix: only assign new stack location if FOREGROUND seen
+* refactor: reduce code duplication
+* docs: adjust documentation to comport with new scanline algorithm
+* perf: reduce usage of stack
+* fix+perf: scanline version working
+* wip: scanline algorithm
+* fix: rename requirements\_test.py -> requirements\_test.txt
+* fix: add support for floating types
+* fixdocs: image display broken
+* feat: working fill\_voids
+* docs: describe algorithm and potential improvements
+* Initial commit
