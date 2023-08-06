@@ -1,0 +1,8 @@
+rotowire_client/__init__.py,sha256=yMa5hrgB-zG6HWWGXrQLtRdP9VRa2PU8WZxqXTgtewc,171
+rotowire_client/default_http_client.py,sha256=q06IAriX1bi9Kz2uAXneTzywlDx2lUGR8Zwh0cuDXfg,505
+rotowire_client/manual_tests.py,sha256=_rVCQGXr1CpgmgKLF5MOl0SoyhtipUV84NnCbqJXEAo,434
+rotowire_client/roto_wire_client.py,sha256=pqE7mVMAgzad1MwZfq9hLhng5AGBl_dIpoGXmLIDUKI,2803
+rotowire_client-0.4.dist-info/METADATA,sha256=wsHGVpPT9EEtHjrdyaKxUoJUK31j5kPB19apG4S-Y5o,469
+rotowire_client-0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+rotowire_client-0.4.dist-info/top_level.txt,sha256=FXT2639kTl8sIqWMpqWsJZpeuCqIS-cu5aV4W11CSSs,16
+rotowire_client-0.4.dist-info/RECORD,,
