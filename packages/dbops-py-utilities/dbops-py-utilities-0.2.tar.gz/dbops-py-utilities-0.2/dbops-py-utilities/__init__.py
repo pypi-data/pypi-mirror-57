@@ -1,0 +1,1 @@
+from dbops-py-utilities.webapps.django.middleware.statsd-exporter import StatsdMetricsMiddleware
