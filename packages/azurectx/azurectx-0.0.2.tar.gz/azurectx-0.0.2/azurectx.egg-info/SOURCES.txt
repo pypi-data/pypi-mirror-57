@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+azurectx.egg-info/PKG-INFO
+azurectx.egg-info/SOURCES.txt
+azurectx.egg-info/dependency_links.txt
+azurectx.egg-info/requires.txt
+azurectx.egg-info/top_level.txt
+scripts/.azurectx.swp
+scripts/azurectx

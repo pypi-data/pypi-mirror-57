@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+import sys
+import argparse
+import shutil
+import logging
+import subprocess
+import json
+from operator import itemgetter
+from iterfzf import iterfzf
+
+
+def parse_args(subscriptions):
+    parser = argparse.ArgumentParser(
+        description='Switch between Azure subscriptions')
+    parser.add_argument('-l',
+                        '--list',
+                        help='Just list subscriptions',
+                        action='store_true')
+    subscription_names = [s['name'] for s in subscriptions]
+    parser.add_argument('-s',
+                        '--set',
+                        help='Set the subscription',
+                        choices=subscription_names)
+
+    return parser.parse_args()
+
+
+def find_az(bin_name='az'):
+    path = shutil.which(bin_name)
+    if not path:
+        logging.error("Can't find '%s' in your path. 😢" % bin_name)
+        sys.exit(2)
+    return path
+
+
+def list_subscriptions(az_bin):
+    output = subprocess.check_output([az_bin, 'account', 'list'])
+    return sorted(json.loads(output), key=itemgetter('name'))
+
+
+def iter_subscriptions(subscriptions):
+    for item in subscriptions:
+        yield (item['name'])
+
+
+def set_subscription(az_bin, subscription):
+    subprocess.check_call(
+        [az_bin, 'account', 'set', '--subscription', subscription])
+    logging.info("Set default account to: %s" % subscription)
+
+
+def main():
+    az_bin = find_az()
+    subscriptions = list_subscriptions(az_bin)
+    args = parse_args(subscriptions)
+
+    # If we are just listing junk
+    if args.list:
+        for sub in subscriptions:
+            default_marker = "🔴"
+            if sub['isDefault']:
+                default_marker = "🟢"
+            print("%-35s %s" % (sub['name'], default_marker))
+        return 0
+    elif args.set:
+        set_subscription(az_bin, args.set)
+        return 0
+    else:
+        selected = iterfzf(iter_subscriptions(subscriptions))
+        set_subscription(az_bin, selected)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
