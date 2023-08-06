@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: test-plus
+Version: 0.1.7
+Summary: Test analysis tool for Django
+Home-page: https://github.com/tolgahanuzun/test_plus
+Author: Tolgahan Üzün
+Author-email: mail@tolgahanuzun.com
+License: UNKNOWN
+Download-URL: https://github.com/tolgahanuzun/test_plus/tarball/0.1.7
+Description: UNKNOWN
+Keywords: django,test,time
+Platform: UNKNOWN
