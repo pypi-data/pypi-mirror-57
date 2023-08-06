@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: otus_search
+Version: 0.0.3
+Summary: Search links from web
+Home-page: https://github.com/vvscode/py--otus-search
+Author: vvscode
+Author-email: v.vanchuk@tut.by
+License: MIT
+Download-URL: https://github.com/vvscode/py--otus-search/blob/master/dist/otus-search-0.0.1.tar.gz?raw=true
+Description: UNKNOWN
+Keywords: otus,vvscode
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
