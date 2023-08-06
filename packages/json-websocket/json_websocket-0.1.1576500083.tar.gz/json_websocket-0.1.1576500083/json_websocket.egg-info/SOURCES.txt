@@ -1,0 +1,9 @@
+README.md
+setup.py
+upload_to_pypi.py
+json_websocket/__init__.py
+json_websocket.egg-info/PKG-INFO
+json_websocket.egg-info/SOURCES.txt
+json_websocket.egg-info/dependency_links.txt
+json_websocket.egg-info/requires.txt
+json_websocket.egg-info/top_level.txt
