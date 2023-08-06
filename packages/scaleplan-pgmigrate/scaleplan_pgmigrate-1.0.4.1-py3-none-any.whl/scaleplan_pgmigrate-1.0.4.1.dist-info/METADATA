@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: scaleplan-pgmigrate
+Version: 1.0.4.1
+Summary: PostgreSQL migrations made easy
+Home-page: https://github.com/scaleplan/pgmigrate/
+Author: Yandex LLC
+Author-email: opensource@yandex-team.ru
+Maintainer: Aleksandr Avtomonov
+Maintainer-email: admin@qooiz.me
+License: PostgreSQL License
+Platform: Linux
+Platform: BSD
+Platform: MacOS
+Requires-Dist: sqlparse (>=0.3.0)
+Requires-Dist: psycopg2 (>=2.8.2)
+Requires-Dist: PyYAML (>=5.1)
+
+UNKNOWN
+
+
