@@ -1,0 +1,8 @@
+setuptools_scm
+
+[dev]
+pre-commit
+tox
+pytest
+black
+twine
