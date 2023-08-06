@@ -1,0 +1,10 @@
+README.md
+setup.py
+sipuni_api/__init__.py
+sipuni_api/client.py
+sipuni_api/exceptions.py
+sipuni_api.egg-info/PKG-INFO
+sipuni_api.egg-info/SOURCES.txt
+sipuni_api.egg-info/dependency_links.txt
+sipuni_api.egg-info/requires.txt
+sipuni_api.egg-info/top_level.txt
