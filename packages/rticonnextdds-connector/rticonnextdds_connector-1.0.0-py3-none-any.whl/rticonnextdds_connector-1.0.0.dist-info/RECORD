@@ -1,0 +1,15 @@
+rticonnextdds-connector/lib/armv6vfphLinux3.xgcc4.7.2/librtiddsconnector.so,sha256=SDDKsQk_Q3wowoKrODwVMj3BxGQ58VibH8I50eWM09Q,14974020
+rticonnextdds-connector/lib/i86Linux3.xgcc4.6.3/librtiddsconnector.so,sha256=o9HL1nV_dfLsHvl01vMzVetHF3ARqvWzO5VzZBpXd-o,14018090
+rticonnextdds-connector/lib/i86Win32VS2010/msvcr100.dll,sha256=h5M1NGGCb71I8l6ouDW-IEt1jOdRDbKvYxsohQNVvRg,773968
+rticonnextdds-connector/lib/i86Win32VS2010/rtiddsconnector.dll,sha256=k_83tQPklbR_OA66WVf5z7gpsK88qu6p7sq91wgZYkY,8079872
+rticonnextdds-connector/lib/x64Darwin16clang8.0/librtiddsconnector.dylib,sha256=085dhZOTosJZ4WH4-pv9dExSuXwYJTBtjyBrjSCKMvw,10791576
+rticonnextdds-connector/lib/x64Linux2.6gcc4.4.5/librtiddsconnector.so,sha256=cns_oy1DcDoNQFfDXra9cPZEvu5dtdsC7e9HcjdOaxw,13891953
+rticonnextdds-connector/lib/x64Win64VS2013/msvcr120.dll,sha256=rTIkC7HeVcP1_KyHifWDoXBX-dFJFMU4wqelrTRrNBw,963232
+rticonnextdds-connector/lib/x64Win64VS2013/rtiddsconnector.dll,sha256=0mJRj16w28o6TvxUzEf0DtneqLm-r-k7mWixi1Bk7BA,9210880
+rticonnextdds_connector/__init__.py,sha256=bDwu5mxO53cGnQDiK4R1WyemMwIwLfQPwwRdkPanN8E,600
+rticonnextdds_connector/rticonnextdds_connector.py,sha256=ueLXEnGZQ-_Pzvm4ULB8K6dxrPXbE4zKUWsoVlgtQXs,55303
+rticonnextdds_connector-1.0.0.dist-info/LICENSE.pdf,sha256=mygMjdfhq2D73NRnHvEPazAroFXT2zE8HVNS5vl-I70,125010
+rticonnextdds_connector-1.0.0.dist-info/METADATA,sha256=vA3RlChskFQmwuonY7D48ZL0KM6olENWCeY1jjzE3no,2125
+rticonnextdds_connector-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+rticonnextdds_connector-1.0.0.dist-info/top_level.txt,sha256=ZFJsidQNomhiZz42nDt793SFQbziTbsb_8NWtvf7FNc,24
+rticonnextdds_connector-1.0.0.dist-info/RECORD,,
