@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: packelf
+Version: 0.1.0
+Summary: Pack ELF files in a given path to make them relocatable
+Home-page: https://github.com/fixpoint/packelf
+License: MIT
+Keywords: Linux
+Author: Fixpoint, Inc.
+Author-email: developer@fixpoint.co.jp
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Build Tools
+Project-URL: Repository, https://github.com/fixpoint/packelf
