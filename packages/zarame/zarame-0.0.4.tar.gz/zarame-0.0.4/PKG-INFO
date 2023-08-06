@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: zarame
+Version: 0.0.4
+Summary: Simple structural transducer using NamedTuple
+Home-page: https://github.com/pistatium/zarame
+Author: pistatium
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
