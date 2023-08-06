@@ -1,0 +1,13 @@
+ja_sentence_segmenter/__init__.py,sha256=wQ2JLAX2xvNTMGurpnTEo6PPbmALOynRVtNKM8bW7N8,12
+ja_sentence_segmenter/common/__init__.py,sha256=wQ2JLAX2xvNTMGurpnTEo6PPbmALOynRVtNKM8bW7N8,12
+ja_sentence_segmenter/common/pipeline.py,sha256=oRH3odgb3gzwpg3aeZdeyy5g0vwrBUNaAO9TJsetrGM,750
+ja_sentence_segmenter/concatenate/__init__.py,sha256=wQ2JLAX2xvNTMGurpnTEo6PPbmALOynRVtNKM8bW7N8,12
+ja_sentence_segmenter/concatenate/simple_concatenator.py,sha256=GMnNwcV_QX2JF-xLweZLTogvpArM_6o3s_-GbkPJ0Oo,3820
+ja_sentence_segmenter/normalize/__init__.py,sha256=wQ2JLAX2xvNTMGurpnTEo6PPbmALOynRVtNKM8bW7N8,12
+ja_sentence_segmenter/normalize/neologd_normalizer.py,sha256=vMcUE1Q2x620eYIq8tgPo9q4BR1Cg9PfX1T815tKcX4,3758
+ja_sentence_segmenter/split/__init__.py,sha256=wQ2JLAX2xvNTMGurpnTEo6PPbmALOynRVtNKM8bW7N8,12
+ja_sentence_segmenter/split/simple_splitter.py,sha256=0N0YydYailWTT-NGuvr4QdYk-nxBlASBP3q94NNnLEw,4573
+ja_sentence_segmenter-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ja_sentence_segmenter-0.0.1.dist-info/WHEEL,sha256=0LqClw0y45nNGWtOkoSiM9aN5p1kS5vGsVfoCyuJCNA,85
+ja_sentence_segmenter-0.0.1.dist-info/METADATA,sha256=M_vRjKozDe3qP2LBRYRu2eCO3piTZhM1tUQ9TD3hInU,3341
+ja_sentence_segmenter-0.0.1.dist-info/RECORD,,
