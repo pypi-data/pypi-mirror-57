@@ -1,0 +1,17 @@
+segment_config_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+segment_config_api/api.py,sha256=q3G7E-h8KRmNEISBLq_4BdgaP8kwvuePxk5znOTXHAI,1623
+segment_config_api/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+segment_config_api/models/base_model.py,sha256=F9QJV5d-SRUEvLRfDhlAoze6uONUmjy4yJOrOKiTX7g,395
+segment_config_api/models/deletion_and_suppression.py,sha256=MLtnuT7XwwdKUvkkPFvlthKPQpi4EAJGWR4q-qVouBs,1363
+segment_config_api/models/destination_filters.py,sha256=UFqMe_CZIzp0VE9ne0vVlUpELOrng_vqLHJ0DusMnLk,1075
+segment_config_api/models/destinations.py,sha256=ZFGltvus_aeNohR6xuYNRivVC-MFL5kE8PPNhXNAdiI,1379
+segment_config_api/models/event_delivery_metrics.py,sha256=t0IEuLm6obhuyVWRSicAk3BeGxoyttGJe2kHSgm2eFo,1233
+segment_config_api/models/iam.py,sha256=7fz0jTanMmxzwI5laDY6Alk0_ycNGbBgDs9Y8naRUy4,1501
+segment_config_api/models/integrations_catalog.py,sha256=t0MtDOZYzP6Cvj0KJGDH1nDJ3irqbiiKBjVVPAgpBlM,1922
+segment_config_api/models/sources.py,sha256=IltTo1Mex7pY-v0qQIYLEHrHfSuU8nI5PeL7boSsWuo,1484
+segment_config_api/models/tracking_plans.py,sha256=Oil_WFZPT_EHrK_kINY45BuwYnEWUoq66e68WA_maWM,1695
+segment_config_api/models/workspaces.py,sha256=0rBDkiODCxf3_as-ulu-v9qp_Gm0A2rbqMcTZkSQM4U,1908
+segment_config_api-0.0.1.dist-info/METADATA,sha256=be7o-dHsv49I_gPS9Dw4fFwIo9kjKICW_JbTTKMm5Sw,313
+segment_config_api-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+segment_config_api-0.0.1.dist-info/top_level.txt,sha256=MejWmFOHTOK3LbpolYdo8XBCtsKEXoZBxK-YQH34b0Y,19
+segment_config_api-0.0.1.dist-info/RECORD,,
