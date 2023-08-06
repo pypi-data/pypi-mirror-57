@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: pydelver
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: https://github.com/NarrativeScience/delver
+Maintainer: Alex Sippel
+Maintainer-email: asippel@narrativescience.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Provides: delver
