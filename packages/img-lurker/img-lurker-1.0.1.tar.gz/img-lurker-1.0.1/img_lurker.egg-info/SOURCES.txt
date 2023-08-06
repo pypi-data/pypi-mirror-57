@@ -1,0 +1,9 @@
+README.md
+img-lurker.py
+setup.cfg
+setup.py
+img_lurker.egg-info/PKG-INFO
+img_lurker.egg-info/SOURCES.txt
+img_lurker.egg-info/dependency_links.txt
+img_lurker.egg-info/requires.txt
+img_lurker.egg-info/top_level.txt
