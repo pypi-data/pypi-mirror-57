@@ -1,0 +1,12 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/camera.py,sha256=MxOGgBwudWBwIz0aubjioeLJ85N80JVuxYVwetRnu-o,1075
+src/templates/index.html,sha256=HiE_GUMCZsR6O9ZFuer5BcGSmrPOQ_gEaONN-A72wz4,774
+src/xml/haarcascade_frontalface_dataset.xml,sha256=YoHfE0Wcwhj_BH0Csq44WbEv8UqT_-iVL3sz-te5aXs,676709
+zhengen_src-1.0.0.data/data/haarcascade_frontalface_dataset.xml,sha256=YoHfE0Wcwhj_BH0Csq44WbEv8UqT_-iVL3sz-te5aXs,676709
+zhengen_src-1.0.0.data/data/index.html,sha256=HiE_GUMCZsR6O9ZFuer5BcGSmrPOQ_gEaONN-A72wz4,774
+zhengen_src-1.0.0.dist-info/DESCRIPTION.rst,sha256=ibpJ82-zzxl4eJBCWvUveTbxBTof4yZok0nCQfnzjy0,65
+zhengen_src-1.0.0.dist-info/METADATA,sha256=B7h8PFbXYax0jyfCY-mnn4PDBDARi9H4PMEuewB3Jrk,422
+zhengen_src-1.0.0.dist-info/RECORD,,
+zhengen_src-1.0.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+zhengen_src-1.0.0.dist-info/metadata.json,sha256=5WwHvBIPe1Lq8me69Shy2lBx_zZ9XTsNE74wnKBmu8w,609
+zhengen_src-1.0.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4

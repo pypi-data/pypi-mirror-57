@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: zhengen-src
+Version: 1.0.0
+Summary: The HTML Report for Python unit testing Base on HTMLTestRunner
+Home-page: https://github.com/five3/PyTestReport
+Author: Xiaowu Chen
+Author-email: five3@163.com
+License: GPL V3
+Keywords: test report,python unit testing
+Platform: any
+Requires-Dist: Flask (>=1.0.2)
+Requires-Dist: opencv-python
+
+The HTML Report for Python unit testing Base on HTMLTestRunner
+
+
