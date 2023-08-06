@@ -1,0 +1,2252 @@
+{
+    "angles": [
+        {
+            "atom1": 1,
+            "atom2": 2,
+            "atom3": 3,
+            "spring_constant": 63.21,
+            "theta": 110.63
+        },
+        {
+            "atom1": 2,
+            "atom2": 3,
+            "atom3": 4,
+            "spring_constant": 63.21,
+            "theta": 110.63
+        },
+        {
+            "atom1": 3,
+            "atom2": 4,
+            "atom3": 5,
+            "spring_constant": 66.39,
+            "theta": 110.45
+        },
+        {
+            "atom1": 4,
+            "atom2": 5,
+            "atom3": 6,
+            "spring_constant": 64.56,
+            "theta": 117.77
+        },
+        {
+            "atom1": 4,
+            "atom2": 5,
+            "atom3": 37,
+            "spring_constant": 46.46,
+            "theta": 114.95
+        },
+        {
+            "atom1": 5,
+            "atom2": 6,
+            "atom3": 7,
+            "spring_constant": 69.34,
+            "theta": 120.13
+        },
+        {
+            "atom1": 5,
+            "atom2": 6,
+            "atom3": 11,
+            "spring_constant": 73.2,
+            "theta": 116.95
+        },
+        {
+            "atom1": 6,
+            "atom2": 5,
+            "atom3": 37,
+            "spring_constant": 49.08,
+            "theta": 116.13
+        },
+        {
+            "atom1": 6,
+            "atom2": 7,
+            "atom3": 8,
+            "spring_constant": 67.18,
+            "theta": 119.97
+        },
+        {
+            "atom1": 6,
+            "atom2": 11,
+            "atom3": 10,
+            "spring_constant": 68.59,
+            "theta": 115.86
+        },
+        {
+            "atom1": 7,
+            "atom2": 6,
+            "atom3": 11,
+            "spring_constant": 69.16,
+            "theta": 122.63
+        },
+        {
+            "atom1": 7,
+            "atom2": 8,
+            "atom3": 9,
+            "spring_constant": 67.18,
+            "theta": 119.97
+        },
+        {
+            "atom1": 7,
+            "atom2": 8,
+            "atom3": 14,
+            "spring_constant": 64.64,
+            "theta": 120.14
+        },
+        {
+            "atom1": 8,
+            "atom2": 9,
+            "atom3": 10,
+            "spring_constant": 67.18,
+            "theta": 119.97
+        },
+        {
+            "atom1": 8,
+            "atom2": 14,
+            "atom3": 15,
+            "spring_constant": 68.67,
+            "theta": 123.44
+        },
+        {
+            "atom1": 8,
+            "atom2": 14,
+            "atom3": 16,
+            "spring_constant": 68.47,
+            "theta": 115.14
+        },
+        {
+            "atom1": 9,
+            "atom2": 8,
+            "atom3": 14,
+            "spring_constant": 64.64,
+            "theta": 120.14
+        },
+        {
+            "atom1": 9,
+            "atom2": 10,
+            "atom3": 11,
+            "spring_constant": 69.16,
+            "theta": 122.63
+        },
+        {
+            "atom1": 9,
+            "atom2": 10,
+            "atom3": 12,
+            "spring_constant": 69.79,
+            "theta": 119.2
+        },
+        {
+            "atom1": 10,
+            "atom2": 12,
+            "atom3": 13,
+            "spring_constant": 62.27,
+            "theta": 117.97
+        },
+        {
+            "atom1": 11,
+            "atom2": 10,
+            "atom3": 12,
+            "spring_constant": 72.54,
+            "theta": 119.66
+        },
+        {
+            "atom1": 14,
+            "atom2": 16,
+            "atom3": 17,
+            "spring_constant": 63.92,
+            "theta": 121.35
+        },
+        {
+            "atom1": 14,
+            "atom2": 16,
+            "atom3": 38,
+            "spring_constant": 49.21,
+            "theta": 118.46
+        },
+        {
+            "atom1": 15,
+            "atom2": 14,
+            "atom3": 16,
+            "spring_constant": 75.83,
+            "theta": 122.03
+        },
+        {
+            "atom1": 16,
+            "atom2": 17,
+            "atom3": 18,
+            "spring_constant": 65.85,
+            "theta": 112.13
+        },
+        {
+            "atom1": 16,
+            "atom2": 17,
+            "atom3": 25,
+            "spring_constant": 65.85,
+            "theta": 112.13
+        },
+        {
+            "atom1": 17,
+            "atom2": 16,
+            "atom3": 38,
+            "spring_constant": 46.04,
+            "theta": 116.78
+        },
+        {
+            "atom1": 17,
+            "atom2": 18,
+            "atom3": 19,
+            "spring_constant": 63.25,
+            "theta": 112.09
+        },
+        {
+            "atom1": 17,
+            "atom2": 25,
+            "atom3": 26,
+            "spring_constant": 63.21,
+            "theta": 110.63
+        },
+        {
+            "atom1": 17,
+            "atom2": 25,
+            "atom3": 36,
+            "spring_constant": 67.72,
+            "theta": 109.43
+        },
+        {
+            "atom1": 18,
+            "atom2": 17,
+            "atom3": 25,
+            "spring_constant": 63.21,
+            "theta": 110.63
+        },
+        {
+            "atom1": 18,
+            "atom2": 19,
+            "atom3": 20,
+            "spring_constant": 63.84,
+            "theta": 120.63
+        },
+        {
+            "atom1": 18,
+            "atom2": 19,
+            "atom3": 24,
+            "spring_constant": 63.84,
+            "theta": 120.63
+        },
+        {
+            "atom1": 19,
+            "atom2": 20,
+            "atom3": 21,
+            "spring_constant": 67.18,
+            "theta": 119.97
+        },
+        {
+            "atom1": 19,
+            "atom2": 24,
+            "atom3": 23,
+            "spring_constant": 67.18,
+            "theta": 119.97
+        },
+        {
+            "atom1": 20,
+            "atom2": 19,
+            "atom3": 24,
+            "spring_constant": 67.18,
+            "theta": 119.97
+        },
+        {
+            "atom1": 20,
+            "atom2": 21,
+            "atom3": 22,
+            "spring_constant": 67.18,
+            "theta": 119.97
+        },
+        {
+            "atom1": 21,
+            "atom2": 22,
+            "atom3": 23,
+            "spring_constant": 67.18,
+            "theta": 119.97
+        },
+        {
+            "atom1": 22,
+            "atom2": 23,
+            "atom3": 24,
+            "spring_constant": 67.18,
+            "theta": 119.97
+        },
+        {
+            "atom1": 25,
+            "atom2": 26,
+            "atom3": 27,
+            "spring_constant": 63.21,
+            "theta": 110.63
+        },
+        {
+            "atom1": 25,
+            "atom2": 36,
+            "atom3": 40,
+            "spring_constant": 47.09,
+            "theta": 108.16
+        },
+        {
+            "atom1": 26,
+            "atom2": 25,
+            "atom3": 36,
+            "spring_constant": 67.72,
+            "theta": 109.43
+        },
+        {
+            "atom1": 26,
+            "atom2": 27,
+            "atom3": 28,
+            "spring_constant": 63.21,
+            "theta": 110.63
+        },
+        {
+            "atom1": 26,
+            "atom2": 27,
+            "atom3": 29,
+            "spring_constant": 63.79,
+            "theta": 110.53
+        },
+        {
+            "atom1": 27,
+            "atom2": 29,
+            "atom3": 30,
+            "spring_constant": 68.03,
+            "theta": 123.11
+        },
+        {
+            "atom1": 27,
+            "atom2": 29,
+            "atom3": 31,
+            "spring_constant": 67.86,
+            "theta": 115.15
+        },
+        {
+            "atom1": 28,
+            "atom2": 27,
+            "atom3": 29,
+            "spring_constant": 63.79,
+            "theta": 110.53
+        },
+        {
+            "atom1": 29,
+            "atom2": 31,
+            "atom3": 32,
+            "spring_constant": 63.92,
+            "theta": 121.35
+        },
+        {
+            "atom1": 29,
+            "atom2": 31,
+            "atom3": 39,
+            "spring_constant": 49.21,
+            "theta": 118.46
+        },
+        {
+            "atom1": 30,
+            "atom2": 29,
+            "atom3": 31,
+            "spring_constant": 75.83,
+            "theta": 122.03
+        },
+        {
+            "atom1": 31,
+            "atom2": 32,
+            "atom3": 33,
+            "spring_constant": 65.85,
+            "theta": 112.13
+        },
+        {
+            "atom1": 32,
+            "atom2": 31,
+            "atom3": 39,
+            "spring_constant": 46.04,
+            "theta": 116.78
+        },
+        {
+            "atom1": 32,
+            "atom2": 33,
+            "atom3": 34,
+            "spring_constant": 63.21,
+            "theta": 110.63
+        },
+        {
+            "atom1": 33,
+            "atom2": 34,
+            "atom3": 35,
+            "spring_constant": 63.21,
+            "theta": 110.63
+        }
+    ],
+    "atoms": [
+        {
+            "ace_volume": 40.947,
+            "acp_type": -1,
+            "charge": 0.009,
+            "element": "C",
+            "eps": -0.1811,
+            "eps03": -0.1,
+            "ftype_index": 1,
+            "ftype_name": "CH3E",
+            "name": "C1",
+            "radius": 2.165,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 29.834,
+            "y": 54.07,
+            "z": 86.305
+        },
+        {
+            "ace_volume": 35.356,
+            "acp_type": -1,
+            "charge": 0.011,
+            "element": "C",
+            "eps": -0.1142,
+            "eps03": -0.1,
+            "ftype_index": 2,
+            "ftype_name": "CH2E",
+            "name": "C2",
+            "radius": 2.235,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 30.759,
+            "y": 55.109,
+            "z": 86.919
+        },
+        {
+            "ace_volume": 35.356,
+            "acp_type": -1,
+            "charge": 0.006,
+            "element": "C",
+            "eps": -0.1142,
+            "eps03": -0.1,
+            "ftype_index": 2,
+            "ftype_name": "CH2E",
+            "name": "C3",
+            "radius": 2.235,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 30.35,
+            "y": 55.538,
+            "z": 88.329
+        },
+        {
+            "ace_volume": 35.356,
+            "acp_type": -1,
+            "charge": 0.2782,
+            "element": "C",
+            "eps": -0.1142,
+            "eps03": -0.1,
+            "ftype_index": 2,
+            "ftype_name": "CH2E",
+            "name": "C4",
+            "radius": 2.235,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 29.018,
+            "y": 56.29,
+            "z": 88.371
+        },
+        {
+            "ace_volume": 1.708,
+            "acp_type": -1,
+            "charge": -0.8309,
+            "element": "N",
+            "eps": -0.09,
+            "eps03": -0.1,
+            "ftype_index": 3,
+            "ftype_name": "NH1",
+            "name": "N1",
+            "radius": 1.83,
+            "radius03": 1.63,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "N.3",
+            "x": 28.769,
+            "y": 56.735,
+            "z": 89.741
+        },
+        {
+            "ace_volume": 12.403,
+            "acp_type": -1,
+            "charge": 0.6672,
+            "element": "C",
+            "eps": -0.05,
+            "eps03": -0.1,
+            "ftype_index": 4,
+            "ftype_name": "C6R",
+            "name": "C5",
+            "radius": 2.04,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.ar",
+            "x": 27.611,
+            "y": 57.499,
+            "z": 89.901
+        },
+        {
+            "ace_volume": 18.583,
+            "acp_type": -1,
+            "charge": -0.1543,
+            "element": "C",
+            "eps": -0.0903,
+            "eps03": -0.1,
+            "ftype_index": 5,
+            "ftype_name": "C6RE",
+            "name": "C6",
+            "radius": 1.99,
+            "radius03": 1.99,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.ar",
+            "x": 26.356,
+            "y": 57.007,
+            "z": 89.581
+        },
+        {
+            "ace_volume": 12.403,
+            "acp_type": -1,
+            "charge": -0.0496,
+            "element": "C",
+            "eps": -0.05,
+            "eps03": -0.1,
+            "ftype_index": 4,
+            "ftype_name": "C6R",
+            "name": "C7",
+            "radius": 2.04,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.ar",
+            "x": 25.246,
+            "y": 57.825,
+            "z": 89.789
+        },
+        {
+            "ace_volume": 18.583,
+            "acp_type": -1,
+            "charge": -0.0883,
+            "element": "C",
+            "eps": -0.0903,
+            "eps03": -0.1,
+            "ftype_index": 5,
+            "ftype_name": "C6RE",
+            "name": "C8",
+            "radius": 1.99,
+            "radius03": 1.99,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.ar",
+            "x": 25.419,
+            "y": 59.111,
+            "z": 90.282
+        },
+        {
+            "ace_volume": 12.403,
+            "acp_type": -1,
+            "charge": 0.6626,
+            "element": "C",
+            "eps": -0.05,
+            "eps03": -0.1,
+            "ftype_index": 4,
+            "ftype_name": "C6R",
+            "name": "C9",
+            "radius": 2.04,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.ar",
+            "x": 26.703,
+            "y": 59.506,
+            "z": 90.588
+        },
+        {
+            "ace_volume": 1.879,
+            "acp_type": -1,
+            "charge": -0.779,
+            "element": "N",
+            "eps": -0.09,
+            "eps03": -0.1,
+            "ftype_index": 6,
+            "ftype_name": "N6R",
+            "hb_acceptor": true,
+            "name": "N2",
+            "radius": 1.83,
+            "radius03": 1.63,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "N.ar",
+            "x": 27.794,
+            "y": 58.727,
+            "yeti_type": "N6_aromatic",
+            "z": 90.419
+        },
+        {
+            "ace_volume": 21.427,
+            "acp_type": -1,
+            "charge": -0.4441,
+            "element": "O",
+            "eps": -0.1591,
+            "eps03": -0.2,
+            "ftype_index": 7,
+            "ftype_name": "OE",
+            "hb_acceptor": true,
+            "name": "O1",
+            "radius": 1.6,
+            "radius03": 1.36,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "O.3",
+            "x": 26.84,
+            "y": 60.785,
+            "z": 91.092
+        },
+        {
+            "ace_volume": 40.947,
+            "acp_type": -1,
+            "charge": 0.278799,
+            "element": "C",
+            "eps": -0.1811,
+            "eps03": -0.1,
+            "ftype_index": 1,
+            "ftype_name": "CH3E",
+            "name": "C10",
+            "radius": 2.165,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 28.175,
+            "y": 61.097,
+            "z": 91.469
+        },
+        {
+            "ace_volume": 12.403,
+            "acp_type": -1,
+            "charge": 0.6777,
+            "element": "C",
+            "eps": -0.141,
+            "eps03": -0.141,
+            "ftype_index": 8,
+            "ftype_name": "C",
+            "name": "C11",
+            "radius": 1.87,
+            "radius03": 1.87,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.2",
+            "x": 23.879,
+            "y": 57.37,
+            "z": 89.449
+        },
+        {
+            "ace_volume": 14.375,
+            "acp_type": -1,
+            "charge": -0.6201,
+            "element": "O",
+            "eps": -0.1591,
+            "eps03": -0.2,
+            "ftype_index": 9,
+            "ftype_name": "O",
+            "hb_acceptor": true,
+            "name": "O2",
+            "radius": 1.55,
+            "radius03": 1.36,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "O.2",
+            "x": 23.034,
+            "y": 58.183,
+            "yeti_type": "carbonyl",
+            "z": 89.087
+        },
+        {
+            "ace_volume": 1.879,
+            "acp_type": -1,
+            "charge": -0.5529,
+            "element": "N",
+            "eps": -0.09,
+            "eps03": -0.1,
+            "ftype_index": 10,
+            "ftype_name": "NP",
+            "name": "N3",
+            "radius": 1.83,
+            "radius03": 1.63,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "N.am",
+            "x": 23.636,
+            "y": 56.023,
+            "z": 89.59
+        },
+        {
+            "ace_volume": 12.257,
+            "acp_type": -1,
+            "charge": 0.1514,
+            "element": "C",
+            "eps": -0.0486,
+            "eps03": -0.1,
+            "ftype_index": 11,
+            "ftype_name": "CH1E",
+            "name": "C12",
+            "radius": 2.265,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 22.412,
+            "y": 55.388,
+            "z": 89.104
+        },
+        {
+            "ace_volume": 35.356,
+            "acp_type": -1,
+            "charge": 0.0793,
+            "element": "C",
+            "eps": -0.1142,
+            "eps03": -0.1,
+            "ftype_index": 2,
+            "ftype_name": "CH2E",
+            "name": "C13",
+            "radius": 2.235,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 22.742,
+            "y": 54.424,
+            "z": 87.936
+        },
+        {
+            "ace_volume": 12.403,
+            "acp_type": -1,
+            "charge": -0.0843,
+            "element": "C",
+            "eps": -0.05,
+            "eps03": -0.1,
+            "ftype_index": 4,
+            "ftype_name": "C6R",
+            "name": "C14",
+            "radius": 2.04,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.ar",
+            "x": 23.516,
+            "y": 55.054,
+            "z": 86.796
+        },
+        {
+            "ace_volume": 18.583,
+            "acp_type": -1,
+            "charge": 0.005,
+            "element": "C",
+            "eps": -0.0903,
+            "eps03": -0.1,
+            "ftype_index": 5,
+            "ftype_name": "C6RE",
+            "name": "C15",
+            "radius": 1.99,
+            "radius03": 1.99,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.ar",
+            "x": 24.758,
+            "y": 54.523,
+            "z": 86.411
+        },
+        {
+            "ace_volume": 18.583,
+            "acp_type": -1,
+            "charge": 0.0055,
+            "element": "C",
+            "eps": -0.0903,
+            "eps03": -0.1,
+            "ftype_index": 5,
+            "ftype_name": "C6RE",
+            "name": "C16",
+            "radius": 1.99,
+            "radius03": 1.99,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.ar",
+            "x": 25.495,
+            "y": 55.108,
+            "z": 85.38
+        },
+        {
+            "ace_volume": 18.583,
+            "acp_type": -1,
+            "charge": 0.001,
+            "element": "C",
+            "eps": -0.0903,
+            "eps03": -0.1,
+            "ftype_index": 5,
+            "ftype_name": "C6RE",
+            "name": "C17",
+            "radius": 1.99,
+            "radius03": 1.99,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.ar",
+            "x": 24.996,
+            "y": 56.227,
+            "z": 84.718
+        },
+        {
+            "ace_volume": 18.583,
+            "acp_type": -1,
+            "charge": 0.0055,
+            "element": "C",
+            "eps": -0.0903,
+            "eps03": -0.1,
+            "ftype_index": 5,
+            "ftype_name": "C6RE",
+            "name": "C18",
+            "radius": 1.99,
+            "radius03": 1.99,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.ar",
+            "x": 23.76,
+            "y": 56.757,
+            "z": 85.082
+        },
+        {
+            "ace_volume": 18.583,
+            "acp_type": -1,
+            "charge": 0.005,
+            "element": "C",
+            "eps": -0.0903,
+            "eps03": -0.1,
+            "ftype_index": 5,
+            "ftype_name": "C6RE",
+            "name": "C19",
+            "radius": 1.99,
+            "radius03": 1.99,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.ar",
+            "x": 23.02,
+            "y": 56.17,
+            "z": 86.112
+        },
+        {
+            "ace_volume": 12.257,
+            "acp_type": -1,
+            "charge": 0.2118,
+            "element": "C",
+            "eps": -0.0486,
+            "eps03": -0.1,
+            "ftype_index": 11,
+            "ftype_name": "CH1E",
+            "name": "C20",
+            "radius": 2.265,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 21.698,
+            "y": 54.633,
+            "z": 90.256
+        },
+        {
+            "ace_volume": 35.356,
+            "acp_type": -1,
+            "charge": 0.019,
+            "element": "C",
+            "eps": -0.1142,
+            "eps03": -0.1,
+            "ftype_index": 2,
+            "ftype_name": "CH2E",
+            "name": "C21",
+            "radius": 2.235,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 21.352,
+            "y": 55.502,
+            "z": 91.475
+        },
+        {
+            "ace_volume": 12.257,
+            "acp_type": -1,
+            "charge": -0.062,
+            "element": "C",
+            "eps": -0.0486,
+            "eps03": -0.1,
+            "ftype_index": 11,
+            "ftype_name": "CH1E",
+            "name": "C22",
+            "radius": 2.265,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 20.5,
+            "y": 56.749,
+            "z": 91.193
+        },
+        {
+            "ace_volume": 40.947,
+            "acp_type": -1,
+            "charge": 0.05,
+            "element": "C",
+            "eps": -0.1811,
+            "eps03": -0.1,
+            "ftype_index": 1,
+            "ftype_name": "CH3E",
+            "name": "C23",
+            "radius": 2.165,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 19.126,
+            "y": 56.403,
+            "z": 90.623
+        },
+        {
+            "ace_volume": 12.403,
+            "acp_type": -1,
+            "charge": 0.6521,
+            "element": "C",
+            "eps": -0.141,
+            "eps03": -0.141,
+            "ftype_index": 8,
+            "ftype_name": "C",
+            "name": "C24",
+            "radius": 1.87,
+            "radius03": 1.87,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.2",
+            "x": 20.33,
+            "y": 57.575,
+            "z": 92.468
+        },
+        {
+            "ace_volume": 14.375,
+            "acp_type": -1,
+            "charge": -0.6221,
+            "element": "O",
+            "eps": -0.1591,
+            "eps03": -0.2,
+            "ftype_index": 9,
+            "ftype_name": "O",
+            "hb_acceptor": true,
+            "name": "O3",
+            "radius": 1.55,
+            "radius03": 1.36,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "O.2",
+            "x": 20.501,
+            "y": 57.12,
+            "yeti_type": "carbonyl",
+            "z": 93.594
+        },
+        {
+            "ace_volume": 1.879,
+            "acp_type": -1,
+            "charge": -0.5729,
+            "element": "N",
+            "eps": -0.09,
+            "eps03": -0.1,
+            "ftype_index": 10,
+            "ftype_name": "NP",
+            "name": "N4",
+            "radius": 1.83,
+            "radius03": 1.63,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "N.am",
+            "x": 19.927,
+            "y": 58.876,
+            "z": 92.228
+        },
+        {
+            "ace_volume": 35.356,
+            "acp_type": -1,
+            "charge": 0.1884,
+            "element": "C",
+            "eps": -0.1142,
+            "eps03": -0.1,
+            "ftype_index": 2,
+            "ftype_name": "CH2E",
+            "name": "C25",
+            "radius": 2.235,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 19.85,
+            "y": 59.834,
+            "z": 93.314
+        },
+        {
+            "ace_volume": 35.356,
+            "acp_type": -1,
+            "charge": 0.006,
+            "element": "C",
+            "eps": -0.1142,
+            "eps03": -0.1,
+            "ftype_index": 2,
+            "ftype_name": "CH2E",
+            "name": "C26",
+            "radius": 2.235,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 18.986,
+            "y": 61.044,
+            "z": 92.96
+        },
+        {
+            "ace_volume": 35.356,
+            "acp_type": -1,
+            "charge": -0.002,
+            "element": "C",
+            "eps": -0.1142,
+            "eps03": -0.1,
+            "ftype_index": 2,
+            "ftype_name": "CH2E",
+            "name": "C27",
+            "radius": 2.235,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 17.481,
+            "y": 60.823,
+            "z": 93.133
+        },
+        {
+            "ace_volume": 40.947,
+            "acp_type": -1,
+            "charge": 0.012001,
+            "element": "C",
+            "eps": -0.1811,
+            "eps03": -0.1,
+            "ftype_index": 1,
+            "ftype_name": "CH3E",
+            "name": "C28",
+            "radius": 2.165,
+            "radius03": 1.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "C.3",
+            "x": 16.887,
+            "y": 59.767,
+            "z": 92.217
+        },
+        {
+            "ace_volume": 21.427,
+            "acp_type": -1,
+            "charge": -0.5958,
+            "element": "O",
+            "eps": -0.1521,
+            "eps03": -0.2,
+            "ftype_index": 12,
+            "ftype_name": "OT",
+            "hb_acceptor": true,
+            "name": "O4",
+            "radius": 1.55,
+            "radius03": 1.48,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "O.3",
+            "x": 22.551,
+            "y": 53.576,
+            "yeti_type": "hydroxyl",
+            "z": 90.73
+        },
+        {
+            "ace_volume": 0.31,
+            "acp_type": -1,
+            "charge": 0.4148,
+            "element": "H",
+            "eps": -0.0498,
+            "eps03": -0.0498,
+            "ftype_index": 13,
+            "ftype_name": "H",
+            "hb_donor": true,
+            "name": "H10",
+            "radius": 0.8,
+            "radius03": 0.8,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "H",
+            "x": 29.369,
+            "y": 56.514,
+            "z": 90.49
+        },
+        {
+            "ace_volume": 0.31,
+            "acp_type": -1,
+            "charge": 0.3195,
+            "element": "H",
+            "eps": -0.0498,
+            "eps03": -0.0498,
+            "ftype_index": 13,
+            "ftype_name": "H",
+            "hb_donor": true,
+            "name": "H16",
+            "radius": 0.8,
+            "radius03": 0.8,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "H",
+            "x": 24.313,
+            "y": 55.465,
+            "z": 90.036
+        },
+        {
+            "ace_volume": 0.31,
+            "acp_type": -1,
+            "charge": 0.3375,
+            "element": "H",
+            "eps": -0.0498,
+            "eps03": -0.0498,
+            "ftype_index": 13,
+            "ftype_name": "H",
+            "hb_donor": true,
+            "name": "H32",
+            "radius": 0.8,
+            "radius03": 0.8,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "H",
+            "x": 19.691,
+            "y": 59.154,
+            "z": 91.314
+        },
+        {
+            "ace_volume": 0.44,
+            "acp_type": -1,
+            "charge": 0.404,
+            "element": "H",
+            "eps": -0.0498,
+            "eps03": -0.0498,
+            "ftype_index": 14,
+            "ftype_name": "HO",
+            "hb_donor": true,
+            "name": "H42",
+            "radius": 0.76,
+            "radius03": 0.76,
+            "residue": "1",
+            "segment": "X",
+            "sybyl_type": "H",
+            "x": 23.363,
+            "y": 53.957,
+            "z": 91.099
+        }
+    ],
+    "bonds": [
+        {
+            "atom1": 1,
+            "atom2": 2,
+            "length": 1.535,
+            "sdf_type": 1,
+            "spring_constant": 303.1
+        },
+        {
+            "atom1": 2,
+            "atom2": 3,
+            "length": 1.535,
+            "sdf_type": 1,
+            "spring_constant": 303.1
+        },
+        {
+            "atom1": 3,
+            "atom2": 4,
+            "length": 1.535,
+            "sdf_type": 1,
+            "spring_constant": 303.1
+        },
+        {
+            "atom1": 4,
+            "atom2": 5,
+            "length": 1.458,
+            "sdf_type": 1,
+            "spring_constant": 332.7
+        },
+        {
+            "atom1": 5,
+            "atom2": 6,
+            "length": 1.364,
+            "sdf_type": 1,
+            "spring_constant": 449.0
+        },
+        {
+            "atom1": 5,
+            "atom2": 37,
+            "length": 1.014,
+            "sdf_type": 1,
+            "spring_constant": 401.2
+        },
+        {
+            "atom1": 6,
+            "atom2": 7,
+            "length": 1.387,
+            "sdf_type": 2,
+            "spring_constant": 478.4
+        },
+        {
+            "atom1": 6,
+            "atom2": 11,
+            "length": 1.342,
+            "sdf_type": 1,
+            "spring_constant": 483.1
+        },
+        {
+            "atom1": 7,
+            "atom2": 8,
+            "length": 1.387,
+            "sdf_type": 1,
+            "spring_constant": 478.4
+        },
+        {
+            "atom1": 8,
+            "atom2": 9,
+            "length": 1.387,
+            "sdf_type": 2,
+            "spring_constant": 478.4
+        },
+        {
+            "atom1": 8,
+            "atom2": 14,
+            "length": 1.487,
+            "sdf_type": 1,
+            "spring_constant": 349.7
+        },
+        {
+            "atom1": 9,
+            "atom2": 10,
+            "length": 1.387,
+            "sdf_type": 1,
+            "spring_constant": 478.4
+        },
+        {
+            "atom1": 10,
+            "atom2": 11,
+            "length": 1.342,
+            "sdf_type": 2,
+            "spring_constant": 483.1
+        },
+        {
+            "atom1": 10,
+            "atom2": 12,
+            "length": 1.373,
+            "sdf_type": 1,
+            "spring_constant": 372.4
+        },
+        {
+            "atom1": 12,
+            "atom2": 13,
+            "length": 1.439,
+            "sdf_type": 1,
+            "spring_constant": 301.5
+        },
+        {
+            "atom1": 14,
+            "atom2": 15,
+            "length": 1.214,
+            "sdf_type": 2,
+            "spring_constant": 648.0
+        },
+        {
+            "atom1": 14,
+            "atom2": 16,
+            "length": 1.345,
+            "sdf_type": 1,
+            "spring_constant": 478.2
+        },
+        {
+            "atom1": 16,
+            "atom2": 17,
+            "length": 1.46,
+            "sdf_type": 1,
+            "spring_constant": 330.6
+        },
+        {
+            "atom1": 16,
+            "atom2": 38,
+            "length": 1.009,
+            "sdf_type": 1,
+            "spring_constant": 410.2
+        },
+        {
+            "atom1": 17,
+            "atom2": 18,
+            "length": 1.535,
+            "sdf_type": 1,
+            "spring_constant": 303.1
+        },
+        {
+            "atom1": 17,
+            "atom2": 25,
+            "length": 1.535,
+            "sdf_type": 1,
+            "spring_constant": 303.1
+        },
+        {
+            "atom1": 18,
+            "atom2": 19,
+            "length": 1.513,
+            "sdf_type": 1,
+            "spring_constant": 323.5
+        },
+        {
+            "atom1": 19,
+            "atom2": 20,
+            "length": 1.387,
+            "sdf_type": 2,
+            "spring_constant": 478.4
+        },
+        {
+            "atom1": 19,
+            "atom2": 24,
+            "length": 1.387,
+            "sdf_type": 1,
+            "spring_constant": 478.4
+        },
+        {
+            "atom1": 20,
+            "atom2": 21,
+            "length": 1.387,
+            "sdf_type": 1,
+            "spring_constant": 478.4
+        },
+        {
+            "atom1": 21,
+            "atom2": 22,
+            "length": 1.387,
+            "sdf_type": 2,
+            "spring_constant": 478.4
+        },
+        {
+            "atom1": 22,
+            "atom2": 23,
+            "length": 1.387,
+            "sdf_type": 1,
+            "spring_constant": 478.4
+        },
+        {
+            "atom1": 23,
+            "atom2": 24,
+            "length": 1.387,
+            "sdf_type": 2,
+            "spring_constant": 478.4
+        },
+        {
+            "atom1": 25,
+            "atom2": 26,
+            "length": 1.535,
+            "sdf_type": 1,
+            "spring_constant": 303.1
+        },
+        {
+            "atom1": 25,
+            "atom2": 36,
+            "length": 1.426,
+            "sdf_type": 1,
+            "spring_constant": 314.1
+        },
+        {
+            "atom1": 26,
+            "atom2": 27,
+            "length": 1.535,
+            "sdf_type": 1,
+            "spring_constant": 303.1
+        },
+        {
+            "atom1": 27,
+            "atom2": 28,
+            "length": 1.535,
+            "sdf_type": 1,
+            "spring_constant": 303.1
+        },
+        {
+            "atom1": 27,
+            "atom2": 29,
+            "length": 1.508,
+            "sdf_type": 1,
+            "spring_constant": 328.3
+        },
+        {
+            "atom1": 29,
+            "atom2": 30,
+            "length": 1.214,
+            "sdf_type": 2,
+            "spring_constant": 648.0
+        },
+        {
+            "atom1": 29,
+            "atom2": 31,
+            "length": 1.345,
+            "sdf_type": 1,
+            "spring_constant": 478.2
+        },
+        {
+            "atom1": 31,
+            "atom2": 32,
+            "length": 1.46,
+            "sdf_type": 1,
+            "spring_constant": 330.6
+        },
+        {
+            "atom1": 31,
+            "atom2": 39,
+            "length": 1.009,
+            "sdf_type": 1,
+            "spring_constant": 410.2
+        },
+        {
+            "atom1": 32,
+            "atom2": 33,
+            "length": 1.535,
+            "sdf_type": 1,
+            "spring_constant": 303.1
+        },
+        {
+            "atom1": 33,
+            "atom2": 34,
+            "length": 1.535,
+            "sdf_type": 1,
+            "spring_constant": 303.1
+        },
+        {
+            "atom1": 34,
+            "atom2": 35,
+            "length": 1.535,
+            "sdf_type": 1,
+            "spring_constant": 303.1
+        },
+        {
+            "atom1": 36,
+            "atom2": 40,
+            "length": 0.974,
+            "sdf_type": 1,
+            "spring_constant": 369.6
+        }
+    ],
+    "impropers": [
+        {
+            "atom1": 4,
+            "atom2": 6,
+            "atom3": 5,
+            "atom4": 37,
+            "phi": 180.0,
+            "spring_constant": 110.00000000000001
+        },
+        {
+            "atom1": 7,
+            "atom2": 11,
+            "atom3": 6,
+            "atom4": 5,
+            "phi": 180.0,
+            "spring_constant": 110.00000000000001
+        },
+        {
+            "atom1": 14,
+            "atom2": 9,
+            "atom3": 8,
+            "atom4": 7,
+            "phi": 180.0,
+            "spring_constant": 110.00000000000001
+        },
+        {
+            "atom1": 9,
+            "atom2": 11,
+            "atom3": 10,
+            "atom4": 12,
+            "phi": 180.0,
+            "spring_constant": 110.00000000000001
+        },
+        {
+            "atom1": 8,
+            "atom2": 16,
+            "atom3": 14,
+            "atom4": 15,
+            "phi": 180.0,
+            "spring_constant": 1050.0
+        },
+        {
+            "atom1": 14,
+            "atom2": 17,
+            "atom3": 16,
+            "atom4": 38,
+            "phi": 180.0,
+            "spring_constant": 110.00000000000001
+        },
+        {
+            "atom1": 18,
+            "atom2": 20,
+            "atom3": 19,
+            "atom4": 24,
+            "phi": 180.0,
+            "spring_constant": 110.00000000000001
+        },
+        {
+            "atom1": 27,
+            "atom2": 31,
+            "atom3": 29,
+            "atom4": 30,
+            "phi": 180.0,
+            "spring_constant": 1050.0
+        },
+        {
+            "atom1": 29,
+            "atom2": 32,
+            "atom3": 31,
+            "atom4": 39,
+            "phi": 180.0,
+            "spring_constant": 110.00000000000001
+        }
+    ],
+    "torsions": [
+        {
+            "atom1": 1,
+            "atom2": 2,
+            "atom3": 3,
+            "atom4": 4,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.18
+        },
+        {
+            "atom1": 1,
+            "atom2": 2,
+            "atom3": 3,
+            "atom4": 4,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 0.25
+        },
+        {
+            "atom1": 1,
+            "atom2": 2,
+            "atom3": 3,
+            "atom4": 4,
+            "delta_constant": 180.0,
+            "minima": 1,
+            "spring_constant": 0.2
+        },
+        {
+            "atom1": 2,
+            "atom2": 3,
+            "atom3": 4,
+            "atom4": 5,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.156
+        },
+        {
+            "atom1": 4,
+            "atom2": 5,
+            "atom3": 6,
+            "atom4": 7,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 1.05
+        },
+        {
+            "atom1": 37,
+            "atom2": 5,
+            "atom3": 6,
+            "atom4": 7,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 1.05
+        },
+        {
+            "atom1": 4,
+            "atom2": 5,
+            "atom3": 6,
+            "atom4": 11,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 1.05
+        },
+        {
+            "atom1": 37,
+            "atom2": 5,
+            "atom3": 6,
+            "atom4": 11,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 1.05
+        },
+        {
+            "atom1": 5,
+            "atom2": 6,
+            "atom3": 7,
+            "atom4": 8,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 11,
+            "atom2": 6,
+            "atom3": 7,
+            "atom4": 8,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 5,
+            "atom2": 6,
+            "atom3": 11,
+            "atom4": 10,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 4.8
+        },
+        {
+            "atom1": 7,
+            "atom2": 6,
+            "atom3": 11,
+            "atom4": 10,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 4.8
+        },
+        {
+            "atom1": 6,
+            "atom2": 7,
+            "atom3": 8,
+            "atom4": 9,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 6,
+            "atom2": 7,
+            "atom3": 8,
+            "atom4": 14,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 7,
+            "atom2": 8,
+            "atom3": 9,
+            "atom4": 10,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 14,
+            "atom2": 8,
+            "atom3": 9,
+            "atom4": 10,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 7,
+            "atom2": 8,
+            "atom3": 14,
+            "atom4": 15,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 1.0
+        },
+        {
+            "atom1": 9,
+            "atom2": 8,
+            "atom3": 14,
+            "atom4": 15,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 1.0
+        },
+        {
+            "atom1": 7,
+            "atom2": 8,
+            "atom3": 14,
+            "atom4": 16,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 1.0
+        },
+        {
+            "atom1": 9,
+            "atom2": 8,
+            "atom3": 14,
+            "atom4": 16,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 1.0
+        },
+        {
+            "atom1": 8,
+            "atom2": 9,
+            "atom3": 10,
+            "atom4": 11,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 8,
+            "atom2": 9,
+            "atom3": 10,
+            "atom4": 12,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 9,
+            "atom2": 10,
+            "atom3": 11,
+            "atom4": 6,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 4.8
+        },
+        {
+            "atom1": 12,
+            "atom2": 10,
+            "atom3": 11,
+            "atom4": 6,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 4.8
+        },
+        {
+            "atom1": 9,
+            "atom2": 10,
+            "atom3": 12,
+            "atom4": 13,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 0.9
+        },
+        {
+            "atom1": 11,
+            "atom2": 10,
+            "atom3": 12,
+            "atom4": 13,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 0.9
+        },
+        {
+            "atom1": 8,
+            "atom2": 14,
+            "atom3": 16,
+            "atom4": 17,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 2.5
+        },
+        {
+            "atom1": 15,
+            "atom2": 14,
+            "atom3": 16,
+            "atom4": 17,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 2.5
+        },
+        {
+            "atom1": 8,
+            "atom2": 14,
+            "atom3": 16,
+            "atom4": 38,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 2.5
+        },
+        {
+            "atom1": 15,
+            "atom2": 14,
+            "atom3": 16,
+            "atom4": 38,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 2.5
+        },
+        {
+            "atom1": 15,
+            "atom2": 14,
+            "atom3": 16,
+            "atom4": 38,
+            "delta_constant": 0.0,
+            "minima": 1,
+            "spring_constant": 2.0
+        },
+        {
+            "atom1": 14,
+            "atom2": 16,
+            "atom3": 17,
+            "atom4": 18,
+            "delta_constant": 180.0,
+            "minima": 4,
+            "spring_constant": 0.5
+        },
+        {
+            "atom1": 14,
+            "atom2": 16,
+            "atom3": 17,
+            "atom4": 18,
+            "delta_constant": 180.0,
+            "minima": 3,
+            "spring_constant": 0.15
+        },
+        {
+            "atom1": 14,
+            "atom2": 16,
+            "atom3": 17,
+            "atom4": 18,
+            "delta_constant": 0.0,
+            "minima": 1,
+            "spring_constant": 0.53
+        },
+        {
+            "atom1": 14,
+            "atom2": 16,
+            "atom3": 17,
+            "atom4": 25,
+            "delta_constant": 180.0,
+            "minima": 4,
+            "spring_constant": 0.5
+        },
+        {
+            "atom1": 14,
+            "atom2": 16,
+            "atom3": 17,
+            "atom4": 25,
+            "delta_constant": 180.0,
+            "minima": 3,
+            "spring_constant": 0.15
+        },
+        {
+            "atom1": 14,
+            "atom2": 16,
+            "atom3": 17,
+            "atom4": 25,
+            "delta_constant": 0.0,
+            "minima": 1,
+            "spring_constant": 0.53
+        },
+        {
+            "atom1": 16,
+            "atom2": 17,
+            "atom3": 18,
+            "atom4": 19,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.156
+        },
+        {
+            "atom1": 25,
+            "atom2": 17,
+            "atom3": 18,
+            "atom4": 19,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.156
+        },
+        {
+            "atom1": 16,
+            "atom2": 17,
+            "atom3": 25,
+            "atom4": 26,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.156
+        },
+        {
+            "atom1": 18,
+            "atom2": 17,
+            "atom3": 25,
+            "atom4": 26,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.18
+        },
+        {
+            "atom1": 18,
+            "atom2": 17,
+            "atom3": 25,
+            "atom4": 26,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 0.25
+        },
+        {
+            "atom1": 18,
+            "atom2": 17,
+            "atom3": 25,
+            "atom4": 26,
+            "delta_constant": 180.0,
+            "minima": 1,
+            "spring_constant": 0.2
+        },
+        {
+            "atom1": 16,
+            "atom2": 17,
+            "atom3": 25,
+            "atom4": 36,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.156
+        },
+        {
+            "atom1": 18,
+            "atom2": 17,
+            "atom3": 25,
+            "atom4": 36,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.156
+        },
+        {
+            "atom1": 18,
+            "atom2": 19,
+            "atom3": 20,
+            "atom4": 21,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 24,
+            "atom2": 19,
+            "atom3": 20,
+            "atom4": 21,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 18,
+            "atom2": 19,
+            "atom3": 24,
+            "atom4": 23,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 20,
+            "atom2": 19,
+            "atom3": 24,
+            "atom4": 23,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 19,
+            "atom2": 20,
+            "atom3": 21,
+            "atom4": 22,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 20,
+            "atom2": 21,
+            "atom3": 22,
+            "atom4": 23,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 21,
+            "atom2": 22,
+            "atom3": 23,
+            "atom4": 24,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 22,
+            "atom2": 23,
+            "atom3": 24,
+            "atom4": 19,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 3.625
+        },
+        {
+            "atom1": 17,
+            "atom2": 25,
+            "atom3": 26,
+            "atom4": 27,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.18
+        },
+        {
+            "atom1": 17,
+            "atom2": 25,
+            "atom3": 26,
+            "atom4": 27,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 0.25
+        },
+        {
+            "atom1": 17,
+            "atom2": 25,
+            "atom3": 26,
+            "atom4": 27,
+            "delta_constant": 180.0,
+            "minima": 1,
+            "spring_constant": 0.2
+        },
+        {
+            "atom1": 36,
+            "atom2": 25,
+            "atom3": 26,
+            "atom4": 27,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.156
+        },
+        {
+            "atom1": 17,
+            "atom2": 25,
+            "atom3": 36,
+            "atom4": 40,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.16
+        },
+        {
+            "atom1": 17,
+            "atom2": 25,
+            "atom3": 36,
+            "atom4": 40,
+            "delta_constant": 0.0,
+            "minima": 1,
+            "spring_constant": 0.25
+        },
+        {
+            "atom1": 26,
+            "atom2": 25,
+            "atom3": 36,
+            "atom4": 40,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.16
+        },
+        {
+            "atom1": 26,
+            "atom2": 25,
+            "atom3": 36,
+            "atom4": 40,
+            "delta_constant": 0.0,
+            "minima": 1,
+            "spring_constant": 0.25
+        },
+        {
+            "atom1": 25,
+            "atom2": 26,
+            "atom3": 27,
+            "atom4": 28,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.18
+        },
+        {
+            "atom1": 25,
+            "atom2": 26,
+            "atom3": 27,
+            "atom4": 28,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 0.25
+        },
+        {
+            "atom1": 25,
+            "atom2": 26,
+            "atom3": 27,
+            "atom4": 28,
+            "delta_constant": 180.0,
+            "minima": 1,
+            "spring_constant": 0.2
+        },
+        {
+            "atom1": 25,
+            "atom2": 26,
+            "atom3": 27,
+            "atom4": 29,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.156
+        },
+        {
+            "atom1": 26,
+            "atom2": 27,
+            "atom3": 29,
+            "atom4": 31,
+            "delta_constant": 0.0,
+            "minima": 4,
+            "spring_constant": 0.1
+        },
+        {
+            "atom1": 26,
+            "atom2": 27,
+            "atom3": 29,
+            "atom4": 31,
+            "delta_constant": 0.0,
+            "minima": 2,
+            "spring_constant": 0.07
+        },
+        {
+            "atom1": 28,
+            "atom2": 27,
+            "atom3": 29,
+            "atom4": 31,
+            "delta_constant": 0.0,
+            "minima": 4,
+            "spring_constant": 0.1
+        },
+        {
+            "atom1": 28,
+            "atom2": 27,
+            "atom3": 29,
+            "atom4": 31,
+            "delta_constant": 0.0,
+            "minima": 2,
+            "spring_constant": 0.07
+        },
+        {
+            "atom1": 27,
+            "atom2": 29,
+            "atom3": 31,
+            "atom4": 32,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 2.5
+        },
+        {
+            "atom1": 30,
+            "atom2": 29,
+            "atom3": 31,
+            "atom4": 32,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 2.5
+        },
+        {
+            "atom1": 27,
+            "atom2": 29,
+            "atom3": 31,
+            "atom4": 39,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 2.5
+        },
+        {
+            "atom1": 30,
+            "atom2": 29,
+            "atom3": 31,
+            "atom4": 39,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 2.5
+        },
+        {
+            "atom1": 30,
+            "atom2": 29,
+            "atom3": 31,
+            "atom4": 39,
+            "delta_constant": 0.0,
+            "minima": 1,
+            "spring_constant": 2.0
+        },
+        {
+            "atom1": 29,
+            "atom2": 31,
+            "atom3": 32,
+            "atom4": 33,
+            "delta_constant": 180.0,
+            "minima": 4,
+            "spring_constant": 0.5
+        },
+        {
+            "atom1": 29,
+            "atom2": 31,
+            "atom3": 32,
+            "atom4": 33,
+            "delta_constant": 180.0,
+            "minima": 3,
+            "spring_constant": 0.15
+        },
+        {
+            "atom1": 29,
+            "atom2": 31,
+            "atom3": 32,
+            "atom4": 33,
+            "delta_constant": 0.0,
+            "minima": 1,
+            "spring_constant": 0.53
+        },
+        {
+            "atom1": 31,
+            "atom2": 32,
+            "atom3": 33,
+            "atom4": 34,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.156
+        },
+        {
+            "atom1": 32,
+            "atom2": 33,
+            "atom3": 34,
+            "atom4": 35,
+            "delta_constant": 0.0,
+            "minima": 3,
+            "spring_constant": 0.18
+        },
+        {
+            "atom1": 32,
+            "atom2": 33,
+            "atom3": 34,
+            "atom4": 35,
+            "delta_constant": 180.0,
+            "minima": 2,
+            "spring_constant": 0.25
+        },
+        {
+            "atom1": 32,
+            "atom2": 33,
+            "atom3": 34,
+            "atom4": 35,
+            "delta_constant": 180.0,
+            "minima": 1,
+            "spring_constant": 0.2
+        }
+    ],
+    "version": 1
+}

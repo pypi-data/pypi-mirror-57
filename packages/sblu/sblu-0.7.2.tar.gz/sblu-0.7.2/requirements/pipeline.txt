@@ -1,0 +1,9 @@
+# This should be kept in sync with development.txt, minus ProDy (their PyPI version is broken as of 1.9.4) and pytest (only for development)
+path.py>=7.0
+numpy>=1.9
+scipy>=0.16
+BioPython>=1.73
+configobj>=5.0
+click>=5.1
+requests>=2.8
+pyparsing>=2.3

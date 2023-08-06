@@ -1,0 +1,33 @@
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+
+pipelines:
+  default:
+    - step:
+        name: Python 3.5
+        image: python:3.5
+        caches:
+          - pip
+        script:
+          - pip install -r requirements/pipeline.txt
+          - pip install prody
+          - python setup.py test
+    - step:
+        name: Python 3.6
+        image: python:3.6
+        caches:
+          - pip
+        script:
+          - pip install -r requirements/pipeline.txt
+          - pip install prody
+          - python setup.py test
+    - step:
+        name: Python 3.7
+        image: python:3.7
+        caches:
+          - pip
+        script:
+          - pip install -r requirements/pipeline.txt
+          - pip install prody
+          - python setup.py test

@@ -1,0 +1,9 @@
+REMARK original generated coordinate pdb file
+ATOM      1  N   CYS A 138       8.949   6.018   6.418  1.00  0.00           N
+ATOM      2  H   CYS A 138       8.014   6.205   6.117  0.00  0.00           H
+ATOM      3  CA  CYS A 138       9.124   6.535   7.756  1.00  0.00           C
+ATOM      4  CB  CYS A 138       9.671   5.413   8.579  1.00  0.00           C
+ATOM      5  SG  CYS A 138       8.223   4.372   8.841  1.00  0.00           S
+ATOM      6  C   CYS A 138       9.966   7.776   7.942  1.00  0.00           C
+ATOM      7  O   CYS A 138      10.822   8.107   7.140  1.00  0.00           O
+END
