@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+ubxserial/__init__.py
+ubxserial.egg-info/PKG-INFO
+ubxserial.egg-info/SOURCES.txt
+ubxserial.egg-info/dependency_links.txt
+ubxserial.egg-info/entry_points.txt
+ubxserial.egg-info/requires.txt
+ubxserial.egg-info/top_level.txt
