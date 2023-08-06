@@ -1,0 +1,7 @@
+tensorflow<2.0.0,>=1.8.0
+tqdm
+numpy
+pandas
+annoy
+keras==2.1.5
+scipy
