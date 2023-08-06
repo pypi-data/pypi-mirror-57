@@ -1,0 +1,26 @@
+---
+doc:
+  short_help: Consul daemon config file.
+
+args:
+  datacenter:
+    doc:
+      short_help: This flag controls the datacenter in which the agent is running.
+      help: |
+        This flag controls the datacenter in which the agent is running.
+
+        If not provided, it defaults to "dc1". Consul has first-class support for multiple datacenters, but it relies on proper configuration. Nodes in the same datacenter should be on a single LAN.
+    type: string
+    default: dc1
+    required: true
+  data_dir:
+    doc:
+      short_help: This flag provides a data directory for the agent to store state.
+      help: |
+        This flag provides a data directory for the agent to store state. This is required for all agents. The directory should be durable across reboots. This is especially critical for agents that are running in server mode as they must be able to persist cluster state. Additionally, the directory must support the use of filesystem locking, meaning some types of mounted folders (e.g. VirtualBox shared folders) may not be suitable. Note: both server and non-server agents may store ACL tokens in the state in this directory so read access may grant access to any tokens on servers and to any tokens used during service registration on non-servers. On Unix-based platforms the files are written with 0600 permissions so you should ensure only trusted processes can execute as the same user as Consul. On Windows, you should ensure the directory has suitable permissions configured as these will be inherited.
+    type: string
+    required: true
+
+---
+datacenter = "{{:: datacenter ::}}"
+data_dir = "{{:: data_dir ::}}"

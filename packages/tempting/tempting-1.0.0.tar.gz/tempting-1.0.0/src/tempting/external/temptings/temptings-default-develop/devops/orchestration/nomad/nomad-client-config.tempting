@@ -1,0 +1,8 @@
+---
+doc:
+  short_help: Nomad server configuration.
+
+---
+client {
+  enabled = true
+}

@@ -1,0 +1,63 @@
+---
+doc:
+  short_help: Consul daemon config file.
+
+args:
+  datacenter:
+    doc:
+      short_help: This flag controls the datacenter in which the agent is running.
+      help: |
+        This flag controls the datacenter in which the agent is running.
+
+        If not provided, it defaults to "dc1". Consul has first-class support for multiple datacenters, but it relies on proper configuration. Nodes in the same datacenter should be on a single LAN.
+    type: string
+    default: dc1
+    required: true
+  data_dir:
+    doc:
+      short_help: This flag provides a data directory for the agent to store state.
+      help: |
+        This flag provides a data directory for the agent to store state. This is required for all agents. The directory should be durable across reboots. This is especially critical for agents that are running in server mode as they must be able to persist cluster state. Additionally, the directory must support the use of filesystem locking, meaning some types of mounted folders (e.g. VirtualBox shared folders) may not be suitable. Note: both server and non-server agents may store ACL tokens in the state in this directory so read access may grant access to any tokens on servers and to any tokens used during service registration on non-servers. On Unix-based platforms the files are written with 0600 permissions so you should ensure only trusted processes can execute as the same user as Consul. On Windows, you should ensure the directory has suitable permissions configured as these will be inherited.
+    type: string
+    required: true
+  encrypt:
+    doc:
+      short_help: Specifies the secret key to use for encryption of Consul network traffic.
+      help: |
+        Specifies the secret key to use for encryption of Consul network traffic. This key must be 16-bytes that are Base64-encoded. The easiest way to create an encryption key is to use consul keygen. All nodes within a cluster must share the same encryption key to communicate. The provided key is automatically persisted to the data directory and loaded automatically whenever the agent is restarted. This means that to encrypt Consul's gossip protocol, this option only needs to be provided once on each agent's initial startup sequence. If it is provided after Consul has been initialized with an encryption key, then the provided key is ignored and a warning will be displayed.
+    type: string
+    required: true
+    secret: true
+  client_addr:
+    doc:
+      short_help: The address to which Consul will bind client interfaces, including the HTTP and DNS servers.
+      help: |
+        The address to which Consul will bind client interfaces, including the HTTP and DNS servers. By default, this is "127.0.0.1", allowing only loopback connections. In Consul 1.0 and later this can be set to a space-separated list of addresses to bind to, or a go-sockaddr template that can potentially resolve to multiple addresses.
+    type: string
+    required: false
+  retry_join:
+    doc:
+      short_help: Similar to 'join' but allows retrying a join if the first attempt fails.
+      help: |
+        Similar to 'join' but allows retrying a join if the first attempt fails. This is useful for cases where you know the address will eventually be available. The list can contain IPv4, IPv6, or DNS addresses. In Consul 1.1.0 and later this can be set to a go-sockaddr template. If Consul is running on the non-default Serf LAN port, this must be specified as well. IPv6 must use the "bracketed" syntax. If multiple values are given, they are tried and retried in the order listed until the first succeeds. Here are some examples:
+
+            # Using a DNS entry
+            $ consul agent -retry-join "consul.domain.internal"
+
+            # Using IPv4
+            $ consul agent -retry-join "10.0.4.67"
+
+            # Using IPv6
+            $ consul agent -retry-join "[::1]:8301"
+    type: list
+    schema:
+      type: string
+    empty: false
+    required: false
+
+---
+datacenter = "{{:: datacenter ::}}"
+data_dir = "{{:: data_dir ::}}"
+encrypt = "{{:: encrypt ::}}"
+{%:: if client_addr is defined ::%}client_addr = "{{:: client_addr ::}}"{%:: endif ::%}
+{%:: if retry_join is defined and retry_join ::%}retry_join = [{{:: retry_join | map('quote') | join(', ') ::}}]{%:: endif ::%}

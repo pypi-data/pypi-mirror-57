@@ -1,0 +1,28 @@
+---
+doc:
+  short_help: Consul server configuration.
+
+args:
+  bootstrap_expect:
+    doc:
+      short_help: This flag provides the number of expected servers in the datacenter.
+      help: |
+        This flag provides the number of expected servers in the datacenter. Either this value should not be provided or the value must agree with other servers in the cluster. When provided, Consul waits until the specified number of servers are available and then bootstraps the cluster. This allows an initial leader to be elected automatically. This cannot be used in conjunction with the legacy -bootstrap flag. This flag requires -server mode.
+    type: integer
+    required: false
+  ui:
+    doc:
+      short_help: Enables the built-in web UI server and the required HTTP routes.
+      help: |
+        Enables the built-in web UI server and the required HTTP routes. This eliminates the need to maintain the Consul web UI files separately from the binary.
+    type: boolean
+    default: false
+    required: false
+    cli:
+      param_decls:
+        - "--ui"
+
+---
+server = true
+{%:: if bootstrap_expect is defined ::%}bootstrap_expect = {{:: bootstrap_expect ::}}{%:: endif ::%}
+{%:: if ui is defined ::%}ui = {%:: if ui ::%}true{%:: else ::%}false{%:: endif ::%}{%:: endif ::%}
