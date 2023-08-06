@@ -1,0 +1,3 @@
+[console_scripts]
+macro = test_macro.macro:main
+
