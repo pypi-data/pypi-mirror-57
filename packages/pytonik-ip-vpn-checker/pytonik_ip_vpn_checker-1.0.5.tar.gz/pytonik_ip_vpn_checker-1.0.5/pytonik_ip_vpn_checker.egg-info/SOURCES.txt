@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+pytonik_ip_vpn_checker.egg-info/PKG-INFO
+pytonik_ip_vpn_checker.egg-info/SOURCES.txt
+pytonik_ip_vpn_checker.egg-info/dependency_links.txt
+pytonik_ip_vpn_checker.egg-info/top_level.txt
