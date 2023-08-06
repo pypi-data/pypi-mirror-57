@@ -1,0 +1,13 @@
+CHANGES.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+germalemma/__init__.py
+germalemma.egg-info/PKG-INFO
+germalemma.egg-info/SOURCES.txt
+germalemma.egg-info/dependency_links.txt
+germalemma.egg-info/requires.txt
+germalemma.egg-info/top_level.txt
+germalemma/data/.gitignore
+germalemma/data/lemmata.pickle
