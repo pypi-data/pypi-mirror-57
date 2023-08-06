@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+AWS_Mage2Connector.egg-info/PKG-INFO
+AWS_Mage2Connector.egg-info/SOURCES.txt
+AWS_Mage2Connector.egg-info/dependency_links.txt
+AWS_Mage2Connector.egg-info/not-zip-safe
+AWS_Mage2Connector.egg-info/requires.txt
+AWS_Mage2Connector.egg-info/top_level.txt
+aws_mage2connector/__init__.py
+aws_mage2connector/aws_mage2connector.py
