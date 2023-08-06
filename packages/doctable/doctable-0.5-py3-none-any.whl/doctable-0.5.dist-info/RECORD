@@ -1,0 +1,13 @@
+doctable/__init__.py,sha256=2CRi9fKDhorEr-1QwI2Tuh-Po46nUmWCFC4tAcATchs,323
+doctable/bootstrap.py,sha256=-LAeY2SatGqhIg7CKoqCzdodvEE7aWCFwhYG_JoVFp8,1728
+doctable/coltypes.py,sha256=o_3So5TSg0ELfJnK2DOs_dKpL4mAx-kDQ_mahfaO57U,1475
+doctable/docparser.py,sha256=UZcU4nmyc-P6A0WeTMXNw-uTtNgcQcPiR84AFcp-2E4,18307
+doctable/doctable.py,sha256=uNXuA55KIo0r4KQOQvZGTxOHYMBKCYQEFFCzV8oB6fc,23848
+doctable/doctablelegacy.py,sha256=CFRkTyAY66R03SP3g4RnEVhDGMvRtr2Is7XSyqn8_BQ,14524
+doctable/migration.py,sha256=WXd4wq9kkXwx5LqkLlTp0KK6EzjPVft31OQFUVaECwg,1629
+doctable/parsetree.py,sha256=zn3HF2oLCmfH-XVuTQpyoFogVBxzjL690u_09DLdNu0,5760
+doctable-0.5.dist-info/LICENSE.txt,sha256=d0XFstPNGzFSjBTg7VIst27yKWuwrmn63tYdzlAvQk0,1056
+doctable-0.5.dist-info/METADATA,sha256=FtJ__uNXrwmbc64E5cUPRfDG1JkbtOXrLvwjPL1q1mA,850
+doctable-0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+doctable-0.5.dist-info/top_level.txt,sha256=BNPzR989OV81oywSTp0LoJrPAQZ2sE95qbbMg9-ECfQ,9
+doctable-0.5.dist-info/RECORD,,
