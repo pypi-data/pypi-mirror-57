@@ -1,0 +1,7 @@
+setup.py
+Kimai_Python.egg-info/PKG-INFO
+Kimai_Python.egg-info/SOURCES.txt
+Kimai_Python.egg-info/dependency_links.txt
+Kimai_Python.egg-info/requires.txt
+Kimai_Python.egg-info/top_level.txt
+kimai_python/__init__.py
