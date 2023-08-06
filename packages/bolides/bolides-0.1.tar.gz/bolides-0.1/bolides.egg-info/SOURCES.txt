@@ -1,0 +1,10 @@
+README.rst
+setup.py
+bolides/__init__.py
+bolides/bolide.py
+bolides/events.py
+bolides/version.py
+bolides.egg-info/PKG-INFO
+bolides.egg-info/SOURCES.txt
+bolides.egg-info/dependency_links.txt
+bolides.egg-info/top_level.txt
