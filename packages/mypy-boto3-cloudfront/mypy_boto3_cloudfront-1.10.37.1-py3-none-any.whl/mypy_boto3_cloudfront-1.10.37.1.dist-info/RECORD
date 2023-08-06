@@ -1,0 +1,12 @@
+mypy_boto3_cloudfront/__init__.py,sha256=6wJCjA_GaCGuQG1jiur5uymOHaYph8ka5qzYtP1UgPk,812
+mypy_boto3_cloudfront/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_cloudfront/client.py,sha256=6PBB9y1GLLC7jAjIKPpSFvRqT5MkWNR3k75wIS-MTuw,30699
+mypy_boto3_cloudfront/paginator.py,sha256=2F9_ib2L75jxiqHDL-V7K1g-dVrt8pOeZ6Ip_t93OOg,3539
+mypy_boto3_cloudfront/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_cloudfront/type_defs.py,sha256=hcp-xJtuDg1QUj7pNrE-28PLMQ8TxnNQfIyzP_Yyvls,36966
+mypy_boto3_cloudfront/version.py,sha256=OdDVi_6rNJqpj47hPRjN7fCGSnDPlpLMy2iiRfULK7g,57
+mypy_boto3_cloudfront/waiter.py,sha256=BxhF79cZ00Wm8dtn956eNL-J7T6pfXmWPqM-DAOx290,2203
+mypy_boto3_cloudfront-1.10.37.1.dist-info/METADATA,sha256=hzue2kQ30fsb97eRIxtghb-xmr99cgWIux3cosATO_U,1217
+mypy_boto3_cloudfront-1.10.37.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_cloudfront-1.10.37.1.dist-info/top_level.txt,sha256=J28Vr0dXbpuFCPCGoid6UkoDLWbTM384ua7fEiGNUXs,22
+mypy_boto3_cloudfront-1.10.37.1.dist-info/RECORD,,
