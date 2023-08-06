@@ -1,0 +1,4 @@
+[console_scripts]
+xd-cwl-add = xd_cwl_utils.add_content.__main__:main
+xd-cwl-validate = xd_cwl_utils.validate_metadata.__main__:main
+
