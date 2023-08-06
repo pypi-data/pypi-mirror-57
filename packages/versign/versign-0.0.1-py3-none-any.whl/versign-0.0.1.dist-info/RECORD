@@ -1,0 +1,17 @@
+versign/__init__.py,sha256=4xX87MNUjDhyZs66jaDxDGcX0Dux8_sOqqP-_MAi3ks,6339
+versign/metrics/__init__.py,sha256=2Rh5PpFsnOPTR2aJaYQdusKV0qN_M5OU2r90GN3HZRQ,1359
+versign/metrics/metrics.py,sha256=7nzvFrnabVc_a6tO-MGKPWG6qj4EPx0Vm3e6Z8M7leE,4857
+versign/train_test/Classifier.py,sha256=jAODTfe4zy-1UEg2Wko9ErRwU12S6avV867irI6WpBM,788
+versign/train_test/FeatureExtractor.py,sha256=tO0NwZp1oyVS5QyfeD80S96nECx78IN_mfVlhE4wB1Q,237
+versign/train_test/SignatureDataset.py,sha256=T409u1xX9XnkSfhEr16Y6PJstMJL3VFM_mIPabKXT6I,569
+versign/train_test/__init__.py,sha256=lVkNxeb2n-AT39fo63wVUpoJFaOuHIy6R5YjMqPkFe8,129
+versign/utils/__init__.py,sha256=-haCPCjvAtb5U_gYB5tFHPny22ZwKd4alVK-foqSSl4,3133
+versign/utils/augment.py,sha256=xVjp-PCvn79_lAR6svwBAAToo-heykoVAplmMH-p4ig,2597
+versign/utils/batch_process.py,sha256=9IWF2Hjs2_Hj3lRhrUIDujeuWdaYMmJMRSPwtnRj95Q,1350
+versign/utils/gridlines.py,sha256=NiifKoNq5B1RA6_-C9tUNBMd5MnaQiCOr6iv69CQqww,3570
+versign/utils/segment.py,sha256=vO6zJtIJqcB-v578h7So_ALLkrLOHtHr8irsyhLIQwk,4429
+versign-0.0.1.dist-info/LICENSE,sha256=d8kB7JNV4qmuYUB4a2DdQ1ZGVbLqh0TyNA9VUlsnt1w,1081
+versign-0.0.1.dist-info/METADATA,sha256=VJJDH_xWEX1gNp3IEM8WRqixNNoLwQc5uqJSC2lip2g,4522
+versign-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+versign-0.0.1.dist-info/top_level.txt,sha256=sQaxZ5jP6_ociqFEPvy1emTMXjjFhAR5FW4t2X-LKp0,8
+versign-0.0.1.dist-info/RECORD,,
