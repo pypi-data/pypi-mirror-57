@@ -1,0 +1,88 @@
+=========
+thStorage
+=========
+
+thStroage is a simple app to connect to th clusters' stroage system
+
+detail documentation is in the "docs" directory
+
+Quick start
+
+-----------
+
+1. Install based pubgins [django restframework;requests] like this::
+
+   'pip install djangorestframework==3.11.0'
+   'pip install requests'
+
+2. Add "thapi" to your INSTALLED_APPS setting like this::
+
+    INSTALL_APPS = [
+        ...
+        'thStorage',
+        'rest_framework',
+    ]
+
+3. Include the thapi URLconf in your project urls.py like this::
+
+    from thStorage import urls as thStorageUrls
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('login/', main.login),
+    ] + thStorageUrls.urlpatterns,
+
+4. Run `python manage.py migrate` to create thStroage models
+
+5. Run `python manage.py collectstatic` to migrate thStorage statics
+
+6. Set django project settings like::
+
+    X_FRAME_OPTIONS = 'ALLOWALL' # (or your host name)
+    STATIC_URL = '/static/'
+    STATIC_ROOT = os.path.join(BASE_DIR,"static").replace("\\","/")
+    TH_STORAGE_CONFIG = {
+        'TOKEN_UPDATE_IMTERVAL': 36000000,
+        'STORAGE_BACKEND_HOST':'thstorage backend server',
+        'STORAGE_BACKEND_APPID':'your thstorage appid',
+        'STORAGE_BACKEND_APPKEY':'your thstorage appkey',
+    }
+
+7. Login thstorage when your project's user login like this::
+
+    systemUsername = user.username  # systemUsername is tianhe system (in nscc-tj) username, and username is your project username
+    cluster = "TH-HPC1" # cluster is tianhe system cluster name
+    thStroageUser = THStorageUser(username,cluster,systemUsername)
+    thStroageUser.Login()
+
+8. Set LocalStorage in login redirect page like this::
+
+    t, u, c, s = thStroageUser.Login()
+    thst = {"token": t, "username": s, "cluster": c,"platform":"default"}
+    return render(request, 'index.html', {"thst":thst})
+
+    edit index.html
+    <script>
+        var platform = "{{thst.platform}}";
+        var username = "{{thst.username}}";
+        var cluster = "{{thst.cluster}}";
+        var token = "{{thst.token}}";
+        localStorage.setItem("platform", platform);
+        localStorage.setItem("username", username);
+        localStorage.setItem("cluster", cluster);
+        localStorage.setItem("token", token);
+    </script>
+
+8. Add url "/thStorage" to your storage page by iframe::
+
+    <body>
+        <div> your html elements </div>
+        <div>
+            <iframe id="myiframe" src="/thstorage" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+    </body>
+    <script>
+        var ifm= document.getElementById("myiframe");
+        ifm.height=document.documentElement.clientHeight;
+    </script>
+
+9. Start the development server and visit http://127.0.0.1:8000/yourStorageUrl
