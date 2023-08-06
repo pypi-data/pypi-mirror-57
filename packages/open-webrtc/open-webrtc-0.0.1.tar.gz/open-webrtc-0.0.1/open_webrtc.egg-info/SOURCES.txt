@@ -1,0 +1,6 @@
+README.md
+setup.py
+open_webrtc.egg-info/PKG-INFO
+open_webrtc.egg-info/SOURCES.txt
+open_webrtc.egg-info/dependency_links.txt
+open_webrtc.egg-info/top_level.txt
