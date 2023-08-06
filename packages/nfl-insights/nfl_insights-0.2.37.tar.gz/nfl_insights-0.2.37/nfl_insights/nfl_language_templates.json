@@ -1,0 +1,1599 @@
+{
+  "config": {
+    "interestThreshold": 1
+  },
+  "templates": {
+    "statements": {
+      "stat": {
+        "positive": [
+          "The {subject} {ObjectDescription} are {rankText} with {X} {statnameText} {calculationText} {dimprep} {dimensionText}. ",
+          "The {subject} {ObjectDescription} are {rankText} with {X} {dimensionText} {statnameText} {calculationText}. ",
+          "The {subject} {ObjectDescription} are {rankText} when it comes to {dimensionText} {statnameText} {calculationText} with {X}. ",
+          "The {subject} {ObjectDescription} have {X} {dimensionText} {statnameText} {calculationText}. They are {rankText}. "
+        ],
+        "negative": [
+          "The {subject} {ObjectDescription} are {rankText} with {X} {statnameText} {calculationText} allowed on defense {dimprep} {dimensionText}. ",
+          "The {subject} {ObjectDescription} are {rankText} with {X} {dimensionText} {statnameText} {calculationText} conceded on defense. ",
+          "The {subject} {ObjectDescription} are {rankText} when it comes to giving up {statnameText} {calculationText} {dimprep} {dimensionText} with {X}. ",
+          "The {subject} {ObjectDescription} have allowed {X} {dimensionText} {statnameText} {calculationText}. They are {rankText}. "
+        ]
+      },
+      "ratio": {
+        "positive": [
+          "The {subject} {ObjectDescription} are {rankText} with {X} {statnameText} {calculationText} {dimprep} {dimensionText}. ",
+          "The {subject} {ObjectDescription} are {rankText} with {X} {dimensionText} {statnameText} {calculationText}. ",
+          "The {subject} {ObjectDescription} are {rankText} when it comes to {dimensionText} {statnameText} {calculationText} with {X}. ",
+          "The {subject} {ObjectDescription} have {X} {dimensionText} {statnameText} {calculationText}. They are {rankText}. "
+        ],
+        "negative": [
+          "The {subject} {ObjectDescription} are {rankText} with {X} {statnameText} {calculationText} allowed on defense {dimprep} {dimensionText}. ",
+          "The {subject} {ObjectDescription} are {rankText} with {X} {dimensionText} {statnameText} {calculationText} conceded on defense. ",
+          "The {subject} {ObjectDescription} are {rankText} when it comes to giving up {statnameText} {calculationText} {dimprep} {dimensionText} with {X}. ",
+          "The {subject} {ObjectDescription} have allowed {X} {dimensionText} {statnameText} {calculationText}. They are {rankText}. "
+        ]
+      },
+      "pct": {
+        "positive": [
+          "{subject} {ObjectDescription} do {X} of their {statnameText} {dimprep} {dimensionText}. They are {rankText}. "
+        ],
+        "negative": [
+          "{subject} {ObjectDescription} do {X} of their {statnameText} {dimprep} {dimensionText}. They are {rankText}. "
+        ]
+      }
+    },
+    "questions": {
+      "option": "{subject}",
+      "answer": [
+        "{subject1} {ObjectDescription} are {rankText1} with {X1} vs {subject2} {ObjectDescription} who are {rankText2} with {X2}",
+        "{subject1} {ObjectDescription} are {rankText1} with {X1} while {subject2} {ObjectDescription} are ranked {rankText2} with {X2}"
+      ],
+      "stat": {
+        "positive": [
+          "Which team has more {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ],
+        "negative": [
+          "Which team has less {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ]
+      },
+      "ratio": {
+        "positive": [
+          "Which team has higher {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ],
+        "negative": [
+          "Which team has lower {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ]
+      },
+      "pct": {
+        "positive": [
+          "Which team has higher percentage of {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ],
+        "negative": [
+          "Which team has higher percentage of {statnameText} {calculationText} {dimprep} {dimensionText}?"
+        ]
+      }
+    }
+  },
+  "entities": {
+    "subjects": {},
+    "objectDescriptions": {
+      "offenseTeam": [
+        ""
+      ],
+      "defenseTeam": [
+        ""
+      ],
+      "kickingTeam": [
+        "special teams"
+      ],
+      "returnTeam": [
+        "special teams"
+      ]
+    },
+    "calculations": {
+      "stat": {
+        "texts": [
+          ""
+        ]
+      },
+      "ratio": {
+        "texts": [
+          ""
+        ]
+      },
+      "per_game": {
+        "texts": [
+          "per game"
+        ],
+        "format": "{:.2f}",
+        "valueThreshold": 0.5
+      },
+      "per_drive": {
+        "texts": [
+          "per drive"
+        ],
+        "format": "{:.3f}",
+        "valueThreshold": 0.5
+      },
+      "per_play": {
+        "texts": [
+          "per play"
+        ],
+        "format": "{:.4f}",
+        "valueThreshold": 0.5
+      },
+      "pct": {
+        "texts": [
+          "percentage"
+        ],
+        "format": "{:.1f}%"
+      }
+    },
+    "ranks": {
+      "1": [
+        "leading the league",
+        "atop the NFL",
+        "1st in the NFL",
+        "no. 1"
+      ],
+      "2": [
+        "second place",
+        "no. 2",
+        "2nd in the NFL",
+        "in the top 3"
+      ],
+      "3": [
+        "third place",
+        "no. 3",
+        "3rd in the NFL",
+        "in the top 3"
+      ],
+      "4": [
+        "fourth place",
+        "no. 4",
+        "4th in the NFL",
+        "in the top 5"
+      ],
+      "5": [
+        "fifth place",
+        "no. 5",
+        "5th in the NFL",
+        "in the top 5"
+      ],
+      "6": [
+        "6th in the NFL"
+      ],
+      "7": [
+        "7th in the NFL"
+      ],
+      "8": [
+        "8th in the NFL"
+      ],
+      "9": [
+        "9th in the NFL"
+      ],
+      "10": [
+        "10th in the NFL"
+      ],
+      "11": [
+        "11th in the NFL"
+      ],
+      "12": [
+        "12th in the NFL"
+      ],
+      "13": [
+        "13th in the NFL"
+      ],
+      "14": [
+        "14th in the NFL"
+      ],
+      "15": [
+        "15th in the NFL"
+      ],
+      "16": [
+        "16th in the NFL"
+      ],
+      "17": [
+        "17th in the NFL"
+      ],
+      "18": [
+        "18th in the NFL"
+      ],
+      "19": [
+        "19th in the NFL"
+      ],
+      "20": [
+        "20th in the NFL"
+      ],
+      "21": [
+        "21th in the NFL"
+      ],
+      "22": [
+        "22th in the NFL"
+      ],
+      "23": [
+        "23th in the NFL"
+      ],
+      "24": [
+        "24th in the NFL"
+      ],
+      "25": [
+        "25th in the NFL"
+      ],
+      "26": [
+        "26th in the NFL"
+      ],
+      "27": [
+        "27th in the NFL"
+      ],
+      "28": [
+        "in the bottom 5",
+        "only 28th",
+        "just 28th"
+      ],
+      "29": [
+        "in the bottom 5",
+        "only 29th",
+        "just 29th"
+      ],
+      "30": [
+        "in the bottom 5",
+        "only 30th",
+        "just 30th"
+      ],
+      "31": [
+        "in the bottom 5",
+        "only 31st",
+        "just 31st"
+      ],
+      "32": [
+        "trailing the league",
+        "rock bottom in the NFL",
+        "last in the NFL"
+      ],
+      "tophalf": [
+        "top half"
+      ],
+      "bottomhalf": [
+        "bottom half"
+      ]
+    },
+    "statnames": {
+      "offensePoints": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "points on offense"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "points"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "defensePoints": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "points on turnovers"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "points on defense"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "kickingPoints": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "points from kicking"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "points"
+          ],
+          "format": "{:.0f}"
+        }
+      },
+      "returnPoints": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "points"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "points from returns"
+          ],
+          "format": "{:.0f}"
+        }
+      },
+      "passAttempts": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "passing attempts"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "completions": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "pass completions"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "pass completions"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "yardsPassed": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "passing yards",
+            "yards in the air"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "passing yards",
+            "yards in the air"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "yardsAfterPass": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "yards after the catch"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "yards after the catch"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "totalYardsGained": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "total yards"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "total yards"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "rushes": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "rushes"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "rushes"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "yardsRushed": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "rushing yards",
+            "yards on the ground"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "rushing yards",
+            "yards on the ground"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "passTD": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "passing touchdowns"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "passing touchdowns"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "rushTD": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "rushing touchdowns"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "rushing touchdowns"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "offenseTD": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "offensive touchdowns"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "touchdowns"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "defenseTD": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "touchdowns"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "touchdowns on defense"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "returnTD": {
+        "offenseTeam": {
+          "isRelevant": false,
+          "isReverse": false,
+          "isPositive": true,
+          "sentences": [
+            ""
+          ]
+        },
+        "defenseTeam": {
+          "isRelevant": false,
+          "isReverse": false,
+          "isPositive": true,
+          "sentences": [
+            "####"
+          ]
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isReverse": true,
+          "isPositive": false,
+          "sentences": [
+            "retrun touchdowns"
+          ]
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isReverse": false,
+          "isPositive": true,
+          "sentences": [
+            "retrun touchdowns"
+          ]
+        }
+      },
+      "fumbles": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "fumbles"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "fumbles"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "fumblesRecoveredOffense": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "fumble recoveries on offense"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "fumblesRecoveredDefense": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "reovered fumbles"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "fumbledYardsDefense": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "fumble return yards"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "Interceptions": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "interceptions"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "interceptions"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "interceptionReturnYds": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "yards allowed after interceptions"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "Yards after interceptions"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "sacks": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "sacks allowed"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "sacks"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "yardsSacked": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "yards lost to sacks"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "yards gained on sacks"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "rushFumbles": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "rushing fumbles"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "rushing fumbles"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "passFumbles": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "fumble after completion"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "forced fumbles o pass plays"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "totalPlays": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "total plays from scrimage"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "total plays from scrimage"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "punts": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "punts"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "yardsPunted": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "punt yards"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "yardsReturnedPunt": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "yards allowed on punt returns"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "punt return yards"
+          ],
+          "format": "{:.0f}"
+        }
+      },
+      "netYardsPunt": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "net yards on punts"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "kicks": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "kickoffs"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "yardsKicked": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "kickoff yardage"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "yardsReturnedKick": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "yards allowed on kick-off returns"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "return yards"
+          ],
+          "format": "{:.0f}"
+        }
+      },
+      "netYardsKick": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "net kickoff yards"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "fieldGoals": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "field goals"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "fieldGoalsMade": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "good field goals"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "fieldGoalsMissed": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "missed field goals"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "fieldGoalsBlocked": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "blocked field goals"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "blocked field goals"
+          ],
+          "format": "{:.0f}"
+        }
+      },
+      "fieldGoalYards": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "field goal yardage"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "extrapointAttempt": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "extra point attempts"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "extraPointMade": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "good extra points"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "extrapointMissed": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "missed extra points"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "extrapointBlocked": {
+        "offenseTeam": {
+          "isRelevant": false
+        },
+        "defenseTeam": {
+          "isRelevant": false
+        },
+        "kickingTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "blocked extra points"
+          ],
+          "format": "{:.0f}"
+        },
+        "returnTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "blocked extra points"
+          ],
+          "format": "{:.0f}"
+        }
+      },
+      "completionRate": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "Completion Rate (pct)"
+          ],
+          "format": "{:.1f}%"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "Completion Rate (pct) allowed on defense"
+          ],
+          "format": "{:.1f}%"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "yardsPerCatch": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "yards per completion"
+          ],
+          "format": "{:.2f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "yards per completion allowed"
+          ],
+          "format": "{:.2f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "rushpassRatio": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "Completion Rate (pct)"
+          ],
+          "format": "{:.1f}%"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "Completion Rate (pct)"
+          ],
+          "format": "{:.1f}%"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "passrushRatio": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "Completion Rate"
+          ],
+          "format": "{:.1f}%"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "Completion Rate"
+          ],
+          "format": "{:.1f}%"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "tackles": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "tackles allowed"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "tackles"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      },
+      "assists": {
+        "offenseTeam": {
+          "isRelevant": true,
+          "isPositive": false,
+          "sentences": [
+            "assists allowed"
+          ],
+          "format": "{:.0f}"
+        },
+        "defenseTeam": {
+          "isRelevant": true,
+          "isPositive": true,
+          "sentences": [
+            "assists"
+          ],
+          "format": "{:.0f}"
+        },
+        "kickingTeam": {
+          "isRelevant": false
+        },
+        "returnTeam": {
+          "isRelevant": false
+        }
+      }
+    },
+    "dimensions": {
+      "all": {
+        "prep": "",
+        "text": ""
+      },
+      "1stDown": {
+        "prep": "on",
+        "text": "1st down"
+      },
+      "2ndDown": {
+        "prep": "on",
+        "text": "2nd down"
+      },
+      "3rdDown": {
+        "prep": "on",
+        "text": "3rd down"
+      },
+      "4thDown": {
+        "prep": "on",
+        "text": "4th down"
+      },
+      "redZone": {
+        "prep": "in the",
+        "text": "red zone"
+      },
+      "own10Yards": {
+        "prep": "from",
+        "text": "inside their own 10 yard line"
+      },
+      "oppTerritory": {
+        "prep": "in the",
+        "text": "oppoenent's territory"
+      },
+      "ownTerritory": {
+        "prep": "in their",
+        "text": "own territory"
+      },
+      "1stQ": {
+        "prep": "in the ",
+        "text": "first quarter"
+      },
+      "2ndQ": {
+        "prep": "in the ",
+        "text": "second quarter"
+      },
+      "3rdQ": {
+        "prep": "in the ",
+        "text": "third quarter"
+      },
+      "4thQ": {
+        "prep": "in the ",
+        "text": "fourth quarter"
+      },
+      "Overtime": {
+        "prep": "in",
+        "text": "overtime"
+      },
+      "1stH": {
+        "prep": "in the ",
+        "text": "first half"
+      },
+      "2ndH": {
+        "prep": "in the ",
+        "text": "second half"
+      },
+      "gameOnTheLine": {
+        "prep": "with the",
+        "text": "game on the line"
+      },
+      "CloseGame": {
+        "prep": "in a",
+        "text": "close game"
+      },
+      "trailing": {
+        "prep": "while",
+        "text": "trailing"
+      },
+      "leading": {
+        "prep": "while",
+        "text": "leading"
+      },
+      "conversion": {
+        "prep": "for a",
+        "text": "conversion"
+      },
+      "conversion1": {
+        "prep": "for a",
+        "text": "1st down conversion"
+      },
+      "conversion2": {
+        "prep": "for a",
+        "text": "2nd down conversion"
+      },
+      "conversion3": {
+        "prep": "for a",
+        "text": "3rd down conversion"
+      },
+      "conversion4": {
+        "prep": "for a",
+        "text": "4th down conversion"
+      },
+      "rightPass": {
+        "prep": "to the",
+        "text": "right side"
+      },
+      "leftPass": {
+        "prep": "to the",
+        "text": "left side"
+      },
+      "middlePass": {
+        "prep": "",
+        "text": "up the middle"
+      },
+      "deepPass": {
+        "prep": "throwing",
+        "text": "deep"
+      },
+      "shortPass": {
+        "prep": "throwing",
+        "text": "short"
+      },
+      "toWR": {
+        "prep": "to a",
+        "text": "wide receiver"
+      },
+      "toRB": {
+        "prep": "to a",
+        "text": "running back"
+      },
+      "toTE": {
+        "prep": "to a",
+        "text": "tight end"
+      },
+      "rightRush": {
+        "prep": "to the",
+        "text": "right"
+      },
+      "leftRush": {
+        "prep": "to the",
+        "text": "left"
+      },
+      "middleRush": {
+        "prep": "",
+        "text": "up the middle"
+      },
+      "tackleRush": {
+        "prep": "behind the",
+        "text": "tackles"
+      },
+      "guardRush": {
+        "prep": "behind",
+        "text": "the guards"
+      },
+      "wideRush": {
+        "prep": "",
+        "text": "wide"
+      },
+      "10Yards": {
+        "prep": "for more than",
+        "text": "10 yards"
+      },
+      "20Yards": {
+        "prep": "for more than",
+        "text": "20 yards"
+      },
+      "lostYards": {
+        "prep": "for a",
+        "text": "loss of yards"
+      },
+      "TD": {
+        "prep": "for a",
+        "text": "touchdown"
+      },
+      "fairCatch": {
+        "prep": "for a",
+        "text": "fair catch"
+      },
+      "touchBack": {
+        "prep": "for a",
+        "text": "touchback"
+      },
+      "returned": {
+        "prep": "for a",
+        "text": "return"
+      }
+    },
+    "timeframes": {},
+    "comparisons": {
+      "average": [
+        "This is {diff} {position} than the average in the league."
+      ],
+      "leader": [
+        "This is {diff} behind the league leader {compentity}."
+      ],
+      "trailer": [
+        "{diff} better than {compentity} who are in last place."
+      ],
+      "next": [
+        "{diff} {position} {compentity} who are {comprank}."
+      ],
+      "entity": [
+        "They are {diff} {position} {compentity} who are {rankText}."
+      ],
+      "constant": [
+        "They are the {rankText} to have passed the {constant} mark."
+      ]
+    }
+  }
+}
