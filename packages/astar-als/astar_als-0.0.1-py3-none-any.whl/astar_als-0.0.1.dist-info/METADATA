@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: astar-als
+Version: 0.0.1
+Summary: als for python
+Home-page: https://gitee.com/hoops/astar-recommendation-python/
+Author: A.Star
+Author-email: astar@snowland.ltd
+Maintainer: A.Star
+Maintainer-email: astar@snowland.ltd
+License: Apache v2.0
+Platform: all
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: astartool (>=0.0.4)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+
+===========================
+astar-recommendation-python
+===========================
+
+推荐算法框架
+
+
+
