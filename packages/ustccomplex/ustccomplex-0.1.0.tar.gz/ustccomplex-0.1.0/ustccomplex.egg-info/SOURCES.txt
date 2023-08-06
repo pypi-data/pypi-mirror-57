@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+complexcnn/__init__.py
+complexcnn/bn.py
+complexcnn/conv.py
+complexcnn/fft.py
+complexcnn/linear.py
+complexcnn/norm.py
+complexcnn/test.py
+ustccomplex.egg-info/PKG-INFO
+ustccomplex.egg-info/SOURCES.txt
+ustccomplex.egg-info/dependency_links.txt
+ustccomplex.egg-info/requires.txt
+ustccomplex.egg-info/top_level.txt
