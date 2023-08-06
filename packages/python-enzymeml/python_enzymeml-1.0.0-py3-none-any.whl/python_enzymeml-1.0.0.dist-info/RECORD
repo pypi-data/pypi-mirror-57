@@ -1,0 +1,10 @@
+enzymeml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+enzymeml/enzymeml.py,sha256=pb5LpGIM3FO7KolGYBCTDlxKHqy92eE_9eGuJB5Hi8E,69221
+enzymeml/enzymemlkey.py,sha256=6XiYhqA5O6_jlXmj5B8t_uBm6Sk7m-OcjNg6VhURHZ8,6074
+enzymeml/ontologymanager.py,sha256=_L2xK_D5ssVMPVHkAA1B5wrbf0REUhG_LaIUTuoac98,5178
+enzymeml/tables.py,sha256=yNnkIxJ4Efuer3l5rXbllpI5MhCVUwfezyJhQTn9SlQ,1903
+python_enzymeml-1.0.0.dist-info/LICENSE,sha256=Uym8cD5-KvtvVNaKYogtCFqLEm9YRiWLH5XpGVnSAwE,1323
+python_enzymeml-1.0.0.dist-info/METADATA,sha256=eiTdMZ8y1oxl6zpWgfuG4gW2zGWpz3u4LiF7XCMZzX0,516
+python_enzymeml-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+python_enzymeml-1.0.0.dist-info/top_level.txt,sha256=7EIC9jBKAW9QFNp8hlGnzj0GRSpzeE0QnGvo_WK13OM,9
+python_enzymeml-1.0.0.dist-info/RECORD,,
