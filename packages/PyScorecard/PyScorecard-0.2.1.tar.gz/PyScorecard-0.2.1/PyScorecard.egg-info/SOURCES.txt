@@ -1,0 +1,10 @@
+README.md
+README.rst
+setup.py
+PyScorecard/PyScorecard.py
+PyScorecard/__init__.py
+PyScorecard.egg-info/PKG-INFO
+PyScorecard.egg-info/SOURCES.txt
+PyScorecard.egg-info/dependency_links.txt
+PyScorecard.egg-info/requires.txt
+PyScorecard.egg-info/top_level.txt
