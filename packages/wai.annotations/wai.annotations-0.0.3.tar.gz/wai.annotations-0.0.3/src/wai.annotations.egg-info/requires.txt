@@ -1,0 +1,6 @@
+wai.common
+Pillow
+contextlib2
+pycocotools
+numpy
+scikit-image
