@@ -1,0 +1,12 @@
+GooseHDF5/__init__.py,sha256=2tHX5oOhoLwZDkimu6Bz0h4-Nr_mMOkx1hBbj1LGj9s,10347
+GooseHDF5/cli/G5check.py,sha256=74fPoS-1KRETi_VlaalbseKijsm1XpR2b4Z6BgebdOQ,1960
+GooseHDF5/cli/G5compare.py,sha256=QHTILTuhd_UIjOFOOehrBp5LM6FcCxMPvBpW_TetcsI,5157
+GooseHDF5/cli/G5list.py,sha256=W6jpZSIJfJeK9tSCgnNByqHg54aTF2kHVhgtiSZK-JY,3486
+GooseHDF5/cli/G5repair.py,sha256=YGcafEO0h0jhD55l2CexVfKL5UpKbBRXjjgxJAm_N9g,1894
+GooseHDF5/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GooseHDF5-0.2.0.dist-info/LICENSE,sha256=T-VugPjkf0PsKJyihdN67Q2mw06X3bCQiF_ElhFW3Fw,1068
+GooseHDF5-0.2.0.dist-info/METADATA,sha256=OVHytQiF0mnSe3apHcA6Q_wdbta5WHHjYBnfMonJ5zY,312
+GooseHDF5-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+GooseHDF5-0.2.0.dist-info/entry_points.txt,sha256=udW9Lx40ECPliXqjirxeIHiHf2ywkJRWomASPekBmpE,171
+GooseHDF5-0.2.0.dist-info/top_level.txt,sha256=FVO2xF4pM9y0e7ufnmcELj0rfiDlb24nDkjIGHTA4B8,10
+GooseHDF5-0.2.0.dist-info/RECORD,,
