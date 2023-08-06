@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+VERSION
+setup.py
+smc_kalman/__init__.py
+wf_smc_kalman.egg-info/PKG-INFO
+wf_smc_kalman.egg-info/SOURCES.txt
+wf_smc_kalman.egg-info/dependency_links.txt
+wf_smc_kalman.egg-info/requires.txt
+wf_smc_kalman.egg-info/top_level.txt
