@@ -1,0 +1,10 @@
+aioaerospike/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioaerospike/client.py,sha256=LgJ59O8VclhJe1WfH5-anTbzjcPIDlTVrFtEU_W04s0,2736
+aioaerospike/protocol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioaerospike/protocol/admin.py,sha256=TGVdtZ3Xeqp3RAaJ3ElrsF6QeBDg8iKyukuz3Qh7hEE,2734
+aioaerospike/protocol/general.py,sha256=xLazKA8cQ_LYDj9X3YJ4sCYDRcUPdZzCiG8bqN7Njp4,1944
+aioaerospike/protocol/message.py,sha256=xN8QQjm0cmeTEAxYZ2MUppVnOI9RI3QqUFqzxf9VBYM,9058
+aioaerospike-0.1.1.dist-info/LICENSE,sha256=lsNaN3-DMv6ICa546bK7K2SUJVAZvVRF8Mu0hXfzvEg,1070
+aioaerospike-0.1.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+aioaerospike-0.1.1.dist-info/METADATA,sha256=3VZe9AMzNhzfYqBiHRc1lRsS76vJu4RYWu0iRZfRNU8,1126
+aioaerospike-0.1.1.dist-info/RECORD,,
