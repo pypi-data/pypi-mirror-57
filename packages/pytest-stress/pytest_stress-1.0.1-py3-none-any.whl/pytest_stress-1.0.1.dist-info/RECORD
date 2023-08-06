@@ -1,0 +1,9 @@
+pytest_stress/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_stress/pytest_stress.py,sha256=Hb5z6yuBZGNTMR5cjslUIX_vlWdPt6MlCOJmyfqnd8A,3658
+pytest_stress-1.0.1.dist-info/AUTHORS,sha256=zW-f8d86dvhWWPltRBL6hZVD6pbkDYvTJonu-EgWp6o,12
+pytest_stress-1.0.1.dist-info/LICENSE,sha256=57GPQ2lmdEYsZwQ24cCb4TEKKS68pD3hL44omTBfrwQ,1080
+pytest_stress-1.0.1.dist-info/METADATA,sha256=8Iii6ZCbPLw9l3vP2d943Qe1t5gjnHExNWxhTSJVaLs,3912
+pytest_stress-1.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pytest_stress-1.0.1.dist-info/entry_points.txt,sha256=dadzYPkGgVLWlwtf86m8No3RlrFx2LCwhCVc8tn_Wkw,56
+pytest_stress-1.0.1.dist-info/top_level.txt,sha256=0yE-CnTA_d2TVv41QkxO8eHQ7df9_anLOPe-ZBZylwE,14
+pytest_stress-1.0.1.dist-info/RECORD,,
