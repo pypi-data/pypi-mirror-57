@@ -1,0 +1,14 @@
+pytest-runner<3dev,>=2.0
+xarray
+pandas
+numpy
+matplotlib
+seaborn
+cartopy
+colorcet
+parse
+
+[testing]
+pytest
+pytest-cov
+pytest-mpl
