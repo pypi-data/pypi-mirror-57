@@ -1,0 +1,9 @@
+codado
+python-dateutil
+pytz
+
+[dev]
+pytest
+pytest-coverage
+pytest-flakes
+tox
