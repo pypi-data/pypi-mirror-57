@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: collective.gnd
+Version: 1.1
+Summary: Plone addon which provides a GND resolver and a BEACON API.
+Home-page: https://github.com/collective/collective.gnd
+Author: Maik Derstappen
+Author-email: md@derico.de
+License: GPL version 2
+Project-URL: Source, https://github.com/collective/collective.gnd
+Project-URL: Tracker, https://github.com/collective/collective.gnd/issues
+Project-URL: PyPI, https://pypi.python.org/pypi/collective.gnd
+Description: .. image:: https://secure.travis-ci.org/collective/collective.gnd.png?branch=master
+            :target: http://travis-ci.org/collective/collective.gnd
+        
+        .. image:: https://coveralls.io/repos/github/collective/collective.gnd/badge.svg?branch=master
+            :target: https://coveralls.io/github/collective/collective.gnd?branch=master
+            :alt: Coveralls
+        
+        .. image:: https://img.shields.io/pypi/l/collective.gnd.svg
+            :target: https://pypi.python.org/pypi/collective.gnd/
+            :alt: License
+        
+        .. image:: https://badges.gitter.im/collective/collective.gnd.svg
+           :alt: Join the chat at https://gitter.im/collective/collective.gnd
+           :target: https://gitter.im/collective/collective.gnd?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+        
+        
+        ==============
+        collective.gnd
+        ==============
+        
+        Plone add-on which provides a `GND ID <https://www.wikidata.org/wiki/Property:P227>`_ resolver and a `BEACON <http://gbv.github.io/beaconspec/>`_ API.
+        
+        Features
+        --------
+        
+        - GND ID resolver: ``/resolvegnd/08151111``
+        - GND ID Behavior, which provides a ``gnd_id`` field
+        - Provides a ``gnd_id`` index
+        - BEACON API (BEACON List): /beacon-gnd.txt
+        
+        
+        Installation
+        ------------
+        
+        Install collective.gnd by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                collective.gnd
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/collective/collective.gnd/issues
+        - Source Code: https://github.com/collective/collective.gnd
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        
+        Contributors
+        ============
+        
+        - Maik Derstappen (MrTango), md@derico.de
+        
+        
+        Changelog
+        =========
+        
+        1.1 (2019-12-09)
+        ----------------
+        
+        - Added configurable, security related rendering of BEACON file. If registry record render_all is False, only GND-IDs, which are accessable by the requesting user are listed in the BEACON file. Otherwise all indexed values are listed.
+          [ukretschmer]
+        
+        - Gnd resolver service now has configurable base URL, which allows redirecting to targets with another base URL but the same object path.
+          [ukretschmer]
+        
+        
+        1.0 (2019-08-26)
+        ----------------
+        
+        - Fix default in gnd_id property in behavior
+          [MrTango]
+        
+        
+        1.0b2 (2019-06-20)
+        ------------------
+        
+        - Fix target (gnd resolver) URL in BEACON file
+          [MrTango]
+        
+        
+        1.0b1 (2019-06-20)
+        ------------------
+        
+        - prevent None entries in gnd_ids
+          [MrTango]
+        
+        
+        1.0a2 (2019-06-20)
+        ------------------
+        
+        - Fix README RST syntax
+          [MrTango]
+        
+        1.0a1 (2019-06-20)
+        ------------------
+        
+        - Initial release.
+          [MrTango]
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: ==2.7, >=3.6
+Provides-Extra: test
