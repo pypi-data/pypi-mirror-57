@@ -1,0 +1,3 @@
+sqlalchemy>=1.0.0
+infi.clickhouse_orm==1.0.4
+tzlocal>=2.0.0
