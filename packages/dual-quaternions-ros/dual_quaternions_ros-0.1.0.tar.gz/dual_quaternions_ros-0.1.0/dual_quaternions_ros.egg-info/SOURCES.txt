@@ -1,0 +1,10 @@
+README.rst
+setup.py
+dual_quaternions_ros/__init__.py
+dual_quaternions_ros/dual_quaternions_ros.py
+dual_quaternions_ros.egg-info/PKG-INFO
+dual_quaternions_ros.egg-info/SOURCES.txt
+dual_quaternions_ros.egg-info/dependency_links.txt
+dual_quaternions_ros.egg-info/not-zip-safe
+dual_quaternions_ros.egg-info/requires.txt
+dual_quaternions_ros.egg-info/top_level.txt
