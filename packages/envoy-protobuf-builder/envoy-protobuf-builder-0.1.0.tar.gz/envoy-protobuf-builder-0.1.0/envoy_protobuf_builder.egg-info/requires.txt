@@ -1,0 +1,13 @@
+protobuf_gen==0.0.4
+
+[dev]
+bump2version
+bpython
+flake8
+pre-commit
+twine
+wheel
+pytest
+pytest-cov
+pytest-socket
+python-coveralls
