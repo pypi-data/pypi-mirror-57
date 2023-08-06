@@ -1,0 +1,12 @@
+wagtailgatsby/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtailgatsby/apps.py,sha256=--yxXAlrknDrYE4gTzhC34G01m4wwefiofO2loTQJFc,88
+wagtailgatsby/models.py,sha256=d1bRNEDZgC5Hvb3DY8fndn7GPCGGRieB16Yit0952fs,5617
+wagtailgatsby/wagtail_hooks.py,sha256=4A5OubXM-QZBWDgEhdbAc6CEjxePWPNTVU10lgOd1GA,1407
+wagtailgatsby/migrations/0001_initial.py,sha256=HCAk_7pwvB4KFw4_V-H5Rp80irmZXYrRThfoJJK7xWA,847
+wagtailgatsby/migrations/0002_gatsbyimage_gatsbyimagerendition.py,sha256=954H3MNUB0cBL_zyv2_5W5RQPZmgrEP8zR9y7COp3To,5693
+wagtailgatsby/migrations/0003_auto_20190807_1031.py,sha256=-Jd9QDGrXXRdRI4Dcc5--40K0RNGl3SeioA6MJywVeQ,538
+wagtailgatsby/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtailgatsby-0.0.2.dist-info/METADATA,sha256=u9EOjlPQDgEz_REncpkqkpDkkK30Wb2dHMb3W6L3B8M,810
+wagtailgatsby-0.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+wagtailgatsby-0.0.2.dist-info/top_level.txt,sha256=61aOq_KZD08O8q2MvEX6qqIMSkyTPWq4XDUxSCljUZk,14
+wagtailgatsby-0.0.2.dist-info/RECORD,,
