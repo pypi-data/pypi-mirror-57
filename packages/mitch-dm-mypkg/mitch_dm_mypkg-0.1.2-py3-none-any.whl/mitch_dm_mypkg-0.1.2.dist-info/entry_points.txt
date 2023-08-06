@@ -1,0 +1,3 @@
+[console_scripts]
+disl=mitch_dm_mypkg:main
+
