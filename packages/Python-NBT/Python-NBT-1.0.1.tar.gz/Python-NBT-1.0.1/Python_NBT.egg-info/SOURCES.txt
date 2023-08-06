@@ -1,0 +1,13 @@
+README.md
+setup.py
+Python_NBT.egg-info/PKG-INFO
+Python_NBT.egg-info/SOURCES.txt
+Python_NBT.egg-info/dependency_links.txt
+Python_NBT.egg-info/top_level.txt
+python_nbt/__init__.py
+python_nbt/_util.py
+python_nbt/nbt.py
+python_nbt.egg-info/PKG-INFO
+python_nbt.egg-info/SOURCES.txt
+python_nbt.egg-info/dependency_links.txt
+python_nbt.egg-info/top_level.txt
