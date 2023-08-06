@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: sedobs
+Version: 19.12.0
+Summary: Python tool for observed galaxy SED simulation
+Home-page: https://astrom-tom.github.io/SEDobs/build/html/index.html
+Author: Romain Thomas
+Author-email: rthomas@eso.org
+License: GNU GPL v3
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
