@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: django-observable-models
+Version: 0.2.0
+Summary: 
+Author: Jayden Windle
+Author-email: jaydenwindle@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: django (>=3.0,<4.0)
+Requires-Dist: rx (>=3.0,<4.0)
+Description-Content-Type: text/markdown
+
+# Django Observable Models
+
+Django Observable Models allows you to subscribe to model operations using rxpy Observables. This is particularly useful for implementing things like GraphQL subscriptions.
+
+## Installation
+
+```bash
+$ pip install django-observable-models
+```
+
+## Usage
+
+```python
+# yourapp/models.py
+from observable_models.models import ObservableModel
+
+class YourModel(ObservableModel):
+    pass
+
+# Subscribe to model creation
+YourModel.model_events.pipe(filter(lamda event: event['operation'] == YourModel.CREATED))
+
+# Subscribe to model updates 
+YourModel.model_events.pipe(filter(lamda event: event['operation'] == YourModel.UPDATED))
+
+# Subscribe to model deletion 
+YourModel.model_events.pipe(filter(lamda event: event['operation'] == YourModel.DELETED))
+```
