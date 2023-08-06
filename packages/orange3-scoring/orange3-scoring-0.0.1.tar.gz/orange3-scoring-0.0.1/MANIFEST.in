@@ -1,0 +1,4 @@
+include orangecontrib/scoring/tutorials/*.ows
+include orangecontrib/scoring/widgets/icons/*
+include orangecontrib/scoring/tests/*.json
+include orangecontrib/scoring/tests/*.xml
