@@ -1,0 +1,9 @@
+setup.py
+icebearutilss.egg-info/PKG-INFO
+icebearutilss.egg-info/SOURCES.txt
+icebearutilss.egg-info/dependency_links.txt
+icebearutilss.egg-info/requires.txt
+icebearutilss.egg-info/top_level.txt
+zwfw/__init__.py
+zwfw/autodownload/__init__.py
+zwfw/autodownload/run.py
