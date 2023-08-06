@@ -1,0 +1,9 @@
+gs_pip_install/__init__.py,sha256=o1ANnlEEijWRqifPdy-j8waZwdhLVaGHNZR1e5T4Oco,132
+gs_pip_install/cli.py,sha256=T_b0ae8Rn5U_HlGbhKfOvK-_O-HayAT6w_R7XDQJV2I,420
+gs_pip_install/gs_pip_install.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+gs_pip_install-0.1.0.dist-info/LICENSE,sha256=tscdR23zaRsrdiG6hnb_Qy5vabvT4W1J5JRtDkcuVOw,1067
+gs_pip_install-0.1.0.dist-info/METADATA,sha256=Wmciqj-n-975Dkvhu3cR6TLYbsbTi7ZHOGle8FlR_dY,1887
+gs_pip_install-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+gs_pip_install-0.1.0.dist-info/entry_points.txt,sha256=veicbx95ImYm83S6fz17GhdpumUiFxhgisryXRTJfJA,60
+gs_pip_install-0.1.0.dist-info/top_level.txt,sha256=xB4tUvQsHHGf_SDqi6mHadmhoyWWcZ5-6N34l1699kE,15
+gs_pip_install-0.1.0.dist-info/RECORD,,
