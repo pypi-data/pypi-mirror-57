@@ -1,0 +1,14 @@
+pyopenssl
+service_identity
+flask
+flask-sslify
+yagmail
+autobahn
+twisted
+sqlalchemy
+lingua_franca
+requests
+python-dateutil==2.6.0
+tornado==4.5.3
+pyee==5.0.0
+websocket-client==0.54.0
