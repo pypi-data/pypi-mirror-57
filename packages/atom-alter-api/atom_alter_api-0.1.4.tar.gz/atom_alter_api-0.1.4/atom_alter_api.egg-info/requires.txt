@@ -1,0 +1,6 @@
+aiohttp==3.5.4
+eth_utils==1.8.1
+
+[api]
+aiohttp==3.5.4
+eth_utils==1.8.1

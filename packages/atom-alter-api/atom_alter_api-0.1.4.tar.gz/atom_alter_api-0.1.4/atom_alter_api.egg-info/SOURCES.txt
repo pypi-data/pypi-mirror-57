@@ -1,0 +1,16 @@
+README.rst
+setup.py
+atom_alter_API/__init__.py
+atom_alter_API/api.py
+atom_alter_API/constants.py
+atom_alter_API/exceptions.py
+atom_alter_API/utils/__init__.py
+atom_alter_API/utils/logging.py
+atom_alter_API/utils/mathematical.py
+atom_alter_API/utils/xdg.py
+atom_alter_api.egg-info/PKG-INFO
+atom_alter_api.egg-info/SOURCES.txt
+atom_alter_api.egg-info/dependency_links.txt
+atom_alter_api.egg-info/not-zip-safe
+atom_alter_api.egg-info/requires.txt
+atom_alter_api.egg-info/top_level.txt
