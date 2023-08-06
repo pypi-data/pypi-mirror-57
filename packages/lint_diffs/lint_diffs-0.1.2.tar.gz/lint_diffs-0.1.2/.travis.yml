@@ -1,0 +1,30 @@
+language: python
+cache: pip
+sudo: false
+python:
+  - '3.6'
+  - '3.7'
+  - '3.8'
+script:
+  - pytest -v --cov=lint_diffs -n=2 . 
+
+jobs:
+    include: 
+    - name: lint
+      python: 
+        - '3.6'
+      script:
+        - pylint lint_diffs test/test_*.py
+    - stage: deploy
+      python: 
+        - '3.6'
+      script: 
+        - flit publish
+      only:
+        - master
+
+after_success:
+    - codecov --env TRAVIS_OS_NAME || ( sleep 5 && codecov --env TRAVIS_OS_NAME )
+     
+install:
+- pip install -r requirements.txt
