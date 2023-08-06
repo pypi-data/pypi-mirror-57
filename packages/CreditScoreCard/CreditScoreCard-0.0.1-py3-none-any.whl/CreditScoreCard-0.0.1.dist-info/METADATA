@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: CreditScoreCard
+Version: 0.0.1
+Summary: risk control modeling
+Home-page: UNKNOWN
+Author: SimaShanhe
+Author-email: hsliu_em@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn (>=0.21.3)
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: prettytable
+Requires-Dist: tqdm
+
+
+
+Copyright (c) 2019 The Python Packaging Authority
+
+
+#### install
+```
+pip install CreditScoreCard
+```
+
+#### Usage
+```python
+from CreditScoreCard.LogisticScoreCard import logistic_score_card
+
+ls=logistic_score_card()
+
+ls.fit(data)
+
+ls.score_card 
+```
+
