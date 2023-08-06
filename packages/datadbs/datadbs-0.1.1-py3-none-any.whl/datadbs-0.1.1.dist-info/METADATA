@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: datadbs
+Version: 0.1.1
+Summary: DataDBS are some class to manage data NoSQL type
+Home-page: http://www.gitlab.com/dpineda/datadbs
+Author: David Pineda Osorio
+Author-email: dpineda@csn.uchile.cl
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: datadbs
+
+UNKNOWN
+
+
