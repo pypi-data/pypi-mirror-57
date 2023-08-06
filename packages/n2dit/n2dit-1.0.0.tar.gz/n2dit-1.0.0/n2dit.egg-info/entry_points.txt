@@ -1,0 +1,3 @@
+[console_scripts]
+n2dit = n2dit.__main__:main
+
