@@ -1,0 +1,9 @@
+serverless_psycopg2/__init__.py,sha256=5Wu_mZJIQ-MWCgwOK1427iOqaIkyc83Tg0PtE6gjKFA,43
+serverless_psycopg2/event.py,sha256=r3Yvv6vNi96HePEGIA5IcsNmpD0B4VWxBVFdZewoejQ,1533
+serverless_psycopg2/pg2_wrapper.py,sha256=wfBV90lw3Rlqd5EeZtpZgnYPgnfRM2R9idu1PNcP23c,12075
+serverless_psycopg2/test_serverless_pg2.py,sha256=dvIiAmLLvD9_QcY14IjuoaOjFLZFmIXnVwYYqA2Xplg,6234
+serverless_psycopg2-0.0.2.dist-info/LICENSE,sha256=0r92c7n37pPAshvuovPjehx8kppFfY35Nyxt-HSuqaU,1068
+serverless_psycopg2-0.0.2.dist-info/METADATA,sha256=b2rzTa5Fkf3NMaWHUxoL8RbBxEAxQ0CBoQtAJvGCai4,543
+serverless_psycopg2-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+serverless_psycopg2-0.0.2.dist-info/top_level.txt,sha256=fcx5v3lfDBmYqfH960CLZY9hf1bQyTw8-G8i8tUfqpQ,20
+serverless_psycopg2-0.0.2.dist-info/RECORD,,
