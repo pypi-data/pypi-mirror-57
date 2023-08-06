@@ -1,0 +1,3 @@
+[console_scripts]
+keychestamp = keychestamp.__main__:main
+
