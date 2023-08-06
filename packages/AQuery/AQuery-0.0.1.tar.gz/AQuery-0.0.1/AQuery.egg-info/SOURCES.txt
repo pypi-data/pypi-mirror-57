@@ -1,0 +1,16 @@
+README.md
+setup.py
+AQuery.egg-info/PKG-INFO
+AQuery.egg-info/SOURCES.txt
+AQuery.egg-info/dependency_links.txt
+AQuery.egg-info/requires.txt
+AQuery.egg-info/top_level.txt
+AQuery.egg-info/zip-safe
+aquery/__init__.py
+aquery/database.py
+aquery/errors.py
+aquery/logger.py
+aquery/query.py
+aquery/query_model.py
+aquery/sql_util.py
+aquery/version.py
