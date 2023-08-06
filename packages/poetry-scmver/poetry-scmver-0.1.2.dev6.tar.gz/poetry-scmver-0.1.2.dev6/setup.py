@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+from distutils.core import setup
+
+packages = \
+['poetry_scmver']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['poetry', 'scmver', 'tomlkit']
+
+setup_kwargs = {
+    'name': 'poetry-scmver',
+    'version': '0.1.2.dev6',
+    'description': 'Plugin for Poetry to enable dynamic versioning based on VCS tags for semver',
+    'long_description': '# Dynamic versioning plugin for Poetry\n[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n\nThis package is a plugin for [Poetry](https://github.com/sdispater/poetry)\nto enable dynamic versioning based on tags in your version control system,\npowered by [Scmver](https://pypi.com/scmver).\n\nSince Poetry does not yet officially support plugins\n(refer to [this issue](https://github.com/sdispater/poetry/issues/693))\nas of the time of writing on 2019-12-10, this package takes some novel\nliberties to make the functionality possible. As soon as official support\nlands, this plugin will be updated to do things the official way.\n\n\n## Installation\nPython 3.5 (or newer) and Poetry 0.12.1 (or newer) are required.\n\n* Run `pip install poetry-scmver`\n* Add this to your pyproject.toml:\n  ```toml\n  [tool.scmver]\n  enable = true\n  ```\n\nNote that you must install the plugin in your global Python installation,\n**not** as a dependency in pyroject.toml, because the virtual environment\nthat Poetry creates cannot see Poetry itself and therefore cannot patch it.\n\n## Configuration\nIn your pyproject.toml file, you may configure the following options:\n\n`[tool.scmver]`: General options.\n\n  * `enable`: Boolean. Default: false. Since the plugin has to be installed globally, this setting is an opt-in per project. This setting will likely be removed once plugins are officially supported.\n  * `root`: A path of the working directory. Default: ``\'.\'``\n  * `spec`: A version specifier to construct the public version indentifiers. It will be incremented by the number of commits from the latest tag.\n    \n    * ``major``: It will increment the major version.\n    * ``minor``: It will increment the minor version.\n    * ``micro`` or ``patch``: It will increment the micro (patch) version.\n    * ``post``: It will increment the post-release segment.\n    * ``major.dev``: It will increment the development release segment after incrementing the major version by 1.\n    * ``minor.dev``: It will increment the development release segment after incrementing the minor version by 1.\n    * ``micro.dev`` or ``patch.dev``: It will increment the development release segment after incrementing the micro (patch) version by 1.\n    \n    Default: ``\'post\'``\n  \n  * `local`: A ``string`` to construct the local version identifiers.\n\n    Available keywords:\n\n    * ``{distance}``\n    * ``{reivison}``\n    * ``{branch}``\n    * ``{utc}``      - Return value of ``datetime.datetime.utcnow()``\n    * ``{local}``    - Return value of ``datetime.datetime.now()``\n\n    Default: ``\'{local:%Y-%m-%d}\'``\n\n  * `version`: A regular expression object to extract the version from SCM tags. It should contain the version group.\n  * `write_to`: A path to a file which will be generated using ``template``.\n  * `template`: A format string which is used by ``write_to``.\n    Available keywords:\n\n    * ``{version}``\n    * ``{revision}``\n    * ``{branch}``\n\n  * `bazaar.tag`: A regular expression pattern to filter tags.\n  * `fossil.tag`: A regular expression pattern to filter tags.\n  * `git.tag`: It will be passed to ``git describe`` as ``--match``.\n  * `mercurial.tag`: A regular expression pattern to filter tags.\n  * `subversion.tag`: A regular expression pattern to filter tags.\n  * `subversion.trunk`: A relative repository path of the trunk directory. Default: ``\'trunk\'``\n  * `subversion.branches: A relative repository path of the directory where branches are located. Default: ``\'branches\'``\n  * `subversion.tags`: A relative repository path of the directory where tags are located. Default: ``\'tags\'``\n\nSimple example:\n\n```toml\n[tool.semver]\nenable = true\nwrite_to = "version.py"\n```\n\n## Implementation\nIn order to side-load plugin functionality into Poetry, this package\ndoes the following:\n\n* Upon installation, it delivers a `zzz_poetry_semver.pth`\n  file to your Python site-packages directory. This forces Python to\n  automatically load the plugin after all other modules have been loaded\n  (or at least those alphabetically prior to `zzz`).\n* It patches `builtins.__import__` so that, whenever the first import from\n  Poetry finishes, `poetry.console.main` will be patched. The reason we have\n  to wait for a Poetry import is in case you\'ve used the get-poetry.py script,\n  in which case there is a gap between when Python is fully loaded and when\n  `~/.poetry/bin/poetry` adds the Poetry lib folder to the PYTHONPATH.\n* The patched version of `poetry.console.main` will then, when called,\n  additionally patch either `poetry.poetry.Poetry.create()` or\n  `poetry.factory.Factory.create_poetry()` (depending on your Poetry version)\n  to replace the version from your pyproject.toml file with the dynamically\n  generated version.\n\n## Changelog\n\nSee [Changelog](CHANGELOG.md)\n\n## License\n\nSee [License](LICENSE.txt)',
+    'author': 'Lorenzo A. Garcia Calzadilla',
+    'author_email': 'lorenzogarciacalzadilla@gmail.com',
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.7,<4.0',
+}
+
+
+setup(**setup_kwargs)
