@@ -1,0 +1,112 @@
+#!/usr/bin/env python
+import logging
+import trio
+import trio_asyncio
+
+import argparse
+import os.path
+import time
+
+import smokesignal
+from syncrypt.app import SyncryptDaemonApp
+from syncrypt.config import AppConfig
+from syncrypt.utils.daemon import Daemon
+from syncrypt.utils.logging import setup_logging
+
+try:
+    import win_unicode_console; win_unicode_console.enable()
+except ImportError:
+    pass
+
+# Register builtins
+#import syncrypt.builtins.chaos_monkey
+import syncrypt.builtins.log
+
+LOGLEVELS = ['CRITICAL', 'ERROR', 'WARN', 'INFO', 'DEBUG']
+
+parser = argparse.ArgumentParser(description='Run Syncrypt client')
+parser.add_argument('-d,--detach', action='store_true',
+        dest='detach', help='Detach from console')
+parser.add_argument('-c,--config', action='store', type=str,
+        dest='config', help='Config file')
+parser.add_argument('-I,--inspector', action='store_true',
+        dest='inspector', help='Run Trio Inspector')
+parser.add_argument('--no-initial-push', action='store_false',
+        dest='initial_push', help='Do not push all vaults after daemon started')
+parser.add_argument('-l', metavar='LOGLEVEL', type=str, default='INFO',
+        dest='loglevel', choices=LOGLEVELS, help='Log level: ' + ', '.join(LOGLEVELS))
+
+config = parser.parse_args()
+
+app_config = AppConfig(config.config)
+
+# setup logging
+logger = logging.getLogger('syncrypt')
+log_dir = os.path.join(app_config.config_dir, 'logs')
+os.makedirs(log_dir, exist_ok=True)
+setup_logging(config.loglevel, logfile=os.path.join(log_dir, 'syncrypt_daemon.log'))
+
+will_restart = False
+
+async def run_syncrypt():
+    global will_restart
+    # global is currently required because trio_asyncio.run does not return
+    # any value (see https://github.com/python-trio/trio-asyncio/issues/57)
+    try:
+        async with trio.open_nursery() as nursery:
+            if config.inspector:
+                from trio_inspector import TrioInspector
+                nursery.start_soon(TrioInspector().run)
+
+            app = SyncryptDaemonApp(app_config,
+                    nursery=nursery,
+                    initial_push=config.initial_push
+            )
+
+            smokesignal.emit('pre_setup', app=app)
+
+            await app.start()
+            await app.initialize()
+
+            smokesignal.emit('post_setup', app=app)
+
+            nursery.start_soon(app.post_setup)
+
+            # Ideally, we would wait to shutdown flag here
+            await trio.sleep_forever()
+
+            smokesignal.emit('shutdown', app=app)
+            will_restart = app.restart_flag
+    except KeyboardInterrupt:
+        pass
+    except trio.MultiError as e:
+        if all([not isinstance(child, KeyboardInterrupt) for child in e.exceptions]):
+            logger.exception("Uncaught multi-exception, restarting daemon...")
+            will_restart = True
+            return
+    except BaseException:
+        logger.exception("Uncaught exception, restarting daemon...")
+        will_restart = True
+        return
+    will_restart = False
+
+
+def main():
+    global will_restart
+
+    while True:
+        will_restart = True
+        trio_asyncio.run(run_syncrypt)
+        if not will_restart:
+            break
+        time.sleep(2)
+
+
+if config.detach:
+    class SyncryptDaemon(Daemon):
+        def run(self):
+            main()
+    syncryptd = SyncryptDaemon('/tmp/syncrypt.pid')
+    getattr(syncryptd, config.command)()
+else:
+    main()
