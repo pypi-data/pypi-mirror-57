@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: dash_archer
+Version: 0.1.0
+Summary: Dash component for react-archer
+Home-page: UNKNOWN
+Author: Tuomas Jaakola <tuomas.jaakola@iki.fi>
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Dash

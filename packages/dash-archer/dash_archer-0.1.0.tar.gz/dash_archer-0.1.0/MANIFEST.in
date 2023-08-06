@@ -1,0 +1,7 @@
+include dash_archer/dash_archer.min.js
+include dash_archer/dash_archer.min.js.map
+include dash_archer/metadata.json
+include dash_archer/package-info.json
+include README.md
+include LICENSE
+include package.json

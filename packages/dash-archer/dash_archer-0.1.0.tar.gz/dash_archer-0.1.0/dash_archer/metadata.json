@@ -1,0 +1,187 @@
+{
+  "src/lib/components/DashArcherContainer.react.js": {
+    "description": "DashArcherContainer component is a wrapper for ArcherContainer component\nfrom react-archer module. See usage: https://github.com/pierpo/react-archer",
+    "displayName": "DashArcherContainer",
+    "methods": [],
+    "props": {
+      "arrowLength": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "A size in px."
+      },
+      "arrowThickness": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "A size in px."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": ""
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "noCurves": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Set this to true if you want angles instead of curves."
+      },
+      "offset": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Optional number for space between element and start/end of stroke."
+      },
+      "strokeColor": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A color string '#ff0000'."
+      },
+      "strokeDasharray": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Adds dashes to the stroke. It has to be a string representing an array\nof sizes. See https://www.w3schools.com/graphics/svg_stroking.asp"
+      },
+      "strokeWidth": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "A size in px."
+      }
+    }
+  },
+  "src/lib/components/DashArcherElement.react.js": {
+    "description": "DashArcherElement component is a wrapper for ArcherElement component\nfrom react-archer module. See usage: https://github.com/pierpo/react-archer",
+    "displayName": "DashArcherElement",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": ""
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "relations": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "targetId": {
+                "name": "string",
+                "required": false
+              },
+              "targetAnchor": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'top'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'bottom'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'left'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'right'",
+                    "computed": false
+                  }
+                ],
+                "required": false
+              },
+              "sourceAnchor": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "'top'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'bottom'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'left'",
+                    "computed": false
+                  },
+                  {
+                    "value": "'right'",
+                    "computed": false
+                  }
+                ],
+                "required": false
+              },
+              "label": {
+                "name": "node",
+                "required": false
+              },
+              "style": {
+                "name": "shape",
+                "value": {
+                  "arrowLength": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "arrowThickness": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "noCurves": {
+                    "name": "bool",
+                    "required": false
+                  },
+                  "strokeColor": {
+                    "name": "string",
+                    "required": false
+                  },
+                  "strokeWidth": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "strokeDasharray": {
+                    "name": "number",
+                    "required": false
+                  }
+                },
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "The relations specify where arrows are drawn."
+      }
+    }
+  }
+}
