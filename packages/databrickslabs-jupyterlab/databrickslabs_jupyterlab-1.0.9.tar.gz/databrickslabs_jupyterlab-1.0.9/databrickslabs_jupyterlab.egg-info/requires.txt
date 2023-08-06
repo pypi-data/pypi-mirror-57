@@ -1,0 +1,5 @@
+notebook==6.0.2
+version_parser
+inquirer
+ssh_config
+databricks_cli
