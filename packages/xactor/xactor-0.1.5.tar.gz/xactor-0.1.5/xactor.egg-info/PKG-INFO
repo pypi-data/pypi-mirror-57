@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: xactor
+Version: 0.1.5
+Summary: An MPI based Actor framework
+Home-page: http://github.com/parantapa/xactor
+Author: Parantapa Bhattacharya
+Author-email: pb+pypi@parantapa.net
+License: UNKNOWN
+Description: XActor: A Distributed Actor Programming Framework
+        =================================================
+        
+        XActor is a framework for doing distributed computing in Python,
+        using the actor model of programming.
+        
+        XActor provides a simple classical actor framework,
+        that is actors communicate with each other by sending messages.
+        Current version of XActor doesn’t provide futures.
+        XActor currently doesn’t implement exception chaining,
+        where execptions in the child actors are passed to parent actors.
+        XActor uses the communicating event loop version of the Actor model,
+        which means that all actors running in a single process
+        share the inbox/message queue.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Distributed Computing
+Description-Content-Type: text/markdown
