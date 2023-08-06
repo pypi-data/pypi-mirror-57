@@ -1,0 +1,8 @@
+README.md
+setup.py
+chromeprinter/__init__.py
+chromeprinter.egg-info/PKG-INFO
+chromeprinter.egg-info/SOURCES.txt
+chromeprinter.egg-info/dependency_links.txt
+chromeprinter.egg-info/requires.txt
+chromeprinter.egg-info/top_level.txt
