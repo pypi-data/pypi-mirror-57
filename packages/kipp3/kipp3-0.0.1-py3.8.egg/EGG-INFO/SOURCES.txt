@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE
+Makefile
+README.md
+package.json
+requirements.txt
+setup.py
+tox.ini
+kipp3.egg-info/PKG-INFO
+kipp3.egg-info/SOURCES.txt
+kipp3.egg-info/dependency_links.txt
+kipp3.egg-info/entry_points.txt
+kipp3.egg-info/requires.txt
+kipp3.egg-info/top_level.txt
