@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: SimpleCodeCompresser
+Version: 1.2
+Summary: Just a simple code compresser
+Home-page: https://github.com/lemon-mint/simplecompresser
+Author: lemon-mint
+Author-email: ice.lemons.mint@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/lemon-mint/simplecompresser
+Keywords: compress,codedeploy,deploy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+
+UNKNOWN
+
+
