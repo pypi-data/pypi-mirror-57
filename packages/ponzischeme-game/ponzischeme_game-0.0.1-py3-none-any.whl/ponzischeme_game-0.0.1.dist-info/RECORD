@@ -1,0 +1,15 @@
+ponzischeme_game/__init__.py,sha256=oNEP0k9MAdTbz2Vf6Px9KqJIEg6ElhV-FzSNl9iosHk,23
+ponzischeme_game/finance.py,sha256=nD77I_tDSGa_N_ufLMJJZX9rfPk-m5gUWAJEtsNhIfk,3891
+ponzischeme_game/fundCard.py,sha256=t6k2F-sMbejdsGGyUL-0ESo7iRDWSVe3WiBEOlSh37Y,847
+ponzischeme_game/fundingBoard.py,sha256=iMb7BwSesfvm-N_Vy8R7S6-Tuqfb57GQH6-fFwxP8eQ,1621
+ponzischeme_game/game.py,sha256=PBaZqOja2oWpl-Zsg9CkmhsA3PEdp3dki4tY_lin8JA,26836
+ponzischeme_game/log.py,sha256=kDGp-s9FTw5SKxlz9rHQ9Ygwt9AoVXIFu4JEQXrr4KU,2022
+ponzischeme_game/luxuryTile.py,sha256=7wlZOoBKuedYCaBcLzDDcLJCTxbXlUJhQHOPcDPXI-c,414
+ponzischeme_game/player.py,sha256=MhmjZVvANlxUK3YHAMx0SiRl1HMyWXGk4uRHXvcXf38,4188
+ponzischeme_game/status.py,sha256=MPcj-LNXRNF_8SYOY2bHBQQQa5ZJ_89xzlgVkm7YnMo,3899
+ponzischeme_game/tradeOffer.py,sha256=lwuF4-90ShaZEmx7kFmh6HkCwruoyYSOKPdYEj-6whc,249
+ponzischeme_game-0.0.1.dist-info/LICENSE,sha256=IvXBMTsZtwzhJ3TUveXy3BX-FvkmAsalI7fJ1W1PQ2o,1070
+ponzischeme_game-0.0.1.dist-info/METADATA,sha256=8fqkbz-qMu3hjUQbed2i93s6o5KgnsMLkkH3_HczLyI,948
+ponzischeme_game-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ponzischeme_game-0.0.1.dist-info/top_level.txt,sha256=VWIe7K2pSbzPzANgIjep0dIQO45vJRgTN1t5i3GXSmQ,17
+ponzischeme_game-0.0.1.dist-info/RECORD,,
