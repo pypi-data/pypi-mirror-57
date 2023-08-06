@@ -1,0 +1,13 @@
+AutoDiff/ForwardAD.py,sha256=lRWfVhRdQAy38_zDGZSwe7fY0GFejyhI7kJGirGjvzk,61421
+AutoDiff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AutoDiff/optimize.py,sha256=aVsd5GqZvi7bEuEvxC9ZAtKTFHl1gEQMJixK0Qyafpw,6658
+AutoDiff/root_finding.py,sha256=8Jtupz9SnCAlnjs1IigE_mu-9wQLZVPg9sZrJxt6DPI,1773
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_ForwardAD.py,sha256=plPN9Cv4Q4JT9qmg7mobInDluHZVS8V4swL_wHZGiJQ,50885
+test/test_optimize.py,sha256=dJ1ulMVrxDZDggUPFDAUS04CAD04QJS9Bq_94k0FSXw,9351
+test/test_root.py,sha256=YVDRDu3bfw-tqVgENTi7dHUNPhsfPhgZXowiLAO9xYQ,403
+AutoDifferentiate-1.0.0.dist-info/LICENSE,sha256=AINP-WZ_BD3o-VH1DjgbzvpHFp_VMvfk5QNQZRmDDzI,1093
+AutoDifferentiate-1.0.0.dist-info/METADATA,sha256=evVanknBmEx_98XkrFrH26p5EC9q274j4kyLvlfccIk,799
+AutoDifferentiate-1.0.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+AutoDifferentiate-1.0.0.dist-info/top_level.txt,sha256=6Uiht3TNrvS3Q47sGBV8oYmwi2_N3Fcd3ye1A4IF3wg,14
+AutoDifferentiate-1.0.0.dist-info/RECORD,,
