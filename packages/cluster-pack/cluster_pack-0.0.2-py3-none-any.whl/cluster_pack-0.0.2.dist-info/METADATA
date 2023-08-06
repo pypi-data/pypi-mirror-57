@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: cluster-pack
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/criteo/cluster-pack
+Maintainer: Criteo
+Maintainer-email: github@criteo.com
+License: UNKNOWN
+Keywords: hadoop distributed cluster S3 HDFS
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pex (==1.6.12)
+Requires-Dist: conda-pack
+Requires-Dist: pip (>=18.1)
+Requires-Dist: s3fs
+Requires-Dist: pyarrow
+
+UNKNOWN
+
+
