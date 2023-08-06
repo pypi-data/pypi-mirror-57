@@ -1,0 +1,11 @@
+aiohttp<4,>=3.5
+async_timeout
+yarl
+
+[test]
+pytest<5.3
+coverage
+pytest-cov
+aiohttp<4,>=3.5
+async_timeout
+yarl
