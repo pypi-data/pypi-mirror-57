@@ -1,0 +1,7 @@
+Django>=2.2
+markdown
+bleach
+bleach_whitelist
+
+[:python_version == "3.6"]
+dataclasses
