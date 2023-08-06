@@ -1,0 +1,15 @@
+.DS_Store,sha256=O-ltCeMFr131SoKsWD1iOmooDNyRBYMhraUQazEHCjE,6148
+DeltaPI/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DeltaPI/AutoDiff/All_derivatives.py,sha256=778rnTb7oJFUKs67NAXlFNAuU4Lr7X-k-EW3Y-HfOhk,3658
+DeltaPI/AutoDiff/AutoDiff.py,sha256=5v-_UjiX1WAQQAl4jcP16KXkSE7z5luWmB6uT-IM8ds,7715
+DeltaPI/AutoDiff/__init__.py,sha256=kSoR92Lx8y9WLEdlCqpR0YLc06cfkIX9_PCWNHFIlqM,40
+DeltaPI/AutoDiff/AutoDiff_Tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DeltaPI/AutoDiff/AutoDiff_Tests/test_All_derivatives.py,sha256=IxyEypP2isBkTz1-rUfC1L7AivgxFItSnr67xm0dmo0,1829
+DeltaPI/AutoDiff/AutoDiff_Tests/test_AutoDiff.py,sha256=mrvzap4EPhq4F3b3sQQF8qVkYKh49E6vQh-ogxyz7mM,9552
+DeltaPI/Extension/DeltaHedgePi.py,sha256=ZMRvnlkpEwX4tNyhHz4Z3JzSvXI8EpKHoBa4iLu6FnI,19253
+DeltaPI/Extension/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DeltaPI_FantasticFour-0.0.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+DeltaPI_FantasticFour-0.0.2.dist-info/METADATA,sha256=lkRL4-cP8LXgQckepyReX_QwCAdJ8kLrEKu7yiNCB0M,1494
+DeltaPI_FantasticFour-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+DeltaPI_FantasticFour-0.0.2.dist-info/top_level.txt,sha256=_1Sx-Q5dlYxh8COBST6ZsGe5Bf2CiZgWvI_qQfuN2j4,8
+DeltaPI_FantasticFour-0.0.2.dist-info/RECORD,,
