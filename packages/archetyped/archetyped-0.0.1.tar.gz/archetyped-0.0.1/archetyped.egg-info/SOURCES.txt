@@ -1,0 +1,8 @@
+setup.py
+archetyped/__init__.py
+archetyped.egg-info/PKG-INFO
+archetyped.egg-info/SOURCES.txt
+archetyped.egg-info/dependency_links.txt
+archetyped.egg-info/not-zip-safe
+archetyped.egg-info/requires.txt
+archetyped.egg-info/top_level.txt
