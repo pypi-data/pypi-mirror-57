@@ -1,0 +1,12 @@
+mypy_boto3_appstream/__init__.py,sha256=r8w_lbY7Xaywr4diU25HruNAV4XE8Y0cLmnUZR3SClE,985
+mypy_boto3_appstream/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_appstream/client.py,sha256=6k0jYv5c6e0pOZBQEwGSIxojwde2-6ZiBHHKFmMHbT8,31977
+mypy_boto3_appstream/paginator.py,sha256=7YoKhgzL0az3Rl6hQvocuC1KxAHIosYGXo8cIQ-Rt2s,8447
+mypy_boto3_appstream/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_appstream/type_defs.py,sha256=PPif7wbYlIowntmzPl9mt2pj5hI3tW2y2DTsFvQ9YzA,19121
+mypy_boto3_appstream/version.py,sha256=BZ1Zmirfjl9GZn9B9e1Jga5HbU2N6lALC1sasi5rHdg,57
+mypy_boto3_appstream/waiter.py,sha256=_xE-rG3Umn67--aq92zIFYGyY2yRiDUC_EioCwKPSHM,1573
+mypy_boto3_appstream-1.10.35.0.dist-info/METADATA,sha256=9nqmAO7kXo6s8Z1vIWDa7cMAvaeY4FUQLnkryblUPMg,1215
+mypy_boto3_appstream-1.10.35.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_appstream-1.10.35.0.dist-info/top_level.txt,sha256=9RYNc-6rk4zMIaAZj2hT-0Duj_5XigOME_Nm6Y-3iSc,21
+mypy_boto3_appstream-1.10.35.0.dist-info/RECORD,,
