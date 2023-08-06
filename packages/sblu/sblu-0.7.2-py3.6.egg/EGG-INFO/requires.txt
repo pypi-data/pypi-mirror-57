@@ -1,0 +1,9 @@
+path.py>=7.0
+numpy>=1.10
+scipy>=0.16
+configobj>=5.0
+click>=5.1
+requests>=2.4
+prody>=1.8.2
+pyparsing>=2.3
+BioPython>=1.73
