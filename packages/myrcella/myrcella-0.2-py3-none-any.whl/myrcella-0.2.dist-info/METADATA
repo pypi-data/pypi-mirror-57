@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: myrcella
+Version: 0.2
+Summary: Simple API server to collect data according to dynamically loaded yaml specifications
+Home-page: https://github.com/krateng/myrcella
+Author: Johannes Krattenmacher
+Author-email: python@krateng.dev
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: bottle (>=0.12.16)
+Requires-Dist: waitress (>=1.3)
+Requires-Dist: doreah (>=1.3)
+
+# myrcella
+
+[![](https://img.shields.io/pypi/v/myrcella?style=for-the-badge)](https://pypi.org/project/myrcella/)
+[![](https://img.shields.io/pypi/dm/myrcella?style=for-the-badge)](https://pypi.org/project/myrcella/)
+[![](https://img.shields.io/github/stars/krateng/myrcella?style=for-the-badge&color=purple)](https://github.com/krateng/myrcella/stargazers)
+[![](https://img.shields.io/pypi/l/myrcella?style=for-the-badge)](https://github.com/krateng/myrcella/blob/master/LICENSE)
+
+Myrcella is a simple webserver to collect data that can be specified with yaml files.
+
+Install with `pip install myrcella`.
+
+
