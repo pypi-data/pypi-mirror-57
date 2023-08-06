@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mitch-dm-mypkg
+Version: 0.1.7
+Summary: 
+Author: Mitch Della Marta
+Author-email: mitchdellamarta@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: boto3 (>=1.10,<2.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: cowsay (>=2.0,<3.0)
