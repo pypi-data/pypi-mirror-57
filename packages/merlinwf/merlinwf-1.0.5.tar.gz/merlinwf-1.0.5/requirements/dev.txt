@@ -1,0 +1,10 @@
+# Development dependencies.
+black
+dep-license
+flake8
+isort
+pytest
+sphinx
+sphinx_rtd_theme
+
+-r requirements/release.txt

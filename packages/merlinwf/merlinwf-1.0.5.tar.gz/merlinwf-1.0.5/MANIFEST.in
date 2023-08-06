@@ -1,0 +1,6 @@
+prune docs
+prune tests
+include workflows/*
+include merlin/data/*
+include requirements.txt
+include requirements/*
