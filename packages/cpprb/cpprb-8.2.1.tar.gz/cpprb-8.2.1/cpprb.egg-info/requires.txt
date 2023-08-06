@@ -1,0 +1,9 @@
+numpy
+
+[all]
+matplotlib
+pyvirtualdisplay
+
+[gym]
+matplotlib
+pyvirtualdisplay
