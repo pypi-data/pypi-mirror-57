@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: rss-reader-by-Coromilly
+Version: 2.21
+Summary: Pure Python command-line RSS reader
+Home-page: https://github.com/Coromilly/epam-q4-2019/tree/project
+Author: Aleksandr_Levdansky
+Author-email: coromilly@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: feedparser
+Requires-Dist: requests
+
+#RSS reader
+
+##Command-line utility which receives RSS URL and prints results in human-readable format.
+
+###Usage example: 
+[python](https://www.python.org/) rss_reader.py [example_sourse](https://news.yahoo.com/rss/) [-h] [--version] [--json] [--verbose] [--limit LIMIT]
+
+positional arguments:
+  source         RSS URL
+
+optional arguments:
+
+**-h**, **--help**     show this help message and exit
+
+**--version**          Print version info
+
+**--json**             Print result as JSON in stdout
+
+**--verbose**          Outputs verbose status messages
+
+**--limit LIMIT**      Limit news topics if this parameter provided
+
+###JSON output structure example:
+
+<pre><code>{
+    some_feed: {
+        'Title': some_title,
+        'Publication Date': some_date,
+        'Link': some_link,
+        'Content': [
+            some_content
+        ]
+    }
+}
+</code></pre>
+
+

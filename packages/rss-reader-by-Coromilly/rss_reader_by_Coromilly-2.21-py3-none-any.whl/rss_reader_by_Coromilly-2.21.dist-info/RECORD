@@ -1,0 +1,10 @@
+rss_reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rss_reader/check_functions.py,sha256=dsVVapMrkyU_PQJwTRdsVD-ZlUh_SFUtcm6w9OdVrRU,2559
+rss_reader/main_functions.py,sha256=02Xh7dRLTFLpWa1bSLmylzy7oQuZt0lbowCPQx1w1zM,6732
+rss_reader/rss_reader.py,sha256=PFj9ckPpHtFcUubp_Ns2i-oZj__ujumGGrLUimtNYHQ,2045
+rss_reader/testing_module.py,sha256=EPmsCwXA_1GqBtT3WyeWgdMTnD31XH0e-Zr2mJaEcs8,5153
+rss_reader_by_Coromilly-2.21.dist-info/METADATA,sha256=5uqJ9ctH0g2qsSIOaRB0NYLzZh6ip5ElXJkn-9vN3y8,1376
+rss_reader_by_Coromilly-2.21.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+rss_reader_by_Coromilly-2.21.dist-info/entry_points.txt,sha256=Y_v2NhCj8tYdwKfWOxUvhYPCDLWoXEXnAGqhGpQNAAc,59
+rss_reader_by_Coromilly-2.21.dist-info/top_level.txt,sha256=yMEw71YxepkDCA1m9Me-rC11JJn-bMyx815qY0oAMRY,11
+rss_reader_by_Coromilly-2.21.dist-info/RECORD,,
