@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: docker-optimizer
+Version: 1.0.0
+Summary: A small program to optimize Dockerfiles
+Home-page: UNKNOWN
+Author: Bogdan Mustiata
+Author-email: bogdan.mustiata@gmail.com
+License: BSD
+Description: GENERATE WITH bin/update-readme.py
+        
+Platform: UNKNOWN
