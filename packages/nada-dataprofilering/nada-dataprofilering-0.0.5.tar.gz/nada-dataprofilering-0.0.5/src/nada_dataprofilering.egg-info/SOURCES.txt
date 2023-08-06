@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/nada_dataprofilering/__init__.py
+src/nada_dataprofilering.egg-info/PKG-INFO
+src/nada_dataprofilering.egg-info/SOURCES.txt
+src/nada_dataprofilering.egg-info/dependency_links.txt
+src/nada_dataprofilering.egg-info/top_level.txt
+src/nada_dataprofilering/sql_scripts/__init__.py
+src/nada_dataprofilering/sql_scripts/generate_sql_scripts.py
