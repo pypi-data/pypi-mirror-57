@@ -1,0 +1,10 @@
+DESCRIPTION.rst
+MANIFEST.in
+README.rst
+setup.py
+versionpro/__init__.py
+versionpro/_version.py
+versionpro/about.py
+versionpro/cli.py
+versionpro/colors.py
+versionpro/config.py
