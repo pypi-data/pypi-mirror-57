@@ -1,0 +1,3 @@
+[console_scripts]
+interledger = interledger.cli:main
+
