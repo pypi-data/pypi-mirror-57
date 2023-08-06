@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: motorcortex-python-tools
+Version: 1.2.1
+Summary: Python tools for Motorcortex Engine
+Home-page: https://www.motorcortex.io
+Author: Philippe Piatkiewitz
+Author-email: philippe.piatkiewitz@vectioneer.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pandas (>0.22)
+Requires-Dist: matplotlib (>2.1)
+
+UNKNOWN
+
+

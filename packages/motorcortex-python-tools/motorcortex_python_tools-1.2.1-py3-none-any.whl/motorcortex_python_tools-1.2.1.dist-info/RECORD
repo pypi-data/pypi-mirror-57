@@ -1,0 +1,10 @@
+motorcortex_python_tools-1.2.1.data/scripts/mcx-datalogger.py,sha256=c-wSiwqRozPP_3Mb_7bcJ-22j0iNE2Gry2Q3Q10mfMM,6006
+motorcortex_python_tools-1.2.1.data/scripts/mcx-dataplot.py,sha256=RIrPDIvg9dpLmu-KVyzKRFWD8e0fw5i51vP5g7_e89w,5201
+motorcortex_python_tools-1.2.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+motorcortex_python_tools-1.2.1.dist-info/METADATA,sha256=YanSurrtmFVJidmFC6K71OBtkvUX-1S4tAB4UNxDdFg,335
+motorcortex_python_tools-1.2.1.dist-info/RECORD,,
+motorcortex_python_tools-1.2.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+motorcortex_python_tools-1.2.1.dist-info/metadata.json,sha256=cCpIjFpIBUHAnrIG39jAswQZ8Z9vvqZw4-EVLJKX6v8,535
+motorcortex_python_tools-1.2.1.dist-info/top_level.txt,sha256=elYvTsGQwtLQzBFpDBO0cA1Z5YLiHkXtJYTeiCgFt4M,18
+motorcortex_tools/__init__.py,sha256=XCYMpTQLzvtG2Tn1UoqPEQEkMzcXbrVx-eW9TBy2SN8,658
+motorcortex_tools/datalogger.py,sha256=K2Nz4sgM8KcXXsM3CVSaITkOo3-JztoHqs4NVrlTmKE,9389
