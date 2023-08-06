@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: dompy_parser
+Version: 0.1
+Summary: JavaScript Dom Api for Python, Html Parser and a Web scraping library
+Home-page: https://github.com/Anikeshpatel/dompy
+Author: Anikesh Patel
+Author-email: developeranikesh@gmail.com
+License: GNU General Public License v3.0
+Download-URL: https://github.com/Anikeshpatel/dompy/archive/0.1.zip
+Description: UNKNOWN
+Keywords: html parser,dompy parser,web scraping,javascript dom api,python dom,py dom
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
