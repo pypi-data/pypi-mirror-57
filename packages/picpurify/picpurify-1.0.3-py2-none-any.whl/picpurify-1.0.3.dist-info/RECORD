@@ -1,0 +1,9 @@
+picpurify/__init__.py,sha256=Ewwj-MeDEmne_pT4wwS84VbPJZuSjncIEDHGws-cUWA,41
+picpurify/api.py,sha256=azvhtT6ZcerWEGreAPg-SuePxkVMMWi_Fy-uYAoypsE,7326
+picpurify/cli.py,sha256=xnuyLo_q9bRJVBz7pPS8HujlfA9diH8ypLxNaHAnXXA,1165
+picpurify/version.py,sha256=GkISWH6Yiu9HoWOVv-748hY0R4vzBJmZw3nDOV2AliM,1237
+picpurify-1.0.3.dist-info/LICENSE,sha256=YhMtiYR361qaO4J4MFMCiAvWuDWeOUyqLDRRlGCCB8E,1066
+picpurify-1.0.3.dist-info/METADATA,sha256=A8gCyO8cPvjZsX_UAiQ7oGNU_X6qHyXBCdu7eVkctCU,1414
+picpurify-1.0.3.dist-info/WHEEL,sha256=aYqFPnGU3U_0lo0pLSfuX8KS9y-mK_QMHJw1RbR6smg,97
+picpurify-1.0.3.dist-info/top_level.txt,sha256=h1oYj7M5ZHiIfhvQ5dF5HiTPUqqsXaaIiJXDFH87mVA,10
+picpurify-1.0.3.dist-info/RECORD,,
