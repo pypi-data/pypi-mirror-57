@@ -1,0 +1,15 @@
+pwptemp/__init__.py,sha256=J3fJowEMUxDFlTrYR26zg1inHrWoID7AnDxdmfsXqN4,32
+pwptemp/wellpath.py,sha256=mVAIbLtWfQXZ3Ghllc3a-yzw8Fre656lypUwfY9xf0Y,9382
+pwptemp/drilling/__init__.py,sha256=9yXEoYEylxWQ08F8Rvvt9YP_6iPy3wWaKotlm_e7xoY,42
+pwptemp/drilling/analysis.py,sha256=n7akwLaBgNA7GTHL6Il9G6DyabloXQdXSCpYr2ejxoM,6159
+pwptemp/drilling/heatcoefficients.py,sha256=sb81FlIoctBTM9PKhY3gI3EQBTrr_p9tOjzgc2Nq-hw,6128
+pwptemp/drilling/initcond.py,sha256=NkCz96hJYizmjeM6jbOxRhF6Phkekr2ToqH0hMU_Wzg,1304
+pwptemp/drilling/input.py,sha256=e3eeOBfcPP7ADbWwNDD8mwOZCNvuwtzRiYc2kcb8f_Q,11523
+pwptemp/drilling/linearsystem.py,sha256=jFZoGKRxze5d3AsUjuctofULJHI9CIniHu4nXuKAr64,10636
+pwptemp/drilling/main.py,sha256=MnVGuQ5yCuf9w5xgbXTBDXCB-wnWjvpHbBz-wETRguA,4096
+pwptemp/drilling/plot.py,sha256=U4GPMlq-SW8MDOGpybxjmSVXE_Suy4Y-McDc3-DdYlE,1858
+pwptemp-0.1.2.dist-info/LICENSE.md,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+pwptemp-0.1.2.dist-info/METADATA,sha256=VIN_2Fjk-egi-QFlwV41RAna8zKw3c2RY2tpQIQTTCQ,2847
+pwptemp-0.1.2.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pwptemp-0.1.2.dist-info/top_level.txt,sha256=PWtqi3TfU3mGi9rZ3Gc0oI1KPPZQdQVErQ-MEORv5tE,8
+pwptemp-0.1.2.dist-info/RECORD,,
