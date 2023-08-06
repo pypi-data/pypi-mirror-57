@@ -1,0 +1,7 @@
+README.rst
+setup.py
+sigdump.py
+sigdump.egg-info/PKG-INFO
+sigdump.egg-info/SOURCES.txt
+sigdump.egg-info/dependency_links.txt
+sigdump.egg-info/top_level.txt
