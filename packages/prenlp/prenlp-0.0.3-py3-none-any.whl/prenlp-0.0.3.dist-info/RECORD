@@ -1,0 +1,9 @@
+prenlp/__init__.py,sha256=54tClTzyOuJ9rBKnF0ROzJwBslXKRbaIuL5THfXOzaI,104
+prenlp/data/__init__.py,sha256=1YtomVv5ol9gJb4MHettXWiHQh2lRVdTUXHE3l0KceQ,29
+prenlp/data/normalization.py,sha256=3mVgA3I5t1ZOSGX0NyU19BbKerCb4-PrpgK3e-y4lOU,89648
+prenlp/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prenlp-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+prenlp-0.0.3.dist-info/METADATA,sha256=bzqyN4NdKmns_G1IbjtsA69kFWqzA5ScnrhfV7QK_Io,1389
+prenlp-0.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+prenlp-0.0.3.dist-info/top_level.txt,sha256=ROALmkklBwwnaLgE7pLGBxlHc03o3MJL1hypkZCJo_I,7
+prenlp-0.0.3.dist-info/RECORD,,
