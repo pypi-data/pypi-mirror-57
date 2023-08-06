@@ -1,0 +1,127 @@
+CHANGES
+=======
+
+0.3.4
+-----
+
+* Update dependency pytype to v2019.12.6
+* Use Ubuntu 18.04 on travis for running tests
+* Update dependency pytype to v2019.10.17
+* Update dependency eventlet to v0.25.1
+* Fix pytype attribute-error
+* assert\_called\_once is bad
+* Convert travis to using jobs
+* Lock to known good version of eventlet
+* Ignore W1618
+* Package beka with PBR
+* Automatically lookup ubuntu/debian releases for CI package push
+* Add .stickler.yml
+* Configure .renovaterc.json
+* Add renovate.json
+* Compare Bekas by IP and port
+* Improve .gitlab-ci.yml
+* Allow cc-test-reporter to work with pypi deploys
+* Add debian packaging
+* Automatically deploy pypi packages for beka
+* beka has been adopted by the faucet foundation
+* Issue #9 - handle path attribute extended length
+* Update AUTHORS file
+* Make message serialization more deterministic (issue #7)
+
+0.3.3
+-----
+
+* Bump to 0.3.3
+* Use timer class in StateMachine
+* Add Timer class
+* Add OpenSent state to state machine
+* Add test for Peering.run()
+
+0.3.2
+-----
+
+* Bump to 0.3.2
+* Use concrete packer for BGP messages
+* Use concrete parser for BGP messages
+* Register parsers, stop testing message.type
+
+0.3.1
+-----
+
+* Bump to version 0.3.1
+* Support Exabgp style optional parameters
+
+0.3.0
+-----
+
+* Bump to version 0.3.0
+* 32 bit ASN support
+* Beka can pack/unpack AS4\_PATH
+* Add capabilities handling
+* Started testing Beka
+* Started testing Peering
+* Tested and tidied the IP helper classes
+* Add description to readme
+* Update README with correct badges
+
+0.2.1
+-----
+
+* Update setup.py with version
+* Route withdrawal messages pack
+
+0.2.0
+-----
+
+* Update Codeclimate key
+* Rename from Beeper to Beka
+
+0.1.0
+-----
+
+* Package and should be ready for primetime
+* IPv6 routes export
+* IPv6 route updates pack
+* Can advertise IPv4 routes
+* Add uptime query
+* Send capabilities with v4 and v6 unicast
+* Use eventlet instead of gevent
+* Relative imports
+* Beeper init closer to faucet bgpspeaker
+* handler api closer to faucet bgpspeaker
+* Added shutdown methods, run.py exits cleanly on ^C
+* Add codeclimate badges
+* Add code climate
+* Add readme with Travis badge
+* Add travis config
+* Refactoring and pylint feedback
+* Make Beeper the external interface, extract from run.py
+* Use gevent Queue and 'block' on get
+* Support IPv6 route withdrawals
+* Route withdrawls working for IPv4
+* Consts for notification error code, fixes #13
+* IPv6 support and some refactoring
+* Asynchronous socket polling
+* Use queue.Queue instead of collections.deque
+* demo uses StreamServer, step towards #10
+* Working state machine
+* WIP Built unit tests for state machine
+* clear finished TODO
+* Print route updates in server
+* Route updates come out
+* output messages accumulate in Beeper instead of being returned
+* tests pass, redid attributes as a dict
+* origin support
+* Basic AS\_PATH support (no as\_set support though)
+* keepalive timers partially work
+* Beeper config loads from file
+* Gets next hop path attribute
+* Can unpack NLRIs
+* BGP Notification message implemented
+* Stable peering with BIRD
+* Sample bgp peer up, can try to plumb it in
+* BGP keepalive message supported
+* BGP open message packs and unpacks
+* BGP message parsing
+* started forming the beeper system
+* initial commit, with passing test
