@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: error_help
+Version: 0.0.2
+Summary: A small package to automate searching your errors.
+Home-page: https://github.com/topcatthomas/errorHelp
+Author: Thomas C
+Author-email: topcat.thomas.phone@outlook.com
+License: UNKNOWN
+Description: Call the function: help with the parameter e, of any exception thrown that is not in the "errors.ignore" file to immediately go to a stack overflow search of your error. 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
