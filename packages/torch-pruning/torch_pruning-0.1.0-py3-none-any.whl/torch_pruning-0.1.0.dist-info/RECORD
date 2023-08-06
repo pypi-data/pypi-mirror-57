@@ -1,0 +1,9 @@
+torch_pruning/__init__.py,sha256=ngdZzFwKoZHuWxg_vAzoahuBLfRjCAVm7Wp4i5A-Kr4,49
+torch_pruning/dependency.py,sha256=cxDP6tBOGWI9QVcUiJGILv5yjGqnWm6bxz8tvXUTFlE,17316
+torch_pruning/prune_fn/__init__.py,sha256=WJBiZtwIbwqMr6QO0h7Tm4X-U2uSKX3w9ZSIkfMBeOk,53
+torch_pruning/prune_fn/structured.py,sha256=k4QcNMcve6M2qHgQL9jIZ2wX9K1Ai9H_bAYB0dx0m-k,5259
+torch_pruning/prune_fn/unstructured.py,sha256=8Mrdu8Vj39Sbpn3JIpG9cqbS78iAjt-_s7MDPhoWHOU,1788
+torch_pruning-0.1.0.dist-info/METADATA,sha256=nfAY-Nb4CaQx1dBVLkSKQVYqwKSUxSCI4J9zg_cDCPs,5474
+torch_pruning-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+torch_pruning-0.1.0.dist-info/top_level.txt,sha256=7BKinlrc49aZWIR0LIEw8h9CEBrdz1cD73tWrJ5qsyQ,14
+torch_pruning-0.1.0.dist-info/RECORD,,
