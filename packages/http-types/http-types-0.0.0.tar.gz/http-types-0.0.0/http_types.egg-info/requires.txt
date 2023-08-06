@@ -1,0 +1,13 @@
+typing-extensions
+typeguard
+
+[dev]
+pytest
+pylint
+autopep8
+setuptools
+twine
+wheel
+pytest-watch
+pytest-testmon
+pyhamcrest
