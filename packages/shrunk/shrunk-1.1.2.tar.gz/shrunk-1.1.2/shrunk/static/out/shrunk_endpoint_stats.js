@@ -1,0 +1,11 @@
+var shrunk=shrunk||function(){}
+var clear_search=function(){var url=new URL(window.location.href);var sortBy=url.searchParams.get("sortby");var all_users=url.searchParams.get("all_users");if(sortBy===null){sortBy="0"}
+if(all_users===null){all_users=1;}
+window.location.replace("/?all_users="+all_users+"&search=&sortby="+sortBy);}
+function toggleLinks(cb,netid){$("article.link-group").each(function(){if(cb.checked)
+$(this).css("display","block");else{link_info=$(this).children(".link-info");if($(link_info).children(".owner").attr("netid")!=netid)
+$(this).css("display","none");}});}
+const CSRF_TOKEN=$('meta[name=csrf-token]').attr('content');$.ajaxSetup({beforeSend:function(xhr,settings){xhr.setRequestHeader('X-CSRFToken',CSRF_TOKEN);}});const MENU_ITEMS=['printChart','separator','downloadPNG','downloadJPEG','downloadSVG'];function add_map(div_name,map_name,title,join,data){Highcharts.mapChart(div_name,{chart:{map:map_name},title:{text:title},subtitle:{text:'(Logarithmic scale)'},mapNavigation:{enabled:true},exporting:{sourceWidth:600,sourceHeight:500,buttons:{contextButton:{menuItems:MENU_ITEMS}}},legend:{layout:'vertical',align:'left',verticalAlign:'bottom'},colorAxis:{min:1,type:'logarithmic',minColor:'#FCE2CC',maxColor:'#FC580C'},series:[{data:data,joinBy:[join,'code'],name:'Visits',tooltip:{pointFormat:'{point.name}: {point.value}'}}]});}
+function show_us_map(){document.getElementById('us-map').style.display='';document.getElementById('world-map').style.display='none';}
+function show_world_map(){document.getElementById('us-map').style.display='none';document.getElementById('world-map').style.display='';}
+$.getJSON('/stat/endpoint_json',function(data){Highcharts.chart('endpoint_stats_container',{chart:{type:'bar'},title:{text:'Endpoint visits'},exporting:{buttons:{contextButton:{menuItems:MENU_ITEMS}}},xAxis:{categories:data.map(doc=>doc.endpoint),title:{text:null}},yAxis:{min:0,title:{text:'Visits'},labels:{overflow:'justify',step:4}},legend:{layout:'vectical',align:'right',verticalAlign:'top',x:-40,y:80,borderWidth:1,shadow:true},series:[{name:'Total visits',color:'#FC580C',data:data.map(doc=>doc.total_visits)},{name:'Unique visits (by NetID)',color:'#FCE2CC',data:data.map(doc=>doc.unique_visits)}]});});
