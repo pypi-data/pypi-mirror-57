@@ -1,0 +1,13 @@
+README.md
+setup.py
+facebooklogger/__init__.py
+facebooklogger/__main__.py
+facebooklogger/_version.py
+facebooklogger/getuserid.py
+facebooklogger/logger.py
+facebooklogger/settings.py
+facebooklogger.egg-info/PKG-INFO
+facebooklogger.egg-info/SOURCES.txt
+facebooklogger.egg-info/dependency_links.txt
+facebooklogger.egg-info/requires.txt
+facebooklogger.egg-info/top_level.txt
