@@ -1,0 +1,5 @@
+setup.py
+pyrmx.egg-info/PKG-INFO
+pyrmx.egg-info/SOURCES.txt
+pyrmx.egg-info/dependency_links.txt
+pyrmx.egg-info/top_level.txt
