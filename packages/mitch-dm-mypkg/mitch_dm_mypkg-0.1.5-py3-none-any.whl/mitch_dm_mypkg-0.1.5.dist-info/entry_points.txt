@@ -1,0 +1,3 @@
+[console_scripts]
+shusays=mitch_dm_mypkg:main
+
