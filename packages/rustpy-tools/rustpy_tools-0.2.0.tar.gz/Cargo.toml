@@ -1,0 +1,17 @@
+[package]
+authors = ["leohowell.com@gmail.com"]
+name = "rustpy-tools"
+version = "0.2.0"
+description = "Base develop tools by rust"
+readme = "README.md"
+edition = "2018"
+
+[dependencies]
+pyo3 = { version = "0.8.3", features = ["extension-module"] }
+regex = { version = "1.3.1"}
+rust-crypto = "^0.2"
+base64 = "0.11.0"
+
+[lib]
+name = "rustpy_tools"
+crate-type = ["cdylib"]
