@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: logging-color
+Version: 0.1.0
+Summary: a color patch for python standard logging module
+Home-page: https://github.com/So0ni/logging_color
+Author: Sonic Young
+Author-email: 173976914@qq.com
+License: GPL Licence
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
