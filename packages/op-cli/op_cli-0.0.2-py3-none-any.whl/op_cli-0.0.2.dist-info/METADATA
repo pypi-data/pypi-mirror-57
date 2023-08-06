@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: op-cli
+Version: 0.0.2
+Summary: A Simple command line
+Home-page: https://gitlab.com/oyetoketoby80/elias-cli.git
+Author: Oyetoke Toby
+Author-email: oyetoketoby80@gmail.com
+License: MIT
+Download-URL: https://gitlab.com/oyetoketoby80/elias-cli.git
+Platform: UNKNOWN
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: Click (==7.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: six (==1.13.0)
+
+# CLI
+
+# See all commands
+
+```bash
+
+$ python main.py commands
+
+```
+
+# Run commands
+
+```bash
+
+$ python main.py run "add(4,minus(4,5))"
+
+```
+
+# Add function
+
+1. Create a python file in `functions` directory
+2. Add the main functon entry
+3. Import `from .app import app`
+4. Add the `@app.register()` to the function
+
+
