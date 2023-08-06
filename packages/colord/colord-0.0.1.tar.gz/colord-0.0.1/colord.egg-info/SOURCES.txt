@@ -1,0 +1,9 @@
+README.md
+setup.py
+colord/__init__.py
+colord/colord.py
+colord.egg-info/PKG-INFO
+colord.egg-info/SOURCES.txt
+colord.egg-info/dependency_links.txt
+colord.egg-info/requires.txt
+colord.egg-info/top_level.txt
