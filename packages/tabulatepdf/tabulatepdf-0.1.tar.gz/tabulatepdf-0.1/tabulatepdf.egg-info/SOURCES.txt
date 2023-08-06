@@ -1,0 +1,8 @@
+README.md
+setup.py
+tabulatepdf/__init__.py
+tabulatepdf.egg-info/PKG-INFO
+tabulatepdf.egg-info/SOURCES.txt
+tabulatepdf.egg-info/dependency_links.txt
+tabulatepdf.egg-info/requires.txt
+tabulatepdf.egg-info/top_level.txt
