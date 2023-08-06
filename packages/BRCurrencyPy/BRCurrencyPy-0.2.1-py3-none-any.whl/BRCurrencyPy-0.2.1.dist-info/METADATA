@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: BRCurrencyPy
+Version: 0.2.1
+Summary: Um conversor de moedas e criptmoedas para a moeda brasileira. 🇧🇷
+Home-page: https://github.com/tsukuuyomi/BRCurrencyPy
+Author: tsukuuyomi
+Author-email: maykeguedes009@hotmail.com
+License: MIT
+Keywords: python,currency,money,converter,coin,bitcoin,cryptocurrency
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: bs4
+Requires-Dist: requests
+
+# BRCurrencyPy
+
+Um simples conversor de moedas e criptmoedas para a moeda brasileira.
+
+## Instalação
+
+Instale usando o pip
+
+```
+pip install BRCurrencyPy
+```
+
+## Exemplos
+
+```python
+from brcurrency.dolar import Dolar
+from brcurrency.bitcoin import Bitcoin
+from brcurrency.euro import Euro
+
+# Converção dólar
+dolar =  Dolar() # Cria o objeto conversor
+print(dolar.get_cotacao()) # Pega a cotação atual do Dólar
+print(dolar.converter(0.50)) # Converte $0.50 em R$
+
+# Converção bitcoin
+bitcoin =  Bitcoin()
+print(bitcoin.get_cotacao()) # Pega a cotação atual do Bitcoin
+print(bitcoin.converter_str(0.5162)) # Converte ₿0.5162 em R$ para String e adiciona o R$ na frente
+
+# Conversão euro
+euro =  Euro()
+print(euro.get_cotacao()) # Pega a cotação atual do Euro
+print(euro.converter(5)) # Converte €5.00 em R$
+```
+
+
