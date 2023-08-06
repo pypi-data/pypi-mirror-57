@@ -1,0 +1,8 @@
+README
+setup.py
+thumbalizr.py
+Thumbalizr.egg-info/PKG-INFO
+Thumbalizr.egg-info/SOURCES.txt
+Thumbalizr.egg-info/dependency_links.txt
+Thumbalizr.egg-info/requires.txt
+Thumbalizr.egg-info/top_level.txt
