@@ -1,0 +1,8 @@
+setup.py
+hhrtest/__init__.py
+hhrtest/help.py
+hhrtest.egg-info/PKG-INFO
+hhrtest.egg-info/SOURCES.txt
+hhrtest.egg-info/dependency_links.txt
+hhrtest.egg-info/entry_points.txt
+hhrtest.egg-info/top_level.txt
