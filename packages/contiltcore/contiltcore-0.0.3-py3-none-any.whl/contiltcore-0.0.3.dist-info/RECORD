@@ -1,0 +1,7 @@
+dataaccess/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataaccess/articles.py,sha256=HPVsHrf2_5eZ7hJYZ8biO-9_tADWbCrS4ZnLsM0hbn0,2432
+dataaccess/database.py,sha256=OyRP698fHvreCBcNV9yW612ff6CQueG-6zSHe0TJmJU,978
+contiltcore-0.0.3.dist-info/METADATA,sha256=4QFKtkBFD4LfseqYKqRPVhApaf_XwvfXhsrjUbGO63s,459
+contiltcore-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+contiltcore-0.0.3.dist-info/top_level.txt,sha256=8aENlD15RO5_6tUpzgQufLAmgtyI-OrVqyDjf4wOJKE,11
+contiltcore-0.0.3.dist-info/RECORD,,
