@@ -1,0 +1,9 @@
+amazonpy/__init__.py,sha256=7kTBW2Cpktq6UqNNwrvgEfxiXZi3xh2PcQJKZhCBcfw,27
+amazonpy/amazon.py,sha256=LvUIQ4soaocoAYQIlPT-vq5NiXA51krZGV85iVsQwUk,1363
+amazonpy/config.py,sha256=-2HJUNUDnjoeJloa-H7vSFVOk6gKRImau5W28XC1JxA,406
+amazonpy/scrap.py,sha256=JoWwLjiKJKRc-W-rBYMJaG987vGYxTEX81quaykPToU,1861
+amazonpy-1.0.0.dist-info/LICENSE,sha256=i22fLrmKEWjQEGbiX3IH5y-bg7zaJ_GrcIX8pQCVkFY,1065
+amazonpy-1.0.0.dist-info/METADATA,sha256=Uq5BFUN4OfoXnWbbIJJC5R8dC4jzPVxEzCEgr2E1h0o,2835
+amazonpy-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+amazonpy-1.0.0.dist-info/top_level.txt,sha256=JZAppTTyITveozD8MVWkPw1uATdlC-Dl9GVKCh9uO5o,9
+amazonpy-1.0.0.dist-info/RECORD,,
