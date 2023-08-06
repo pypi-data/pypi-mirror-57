@@ -1,0 +1,52 @@
+Metadata-Version: 1.1
+Name: terminal-proxy
+Version: 0.1.0
+Summary: Proxy management tool for terminal.
+Home-page: https://github.com/Prodesire/terminal-proxy
+Author: Prodesire
+Author-email: wangbinxin001@126.com
+License: MIT License
+Description: # terminal-proxy
+        Proxy management tool for terminal.
+        
+        ## Install
+        ```plain
+        pip install terminal-proxy
+        ```
+        
+        ## Usage
+        ### Config
+        ```plain
+        # If you are on Windows, please run as administrator
+        proxy config 127.0.0.1:8080
+        ```
+        
+        ### Turn on
+        ```plain
+        proxy on
+        ```
+        
+        ### Show
+        ```plain
+        proxy show
+        ```
+        
+        ### Turn off
+        ```plain
+        proxy off
+        ```
+        
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
