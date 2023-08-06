@@ -1,0 +1,17 @@
+comic_dl/__init__.py,sha256=DsAHdxLC16H2VjdFOU5tBx2xT9VnNQ-XbTS24fRCa_w,22
+comic_dl/__main__.py,sha256=oz8F__mCS7qpwj2X0vMtrS_BhCiNGrPjHv8Xo71hI8Y,155
+comic_dl/comic.py,sha256=yPLRXd3UO3xKOSPjDHltnKpqmoNvpiV8GoZOFqbDcRg,4544
+comic_dl/commands.py,sha256=OZSKCtYm4y5VAGboOyHUFDUkt0AL536UsIPkIdG0mtE,4072
+comic_dl/config.py,sha256=zsCJCA4yG-yy_dxUVNbAK_0w4sKUtqSr-gTvKrIDods,1241
+comic_dl/handlers.py,sha256=tbRta_yRKRwAjcV8toGAXmpYUxn6V8AtgYNY7NakiL4,4007
+comic_dl/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+comic_dl/common/db.py,sha256=Y5CugpHJO6eCqUcbIVkJE9HQBJQi8k-HL5oyqZeEkpE,2226
+comic_dl/common/driver.py,sha256=XNYffpnUl_WliWNVUZjApxnqcj4F0fnyaLwlIVEAVYc,1628
+comic_dl/common/exceptions.py,sha256=u0M6wxxJ6BMBgwAWnYB9wOF_6S7F_wR-sChBvX33KRk,833
+comic_dl/common/utils.py,sha256=lzx_vRWIEgtXHyslcaqbmNFUhRaNHrfR4H8W9SWAIMY,2904
+comicdl-0.0.1.dist-info/LICENSE,sha256=4PJ5gyLOXn3mm7jdzHt4oszvL3d251SF7ln7dMWfFlc,1071
+comicdl-0.0.1.dist-info/METADATA,sha256=cW5MCTN8j-dssqXWTEBAOABKq8wHZmpjHXcO-bxwVaY,661
+comicdl-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+comicdl-0.0.1.dist-info/entry_points.txt,sha256=1NEhE5etjdJx5SpGBS3ofKqSlDZQ37aiFlxLxg47wL4,74
+comicdl-0.0.1.dist-info/top_level.txt,sha256=dWPtoyuBBbroJQSemCUYg0IL29qP-QnMerSPPJqEl8w,9
+comicdl-0.0.1.dist-info/RECORD,,
