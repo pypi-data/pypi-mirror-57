@@ -1,0 +1,17 @@
+cuteuid/__init__.py,sha256=AGtgW8gSDro-4Uuo8nTwW1gjHt2u6ufq0TILdv-li-U,372
+cuteuid/playground.py,sha256=TPm5XKLaHViGeHEAj4qEwquA2ieIpzsZphveFipVxtg,1146
+cuteuid/preprocess.py,sha256=BLoogqJ9lbWtC3sROXCvsWE9Zv31VLIOGV9ce7bNpmc,1216
+cuteuid/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cuteuid/core/converters.py,sha256=sLS44E3TOQs2_Z6BuTe4fYfPNI0iJ9uxKVAAE0HN7Mw,575
+cuteuid/core/kinds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cuteuid/core/kinds/base_uid.py,sha256=3oW1ZCSOpvRx48USDlu8i0fxtYUo9CrSmrFY8Yed8n0,1305
+cuteuid/core/kinds/emoji_uid.py,sha256=9uEmMNPLK0S-usg163CIMg2hA9O1fmFa8w8cKYr5e2c,750
+cuteuid/core/kinds/leet_uid.py,sha256=8sOV-8uLPcHcDIwhsf8lBpftfVGxkDzrP6p_k2SUth8,626
+cuteuid/data/emojis.json,sha256=k1rAXfbtXtTu96uPzku3QDcweCe3f7yu7smBLyaN28c,22279
+cuteuid/data/words.json,sha256=FRerVzJjOYfIPrmsm6QgjCBcFRZWxe2Lmo9abJVeZOw,49644
+src/cuteuid/__init__.py,sha256=YfWux14yO6EHlhshsSS5_Bxr9gVerEMcJBSlrWe3Bwc,371
+cuteuid-1.0.1.dist-info/LICENSE,sha256=ce0_oh3Wy5H-wFhQ2gQfU-zTVLGBON0t_Ubtv2M_G3A,1108
+cuteuid-1.0.1.dist-info/METADATA,sha256=dfNLZlqcOy1gYv-XS6RDvyJ_WDJZomSDv2HvEjH32dM,4812
+cuteuid-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cuteuid-1.0.1.dist-info/top_level.txt,sha256=ExpMEq2YU8JOIlulVmhjKL9D5aTHOZj2647JofZPC7E,8
+cuteuid-1.0.1.dist-info/RECORD,,
