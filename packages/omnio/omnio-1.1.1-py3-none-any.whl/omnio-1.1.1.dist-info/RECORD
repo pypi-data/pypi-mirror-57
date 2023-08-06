@@ -1,0 +1,11 @@
+LICENSE,sha256=zC8iOVRFs7Bh9se_zocQ6neIydAHhEqnMTUvHewNyvU,1086
+README.md,sha256=LMVj3aIzzWrRjti5UG5v0_10HTo_IhAWTjCExPsFlZw,5245
+omnio/__init__.py,sha256=9jCh7syi_fszQApPzdjBkQJ6ZVQH1rg6gEYw-_oiCz4,871
+omnio/http.py,sha256=LdFLeukKXrEawmr0aBf1bCjVerauu_WxIcawt-hvJ_I,1239
+omnio/lib.py,sha256=4PmSOBbPSdX9mSzgnxyCGa3zLrXP4putaG75NHEkAww,5706
+omnio/path.py,sha256=pGZFFwoEcdYRnEPRkKJgsoF1kwLviCTSmuW8_A89imQ,209
+omnio/s3.py,sha256=9VOlPl5F1lBtEoymYppVwu-rgX4a-UU15zwxmchU7Kg,3697
+omnio-1.1.1.dist-info/LICENSE,sha256=zC8iOVRFs7Bh9se_zocQ6neIydAHhEqnMTUvHewNyvU,1086
+omnio-1.1.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+omnio-1.1.1.dist-info/METADATA,sha256=w9OxJVnxJX_nFCanZPXEISYsvOj2vzsK3MDgw4_QVqk,6266
+omnio-1.1.1.dist-info/RECORD,,
