@@ -1,0 +1,13 @@
+django_restql/__init__.py,sha256=mP91ji18FHHc0BzquDkVWz4tYih4XDpJvSIxzLU2THw,378
+django_restql/exceptions.py,sha256=DxcIiycQIPHZvPAZxrfzxUDernTuLHb-7IhBvBtW6TY,344
+django_restql/fields.py,sha256=GlswNyx1HDJY9RAVgVOPpv90nAbVvpMFcvf1SdYbNqs,10050
+django_restql/mixins.py,sha256=Sr8j4oHpAWGRyu_67lRNJ2N4ij-KVti-T0aKa58HieA,29805
+django_restql/operations.py,sha256=Th_6Mwg_vuu_6oWxEMTQeOllrCNxldj77gLjwH08bhU,65
+django_restql/parser.py,sha256=IFny9jWcse5Xfp5Y7ZGlm94ws6A3Wb7uTCpFt_HKSt8,3504
+django_restql/serializers.py,sha256=Fr4zsXDJyrR6TMO3fZkKA-0uP7RPbVsrmhtJ8mqk3WA,235
+django_restql/settings.py,sha256=z9NGMTemrE_UwWuzcZN69AGBqQg-DgJPcVzsfblnIyo,3299
+django_restql-0.7.3.dist-info/LICENSE,sha256=lWPq_BHrF7fLbblOIlm78-01qCc9msXKu4AYE59kuEQ,1067
+django_restql-0.7.3.dist-info/METADATA,sha256=GPk60pO8TibiSod48uqVoWuUxXPfJQrqTOL40uCqJNA,6122
+django_restql-0.7.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+django_restql-0.7.3.dist-info/top_level.txt,sha256=m7rT2jqLqQSClvFeqNHd5Dy_MGOPE_kJ_77vcNk5l6c,14
+django_restql-0.7.3.dist-info/RECORD,,
