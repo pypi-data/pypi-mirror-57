@@ -1,0 +1,10 @@
+Changelog
+=========
+
+1.0.1
+-----
+ - updated Gitlab-CI tests and integration
+
+1.0.0
+-----
+ - initial release
