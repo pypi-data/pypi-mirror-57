@@ -1,0 +1,8 @@
+setup.py
+classroom_auth/__init__.py
+classroom_auth/classroom_file.py
+classroom_auth.egg-info/PKG-INFO
+classroom_auth.egg-info/SOURCES.txt
+classroom_auth.egg-info/dependency_links.txt
+classroom_auth.egg-info/entry_points.txt
+classroom_auth.egg-info/top_level.txt

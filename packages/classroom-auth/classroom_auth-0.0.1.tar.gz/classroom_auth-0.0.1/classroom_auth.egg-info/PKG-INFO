@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: classroom-auth
+Version: 0.0.1
+Summary: Custom jupyterhub.Authorizors for classroom usage
+Home-page: UNKNOWN
+Author: Mirko Mälicke
+Author-email: mirko.maelicke@kit.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
