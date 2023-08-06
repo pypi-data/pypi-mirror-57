@@ -1,0 +1,3 @@
+[console_scripts]
+twitter-amnesia = twitter_amnesia:main
+
