@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: websub
+Version: 0.1.1
+Summary: WebSub Client for python, based off of gohubbub
+Home-page: https://github.com/ShadowJonathan/pywebsub
+Author: Jonathan de Jong
+Author-email: jonathan@automatia.nl
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
