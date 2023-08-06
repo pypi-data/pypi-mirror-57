@@ -1,0 +1,11 @@
+_martinez.cpython-38-i386-linux-gnu.so,sha256=OvYU73e6vOtAlBR2K9MMriuhNb2Sx4sofJQKKzauZTE,4406920
+martinez-0.0.3.dist-info/top_level.txt,sha256=B2ur_VM5fT7Dqf57av9AGXrQY3sFufFYnu0QPxyNRT0,19
+martinez-0.0.3.dist-info/RECORD,,
+martinez-0.0.3.dist-info/METADATA,sha256=UvDRAq4b-yHMMGyFE21mimQXar0R4ig60fhyhh-zJ5I,3317
+martinez-0.0.3.dist-info/WHEEL,sha256=UVnjqCM-lGS-6xJlRARWHkY-vdywPnxjC1vkPq6irso,109
+martinez/segment.py,sha256=c--sFM5vgwfpT4JJkAgK5XBFpecP6zM78Y4xvMcyBPM,1084
+martinez/contour.py,sha256=PDN54iqDdi3lWF0D5zholhWJbMKro0LNebR_-Txg9XM,2466
+martinez/bounding_box.py,sha256=58HYjZRc-lvxUKzNoUCAZ4LBT0dlt8O01QJGaNUqrj8,1324
+martinez/hints.py,sha256=vE09CEBe-FlYsasfcPpcxe3gsm5gJYELjIfRz1CVDm4,123
+martinez/point.py,sha256=s-GZ7ojf8fusV9WfhfwHer9l4WvV2Ts_zmt5_6rRX6g,868
+martinez/__init__.py,sha256=byHhxKGRi4rMUsGURVqDTiZ4-vhf6H4vcNy9zgzLpFE,93
