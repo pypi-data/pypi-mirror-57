@@ -1,0 +1,11 @@
+json_ref_dict/__init__.py,sha256=OuHtuxYmzT0aqP-uNsUO8ChCRmJamWC-sP0HGi60aP8,550
+json_ref_dict/exceptions.py,sha256=aPBpdRRMW9p3SxkTq5e7zopVJJwrsAKLZi0_vO6gu3c,260
+json_ref_dict/loader.py,sha256=5ZJGNihJBH0biA_M7yClbLDkc383TV53iyFxKq9ekjo,1439
+json_ref_dict/ref_dict.py,sha256=yVUeeF-Qj5aZw3iKlccaT9SFe447us8NeRHlbUL-Kg4,2351
+json_ref_dict/ref_pointer.py,sha256=zd4i4XNe9RVCv8n5UVWPjXKpWHPzkQBKmpRE4idzhWw,3498
+json_ref_dict/uri.py,sha256=_LbbF2i3dLoZbM_EYsqUFfkpvP_pS53gmP0Jh4sH9uU,2162
+json_ref_dict-0.1.0.dist-info/LICENSE.txt,sha256=0u8chyWRVux0Vjmyu57zFn9AHqqGbz8nnpryVzf496Y,1063
+json_ref_dict-0.1.0.dist-info/METADATA,sha256=KZlDbJ3tT7kGrpYl-wD4WKpINa1Zj1FCUgDzlNmK1Xg,421
+json_ref_dict-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+json_ref_dict-0.1.0.dist-info/top_level.txt,sha256=Lyc5rhQkmWTM5rJWgG9hSQ-XqCTp1RlaE9o22Zvv8fw,14
+json_ref_dict-0.1.0.dist-info/RECORD,,
