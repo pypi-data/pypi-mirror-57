@@ -1,0 +1,8 @@
+README.md
+setup.py
+fvalue/__init__.py
+fvalue/fvalue.py
+fvalue.egg-info/PKG-INFO
+fvalue.egg-info/SOURCES.txt
+fvalue.egg-info/dependency_links.txt
+fvalue.egg-info/top_level.txt
