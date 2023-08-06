@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: awesomediff
+Version: 1.2.0
+Summary: A package for automatic differentiation
+Home-page: https://github.com/awesomediff/cs207-FinalProject
+Author: Gabriel Pestre, Claire Yang, Erin Yang, Wanxi Yang
+Author-email: claireyang@g.harvard.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# cs207-FinalProject
+
+[![Build Status](https://travis-ci.org/awesomediff/cs207-FinalProject.svg?branch=master)](https://travis-ci.org/awesomediff/cs207-FinalProject)  [![codecov](https://codecov.io/gh/awesomediff/cs207-FinalProject/branch/master/graph/badge.svg)](https://codecov.io/gh/awesomediff/cs207-FinalProject)
+
+Harvard CS207 Final Project: Automatic Differentiation
+
+Group #: 7  
+
+Members: Wanxi Yang, Gabriel Pestre, Claire Yang, Erin Yang  
+
+---
+
+Welcome to the `awesomediff` repository. Please visit the [documentation](docs/documentation.md) page for information about how to [install and use](docs/documentation.md#how-to-use-awesomediff) the `awesomediff` automatic differentiation library and data science toolkit.
+
+
