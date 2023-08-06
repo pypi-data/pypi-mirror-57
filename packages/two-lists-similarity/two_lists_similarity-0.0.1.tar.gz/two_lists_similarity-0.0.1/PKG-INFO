@@ -1,0 +1,150 @@
+Metadata-Version: 2.1
+Name: two_lists_similarity
+Version: 0.0.1
+Summary: A package to implement fuzzy matching between items in two different lists (an input list and a reference list.) 
+Home-page: UNKNOWN
+Author: Praneeth Ponnekanti
+Author-email: praneeth.ponnekanti@gmail.com
+License: UNKNOWN
+Description: # Package Description, Installation and Usage guide.
+        
+        **Description :** This package can be used to compute similarity scores between items in two different lists. 
+        
+        ***Example Use Case :*** 
+         ***Dataload*** : Compare columns in a file to the ones in a database table before loading the data to catch hold of possible column name changes. If not, match the column names accordingly and then load the data ! 
+        
+        **Credits:** To the authors of **fuzzywuzzy** package that has been used as a part of this package development. 
+        
+        ## 1. Installation 
+        
+        ```
+        pip install two_lists_similarity
+        ```
+        
+        ## 2. Usage
+        ***
+        __2.1__: Import the ***Calculate_Similarity*** class from the above installed package.
+        ```
+        from two_lists_similarity import Calculate_Similarity as cs
+        ```
+        ***
+        __2.2__: Create an object of this class with the below arguments.  
+        - ***inp_list*** : An input list of items. 
+        - ***ref_list*** : A reference list of items which are referenced by the input list items for the  comparison. 
+        
+        It is mandatory that above arguments contain your desired input & reference lists before creating the object. 
+        Below 
+        ```
+        inp_list = ["Messi", "Superstar", "Soccer", "Ronaldo", "Mbappe"]
+        
+        ref_list = ["Lionel Messi", "Cristiano Ronaldo", "Virgil Van Dikj", "are", "in", "the", "top", "three", "this","year" ,"OF", "BallonDor"]
+        
+        # Create an instance of the class. This is otherwise called as an object 
+        csObj = cs(inp_list,ref_list)    
+        # csObj is now the object of Calculate Similarity class. 
+        ```
+        ***
+        __2.3:__ Use the above object ***csObj***  to access the `fuzzy_match_output` function inside the ***Calculate_Similarity*** class to calculate similarity between the input list items and the reference list items.
+        ```
+        csObj.fuzzy_match_output(output_csv_name = 'pkg_sim_test_vsc.csv', output_csv_path = r'C:\two_lists_similarity')
+        ```
+        
+        A brief overview of the function `fuzzy_match_output` can be found below.
+        
+        ***Inputs*** :
+        - **output_csv_name** : (Optional) Name of the output file that is to be generated. 
+        - **output_csv_path** : (Optional) Path where the output file is to be stored at. 
+        
+        If ***output_csv_name*** is assigned a filename, then the default path to the file would always be your current working directory unless you specify a path explicitly using the ***output_csv_path*** variable.
+        
+        
+        ***Functionality :***  
+        - **Step 1:**  Compares every item in the input list against all the items in the reference list 
+        - **Step 2:**  Calculates similarity scores for each of the above mentioned comparisons
+        - **Step 3.** Match the list item in the input list with its counterpart in the reference list that has the highest similarity score.
+        
+        An illustration of the above steps can be found below :
+        ```
+        Initiating fuzzy matching.......
+        ------------------------------------------------
+        Input column name : Messi
+        Similarity Ratios when compared with the similar reference list items are as below :  [('Lionel Messi', 90), ('in', 45), ('Cristiano Ronaldo', 36), ('are', 25), ('the', 25)]
+        Associated Reference list item with highest similarity : 
+        ('Lionel Messi', 90)
+        ------------------------------------------------
+        Input column name : Superstar
+        Similarity Ratios when compared with the similar reference list items are as below :  [('are', 60), ('year', 46), ('Cristiano Ronaldo', 40), ('three', 36), ('the', 30)]
+        Associated Reference list item with highest similarity : 
+        ('are', 60)
+        ------------------------------------------------
+        Input column name : Soccer
+        Similarity Ratios when compared with the similar reference list items are as below :  [('year', 45), ('OF', 45), ('Lionel Messi', 30), ('Cristiano Ronaldo', 30), ('are', 30)]
+        Associated Reference list item with highest similarity : 
+        ('year', 45)
+        ------------------------------------------------
+        Input column name : Ronaldo
+        Similarity Ratios when compared with the similar reference list items are as below :  [('Cristiano Ronaldo', 90), ('BallonDor', 50), ('in', 45), ('OF', 45), ('Lionel Messi', 39)]
+        Associated Reference list item with highest similarity : 
+        ('Cristiano Ronaldo', 90)
+        ------------------------------------------------
+        Input column name : Mbappe
+        Similarity Ratios when compared with the similar reference list items are as below :  [('are', 44), ('Lionel Messi', 30), ('the', 30), ('top', 30), ('BallonDor', 30)]
+        Associated Reference list item with highest similarity : 
+        ('are', 44)
+        ------------------------------------------------
+        ```
+        ***Outputs :*** 
+        - **Returns** a dataframe with each row containing the below relation.  
+                (Input List Item, Highest similar Reference List item, Similarity score)
+        - **Generates** a CSV generated from the above mentioned dataframe at your desired path.
+        
+        Below is the output of the sample input and reference lists used above. 
+        ```
+        Output Data Frame looks like : 
+          input_list_item similar_ref_list_item  similarity_score
+        0           Messi          Lionel Messi              0.90
+        1       Superstar                   are              0.60
+        2          Soccer                  year              0.45
+        3         Ronaldo     Cristiano Ronaldo              0.90
+        4          Mbappe                   are              0.44
+        ```
+        ***
+        __2.4:__ Use the object ***csObj***  to access the `dissimilar_input_items` function inside the ***Calculate_Similarity*** class to find out the input list items that are way too different when compared to all the reference list items. 
+        
+        ```
+        csObj.dissimilar_input_items(similarity_threshold = 0.65)
+        ```
+        A brief overview of the function `dissimilar_input_items` can be found below.
+        
+        ***Inputs*** :
+        - ***similarity_threshold*** : A float value between (0.00 - 1.00) for which you want to classify similarity and non-similarity. Recommended Value : 0.65, which is also the default value for this 
+        
+        ***Functionality*** : 
+        - Applies the threshold to filter out the records that have **similarity_score <= Similarity Treshold**, from the dataframe returned by the function `fuzzy_match_output`.
+                
+        ***Output*** : 
+        - List of items from the input list that have similarity scores <= threshold when compared against all the reference list items
+        
+        Below is the output of the function `dissimilar_input_items` when applied on the input, reference list items used above.
+        ```
+        ALERT : Input list items that are way too different from the reference list items are :  ['Superstar', 'Soccer', 'Mbappe']
+        ```
+        ---
+        ##### Thank You. Will try to add more functions to this package whenever possible.
+        
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
