@@ -1,0 +1,6 @@
+opencv-python
+easygui
+numpy
+xlsxwriter
+scikit-learn
+tqdm
