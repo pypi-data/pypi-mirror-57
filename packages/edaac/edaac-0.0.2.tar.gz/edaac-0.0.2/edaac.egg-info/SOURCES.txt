@@ -1,0 +1,9 @@
+setup.py
+edaac/Project.py
+edaac/__init__.py
+edaac/version.py
+edaac.egg-info/PKG-INFO
+edaac.egg-info/SOURCES.txt
+edaac.egg-info/dependency_links.txt
+edaac.egg-info/requires.txt
+edaac.egg-info/top_level.txt
