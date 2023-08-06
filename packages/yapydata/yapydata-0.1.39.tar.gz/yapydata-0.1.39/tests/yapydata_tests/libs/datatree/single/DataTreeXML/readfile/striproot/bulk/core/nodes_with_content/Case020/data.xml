@@ -1,0 +1,22 @@
+<root>
+  <l0>a</l0>
+  <l1>e</l1>
+  my-text4
+  <l0>b</l0>
+  my-text0
+  <l0>c</l0>
+  <sub0>
+ 	my-sub-text0a
+	<subl1>a0</subl1>
+ 	my-sub-text0b
+	<subl1>b0</subl1>
+	<subl1>c0</subl1>
+ 	my-sub-text0c
+  </sub0>
+  <l1>d</l1>
+  my-text1
+  <l1>e</l1>
+  my-text2
+  <l2>a</l2>
+  my-text3
+</root>
