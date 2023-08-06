@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: AutoDiff-CS207-24
+Version: 0.2
+Summary: Auto Differentiation package developed for CS-207 [2019]
+Home-page: https://github.com/we-the-diff/cs207-FinalProject
+Author: Group 24
+License: MIT
+Description: # cs207-FinalProject
+        
+        [![Build Status](https://travis-ci.org/we-the-diff/cs207-FinalProject.svg?branch=master)](https://travis-ci.org/we-the-diff/cs207-FinalProject.svg?branch=master)
+        
+        [![codecov](https://codecov.io/gh/we-the-diff/cs207-FinalProject/branch/master/graph/badge.svg)](https://codecov.io/gh/we-the-diff/cs207-FinalProject)
+        
+        
+        Group Number: 24
+        
+        Group Member:
+        * Jessica Wijaya
+        * Shujian Zhu
+        * William Palmer
+        * Malik Wagih
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6

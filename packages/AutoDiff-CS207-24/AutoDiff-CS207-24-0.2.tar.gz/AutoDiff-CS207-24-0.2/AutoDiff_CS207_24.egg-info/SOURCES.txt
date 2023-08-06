@@ -1,0 +1,14 @@
+README.md
+setup.py
+AutoDiff/__init__.py
+AutoDiff/autodiff.py
+AutoDiff/gradient_descent.py
+AutoDiff/root_finding.py
+AutoDiff_CS207_24.egg-info/PKG-INFO
+AutoDiff_CS207_24.egg-info/SOURCES.txt
+AutoDiff_CS207_24.egg-info/dependency_links.txt
+AutoDiff_CS207_24.egg-info/requires.txt
+AutoDiff_CS207_24.egg-info/top_level.txt
+test/test_AutoDiff.py
+test/test_graddescent.py
+test/test_root_finding.py
