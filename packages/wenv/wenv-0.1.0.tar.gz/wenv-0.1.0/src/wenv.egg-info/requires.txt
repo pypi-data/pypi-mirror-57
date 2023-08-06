@@ -1,0 +1,16 @@
+
+[certifi]
+certifi
+
+[dev]
+hypothesis
+pytest
+coverage
+pytest-cov
+Jinja2
+python-language-server
+setuptools
+Sphinx
+sphinx_rtd_theme
+twine
+wheel
