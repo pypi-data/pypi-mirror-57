@@ -1,0 +1,11 @@
+proxy/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+proxy/__main__.py,sha256=MeZ5-bEIBu-QDIcAPs4XjljOBOnAC_rlTKh7tPjSdTM,620
+proxy/proxy.py,sha256=4CgtJ_o10r6lITXBVs64JPPHebMi8h0gN47552LWmNY,1995
+terminal_proxy-0.1.0.dist-info/DESCRIPTION.rst,sha256=N309i1Wtqcdl9LLsw_PW3E17XlRBGlQ04KomQ240ZM4,328
+terminal_proxy-0.1.0.dist-info/METADATA,sha256=5ifrsjzr1YeKFh3345p-48xYY8hg-EKXholZYTIfy1Y,1258
+terminal_proxy-0.1.0.dist-info/RECORD,,
+terminal_proxy-0.1.0.dist-info/WHEEL,sha256=JTb7YztR8fkPg6aSjc571Q4eiVHCwmUDlX8PhuuqIIE,92
+terminal_proxy-0.1.0.dist-info/entry_points.txt,sha256=mRGd6f4Kc5_Zc-F6hSJT-lh-20eidRaUzvI5bOeCtr8,46
+terminal_proxy-0.1.0.dist-info/metadata.json,sha256=aIwOUmqrowBhfU1QNoj5FiOPqklLHpRkQ528SObeQXU,1194
+terminal_proxy-0.1.0.dist-info/pbr.json,sha256=LiWnEfbmlKB_SJwKGIzQqR74lxtIw-k8LnSmZJYWmpw,47
+terminal_proxy-0.1.0.dist-info/top_level.txt,sha256=z6RYBTHwGoNGkSVH3TvrDF_N3yovKtb4mncOphsetf8,6
