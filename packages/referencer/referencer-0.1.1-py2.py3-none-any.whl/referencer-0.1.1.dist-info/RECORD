@@ -1,0 +1,13 @@
+referencer/VERSION,sha256=gERzFlKfxiAU-6oEf7Z8Uaww4ygwzaNwQFNJ2NZtGWw,6
+referencer/__init__.py,sha256=tUeU0Vw-RmqzUGrOyv3aVYICWhq-vRruDvEuf0MXfWc,169
+referencer/__main__.py,sha256=SoNkTISMTLTZkwPSmaOYEZJKWhPXmfXDBAdotRtE4ls,74
+referencer/cli.py,sha256=f7148Eo-5g54wzV0W7qUxChhwBY0s_rVK862WFI1oMg,709
+referencer/config.py,sha256=3v3hPJrTlyr7_-nMwXmfdVO8a9jsNcEaAGZlSUYw6NA,202
+referencer/document.py,sha256=r5S7sIe3iiuiH2qB6cq7oHBfI0AcroruaOyUECOiVcg,863
+referencer/reference.py,sha256=_3x5xHM7fJttPs_TjA979dX1adPtu7ThfTOi7F3esWo,1169
+referencer-0.1.1.dist-info/LICENSE.md,sha256=uryNmD9jWSDHGOmZ1Xf4rDm7NwC7ARAtUY4H7VGLlCY,1080
+referencer-0.1.1.dist-info/METADATA,sha256=CX9gKEIsejxbOh6t4kh1-cKV2IRjN_DeYWw6K36WH38,2533
+referencer-0.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+referencer-0.1.1.dist-info/entry_points.txt,sha256=TWakuuYv0kuzN_h_gZF6QhyUY_pYZILXXhHaUj-H2Us,57
+referencer-0.1.1.dist-info/top_level.txt,sha256=X8Idh6k9jgccWytX5NfMUmYeNBDhxFZZ06NT3vSD8YY,11
+referencer-0.1.1.dist-info/RECORD,,
