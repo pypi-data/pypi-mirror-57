@@ -1,0 +1,14 @@
+awesomediff/__init__.py,sha256=o4byaw65oa4SDpDO5QfKP7KL16jvb8BpXYNeanx6nM4,300
+awesomediff/core.py,sha256=yG3OutB8lV3H6M6E35jdQzWuPjwurK4vU8sIr2vBvJA,5209
+awesomediff/func.py,sha256=2xZxmXF8173WwgZ6sz5wlJPsXt4gTwIAyArS9sOfENQ,3810
+awesomediff/solvers.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_evaluate.py,sha256=akHO73pdsQc7W_bYy31DQFUcuM4T7-FW22Obm8O7bso,4462
+tests/test_function_methods.py,sha256=lv5r3gHOe4GYDceOFhqF7KNbQ7FabkH4XO51BQyM_Wk,3077
+tests/test_functions.py,sha256=NBMi4nC87k9RKpvaXHX1qVHX7-5J3Bshs5GGLZ3Qyhk,3226
+tests/test_solvers.py,sha256=Gf4zCfyXCOEVG547xFECA4-_qGAfVUKLzbq3OIAWp-8,1131
+tests/test_variable_methods.py,sha256=rRJ5aiLUk2jbf0zd9C46PoCK80fspmME6dngwhy82eU,1968
+awesomediff-1.0.0.dist-info/METADATA,sha256=BYrrw8YpeiZ9WUUE2wpOykiIOvVW4Gfvr9GeL6A04To,1872
+awesomediff-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+awesomediff-1.0.0.dist-info/top_level.txt,sha256=z5kwtW_XDbVXPr3lkHVBTL4rrTsqH2LsxirGUC2pHPo,18
+awesomediff-1.0.0.dist-info/RECORD,,
