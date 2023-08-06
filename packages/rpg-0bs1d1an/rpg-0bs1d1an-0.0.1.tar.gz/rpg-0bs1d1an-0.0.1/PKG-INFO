@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: rpg-0bs1d1an
+Version: 0.0.1
+Summary: Risk plot generator
+Home-page: https://gitlab.com/0bs1d1an/rpg
+Author: Guido Kroon
+Author-email: gkroon@maelstrom.ninja
+License: UNKNOWN
+Description: image:https://gitlab.com/0bs1d1an/rpg/badges/master/pipeline.svg[link="https://gitlab.com/0bs1d1an/rpg/commits/master",title="pipeline status"]
+        
+        = Risk plot generator (rpg)
+        
+        This tool takes a CSV file with your observations and can output either a grid plot, or a donut ring.
+        It also accepts a CSV with recommendations to output a recommendations grid.
+        
+        == Rationale
+        
+        I was fed-up with having to manually create these graphs for a client and I wanted to make my life easier.
+        And since I want to increase my Python skills some more, this would be a fun little project to catch two birds with one stone.
+        
+        == Usage
+        
+        ```
+        $ ./rpg.py -h
+        usage: rpg.py [-h] [-g] [-d] [-r] -iC INPUT_CSV_FILE [-oP OUTPUT_PNG_FILE]
+                      [--axis-labels AXIS_LABELS] [--axis-arrows AXIS_ARROWS]
+                      [--legend LEGEND]
+        
+        Converting scanning reports to a tabular format
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          -g, --grid            generate a risk grid plot.
+          -d, --donut           generate a risk donut.
+          -r, --recommendations
+                                generate a risk recommendations plot.
+          -iC INPUT_CSV_FILE, --input-csv-file INPUT_CSV_FILE
+                                specify an input CSV file (e.g. data.csv).
+          -oP OUTPUT_PNG_FILE, --output-png-file OUTPUT_PNG_FILE
+                                specify an output PNG file (e.g. risk.png).
+          --axis-labels AXIS_LABELS
+                                specify to print the axis labels
+          --axis-arrows AXIS_ARROWS
+                                specify to print arrows along the axis
+          --legend LEGEND       specify to print the legend
+        ```
+        
+        == Example
+        
+        To generate a risk grid plot: `$ ./rpg.py -iC example/input/observations.csv -oP example/output/grid.png -g`
+        
+        image::example/output/grid.png[]
+        
+        To generate a risk donut: `$ ./rpg.py -iC example/input/observations.csv -oP example/output/donut.png -d`
+        
+        image::example/output/donut.png[]
+        
+        To generate a recommendations plot: `$ ./rpg.py -iC example/input/recommendations.csv -oP example/output/recommendations.png -r`
+        
+        image::example/output/recommendations.png[]
+        
+        == Dependencies
+        
+        . argparse (dev-python/argparse);
+        . matplotlib (dev-python/matplotlib);
+        . python (dev-lang/python).
+        
+        == To do
+        
+        . Figure out a better way to place markers on each grid section
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
