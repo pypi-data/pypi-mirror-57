@@ -1,0 +1,134 @@
+#!/usr/bin/env python
+
+import argparse
+import os
+import sys
+
+import microftp
+
+def print_content(buf):
+  strbuf=buf.decode("ascii")
+  print(strbuf)
+
+examples="""microftpcmd --host 192.168.4.1 ls
+microftpcmd --host 192.168.4.1 get remote-file.txt local-file.txt
+microftpcmd --host 192.168.4.1 put local-file.txt remote-file.txt
+microftpcmd --host 192.168.4.1 -S mount -D sd -A umount ls
+imicroftpcmd --host 192.168.4.1 -S mount -D sd -A site /sd/blink.bit -A umount put blink.bit blink.bit
+"""
+
+parser = argparse.ArgumentParser(description='microftp - connect to broken or embedded FTP servers',
+  formatter_class=argparse.RawDescriptionHelpFormatter,
+  epilog=examples)
+parser.add_argument('--host', '-i', default=os.environ.get('MICROFTP_HOST', None))
+parser.add_argument('--port', '-P', type=int, default=os.environ.get('MICROFTP_PORT', 21))
+parser.add_argument('--verbose', '-v', action='store_true')
+parser.add_argument('--debug', '-d', action='store_true')
+parser.add_argument('--user', '-u', default=os.environ.get('MICROFTP_USER', None))
+parser.add_argument('--password', '-p', default=os.environ.get('MICROFTP_PASSWORD', None))
+parser.add_argument('--site', '-S', action='append', default=os.environ.get('MICROFTP_SITE', None))
+parser.add_argument('--siteafter', '-A', action='append', default=os.environ.get('MICROFTP_SITE_AFTER', None))
+parser.add_argument('--dir', '-D', default=os.environ.get('MICROFTP_DIR', None))
+parser.add_argument('commands', metavar='CMD', type=str, nargs='+',
+                    help='commands for ftp')
+
+args = parser.parse_args()
+if not args.host:
+  exit(parser.print_usage())
+
+if not args.commands or len(args.commands)<1:
+  print("Command is not recognized/given")
+  exit(parser.print_usage())
+
+ftp = microftp.microFTP()
+try:
+  ftp.connect(args.host, args.port)
+except Exception as e:
+  print("Error connecting to host",args.host,"at port",args.port,":",e)
+  exit(1)
+
+ftp.set_pasv(True)
+
+if not args.user:
+  ftp.login()
+else:
+  ftp.login(args.user, args.password)
+
+
+if args.debug:
+  ftp.set_debuglevel(9999)
+
+if args.site:
+  for sitecmd in args.site:
+    print("[i] Issuing site command: "+sitecmd)
+    try:
+      ftp.voidcmd("SITE "+sitecmd)
+    except Exception as e:
+      print("[e] Error setting site command:",sitecmd,":",e)
+
+
+if args.dir:
+  print("[i] Changing directory to: "+args.dir)
+  try:
+    ftp.cwd(args.dir)
+  except Exception as e:
+    print("[e] Error changing directory to",args.dir,":",e)
+    ftp.quit()
+    exit(1)
+
+cmd = args.commands[0].lower()
+
+if args.verbose:
+  print("[i] Running command: "+cmd)
+
+if cmd == "list" or cmd == "ls":
+  print("[i] Listing")
+  print(ftp.raw_retrlines('LIST'))
+elif cmd == "get" or cmd == "download":
+  if len(args.commands)<3:
+    sys.stderr.write("Not enough arguments for "+cmd+"\n")
+    ftp.quit()
+    exit()
+  source=args.commands[1]
+  dest=args.commands[2]
+  if args.verbose:
+    print("[i] Downloading "+source+" to "+destination)
+  ftp.raw_retrbinary('RETR '+ source,open(dest, 'wb').write)
+elif cmd == "put" or cmd == "upload":
+  if len(args.commands)<3:
+    sys.stderr.write("Not enough arguments for "+cmd+"\n")
+    ftp.quit()
+    exit()
+  source=args.commands[1]
+  dest=args.commands[2]
+  if args.verbose:
+    print("[i] Uploading "+source+" to "+dest)
+  ftp.raw_storbinary('STOR '+ dest,open(source, 'rb'))
+elif cmd == "del" or cmd == "rm" or cmd == "dele":
+  if len(args.commands)<2:
+    sys.stderr.write("Not enough arguments for "+cmd+"\n")
+    ftp.quit()
+    exit()
+  filename=args.commands[1]
+  if args.verbose:
+    print("[i] Deleting "+filename)
+  resp = ftp.sendcmd('DELE ' + filename)
+  print(resp)
+elif cmd == "print" or cmd == "cat" or cmd == "type":
+  ftp.raw_retrbinary('RETR '+ args.commands[1],print_content)
+else:
+  sys.stderr.write("Command not recognized\n")
+
+if args.siteafter:
+  for sitecmd in args.siteafter:
+    print("[i] Issuing site command: "+sitecmd)
+    try:
+      ftp.voidcmd("SITE "+sitecmd)
+    except Exception as e:
+      print("[e] Error setting site command:",sitecmd,":",e)
+
+if args.verbose:
+  print("[i] closing FTP")
+ftp.quit()
+
+
