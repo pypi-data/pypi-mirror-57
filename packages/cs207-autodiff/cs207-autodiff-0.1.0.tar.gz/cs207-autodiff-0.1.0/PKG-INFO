@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: cs207-autodiff
+Version: 0.1.0
+Summary: Automatic differentiatoin package for CS207
+Home-page: https://github.com/rocketscience0/cs207-FinalProject/tree/milestone3
+Author: CS207 group 30
+Author-email: csiviy@gmail.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Automatic differentiation
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
