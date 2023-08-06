@@ -1,0 +1,4 @@
+aarghparse==0.2.1
+cached-property
+beautifulsoup4
+requests
