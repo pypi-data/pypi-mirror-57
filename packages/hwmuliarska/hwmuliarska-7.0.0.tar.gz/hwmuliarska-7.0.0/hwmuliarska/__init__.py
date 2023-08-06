@@ -1,0 +1,1 @@
+from hwmuliarska.program import main
