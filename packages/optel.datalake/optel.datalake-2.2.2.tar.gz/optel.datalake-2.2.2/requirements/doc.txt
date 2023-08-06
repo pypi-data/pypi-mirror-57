@@ -1,0 +1,9 @@
+google-cloud-bigquery
+google-cloud-storage
+python_terraform
+pyspark
+pyyaml
+releases
+semantic-version==2.6.0
+sphinx
+sphinx-nameko-theme

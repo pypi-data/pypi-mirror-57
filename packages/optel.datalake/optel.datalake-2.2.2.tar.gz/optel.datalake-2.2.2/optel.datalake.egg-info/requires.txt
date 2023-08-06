@@ -1,0 +1,14 @@
+click
+deprecation
+google-api-core==1.14.2
+google-api-python-client==1.7.11
+google-auth==1.6.3
+google-auth-httplib2==0.0.3
+google-cloud-bigquery==1.18.0
+google-cloud-core==1.0.3
+google-cloud-storage==1.19.0
+google-resumable-media==0.3.3
+googleapis-common-protos==1.6.0
+python-terraform
+pyYAML
+tzlocal
