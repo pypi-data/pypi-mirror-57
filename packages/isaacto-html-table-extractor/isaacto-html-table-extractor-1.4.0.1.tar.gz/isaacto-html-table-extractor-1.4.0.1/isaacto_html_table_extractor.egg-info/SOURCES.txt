@@ -1,0 +1,9 @@
+README.md
+setup.py
+html_table_extractor/__init__.py
+html_table_extractor/extractor.py
+isaacto_html_table_extractor.egg-info/PKG-INFO
+isaacto_html_table_extractor.egg-info/SOURCES.txt
+isaacto_html_table_extractor.egg-info/dependency_links.txt
+isaacto_html_table_extractor.egg-info/requires.txt
+isaacto_html_table_extractor.egg-info/top_level.txt
