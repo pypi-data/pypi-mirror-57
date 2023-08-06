@@ -1,0 +1,3 @@
+[console_scripts]
+pyeraser = pyeraser.__main__:main
+

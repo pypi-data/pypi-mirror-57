@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: djChat
+Version: 0.1
+Summary: Chat application.
+Home-page: https://gitlab.com/Django.apps/djchat
+Author: a.Signz
+Author-email: a.Signz089@googlemail.com
+Maintainer: a.Signz
+Maintainer-email: a.Signz089@googlemail.com
+License: GPLv3+
+Project-URL: Bug Reports, https://gitlab.com/Django.apps/djchat/issues
+Project-URL: Source, https://gitlab.com/Django.apps/djChat.git
+Description: # chat_vue
+        
+        ## Project setup
+        ```
+        npm install
+        ```
+        
+        ### Compiles and hot-reloads for development
+        ```
+        npm run serve
+        ```
+        
+        ### Compiles and minifies for production
+        ```
+        npm run build
+        ```
+        
+        ### Run your unit tests
+        ```
+        npm run test:unit
+        ```
+        
+        ### Lints and fixes files
+        ```
+        npm run lint
+        ```
+        
+        ### Customize configuration
+        See [Configuration Reference](https://cli.vuejs.org/config/).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: docs
