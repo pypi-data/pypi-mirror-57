@@ -1,0 +1,3 @@
+[console_scripts]
+atenwatcher = etnawrapper.__main__:main
+
