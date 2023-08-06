@@ -1,0 +1,7 @@
+setuptools
+elastic-apm
+pyramid
+
+[test]
+pyramid_zcml
+zope.exceptions
