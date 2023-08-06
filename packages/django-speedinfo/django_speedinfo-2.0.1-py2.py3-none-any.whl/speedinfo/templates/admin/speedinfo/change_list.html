@@ -1,0 +1,67 @@
+{% extends "admin/change_list.html" %}
+
+{% load static %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static "speedinfo/js/jquery.fixed-table-header.js" %}"></script>
+
+    <script type="text/javascript" src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script type="text/javascript">
+      function dice_chart(chart_id, data) {
+        let chart = am4core.create(chart_id, am4charts.TreeMap);
+
+        chart.layoutAlgorithm = chart.dice;
+        chart.colors.step = 2;
+        chart.padding(0, 0, 0, 0);
+        chart.zoomable = false;
+
+        chart.data = data;
+        chart.dataFields.value = "value";
+        chart.dataFields.name = "name";
+
+        /* Configure top-level series */
+        let level = chart.seriesTemplates.create("0");
+        level.tooltip.dy = 25;
+        level.tooltip.pointerOrientation = "up";
+
+        /* Add bullet label */
+        let bullet = level.bullets.push(new am4charts.LabelBullet());
+        bullet.locationY = 0.5;
+        bullet.locationX = 0.5;
+        bullet.interactionsEnabled = false;
+
+        bullet.label.text = "{name}";
+        bullet.label.fontSize = 18;
+        bullet.label.fill = am4core.color("#fff");
+        bullet.label.hideOversized = true;
+      }
+    </script>
+{% endblock %}
+
+{% block object-tools %}
+    <ul class="object-tools">
+        <li>
+            <a href="{% url "admin:speedinfo-profiler-switch" %}"
+                {% if profiler_is_on %}class="turned-on">Turn off{% else %}class="turned-off">Turn on{% endif %}
+            </a>
+        </li>
+        <li>
+            <a href="{% url "admin:speedinfo-profiler-export" %}">Export .CSV</a>
+        </li>
+        <li>
+            <a href="{% url "admin:speedinfo-profiler-reset" %}" onclick="return confirm('Are you sure?')">Reset</a>
+        </li>
+    </ul>
+
+    {% include "admin/speedinfo/dice_chart.html" with chartd_id="chid" results=results %}
+{% endblock %}
+
+{% block result_list %}
+    {{ block.super }}
+
+    <script type="text/javascript">
+        django.jQuery('#result_list').fixedHeader();
+    </script>
+{% endblock %}
