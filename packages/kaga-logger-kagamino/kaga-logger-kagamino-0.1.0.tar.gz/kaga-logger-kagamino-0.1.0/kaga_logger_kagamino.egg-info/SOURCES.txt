@@ -1,0 +1,8 @@
+README.md
+setup.py
+kaga_logger_kagamino.egg-info/PKG-INFO
+kaga_logger_kagamino.egg-info/SOURCES.txt
+kaga_logger_kagamino.egg-info/dependency_links.txt
+kaga_logger_kagamino.egg-info/top_level.txt
+src/__init__.py
+src/test-logging.py
