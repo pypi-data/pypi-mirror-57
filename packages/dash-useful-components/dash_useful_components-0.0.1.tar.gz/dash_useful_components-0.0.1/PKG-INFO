@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: dash_useful_components
+Version: 0.0.1
+Summary: Additional useful components for Dash
+Home-page: UNKNOWN
+Author: Olivier Queyrut <oqueyrut@gmail.com>
+Author-email: UNKNOWN
+License: Apache-2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Dash
