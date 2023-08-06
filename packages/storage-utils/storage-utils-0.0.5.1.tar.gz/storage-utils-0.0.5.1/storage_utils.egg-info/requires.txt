@@ -1,0 +1,10 @@
+
+[complete]
+pyarrow
+s3fs
+
+[hdfs]
+pyarrow
+
+[s3]
+s3fs

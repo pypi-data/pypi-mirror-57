@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: storage-utils
+Version: 0.0.5.1
+Summary: Blob storage utilities
+Home-page: https://volantisiq.com
+Author: Akrom Khasani
+Author-email: akrom@volantis.io
+License: MIT
+Description: Blob storage utilities
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Provides-Extra: s3
+Provides-Extra: hdfs
+Provides-Extra: complete
