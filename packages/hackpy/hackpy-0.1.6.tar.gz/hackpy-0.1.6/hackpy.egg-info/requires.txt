@@ -1,0 +1,5 @@
+wget
+getmac
+pyperclip
+pywin32
+pynput
