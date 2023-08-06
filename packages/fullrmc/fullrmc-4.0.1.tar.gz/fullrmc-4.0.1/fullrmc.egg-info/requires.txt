@@ -1,0 +1,5 @@
+pysimplelog>=2.0.0
+pdbparser>=0.1.7
+pylocker>=2.0.0
+pyrep>=3.1.0
+matplotlib>=2.2.3
