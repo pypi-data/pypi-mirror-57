@@ -1,0 +1,3 @@
+[console_scripts]
+hdob = hdob.hdob:main
+
