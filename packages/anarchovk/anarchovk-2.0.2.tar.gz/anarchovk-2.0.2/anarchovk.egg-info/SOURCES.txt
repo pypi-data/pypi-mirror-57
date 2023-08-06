@@ -1,0 +1,9 @@
+README.md
+setup.py
+anarchovk/__init__.py
+anarchovk/anarchovk.py
+anarchovk.egg-info/PKG-INFO
+anarchovk.egg-info/SOURCES.txt
+anarchovk.egg-info/dependency_links.txt
+anarchovk.egg-info/requires.txt
+anarchovk.egg-info/top_level.txt
