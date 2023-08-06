@@ -1,0 +1,12 @@
+Click>=7.0
+pillow
+h5py
+
+[:platform_machine == "armv7l"]
+smbus
+picamera
+pantilthat>=0.0.7
+
+[:platform_machine == "x86_64"]
+tensorflow==2.0.0
+numpy
