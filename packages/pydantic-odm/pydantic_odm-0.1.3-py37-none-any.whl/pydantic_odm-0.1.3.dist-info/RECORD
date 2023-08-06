@@ -1,0 +1,10 @@
+pydantic_odm/__init__.py,sha256=JfxJ84I4w9tMiGn-pKFOrDSBYnTffKRA5J5GZThxaMs,85
+pydantic_odm/db.py,sha256=NOIwVUV8W_8Bvc6lxur4Iv8Zu0DM5EoLc_TsG_VpBfg,1963
+pydantic_odm/errors.py,sha256=p4M4OQshVKTP06AFVYlZMiA4FyJ5qELpffDsUpYcjRg,335
+pydantic_odm/mixins.py,sha256=Q96URpgnGXDkHXX-K7Yac23T2Wx7WzkGvoz_zrRy01M,7455
+pydantic_odm/types.py,sha256=guUhDoSKGL6jxyxmLYqM2WzDX56_b4vNMEEYICuV1oI,1478
+pydantic_odm-0.1.3.dist-info/LICENSE,sha256=KYYdjkFlLUYyOnqyWwGVvG217tvZO5cKb0Co9sIEOqY,1061
+pydantic_odm-0.1.3.dist-info/METADATA,sha256=CKjJVOBrlyLAWrbNPkkwQsct5PG9pe3o1KJJfGqPris,1175
+pydantic_odm-0.1.3.dist-info/WHEEL,sha256=aIgNDTW9mhs4UMp-3du8M5dCKgNcU5l4dXjvzczUd6w,93
+pydantic_odm-0.1.3.dist-info/top_level.txt,sha256=WjVRq0EeVkj9sLi_dqnFMZjkB6FDv32RLuDUuQfLCGM,13
+pydantic_odm-0.1.3.dist-info/RECORD,,
