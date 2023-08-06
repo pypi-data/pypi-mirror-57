@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sqlitedao
+Version: 0.0
+Summary: simple single file dao for sqlite
+Home-page: https://github.com/Aperocky/sqlitedao
+Author: Rocky Li
+Author-email: aperocky@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
