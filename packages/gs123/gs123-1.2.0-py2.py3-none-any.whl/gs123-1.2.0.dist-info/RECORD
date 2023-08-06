@@ -1,0 +1,12 @@
+gs123/__init__.py,sha256=9HVhgQR3ohqU14_nTN9ru1J0FJaAaMgCQFWlSfcYqsk,152
+gs123/check_digit.py,sha256=nJvVqso6S6FdpAE_S8JRLkmvLZSKiTSFvjsnNh1VApQ,1296
+gs123/conversion.py,sha256=QMfbOxNp2u6An0RjhU1qWU_KGYNUILjuI_jkrgsEwjk,15105
+gs123/gs123conversion.py,sha256=rTFbcEs0zkf-oXUWfEmoByTlELJG5BnzR0y5q8zh4Mg,1425
+gs123/regex.py,sha256=pUYnhSfYMk74QdsnXdXZEywtBG4QUOiuBpwUxwCsJeU,4808
+gs123/steps.py,sha256=1W81TAAeFyJYvpXmP-e4L9Sng3myEfI-gDo-Cjip87g,8312
+gs123/xml_conversion.py,sha256=A2kohqjCcBd0oxxC-nrd_tHodBrRmVzbrVYOccFIrxA,3645
+gs123-1.2.0.dist-info/METADATA,sha256=NPQKZeyFZarBz9yUwwHzU2e8Kx0dVB12vuvJOfG9-J0,1693
+gs123-1.2.0.dist-info/RECORD,,
+gs123-1.2.0.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+gs123-1.2.0.dist-info/entry_points.txt,sha256=yjs-XGYy2aSrPMwOiQOCfe5jYlwnEXgk4kyDzhBeQA8,42
+gs123-1.2.0.dist-info/top_level.txt,sha256=wbxOwI6jRhMNIoLvBwmKs--wMo4dZ3gvBrls_j21FHU,6
