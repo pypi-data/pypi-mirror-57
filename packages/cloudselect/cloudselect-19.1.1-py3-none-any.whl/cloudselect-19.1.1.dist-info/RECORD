@@ -1,0 +1,11 @@
+cloudselect/__init__.py,sha256=mYIXCUxsVBAnvSvAowBPn53WZZNlX65D67qcVtrh828,1006
+cloudselect/cloud.json.dist,sha256=usW2MGyzP68DIXzgHp-D9dbSeUFkc3_pqX0fnOtYM9k,886
+cloudselect/cloudselect.py,sha256=GL_3FfIbqJCGm83WDwZEZ-9BzX2tvKSRVeGAjf24hSM,10736
+cloudselect/instance.py,sha256=erf50U3NdAg88hMyrYU5m8HeavsEShNiqtLomLXV8PI,738
+cloudselect/selector.py,sha256=UVarVkX43UqhYQf8_BjCEPBMIAPVku5wGqB_CdSC3vk,5245
+cloudselect-19.1.1.dist-info/LICENSE,sha256=jg21BcVeUCiYN1NKO5hjeuYzwmL6rlG8-RGob1Ux6T0,1067
+cloudselect-19.1.1.dist-info/METADATA,sha256=28bQEilc6cawAqbzS61M5-ae4nwv2fDPLzr1xc0z-LE,3660
+cloudselect-19.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cloudselect-19.1.1.dist-info/entry_points.txt,sha256=2TDdb3swJcYuF8wy7065QuRbpkFOrepBhR6bq-MxmBs,119
+cloudselect-19.1.1.dist-info/top_level.txt,sha256=DI5ooFHAgxGv2jUNSE1pA6ArIoTEeS3m7apQkYYE2HY,12
+cloudselect-19.1.1.dist-info/RECORD,,
