@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: easy-locust
+Version: 0.0.1
+Summary: Extensions for locustio
+Home-page: UNKNOWN
+Author: Guo Tengda
+Author-email: ttguotengda@foxmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Testing :: Traffic Generation
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Requires-Dist: locustio (>=0.13.0)
+Requires-Dist: paramiko (>=2.4.1)
+Requires-Dist: xlrd (>=1.2.0)
+
+Make locust easier.
+
+
