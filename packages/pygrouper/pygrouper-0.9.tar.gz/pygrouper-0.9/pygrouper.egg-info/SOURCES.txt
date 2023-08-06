@@ -1,0 +1,9 @@
+README.md
+setup.py
+pygrouper/__init__.py
+pygrouper/core.py
+pygrouper/models.py
+pygrouper.egg-info/PKG-INFO
+pygrouper.egg-info/SOURCES.txt
+pygrouper.egg-info/dependency_links.txt
+pygrouper.egg-info/top_level.txt
