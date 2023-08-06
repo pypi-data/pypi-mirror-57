@@ -1,0 +1,16 @@
+build/lib/stencila/schema/__init__.py,sha256=4XfIdR5PNUoLEI-cVVMR9A5DFUXQ4q9H0x0SRBPGj-4,13
+build/lib/stencila/schema/types.py,sha256=tzpSXliPyAa9eX8U4qxsmgavnS-OYJgQt4AORjA7IFs,64193
+build/lib/stencila/schema/util.py,sha256=RhgsNLP92JA0SpA2r4oDPtse3ZjL3junIthYx-QbSAU,869
+stencila/schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stencila/schema/__main__.py,sha256=Uvy6wUF1JUbKTOM4tdrMA5xYdXl4T6MgWKOe7_JDvx0,1508
+stencila/schema/code_parsing.py,sha256=JDWEVXAc6Os3haBv6y59VxT_JBDpTaFqUUeKCRAiHnA,21815
+stencila/schema/interpreter.py,sha256=qCjVAO7v80t7mSe7gEecqJ2XHdV0vuGi-LmBbKDWsIM,22373
+stencila/schema/listener.py,sha256=VoIvO1-3AaDZIRZM_NKXWCZKDJcs17nGR7HzOQUgkjg,3091
+stencila/schema/system.py,sha256=lASWZr5Ifu4yIDAsVMriuxnIQ6sY3VMWOnB0PQNR5Qs,4252
+stencila/schema/types.py,sha256=Aa8yltQESzkjkHaqCw3WA3Q_KOafY9yYQZX9M9EHPOU,82103
+stencila/schema/util.py,sha256=GJTtaS7D33eyC5zoM6IbRd_3nJHXzH2B7IgdmOkUAk0,1582
+tests/util_test.py,sha256=17VY26pPA8q_6LnHepqxx34287-ctX80wZCw2U_x_dQ,85
+stencila_schema-0.29.0.dist-info/METADATA,sha256=BEN0rC1kunWiSxOs2S0V9g-TtIUeY9jnqCFW-iqS-9Q,1573
+stencila_schema-0.29.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+stencila_schema-0.29.0.dist-info/top_level.txt,sha256=CRiSSxy8IkuUf70eSPuumKurts6bPzeaAPwHHGJGZN8,9
+stencila_schema-0.29.0.dist-info/RECORD,,
