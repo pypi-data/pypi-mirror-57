@@ -1,0 +1,10 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "Tictactoe_anany"
+author = "Anany Singh"
+author-email = "programmer.anany.singh@gmail.com"
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+
