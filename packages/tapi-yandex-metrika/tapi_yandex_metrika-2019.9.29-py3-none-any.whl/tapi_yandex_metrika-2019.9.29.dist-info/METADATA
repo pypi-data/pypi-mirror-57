@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tapi-yandex-metrika
+Version: 2019.9.29
+Summary: Python библиотека для API Яндекс Метрики
+Home-page: https://github.com/pavelmaksimov/tapi-yandex-metrika
+Author: Pavel Maksimov
+Author-email: vur21@ya.ru
+License: MIT
+Requires-Dist: requests-oauthlib (>=0.4.2)
+Requires-Dist: tapi-wrapper (==2019.12.10)
+
+Python библиотека для всех `API Яндекс Метрика <https://yandex.ru/dev/metrika/doc/api2/concept/about-docpage/>`__
+
+
