@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: odoo12-addon-easy-my-coop-loan-website
+Version: 12.0.1.0.1.99.dev1
+Summary: Easy My Coop Loan Issues Website
+Home-page: http://www.coopiteasy.be
+Author: Coop IT Easy SCRLfs
+License: AGPL-3
+Description: 
+            This module implements the subscription page for bonds and
+            subordinated loans.
+            
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.5
