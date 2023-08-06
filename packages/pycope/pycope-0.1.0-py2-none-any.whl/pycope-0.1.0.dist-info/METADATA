@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pycope
+Version: 0.1.0
+Summary: A Context-Oriented Programming Extension for Python.
+Home-page: http://www.github.com/pycope
+Author: Jacob Waffle
+Author-email: thejakewaffle@gmail.com
+License: Apache2
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: immutables
+
+# PyCOPE
+
+This is a Context-Oriented Programming Extension for the Python language. It provides
+that allow programmers to utilize Context-Oriented techniques in an Object-Oriented
+manner.
+
+
