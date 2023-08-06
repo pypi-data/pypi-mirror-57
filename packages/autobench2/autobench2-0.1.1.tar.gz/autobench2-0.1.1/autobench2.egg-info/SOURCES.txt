@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+autobench2/__init__.py
+autobench2/cli.py
+autobench2/core.py
+autobench2/helpers.py
+autobench2.egg-info/PKG-INFO
+autobench2.egg-info/SOURCES.txt
+autobench2.egg-info/dependency_links.txt
+autobench2.egg-info/entry_points.txt
+autobench2.egg-info/top_level.txt
