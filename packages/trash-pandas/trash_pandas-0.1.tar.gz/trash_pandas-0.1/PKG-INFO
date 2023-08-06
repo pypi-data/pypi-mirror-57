@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: trash_pandas
+Version: 0.1
+Summary: Analytic tool for Pandas DataFrame exploration
+Home-page: https://github.com/Mifour/trash_pandas
+Author: Mifour
+Author-email: mifour@yopmail.com
+License: GNU General Public License v3.0
+Download-URL: https://github.com/Mifour/trash_pandas/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: PANDAS,EXPLORE,ANALYTICS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
