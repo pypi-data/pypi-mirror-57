@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+studentvue/__init__.py
+studentvue/scraper.py
+studentvue_old.egg-info/PKG-INFO
+studentvue_old.egg-info/SOURCES.txt
+studentvue_old.egg-info/dependency_links.txt
+studentvue_old.egg-info/requires.txt
+studentvue_old.egg-info/top_level.txt
