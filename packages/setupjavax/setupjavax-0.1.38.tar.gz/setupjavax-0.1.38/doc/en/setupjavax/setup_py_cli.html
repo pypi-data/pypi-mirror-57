@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>setup.py &mdash; setupjavax  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.37
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Shortcuts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">SetupJavaX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_cockpit.html">apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_apiref_scaled.html">apiref</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index_part_abstract.html">1. Abstract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_platform_support.html">2. Platform Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_blueprint.html">3. Blueprint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setuplib_cli.html">4. Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_documents.html">5. Documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_modules.html">6. Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_indices.html">7. Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_resources.html">8. Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">9. Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">10. External References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_license.html">11. Licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Application</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq/index.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">setupjavax</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>setup.py</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/setup_py_cli.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setup-py">
+<span id="setuppycli"></span><h1>setup.py<a class="headerlink" href="#setup-py" title="Permalink to this headline">¶</a></h1>
+<p>The <a class="reference internal" href="setuplib_cli.html#setuplibcommandscli"><span class="std std-ref">setupjavax</span></a> provides the <a class="reference internal" href="setuplib_cli.html#setuplibcommandscli"><span class="std std-ref">extensions</span></a> for the standard <em>setup.py</em>
+of the <em>setuptools</em> / <em>distutils</em>.</p>
+<div class="section" id="synopsis">
+<span id="setuplibclisynopsis"></span><h2>SYNOPSIS<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<pre class="literal-block"><a class="reference internal" href="setup_py_src.html#setuppysrc"><span class="std std-ref">setup.py</span></a> <a class="reference internal" href="#setuppyclioptions"><span class="std std-ref">[OPTIONS]</span></a> <a class="reference internal" href="#setuppycommands"><span class="std std-ref">[COMMANDS]</span></a></pre>
+</div>
+<div class="section" id="options">
+<span id="setuppyclioptions"></span><h2>OPTIONS<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<p>See:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="setup_py_src.html#setuppysrc"><span class="std std-ref">setup.py</span></a>: <a class="reference internal" href="references.html#setuptools" id="id1"><span>[setuptools]</span></a> and <a class="reference internal" href="references.html#setuppy" id="id2"><span>[setuppy]</span></a></p></li>
+<li><p>extensions by <a class="reference internal" href="setuplib_cli.html#setuplibcommandscli"><span class="std std-ref">setupjavax</span></a>: <span class="xref std std-ref">[Global-OPTIONS]</span></p></li>
+</ul>
+</div>
+<div class="section" id="commands">
+<span id="setuppycommands"></span><h2>COMMANDS<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<p>See:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="setup_py_src.html#setuppysrc"><span class="std std-ref">setup.py</span></a>: <a class="reference internal" href="references.html#setuptools" id="id3"><span>[setuptools]</span></a> and <a class="reference internal" href="references.html#setuppy" id="id4"><span>[setuppy]</span></a></p></li>
+<li><p>extensions by <a class="reference internal" href="setuplib_cli.html#setuplibcommandscli"><span class="std std-ref">setupjavax</span></a>: <a class="reference internal" href="setuplib_cli.html#setuplibcommands"><span class="std std-ref">[COMMANDS-with-context-OPTIONS]</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>The call interface ‘<em>setuptools</em>’ with extension by ‘<em>setupjavax</em>’.</p>
+</div>
+<div class="section" id="see-also">
+<h2>SEE ALSO<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="setup_py_src.html#setuppysrc"><span class="std std-ref">setup.py</span></a>, <a class="reference internal" href="setuplib_cli.html#setuplibcommandscli"><span class="std std-ref">setupjavax</span></a>,
+<a class="reference internal" href="references.html#setuptools" id="id5"><span>[setuptools]</span></a>, <a class="reference internal" href="references.html#distutils" id="id6"><span>[distutils]</span></a></p>
+</div>
+<div class="section" id="license">
+<h2>LICENSE<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="_static/ArtisticLicense20.html">Artistic-License-2.0</a> + <a class="reference external" href="_static/licenses-amendments.txt">Forced-Fairplay-Constraints</a></p>
+</div>
+<div class="section" id="copyright">
+<h2>COPYRIGHT<a class="headerlink" href="#copyright" title="Permalink to this headline">¶</a></h2>
+<p>Copyright (C)2019 Arno-Can Uestuensoez &#64;Ingenieurbuero Arno-Can Uestuensoez</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Copyright (C) 2016 Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez
+      <span class="lastupdated">
+        Last updated on Dec 09, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

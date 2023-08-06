@@ -1,0 +1,812 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. setup.py extensions by setupjavax &mdash; setupjavax  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5. Documents" href="index_part_documents.html" />
+    <link rel="prev" title="3. Blueprint" href="index_part_blueprint.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.37
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Shortcuts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">SetupJavaX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_cockpit.html">apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_apiref_scaled.html">apiref</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index_part_abstract.html">1. Abstract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_platform_support.html">2. Platform Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_blueprint.html">3. Blueprint</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Command Line Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#synopsis">4.1. SYNOPSIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#options">4.2. OPTIONS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sdk">4.2.1. –sdk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#no-install-requires">4.2.2. –no-install-requires</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#offline">4.2.3. –offline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#help-commands">4.2.4. –help-commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#help-setuplib">4.2.5. –help-setuplib</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">4.3. COMMANDS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#build-java">4.3.1. build_java</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cp">4.3.1.1. –cp=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deprecation">4.3.1.2. –deprecation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#g">4.3.1.3. -g</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#jp">4.3.1.4. –jp=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#no-exec">4.3.1.5. –no-exec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nowarn">4.3.1.6. –nowarn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#source">4.3.1.7. –source=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#src">4.3.1.8. –src</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#target">4.3.1.9. –target=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#verbose">4.3.1.10. –verbose</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#werror">4.3.1.11. –werror</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#build-jy">4.3.2. build_jy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#description">4.4. DESCRIPTION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">4.5. EXAMPLES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#see-also">4.6. SEE ALSO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#license">4.7. LICENSE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">4.8. COPYRIGHT</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_documents.html">5. Documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_modules.html">6. Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_indices.html">7. Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_resources.html">8. Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">9. Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">10. External References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_license.html">11. Licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Application</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq/index.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">setupjavax</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>4. setup.py extensions by setupjavax</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/setuplib_cli.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setup-py-extensions-by-setupjavax">
+<span id="setuplibcommandscli"></span><h1>4. setup.py extensions by setupjavax<a class="headerlink" href="#setup-py-extensions-by-setupjavax" title="Permalink to this headline">¶</a></h1>
+<p>The <em>setupjavax</em> provides the following extensions for the standard <em>setup.py</em>
+of the <em>setuptools</em> / <em>distutils</em>.
+See <span class="xref std std-ref">EXAMPLES</span> for required integration steps,
+check integration with:</p>
+<blockquote>
+<div><pre class="literal-block"><a class="reference internal" href="#setupliboptions-help-commands"><span class="std std-ref">python setup.py –help-commands</span></a>.</pre>
+</div></blockquote>
+<p>Use new commands and options:</p>
+<ul>
+<li><p><em>setup.py</em> extension commands:</p>
+<blockquote>
+<div><pre class="literal-block"><a class="reference internal" href="#setuplibcommands-build-java"><span class="std std-ref">build_java</span></a>      <a class="reference internal" href="#setuplibcommands-build-jy"><span class="std std-ref">build_jy</span></a></pre>
+</div></blockquote>
+</li>
+<li><p><em>setup.py</em> common global options:</p>
+<blockquote>
+<div><pre class="literal-block"><a class="reference internal" href="#setupliboptions-sdk"><span class="std std-ref">–sdk</span></a>
+<a class="reference internal" href="#setupliboptions-no-install-requires"><span class="std std-ref">–no-install-requires</span></a>    <a class="reference internal" href="#setupliboptions-offline"><span class="std std-ref">–offline</span></a>
+<span class="xref std std-ref">–help-setupjavax</span></pre>
+</div></blockquote>
+</li>
+</ul>
+<div class="section" id="synopsis">
+<span id="setuplibclisynopsis"></span><h2>4.1. SYNOPSIS<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<pre class="literal-block">setup.py <span class="xref std std-ref">[Global-OPTIONS]</span> <a class="reference internal" href="#setuplibcommands"><span class="std std-ref">[COMMANDS-with-context-OPTIONS]</span></a></pre>
+</div>
+<div class="section" id="options">
+<span id="setuplibclioptions"></span><h2>4.2. OPTIONS<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sdk">
+<span id="setupliboptions-sdk"></span><span id="index-0"></span><h3>4.2.1. –sdk<a class="headerlink" href="#sdk" title="Permalink to this headline">¶</a></h3>
+<p>Supports a separate dependency list for the build and packaging environment.
+The following informal convention has to be implemented within the file <em>setup.py</em>.</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">__sdk</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="sd">&quot;&quot;&quot;Set by the option &quot;--sdk&quot;. Controls the installation environment.&quot;&quot;&quot;</span>
+
+<span class="k">if</span> <span class="s1">&#39;--sdk&#39;</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">:</span>
+    <span class="n">_sdk</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;--sdk&#39;</span><span class="p">)</span>
+
+
+<span class="n">_packages_sdk</span> <span class="o">=</span> <span class="n">find_packages</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;setuplib&#39;</span><span class="p">]</span> <span class="p">)</span>  <span class="c1"># your development packages</span>
+<span class="sd">&quot;&quot;&quot;Python packages to be installed.&quot;&quot;&quot;</span>
+
+
+<span class="k">if</span> <span class="n">__sdk</span><span class="p">:</span> <span class="c1"># pragma: no cover</span>
+    <span class="n">_install_requires</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span>
+        <span class="p">[</span>
+            <span class="s1">&#39;sphinx &gt;= 1.4&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;epydoc &gt;= 3.0&#39;</span><span class="p">,</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+
+    <span class="n">_packages</span> <span class="o">=</span> <span class="n">_packages_sdk</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>For an example refer to <em>setup.py</em> of <em>setuplib</em>.</p>
+</div>
+<div class="section" id="no-install-requires">
+<span id="setupliboptions-no-install-requires"></span><span id="index-1"></span><h3>4.2.2. –no-install-requires<a class="headerlink" href="#no-install-requires" title="Permalink to this headline">¶</a></h3>
+<p>Suppresses installation dependency checks,
+requires appropriate PYTHONPATH.
+The following informal convention has to be implemented within the file <em>setup.py</em>.</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">__no_install_requires</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="k">if</span> <span class="s1">&#39;--no-install-requires&#39;</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">:</span>
+    <span class="n">__no_install_requires</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;--no-install-requires&#39;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="n">__no_install_requires</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Changed to offline mode, ignore install dependencies completely.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Requires appropriate PYTHONPATH.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Ignored dependencies are:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">ir</span> <span class="ow">in</span> <span class="n">_install_requires</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;#   &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">ir</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">)</span>
+    <span class="n">_install_requires</span><span class="o">=</span><span class="p">[]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>For an example refer to <em>setup.py</em> of <em>setuplib</em>.</p>
+</div>
+<div class="section" id="offline">
+<span id="setupliboptions-offline"></span><span id="index-2"></span><h3>4.2.3. –offline<a class="headerlink" href="#offline" title="Permalink to this headline">¶</a></h3>
+<p>Sets online dependencies to offline, or ignores online
+dependencies.
+The following informal convention has to be implemented within the file <em>setup.py</em>.</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">__offline</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="k">if</span> <span class="s1">&#39;--offline&#39;</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">:</span>
+    <span class="n">__offline</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">__no_install_requires</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;--offline&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>For an example refer to <em>setup.py</em> of <em>setuplib</em>.</p>
+</div>
+<div class="section" id="help-commands">
+<span id="setupliboptions-help-commands"></span><span id="index-3"></span><h3>4.2.4. –help-commands<a class="headerlink" href="#help-commands" title="Permalink to this headline">¶</a></h3>
+<p>The option ‘–help-commands’ itself is not part of the <em>setuplib</em>, but it lists all
+successfull integrated extension commands.
+Thus the current extension commands has to be visible for validation.</p>
+</div>
+<div class="section" id="help-setuplib">
+<span id="setupliboptions-help-setuplib"></span><span id="index-4"></span><h3>4.2.5. –help-setuplib<a class="headerlink" href="#help-setuplib" title="Permalink to this headline">¶</a></h3>
+<p>Special help for <em>setuplib</em>.</p>
+<p>For an example refer to <em>setup.py</em> of <em>setuplib</em>.</p>
+</div>
+</div>
+<div class="section" id="commands">
+<span id="setuplibcommands"></span><h2>4.3. COMMANDS<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="build-java">
+<span id="setuplibcommands-build-java"></span><span id="index-5"></span><h3>4.3.1. build_java<a class="headerlink" href="#build-java" title="Permalink to this headline">¶</a></h3>
+<p>Compiles java modules for ‘Jython’ and copies them into the <em>build</em> subtree.
+The standard command ‘build_py’ has to be called extra.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The mix of <em>Python</em> and <em>Java</em> modules within the same directory for the runtime
+directories in particular in combination with an <em>__init__.py</em> / <em>__init__.pyc</em> is
+in case of <em>Jython</em> error prone.</p>
+<p>This is due to the required pre-scan of all packages within the startup initialization prologue
+by <em>Jython</em>.  Which is madatorily required in order to support <em>Python</em> reflection for
+the <em>Java</em> packages.
+Thus seemingly the package path resolution prioritizes the <em>Python</em> resolution and therefore
+hides <em>Java</em> modules located within the same directory path.
+Once these are split into a seperate directory path anything is fine.</p>
+<p>It seems to work in case of the <em>default</em> package within the global namespace,
+but this is due to the in any case required split not further thoroughly investigated.</p>
+</div>
+<p>Creates for example in case of <em>platformids</em> <a class="reference internal" href="references.html#platformids" id="id1"><span>[platformids]</span></a> by default from
+the source-tree:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>platformids
+└── jy
+   └── dist
+       └── nt
+           ├── Advapi32GetCurrentVersion.java
+           ├── Kernel32GetProductInfo.java
+           └── ReadCurrentVersionWinPrefs.java
+</pre></div>
+</div>
+</div></blockquote>
+<p>the build tree with binaries only:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>build/
+└── lib
+    └── platformids
+        └── jy
+            └── dist
+                └── nt
+                    ├── Advapi32GetCurrentVersion.class
+                    ├── Kernel32GetProductInfo.class
+                    └── ReadCurrentVersionWinPrefs.class
+</pre></div>
+</div>
+</div></blockquote>
+<p>The command supports a subset of the <em>javac</em> and <em>jython</em> options as convenience options.
+For a complete set the commands has to be called direct.</p>
+<span class="target" id="build-java-cp"></span><div class="section" id="cp">
+<span id="index-6"></span><h4>4.3.1.1. –cp=<a class="headerlink" href="#cp" title="Permalink to this headline">¶</a></h4>
+<p>The classpath for the <em>Java</em> compiler.</p>
+<p>Input:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_java</span> <span class="o">--</span><span class="n">cp</span><span class="o">=&lt;</span><span class="n">classpath</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Java compiler call:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">javac</span> <span class="o">-</span><span class="n">cp</span> <span class="o">&lt;</span><span class="n">classpath</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">jar</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">jython</span><span class="o">/</span><span class="n">jython</span><span class="o">.</span><span class="n">jar</span> <span class="o">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>The compilation of packages with platform support may for example require:</p>
+<blockquote>
+<div><pre class="literal-block">javac -cp %cd%;c:\jna\jna.jar;c:\jna\jna-platform.jar;c:\jna\win32-x86-64.jar -jar c:\jython\jython.jar ...
+
+javac -cp ${PWD}:/opt/jna/jna.jar:/opt/jna/jna-platform.jar:/opt/jna/win32-x86-64.jar -jar /opt/jython/jython.jar ...</pre>
+</div></blockquote>
+<span class="target" id="build-java-deprecation"></span></div>
+<div class="section" id="deprecation">
+<span id="index-7"></span><h4>4.3.1.2. –deprecation<a class="headerlink" href="#deprecation" title="Permalink to this headline">¶</a></h4>
+<p>Output source locations where deprecated APIs are used.</p>
+<p>Input:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_java</span> <span class="o">--</span><span class="n">deprecation</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Java compiler call:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">javac</span> <span class="o">-</span><span class="n">deprecation</span> <span class="o">-</span><span class="n">jar</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">jython</span><span class="o">/</span><span class="n">jython</span><span class="o">.</span><span class="n">jar</span> <span class="o">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+<span class="target" id="build-java-g"></span></div>
+<div class="section" id="g">
+<span id="index-8"></span><h4>4.3.1.3. -g<a class="headerlink" href="#g" title="Permalink to this headline">¶</a></h4>
+<p>Generates complete debugging information for <em>java</em>.</p>
+<p>Input:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_java</span> <span class="o">-</span><span class="n">g</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Java compiler call:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">javac</span> <span class="o">-</span><span class="n">g</span><span class="o">-</span><span class="nb">all</span> <span class="o">-</span><span class="n">jar</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">jython</span><span class="o">/</span><span class="n">jython</span><span class="o">.</span><span class="n">jar</span> <span class="o">...</span>
+<span class="n">javac</span> <span class="o">-</span><span class="n">g</span>     <span class="o">-</span><span class="n">jar</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">jython</span><span class="o">/</span><span class="n">jython</span><span class="o">.</span><span class="n">jar</span> <span class="o">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+<span class="target" id="build-java-jp"></span></div>
+<div class="section" id="jp">
+<span id="index-9"></span><h4>4.3.1.4. –jp=<a class="headerlink" href="#jp" title="Permalink to this headline">¶</a></h4>
+<p>The sys.path/classpath for <em>Jython</em>.</p>
+<p>Input:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_java</span> <span class="o">--</span><span class="n">jp</span><span class="o">=&lt;</span><span class="n">jp</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Java compiler call:</p>
+<blockquote>
+<div><pre class="literal-block">javac  -jar /path/to/jython/jython.jar -Dpython.path &lt;jp&gt;...  # see <a class="reference internal" href="references.html#jython" id="id2"><span>[Jython]</span></a></pre>
+</div></blockquote>
+<span class="target" id="build-java-noexec"></span></div>
+<div class="section" id="no-exec">
+<span id="index-10"></span><h4>4.3.1.5. –no-exec<a class="headerlink" href="#no-exec" title="Permalink to this headline">¶</a></h4>
+<p>Print only, do not execute.</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">javac</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">exec</span>
+</pre></div>
+</div>
+</div></blockquote>
+<span class="target" id="build-java-nowarn"></span></div>
+<div class="section" id="nowarn">
+<span id="index-11"></span><h4>4.3.1.6. –nowarn<a class="headerlink" href="#nowarn" title="Permalink to this headline">¶</a></h4>
+<p>Generate no warnings.</p>
+<p>Input:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_java</span> <span class="o">--</span><span class="n">nowarn</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Java compiler call:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">javac</span> <span class="o">-</span><span class="n">nowarn</span>  <span class="o">-</span><span class="n">jar</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">jython</span><span class="o">/</span><span class="n">jython</span><span class="o">.</span><span class="n">jar</span> <span class="o">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+<span class="target" id="build-java-source"></span></div>
+<div class="section" id="source">
+<span id="index-12"></span><h4>4.3.1.7. –source=<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h4>
+<p>Provide source compatibility with specified release.</p>
+<p>Input:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_java</span> <span class="o">--</span><span class="n">source</span><span class="o">=&lt;</span><span class="n">release</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Java compiler call:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">javac</span> <span class="o">-</span><span class="n">source</span> <span class="o">&lt;</span><span class="n">release</span><span class="o">&gt;</span>  <span class="o">-</span><span class="n">jar</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">jython</span><span class="o">/</span><span class="n">jython</span><span class="o">.</span><span class="n">jar</span> <span class="o">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+<span class="target" id="build-java-src"></span></div>
+<div class="section" id="src">
+<span id="index-13"></span><h4>4.3.1.8. –src<a class="headerlink" href="#src" title="Permalink to this headline">¶</a></h4>
+<p>Copies sources, default is the <em>class</em> files only:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_docx</span> <span class="o">--</span><span class="n">src</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Creates for example in case of <em>platformids</em> <a class="reference internal" href="references.html#platformids" id="id3"><span>[platformids]</span></a> from
+the source-tree:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>platformids
+└── jy
+   └── dist
+       └── nt
+           ├── Advapi32GetCurrentVersion.java
+           ├── Kernel32GetProductInfo.java
+           └── ReadCurrentVersionWinPrefs.java
+</pre></div>
+</div>
+</div></blockquote>
+<p>the build tree with binaries and included sources:</p>
+<blockquote>
+<div><blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>build/
+└── lib
+    └── platformids
+        └── jy
+            └── dist
+                └── nt
+                    ├── Advapi32GetCurrentVersion.class
+                    ├── Advapi32GetCurrentVersion.java
+                    ├── Kernel32GetProductInfo.class
+                    ├── Kernel32GetProductInfo.java
+                    ├── ReadCurrentVersionWinPrefs.class
+                    └── ReadCurrentVersionWinPrefs.java
+</pre></div>
+</div>
+</div></blockquote>
+<span class="target" id="build-java-target"></span></div></blockquote>
+</div>
+<div class="section" id="target">
+<span id="index-14"></span><h4>4.3.1.9. –target=<a class="headerlink" href="#target" title="Permalink to this headline">¶</a></h4>
+<p>Generate class files for specific VM version.</p>
+<p>Input:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_java</span> <span class="o">--</span><span class="n">target</span><span class="o">=&lt;</span><span class="n">release</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Java compiler call:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">javac</span> <span class="o">-</span><span class="n">target</span> <span class="o">&lt;</span><span class="n">release</span><span class="o">&gt;</span> <span class="o">-</span><span class="n">jar</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">jython</span><span class="o">/</span><span class="n">jython</span><span class="o">.</span><span class="n">jar</span> <span class="o">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+<span class="target" id="build-java-verbose"></span></div>
+<div class="section" id="verbose">
+<span id="index-15"></span><h4>4.3.1.10. –verbose<a class="headerlink" href="#verbose" title="Permalink to this headline">¶</a></h4>
+<p>Displays extra information</p>
+<p>Input:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_java</span> <span class="o">--</span><span class="n">verbose</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Java compiler call:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">javac</span> <span class="o">-</span><span class="n">verbose</span> <span class="o">-</span><span class="n">jar</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">jython</span><span class="o">/</span><span class="n">jython</span><span class="o">.</span><span class="n">jar</span> <span class="o">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+<span class="target" id="build-java-werror"></span></div>
+<div class="section" id="werror">
+<span id="index-16"></span><h4>4.3.1.11. –werror<a class="headerlink" href="#werror" title="Permalink to this headline">¶</a></h4>
+<p>Terminate compilation if warnings occur.</p>
+<p>Input:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_java</span> <span class="o">--</span><span class="n">werror</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Java compiler call:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">javac</span> <span class="o">-</span><span class="n">Werror</span> <span class="o">-</span><span class="n">jar</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">jython</span><span class="o">/</span><span class="n">jython</span><span class="o">.</span><span class="n">jar</span> <span class="o">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="build-jy">
+<span id="setuplibcommands-build-jy"></span><span id="index-17"></span><h3>4.3.2. build_jy<a class="headerlink" href="#build-jy" title="Permalink to this headline">¶</a></h3>
+<p>Extends ‘build_py’ for compilation of Python and Java modules
+for Jython.
+Calls <em>build_py</em> and <em>build_java</em>, therefore provides a set of options for both.</p>
+<blockquote>
+<div><div class="indextab">
+<div class="nonbreakheadtab">
+<div class="autocoltab"><table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 64%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>option</p></th>
+<th class="head"><p>reference command</p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>–build-lib=</em></p></td>
+<td><p>build_py –build-lib</p></td>
+<td><p><a class="reference internal" href="references.html#setuptools" id="id4"><span>[setuptools]</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><em>–compile</em></p></td>
+<td><p>build_py –compile</p></td>
+<td><p><a class="reference internal" href="references.html#setuptools" id="id5"><span>[setuptools]</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><em>–cp=</em></p></td>
+<td><p><a class="reference internal" href="#build-java-cp"><span class="std std-ref">build_java –cp</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><em>–deprecation</em></p></td>
+<td><p><a class="reference internal" href="#build-java-deprecation"><span class="std std-ref">build_java –deprecation</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><em>–force=</em></p></td>
+<td><p>build_py –force</p></td>
+<td><p><a class="reference internal" href="references.html#setuptools" id="id6"><span>[setuptools]</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><em>–jp=</em></p></td>
+<td><p><a class="reference internal" href="#build-java-jp"><span class="std std-ref">build_java –jp</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><em>–no-compile</em></p></td>
+<td><p>build_py –no-compile</p></td>
+<td><p><a class="reference internal" href="references.html#setuptools" id="id7"><span>[setuptools]</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p><em>–no-exec</em></p></td>
+<td><p><a class="reference internal" href="#build-java-noexec"><span class="std std-ref">build_java –no-exec</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><em>–nowarn</em></p></td>
+<td><p><a class="reference internal" href="#build-java-nowarn"><span class="std std-ref">build_java –nowarn</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><em>–optimize=</em></p></td>
+<td><p>build_py –optimize</p></td>
+<td><p><a class="reference internal" href="references.html#setuptools" id="id8"><span>[setuptools]</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p><em>–source=</em></p></td>
+<td><p><a class="reference internal" href="#build-java-source"><span class="std std-ref">build_java –source</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><em>–target=</em></p></td>
+<td><p><a class="reference internal" href="#build-java-target"><span class="std std-ref">build_java –target</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><em>–verbose=</em></p></td>
+<td><p><a class="reference internal" href="#build-java-verbose"><span class="std std-ref">build_java –verbose</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><em>–werror=</em></p></td>
+<td><p><a class="reference internal" href="#build-java-werror"><span class="std std-ref">build_java –werror</span></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><em>-g</em></p></td>
+<td><p><a class="reference internal" href="#build-java-g"><span class="std std-ref">build_java -g</span></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div></div></blockquote>
+</div>
+</div>
+<div class="section" id="description">
+<h2>4.4. DESCRIPTION<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>The call interface ‘setuplib’ provides command line extensions for
+the command line call interface of <em>setup.py</em>.</p>
+<p>The curent version supports extension <em>commands</em>, future versions will
+support <em>extension-points</em>.</p>
+</div>
+<div class="section" id="examples">
+<span id="setuplibexamples"></span><h2>4.5. EXAMPLES<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic" id="id9" start="0">
+<li><p>Import in your <a class="reference internal" href="setup_py_src.html#setuppysrc"><span class="std std-ref">setup.py</span></a> for example:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># setup extension modules</span>
+<span class="c1">#</span>
+<span class="kn">from</span> <span class="nn">setuplib</span> <span class="k">import</span> <span class="n">usage</span>
+<span class="kn">from</span> <span class="nn">setuplib.build_java</span> <span class="k">import</span> <span class="n">BuildJava</span>
+<span class="kn">from</span> <span class="nn">setuplib.build_docx</span> <span class="k">import</span> <span class="n">BuildDocX</span>
+<span class="kn">from</span> <span class="nn">setuplib.install_docx</span> <span class="k">import</span> <span class="n">InstallDocX</span>
+<span class="kn">from</span> <span class="nn">setuplib.testx</span> <span class="k">import</span> <span class="n">TestX</span>
+
+
+<span class="k">class</span> <span class="nc">build_docx</span><span class="p">(</span><span class="n">BuildDocX</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">):</span>
+        <span class="n">BuildDocX</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;setuplib&#39;</span>                      <span class="c1"># your package name</span>
+
+
+<span class="k">class</span> <span class="nc">install_docx</span><span class="p">(</span><span class="n">InstallDocX</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">):</span>
+        <span class="n">InstallDocX</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;setuplib&#39;</span>                      <span class="c1"># your package name</span>
+
+
+<span class="k">class</span> <span class="nc">build_java</span><span class="p">(</span><span class="n">BuildJava</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">):</span>
+        <span class="n">BuildJava</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;setuplib&#39;</span>                      <span class="c1"># your package name</span>
+
+
+<span class="k">class</span> <span class="nc">testx</span><span class="p">(</span><span class="n">TestX</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">):</span>
+        <span class="n">TestX</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;setuplib&#39;</span>                      <span class="c1"># your package name</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Hook them in e.g. as a command in your <a class="reference internal" href="setup_py_src.html#setuppysrc"><span class="std std-ref">setup.py</span></a> by:</p>
+<blockquote>
+<div><pre class="literal-block">setup(
+    cmdclass={                           # see <a class="reference internal" href="references.html#setuppy" id="id10"><span>[setuppy]</span></a>
+        'build_java': build_java,
+        'build_docx': build_docx,
+        'install_docx': install_docx,
+        'testx': testx,
+    },
+    ...
+)</pre>
+</div></blockquote>
+</li>
+<li><p>Use them from the command line call for example by:</p>
+<blockquote>
+<div><pre class="literal-block">python <a class="reference internal" href="setup_py_src.html#setuppysrc"><span class="std std-ref">setup.py</span></a> <a class="reference internal" href="#setupliboptions-help-setuplib"><span class="std std-ref">–help-setuplib</span></a>
+
+python <a class="reference internal" href="setup_py_src.html#setuppysrc"><span class="std std-ref">setup.py</span></a> --help-commands           # see <a class="reference internal" href="references.html#setuppy" id="id11"><span>[setuppy]</span></a>
+
+python <a class="reference internal" href="setup_py_src.html#setuppysrc"><span class="std std-ref">setup.py</span></a> <a class="reference internal" href="#setuplibcommands-build-java"><span class="std std-ref">build_java</span></a> --help
+
+python <a class="reference internal" href="setup_py_src.html#setuppysrc"><span class="std std-ref">setup.py</span></a> <a class="reference internal" href="#setuplibcommands-build-java"><span class="std std-ref">build_java</span></a></pre>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="see-also">
+<h2>4.6. SEE ALSO<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="setup_py_src.html#setuppysrc"><span class="std std-ref">setup.py</span></a>, <a class="reference internal" href="#setuplibcommandscli"><span class="std std-ref">setuplib</span></a>,
+<a class="reference internal" href="references.html#setuptools" id="id12"><span>[setuptools]</span></a>, <a class="reference internal" href="references.html#distutils" id="id13"><span>[distutils]</span></a></p>
+</div>
+<div class="section" id="license">
+<h2>4.7. LICENSE<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="_static/ArtisticLicense20.html">Artistic-License-2.0</a> + <a class="reference external" href="_static/licenses-amendments.txt">Forced-Fairplay-Constraints</a></p>
+</div>
+<div class="section" id="copyright">
+<h2>4.8. COPYRIGHT<a class="headerlink" href="#copyright" title="Permalink to this headline">¶</a></h2>
+<p>Copyright (C)2019 Arno-Can Uestuensoez &#64;Ingenieurbuero Arno-Can Uestuensoez</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="index_part_documents.html" class="btn btn-neutral float-right" title="5. Documents" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index_part_blueprint.html" class="btn btn-neutral float-left" title="3. Blueprint" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Copyright (C) 2016 Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez
+      <span class="lastupdated">
+        Last updated on Dec 09, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

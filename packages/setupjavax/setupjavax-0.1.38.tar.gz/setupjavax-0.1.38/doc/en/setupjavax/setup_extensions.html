@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Setup Extensions &mdash; setupjavax  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.37
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Shortcuts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">SetupJavaX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_cockpit.html">apidoc</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_apiref_scaled.html">apiref</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index_part_abstract.html">1. Abstract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_platform_support.html">2. Platform Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_blueprint.html">3. Blueprint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setuplib_cli.html">4. Command Line Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_documents.html">5. Documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_modules.html">6. Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_indices.html">7. Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_resources.html">8. Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">9. Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">10. External References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_license.html">11. Licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Application</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq/index.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">setupjavax</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Setup Extensions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/setup_extensions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setup-extensions">
+<span id="setuplibextensions"></span><h1>Setup Extensions<a class="headerlink" href="#setup-extensions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setuptools-apis">
+<h2>Setuptools APIs<a class="headerlink" href="#setuptools-apis" title="Permalink to this headline">¶</a></h2>
+<p>The <em>setuptools</em> or <em>distutils</em> support the possibility of the exetnesion by additional
+commands.
+These support two flavours of APIs.</p>
+<div class="section" id="extension-commands">
+<h3>Extension Commands<a class="headerlink" href="#extension-commands" title="Permalink to this headline">¶</a></h3>
+<p>Extension commands, or command classes are based on</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">distutils</span><span class="o">.</span><span class="n">cmd</span><span class="o">.</span><span class="n">Command</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These work with <em>distutils</em> as well as with the newer <em>setuptools</em>.</p>
+</div>
+<p>The derived command classes define custom commands and add these to the internal dispatcher by inserting
+the list of new commands into the setup call:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="p">(</span>
+    <span class="n">author</span><span class="o">=</span><span class="s2">&quot;Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez&quot;</span><span class="p">,</span>
+    <span class="n">license</span><span class="o">=</span><span class="s2">&quot;Artistic-License-2.0 + Forced-Fairplay-Constraints&quot;</span><span class="p">,</span>
+    <span class="n">cmdclass</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;build_java&#39;</span><span class="p">:</span> <span class="n">build_java</span><span class="p">,</span>
+        <span class="s1">&#39;build_jy&#39;</span><span class="p">:</span> <span class="n">build_jy</span><span class="p">,</span>
+        <span class="s1">&#39;build_docx&#39;</span><span class="p">:</span> <span class="n">build_docx</span><span class="p">,</span>
+        <span class="s1">&#39;install_docx&#39;</span><span class="p">:</span> <span class="n">install_docx</span><span class="p">,</span>
+        <span class="s1">&#39;testx&#39;</span><span class="p">:</span> <span class="n">testx</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="extension-points">
+<h3>Extension Points<a class="headerlink" href="#extension-points" title="Permalink to this headline">¶</a></h3>
+<p>Esxtension points are a newer interface, which also support background-registration
+of the new comands for shared use.</p>
+<p>This is not yet supported by <em>setupjavax</em>.</p>
+</div>
+</div>
+<div class="section" id="setupjavax">
+<h2>setupjavax<a class="headerlink" href="#setupjavax" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="extension-classes">
+<h3>Extension Classes<a class="headerlink" href="#extension-classes" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="build-java">
+<span id="buildjava"></span><h4>Build Java<a class="headerlink" href="#build-java" title="Permalink to this headline">¶</a></h4>
+<p>Extension classes supporting the build, test, documentation, and packaging of integrated <em>Java</em>
+packages.
+This is in particular targeting <em>Jyhton</em> standalone, and in combination with the application servers
+<em>JBoss</em>, <em>WebLogic</em>, and <em>WebSphere</em>.</p>
+<blockquote>
+<div><pre class="literal-block"><a class="reference internal" href="setuplib_cli.html#setupliboptions-sdk"><span class="std std-ref">–sdk</span></a></pre>
+</div></blockquote>
+<p>See <a class="reference internal" href="setuplib_cli.html#setuplibcommands-build-java"><span class="std std-ref">build_java</span></a> and <a class="reference internal" href="setuplib_cli.html#setuplibcommands-build-jy"><span class="std std-ref">build_jy</span></a>.</p>
+</div>
+</div>
+<div class="section" id="global-options">
+<h3>Global Options<a class="headerlink" href="#global-options" title="Permalink to this headline">¶</a></h3>
+<p>Extension of shared functions for all commands currently provided by <em>setup.py</em>.</p>
+<p>See <span class="xref std std-ref">OPTIONS</span>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Copyright (C) 2016 Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez
+      <span class="lastupdated">
+        Last updated on Dec 09, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
