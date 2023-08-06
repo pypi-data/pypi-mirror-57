@@ -1,0 +1,10 @@
+banner.py,sha256=5P6_7tupPOcL_EOwk4Vi6AR_AiJsie6LBLVKw8WRL6c,358225
+esptool.py,sha256=UQjPlEPccW4252SnkT3RvQ1riMDD-ehjgKH9kcKWfKo,144831
+gui.py,sha256=yg8QbaqYuOf_S1GT0CxDlWnAjbDufQdmBj0VAdc-I9k,4196
+tasmotizer.py,sha256=EOP9ATsI7F-yIsJU7r2i_t-Kd9SCF_p-7sFI0HQiEgk,26369
+tasmotizer_esptool.py,sha256=UQjPlEPccW4252SnkT3RvQ1riMDD-ehjgKH9kcKWfKo,144831
+tasmotizer-1.1.1.data/scripts/tasmotizer.py,sha256=QOhyZLnKBn90E9nlLKlMzw0ivOFR975YYCA5Ew8GxQE,26356
+tasmotizer-1.1.1.dist-info/METADATA,sha256=i76aAKBAzLuyzjlDstugQw4WcV0LeZhdoCi2Xljrz14,842
+tasmotizer-1.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tasmotizer-1.1.1.dist-info/top_level.txt,sha256=ljkZhUP-KxhoFevhmAFPRfCwbDPAcR-cAYZfegtMuBw,41
+tasmotizer-1.1.1.dist-info/RECORD,,
