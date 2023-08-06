@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+lofargeotiff/__init__.py
+lofargeotiff.egg-info/PKG-INFO
+lofargeotiff.egg-info/SOURCES.txt
+lofargeotiff.egg-info/dependency_links.txt
+lofargeotiff.egg-info/requires.txt
+lofargeotiff.egg-info/top_level.txt
