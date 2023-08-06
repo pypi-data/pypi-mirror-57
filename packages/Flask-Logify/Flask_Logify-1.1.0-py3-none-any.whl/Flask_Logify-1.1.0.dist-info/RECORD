@@ -1,0 +1,9 @@
+flask_logify/__init__.py,sha256=tEAx-Enh7dD95DA8uLY9QLl7btbDcrrSaX0h5XIcGLo,102
+flask_logify/hooks.py,sha256=vwX8044SCFvKYAtfLpstWT7rxbyI9u4peeVo89nohlU,1250
+flask_logify/logging.py,sha256=yduApjCjWc-8weZ6tgUks9plcen-7uWN_bB5WqGhBEA,2386
+flask_logify/version.py,sha256=ggJ7mtDhzchHrB90XeO6qX1OJAQLPQZANILQlMJjSQI,310
+Flask_Logify-1.1.0.dist-info/LICENSE,sha256=GSAKapQH5ZIGWlpQTA7v5YrfECyaxaohUb1vJX-qepw,1090
+Flask_Logify-1.1.0.dist-info/METADATA,sha256=eRUwakF-E4_rLFLepJX2kEm49IdNU1HSxIPAKyHKKqs,1672
+Flask_Logify-1.1.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+Flask_Logify-1.1.0.dist-info/top_level.txt,sha256=QN5ZsrbYgfSyo3L-OnPSgwtuTT6gl6tfZSJD1Vqffww,13
+Flask_Logify-1.1.0.dist-info/RECORD,,
