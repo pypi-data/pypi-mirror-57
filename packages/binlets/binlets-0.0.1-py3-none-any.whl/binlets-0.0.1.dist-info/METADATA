@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: binlets
+Version: 0.0.1
+Summary: Denoising via adaptive binning.
+Home-page: https://github.com/maurosilber/binlet
+Author: Mauro Silberberg
+Author-email: maurosilber@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+
