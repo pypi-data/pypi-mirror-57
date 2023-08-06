@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: shex-to-shexj
+Version: 0.1.2
+Summary: ShExC to ShExJ conversion utility
+Home-page: https://github.com/FHIRCat/shex_to_shexj/
+Author: Harold Solbrig
+Author-email: solbrig@jhu.edu
+License: CC0 1.0 Universal
+Description: UNKNOWN
+Keywords: fhir,shex,shexc,shexj
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7

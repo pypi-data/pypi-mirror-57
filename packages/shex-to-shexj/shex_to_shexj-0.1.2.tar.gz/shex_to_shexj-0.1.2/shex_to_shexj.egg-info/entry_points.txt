@@ -1,0 +1,3 @@
+[console_scripts]
+shex_to_shexj = shex_to_shexj.shex_to_shexj:main
+
