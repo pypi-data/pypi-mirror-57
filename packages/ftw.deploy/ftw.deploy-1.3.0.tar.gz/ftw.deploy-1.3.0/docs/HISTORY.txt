@@ -1,0 +1,28 @@
+Changelog
+=========
+
+
+1.3.0 (2019-12-17)
+------------------
+
+- Plone template: combine Plone 5 resource bundle aggregations. [jone]
+
+
+1.2.0 (2019-02-04)
+------------------
+
+- Add --tunnel option to deploy ssh. [jone]
+
+
+1.1.0 (2018-12-21)
+------------------
+
+- Fix bug causing crash when not in a git repository. [jone]
+
+- Provide "deploy ssh" command. [jone]
+
+
+1.0.0 (2018-12-21)
+------------------
+
+- Initial implementation. [jone]
