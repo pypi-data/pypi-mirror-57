@@ -1,0 +1,10 @@
+onsset/__init__.py,sha256=EE4coZf_AZ4hK85h1FMtAMghuyV3Bu8HzQWV2XRBNGk,395
+onsset/gui_runner.py,sha256=APVZjPxFEKHVohewmT-osUa3VFh2XvuynIcfVQ4Hr8Q,1757
+onsset/onsset.py,sha256=vEZFTCZO_6YGx3vCd6ezRhXTkepLu7LAsaBJMFfJBYU,145303
+onsset/runner.py,sha256=p-v7WrEyJoP7c-CaFX3CWjS3Fam9GHHFXdpH4ALNGBw,17283
+onsset/specs.py,sha256=uayGs0HfMtf2GKH987lInQsIZJI5NGgvDaOS7SBJhlM,2045
+onsset-1.0a0.dist-info/LICENSE,sha256=GH0SDfZCC91ybuAUW_CsLkebcViyXrhuxGnF3m3C9PM,1150
+onsset-1.0a0.dist-info/METADATA,sha256=TQ_5d6J6Oy26v7e_E-rdiB7bAbV9WBLc4IkiZA9uL9E,777
+onsset-1.0a0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+onsset-1.0a0.dist-info/top_level.txt,sha256=b2NK06cze2L2krWve9CPQw-T8XIC-fqH7cvkgg0LAOE,7
+onsset-1.0a0.dist-info/RECORD,,

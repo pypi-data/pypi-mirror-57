@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: onsset
+Version: 1.0a0
+Summary: OnSSET model
+Home-page: https://github.com/onsset/onsset
+Author: Andreas Sahlberg, Alexandros Korkovelos, Dimitrios Mentis, Christopher Arderne, Babak Khavari
+Author-email: seap@desa.kth.se
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: et-xmlfile
+Requires-Dist: jdcal
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: six
+Requires-Dist: xlrd
+
+
+Modified version of the Open Source Spatial Electrification Tool (OnSSET) to serve GEP objectives.
+
+
