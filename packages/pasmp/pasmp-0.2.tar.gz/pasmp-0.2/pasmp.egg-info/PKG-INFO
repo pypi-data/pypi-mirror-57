@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: pasmp
+Version: 0.2
+Summary: Python API for Swift Message Processing
+Home-page: https://www.atomsware.co.jp
+Author: atomsware
+Author-email: shimada@atomsware.co.jp
+Maintainer: atomsware
+Maintainer-email: shimada@atomsware.co.jp
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: MIT License
