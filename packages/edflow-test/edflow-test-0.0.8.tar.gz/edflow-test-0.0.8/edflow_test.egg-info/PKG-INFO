@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: edflow-test
+Version: 0.0.8
+Summary: Logistics for Deep Learning
+Home-page: https://github.com/pesser/edflow
+Author: Mimo Tilbich et al.
+Author-email: patrick.esser@iwr.uni-heidelberg.de, johannes.haux@iwr.uni-heidelberg.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Provides-Extra: explore
+Provides-Extra: docs
+Provides-Extra: test
