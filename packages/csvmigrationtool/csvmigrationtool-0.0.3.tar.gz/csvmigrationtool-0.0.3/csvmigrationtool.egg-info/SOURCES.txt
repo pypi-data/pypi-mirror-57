@@ -1,0 +1,9 @@
+setup.py
+csvmigrationtool/UserMapping.py
+csvmigrationtool/__init__.py
+csvmigrationtool.egg-info/PKG-INFO
+csvmigrationtool.egg-info/SOURCES.txt
+csvmigrationtool.egg-info/dependency_links.txt
+csvmigrationtool.egg-info/not-zip-safe
+csvmigrationtool.egg-info/requires.txt
+csvmigrationtool.egg-info/top_level.txt
