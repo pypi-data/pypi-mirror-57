@@ -1,0 +1,11 @@
+boto3_type_annotations
+
+[boto]
+boto3
+
+[dev]
+pytest
+boto3
+moto
+fire
+twine
