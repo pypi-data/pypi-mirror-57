@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: python-nestjs
+Version: 0.0.1
+Summary: The library for nest style microservice
+Home-page: https://github.com/jerrywang1981/python-nest
+Author: Jerry Wang
+Author-email: wangjianjun@gmail.com
+License: UNKNOWN
+Description: # python-nest
+        Python library for nest style Microservices
+        
+        # todo
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
