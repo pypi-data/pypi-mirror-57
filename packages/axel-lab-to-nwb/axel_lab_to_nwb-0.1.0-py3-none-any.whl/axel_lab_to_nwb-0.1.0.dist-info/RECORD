@@ -1,0 +1,9 @@
+axel_lab_to_nwb/__init__.py,sha256=1pKmtvvOhQs50YLWff7sXjUfcK9hPazhreFi0gjYyVA,159
+axel_lab_to_nwb/conversion_module.py,sha256=gXQX7QtbdMOw9ouJbOXH5P1Esh3zG2ekOw2zfz3CfWk,8730
+axel_lab_to_nwb/npz_to_nwb.py,sha256=P-OfCoK8tEWm8yVkv2IiuGsRyjzTqed2aUHKoHCAOCA,6902
+axel_lab_to_nwb/nwb_gui.py,sha256=QPoTbPxW45FIeXKzgRaQT9Bg7Jl2OJoDaqJRJ6mCcZ8,719
+axel_lab_to_nwb-0.1.0.dist-info/LICENSE,sha256=J1G58Db5XLqRxqN5gnlfYlvkO0B7TDZYWTOEQ9DI0VE,1530
+axel_lab_to_nwb-0.1.0.dist-info/METADATA,sha256=EHOnHsOxe5m9n5dHwEfQMVKSCQc8t3rpj6vGhbyGn5M,2377
+axel_lab_to_nwb-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+axel_lab_to_nwb-0.1.0.dist-info/top_level.txt,sha256=vmy_pZYsTllluqmGpcTBKWm40wQJ0Qs213kPh3Pzkzw,16
+axel_lab_to_nwb-0.1.0.dist-info/RECORD,,
