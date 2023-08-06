@@ -1,0 +1,16 @@
+README.md
+setup.py
+allcopol.egg-info/PKG-INFO
+allcopol.egg-info/SOURCES.txt
+allcopol.egg-info/dependency_links.txt
+allcopol.egg-info/not-zip-safe
+allcopol.egg-info/requires.txt
+allcopol.egg-info/top_level.txt
+bin/align_clusters.py
+bin/allcopol.py
+bin/create_indfile.py
+bin/relabel_trees.py
+phylogen/__init__.py
+phylogen/optimization.py
+phylogen/phylonet.py
+phylogen/utils.py
