@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: metric
+Version: 0.3.0
+Summary: Metrics for Machine Learning evaluation  Data Science Measurement
+Home-page: https://github.com/arita37/
+Author: Kevin Noel
+Author-email: brookm291@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Requires-Python: >=3.6.*
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.16.4)
+Requires-Dist: pandas (==0.24.2)
+Requires-Dist: scipy (==1.3.0)
+Requires-Dist: scikit-learn (==0.21.2)
+Requires-Dist: numexpr (==2.6.8)
+
+
+
+```
+Metrics for evaluating machine learning models or Data Science
+
+Include :
+   All metrics from SKLEARN.
+   Category based metrics.
+
+
+
+
+
+```
+
+
+
+
