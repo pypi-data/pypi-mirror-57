@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MountainRed DBSM</title>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/muse-ui/dist/muse-ui.css" />
+    <script src="https://unpkg.com/muse-ui/dist/muse-ui.js"></script>
+    <script src="https://unpkg.com/muse-ui-message/dist/muse-ui-message.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css"
+    />
+  </head>
+  <body>
+    <div id="app" style="height: 100vh; width: 100vw; margin: 0;padding:0;">
+      <mu-appbar
+        style="width: 100%; position: fixed; top:0;"
+        title="MountainRed DBSM"
+        color="primary"
+      ></mu-appbar>
+      <div style="margin-top:72px;">
+        <mu-card
+          raised
+          v-for="database in databases"
+          style="width: 100%; max-width: 375px; margin: 12px auto; "
+        >
+          <mu-card-title :title="database.name" color="green"></mu-card-title>
+          <mu-divider></mu-divider>
+          <mu-card-text v-if="database.options.ENGINE!=='sqlite'">
+            DataBase Engine: [[database.options.ENGINE]] <br />
+            Server IP: [[database.options.HOST]] <br />
+            Server Port: [[database.options.PORT]] <br />
+            User: [[database.options.USER]] <br />
+            DataBases: [[database.options.DATABASES]]
+          </mu-card-text>
+          <mu-card-text v-else>
+            DataBase Engine: [[database.options.ENGINE]] <br />
+            Path: [[database.options.NAME]]
+          </mu-card-text>
+          <mu-divider></mu-divider>
+          <mu-card-actions>
+            <mu-button flat @click="updateOptions(database.options)">
+              edit
+              <mu-icon right value="edit"></mu-icon>
+            </mu-button>
+            <mu-button flat @click="deleteConnection(database.options)">
+              delete
+              <mu-icon right value="delete"></mu-icon>
+            </mu-button>
+          </mu-card-actions>
+        </mu-card>
+      </div>
+      <mu-button
+        @click="openAdd=!openAdd"
+        fab
+        color="secondary"
+        style="position: fixed; left: 85vw; top:85vh;"
+      >
+        <mu-icon value="add"></mu-icon>
+      </mu-button>
+
+      <mu-dialog title="新建数据库连接" width="360" :open.sync="openAdd">
+        <mu-select label="数据库引擎" v-model="form.engine" full-width>
+          <mu-option
+            v-for="engine,index in engines"
+            :key="engine"
+            :label="engine"
+            :value="engine"
+          ></mu-option>
+        </mu-select>
+        <div v-if="form.engine !== 'sqlite'">
+          <mu-text-field v-model="form.name" label="连接名"></mu-text-field
+          ><br />
+          <mu-text-field v-model="form.host" label="IP"></mu-text-field><br />
+          <mu-text-field v-model="form.port" label="端口"></mu-text-field><br />
+          <mu-text-field v-model="form.user" label="用户名"></mu-text-field
+          ><br />
+          <!-- <mu-text-field v-model="form.databases" label="数据库列表""></mu-text-field
+            ><br /> -->
+          <mu-text-field
+            label="密码"
+            v-model="form.password"
+            :action-icon="visibility ? 'visibility_off' : 'visibility'"
+            :action-click="() => (visibility = !visibility)"
+            :type="visibility ? 'text' : 'password'"
+          ></mu-text-field
+          ><br />
+        </div>
+        <div v-else>
+          <mu-text-field v-model="form.name" label="文件名"></mu-text-field
+          ><br />
+        </div>
+        <mu-button
+          slot="actions"
+          flat
+          color="primary"
+          @click="update_or_create_db_option"
+          >Apply</mu-button
+        >
+        <mu-button slot="actions" flat color="primary" @click="openAdd=!openAdd"
+          >Close</mu-button
+        >
+      </mu-dialog>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        delimiters: ["[[", "]]"],
+        data: {
+          databases: [],
+          form: {
+            name: "",
+            host: "",
+            engine: "mysql",
+            port: null,
+            user: "",
+            password: "",
+            databases: [],
+            path: ""
+          },
+          openAdd: false,
+          engines: ["mysql", "sqlite", "oracle", "postgre"],
+
+          visibility: false
+        },
+        mounted() {
+          this.loading();
+        },
+        methods: {
+          loading() {
+            fetch("api/get_db_options")
+              .then(r => r.json())
+              .then(r => (this.databases = r));
+          },
+          postData(url, data) {
+            // Default options are marked with *
+            return fetch(url, {
+              body: JSON.stringify(data), // must match 'Content-Type' header
+              headers: {
+                // "user-agent": "Mozilla/4.0 MDN Example",
+                "content-type": "application/json"
+              },
+              method: "POST", // *GET, POST, PUT, DELETE, etc.
+              mode: "cors", // no-cors, cors, *same-origin
+              redirect: "follow", // manual, *follow, error
+              referrer: "no-referrer" // *client, no-referrer
+            }).then(response => response.json()); // parses response to JSON
+          },
+          update_or_create_db_option() {
+            let form = {};
+            if (this.form.engine === "sqlite") {
+              form = {
+                engine: this.form.engine,
+                name: this.form.name
+              };
+            } else form = this.form;
+            this.postData("api/update_or_create_db_option", form).then(data => {
+              if (data.code === 0) {
+                this.openAdd = false;
+                this.loading();
+              }
+            });
+          },
+          updateOptions(options) {
+            this.openAdd = true;
+            for (let option in options) {
+              // 'a'.toLowerCase()
+              this.form[option.toLowerCase()] = options[option];
+            }
+          },
+          deleteConnection(options) {
+            this.$confirm("确定要删除？", "确认删除", {
+              type: "warning"
+            }).then(({ result }) => {
+              if (result) {
+                this.postData("api/del_connection", {
+                  name: options.NAME
+                }).then(data => {
+                  if (data.code === 0) this.loading();
+                  else alert("删除失败:" + " {data.message}");
+                });
+              }
+            });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
