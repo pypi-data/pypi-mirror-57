@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+smithspump.egg-info/PKG-INFO
+smithspump.egg-info/SOURCES.txt
+smithspump.egg-info/dependency_links.txt
+smithspump.egg-info/requires.txt
+smithspump.egg-info/top_level.txt
