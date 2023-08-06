@@ -1,0 +1,13 @@
+pygans/__init__.py,sha256=3i8KfT1RuxFgQQ9nkbnDmBWbMvGajhEvRwmqtOpXEYk,54
+pygans/animation.py,sha256=psLXvdfxGibrZZ74wPsqILwat2UYJQrdy-z2hD11cLQ,1177
+pygans/dataset_generator.py,sha256=jBPW8rTEqxW9MRFPIgncb5BqYZdDZdEqkFLOBkd3pd8,324
+pygans/dataset_generator_2d.py,sha256=Kzbx_WT2jSXexImGFsKYnglY_eXZFZbT33H76JcqW1Y,1349
+pygans/discriminator.py,sha256=axh3bFAcy9gOSxp8qb8rWEAuSgHuWpBPoBwpuEubNSg,487
+pygans/gan.py,sha256=G4JQLB-YJXum8nQfUYu2nBBWG17_rjzEMdyBx4CaSjo,2009
+pygans/generator.py,sha256=by4Mrg-H3RejT1YR3vnI8QTYN02GZnkTDusx6dtHGhI,422
+pygans/models.py,sha256=fjpBUbQ_Jw3RR5wpfRoPAHQbS6a6LIVSAQy6D2BF1Zs,850
+pygans-1.0.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pygans-1.0.0.dist-info/METADATA,sha256=k-P9hppj8xE70Ak7W7iaeh2Wk4JFXDZb_Ltp_SGwQaA,969
+pygans-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pygans-1.0.0.dist-info/top_level.txt,sha256=eCX9wzRyFct4ePFumwpx-vu9gyJ1HZg1c-0VLRWqfS4,7
+pygans-1.0.0.dist-info/RECORD,,
