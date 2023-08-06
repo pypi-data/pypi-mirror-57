@@ -1,0 +1,8 @@
+aiogrpc/__init__.py,sha256=sXw0QzlASpI0cO7hMxUqKlQN3b_egqZ0YiZRizz6E18,559
+aiogrpc/channel.py,sha256=cjosFhSu-YRr6GH6dBe1kQGmqsuX_enPkBIdUJIPIlI,17215
+aiogrpc/utils.py,sha256=nt0k5A9JXosDPyQug475JlpSGwySDqd11AZ0Db_B6P8,8716
+aiogrpc-1.7.dist-info/LICENSE,sha256=4DukHX-rIHAHaf5BGLq1DYAMt0-ZA1OgXS9f_xwig2M,11558
+aiogrpc-1.7.dist-info/METADATA,sha256=NjQuQiLo6OCxkKPjkrevZ75jAfFHJtXRADTeTFMAxfI,619
+aiogrpc-1.7.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+aiogrpc-1.7.dist-info/top_level.txt,sha256=cFFPwik6dPgygU8VsE0GtD_2sr6Aod482eonjpRmeeo,8
+aiogrpc-1.7.dist-info/RECORD,,
