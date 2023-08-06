@@ -1,0 +1,13 @@
+genericdiff/__init__.py,sha256=c7YKBbZjYVmJoP65zeDHu7szhZI6UN-peWTEZpyVQPg,128
+genericdiff/elemental_functions.py,sha256=Fo7KMsNDXxlt-dRuBrHVTImtbP3KQrZw5yJ5IhZHan4,5100
+genericdiff/generic_diff.py,sha256=kRLrBgjki3i0DkZPXOduqOYYp4-dGEG0SIrIVn9gySc,6007
+genericdiff/vector_jacobian.py,sha256=AD6pA0OJ0XKEHg3tjIsf3CKWLf4Tpj_g9tncUcbpTk8,8234
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_elemental_functions.py,sha256=gvOz4i4SHEfoK39JGsLdKzcmeFIGrJXhqkhtCC8RzVA,3180
+test/test_generic_diff.py,sha256=YyxiP8CM8IRMnprTWjl-_Xc9QOzomp-32EdNEmar7fU,14950
+test/test_vector_jacobian.py,sha256=ktl5eDPmTXpJqbKRD0RMMwIVfmaPJD9NH01r6ZW_bqI,1756
+genericdiff_topcoderkitty-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+genericdiff_topcoderkitty-0.0.1.dist-info/METADATA,sha256=WxF9W9OWCiz5kyqvYUdMHddHIScuUP6jkWJCVdu5mtg,1100
+genericdiff_topcoderkitty-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+genericdiff_topcoderkitty-0.0.1.dist-info/top_level.txt,sha256=fUdPEarCyJoK2oM6RFyENVrFwSzXVAV57YbUF-rHh4o,17
+genericdiff_topcoderkitty-0.0.1.dist-info/RECORD,,
