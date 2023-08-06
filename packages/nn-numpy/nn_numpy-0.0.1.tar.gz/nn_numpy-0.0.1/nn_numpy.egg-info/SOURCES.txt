@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+nn_numpy/__init__.py
+nn_numpy/data.py
+nn_numpy/helpers.py
+nn_numpy/layers.py
+nn_numpy/loss.py
+nn_numpy/nn.py
+nn_numpy/optim.py
+nn_numpy/tensor.py
+nn_numpy/train.py
+nn_numpy.egg-info/PKG-INFO
+nn_numpy.egg-info/SOURCES.txt
+nn_numpy.egg-info/dependency_links.txt
+nn_numpy.egg-info/top_level.txt
