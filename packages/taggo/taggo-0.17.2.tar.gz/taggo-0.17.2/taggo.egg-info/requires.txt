@@ -1,0 +1,12 @@
+jmespath
+python-box
+
+[allmeta]
+piexif
+filetype
+
+[frontmatter]
+python-frontmatter
+
+[winlnk]
+pywin32
