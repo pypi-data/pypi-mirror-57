@@ -1,0 +1,12 @@
+CHANGES
+=======
+
+* Make the pre-commit execute on python 3.8 only
+* Fix typo in readme
+* Add travis support
+* resolve black and flake8 code complains
+* Add black and pre-commit
+* Add home page and remove the Plugin
+* Remove reminiscense from pivovar project
+* Initial commit
+* Add gdbplugin

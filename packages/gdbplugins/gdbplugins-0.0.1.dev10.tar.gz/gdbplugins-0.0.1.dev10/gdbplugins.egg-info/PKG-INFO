@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: gdbplugins
+Version: 0.0.1.dev10
+Summary: Make debugging of programs written in various languages easy.
+Home-page: https://github.com/jaryn/gdbplugins
+Author: Jaroslav Henner
+Author-email: jhenner@redhat.com
+License: GNU GPL3
+Description: # The gdbplugins.
+        
+        [![Build Status](https://travis-ci.org/jaryn/gdbplugins.svg?branch=master)](https://travis-ci.org/jaryn/gdbplugins)
+        
+        Python plugins for gdb making debugging various languages with gdb easy.
+        
+        ## Installation
+        
+            pip install gdbplugins
+        
+        Then you need to make sure the gdb loads the plugins. On RHEL and Fedora, this
+        should make it happen:
+        
+            sudo ln -s $(which _gdbplugin_loader) /etc/gdbinit.d/_gdbplugin_loader.py
+        
+        Next time you start gdb, the plugins should load.
+        
+        
+Keywords: gdb plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Ruby
+Classifier: Topic :: Software Development :: Debuggers
+Description-Content-Type: text/x-rst; charset=UTF-8

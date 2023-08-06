@@ -1,0 +1,10 @@
+language: python
+dist: xenial
+python:
+  - "3.8"
+install:
+  - pip install pre-commit flake8
+script:
+  - pre-commit clean
+  - pre-commit run --all-files
+after_failure:
