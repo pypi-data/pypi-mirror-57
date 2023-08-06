@@ -1,0 +1,3 @@
+[console_scripts]
+pubsub-proxy = pubsub_proxy.daemon:main
+
