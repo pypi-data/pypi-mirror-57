@@ -1,0 +1,12 @@
+jsonfind/__init__.py,sha256=pN7QzhREKf0rH5OU7c5D8JBI9_rXNaFS_xoHV6c4axA,24
+jsonfind/_cli.py,sha256=phcGRvrAGC6mqS5Y8w0_-cbq0XbCbgsDDwgWijiSxOA,3251
+jsonfind/jsonfind.py,sha256=ZRgf1EkYYps3DSB91iMORqX91CyxDZvTZ8lEjfFRvzM,5026
+revptr/__init__.py,sha256=DF65bGqYd5ZRiOb3vBqQ6Uq1LJdf_fjmURsSEMX-XS8,22
+revptr/_cli.py,sha256=xoxxg8tXO3a8lZ0-pkDy120G0n4clRIcCTS7tifwClU,3169
+revptr/revptr.py,sha256=IhSt0vIQnAwfYs6Z0c0YSETjlY20AKIb0Or30fGlTaM,4842
+jsonfind-0.1.dist-info/LICENSE,sha256=el19RTniflm3aJsIbWNlyhQl4b2j-kgDik2Agwh62Yk,1073
+jsonfind-0.1.dist-info/METADATA,sha256=T5WEelHxenrOV42BJnju92QKaEV1FEFbM56-emTstWM,2001
+jsonfind-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jsonfind-0.1.dist-info/entry_points.txt,sha256=8kgP5C89PadN6Evu5onDjDrwe9CImL5JWV6tSdnmCHg,48
+jsonfind-0.1.dist-info/top_level.txt,sha256=_4MlOAvd3uzi56fQlGMKn9lCfkke7jRc4q4l3cdS7og,9
+jsonfind-0.1.dist-info/RECORD,,
