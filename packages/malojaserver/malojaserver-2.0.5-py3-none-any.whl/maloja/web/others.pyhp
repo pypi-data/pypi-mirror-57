@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Maloja</title>
+
+		<pyhp include="common/header.html" />
+
+		<script>
+			function loadservers() {
+				while (true) {
+					var allservers = true;
+					var servers = document.getElementById("serverlist").getElementsByTagName("tr");
+					for (let s of servers) {
+						if ("loaded" in s.dataset) {}
+						else {
+							var url = s.getElementsByTagName("a")[0].href;
+							neo.xhttprequest(url + "/api/info",{},"GET",json=true).then((response)=>{
+								console.log(response)
+							});
+						}
+					}
+					break;
+				}
+			}
+
+			window.addEventListener("DOMContentLoaded",loadservers);
+		</script>
+	</head>
+
+	<body>
+
+
+
+
+		<table class="top_info">
+			<tr>
+				<td class="image">
+					<div style="background-image:url('/favicon.png')"></div>
+				</td>
+				<td class="text">
+					<h1>Explore other Maloja servers</h1><br/>
+
+				</td>
+			</tr>
+		</table>
+
+		<table id="serverlist">
+		<pyhp for="server" in="db.info()['known_servers']">
+			<tr>
+				<td><a href="{server}">Loading...</a></td>
+				<td></td>
+			</tr>
+		</pyhp>
+		</table>
+
+		<pyhp include="common/footer.html" />
+	</body>
+</html>
