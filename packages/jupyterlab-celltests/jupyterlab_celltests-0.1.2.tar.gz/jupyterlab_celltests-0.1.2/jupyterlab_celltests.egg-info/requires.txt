@@ -1,0 +1,11 @@
+jupyterlab>=1.0.0
+nbval>=0.9.1
+pytest>=4.4.0
+pytest-html>=1.20.0
+flake8
+
+[dev]
+bumpversion
+autopep8
+pytest-cov>=2.6.1
+mock
