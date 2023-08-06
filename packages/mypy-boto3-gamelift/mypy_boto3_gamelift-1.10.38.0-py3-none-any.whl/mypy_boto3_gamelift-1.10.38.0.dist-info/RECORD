@@ -1,0 +1,11 @@
+mypy_boto3_gamelift/__init__.py,sha256=74K3z1rqcxeHz9dVVsEl4COv3357En9QEUAyum98QTg,1387
+mypy_boto3_gamelift/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_gamelift/client.py,sha256=HGVh2B36Hz2Enieo77K4YKBfOI4gCr4caoSZjlewES4,50957
+mypy_boto3_gamelift/paginator.py,sha256=0lsvLG-C1Pip_6_738kRpFFjavq8SodTQGTgHiY7oxM,14282
+mypy_boto3_gamelift/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_gamelift/type_defs.py,sha256=z1JsouAFYLsJsRoGqixiDAMBcPMPxL-1BEKPHazl3mg,30951
+mypy_boto3_gamelift/version.py,sha256=hoUChXN-IV-OqrBywTmggTZvhMCr0whfOFp01V8hpi8,57
+mypy_boto3_gamelift-1.10.38.0.dist-info/METADATA,sha256=6BVtmcSgH9spy2JJ4uW3Joe1iB1pIhvag1QVanTj5l0,1213
+mypy_boto3_gamelift-1.10.38.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_gamelift-1.10.38.0.dist-info/top_level.txt,sha256=U59kV8yr1QVWJFrSu6EZd784He74v2ZZJoPrmo_XGRw,20
+mypy_boto3_gamelift-1.10.38.0.dist-info/RECORD,,
