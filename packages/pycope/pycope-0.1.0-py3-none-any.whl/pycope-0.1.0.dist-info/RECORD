@@ -1,0 +1,9 @@
+pycope/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycope/context.py,sha256=fO3lx3jqtN-w2XR4IrIcqt8Z2wqaPrNqkPg2aqHk19E,2849
+pycope/layer.py,sha256=jOrhZnRAUib9WOyG9j7zlQhoYKjqViEtsQxjnE109zY,915
+pycope/prioritizers.py,sha256=LL5KO1vTh6cdPxs5jOfNGmc1R7qGCltJ5ZQrw_eQY_M,185
+pycope/strategy.py,sha256=YoPvvpvDKPl_PVScgcVSgkCZ7dSiYDk1OIxMdL0uY84,1128
+pycope-0.1.0.dist-info/METADATA,sha256=v33KH2Lp2G0VK2pFErkMTlz86yTXh9cfyNnFGVwWQg8,503
+pycope-0.1.0.dist-info/RECORD,,
+pycope-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pycope-0.1.0.dist-info/top_level.txt,sha256=y3x-E9p7oYEYDWpKiX0dbZuzlUHOJeXJPJFFjQ6_2JM,7
