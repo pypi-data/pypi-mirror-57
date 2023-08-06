@@ -1,0 +1,3 @@
+[pytest11]
+catch-server = pytest_catch_server
+
