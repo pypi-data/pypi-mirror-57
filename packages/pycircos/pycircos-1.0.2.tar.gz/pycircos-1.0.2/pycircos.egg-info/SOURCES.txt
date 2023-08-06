@@ -1,0 +1,8 @@
+README.md
+setup.py
+pycircos.egg-info/PKG-INFO
+pycircos.egg-info/SOURCES.txt
+pycircos.egg-info/dependency_links.txt
+pycircos.egg-info/top_level.txt
+src/__init__.py
+test/test.py
