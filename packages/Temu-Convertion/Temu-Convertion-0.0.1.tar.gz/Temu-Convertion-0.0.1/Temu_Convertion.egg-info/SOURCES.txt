@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+Convertion/__init__.py
+Temu_Convertion.egg-info/PKG-INFO
+Temu_Convertion.egg-info/SOURCES.txt
+Temu_Convertion.egg-info/dependency_links.txt
+Temu_Convertion.egg-info/top_level.txt
