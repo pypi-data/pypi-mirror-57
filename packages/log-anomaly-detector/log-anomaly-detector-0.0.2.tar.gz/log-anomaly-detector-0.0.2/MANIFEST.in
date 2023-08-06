@@ -1,0 +1,1 @@
+include anomaly_detector/fact_store/templates/*
