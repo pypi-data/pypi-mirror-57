@@ -1,0 +1,12 @@
+bnlp/__init__.py,sha256=OZZHHuantuIBNHAGuok7B1mR8SLul55O8uKGqcs_wWs,329
+bnlp/basic_tokenizer.py,sha256=NDkFmsMW3UMW2gBsEAOOXAuQvokGmEEzIFmjL63hmtg,3320
+bnlp/bengali_fasttext.py,sha256=0OY5kI1jhD4sDmo5UOGwbnveeXzSdxxZ5lGocI_tX4g,518
+bnlp/bengali_word2vec.py,sha256=ErQB_oAjn8IqZmI-Hp-xkoyRCyuD1MUPgRUJErwmDqw,1783
+bnlp/glove_wordvector.py,sha256=tbN3EElsNFqIUb9_HxTT6ccEu_mriTRDHcysEKXqNwE,1322
+bnlp/nltk_tokenizer.py,sha256=SaZRtATvsWUzphvC60r-kQRBsbeMvfTc1-GqLGXTeyI,1099
+bnlp/sentencepiece_tokenizer.py,sha256=F--ItjWxGyk5oX-w8hiv0jH_LKW1RAC8rl0TSPCd0F0,1455
+bnlp_toolkit-1.2.0.dist-info/LICENSE,sha256=ZD-hXFgTbpUvUR4SgWW97CbgrcCCDTBtbeycrJOEvcA,1069
+bnlp_toolkit-1.2.0.dist-info/METADATA,sha256=y6Xj3tiyT4GFk1-3Bt2oP8DLBNqMppUWssuhhkCuRZ0,7783
+bnlp_toolkit-1.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bnlp_toolkit-1.2.0.dist-info/top_level.txt,sha256=3NG-gAdgmq2YHZf0mJi1fWIVMFcDVrot5m3g16szA64,5
+bnlp_toolkit-1.2.0.dist-info/RECORD,,
