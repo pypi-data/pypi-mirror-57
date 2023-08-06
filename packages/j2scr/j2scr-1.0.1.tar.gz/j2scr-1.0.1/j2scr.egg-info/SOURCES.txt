@@ -1,0 +1,10 @@
+README.md
+setup.py
+j2scr/__init__.py
+j2scr/j2scr.py
+j2scr/loader.py
+j2scr.egg-info/PKG-INFO
+j2scr.egg-info/SOURCES.txt
+j2scr.egg-info/dependency_links.txt
+j2scr.egg-info/requires.txt
+j2scr.egg-info/top_level.txt
