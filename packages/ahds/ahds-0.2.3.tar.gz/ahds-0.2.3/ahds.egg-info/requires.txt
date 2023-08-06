@@ -1,0 +1,7 @@
+simpleparse==2.1.1
+scikit-image<0.14
+scipy<1.2
+backports.shutil_get_terminal_size
+networkx==2.2
+matplotlib<3.0
+PyWavelets<1.1.0
