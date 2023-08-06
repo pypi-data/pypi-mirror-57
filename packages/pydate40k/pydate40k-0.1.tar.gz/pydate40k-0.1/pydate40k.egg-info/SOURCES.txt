@@ -1,0 +1,9 @@
+README.md
+setup.py
+pydate40k/Date40k.py
+pydate40k/__init__.py
+pydate40k.egg-info/PKG-INFO
+pydate40k.egg-info/SOURCES.txt
+pydate40k.egg-info/dependency_links.txt
+pydate40k.egg-info/not-zip-safe
+pydate40k.egg-info/top_level.txt
