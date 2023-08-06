@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: TwitchChatInterface-pkg-edog0049a
+Version: 0.0.1
+Summary: a way to interface with twitch irc chat
+Home-page: https://github.com/eli-reid/Twitch-Chat-Interface
+Author: Eli Reid
+Author-email: elir@elireid.com
+License: UNKNOWN
+Description: check docs for info 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
