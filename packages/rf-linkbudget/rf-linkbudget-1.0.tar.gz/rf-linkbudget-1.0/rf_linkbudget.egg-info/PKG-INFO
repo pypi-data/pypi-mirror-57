@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rf-linkbudget
+Version: 1.0
+Summary: A simple rf-linkbudget calculation tool
+Home-page: https://github.com/hwengineer/rf_linkbudget
+Author: Alexander Ott
+Author-email: alexander.ott.ottale@gmail.com
+License: MIT
+Description: # rf_linkbudget
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
