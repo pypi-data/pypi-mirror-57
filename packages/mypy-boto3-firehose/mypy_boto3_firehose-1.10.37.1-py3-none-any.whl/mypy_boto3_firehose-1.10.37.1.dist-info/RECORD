@@ -1,0 +1,10 @@
+mypy_boto3_firehose/__init__.py,sha256=d0dChPr-qZsMkyiDR3mScO5pNtNP4-DVPP0-Ef9UaSA,160
+mypy_boto3_firehose/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_firehose/client.py,sha256=czOCpZh5LMxaOY39gs661YlV5eXCoqB51IarkOUWwrE,9050
+mypy_boto3_firehose/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_firehose/type_defs.py,sha256=yX9m5rWQSB5gwNSBeBRLJCTdvlprHVmaVu6R2t49M9M,22676
+mypy_boto3_firehose/version.py,sha256=OdDVi_6rNJqpj47hPRjN7fCGSnDPlpLMy2iiRfULK7g,57
+mypy_boto3_firehose-1.10.37.1.dist-info/METADATA,sha256=XT0D502dxCPe5tAvlKmrTf34cqHanpCZw5XKwuYnj5k,1213
+mypy_boto3_firehose-1.10.37.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_firehose-1.10.37.1.dist-info/top_level.txt,sha256=FyoakDdB2qJ62z28NFGGzhRU0xe4X-4owyStqZZsiss,20
+mypy_boto3_firehose-1.10.37.1.dist-info/RECORD,,
