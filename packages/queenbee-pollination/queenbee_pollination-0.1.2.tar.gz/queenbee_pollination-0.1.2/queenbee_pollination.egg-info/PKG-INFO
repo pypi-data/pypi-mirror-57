@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: queenbee-pollination
+Version: 0.1.2
+Summary: queenbee-pollination extends queenbee classes to be translatable to Argo workflows
+Home-page: https://github.com/pollination/queenbee-argo
+Author: Ladybug Tools
+Author-email: info@ladybug.tools
+License: UNKNOWN
+Description: # queenbee-pollination
+        
+        queenbee-pollination extends [queenbee](https://github.com/ladybug-tools/queenbee) in order to interact with the [Pollination API](https://api.pollination.cloud).
+        
+        ## Installation
+        
+        You can install this as a cli tool using the following command:
+        
+        ```console
+        pip install queenbee_pollination[cli]
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: cli
