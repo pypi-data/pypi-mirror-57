@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+docs/.DS_Store
+docs/moosepy.png
+moosepy/__init__.py
+moosepy/moosepy.py
+moosepy.egg-info/PKG-INFO
+moosepy.egg-info/SOURCES.txt
+moosepy.egg-info/dependency_links.txt
+moosepy.egg-info/requires.txt
+moosepy.egg-info/top_level.txt
