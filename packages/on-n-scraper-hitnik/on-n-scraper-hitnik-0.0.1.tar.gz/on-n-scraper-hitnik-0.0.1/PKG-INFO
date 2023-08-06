@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: on-n-scraper-hitnik
+Version: 0.0.1
+Summary: Onliner news scraper
+Home-page: https://github.com/hitnik/onl_news_scraper
+Author: Aleksandr Nikitin
+Author-email: hitnik@gmail.com
+License: UNKNOWN
+Description: #on_n_scraper
+        
+        Scrape news from onliner.by as pure text to str or  text file
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
