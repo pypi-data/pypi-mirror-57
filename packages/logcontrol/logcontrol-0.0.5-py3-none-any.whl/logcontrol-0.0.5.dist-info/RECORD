@@ -1,0 +1,9 @@
+logcontrol/__init__.py,sha256=1KsCXwapK_RksgE71CPzYnkiJeyu02ERE_FQ9NHa-cc,1651
+logcontrol/constants.py,sha256=47b9OayX35otQpelqjYT4R82l3I18dJ0-T9ARfPNmv4,1656
+logcontrol/loggers.py,sha256=xzBspjOWVRZN3qgkSVpxvoQTkMdqWCj0yhZkde_qd1c,9509
+logcontrol-0.0.5.dist-info/DESCRIPTION.rst,sha256=jJF8cPnSDA8hF4zZKp119wXu0m3qkNFBj4q3_bSAGu0,2302
+logcontrol-0.0.5.dist-info/METADATA,sha256=wznIMoM32uLmpFlW3WEQoeMjUXvOyW3lx2z_zIcPt0c,2939
+logcontrol-0.0.5.dist-info/RECORD,,
+logcontrol-0.0.5.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+logcontrol-0.0.5.dist-info/metadata.json,sha256=BY7mlhr2Nlas_2E-jdk8mS5nwAnWzWTbyCfgcTBSxdg,862
+logcontrol-0.0.5.dist-info/top_level.txt,sha256=kOBdbMCi3Von0fDiZ5gQzW-jhz7A9w3Xw7Nz8ijImYQ,11
