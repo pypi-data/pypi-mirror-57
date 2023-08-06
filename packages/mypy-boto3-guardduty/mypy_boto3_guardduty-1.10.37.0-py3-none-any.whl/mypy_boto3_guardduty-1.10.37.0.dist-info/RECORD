@@ -1,0 +1,11 @@
+mypy_boto3_guardduty/__init__.py,sha256=nKiS3GhEO2LKagspEgqOi6HS4Z9PSjqliNEFPRG2OZ4,629
+mypy_boto3_guardduty/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_guardduty/client.py,sha256=Jq3s7M7FdeEEUjJEUOVmDxf4Je8sCWR7v8YEHYLikZo,27697
+mypy_boto3_guardduty/paginator.py,sha256=by5lJqYxu1DN8NjtgtzrSJFvXGA46g3BuzgYI7hMyTk,5653
+mypy_boto3_guardduty/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_guardduty/type_defs.py,sha256=jJzXTZsrGQVYYT7kNZpY5FLv6ruA7hcZRXEzWfLEVAA,16513
+mypy_boto3_guardduty/version.py,sha256=TIXH_Ij_ACc4EJwGIPin448HhFGiM7HiY4Pcejo61CA,57
+mypy_boto3_guardduty-1.10.37.0.dist-info/METADATA,sha256=3OvpQk6loH4Agj-FQZaW3-m_B2sb1bsibHdcknbyrsE,1215
+mypy_boto3_guardduty-1.10.37.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_guardduty-1.10.37.0.dist-info/top_level.txt,sha256=VZfm4BPEZubAz0yxaBY52-J_TMZ7abBxtcSHrQalwSU,21
+mypy_boto3_guardduty-1.10.37.0.dist-info/RECORD,,
