@@ -1,0 +1,86 @@
+Metadata-Version: 2.0
+Name: h5sh
+Version: 0.1.0
+Summary: Fast shell-like tool for interacting with HDF5 files.
+Home-page: https://github.com/sethrj/h5sh
+Author: Seth Robert Johnson
+Author-email: johnsonsr@ornl.gov
+License: BSD license
+Keywords: h5sh
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: h5py (>=2.7.1)
+Requires-Dist: prompt-toolkit (>=2.0)
+Requires-Dist: numpy (>=1.15)
+Requires-Dist: pygments
+
+====
+h5sh
+====
+
+
+.. image:: https://img.shields.io/pypi/v/h5sh.svg
+        :target: https://pypi.python.org/pypi/h5sh
+
+.. image:: https://img.shields.io/travis/sethrj/h5sh.svg
+        :target: https://travis-ci.org/sethrj/h5sh
+
+.. image:: https://readthedocs.org/projects/h5sh/badge/?version=latest
+        :target: https://h5sh.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+Fast shell-like tool for interacting with HDF5 files.
+
+This tool is meant to replace repeated calls to ``h5ls`` and ``h5dump``, each
+of which can take substantial amounts of time for large files. In contrast,
+this utility only has to open a file once, doesn't have to read all the file
+contents in order to browse or view attributes, and uses HDF5's internal
+cacheing for speed.
+
+The ``h5sh`` tool uses a shell-like interface so that analysts will find the
+interface familiar.
+
+
+* Free software: BSD license
+* Documentation: https://h5sh.readthedocs.io.
+
+
+Features
+--------
+
+* Tab-completion of commands, dataset names, and group names
+* Dump datasets to screen or disk with the ``dump`` command
+* Browse groups with ``cd`` and view attributes with ``attr``
+
+License
+-------
+
+BSD license, see LICENSE.
+
+
+*******
+History
+*******
+
+0.1.0 (2019-12-05)
+==================
+
+* Complete initial capability, documents, and testing.
+
+0.0.1 (2018-12-07)
+==================
+
+* Created cookiecutter package.
+
+

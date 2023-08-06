@@ -1,0 +1,3 @@
+[console_scripts]
+h5sh = h5sh.scripts.main:main
+
