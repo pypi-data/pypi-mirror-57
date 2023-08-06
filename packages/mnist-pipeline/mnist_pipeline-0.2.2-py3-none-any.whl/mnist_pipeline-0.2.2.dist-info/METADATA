@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mnist-pipeline
+Version: 0.2.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: dataclasses
+Requires-Dist: fire
+Requires-Dist: imageio
+Requires-Dist: pyyaml
+Provides-Extra: cpu
+Requires-Dist: tensorflow (<2.0) ; extra == 'cpu'
+Provides-Extra: gpu
+Requires-Dist: tensorflow-gpu (<2.0) ; extra == 'gpu'
+
+UNKNOWN
+
+
