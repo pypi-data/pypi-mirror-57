@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: chargeamps
+Version: 1.0.0
+Summary: Charge-Amps API bindings for Python
+Home-page: https://github.com/kirei/python-chargeamps
+Author: Jakob Schlyter
+Author-email: jakob@kirei.se
+License: BSD
+Keywords: ev
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6.1
+Requires-Dist: aiohttp
+Requires-Dist: asyncio
+Requires-Dist: dataclasses
+Requires-Dist: dataclasses-json
+Requires-Dist: isodate
+Requires-Dist: marshmallow
+Requires-Dist: pyjwt
+Requires-Dist: setuptools
+
+UNKNOWN
+
+
