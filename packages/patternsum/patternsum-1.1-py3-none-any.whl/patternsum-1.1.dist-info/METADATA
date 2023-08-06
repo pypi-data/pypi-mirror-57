@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: patternsum
+Version: 1.1
+Summary: An algorithm to summarize possible patterns covered in a list of strings using Genetic Algorithm.
+Home-page: https://github.com/SSripilaipong/patternsum
+Author: SSripilaipong
+Author-email: SHSnail@mail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# String Pattern Summarization
+
+An algorithm to summarize possible patterns, which, in this context, are sequences of substrings, covered in a list of string using Genetic Algorithm with Species Mechanism. 
+
+## Getting Started
+
+### Prerequisites
+
+This module requires only `numpy` and `pandas`.
+
+### Installing
+
+```
+pip install patternsum
+```
+
+## Authors
+
+- **Santhapon Sripilaipong** - *initial work*
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details
+
+
