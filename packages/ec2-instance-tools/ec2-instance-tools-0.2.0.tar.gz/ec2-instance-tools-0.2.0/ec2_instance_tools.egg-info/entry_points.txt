@@ -1,0 +1,4 @@
+[console_scripts]
+ec2namer = ec2_instance_tools.namer:main
+sshec2 = ec2_instance_tools.sshec2:main
+
