@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: FairAutoML
+Version: 0.1
+Summary: A Fairness-aware AutoML System
+Home-page: https://github.com/user/haocwang
+Author: Haochen Wang
+Author-email: hw1985@nyu.edu
+License: MIT
+Download-URL: https://github.com/haocwang/FairAutoML/archive/v0.1-alpha.tar.gz
+Description: UNKNOWN
+Keywords: autoML,fairness,Machine Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
