@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: scrapy-count-filter
+Version: 0.1.0
+Summary: Scrapy Middleware for limiting requests based on a counter.
+Home-page: https://github.com/croqaz/scrapy-count-filter
+Author: Cristi Constantin
+Author-email: cristi.constantin@live.com
+License: BSD
+Description: UNKNOWN
+Keywords: scrapy counter filter
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6.0

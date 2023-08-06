@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scrapy_count_filter/__init__.py
+scrapy_count_filter/__version__.py
+scrapy_count_filter/middleware.py
+scrapy_count_filter.egg-info/PKG-INFO
+scrapy_count_filter.egg-info/SOURCES.txt
+scrapy_count_filter.egg-info/dependency_links.txt
+scrapy_count_filter.egg-info/requires.txt
+scrapy_count_filter.egg-info/top_level.txt
