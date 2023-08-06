@@ -1,0 +1,59 @@
+** SIEGE 4.0.4
+** Preparing 100 concurrent users for battle.
+The server is now under siege...
+
+Transactions:		       10000 hits
+Availability:		      100.00 %
+Elapsed time:		      121.26 secs
+Data transferred:	       14.41 MB
+Response time:		        1.15 secs
+Transaction rate:	       82.47 trans/sec
+Throughput:		        0.12 MB/sec
+Concurrency:		       95.08
+Successful transactions:       10000
+Failed transactions:	           0
+Longest transaction:	        3.12
+Shortest transaction:	        0.11
+
+** SIEGE 4.0.4
+** Preparing 100 concurrent users for battle.
+The server is now under siege...
+
+Transactions:		       10000 hits
+Availability:		      100.00 %
+Elapsed time:		       66.44 secs
+Data transferred:	       14.41 MB
+Response time:		        0.61 secs
+Transaction rate:	      150.51 trans/sec
+Throughput:		        0.22 MB/sec
+Concurrency:		       92.15
+Successful transactions:       10000
+Failed transactions:	           0
+Longest transaction:	        1.93
+Shortest transaction:	        0.11
+
+Transactions:		       10000 hits
+Availability:		      100.00 %
+Elapsed time:		       62.79 secs
+Data transferred:	       14.41 MB
+Response time:		        0.60 secs
+Transaction rate:	      159.26 trans/sec
+Throughput:		        0.23 MB/sec
+Concurrency:		       94.79
+Successful transactions:       10000
+Failed transactions:	           0
+Longest transaction:	        2.08
+Shortest transaction:	        0.11
+
+Transactions:		       10000 hits
+Availability:		      100.00 %
+Elapsed time:		       59.21 secs
+Data transferred:	       14.41 MB
+Response time:		        0.55 secs
+Transaction rate:	      168.89 trans/sec
+Throughput:		        0.24 MB/sec
+Concurrency:		       92.93
+Successful transactions:       10000
+Failed transactions:	           0
+Longest transaction:	        2.58
+Shortest transaction:	        0.11
