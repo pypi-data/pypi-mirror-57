@@ -1,0 +1,14 @@
+pymlconf<3,>=2
+nanohttp<2,>=1.11.10
+easycli<2,>=1.5
+argcomplete
+ujson
+sqlalchemy
+alembic
+itsdangerous
+psycopg2-binary
+redis
+python-dateutil
+pytest
+bddrest<3,>=2.5.7
+bddcli<3,>=2.5
