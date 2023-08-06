@@ -1,0 +1,16 @@
+image: python:3.7
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Build & CloudTraid_SDK
+          caches:
+            - node
+            - pip
+          script: # Modify the commands below to build your repository.
+            - apt-get update # required to install zip
+            - pip install twine
+            - python setup.py sdist bdist_wheel
+            - twine upload dist/* --config-file .pypirc
+

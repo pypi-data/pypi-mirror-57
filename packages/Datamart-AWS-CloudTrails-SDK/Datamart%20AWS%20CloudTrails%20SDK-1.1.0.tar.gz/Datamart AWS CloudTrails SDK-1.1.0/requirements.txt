@@ -1,0 +1,5 @@
+# package requirements are defined in setup.py python module
+
+--index-url https://pypi.python.org/simple/
+
+-e .
