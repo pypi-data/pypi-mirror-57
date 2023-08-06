@@ -1,0 +1,9 @@
+setup.py
+jopus/__init__.py
+jopus/jopus.cpp
+jopus.egg-info/PKG-INFO
+jopus.egg-info/SOURCES.txt
+jopus.egg-info/dependency_links.txt
+jopus.egg-info/requires.txt
+jopus.egg-info/top_level.txt
+jopus.egg-info/zip-safe
