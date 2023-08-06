@@ -1,0 +1,9 @@
+autodmri/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autodmri/blocks.py,sha256=spGjbw9O86PRlexGn8iLYbMKRFTqG_pPOAsw_ROrI8o,4038
+autodmri/estimator.py,sha256=dS4tLqwzqs-Rupyr44Zc2SIjQmLHFYQmEK-C_bNsDag,9198
+autodmri/gamma.py,sha256=F2CEzmy4zv-NFVTS_HQZT3acPKGsjaKMS_r8F_FMBQc,2439
+autodmri-0.2.1.data/scripts/get_distribution,sha256=dCDxw4Cm_KgAwv72Gb4CEUXzY14xArNQSO9NQyK7-s8,6356
+autodmri-0.2.1.dist-info/METADATA,sha256=ykiCMljj5_aRHnBdwH5GSjk8cJOr5s8gx9uU4zh_aqc,3381
+autodmri-0.2.1.dist-info/RECORD,,
+autodmri-0.2.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+autodmri-0.2.1.dist-info/top_level.txt,sha256=cg_hrw4dzZh5tL2FSEH9HGNyHa_dbitbNEuBLhUdnDo,9
