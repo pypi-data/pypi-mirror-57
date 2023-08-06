@@ -1,0 +1,10 @@
+spacy_udpipe/__init__.py,sha256=vB3Pt1V5-2OW2sWuzTSCj5n_X6bL6OUVrBMbZuREVmo,193
+spacy_udpipe/language.py,sha256=_RA_MMbvDVy905gvF8WAN08C3cZOfRH1n02z2EWrhSo,11907
+spacy_udpipe/languages.json,sha256=mZ_G-n6rtlxOS0pevnbuzcw-gF3itbQmIvlBPBdUiIY,5621
+spacy_udpipe/util.py,sha256=_GAqftZLoMA9cRnlNbOlKLc1-hv_03j92Dmr3QYeoCk,2516
+spacy_udpipe-0.1.0.dist-info/LICENSE,sha256=nmdnkL5MEiZUrVT-TDxfTnRQFB6uhc0a00VVUHNRdVI,1110
+spacy_udpipe-0.1.0.dist-info/METADATA,sha256=udTZHUg5H3vCp4j8nxT6YvnYvHTKH8us3Tgn0CTnfoQ,4469
+spacy_udpipe-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+spacy_udpipe-0.1.0.dist-info/entry_points.txt,sha256=5stM8nn54GBSnqobSI612BsFpvLzDaO4w4DbMxy36Rw,2428
+spacy_udpipe-0.1.0.dist-info/top_level.txt,sha256=LabVdt2youeJzA7yDRyzKaAmfO-6x0VgjyWD7nq9e6g,13
+spacy_udpipe-0.1.0.dist-info/RECORD,,
