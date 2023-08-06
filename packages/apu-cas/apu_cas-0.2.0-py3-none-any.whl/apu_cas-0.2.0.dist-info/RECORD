@@ -1,0 +1,9 @@
+apu_cas/__init__.py,sha256=IeVklAlRM8C9WDTSuatIaT-VjB7qiMwFzCkXyVcdiqg,200
+apu_cas/service_ticket.py,sha256=VJwwUWFzxYvthRftohBqLK9YAzE7adf99bCjjPJq85o,3317
+apu_cas/user_cas_attributes.py,sha256=yYIyFgJz1d23QR6m_QLyABSeUJSex-fSHaHzgIvrCso,2491
+apu_cas/user_role.py,sha256=K3Q69FF5NtTusqXXYiPgNR1YGN-Jj4PJO82XTxRkX6U,89
+apu_cas/variables.py,sha256=2kXkaoBXaaW3LX9u5b34491Iy1bpFDwQDEsPGAN0QA0,183
+apu_cas-0.2.0.dist-info/METADATA,sha256=5YOUMRL7OrgyCOgcnqAE3olKRJWQCMKWnumQOobLI8c,1732
+apu_cas-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+apu_cas-0.2.0.dist-info/top_level.txt,sha256=i-u_LNA6YqGw2FbZQ2hDnGSOuMpU1jX58nPxLwWUy7w,8
+apu_cas-0.2.0.dist-info/RECORD,,
