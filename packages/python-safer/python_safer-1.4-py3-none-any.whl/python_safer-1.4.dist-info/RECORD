@@ -1,0 +1,12 @@
+safer/__init__.py,sha256=L-BKXmoYcMfI-IlwQvs0xvDtnD-JTy8XZMkEdovF_ls,36
+safer/api.py,sha256=xq0zFfT4df_0FYTqdw_6IH8H4XOXWy9Yvo8SAAXGUGE,1255
+safer/crawler.py,sha256=8BCIKenbOIclTtsHHx_coiFxmZXVm3I3npNhTSGwNf0,521
+safer/exceptions.py,sha256=GpWSA8WJqPN2a53A0ffiRPkimNLE69VVM0snBguhDFc,209
+safer/html.py,sha256=T34xx4U6q0AhozOMFNwz3_JDGjNH1XSRCv5JcXIzvjU,14716
+safer/results.py,sha256=BkefKYnw8P44pl1XErMtegF4pQy1jP-f6UtGVlKvzbc,8441
+safer/search.py,sha256=W3P2vyJ3xvfggNozFk3tLEGSx13CGaqRBGMo4xpMiXU,3191
+python_safer-1.4.dist-info/LICENSE,sha256=ytx60alB6Z1tLYebKtvPhi5cepuHcs74PeeE1-Mge8A,1063
+python_safer-1.4.dist-info/METADATA,sha256=Zb4wybD_9Bny9ql-q3SxCRd7JUACa3OrbIs68LXKImE,544
+python_safer-1.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+python_safer-1.4.dist-info/top_level.txt,sha256=00hNgO77WmZ7F_Yu8iiA5wl1zt9JvLsvvlc7ZlXddYA,6
+python_safer-1.4.dist-info/RECORD,,
