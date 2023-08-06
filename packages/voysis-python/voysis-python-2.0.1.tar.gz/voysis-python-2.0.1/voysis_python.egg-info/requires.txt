@@ -1,0 +1,9 @@
+click==6.7
+pyaudio==0.2.11
+websocket-client==0.44.0
+glog==0.3.1
+furl==1.0.1
+requests==2.13.0
+python-dateutil==2.6.1
+tensorflow==1.14.0
+sklearn==0.0
