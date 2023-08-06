@@ -1,0 +1,2 @@
+include version.yml
+include requirements.txt
