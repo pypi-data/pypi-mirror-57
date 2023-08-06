@@ -1,0 +1,7 @@
+opencv-python
+openni
+numpy
+mtcnn==0.0.9
+pandas>=0.25.2
+llist
+tensorflow==1.14.0
