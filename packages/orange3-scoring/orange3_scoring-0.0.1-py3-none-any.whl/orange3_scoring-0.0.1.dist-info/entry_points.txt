@@ -1,0 +1,12 @@
+[orange.canvas.help]
+html-index = orangecontrib.scoring.widgets:WIDGET_HELP_PATH
+
+[orange.widgets]
+Scoring = orangecontrib.scoring.widgets
+
+[orange.widgets.tutorials]
+scoringtutorials = orangecontrib.scoring.tutorials
+
+[orange3.addon]
+scoring = orangecontrib.scoring
+
