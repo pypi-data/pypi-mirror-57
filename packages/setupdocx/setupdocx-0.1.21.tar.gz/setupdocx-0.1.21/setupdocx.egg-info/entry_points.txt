@@ -1,0 +1,7 @@
+[distutils.commands]
+build_apidoc = setupdocx.build_apidoc:BuildApidocX
+build_apiref = setupdocx.build_apiref:BuildApirefX
+build_docx = setupdocx.build_docx:BuildDocX
+dist_docx = setupdocx.dist_docx:DistDocX
+install_docx = setupdocx.install_docx:InstallDocX
+
