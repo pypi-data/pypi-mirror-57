@@ -1,0 +1,3 @@
+[sentry.plugins]
+testdingtalk = sentry_dingtalk.plugin:DingtalkPlugin
+

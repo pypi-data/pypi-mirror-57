@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: test-sentry-dingtalk
+Version: 1.0.3
+Summary: A Sentry extension which integrates with testdingtalk robot.
+Home-page: https://code.aliyun.com/PlayGoods-Materiel/wanwu-senstry-dingtalk.git
+Author: zhaodazao
+Author-email: zhaodazao@gmail.com
+License: BSD
+Description: sentry-dingtalk
+        ===============
+         
+        Sentry sending DingTalk. See https://www.dingtalk.com/ 
+        
+        DingTalk is a product of Alibaba Inc.
+        
+        
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Provides-Extra: test
