@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: icebearutils
+Version: 1.0.1
+Summary: 一个帅气的冰熊的自用utils包
+Home-page: UNKNOWN
+Author: catsith
+Author-email: catsith@foxmail.com
+License: MIT Licence
+Keywords: pip,IceBear,zwfw
+Platform: any
+Requires-Dist: arrow
+Requires-Dist: requests
+Requires-Dist: selenium
+
+一个超级无敌帅气的冰熊的自用utils包
+
+
