@@ -1,0 +1,11 @@
+README.rst
+setup.py
+abstrys/__init__.py
+abstrys/snipco.py
+snipco.egg-info/PKG-INFO
+snipco.egg-info/SOURCES.txt
+snipco.egg-info/dependency_links.txt
+snipco.egg-info/entry_points.txt
+snipco.egg-info/namespace_packages.txt
+snipco.egg-info/requires.txt
+snipco.egg-info/top_level.txt
