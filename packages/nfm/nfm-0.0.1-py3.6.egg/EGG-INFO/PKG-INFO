@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: nfm
+Version: 0.0.1
+Summary: Neural Field Models
+Home-page: https://github.com/koriavinash1/nfm
+Author: Avinash Kori
+Author-email: koriavinash1@gmail.com
+License: UNKNOWN
+Description: # nfm
+        neural field models
+        
+        # SOM on orientation bars 
+        
+        ![orientationbar](./imgs/som_response.gif)
+        
+        ![orientationbar](./imgs/SOM_weights.png)
+        
+        
+        # SOM on MNIST
+        
+        ![orientationbar](./imgs/MNIST_SOM_response.gif)
+        
+        ![orientationbar](./imgs/MNIST_weights.png)
+        
+        
+        # NFM FHN response on MNIST (for digit '7')
+        
+        ![nfmresponse](./imgs/nfm_response.gif)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

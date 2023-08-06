@@ -1,0 +1,7 @@
+README.md
+setup.py
+nfm.egg-info/PKG-INFO
+nfm.egg-info/SOURCES.txt
+nfm.egg-info/dependency_links.txt
+nfm.egg-info/requires.txt
+nfm.egg-info/top_level.txt
