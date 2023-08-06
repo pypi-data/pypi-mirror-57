@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+src/sourcelocation/__init__.py
+src/sourcelocation/fileline.py
+src/sourcelocation/location.py
+src/sourcelocation.egg-info/PKG-INFO
+src/sourcelocation.egg-info/SOURCES.txt
+src/sourcelocation.egg-info/dependency_links.txt
+src/sourcelocation.egg-info/requires.txt
+src/sourcelocation.egg-info/top_level.txt
