@@ -1,0 +1,3 @@
+Flask>=1.0
+Flask-Login
+pysaml2>=4.5.0
