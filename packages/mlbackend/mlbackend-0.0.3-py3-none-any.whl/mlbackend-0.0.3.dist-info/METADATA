@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: mlbackend
+Version: 0.0.3
+Summary: machine learning backend framework
+Home-page: https://github.com/hyperplan-io/ml-backend
+Author: Antoine Sauray
+Author-email: antoine@hyperplan.io
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: bleach (==3.1.0)
+Requires-Dist: certifi (==2019.9.11)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: docutils (==0.15.2)
+Requires-Dist: entrypoints (==0.3)
+Requires-Dist: falcon (==2.0.0)
+Requires-Dist: flake8 (==3.7.9)
+Requires-Dist: gunicorn (==20.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: importlib-metadata (==1.2.0)
+Requires-Dist: joblib (==0.14.0)
+Requires-Dist: keyring (==20.0.0)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: more-itertools (==8.0.2)
+Requires-Dist: numpy (==1.17.4)
+Requires-Dist: packaging (==19.2)
+Requires-Dist: pkginfo (==1.5.0.1)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: py (==1.8.0)
+Requires-Dist: pycodestyle (==2.5.0)
+Requires-Dist: pyflakes (==2.1.1)
+Requires-Dist: Pygments (==2.5.2)
+Requires-Dist: pyparsing (==2.4.5)
+Requires-Dist: pytest (==5.3.1)
+Requires-Dist: readme-renderer (==24.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: scipy (==1.3.3)
+Requires-Dist: six (==1.13.0)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: tqdm (==4.40.1)
+Requires-Dist: twine (==3.1.1)
+Requires-Dist: urllib3 (==1.25.7)
+Requires-Dist: wcwidth (==0.1.7)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==0.6.0)
+
+# Hyperplan ML Backend
+
+The goal of Hyperplan is to help you manage and serve your machine learning projects. Why should you use it ?
+
+  * You want to enhance your productivity: Write reusable code accross projects.
+  * You want to easily extend your application: Hook functions let you register side effects to execute on the data that flows through your algorithms.
+  * You want your application to be testable: Hyperplan is primarily made out of simple testable functions.
+
+
