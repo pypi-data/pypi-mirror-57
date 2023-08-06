@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tariochbctools
+Version: 0.1.0a0
+Summary: Importers, plugins and price fetchers for Beancount
+Home-page: https://github.com/tarioch/beancounttools/
+Author: Patrick Ruckstuhl
+Author-email: patrick@ch.tario.org
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: beancount
+Requires-Dist: bitstampclient
+Requires-Dist: mt-940
+Requires-Dist: pyyaml
+Requires-Dist: tabula-py
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+==============
+beancounttools
+==============
+
+
+Some importers, plugins and price fetchers for the double-entry bookkeeping software `beancount <http://furius.ca/beancount/>`__.
+
+
