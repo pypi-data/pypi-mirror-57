@@ -1,0 +1,25 @@
+#!python
+
+import kcman
+import getopt
+import sys
+
+fullCmdArguments = sys.argv
+argumentList = fullCmdArguments[1:]
+
+shortOpts = 'cm'
+longOpts = ['credentials', 'manager']
+
+try: 
+    arguments, values = getopt.getopt(argumentList, shortOpts, longOpts)
+except getopt.error as err: 
+    print (str(err))    
+    sys.exit(2)
+
+kwargs = {}
+for currentArgument, currentValue in arguments:
+    kwargs[currentArgument] = currentValue
+kcman.main(**kwargs)
+
+        
+# kcman.main()

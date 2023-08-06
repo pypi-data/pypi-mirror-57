@@ -1,0 +1,12 @@
+kcman/__init__.py,sha256=0n3EVQHgMxLubXz5MKSRgU-J6M-XGIymu-rTkO08I4w,1347
+kcman/clients_manager.py,sha256=_EShSdnlrVOtBaqiwVfUer2JxFQ922eZspflEpkJiZc,6194
+kcman/credentials_manager.py,sha256=NSu21M40fqlxS9CaJAWC5vudCv6CtoXIfaTJSnliPOY,509
+kcman/group_manager.py,sha256=VDuaTn75B7ib6I_BghOwzRKOsRPXidkJyT-wc8_DnAM,3649
+kcman/idp_utils.py,sha256=RTBGTo0GpvwTRETMoH6YyKi46RwXZwUqcwRh3Yitwvg,7149
+kcman/migration_manager.py,sha256=ixDzkx8QBX5gKHG3sNh65vGZj257UlFX7lh4t2z2wu8,994
+kcman/user_manager.py,sha256=XwKTbM4JfsvV0tbjXHgzO3oB6i9RxwtzgEQ8mXsO-GE,1340
+kcman-0.1.data/scripts/kcman,sha256=NapiQf0eswS68F-rIeizwFGOXdy69jrBl0oO8hFIcEU,468
+kcman-0.1.dist-info/METADATA,sha256=n-fiW8PLRa4CxdYUtFEq8x0H8OeqrACt2ppjvj_8Y0E,264
+kcman-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kcman-0.1.dist-info/top_level.txt,sha256=Wzy29lhd1uaUXlJ6l6mpdsZM81rQ05fHHFdRF-OKTls,6
+kcman-0.1.dist-info/RECORD,,

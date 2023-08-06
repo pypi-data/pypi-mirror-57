@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kcman
+Version: 0.1
+Summary: Aeropost manager for DEV, STAGE and PROD environments
+Home-page: UNKNOWN
+Author: Juan Diego Vega Corella
+Author-email: jdvega@aeropost.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: questionary
+
+UNKNOWN
+
+
