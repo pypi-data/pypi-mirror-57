@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: TracSubTickets
+Version: 0.5.4
+Summary: Trac Sub-Tickets Plugin
+Home-page: http://github.com/trac-hacks/trac-subtickets-plugin
+Author: Takashi Ito
+Author-email: TakashiC.Ito@gmail.com
+Maintainer: Theodor Norup
+Maintainer-email: theodor.norup@gmail.com
+License: BSD
+Description: 
+            This plugin for Trac 1.0 and later provides Sub-Tickets functionality.
+        
+            The association is done by adding parent tickets' number to a custom field.
+            Checks ensure i.e. resolving of sub-tickets before closing the parent.
+            Babel is required to display localized texts.
+            
+Keywords: trac plugin ticket subticket
+Platform: UNKNOWN
