@@ -1,0 +1,5 @@
+flask
+brotli
+rjsmin
+rcssmin
+termcolor
