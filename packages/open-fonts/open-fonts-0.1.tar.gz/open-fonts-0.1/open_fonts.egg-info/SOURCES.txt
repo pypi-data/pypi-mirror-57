@@ -1,0 +1,7 @@
+LICENSE
+MANIFEST.in
+setup.py
+open_fonts.egg-info/PKG-INFO
+open_fonts.egg-info/SOURCES.txt
+open_fonts.egg-info/dependency_links.txt
+open_fonts.egg-info/top_level.txt
