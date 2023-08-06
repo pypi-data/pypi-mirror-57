@@ -1,0 +1,7 @@
+PyGObject
+numpy
+pycairo
+simplejson
+
+[elliplots]
+matplotlib
