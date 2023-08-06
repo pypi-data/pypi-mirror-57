@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+hendria_distributions/Binomialdistribution.py
+hendria_distributions/Gaussiandistribution.py
+hendria_distributions/Generaldistribution.py
+hendria_distributions/__init__.py
+hendria_distributions.egg-info/PKG-INFO
+hendria_distributions.egg-info/SOURCES.txt
+hendria_distributions.egg-info/dependency_links.txt
+hendria_distributions.egg-info/not-zip-safe
+hendria_distributions.egg-info/top_level.txt
