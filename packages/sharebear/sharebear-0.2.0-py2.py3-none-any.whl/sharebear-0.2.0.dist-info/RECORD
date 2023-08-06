@@ -1,0 +1,11 @@
+sharebear/__init__.py,sha256=AbGGNEP3Axq54QL8v62e1zrByZvRGbshzUljGld1t90,149
+sharebear/cli.py,sha256=Qalz-y51UVWNSk4SJqge1hlj0vjd-17NahonZOfeW2c,3073
+sharebear/sharebear.py,sha256=Vj3Ko06g3N6ZfaRjprFp9VkVfR1WZSV9S_NOVzn-KFw,8721
+sharebear/sharebearjson.py,sha256=BPInFCQtbr96mJCV-Q2doSq18REj2pinGnjjwt_gwZQ,9082
+sharebear-0.2.0.dist-info/AUTHORS.rst,sha256=46twO_4_1Ylr9Tk_dWWC54khfKxed_ihgmM4pHwTXcs,178
+sharebear-0.2.0.dist-info/LICENSE,sha256=P6xcYo1a0fG-h_ChyCxDxecB7Rg6yuwoUQIKYRHPwKs,1516
+sharebear-0.2.0.dist-info/METADATA,sha256=etljJEFqIMkuEZKz-92miYakV6XAUS2wknSOq6zkWnk,1839
+sharebear-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+sharebear-0.2.0.dist-info/entry_points.txt,sha256=jNJ-hM8ew3FdoVx-AbD0ZZ7sbPjvSUMKwKNETovr3vM,50
+sharebear-0.2.0.dist-info/top_level.txt,sha256=5mpPpN68KudmkML6aSPL6uuxYXlZWGL2Np_1qc2FuXM,10
+sharebear-0.2.0.dist-info/RECORD,,
