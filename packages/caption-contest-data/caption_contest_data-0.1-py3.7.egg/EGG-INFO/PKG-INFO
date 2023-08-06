@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: caption-contest-data
+Version: 0.1
+Summary: Data from The New Yorker Cartoon Caption Contest
+Home-page: UNKNOWN
+Author: Scott Sievert
+Author-email: captions@stsievert.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: data caption contest responses humor new-yorker
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Utilities
