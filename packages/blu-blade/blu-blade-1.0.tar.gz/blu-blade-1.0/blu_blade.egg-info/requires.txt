@@ -1,0 +1,11 @@
+designformat
+pyyaml
+mako
+tqdm
+designformat
+
+[documentation]
+sphinx
+recommonmark
+sphinx-markdown-tables
+sphinx-rtd-theme
