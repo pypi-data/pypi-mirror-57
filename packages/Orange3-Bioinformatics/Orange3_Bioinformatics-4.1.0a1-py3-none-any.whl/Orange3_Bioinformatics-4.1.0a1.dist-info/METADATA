@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: Orange3-Bioinformatics
+Version: 4.1.0a1
+Summary: Orange Bioinformatics add-on for Orange data mining software package.
+Home-page: https://github.com/biolab/orange3-bioinformatics
+Author: Bioinformatics Laboratory, FRI UL
+Author-email: info@biolab.si
+Maintainer: Jaka Kokosar
+License: GPL3+
+Project-URL: Bug Tracker, https://github.com/biolab/orange3-bioinformatics/issues
+Project-URL: Documentation, https://orange3-bioinformatics.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/biolab/orange3-bioinformatics/
+Keywords: 'orange3 add-on'
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: serverfiles (==0.3.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: requests-cache (==0.5.2)
+Requires-Dist: genesis-pyapi (==1.2.1)
+Requires-Dist: pyclipper (==1.1.0.post1)
+Requires-Dist: Orange3 (>=3.22.0)
+Requires-Dist: point-annotator (~=2.0)
+Requires-Dist: scipy
+Requires-Dist: numpy
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: recommonmark ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: flake8 (~=3.7.8) ; extra == 'test'
+Requires-Dist: flake8-comprehensions (~=2.2.0) ; extra == 'test'
+Requires-Dist: flake8-black (~=0.1.0) ; extra == 'test'
+Requires-Dist: pep8-naming (~=0.8.2) ; extra == 'test'
+Requires-Dist: isort (~=4.3.21) ; extra == 'test'
+Requires-Dist: pre-commit (~=1.18.3) ; extra == 'test'
+Requires-Dist: pytest (~=5.1.0) ; extra == 'test'
+Requires-Dist: pytest-cov (~=2.7.1) ; extra == 'test'
+Requires-Dist: coverage (~=4.5.4) ; extra == 'test'
+Requires-Dist: codecov (~=2.0.15) ; extra == 'test'
+
+Orange3 Bioinformatics
+======================
+
+Orange Bioinformatics provides access to publicly available data, like GEO data
+sets, GO and KEGG. It enables gene enrichment analysis, clustering,
+classification, gene identification and provides several common visualizations.
+All features can be combined with other widgets from the Orange data mining
+framework.
+
