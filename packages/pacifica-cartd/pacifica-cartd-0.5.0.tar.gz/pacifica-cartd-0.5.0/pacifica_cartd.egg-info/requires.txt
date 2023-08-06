@@ -1,0 +1,11 @@
+celery
+cherrypy
+jsonschema
+peewee>2
+psutil
+pymysql
+pyyaml
+redis
+requests
+setuptools
+tqdm
