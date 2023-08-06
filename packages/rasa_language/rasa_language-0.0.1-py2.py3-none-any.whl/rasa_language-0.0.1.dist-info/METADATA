@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rasa_language
+Version: 0.0.1
+Summary: An attempt of crafting a specific purpose language for describing rasa chatbots
+Home-page: https://github.com/icaropires/rasa-chatbot-description-language
+License: UNKNOWN
+Author: Ícaro Pires e João Robson
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: lark-parser>=0.7.8
+Requires-Dist: Click>=7.0
+Requires-Dist: colorama>=0.4.3
+Requires-Dist: PyYAML==5.2
