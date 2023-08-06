@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: 650-auto-comp-jaewon
+Version: 0.2
+Summary: A Package for a trie class that autocompletes words
+Home-page: https://github.com/jaewony/650-auto-complete-jaewon.git
+Author: Jae Won Yoon
+Author-email: jae1903@gmail.com
+License: MIT
+Download-URL: https://github.com/jaewony/650-auto-complete-jaewon/archive/0.2.tar.gz
+Description: UNKNOWN
+Keywords: TRIE,NODE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
