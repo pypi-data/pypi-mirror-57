@@ -1,0 +1,3 @@
+[console_scripts]
+blade-templating = blade_templating.__main__:main
+
