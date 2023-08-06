@@ -1,0 +1,7 @@
+sopel>=7.0
+
+[:python_version < "3"]
+aspell-python-py2
+
+[:python_version >= "3"]
+aspell-python-py3

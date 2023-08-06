@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+sopel_spellcheck/__init__.py
+sopel_spellcheck.egg-info/PKG-INFO
+sopel_spellcheck.egg-info/SOURCES.txt
+sopel_spellcheck.egg-info/dependency_links.txt
+sopel_spellcheck.egg-info/entry_points.txt
+sopel_spellcheck.egg-info/not-zip-safe
+sopel_spellcheck.egg-info/requires.txt
+sopel_spellcheck.egg-info/top_level.txt

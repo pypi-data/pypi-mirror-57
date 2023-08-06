@@ -1,0 +1,3 @@
+[sopel.plugins]
+spellcheck = sopel_spellcheck
+
