@@ -1,0 +1,3 @@
+[console_scripts]
+nbb = nbb.nbb:nbb
+

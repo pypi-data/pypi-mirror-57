@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nbb
+Version: 0.1.0
+Summary: Notebook beautifier: runs isort and black on your cells.
+Home-page: https://github.com/pyoceans/nbb
+Author: Filipe Fernandes
+Author-email: ocefpaf@gmail.com
+License: BSD-3-Clause
+Description: # `nbb`: Notebook beautifier: runs isort and black on your cells
+        
+Keywords: Reproducibility,Scientific Python,Jupyter,GitHub
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: testing

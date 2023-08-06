@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements-dev.txt
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+nbb/__init__.py
+nbb/_version.py
+nbb/nbb.py
+nbb.egg-info/PKG-INFO
+nbb.egg-info/SOURCES.txt
+nbb.egg-info/dependency_links.txt
+nbb.egg-info/entry_points.txt
+nbb.egg-info/requires.txt
+nbb.egg-info/top_level.txt
