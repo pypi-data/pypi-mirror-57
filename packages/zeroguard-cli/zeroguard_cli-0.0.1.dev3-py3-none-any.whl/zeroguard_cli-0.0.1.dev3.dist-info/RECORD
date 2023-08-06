@@ -1,0 +1,12 @@
+zgcli/__init__.py,sha256=wtm7FUrR_Fy_NgphW1d1ff7PGSGIjnbufbcS5c33Fiw,639
+zgcli/__version__.py,sha256=wWSzFnT1AKAc6Tq3QxMseHfnsmWt3nXrnvBFobb7gZE,425
+zgcli/config.py,sha256=J0zspr1876WnIGm4iffq7xJFYSKFSET75ERLOnYULA0,847
+zgcli/main.py,sha256=zMoox2Diy5PgA0hF8Avu2tk9CvyZwBMzPJx6T6lJc2o,3189
+zgcli/commands/__init__.py,sha256=mwci8eXsahWR0ktaFOmgLvZ_fI5_IJhhK47PIAFVuog,85
+zgcli/commands/status.py,sha256=BEcvq4Fo6WiUrKqmAOgVD33KvISbdlws-zplg63PtWk,123
+zeroguard_cli-0.0.1.dev3.dist-info/LICENSE,sha256=jVa0BUaKrRH4erV2P5AeJ24I2WRv9chIGxditreJ6e0,34524
+zeroguard_cli-0.0.1.dev3.dist-info/METADATA,sha256=ic39aCwCnwMSjPQh7X_0-pZH4kwwSumWKIa4iKnE5VA,2082
+zeroguard_cli-0.0.1.dev3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+zeroguard_cli-0.0.1.dev3.dist-info/entry_points.txt,sha256=ASUezRGZnxzJztJXa_5deNUGSlgWzADcVPTURmaq-BY,40
+zeroguard_cli-0.0.1.dev3.dist-info/top_level.txt,sha256=1LxkwgsTojKBfdgwvGzdiwTq3VEdX_ScUatg--31DBU,6
+zeroguard_cli-0.0.1.dev3.dist-info/RECORD,,
