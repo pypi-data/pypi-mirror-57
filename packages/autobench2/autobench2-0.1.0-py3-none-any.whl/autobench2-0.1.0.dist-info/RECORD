@@ -1,0 +1,10 @@
+autobench2/__init__.py,sha256=NtdUe7aKhZdDs_uzoFjxB9lUnIfl327lbzt8p0fjjHQ,21
+autobench2/cli.py,sha256=ZU8NXRa6e4aTdboUcMswITifPdh-AbiW7cWeIKz87sQ,1613
+autobench2/core.py,sha256=6hlIyWGU4x-psfgzuDT_IKHg0G5Y09U9L5DU4d82hNk,202
+autobench2/helpers.py,sha256=mqOZRGnOl9QuWUl07BDBWYxCypATJxO8xn0MDXVJLEg,59
+autobench2-0.1.0.dist-info/LICENSE,sha256=hHbl1pLjNXx_3JfuoeQWMc1PUFdG8l5G5sM5Bg50xm4,1067
+autobench2-0.1.0.dist-info/METADATA,sha256=xP7Y4Cv1zzw4nwpYYpIwGuY2l0tXdZEnXaENsKOXMV8,349
+autobench2-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+autobench2-0.1.0.dist-info/entry_points.txt,sha256=eZEk2kHGpgKSUrFWY094Hl9TTciokB3t0Jeeys2JO7A,51
+autobench2-0.1.0.dist-info/top_level.txt,sha256=ZIgJ0-dOpm3bireAQ6Ytaj_hSLxFEzlGqU7KAUKY0k8,11
+autobench2-0.1.0.dist-info/RECORD,,
