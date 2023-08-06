@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: gpam_training
+Version: 0.0.3
+Summary: Module to facilitate the integration of a sklearn training pipeline into a deploy and retraining system
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: João Robson
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: numpy==1.17.4
+Requires-Dist: pandas==0.24.2
+Requires-Dist: scikit-learn==0.22
