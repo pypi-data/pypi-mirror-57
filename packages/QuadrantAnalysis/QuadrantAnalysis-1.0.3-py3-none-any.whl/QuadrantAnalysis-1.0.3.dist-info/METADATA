@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: QuadrantAnalysis
+Version: 1.0.3
+Summary: QuadrantAnalysis - Python GUI designed to analyze behavior in NOR task, as well as determine differences between outer and inner arena exploration.
+Home-page: https://github.com/HussainiLab/QuadrantAnalysis
+Author: Geoffrey Barrett
+Author-email: geoffrey.m.barrett@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7 
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3) 
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: PyQtGraph
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: openpyxl
+Requires-Dist: PyQt5
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: pandas
+
+# QuadrantAnalysis
+
+
