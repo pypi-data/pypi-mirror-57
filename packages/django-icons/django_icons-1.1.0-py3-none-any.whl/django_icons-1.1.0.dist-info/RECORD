@@ -1,0 +1,16 @@
+django_icons/__init__.py,sha256=nhfuQAG_QfikSl3Drc_Y0c2bxhv-EsV-cjhQpcXB4O4,817
+django_icons/css.py,sha256=JOao1ySyzvUW_41zP5VLQM_0bpZjJjBOKWiblznMzpk,1666
+django_icons/utils.py,sha256=IJ5ARGbYfGiGLnQY_LSaGe-P2bwgJFQ6e0jaWzugPvk,3507
+django_icons/renderers/__init__.py,sha256=FkewKYzgZnLuN2BmyKEd_hNZvsCVJuPNYS5gXkJag98,301
+django_icons/renderers/base.py,sha256=pTfq1vevKAealquAbu9OLkJ9xZ8zVZz59qtzUeMrjQw,2308
+django_icons/renderers/bootstrap3.py,sha256=4pXld8UoMpE8KUIwmFmi2dZs0OeI8Ny1wUxjljVs7Jk,283
+django_icons/renderers/fontawesome.py,sha256=hD-KsIMNw3-x5yniDw5SZhRJxoz0hsX5pSmEYHoZXvI,723
+django_icons/renderers/image.py,sha256=SQ1po4BAakj1nMTCY9Qj_utlMo27K7xLO4yy-lT2waU,9322
+django_icons/renderers/material.py,sha256=5CISOjReuXlorRLQuoQdH-CqmmPS7y5UnOCkxIitu6Q,316
+django_icons/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_icons/templatetags/icons.py,sha256=Z8QVOoCPpHeG9MWmdkoeFRQJpm_Vn4f7gNJQDSJaEYs,877
+django_icons-1.1.0.dist-info/LICENSE,sha256=2qNFJgBkzPP6_BNcFLy71SWDtGF83NzGjlLLdGCzWfk,1512
+django_icons-1.1.0.dist-info/METADATA,sha256=0jFeV8x685m8wAgA-hVp3yz1RhwFQ2pmaQv_YAn5nMw,4769
+django_icons-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_icons-1.1.0.dist-info/top_level.txt,sha256=oP4x5ZI5dAF6ltyz-8WKSuCP2t0gHa5AE4xgaqLwEGs,13
+django_icons-1.1.0.dist-info/RECORD,,
