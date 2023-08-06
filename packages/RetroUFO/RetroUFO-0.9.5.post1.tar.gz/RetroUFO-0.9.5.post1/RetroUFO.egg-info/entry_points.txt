@@ -1,0 +1,4 @@
+[console_scripts]
+RetroUFO = RetroUFO.RetroUFO:main
+RetroUFO-GUI = RetroUFO.RetroUFO_GUI:main
+

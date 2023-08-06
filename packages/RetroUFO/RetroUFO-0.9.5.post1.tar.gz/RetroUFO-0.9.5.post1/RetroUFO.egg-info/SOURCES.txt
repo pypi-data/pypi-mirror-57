@@ -1,0 +1,11 @@
+README.md
+setup.py
+RetroUFO/RetroUFO.py
+RetroUFO/RetroUFO_GUI.py
+RetroUFO/__init__.py
+RetroUFO.egg-info/PKG-INFO
+RetroUFO.egg-info/SOURCES.txt
+RetroUFO.egg-info/dependency_links.txt
+RetroUFO.egg-info/entry_points.txt
+RetroUFO.egg-info/requires.txt
+RetroUFO.egg-info/top_level.txt
