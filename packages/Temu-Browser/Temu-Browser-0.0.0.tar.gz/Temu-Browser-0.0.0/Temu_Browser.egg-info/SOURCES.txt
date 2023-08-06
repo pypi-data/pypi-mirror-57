@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+Browser/__init__.py
+Temu_Browser.egg-info/PKG-INFO
+Temu_Browser.egg-info/SOURCES.txt
+Temu_Browser.egg-info/dependency_links.txt
+Temu_Browser.egg-info/top_level.txt
