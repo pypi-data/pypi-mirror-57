@@ -1,0 +1,11 @@
+README.md
+setup.py
+superjacob/__init__.py
+superjacob/expression.py
+superjacob/operations.py
+superjacob/reverse.py
+superjacob/superjacob.py
+superjacob.egg-info/PKG-INFO
+superjacob.egg-info/SOURCES.txt
+superjacob.egg-info/dependency_links.txt
+superjacob.egg-info/top_level.txt
