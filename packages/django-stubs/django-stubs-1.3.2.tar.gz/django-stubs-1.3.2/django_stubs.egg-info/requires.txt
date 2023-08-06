@@ -1,0 +1,3 @@
+mypy<0.760,>=0.750
+typing-extensions
+django
