@@ -1,0 +1,17 @@
+.gitignore
+ArtisticLicense20.html
+MANIFEST.in
+README.md
+licenses-amendments.txt
+setup.cfg
+setup.py
+setupjavax/__init__.py
+setupjavax/build_java.py
+setupjavax/build_jy.py
+setupjavax.egg-info/PKG-INFO
+setupjavax.egg-info/SOURCES.txt
+setupjavax.egg-info/dependency_links.txt
+setupjavax.egg-info/entry_points.txt
+setupjavax.egg-info/not-zip-safe
+setupjavax.egg-info/requires.txt
+setupjavax.egg-info/top_level.txt
