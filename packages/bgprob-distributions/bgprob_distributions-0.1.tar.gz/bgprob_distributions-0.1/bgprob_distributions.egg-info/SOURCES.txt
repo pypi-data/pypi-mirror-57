@@ -1,0 +1,10 @@
+setup.py
+bgprob_distributions/Binomialdistribution.py
+bgprob_distributions/Gaussiandistribution.py
+bgprob_distributions/Generaldistribution.py
+bgprob_distributions/__init__.py
+bgprob_distributions.egg-info/PKG-INFO
+bgprob_distributions.egg-info/SOURCES.txt
+bgprob_distributions.egg-info/dependency_links.txt
+bgprob_distributions.egg-info/not-zip-safe
+bgprob_distributions.egg-info/top_level.txt
