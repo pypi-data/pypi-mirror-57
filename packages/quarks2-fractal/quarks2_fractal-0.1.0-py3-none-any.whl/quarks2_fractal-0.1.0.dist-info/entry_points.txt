@@ -1,0 +1,7 @@
+[console_scripts]
+batched_inference=segmentation_models_pytorch.utils.batched_inference:batched_inference
+f1_score=segmentation_models_pytorch.utils.f1_score:f1_score
+infer_img=segmentation_models_pytorch.engine.infer:infer_img_click
+infer_video=segmentation_models_pytorch.engine.infer:infer_video_click
+train=segmentation_models_pytorch.engine.trainer:main
+
