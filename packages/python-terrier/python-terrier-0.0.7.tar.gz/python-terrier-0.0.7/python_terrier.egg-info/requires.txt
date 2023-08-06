@@ -1,0 +1,4 @@
+pyjnius
+numpy
+pandas
+wget
