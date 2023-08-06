@@ -1,0 +1,16 @@
+cis_DjangoSignUp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cis_DjangoSignUp/context_processors.py,sha256=dtpJkuvGBBAooyZCN9vaK9IU5yYQdm1rl7qAf1rfAzQ,195
+cis_DjangoSignUp/forms.py,sha256=3dtNinQlkrIJW3DuxI7ZJkYgzLZyK08lzyJCy5c4egI,622
+cis_DjangoSignUp/url.py,sha256=IyzmVZfZkB32L5zRzPnSWuyH37O63SbSWr4Azd4gd2o,385
+cis_DjangoSignUp/views.py,sha256=AYGyTBbtKDDxFd7b6PxuN3Fdwd_BVF5LTtvKwBy_f7I,3030
+cis_DjangoSignUp/static/cis_DjangoSignUp/css/registration_form.css,sha256=5K2-5vOtVV6gkio2FBCvMrPKpr2ZPl_Ep6q8-fW2JAw,1161
+cis_DjangoSignUp/static/cis_DjangoSignUp/js/Bootstrap_notify.js,sha256=EAjOLrrqP7KtNOORgclvBGnArXc7fiCwmkeYNVxEmb4,13994
+cis_DjangoSignUp/static/cis_DjangoSignUp/js/notify.js,sha256=JwFV32OHuqq_2HvF4wCzbdL8h3f0mfDtBBEHdQtoa1c,1660
+cis_DjangoSignUp/templates/cis_DjangoSignUp/acc_active_email.html,sha256=U8Y1jRyhMwuVsZz_UQb4VLwxXeELqDuu5pNMTOYJwXo,175
+cis_DjangoSignUp/templates/cis_DjangoSignUp/registration_form.html,sha256=typ8a5d7NkXFvtWTp-59hO-4LnWUCMuszgB0HKKy7g0,1405
+cis_DjangoSignUp-0.0.3.dist-info/DESCRIPTION.rst,sha256=eTA-fP7JnPU_pPlzW9TQLdqqePtGyGd_4VDUhziYhfg,297
+cis_DjangoSignUp-0.0.3.dist-info/METADATA,sha256=oQ-Z2xTVMkDrOB0afPlIHiBm2JTe0l-o6Lvw5pY0K0I,932
+cis_DjangoSignUp-0.0.3.dist-info/RECORD,,
+cis_DjangoSignUp-0.0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+cis_DjangoSignUp-0.0.3.dist-info/metadata.json,sha256=WDs1G7SrNJbZvvxAQZ8-MgOj5KmKoBsNKp2RsMj4uM8,720
+cis_DjangoSignUp-0.0.3.dist-info/top_level.txt,sha256=CZMgIgRVUBsICsfZw6BF88suArRop7JikekRXEPgG30,17
