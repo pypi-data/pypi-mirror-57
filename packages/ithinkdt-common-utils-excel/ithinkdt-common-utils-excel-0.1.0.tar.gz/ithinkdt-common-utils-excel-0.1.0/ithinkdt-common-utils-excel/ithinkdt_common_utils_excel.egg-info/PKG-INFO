@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ithinkdt-common-utils-excel
+Version: 0.1.0
+Summary: python utils of excel handler
+Home-page: UNKNOWN
+Author: huiLi
+Author-email: lihui@ithinkdt.com
+License: MIT
+Description: python libs of parsing the excel file
+Platform: any
