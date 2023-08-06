@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: avatars
+Version: 0.1.1
+Summary: avatars
+Home-page: https://github.com/007gzs/avatars
+Author: 007gzs
+Author-email: 007gzs@gmail.com
+License: LGPL v3
+Keywords: avatars
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+#############################
+Avatars
+#############################
+.. image:: https://travis-ci.org/007gzs/avatars.svg?branch=master
+       :target: https://travis-ci.org/007gzs/avatars
+.. image:: https://img.shields.io/pypi/v/avatars.svg
+       :target: https://pypi.org/project/avatars
+
+多种风格SVG头像生成工具
+
+
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/male_0.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/male_0.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/female_0.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/female_0.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/identicon_0.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/identicon_0.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/bottts_0.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/bottts_0.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/initials_0.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/initials_0.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/gridy_0.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/gridy_0.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/avatio_female_0.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/avatio_female_0.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/avatio_male_0.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/avatio_male_0.svg
+
+----
+
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/male_1.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/male_1.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/female_1.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/female_1.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/identicon_1.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/identicon_1.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/bottts_1.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/bottts_1.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/initials_1.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/initials_1.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/gridy_1.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/gridy_1.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/avatio_female_1.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/avatio_female_1.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/avatio_male_1.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/avatio_male_1.svg
+
+----
+
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/male_2.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/male_2.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/female_2.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/female_2.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/identicon_2.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/identicon_2.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/bottts_2.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/bottts_2.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/initials_2.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/initials_2.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/gridy_2.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/gridy_2.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/avatio_female_2.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/avatio_female_2.svg
+.. image:: https://github.com/007gzs/avatars/raw/master/resource/avatio_male_2.svg?sanitize=true
+    :target: https://github.com/007gzs/avatars/raw/master/resource/avatio_male_2.svg
+
+
+
+********
+安装
+********
+
+目前 Avatars 支持的 Python 环境有 2.7, 3.4, 3.5, 3.6, 3.7 和 pypy。
+
+为了简化安装过程，推荐使用 pip 进行安装
+
+.. code-block:: bash
+
+    pip install avatars
+
+升级 Avatars 到新版本::
+
+    pip install -U avatars
+
+如果需要安装 GitHub 上的最新代码::
+
+    pip install https://github.com/007gzs/avatars/archive/master.zip
+
+
+********
+使用
+********
+
+代码样例::
+
+    from avatars.sprite import *
+    print(MaleSprite().create("张三"))
+    print(FemaleSprite().create("张三"))
+    print(IdenticonSprite().create("张三"))
+    print(BotttsSprite().create("张三"))
+    print(InitialsSprite().create("张三"))
+
+
+
