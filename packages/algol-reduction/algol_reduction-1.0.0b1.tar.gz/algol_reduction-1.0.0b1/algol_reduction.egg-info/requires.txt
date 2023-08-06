@@ -1,0 +1,6 @@
+astroplan
+astropy
+icalendar
+matplotlib
+numpy
+scipy
