@@ -1,0 +1,10 @@
+[freckles.adapters]
+freckles = freckles.adapters.freckles.freckles_adapter_freckles:FrecklesAdapterFreckles
+
+[freckles.var_adapters]
+ask = freckles.frecklet.vars:AskVarAdapter
+frecklet_dir = freckles.frecklet.vars:FreckletDirVarAdapter
+frecklet_path = freckles.frecklet.vars:FreckletPathVarAdapter
+pwd = freckles.frecklet.vars:PwdVarAdapter
+random_password = freckles.frecklet.vars:RandomPasswordVarAdapter
+

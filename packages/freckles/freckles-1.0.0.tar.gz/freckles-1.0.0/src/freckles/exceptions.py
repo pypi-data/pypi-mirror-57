@@ -1,0 +1,365 @@
+# -*- coding: utf-8 -*-
+from collections import OrderedDict
+
+from colorama import Style
+from jinja2.exceptions import TemplateSyntaxError
+from six import string_types
+
+from frutils import readable, reindent, readable_yaml
+from frutils.exceptions import FrklException, FrklParseException
+from ting.exceptions import TingException
+
+
+class FrecklesConfigException(FrklException):
+    def __init__(
+        self, keys=None, msg=None, solution=None, reason=None, references=None
+    ):
+
+        if keys and isinstance(keys, string_types):
+            keys = [keys]
+        if not msg:
+            if not keys:
+                message = "Configuration error."
+            else:
+                message = "Error with configuration option(s): {}.".format(
+                    ", ".join(keys)
+                )
+        else:
+            message = msg
+
+        if solution is None:
+            if not keys:
+                solution = "Check documentation for configuration key."
+            else:
+                solution = "Check documentation for configuration key(s): {}.".format(
+                    ", ".join(keys)
+                )
+
+        references_default = {
+            "freckles configuration documentation": "https://freckles.io/doc/configuration"
+        }
+        if references:
+            references.update(references_default)
+
+        super(FrecklesConfigException, self).__init__(
+            msg=message, solution=solution, references=references, reason=reason
+        )
+        self.keys = keys
+        self.msg = msg
+
+
+class FrecklesVarException(FrklException):
+    def __init__(
+        self,
+        frecklet=None,
+        frecklet_name=None,
+        var_name=None,
+        errors=None,
+        task_path=None,
+        vars=None,
+        task=None,
+        msg=None,
+        solution=None,
+        references=None,
+    ):
+
+        self.var_name = var_name
+        self.frecklet = frecklet
+        self.frecklet_name = frecklet_name
+
+        if self.frecklet is not None and self.frecklet_name is None:
+            self.frecklet_name = self.frecklet.id
+
+        self.errors = errors
+        self.task_path = task_path
+        self.vars = vars
+        self.task = task
+
+        if msg is None:
+            msg = "Error validating input for frecklet '{}'.".format(self.frecklet_name)
+
+        # if len(self.errors) == 1:
+        #     reason = Style.BRIGHT + "Var" + Style.RESET_ALL
+        # else:
+        #     reason = Style.BRIGHT + "Vars:" + Style.RESET_ALL + "\n"
+        reason = ""
+        for var, error in self.errors.items():
+
+            if isinstance(error, string_types):
+                error = [error]
+
+            reason = reason + Style.DIM + "{}: ".format(var) + Style.RESET_ALL
+
+            reason = reason + " - ".join(error)
+            reason = reason + "\n"
+
+        super(FrecklesVarException, self).__init__(
+            msg=msg, reason=reason, solution=solution, references=references
+        )
+
+    def __str__(self):
+
+        msg = "Error processing variables:\n"
+        msg = msg + "  frecklet: {}\n".format(self.frecklet_name)
+        if self.task_path is not None:
+            msg = msg + "  task path: {}\n".format(self.task_path)
+        msg = msg + "  vars:\n    "
+        msg = msg + readable(self.vars, out="yaml", indent=4).strip()
+        if self.task is not None:
+            msg = msg + "\n  frecklet:\n    "
+            msg = msg + readable(self.task["frecklet"], out="yaml", indent=4).strip()
+        msg = msg + "\n  error: {}".format(str(self.errors))
+        return msg
+
+
+class FreckletBuildException(FrklException):
+    def __init__(self, frecklet, msg, solution=None, reason=None, references=None):
+
+        self.frecklet = frecklet
+        super(FreckletBuildException, self).__init__(
+            msg, solution=solution, reason=reason, references=references
+        )
+
+
+class InvalidFreckletException(FrklException):
+    def __init__(self, frecklet=None, parent_exception=None, frecklet_name=None):
+
+        self.frecklet = frecklet
+        self.parent_exception = parent_exception
+
+        if frecklet_name is None:
+            if self.frecklet is not None:
+                self.frecklet_name = self.frecklet.id
+            else:
+                self.frecklet_name = None
+        else:
+            self.frecklet_name = frecklet_name
+
+        if self.frecklet_name is None:
+            msg = "Invalid or missing frecklet"
+        else:
+            msg = "Invalid or missing frecklet: '{}'.".format(self.frecklet_name)
+
+        reason = None
+        if self.frecklet_name is not None:
+            solution = "Check '{}' is a frecklet in any of the repositories of this context, or is a local file. In case you provided a yaml/json/toml string, check its syntax.\n\nIf the frecklet was created dynamically, check the upstream adapter whether there was an error.".format(
+                frecklet_name
+            )
+        else:
+            solution = "Check frecklet is in any of the repositories of this context, or is a local file. In case you provided a yaml/json/toml string, check its syntax.\n\nIf the frecklet was created dynamically, check the upstream adapter whether there was an error.".format(
+                frecklet_name
+            )
+        references = {"frecklet documentation": "https://freckles.io/doc/frecklets"}
+        super(InvalidFreckletException, self).__init__(
+            msg, solution=solution, reason=reason, references=references
+        )
+
+
+class FreckletException(FrklException):
+    def __init__(self, frecklet, parent_exception, frecklet_name):
+        """
+
+        Args:
+            frecklet:
+            parent_exception:
+            frecklet_name: optional frecklet name a command was called with
+        """
+
+        self.frecklet = frecklet
+        self.parent_exception = parent_exception
+        if frecklet_name is not None:
+            self.frecklet_name = frecklet_name
+        elif frecklet is not None:
+            self.frecklet_name = frecklet.id
+        else:
+            self.frecklet_name = "n/a"
+
+        msg = "Can't process frecklet: '{}'".format(self.frecklet_name)
+
+        # print(parent_exception.__dict__.keys())
+        # print(parent_exception.root_exc)
+
+        if isinstance(parent_exception, TingException):
+
+            root_exc = parent_exception.root_exc
+            if root_exc is not None and isinstance(root_exc, FrklParseException):
+                problem_frecklet = root_exc.content_origin
+            else:
+                problem_frecklet = None
+
+            if len(parent_exception.attribute_chain) == 1:
+                if problem_frecklet is not None:
+                    reason = "Error when processing property of frecklet '{}':\n".format(
+                        problem_frecklet.id
+                    )
+                else:
+                    reason = "Error when processing frecklet property:\n"
+            else:
+                if (
+                    root_exc is not None
+                    and hasattr(root_exc, "reason")
+                    and root_exc.reason
+                ):
+                    reason = root_exc.reason
+                else:
+                    if problem_frecklet is not None:
+                        reason = "Error when processing properties of frecklet '{}':\n".format(
+                            problem_frecklet.id
+                        )
+                    else:
+                        reason = "Error when processing frecklet properties:\n"
+            for index, attr in enumerate(parent_exception.attribute_chain):
+
+                padding = "  " * (index + 1)
+                reason = reason + "\n{}-> {}".format(padding, attr)
+
+            reason = reason + ": {}".format(parent_exception.root_exc)
+
+            extra_reason = OrderedDict()
+            if hasattr(parent_exception.root_exc, "exception_map"):
+                for k, v in parent_exception.root_exc.exception_map.items():
+                    potential_attrs = ["problem", "problem_mark", "msg"]
+
+                    for a in potential_attrs:
+                        if hasattr(v, a):
+                            extra_reason.setdefault(k, OrderedDict())[a] = str(
+                                getattr(v, a)
+                            )
+
+            if extra_reason:
+                text = ""
+                for t, details in extra_reason.items():
+                    text = (
+                        text
+                        + "if type: {}{}{}".format(Style.BRIGHT, t, Style.RESET_ALL)
+                        + "\n\n"
+                    )
+                    text = (
+                        text
+                        + Style.DIM
+                        + readable_yaml(
+                            details, ignore_aliases=True, safe=False, indent=2
+                        )
+                        + Style.RESET_ALL
+                        + "\n"
+                    )
+
+                reason = reason + "\n\n" + reindent(text, 2)
+
+            if hasattr(parent_exception.root_exc, "solution"):
+                solution = parent_exception.root_exc.solution
+            else:
+                solution = "Check format of frecklet '{}'.".format(
+                    parent_exception.ting.id
+                )
+            if hasattr(parent_exception.root_exc, "references"):
+                references = parent_exception.root_exc.references
+            else:
+                references = {
+                    "frecklet documentation": "https://freckles.io/doc/frecklets"
+                }
+        elif isinstance(parent_exception, TemplateSyntaxError):
+
+            reason = "Template syntax error: {}".format(str(parent_exception))
+            solution = "Check format of frecklet '{}' (probably line {}):\n\n".format(
+                frecklet.id, parent_exception.lineno
+            )
+            solution = solution + reindent(parent_exception.source, 4, line_nrs=1)
+            references = {
+                "frecklet documentation": "https://freckles.io/doc/frecklets",
+                "jinja2 documentation": "http://jinja.pocoo.org/docs",
+            }
+
+        else:
+            if self.frecklet_name == "n/a":
+                solution = "Check format of frecklets. Can't say which ones, too little information."
+            else:
+                solution = "Check format of frecklet '{}' and all of its childs.".format(
+                    self.frecklet_name
+                )
+            references = {"frecklet documentation": "https://freckles.io/doc/frecklets"}
+            reason = None
+
+        super(FreckletException, self).__init__(
+            msg, solution=solution, reason=reason, references=references
+        )
+
+
+class FrecklesPermissionException(FrklException):
+    def __init__(
+        self, key=None, msg=None, solution=None, reason=None, addition_references=None
+    ):
+
+        if not msg:
+            if not key:
+                message = "Access to context config key denied."
+            else:
+                message = "Access to context config key '{}' denied.".format(key)
+        else:
+            message = msg
+
+        if solution is None:
+            solution = "Adjust configuration to allow permissions to this key"
+
+        references = {
+            "freckles configuration documentation": "https://freckles.io/doc/configuration"
+        }
+        if addition_references:
+            references.update(addition_references)
+
+        super(FrecklesPermissionException, self).__init__(
+            message, solution=solution, reason=reason, references=references
+        )
+        self.key = key
+        self.msg = msg
+
+
+class FrecklesUnlockException(FrklException):
+    def __init__(self, message):
+
+        if not message:
+            message = "Access to context config denied."
+
+        solution = "Unlock freckles configuration with: 'freckles config unlock'"
+        references = {
+            "freckles configuration documentation": "https://freckles.io/doc/configuration"
+        }
+
+        super(FrecklesUnlockException, self).__init__(
+            message,
+            solution=solution,
+            references=references,
+            reason="freckles config not unlocked.",
+        )
+
+
+class FrecklesRunException(FrklException):
+    def __init__(self, msg=None, run_info=None):
+
+        self._run_info = run_info
+        reason = None
+        if msg is None:
+            if run_info is None:
+                msg = "n/a"
+            else:
+                e = run_info.exception
+                if e:
+                    if isinstance(e, FrklException):
+                        msg = e.message
+                    else:
+                        msg = str(e)
+            self._failed_tasks = None
+        if self._run_info:
+            self._failed_tasks = self._run_info.root_task._tasks.get_failed_tasks()
+            if self._failed_tasks:
+                reason = "failed tasks:\n"
+            for t in self._failed_tasks:
+                reason = reason + "\n  {}\n".format(t._task_name)
+                t_msg = t.get_messages()
+                if t_msg:
+                    reason = reason + "    {}\n".format(t_msg)
+                err = t.get_error_messages()
+                if err:
+                    reason = reason + "    {}\n".format(err)
+
+        super(FrecklesRunException, self).__init__(msg, reason=reason)
