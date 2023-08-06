@@ -1,0 +1,4 @@
+[console_scripts]
+allmight = might.allmight:main_func
+might = might.might:main_func
+

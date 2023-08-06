@@ -1,0 +1,192 @@
+Metadata-Version: 2.1
+Name: mrsn-might
+Version: 1.0.1
+Summary: MIGHT: MRSN Integrated Genome Handling Tool for bacterial clinical isolates
+Home-page: https://gitlab.com/mrsn-bio/might/
+Author: Brendan Corey
+Author-email: brendan.w.corey.ctr@mail.mil
+License: GPLv3
+Description: # MIGHT
+        
+        MIGHT: MRSN Integrated Genome Handling Tool for bacterial clinical isolates
+        
+        ## Contents
+        * [Introduction](#introduction)
+        * [Installation](#installation)
+          * [Conda Installation](#conda-installation)
+        * [Usage](#usage)
+        
+        ## Introduction
+        
+        MIGHT was developed as a way to automate many of the standard bioinformatics tasks that the MRSN
+        performs as part of its surveillance mission.
+        
+        Brief summary of the workflow:
+        
+        1. Run [bcl2fastq](https://support.illumina.com/downloads/bcl2fastq-conversion-software-v2-20.html) to demultiplex Illumina paired-end read data from MiSeq/Nextseq data
+        2. Run [Kraken2](https://github.com/DerrickWood/kraken2) to get species ID and identify possible sample contamination
+        3. Preprocess short reads using [bbduk](https://sourceforge.net/projects/bbmap/) for short read data and/or [filtlong](https://github.com/rrwick/Filtlong) for long read data
+        4. Run the [Unicycler](https://github.com/rrwick/Unicycler) assembler (with or without long read data)
+        5. Run [QUAST](https://github.com/ablab/quast) to gather assembly statistics
+        6. Run [Andale](https://gitlab.com/mrsn-bio/andale), a hybrid read/assembly AMR gene identification tool
+        
+        ## Installation
+        
+        This script is designed to be installed and run using conda
+        
+        ### Conda Installation
+        
+        
+        ## Usage
+        
+        MIGHT can be run either on a __single isolate__ using Might.py or on all of the samples of an __Illumina run__ using AllMight.py. 
+        The primary difference from an input perspective is that Might.py assumes that you are processing
+        a single sample for which you will provide 1) the sample name and 2) the location(s) or the
+        relevant input files. Conversely, AllMight.py will takes a user provided SampleSheet.csv
+        to determine what samples should be included in the run. It will ultimately run the specified
+        analyses on each sample as parallel implementations of the analysis methods found in Might.py.
+        
+        
+        For a __single isolate__:
+          ```
+          
+                
+                
+                    .___  ___.  __    _______  __    __  .__________.
+                    |   \/   | |  |  /  _____||  |  |  | |          |
+                    |  \  /  | |  | |  |  __  |  |__|  | `---|  |---`
+                    |  |\/|  | |  | |  | |_ | |   __   |     |  |     
+                    |  |  |  | |  | |  |__| | |  |  |  |     |  |     
+                    |__|  |__| |__|  \______| |__|  |__|     |__|     
+            
+                        
+                
+        usage: Might.py --output OUTPUT [--sample-name SAMPLE_NAME] [--fastq FASTQ]
+                        [--fasta FASTA] [--all] [--kraken2] [--assembly]
+                        [--amr {combination,reads,contigs,summary}] [--mlst]
+                        [--plasmidfinder] [--kraken2-database KRAKEN2_DATABASE]
+                        [--adapter-file ADAPTER_FILE] [--ramdisk RAMDISK] [--update]
+                        [--force] [--cores CORES] [--verbosity VERBOSITY] [-h]
+        
+        MIGHT! MRSN Integrated Genome Handling Tool
+        
+        Required arguments:
+          --output OUTPUT       path to the directory where output is/will be stored
+        
+        Input arguments:
+          --sample-name SAMPLE_NAME
+                                Name of the sample to be analyzed.
+          --fastq FASTQ         path to the directory containing the read files for
+                                this sample [output/reads/raw_reads]
+          --fasta FASTA         path to the directory containing the assembly file for
+                                this sample [output/assembly]
+        
+        Analysis arguments:
+          --all                 run all analysis options
+          --kraken2             run Kraken2 on read files to determine species ID and
+                                potentially detect contamination
+          --assembly            trim and filter reads using bbduk, then perform
+                                assembly using Unicycler
+          --amr {combination,reads,contigs,summary}
+                                run Andale using one of the four setting choices
+          --mlst                perform MLST assignments for samples using MLST
+          --plasmidfinder       run Plasmidfinder on contig files to identify rep gene
+                                content
+        
+        Resource arguments:
+          --kraken2-database KRAKEN2_DATABASE
+                                Path to the kraken2 database. Required for kraken2
+                                analysis
+          --adapter-file ADAPTER_FILE
+                                Path to the adapter.fa file required for adapter
+                                trimming of Illumina reads
+          --ramdisk RAMDISK     Path to the ramdisk for speeding up kraken2
+        
+        Optional arguments:
+          --update              update AMRFinderPlus and MLST databases
+          --force               force overwrite of existing data/output related to
+                                this sample
+          --cores CORES         the MAXIMUM number of CPUs to use in the analysis [1]
+          --verbosity VERBOSITY
+                                the level of reporting done to the terminal window [1]
+        
+        Help:
+          -h, --help            show this help message and exit
+        ```
+        
+        For an __Illumina run__
+        ```
+                
+                
+                    .___  ___.  __    _______  __    __  .__________.
+                    |   \/   | |  |  /  _____||  |  |  | |          |
+                    |  \  /  | |  | |  |  __  |  |__|  | `---|  |---`
+                    |  |\/|  | |  | |  | |_ | |   __   |     |  |     
+                    |  |  |  | |  | |  |__| | |  |  |  |     |  |     
+                    |__|  |__| |__|  \______| |__|  |__|     |__|     
+            
+                        
+                
+        usage: AllMight.py --output OUTPUT [--bcl2fastq]
+                           [--run-directory RUN_DIRECTORY]
+                           [--sample-sheet SAMPLE_SHEET] [--all] [--kraken2]
+                           [--assembly] [--amr {combination,reads,contigs,summary}]
+                           [--mlst] [--plasmidfinder]
+                           [--kraken2-database KRAKEN2_DATABASE]
+                           [--adapter-file ADAPTER_FILE] [--ramdisk RAMDISK]
+                           [--update] [--force] [--cores CORES]
+                           [--verbosity VERBOSITY] [-h]
+        
+        MIGHT! MRSN Integrated Genome Handling Tool
+        
+        Required arguments:
+          --output OUTPUT       path to the directory where output is/will be stored
+        
+        bcl2fastq2 arguments:
+          --bcl2fastq           Run bcl2fastq2 to generate demultiplexed fastq files
+                                from the bcl files
+          --run-directory RUN_DIRECTORY
+                                Path to the run directory to be analyzed
+          --sample-sheet SAMPLE_SHEET
+                                Path to the Illumina sample sheet file for the run
+                                being analyzed
+        
+        Analysis arguments:
+          --all                 run all analysis options
+          --kraken2             run Kraken2 on read files to determine species ID and
+                                potentially detect contamination
+          --assembly            trim and filter reads using bbduk, then perform
+                                assembly using Unicycler
+          --amr {combination,reads,contigs,summary}
+                                run Andale using one of the four setting choices
+          --mlst                perform MLST assignments for samples using MLST
+          --plasmidfinder       run Plasmidfinder on contig files to identify rep gene
+                                content
+        
+        Resource arguments:
+          --kraken2-database KRAKEN2_DATABASE
+                                Path to the kraken2 database. Required for kraken2
+                                analysis
+          --adapter-file ADAPTER_FILE
+                                Path to the adapter.fa file required for adapter
+                                trimming of Illumina reads
+          --ramdisk RAMDISK     Path to the ramdisk for speeding up kraken2
+        
+        Optional arguments:
+          --update              update AMRFinderPlus and MLST databases
+          --force               force overwrite of existing data/output related to
+                                this sample
+          --cores CORES         the MAXIMUM number of CPUs to use in the analysis [1]
+          --verbosity VERBOSITY
+                                the level of reporting done to the terminal window [1]
+        
+        Help:
+          -h, --help            show this help message and exit
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
