@@ -1,0 +1,8 @@
+odoo/addons/partner_contact_address/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/partner_contact_address/__manifest__.py,sha256=Bp6SeXl8QBRkMk4tBGBrElSY_UYcvtkLK36tnoszPug,535
+odoo/addons/partner_contact_address/models/__init__.py,sha256=ZHzKTFfSpVq36W0hYu-qO1QVE2JnMzRwrmoLSfR9ec4,22
+odoo/addons/partner_contact_address/models/partner.py,sha256=rhIx_Rf2rYO08fNqQeAeGPt44C0rfVJkFbvvV8O1R2Y,370
+odoo12_addon_partner_contact_address-12.0.1.0.0.99.dev3.dist-info/METADATA,sha256=FW18KKy12k0GQQteHvENTJY4KZSpTaY9uUmFlEWrJKM,504
+odoo12_addon_partner_contact_address-12.0.1.0.0.99.dev3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+odoo12_addon_partner_contact_address-12.0.1.0.0.99.dev3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_partner_contact_address-12.0.1.0.0.99.dev3.dist-info/RECORD,,
