@@ -1,0 +1,13 @@
+aquery/__init__.py,sha256=Xfr93-p-yt-RqK9SPPcViSB7otqi_XtJ-gTnY2eRaS4,136
+aquery/database.py,sha256=_uezTPCRPcY6O_xnpMYGDFiDECif7uAo0ho84Myer64,836
+aquery/errors.py,sha256=O7ghbwTsVsG_1RE0AJMfRBiCIAXoCUSU3zHEvXazLVo,78
+aquery/logger.py,sha256=d8SmaOCFsgiA0EYAoo50DSJ9Fwg20G8hCujza6k_-98,347
+aquery/query.py,sha256=Scu8XtFJSoDGmupM68jvxK1vBSaXhx6kRG8bO4uBK7Q,5910
+aquery/query_model.py,sha256=K8ka-7d7DeNliLbeXc_5ttcpI_Okso-O21Gshf1gGe4,2286
+aquery/sql_util.py,sha256=fpvLxIyVrDUiWUdY0mu7ci0mIB0ws3SKDmBJfAUMDs0,1690
+aquery/version.py,sha256=gqkagzeisBULr2HdeIW9k89TOu2B5LbqI5i0RKNKULY,19
+AQuery-0.0.1.dist-info/METADATA,sha256=QOtr9tvhg7W6piXGVf1Ym5TduyqisNHdWJjbdFekug0,2603
+AQuery-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+AQuery-0.0.1.dist-info/top_level.txt,sha256=nOjGJTBVNJTbJhl2BqLO3EHAlmQc60Cb6Me_6zgiQGI,7
+AQuery-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+AQuery-0.0.1.dist-info/RECORD,,
