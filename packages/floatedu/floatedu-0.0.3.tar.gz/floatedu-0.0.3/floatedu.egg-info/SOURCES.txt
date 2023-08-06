@@ -1,0 +1,8 @@
+README.md
+setup.py
+floatedu/Float.py
+floatedu/__init__.py
+floatedu.egg-info/PKG-INFO
+floatedu.egg-info/SOURCES.txt
+floatedu.egg-info/dependency_links.txt
+floatedu.egg-info/top_level.txt
