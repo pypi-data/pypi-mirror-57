@@ -1,0 +1,6 @@
+
+[:python_version < "3.8"]
+typing_extensions
+
+[master]
+mypy-boto3==1.10.33
