@@ -1,0 +1,9 @@
+mroi_fd/__init__.py,sha256=EBZoTRefW0s_fY85cII6wr9xfoTCgvSh6w4_2aA3buk,70
+mroi_fd/_utils.py,sha256=aZLzHWh09XJXuTkORMWKsuNx9ha-SLq1wzXCk119OMs,924
+mroi_fd/face_detector.py,sha256=Atp2WgG5wFpcpTdpI5SIQJ4gNwpqmZ7ylhLcnIg_7Ds,15693
+mroi_fd/routines.py,sha256=phPfE3gaZ6S4H1FancOgcekxFUimHm-mNdsDh_q7jiE,15690
+mroi_fd-1.0.0.post2.dist-info/LICENSE,sha256=OkJ6RaXdC2rga03Rk3uzV5cf_hjMv8gfDEnrVa4nRY4,13
+mroi_fd-1.0.0.post2.dist-info/METADATA,sha256=T6gNYJWOU-7ceyuZwtpQOhDIUR8dYs1itvQAl4HPwhA,5734
+mroi_fd-1.0.0.post2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mroi_fd-1.0.0.post2.dist-info/top_level.txt,sha256=hP4RR3Mgd5HR9JJiPSYrKlOkGSk1B_bcGGHcRo1R8A4,8
+mroi_fd-1.0.0.post2.dist-info/RECORD,,
