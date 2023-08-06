@@ -1,0 +1,7 @@
+sqlalchemy_views/__init__.py,sha256=Td61GyE-_-EO0-sMREQ2LsOjMbUuocDxYw1GTFVxFHY,320
+sqlalchemy_views/metadata.py,sha256=L5FTaWpdQsMCElgJIBqBpACNe6h2tp52SNCDgpcEaJs,556
+sqlalchemy_views/views.py,sha256=5_DGIU52_uhkCeME3sL-PGtjBHbg1qZ0wN3aOKm3TUE,3095
+sqlalchemy_views-0.2.4.dist-info/METADATA,sha256=ICFF_me2n8vFrISLUwN_yuiDSJ-vafO33pYFVGmpkCQ,3561
+sqlalchemy_views-0.2.4.dist-info/RECORD,,
+sqlalchemy_views-0.2.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+sqlalchemy_views-0.2.4.dist-info/top_level.txt,sha256=t28YrT5pnnO2ac55QqHsRix9Wt2lRzHXvvrlNdtQ2RY,17
