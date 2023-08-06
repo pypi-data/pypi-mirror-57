@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: psr-formats
+Version: 0.2.2
+Summary: Various formats used in pulsar signal processing
+License: MIT
+Author: Dean Shaff
+Author-email: dshaff@swin.edu.au
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: astropy (>=3.2,<4.0)
+Requires-Dist: numpy (>=1.16,<2.0)
+Description-Content-Type: text/markdown
+
+### psr-formats
+
+Formats for loading and saving data used in pulsar data processing.
+
+Supported formats:
+  - DADA
+
+### Usage
+
+```python
+>>> from psr_formats import DADAFile
+>>> dada_file = DADAFile("path/to/dada.dump").load_data()
+>>> dada_file["NCHAN"]
+'1'
+>>> dada_file.nchan
+1
+>>> dada_file.npol
+2
+>>> dada_file.sampling_rate
+<Quantity 0.025 us>
+>>> dada_file.data.shape
+(3107730, 1, 2) # ndat, nchan, npol
+>>> new_dada_file = DADAFile("new.dump")
+>>> new_dada_file.data = dada_file.data
+>>> new_dada_file.dump_data()
+'new.dump'
+```
+
+### Testing
+
+```
+poetry run python -m unittest
+```
+
