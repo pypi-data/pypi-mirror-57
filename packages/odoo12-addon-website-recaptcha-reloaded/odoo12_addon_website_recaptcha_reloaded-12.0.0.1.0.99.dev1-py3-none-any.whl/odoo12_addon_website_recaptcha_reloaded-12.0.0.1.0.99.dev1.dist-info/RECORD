@@ -1,0 +1,14 @@
+odoo/addons/website_recaptcha_reloaded/__init__.py,sha256=NC39mJ1_D3wMQB35XFUcQalHofQa2IXveFk0HDeRiys,161
+odoo/addons/website_recaptcha_reloaded/__manifest__.py,sha256=c_FVfxD0M8zIlPaNAtogwq-C9rKmgculWa6Htkjo9Oo,870
+odoo/addons/website_recaptcha_reloaded/website.py,sha256=_N5JILtvfvnvhLuzH4aKNgiYcXGtYOwzWlp1oXrjGaM,1510
+odoo/addons/website_recaptcha_reloaded/models/__init__.py,sha256=-eSkkAlBy7IK5aGFeYUgwIuDhHp-1gz0osFnzI044p0,143
+odoo/addons/website_recaptcha_reloaded/models/res_config.py,sha256=Mz8u24JL4mdeV4oLfVZIa6GxaPr3jaL8YHYNBWO0cP4,999
+odoo/addons/website_recaptcha_reloaded/static/description/icon.png,sha256=KKYlmjO2QNKyO9mt2djejWD8fuJkc_-_b-i7Vyb0-LY,9732
+odoo/addons/website_recaptcha_reloaded/static/description/index.html,sha256=APbQTKeFJ0jX8W3VG0aVSHnAyZ9VYSM6hSpUKE9E3wA,635
+odoo/addons/website_recaptcha_reloaded/static/description/recaptcha_setting.png,sha256=g4R4bRoInsRnO8JUvwyw10Zl1HX80SXZ1glHaFvREPk,107442
+odoo/addons/website_recaptcha_reloaded/views/res_config.xml,sha256=aj3mzNAT63u8z4DjnR0ohuX3iosC2XBnRuRR7XYr7Ps,2374
+odoo/addons/website_recaptcha_reloaded/views/website_view.xml,sha256=Ct0EsW2ighg_QKs6O7Oqdoew7kU4Fqg1DmCscN5dJrY,1176
+odoo12_addon_website_recaptcha_reloaded-12.0.0.1.0.99.dev1.dist-info/METADATA,sha256=n2ozzXUtiup-iRi5AldO5nigPau7dyshLUdqPk_6tfU,793
+odoo12_addon_website_recaptcha_reloaded-12.0.0.1.0.99.dev1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+odoo12_addon_website_recaptcha_reloaded-12.0.0.1.0.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_website_recaptcha_reloaded-12.0.0.1.0.99.dev1.dist-info/RECORD,,

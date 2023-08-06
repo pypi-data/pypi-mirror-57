@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: odoo12-addon-website-recaptcha-reloaded
+Version: 12.0.0.1.0.99.dev1
+Summary: Website reCAPTCHA Reloaded
+Home-page: https://www.techreceptives.com
+Author: Tech Receptives
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.5
+Requires-Dist: odoo (<12.1dev,>=12.0a)
+
+
+Odoo Website reCAPTCHA Reloaded
+================================
+This modules allows you to integrate Google reCAPTCHA v2.0 to your website
+forms. You can configure your Google reCAPTCHA site and public keys
+in "Settings" -> "Website Settings"
+
+You will need to install various website_<module>_recaptcha modules
+to use it in your various pages.
+
+
