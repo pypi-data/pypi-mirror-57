@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: django-enum-ex
+Version: 0.2.0
+Summary: 一个基于 Django 3.0 Choices 枚举类型的独立包
+Home-page: https://github.com/banxi1988/django-enum-ex
+Keywords: Django,Choices,Enum,EnumField,ChoicesField
+Author: codetalks
+Author-email: banxi1988@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: django (>=2.2,<3.0)
+Project-URL: Repository, https://github.com/banxi1988/django-enum-ex
+Description-Content-Type: text/markdown
+
+# django-enum-ex
+一个基于 Django 3.0 Choices 枚举类型的独立扩展包
+
+本库基于 Django 3.0 中自带的 [django.db.models.enum ](https://github.com/django/django/blob/master/django/db/models/enums.py)
+
+
+特色
+---------------
+
+- 支持将枚举字段名自设置为值. 设置值为 `enum.auto()`
+- 支持将单一值即设置为值,又设置为 `label`, 通过设置类属性 `__value_as_label__ = True`
+- 增加 `Choices.of` 方法,在将原始值转成枚举值时,支持忽略大小定. 支持没有匹配枚举值时,抛出错误.
+- 增加 `IntegerChoicesField` 和 `TextChoicesField` 两个Model Field
