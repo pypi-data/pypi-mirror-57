@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: cdk-chalice
+Version: 0.1.0
+Summary: AWS CDK construct for AWS Chalice
+Home-page: https://github.com/alexpulver/cdk-chalice
+Author: Alex Pulver
+Author-email: alex.pulver@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Requires-Dist: aws-cdk.aws-iam (>=1.18.0)
+Requires-Dist: aws-cdk.aws-s3-assets (>=1.18.0)
+Requires-Dist: aws-cdk.core (>=1.18.0)
+Requires-Dist: docker (>=4.1.0)
+
+# cdk-chalice
+**AWS CDK construct for AWS Chalice**
+
+Packages AWS Chalice application into AWS SAM format and enriches the resulting
+SAM template with additional configuration values. The construct currently 
+supports only API handler Lambda functions. It is possible to specify
+IAM role for API handler Lambda function or let `cdk-chalice` create one.
+Additional environment variables can be passed to the application. 
+
+#### AWS Chalice application requirements
+It is recommended that AWS Chalice application will have a CDK-specific
+stage with settings to be used by the accompanying CDK stack. 
+
+Chalice application must have a `Dockerfile.cdk` file, that should package the 
+application to `/chalice.out`. The last line should be:
+```dockerfile
+RUN chalice package --stage cdk /chalice.out
+```
+cdk-chalice will use `Dockerfile.cdk` to package the application in a clean environment
+and retrieve the resulting `deployment.zip` and `sam.json` files for further
+processing.
+
+
