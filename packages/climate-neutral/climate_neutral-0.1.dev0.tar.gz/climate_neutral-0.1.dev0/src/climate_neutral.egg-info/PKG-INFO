@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: climate-neutral
+Version: 0.1.dev0
+Summary: Python library for GoClimateNeutral API
+Home-page: https://github.com/codeboten/climate_neutral
+Author: Alex Boten
+Author-email: alrex.boten@gmail.com
+License: Apache-2.0
+Description: # climate_neutral
+        
+        A Python library to GoClimateNeutral's API. For more information on the API, visit the [official docs](https://api.goclimateneutral.org/docs)
+        
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
