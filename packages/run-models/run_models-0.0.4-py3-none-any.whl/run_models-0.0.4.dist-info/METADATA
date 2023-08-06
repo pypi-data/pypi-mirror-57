@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: run-models
+Version: 0.0.4
+Summary: Run all regression and classification models with its default parameters
+Home-page: https://github.com/Shivanandroy/run_models/
+Author: Shivanand Roy
+Author-email: Shivanandroy.official@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+Requires-Dist: xgboost
+Requires-Dist: lightgbm
+Requires-Dist: catboost
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+ï»¿# run_models
+
+**run_models** lets you run many regression and classification models with their default parameters and rank them by RMSE or AUC. 
+
+## Installation
+
+`pip install run_models`
+
+## Dependencies
+`numpy`
+
+`pandas`
+
+`scikit-learn`
+
+`xgboost`
+
+`lightgbm`
+
+`catboost`
+
+`matplotlib`
+
+## How to use it?
+
+`run_models` comes with two functions:
+- `run_models.run_regressors(data, target_column)` for regression tasks - All models are ranked by RMSE.
+- `run_models.run_classifiers(data, target_column)` for classification tasks - All models are ranked y AUC.
+
+`import run_models as rm` 
+
+`fig = rm.run_classifiers(titanic_data, 'Survived')`
+
+
+
+
