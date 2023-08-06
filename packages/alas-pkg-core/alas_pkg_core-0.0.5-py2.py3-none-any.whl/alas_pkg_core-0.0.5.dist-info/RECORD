@@ -1,0 +1,9 @@
+alas_pkg_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alas_pkg_core/logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alas_pkg_core/logger/logger_manager.py,sha256=p8WFnPrXQQ9q9oo1x0_MJFekWg2k1tHKidFZxAVdjh0,912
+alas_pkg_core/logger/logger_repository.py,sha256=trpIicvJPHea3rBbSk4Ladt3TVUtdfYMMuWzRwcEkyE,696
+alas_pkg_core-0.0.5.dist-info/LICENSE.txt,sha256=Cc-9bf3aBvgR8dzbbhz6r61UdeI_c_89BG9CDaHrang,23
+alas_pkg_core-0.0.5.dist-info/METADATA,sha256=b5IVxhZjYo2ZZxsti3PHohkg2RvehM54Z0YzSJDp1-c,1000
+alas_pkg_core-0.0.5.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+alas_pkg_core-0.0.5.dist-info/top_level.txt,sha256=XR0MpyMyPa6PdWMrgZUdxcHMvKlgLSoWelDSViMZ-MI,14
+alas_pkg_core-0.0.5.dist-info/RECORD,,
