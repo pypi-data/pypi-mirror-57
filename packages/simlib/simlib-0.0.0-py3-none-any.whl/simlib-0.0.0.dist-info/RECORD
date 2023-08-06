@@ -1,0 +1,15 @@
+simlib/__init__.py,sha256=7cZNQxJ58SW2iVBhXdjbqEdirUNPW0Mtzu8_QcAm73c,329
+simlib/_version.py,sha256=Uq5oSCtb8jIkY9mbcvj6rDSCipSH9Qj1TFUb1l9QoK4,23
+simlib/analysis/__init__.py,sha256=gkvsRGMZPOOIJUH_fTWHvB1I-s8u2sTIk8yjrsZOUaE,92
+simlib/analysis/protein.py,sha256=da2JKHYkorbK-WKQ6p32cEqeZEM7pUIXFDlWmCwRG1w,6501
+simlib/geometry/__init__.py,sha256=5jzKMM5fgmwKKPLiYrNOnHDI_hmGPJdpYOSrM02LjFU,741
+simlib/io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simlib/io/errata.py,sha256=pGAmHmCPIvLH_C3jWjSjcSzyJMOc2QZiOL1NEx0K2Hk,88
+simlib/misc/__init__.py,sha256=ZvFmgdpCycnR0AS-ThVnU4HZE-bZnLHpnaXu11tF5aw,86
+simlib/misc/types.py,sha256=puvNlOUxrRbqmQGzXaUtaIJ3Ia2ldkSEo5IaVk7KBn8,1511
+simlib-0.0.0.dist-info/LICENSE.md,sha256=5_1dzmEp9BDZWDomk3JrILwJH9gxTGHv3Qtz-ecDojY,1062
+simlib-0.0.0.dist-info/METADATA,sha256=F2iPEUGhzqArZ4mmqaIJr3ZC--bdRRo55q1NkawioF4,478
+simlib-0.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+simlib-0.0.0.dist-info/top_level.txt,sha256=Jo3W34fDeOgn2xpud9CjqPFXglfCazl3aeVnD3cYHZk,7
+simlib-0.0.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+simlib-0.0.0.dist-info/RECORD,,

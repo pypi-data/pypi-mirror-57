@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: simlib
+Version: 0.0.0
+Summary: A toolkit for molecular dynamics simulations
+Home-page: https://www.lockhartlab.org
+Author: C. Lockhart
+Author-email: chris@lockhartlab.org
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: codecov
+Requires-Dist: coverage
+Requires-Dist: hypothesis
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: sphinx
+
+A toolkit for molecular dynamics simulations
+
+
