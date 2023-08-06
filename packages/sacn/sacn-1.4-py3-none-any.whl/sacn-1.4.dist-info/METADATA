@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sacn
+Version: 1.4
+Summary: sACN / E1.31 module for easy handling of DMX data over ethernet
+Home-page: https://www.github.com/Hundemeier/sacn
+Author: Hundemeier
+Author-email: hundemeier99@gmail.com
+License: MIT License
+Keywords: sacn e131 e1.31 dmx
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
