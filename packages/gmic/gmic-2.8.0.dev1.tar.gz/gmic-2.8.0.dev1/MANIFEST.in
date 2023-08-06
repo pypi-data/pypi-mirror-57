@@ -1,0 +1,2 @@
+graft src/gmic/src
+include VERSION
