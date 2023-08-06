@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+containedenv/__init__.py
+containedenv/functions.py
+containedenv.egg-info/PKG-INFO
+containedenv.egg-info/SOURCES.txt
+containedenv.egg-info/dependency_links.txt
+containedenv.egg-info/top_level.txt
+scripts/containedenv-config-writer.py
