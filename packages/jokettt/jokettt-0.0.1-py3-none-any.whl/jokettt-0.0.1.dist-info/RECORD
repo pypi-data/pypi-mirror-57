@@ -1,0 +1,12 @@
+board/__init__.py,sha256=mXd7yAKU3Q6OEJ5i6n6mdY1yiE-TFN28VRg2hIfzNek,20
+board/board.py,sha256=iIShsJTXHmc6afM1jB0xlnKWbajCsGxgifR5SJTpCeU,13260
+players/__init__.py,sha256=CoE-I_0F6kSqp22IZeO5yiD1shj4by0yNEJk5SuHARA,72
+players/consoleplayer.py,sha256=nVU9JsMouYMPklqyXuKFjYyGEQFR4Wqvj0akiSwYsew,1222
+players/learnerplayer.py,sha256=3Bj-xkgy5CwZQl_x2x374C1NFZ49Sa5qcmUY-PxHe1M,6313
+players/minimaxplayer.py,sha256=Gwj7GspGBUgLGBfY7vWNS6sz2x_MWCqNid7uU9QgWWg,5705
+players/player.py,sha256=ehDiRfEJYRgZr2CNRo4BFKI3tFBmNyBEophWWbSnuO0,1214
+jokettt-0.0.1.dist-info/LICENSE,sha256=inXzYblvhZkBXvFBwzoSQTuJnOK1K4rWpdumJzCFXRA,1075
+jokettt-0.0.1.dist-info/METADATA,sha256=j8y5oVca1_69vvare9yb79yLW90yaeoOh1M8e-nyUZc,2545
+jokettt-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jokettt-0.0.1.dist-info/top_level.txt,sha256=5L_dH8ucIMedLWmlbsh5ptjgnW0AVw0S1ZtJHVVO1AY,14
+jokettt-0.0.1.dist-info/RECORD,,
