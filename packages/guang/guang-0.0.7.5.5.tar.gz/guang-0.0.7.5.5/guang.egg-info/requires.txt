@@ -1,0 +1,6 @@
+pydub
+pyworld
+soundfile
+pypinyin
+python-Levenshtein
+hmmlearn
