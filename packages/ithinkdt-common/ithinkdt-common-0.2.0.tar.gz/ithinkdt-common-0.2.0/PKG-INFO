@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ithinkdt-common
+Version: 0.2.0
+Summary: python common libs
+Home-page: UNKNOWN
+Author: huiLi
+Author-email: lihui@ithinkdt.com
+License: MIT
+Description: python libs include utils of config, db, db_init, excel, logger, requests and sendmail
+Platform: any
