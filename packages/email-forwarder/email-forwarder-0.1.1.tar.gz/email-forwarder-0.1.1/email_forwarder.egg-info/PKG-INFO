@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: email-forwarder
+Version: 0.1.1
+Summary: High level email forwarding in Python.
+Home-page: https://github.com/wesinator/email-forwarder-python
+Author: wesinator
+License: UNKNOWN
+Description: # email-forwarder
+        High-level email forwarding in Python (3+)
+        
+        ## Usage
+        ```python3
+        from email_forwarder import EmailForwarder
+        
+        e = EmailForwarder("user@example.com", "password", "smtp.example.com", 587)
+        
+        eml = open("message.eml", 'r').read()
+        e.forward(eml, "to@example.com")
+        ```
+        ---
+        **Note:** current implementation forwards in place without adding original `From` info.
+        
+Keywords: spam
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
