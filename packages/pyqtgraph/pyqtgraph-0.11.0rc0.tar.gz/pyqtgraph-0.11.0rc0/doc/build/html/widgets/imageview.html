@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>ImageView &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="dockarea module" href="dockarea.html" />
+    <link rel="prev" title="PlotWidget" href="plotwidget.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dockarea.html" title="dockarea module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="plotwidget.html" title="PlotWidget"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="imageview">
+<h1>ImageView<a class="headerlink" href="#imageview" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.ImageView">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">ImageView</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">name='ImageView'</em>, <em class="sig-param">view=None</em>, <em class="sig-param">imageItem=None</em>, <em class="sig-param">levelMode='mono'</em>, <em class="sig-param">*args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Widget used for display and analysis of image data.
+Implements many features:</p>
+<ul>
+<li><p>Displays 2D and 3D image data. For 3D data, a z-axis
+slider is displayed allowing the user to select which frame is displayed.</p></li>
+<li><p>Displays histogram of image data with movable region defining the dark/light levels</p></li>
+<li><p>Editable gradient provides a color lookup table</p></li>
+<li><p>Frame slider may also be moved using left/right arrow keys as well as pgup, pgdn, home, and end.</p></li>
+<li><p>Basic analysis features including:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ROI and embedded plot for measuring image values across frames</p></li>
+<li><p>Image normalization / background subtraction</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Basic Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">imv</span> <span class="o">=</span> <span class="n">pg</span><span class="o">.</span><span class="n">ImageView</span><span class="p">()</span>
+<span class="n">imv</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">imv</span><span class="o">.</span><span class="n">setImage</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Keyboard interaction</strong></p>
+<ul class="simple">
+<li><p>left/right arrows step forward/backward 1 frame when pressed,
+seek at 20fps when held.</p></li>
+<li><p>up/down arrows seek at 100fps</p></li>
+<li><p>pgup/pgdn seek at 1000fps</p></li>
+<li><p>home/end seek immediately to the first/last frame</p></li>
+<li><p>space begins playing frames. If time values (in seconds) are given 
+for each frame, then playback is in realtime.</p></li>
+</ul>
+<dl class="method">
+<dt id="pyqtgraph.ImageView.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">name='ImageView'</em>, <em class="sig-param">view=None</em>, <em class="sig-param">imageItem=None</em>, <em class="sig-param">levelMode='mono'</em>, <em class="sig-param">*args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>By default, this class creates an <a class="reference internal" href="../graphicsItems/imageitem.html#pyqtgraph.ImageItem" title="pyqtgraph.ImageItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageItem</span></code></a> to display image data
+and a <a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox" title="pyqtgraph.ViewBox"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewBox</span></code></a> to contain the ImageItem.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>parent</p></td>
+<td><p>(QWidget) Specifies the parent widget to which
+this ImageView will belong. If None, then the ImageView
+is created with no parent.</p></td>
+</tr>
+<tr class="row-odd"><td><p>name</p></td>
+<td><p>(str) The name used to register both the internal ViewBox
+and the PlotItem used to display ROI data. See the <em>name</em>
+argument to <a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.__init__" title="pyqtgraph.ViewBox.__init__"><code class="xref py py-func docutils literal notranslate"><span class="pre">ViewBox.__init__()</span></code></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>view</p></td>
+<td><p>(ViewBox or PlotItem) If specified, this will be used
+as the display area that contains the displayed image.
+Any <a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox" title="pyqtgraph.ViewBox"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewBox</span></code></a>,
+<a class="reference internal" href="../graphicsItems/plotitem.html#pyqtgraph.PlotItem" title="pyqtgraph.PlotItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlotItem</span></code></a>, or other
+compatible object is acceptable.</p></td>
+</tr>
+<tr class="row-odd"><td><p>imageItem</p></td>
+<td><p>(ImageItem) If specified, this object will be used to
+display the image. Must be an instance of ImageItem
+or other compatible object.</p></td>
+</tr>
+<tr class="row-even"><td><p>levelMode</p></td>
+<td><p>See the <em>levelMode</em> argument to
+<a class="reference internal" href="../graphicsItems/histogramlutitem.html#pyqtgraph.HistogramLUTItem.__init__" title="pyqtgraph.HistogramLUTItem.__init__"><code class="xref py py-func docutils literal notranslate"><span class="pre">HistogramLUTItem.__init__()</span></code></a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Note: to display axis ticks inside the ImageView, instantiate it 
+with a PlotItem instance as its view:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">ImageView</span><span class="p">(</span><span class="n">view</span><span class="o">=</span><span class="n">pg</span><span class="o">.</span><span class="n">PlotItem</span><span class="p">())</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.autoLevels">
+<code class="sig-name descname">autoLevels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.autoLevels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.autoLevels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the min/max intensity levels automatically to match the image data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.autoRange">
+<code class="sig-name descname">autoRange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.autoRange"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.autoRange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Auto scale and pan the view around the image such that the image fills the view.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the widget nicely, making sure to clear the graphics scene and release memory.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.export">
+<code class="sig-name descname">export</code><span class="sig-paren">(</span><em class="sig-param">fileName</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.export"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.export" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export data from the ImageView to a file, or to a stack of files if
+the data is 3D. Saving an image stack will result in index numbers
+being added to the file name. Images are saved as they would appear
+onscreen, with levels and lookup table applied.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.getHistogramWidget">
+<code class="sig-name descname">getHistogramWidget</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.getHistogramWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.getHistogramWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the HistogramLUTWidget for this ImageView</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.getImageItem">
+<code class="sig-name descname">getImageItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.getImageItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.getImageItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the ImageItem for this ImageView.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.getProcessedImage">
+<code class="sig-name descname">getProcessedImage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.getProcessedImage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.getProcessedImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the image data after it has been processed by any normalization options in use.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.getRoiPlot">
+<code class="sig-name descname">getRoiPlot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.getRoiPlot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.getRoiPlot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the ROI PlotWidget for this ImageView</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.getView">
+<code class="sig-name descname">getView</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.getView"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.getView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the ViewBox (or other compatible object) which displays the ImageItem</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.jumpFrames">
+<code class="sig-name descname">jumpFrames</code><span class="sig-paren">(</span><em class="sig-param">n</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.jumpFrames"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.jumpFrames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move video frame ahead n frames (may be negative)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.keyPressEvent">
+<code class="sig-name descname">keyPressEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QKeyEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.keyPressEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.keyPressEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.keyReleaseEvent">
+<code class="sig-name descname">keyReleaseEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QKeyEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.keyReleaseEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.keyReleaseEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.normalize">
+<code class="sig-name descname">normalize</code><span class="sig-paren">(</span><em class="sig-param">image</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.normalize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process <em>image</em> using the normalization options configured in the
+control panel.</p>
+<p>This can be repurposed to process any data through the same filter.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.play">
+<code class="sig-name descname">play</code><span class="sig-paren">(</span><em class="sig-param">rate</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.play"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.play" title="Permalink to this definition">¶</a></dt>
+<dd><p>Begin automatically stepping frames forward at the given rate (in fps).
+This can also be accessed by pressing the spacebar.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.quickMinMax">
+<code class="sig-name descname">quickMinMax</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.quickMinMax"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.quickMinMax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Estimate the min/max values of <em>data</em> by subsampling.
+Returns [(min, max), …] with one item per channel</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.setColorMap">
+<code class="sig-name descname">setColorMap</code><span class="sig-paren">(</span><em class="sig-param">colormap</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.setColorMap"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.setColorMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the color map.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>colormap</p></td>
+<td><p>(A ColorMap() instance) The ColorMap to use for coloring
+images.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.setCurrentIndex">
+<code class="sig-name descname">setCurrentIndex</code><span class="sig-paren">(</span><em class="sig-param">ind</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.setCurrentIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.setCurrentIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the currently displayed frame index.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.setImage">
+<code class="sig-name descname">setImage</code><span class="sig-paren">(</span><em class="sig-param">img</em>, <em class="sig-param">autoRange=True</em>, <em class="sig-param">autoLevels=True</em>, <em class="sig-param">levels=None</em>, <em class="sig-param">axes=None</em>, <em class="sig-param">xvals=None</em>, <em class="sig-param">pos=None</em>, <em class="sig-param">scale=None</em>, <em class="sig-param">transform=None</em>, <em class="sig-param">autoHistogramRange=True</em>, <em class="sig-param">levelMode=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.setImage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.setImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the image to be displayed in the widget.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>img</p></td>
+<td><p>(numpy array) the image to be displayed. See <a class="reference internal" href="../graphicsItems/imageitem.html#pyqtgraph.ImageItem.setImage" title="pyqtgraph.ImageItem.setImage"><code class="xref py py-func docutils literal notranslate"><span class="pre">ImageItem.setImage()</span></code></a> and
+<em>notes</em> below.</p></td>
+</tr>
+<tr class="row-odd"><td><p>xvals</p></td>
+<td><p>(numpy array) 1D array of z-axis values corresponding to the first axis
+in a 3D image. For video, this array should contain the time of each
+frame.</p></td>
+</tr>
+<tr class="row-even"><td><p>autoRange</p></td>
+<td><p>(bool) whether to scale/pan the view to fit the image.</p></td>
+</tr>
+<tr class="row-odd"><td><p>autoLevels</p></td>
+<td><p>(bool) whether to update the white/black levels to fit the image.</p></td>
+</tr>
+<tr class="row-even"><td><p>levels</p></td>
+<td><p>(min, max); the white and black level values to use.</p></td>
+</tr>
+<tr class="row-odd"><td><p>axes</p></td>
+<td><p>Dictionary indicating the interpretation for each axis.
+This is only needed to override the default guess. Format is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;t&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">};</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>pos</p></td>
+<td><p>Change the position of the displayed image</p></td>
+</tr>
+<tr class="row-odd"><td><p>scale</p></td>
+<td><p>Change the scale of the displayed image</p></td>
+</tr>
+<tr class="row-even"><td><p>transform</p></td>
+<td><p>Set the transform of the displayed image. This option overrides <em>pos</em>
+and <em>scale</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>autoHistogramRange</p></td>
+<td><p>If True, the histogram y-range is automatically scaled to fit the
+image data.</p></td>
+</tr>
+<tr class="row-even"><td><p>levelMode</p></td>
+<td><p>If specified, this sets the user interaction mode for setting image
+levels. Options are ‘mono’, which provides a single level control for
+all image channels, and ‘rgb’ or ‘rgba’, which provide individual
+controls for each channel.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notes:</strong></p>
+<p>For backward compatibility, image data is assumed to be in column-major order (column, row).
+However, most image data is stored in row-major order (row, column) and will need to be
+transposed before calling setImage():</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">imageview</span><span class="o">.</span><span class="n">setImage</span><span class="p">(</span><span class="n">imagedata</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This requirement can be changed by the <code class="docutils literal notranslate"><span class="pre">imageAxisOrder</span></code>
+<a class="reference internal" href="../config_options.html#apiref-config"><span class="std std-ref">global configuration option</span></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.setLevels">
+<code class="sig-name descname">setLevels</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.setLevels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.setLevels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the min/max (bright and dark) levels.</p>
+<p>See <a class="reference internal" href="../graphicsItems/histogramlutitem.html#pyqtgraph.HistogramLUTItem.setLevels" title="pyqtgraph.HistogramLUTItem.setLevels"><code class="xref py py-func docutils literal notranslate"><span class="pre">HistogramLUTItem.setLevels</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ImageView.setPredefinedGradient">
+<code class="sig-name descname">setPredefinedGradient</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/imageview/ImageView.html#ImageView.setPredefinedGradient"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ImageView.setPredefinedGradient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set one of the gradients defined in <code class="xref py py-class docutils literal notranslate"><span class="pre">GradientEditorItem</span></code>.
+Currently available gradients are:   
+odict_keys([‘thermal’, ‘flame’, ‘yellowy’, ‘bipolar’, ‘spectrum’, ‘cyclic’, ‘greyclip’, ‘grey’, ‘viridis’, ‘inferno’, ‘plasma’, ‘magma’])</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="plotwidget.html"
+                        title="previous chapter">PlotWidget</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dockarea.html"
+                        title="next chapter">dockarea module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/imageview.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dockarea.html" title="dockarea module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="plotwidget.html" title="PlotWidget"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

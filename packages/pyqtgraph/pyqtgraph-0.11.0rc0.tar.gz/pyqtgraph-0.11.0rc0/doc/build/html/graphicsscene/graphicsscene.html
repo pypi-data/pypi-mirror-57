@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>GraphicsScene &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="HoverEvent" href="hoverevent.html" />
+    <link rel="prev" title="GraphicsScene and Mouse Events" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="hoverevent.html" title="HoverEvent"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="GraphicsScene and Mouse Events"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">GraphicsScene and Mouse Events</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="graphicsscene">
+<h1>GraphicsScene<a class="headerlink" href="#graphicsscene" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.GraphicsScene">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">GraphicsScene</code><span class="sig-paren">(</span><em class="sig-param">clickRadius=2</em>, <em class="sig-param">moveDistance=5</em>, <em class="sig-param">parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extension of QGraphicsScene that implements a complete, parallel mouse event system.
+(It would have been preferred to just alter the way QGraphicsScene creates and delivers 
+events, but this turned out to be impossible because the constructor for QGraphicsMouseEvent
+is private)</p>
+<ul class="simple">
+<li><p>Generates MouseClicked events in addition to the usual press/move/release events. 
+(This works around a problem where it is impossible to have one item respond to a 
+drag if another is watching for a click.)</p></li>
+<li><p>Adjustable radius around click that will catch objects so you don’t have to click <em>exactly</em> over small/thin objects</p></li>
+<li><p>Global context menu–if an item implements a context menu, then its parent(s) may also add items to the menu.</p></li>
+<li><p>Allows items to decide _before_ a mouse click which item will be the recipient of mouse events.
+This lets us indicate unambiguously to the user which item they are about to click/drag on</p></li>
+<li><p>Eats mouseMove events that occur too soon after a mouse press.</p></li>
+<li><p>Reimplements items() and itemAt() to circumvent PyQt bug</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Signals</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>sigMouseClicked(event)</p></td>
+<td><p>Emitted when the mouse is clicked over the scene. Use ev.pos() to
+get the click position relative to the item that was clicked on,
+or ev.scenePos() to get the click position in scene coordinates.
+See <code class="xref py py-class docutils literal notranslate"><span class="pre">pyqtgraph.GraphicsScene.MouseClickEvent</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>sigMouseMoved(pos)</p></td>
+<td><p>Emitted when the mouse cursor moves over the scene. The position
+is given in scene coordinates.</p></td>
+</tr>
+<tr class="row-even"><td><p>sigMouseHover(items)</p></td>
+<td><p>Emitted when the mouse is moved over the scene. Items is a list
+of items under the cursor.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Mouse interaction is as follows:</p>
+<ol class="arabic simple">
+<li><p>Every time the mouse moves, the scene delivers both the standard hoverEnter/Move/LeaveEvents 
+as well as custom HoverEvents.</p></li>
+<li><p>Items are sent HoverEvents in Z-order and each item may optionally call event.acceptClicks(button), 
+acceptDrags(button) or both. If this method call returns True, this informs the item that _if_ 
+the user clicks/drags the specified mouse button, the item is guaranteed to be the 
+recipient of click/drag events (the item may wish to change its appearance to indicate this).
+If the call to acceptClicks/Drags returns False, then the item is guaranteed to <em>not</em> receive
+the requested event (because another item has already accepted it).</p></li>
+<li><p>If the mouse is clicked, a mousePressEvent is generated as usual. If any items accept this press event, then
+No click/drag events will be generated and mouse interaction proceeds as defined by Qt. This allows
+items to function properly if they are expecting the usual press/move/release sequence of events.
+(It is recommended that items do NOT accept press events, and instead use click/drag events)
+Note: The default implementation of QGraphicsItem.mousePressEvent will <em>accept</em> the event if the 
+item is has its Selectable or Movable flags enabled. You may need to override this behavior.</p></li>
+<li><p>If no item accepts the mousePressEvent, then the scene will begin delivering mouseDrag and/or mouseClick events.
+If the mouse is moved a sufficient distance (or moved slowly enough) before the button is released, 
+then a mouseDragEvent is generated.
+If no drag events are generated before the button is released, then a mouseClickEvent is generated.</p></li>
+<li><p>Click/drag events are delivered to the item that called acceptClicks/acceptDrags on the HoverEvent
+in step 1. If no such items exist, then the scene attempts to deliver the events to items near the event. 
+ClickEvents may be delivered in this way even if no
+item originally claimed it could accept the click. DragEvents may only be delivered this way if it is the initial
+move in a drag.</p></li>
+</ol>
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">clickRadius=2</em>, <em class="sig-param">moveDistance=5</em>, <em class="sig-param">parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.addParentContextMenus">
+<code class="sig-name descname">addParentContextMenus</code><span class="sig-paren">(</span><em class="sig-param">item</em>, <em class="sig-param">menu</em>, <em class="sig-param">event</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.addParentContextMenus"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.addParentContextMenus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Can be called by any item in the scene to expand its context menu to include parent context menus.
+Parents may implement getContextMenus to add new menus / actions to the existing menu.
+getContextMenus must accept 1 argument (the event that generated the original menu) and
+return a single QMenu or a list of QMenus.</p>
+<p>The final menu will look like:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Original Item 1</div>
+<div class="line">Original Item 2</div>
+<div class="line">…</div>
+<div class="line">Original Item N</div>
+<div class="line">——————</div>
+<div class="line">Parent Item 1</div>
+<div class="line">Parent Item 2</div>
+<div class="line">…</div>
+<div class="line">Grandparent Item 1</div>
+<div class="line">…</div>
+</div>
+</div></blockquote>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>item</p></td>
+<td><p>The item that initially created the context menu
+(This is probably the item making the call to this function)</p></td>
+</tr>
+<tr class="row-odd"><td><p>menu</p></td>
+<td><p>The context menu being shown by the item</p></td>
+</tr>
+<tr class="row-even"><td><p>event</p></td>
+<td><p>The original event that triggered the menu to appear.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.itemAt">
+<code class="sig-name descname">itemAt</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">pos: PySide2.QtCore.QPointF</em>, <em class="sig-param">deviceTransform: PySide2.QtGui.QTransform</em><span class="sig-paren">)</span> &#x2192; PySide2.QtWidgets.QGraphicsItem<a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.itemAt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.itemAt" title="Permalink to this definition">¶</a></dt>
+<dd><p>itemAt(self, x: float, y: float, deviceTransform: PySide2.QtGui.QTransform) -&gt; PySide2.QtWidgets.QGraphicsItem</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.items">
+<code class="sig-name descname">items</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">order: PySide2.QtCore.Qt.SortOrder = PySide2.QtCore.Qt.SortOrder.DescendingOrder</em><span class="sig-paren">)</span> &#x2192; typing.List[PySide2.QtWidgets.QGraphicsItem]<a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.items"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.items" title="Permalink to this definition">¶</a></dt>
+<dd><p>items(self, path: PySide2.QtGui.QPainterPath, mode: PySide2.QtCore.Qt.ItemSelectionMode = PySide2.QtCore.Qt.ItemSelectionMode.IntersectsItemShape, order: PySide2.QtCore.Qt.SortOrder = PySide2.QtCore.Qt.SortOrder.DescendingOrder, deviceTransform: PySide2.QtGui.QTransform = Default(QTransform)) -&gt; typing.List[PySide2.QtWidgets.QGraphicsItem]
+items(self, polygon: PySide2.QtGui.QPolygonF, mode: PySide2.QtCore.Qt.ItemSelectionMode = PySide2.QtCore.Qt.ItemSelectionMode.IntersectsItemShape, order: PySide2.QtCore.Qt.SortOrder = PySide2.QtCore.Qt.SortOrder.DescendingOrder, deviceTransform: PySide2.QtGui.QTransform = Default(QTransform)) -&gt; typing.List[PySide2.QtWidgets.QGraphicsItem]
+items(self, pos: PySide2.QtCore.QPointF, mode: PySide2.QtCore.Qt.ItemSelectionMode = PySide2.QtCore.Qt.ItemSelectionMode.IntersectsItemShape, order: PySide2.QtCore.Qt.SortOrder = PySide2.QtCore.Qt.SortOrder.DescendingOrder, deviceTransform: PySide2.QtGui.QTransform = Default(QTransform)) -&gt; typing.List[PySide2.QtWidgets.QGraphicsItem]
+items(self, rect: PySide2.QtCore.QRectF, mode: PySide2.QtCore.Qt.ItemSelectionMode = PySide2.QtCore.Qt.ItemSelectionMode.IntersectsItemShape, order: PySide2.QtCore.Qt.SortOrder = PySide2.QtCore.Qt.SortOrder.DescendingOrder, deviceTransform: PySide2.QtGui.QTransform = Default(QTransform)) -&gt; typing.List[PySide2.QtWidgets.QGraphicsItem]
+items(self, x: float, y: float, w: float, h: float, mode: PySide2.QtCore.Qt.ItemSelectionMode, order: PySide2.QtCore.Qt.SortOrder, deviceTransform: PySide2.QtGui.QTransform = Default(QTransform)) -&gt; typing.List[PySide2.QtWidgets.QGraphicsItem]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.itemsNearEvent">
+<code class="sig-name descname">itemsNearEvent</code><span class="sig-paren">(</span><em class="sig-param">event</em>, <em class="sig-param">selMode=PySide2.QtCore.Qt.ItemSelectionMode.IntersectsItemShape</em>, <em class="sig-param">sortOrder=PySide2.QtCore.Qt.SortOrder.DescendingOrder</em>, <em class="sig-param">hoverable=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.itemsNearEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.itemsNearEvent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an iterator that iterates first through the items that directly intersect point (in Z order)
+followed by any other items that are within the scene’s click radius.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.mouseDoubleClickEvent">
+<code class="sig-name descname">mouseDoubleClickEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtWidgets.QGraphicsSceneMouseEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.mouseDoubleClickEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.mouseDoubleClickEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.mouseMoveEvent">
+<code class="sig-name descname">mouseMoveEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtWidgets.QGraphicsSceneMouseEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.mouseMoveEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.mouseMoveEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.mousePressEvent">
+<code class="sig-name descname">mousePressEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtWidgets.QGraphicsSceneMouseEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.mousePressEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.mousePressEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.mouseReleaseEvent">
+<code class="sig-name descname">mouseReleaseEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtWidgets.QGraphicsSceneMouseEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.mouseReleaseEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.mouseReleaseEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.prepareForPaint">
+<code class="sig-name descname">prepareForPaint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.prepareForPaint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.prepareForPaint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called before every render. This method will inform items that the scene is about to
+be rendered by emitting sigPrepareForPaint.</p>
+<p>This allows items to delay expensive processing until they know a paint will be required.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.registerObject">
+<em class="property">classmethod </em><code class="sig-name descname">registerObject</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.registerObject"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.registerObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Workaround for PyQt bug in qgraphicsscene.items()
+All subclasses of QGraphicsObject must register themselves with this function.
+(otherwise, mouse interaction with those objects will likely fail)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">painter: PySide2.QtGui.QPainter</em>, <em class="sig-param">target: PySide2.QtCore.QRectF = Default(QRectF)</em>, <em class="sig-param">source: PySide2.QtCore.QRectF = Default(QRectF)</em>, <em class="sig-param">aspectRatioMode: PySide2.QtCore.Qt.AspectRatioMode = PySide2.QtCore.Qt.AspectRatioMode.KeepAspectRatio</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.render"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.selectedItems">
+<code class="sig-name descname">selectedItems</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; typing.List[PySide2.QtWidgets.QGraphicsItem]<a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.selectedItems"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.selectedItems" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.setClickRadius">
+<code class="sig-name descname">setClickRadius</code><span class="sig-paren">(</span><em class="sig-param">r</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.setClickRadius"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.setClickRadius" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the distance away from mouse clicks to search for interacting items.
+When clicking, the scene searches first for items that directly intersect the click position
+followed by any other items that are within a rectangle that extends r pixels away from the 
+click position.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsScene.setMoveDistance">
+<code class="sig-name descname">setMoveDistance</code><span class="sig-paren">(</span><em class="sig-param">d</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/GraphicsScene/GraphicsScene.html#GraphicsScene.setMoveDistance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsScene.setMoveDistance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the distance the mouse must move after a press before mouseMoveEvents will be delivered.
+This ensures that clicks with a small amount of movement are recognized as clicks instead of
+drags.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">GraphicsScene and Mouse Events</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="hoverevent.html"
+                        title="next chapter">HoverEvent</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/graphicsscene/graphicsscene.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="hoverevent.html" title="HoverEvent"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="GraphicsScene and Mouse Events"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >GraphicsScene and Mouse Events</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>TreeWidget &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CheckTable" href="checktable.html" />
+    <link rel="prev" title="TableWidget" href="tablewidget.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="checktable.html" title="CheckTable"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="tablewidget.html" title="TableWidget"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="treewidget">
+<h1>TreeWidget<a class="headerlink" href="#treewidget" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.TreeWidget">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">TreeWidget</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extends QTreeWidget to allow internal drag/drop with widgets in the tree.
+Also maintains the expanded state of subtrees as they are moved.
+This class demonstrates the absurd lengths one must go to to make drag/drop work.</p>
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.addTopLevelItem">
+<code class="sig-name descname">addTopLevelItem</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">item: PySide2.QtWidgets.QTreeWidgetItem</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.addTopLevelItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.addTopLevelItem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.addTopLevelItems">
+<code class="sig-name descname">addTopLevelItems</code><span class="sig-paren">(</span><em class="sig-param">self, items: typing.List[PySide2.QtWidgets.QTreeWidgetItem]</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.addTopLevelItems"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.addTopLevelItems" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.dropEvent">
+<code class="sig-name descname">dropEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QDropEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.dropEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.dropEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.dropMimeData">
+<code class="sig-name descname">dropMimeData</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">parent: PySide2.QtWidgets.QTreeWidgetItem</em>, <em class="sig-param">index: int</em>, <em class="sig-param">data: PySide2.QtCore.QMimeData</em>, <em class="sig-param">action: PySide2.QtCore.Qt.DropAction</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.dropMimeData"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.dropMimeData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.insertTopLevelItem">
+<code class="sig-name descname">insertTopLevelItem</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">index: int</em>, <em class="sig-param">item: PySide2.QtWidgets.QTreeWidgetItem</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.insertTopLevelItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.insertTopLevelItem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.insertTopLevelItems">
+<code class="sig-name descname">insertTopLevelItems</code><span class="sig-paren">(</span><em class="sig-param">self, index: int, items: typing.List[PySide2.QtWidgets.QTreeWidgetItem]</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.insertTopLevelItems"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.insertTopLevelItems" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.invisibleRootItem">
+<code class="sig-name descname">invisibleRootItem</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; PySide2.QtWidgets.QTreeWidgetItem<a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.invisibleRootItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.invisibleRootItem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.itemFromIndex">
+<code class="sig-name descname">itemFromIndex</code><span class="sig-paren">(</span><em class="sig-param">index</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.itemFromIndex"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.itemFromIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the item and column corresponding to a QModelIndex.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.itemMoving">
+<code class="sig-name descname">itemMoving</code><span class="sig-paren">(</span><em class="sig-param">item</em>, <em class="sig-param">parent</em>, <em class="sig-param">index</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.itemMoving"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.itemMoving" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when item has been dropped elsewhere in the tree.
+Return True to accept the move, False to reject.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.itemWidget">
+<code class="sig-name descname">itemWidget</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">item: PySide2.QtWidgets.QTreeWidgetItem</em>, <em class="sig-param">column: int</em><span class="sig-paren">)</span> &#x2192; PySide2.QtWidgets.QWidget<a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.itemWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.itemWidget" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.setColumnCount">
+<code class="sig-name descname">setColumnCount</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">columns: int</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.setColumnCount"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.setColumnCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.setItemWidget">
+<code class="sig-name descname">setItemWidget</code><span class="sig-paren">(</span><em class="sig-param">item</em>, <em class="sig-param">col</em>, <em class="sig-param">wid</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.setItemWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.setItemWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overrides QTreeWidget.setItemWidget such that widgets are added inside an invisible wrapper widget.
+This makes it possible to move the item in and out of the tree without its widgets being automatically deleted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TreeWidget.takeTopLevelItem">
+<code class="sig-name descname">takeTopLevelItem</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">index: int</em><span class="sig-paren">)</span> &#x2192; PySide2.QtWidgets.QTreeWidgetItem<a class="reference internal" href="../_modules/pyqtgraph/widgets/TreeWidget.html#TreeWidget.takeTopLevelItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TreeWidget.takeTopLevelItem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="tablewidget.html"
+                        title="previous chapter">TableWidget</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="checktable.html"
+                        title="next chapter">CheckTable</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/treewidget.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="checktable.html" title="CheckTable"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="tablewidget.html" title="TableWidget"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>pyqtgraph.widgets.DataTreeWidget &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../pyqtgraph.html" accesskey="U">pyqtgraph</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for pyqtgraph.widgets.DataTreeWidget</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="kn">from</span> <span class="nn">..Qt</span> <span class="k">import</span> <span class="n">QtGui</span><span class="p">,</span> <span class="n">QtCore</span>
+<span class="kn">from</span> <span class="nn">..pgcollections</span> <span class="k">import</span> <span class="n">OrderedDict</span>
+<span class="kn">from</span> <span class="nn">.TableWidget</span> <span class="k">import</span> <span class="n">TableWidget</span>
+<span class="kn">from</span> <span class="nn">..python2_3</span> <span class="k">import</span> <span class="n">asUnicode</span>
+<span class="kn">import</span> <span class="nn">types</span><span class="o">,</span> <span class="nn">traceback</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">metaarray</span>
+    <span class="n">HAVE_METAARRAY</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="n">HAVE_METAARRAY</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DataTreeWidget&#39;</span><span class="p">]</span>
+
+<div class="viewcode-block" id="DataTreeWidget"><a class="viewcode-back" href="../../../widgets/datatreewidget.html#pyqtgraph.DataTreeWidget">[docs]</a><span class="k">class</span> <span class="nc">DataTreeWidget</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Widget for displaying hierarchical python data structures</span>
+<span class="sd">    (eg, nested dicts, lists, and arrays)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<div class="viewcode-block" id="DataTreeWidget.__init__"><a class="viewcode-back" href="../../../widgets/datatreewidget.html#pyqtgraph.DataTreeWidget.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setVerticalScrollMode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ScrollPerPixel</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setData</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setColumnCount</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setHeaderLabels</span><span class="p">([</span><span class="s1">&#39;key / index&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setAlternatingRowColors</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span></div>
+        
+<div class="viewcode-block" id="DataTreeWidget.setData"><a class="viewcode-back" href="../../../widgets/datatreewidget.html#pyqtgraph.DataTreeWidget.setData">[docs]</a>    <span class="k">def</span> <span class="nf">setData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">hideRoot</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;data should be a dictionary.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nodes</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">buildTree</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">invisibleRootItem</span><span class="p">(),</span> <span class="n">hideRoot</span><span class="o">=</span><span class="n">hideRoot</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">expandToDepth</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">resizeColumnToContents</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span></div>
+        
+    <span class="k">def</span> <span class="nf">buildTree</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">hideRoot</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">path</span><span class="o">=</span><span class="p">()):</span>
+        <span class="k">if</span> <span class="n">hideRoot</span><span class="p">:</span>
+            <span class="n">node</span> <span class="o">=</span> <span class="n">parent</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">node</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="p">([</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">])</span>
+            <span class="n">parent</span><span class="o">.</span><span class="n">addChild</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+        
+        <span class="c1"># record the path to the node so it can be retrieved later</span>
+        <span class="c1"># (this is used by DiffTreeWidget)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="n">path</span><span class="p">]</span> <span class="o">=</span> <span class="n">node</span>
+
+        <span class="n">typeStr</span><span class="p">,</span> <span class="n">desc</span><span class="p">,</span> <span class="n">childs</span><span class="p">,</span> <span class="n">widget</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">node</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">typeStr</span><span class="p">)</span>
+        <span class="n">node</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">desc</span><span class="p">)</span>
+            
+        <span class="c1"># Truncate description and add text box if needed</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">desc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+            <span class="n">desc</span> <span class="o">=</span> <span class="n">desc</span><span class="p">[:</span><span class="mi">97</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;...&#39;</span>
+            <span class="k">if</span> <span class="n">widget</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">widget</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QPlainTextEdit</span><span class="p">(</span><span class="n">asUnicode</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+                <span class="n">widget</span><span class="o">.</span><span class="n">setMaximumHeight</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+                <span class="n">widget</span><span class="o">.</span><span class="n">setReadOnly</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+        
+        <span class="c1"># Add widget to new subnode</span>
+        <span class="k">if</span> <span class="n">widget</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">widget</span><span class="p">)</span>
+            <span class="n">subnode</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="p">([</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">])</span>
+            <span class="n">node</span><span class="o">.</span><span class="n">addChild</span><span class="p">(</span><span class="n">subnode</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setItemWidget</span><span class="p">(</span><span class="n">subnode</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">widget</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setFirstItemColumnSpanned</span><span class="p">(</span><span class="n">subnode</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+            
+        <span class="c1"># recurse to children</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">childs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buildTree</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">node</span><span class="p">,</span> <span class="n">asUnicode</span><span class="p">(</span><span class="n">key</span><span class="p">),</span> <span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="o">+</span><span class="p">(</span><span class="n">key</span><span class="p">,))</span>
+
+<div class="viewcode-block" id="DataTreeWidget.parse"><a class="viewcode-back" href="../../../widgets/datatreewidget.html#pyqtgraph.DataTreeWidget.parse">[docs]</a>    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Given any python object, return:</span>
+<span class="sd">        * type</span>
+<span class="sd">        * a short string representation</span>
+<span class="sd">        * a dict of sub-objects to be parsed</span>
+<span class="sd">        * optional widget to display as sub-node</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># defaults for all objects</span>
+        <span class="n">typeStr</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">if</span> <span class="n">typeStr</span> <span class="o">==</span> <span class="s1">&#39;instance&#39;</span><span class="p">:</span>
+            <span class="n">typeStr</span> <span class="o">+=</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">data</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="n">widget</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">desc</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">childs</span> <span class="o">=</span> <span class="p">{}</span>
+        
+        <span class="c1"># type-specific changes</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="n">desc</span> <span class="o">=</span> <span class="s2">&quot;length=</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">OrderedDict</span><span class="p">):</span>
+                <span class="n">childs</span> <span class="o">=</span> <span class="n">data</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">childs</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">items</span><span class="p">()))</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)):</span>
+            <span class="n">desc</span> <span class="o">=</span> <span class="s2">&quot;length=</span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="n">childs</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">HAVE_METAARRAY</span> <span class="ow">and</span> <span class="p">(</span><span class="nb">hasattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s1">&#39;implements&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">implements</span><span class="p">(</span><span class="s1">&#39;MetaArray&#39;</span><span class="p">)):</span>
+            <span class="n">childs</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">([</span>
+                <span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)),</span>
+                <span class="p">(</span><span class="s1">&#39;meta&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">infoCopy</span><span class="p">())</span>
+            <span class="p">])</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+            <span class="n">desc</span> <span class="o">=</span> <span class="s2">&quot;shape=</span><span class="si">%s</span><span class="s2"> dtype=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+            <span class="n">table</span> <span class="o">=</span> <span class="n">TableWidget</span><span class="p">()</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">setData</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">setMaximumHeight</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+            <span class="n">widget</span> <span class="o">=</span> <span class="n">table</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">TracebackType</span><span class="p">):</span>  <span class="c1">## convert traceback to a list of strings</span>
+            <span class="n">frames</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">strip</span><span class="p">,</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_list</span><span class="p">(</span><span class="n">traceback</span><span class="o">.</span><span class="n">extract_tb</span><span class="p">(</span><span class="n">data</span><span class="p">))))</span>
+            <span class="c1">#childs = OrderedDict([</span>
+                <span class="c1">#(i, {&#39;file&#39;: child[0], &#39;line&#39;: child[1], &#39;function&#39;: child[2], &#39;code&#39;: child[3]})</span>
+                <span class="c1">#for i, child in enumerate(frames)])</span>
+            <span class="c1">#childs = OrderedDict([(i, ch) for i,ch in enumerate(frames)])</span>
+            <span class="n">widget</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QPlainTextEdit</span><span class="p">(</span><span class="n">asUnicode</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">frames</span><span class="p">)))</span>
+            <span class="n">widget</span><span class="o">.</span><span class="n">setMaximumHeight</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+            <span class="n">widget</span><span class="o">.</span><span class="n">setReadOnly</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">desc</span> <span class="o">=</span> <span class="n">asUnicode</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="n">typeStr</span><span class="p">,</span> <span class="n">desc</span><span class="p">,</span> <span class="n">childs</span><span class="p">,</span> <span class="n">widget</span></div></div>
+        
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../pyqtgraph.html" >pyqtgraph</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

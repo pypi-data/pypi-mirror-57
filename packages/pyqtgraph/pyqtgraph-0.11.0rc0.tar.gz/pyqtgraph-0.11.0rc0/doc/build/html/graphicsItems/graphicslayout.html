@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>GraphicsLayout &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PlotCurveItem" href="plotcurveitem.html" />
+    <link rel="prev" title="ROI" href="roi.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="plotcurveitem.html" title="PlotCurveItem"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="roi.html" title="ROI"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="graphicslayout">
+<h1>GraphicsLayout<a class="headerlink" href="#graphicslayout" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.GraphicsLayout">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">GraphicsLayout</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">border=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used for laying out GraphicsWidgets in a grid.
+This is usually created automatically as part of a <code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsWindow</span></code> or <a class="reference internal" href="../widgets/graphicslayoutwidget.html#pyqtgraph.GraphicsLayoutWidget" title="pyqtgraph.GraphicsLayoutWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsLayoutWidget</span></code></a>.</p>
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">border=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Bases:</strong> <a class="reference internal" href="graphicsitem.html#pyqtgraph.GraphicsItem" title="pyqtgraph.GraphicsItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsItem</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">QtGui.QGraphicsWidget</span></code></p>
+<p>Extends QGraphicsWidget with several helpful methods and workarounds for PyQt bugs. 
+Most of the extra functionality is inherited from <a class="reference internal" href="graphicsitem.html#pyqtgraph.GraphicsItem" title="pyqtgraph.GraphicsItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsItem</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.addItem">
+<code class="sig-name descname">addItem</code><span class="sig-paren">(</span><em class="sig-param">item</em>, <em class="sig-param">row=None</em>, <em class="sig-param">col=None</em>, <em class="sig-param">rowspan=1</em>, <em class="sig-param">colspan=1</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.addItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.addItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an item to the layout and place it in the next available cell (or in the cell specified).
+The item must be an instance of a QGraphicsWidget subclass.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.addLabel">
+<code class="sig-name descname">addLabel</code><span class="sig-paren">(</span><em class="sig-param">text=' '</em>, <em class="sig-param">row=None</em>, <em class="sig-param">col=None</em>, <em class="sig-param">rowspan=1</em>, <em class="sig-param">colspan=1</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.addLabel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.addLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a LabelItem with <em>text</em> and place it in the next available cell (or in the cell specified)
+All extra keyword arguments are passed to <a class="reference internal" href="labelitem.html#pyqtgraph.LabelItem.__init__" title="pyqtgraph.LabelItem.__init__"><code class="xref py py-func docutils literal notranslate"><span class="pre">LabelItem.__init__</span></code></a>
+Returns the created item.</p>
+<p>To create a vertical label, use <em>angle</em> = -90.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.addLayout">
+<code class="sig-name descname">addLayout</code><span class="sig-paren">(</span><em class="sig-param">row=None</em>, <em class="sig-param">col=None</em>, <em class="sig-param">rowspan=1</em>, <em class="sig-param">colspan=1</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.addLayout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.addLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an empty GraphicsLayout and place it in the next available cell (or in the cell specified)
+All extra keyword arguments are passed to <a class="reference internal" href="#pyqtgraph.GraphicsLayout.__init__" title="pyqtgraph.GraphicsLayout.__init__"><code class="xref py py-func docutils literal notranslate"><span class="pre">GraphicsLayout.__init__</span></code></a>
+Returns the created item.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.addPlot">
+<code class="sig-name descname">addPlot</code><span class="sig-paren">(</span><em class="sig-param">row=None</em>, <em class="sig-param">col=None</em>, <em class="sig-param">rowspan=1</em>, <em class="sig-param">colspan=1</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.addPlot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.addPlot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a PlotItem and place it in the next available cell (or in the cell specified)
+All extra keyword arguments are passed to <a class="reference internal" href="plotitem.html#pyqtgraph.PlotItem.__init__" title="pyqtgraph.PlotItem.__init__"><code class="xref py py-func docutils literal notranslate"><span class="pre">PlotItem.__init__</span></code></a>
+Returns the created item.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.addViewBox">
+<code class="sig-name descname">addViewBox</code><span class="sig-paren">(</span><em class="sig-param">row=None</em>, <em class="sig-param">col=None</em>, <em class="sig-param">rowspan=1</em>, <em class="sig-param">colspan=1</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.addViewBox"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.addViewBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a ViewBox and place it in the next available cell (or in the cell specified)
+All extra keyword arguments are passed to <a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.__init__" title="pyqtgraph.ViewBox.__init__"><code class="xref py py-func docutils literal notranslate"><span class="pre">ViewBox.__init__</span></code></a>
+Returns the created item.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.boundingRect">
+<code class="sig-name descname">boundingRect</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; PySide2.QtCore.QRectF<a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.boundingRect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.boundingRect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.getItem">
+<code class="sig-name descname">getItem</code><span class="sig-paren">(</span><em class="sig-param">row</em>, <em class="sig-param">col</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.getItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.getItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the item in (<em>row</em>, <em>col</em>). If the cell is empty, return None.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.nextCol">
+<code class="sig-name descname">nextCol</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.nextCol"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.nextCol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias of nextColumn</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.nextColumn">
+<code class="sig-name descname">nextColumn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.nextColumn"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.nextColumn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Advance to next available column
+(generally only for internal use–called by addItem)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.nextRow">
+<code class="sig-name descname">nextRow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.nextRow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.nextRow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Advance to next row for automatic item placement</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.removeItem">
+<code class="sig-name descname">removeItem</code><span class="sig-paren">(</span><em class="sig-param">item</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.removeItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.removeItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove <em>item</em> from the layout.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.setBorder">
+<code class="sig-name descname">setBorder</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.setBorder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.setBorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the pen used to draw border between cells.</p>
+<p>See <a class="reference internal" href="../functions.html#pyqtgraph.mkPen" title="pyqtgraph.mkPen"><code class="xref py py-func docutils literal notranslate"><span class="pre">mkPen</span></code></a> for arguments.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayout.setContentsMargins">
+<code class="sig-name descname">setContentsMargins</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">left: float</em>, <em class="sig-param">top: float</em>, <em class="sig-param">right: float</em>, <em class="sig-param">bottom: float</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphicsLayout.html#GraphicsLayout.setContentsMargins"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayout.setContentsMargins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="roi.html"
+                        title="previous chapter">ROI</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="plotcurveitem.html"
+                        title="next chapter">PlotCurveItem</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/graphicsItems/graphicslayout.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="plotcurveitem.html" title="PlotCurveItem"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="roi.html" title="ROI"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

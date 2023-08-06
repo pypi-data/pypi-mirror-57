@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>PyQtGraph’s 3D Graphics System &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="GLViewWidget" href="glviewwidget.html" />
+    <link rel="prev" title="BusyCursor" href="../widgets/busycursor.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="glviewwidget.html" title="GLViewWidget"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../widgets/busycursor.html" title="BusyCursor"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" accesskey="U">API Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pyqtgraph-s-3d-graphics-system">
+<h1>PyQtGraph’s 3D Graphics System<a class="headerlink" href="#pyqtgraph-s-3d-graphics-system" title="Permalink to this headline">¶</a></h1>
+<p>The 3D graphics system in pyqtgraph is composed of a <code class="xref py py-class docutils literal notranslate"><span class="pre">view</span> <span class="pre">widget</span></code> and
+several graphics items (all subclasses of <code class="xref py py-class docutils literal notranslate"><span class="pre">GLGraphicsItem</span></code>) which
+can be added to a view widget.</p>
+<p><strong>Note 1:</strong> pyqtgraph.opengl is based on the deprecated OpenGL fixed-function pipeline. Although it is
+currently a functioning system, it is likely to be superceded in the future by <a class="reference external" href="http://vispy.org">VisPy</a>.</p>
+<p><strong>Note 2:</strong> use of this system requires python-opengl bindings. Linux users should install the python-opengl
+packages from their distribution. Windows/OSX users can download from <a class="reference external" href="http://pyopengl.sourceforge.net">http://pyopengl.sourceforge.net</a>.</p>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glviewwidget.html">GLViewWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glgriditem.html">GLGridItem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glsurfaceplotitem.html">GLSurfacePlotItem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glvolumeitem.html">GLVolumeItem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glimageitem.html">GLImageItem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glmeshitem.html">GLMeshItem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gllineplotitem.html">GLLinePlotItem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glaxisitem.html">GLAxisItem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glgraphicsitem.html">GLGraphicsItem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glscatterplotitem.html">GLScatterPlotItem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="meshdata.html">MeshData</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../widgets/busycursor.html"
+                        title="previous chapter">BusyCursor</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="glviewwidget.html"
+                        title="next chapter">GLViewWidget</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/3dgraphics/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="glviewwidget.html" title="GLViewWidget"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../widgets/busycursor.html" title="BusyCursor"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

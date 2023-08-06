@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Parameter Trees &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ParameterTree API Reference" href="apiref.html" />
+    <link rel="prev" title="Rapid GUI prototyping" href="../prototyping.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="apiref.html" title="ParameterTree API Reference"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../prototyping.html" title="Rapid GUI prototyping"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="parameter-trees">
+<span id="parametertree"></span><h1>Parameter Trees<a class="headerlink" href="#parameter-trees" title="Permalink to this headline">¶</a></h1>
+<p>Parameter trees are a system for handling hierarchies of parameters while automatically generating one or more GUIs to display and interact with the parameters.
+This feature is commonly seen, for example, in user interface design applications which display a list of editable properties for each widget.
+Parameters generally have a name, a data type (int, float, string, color, etc), and a value matching the data type. Parameters may be grouped and nested
+to form hierarchies and may be subclassed to provide custom behavior and display widgets.</p>
+<p>PyQtGraph’s parameter tree system works similarly to the model-view architecture used by some components of Qt: Parameters are purely data-handling classes
+that exist independent of any graphical interface. A ParameterTree is a widget that automatically generates a graphical interface which represents
+the state of a haierarchy of Parameter objects and allows the user to edit the values within that hierarchy. This separation of data (model) and graphical
+interface (view) allows the same data to be represented multiple times and in a variety of different ways.</p>
+<p>For more information, see the ‘parametertree’ example included with pyqtgraph and the API reference</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="apiref.html">ParameterTree API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="parameter.html">Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parametertree.html">ParameterTree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parametertypes.html">Built-in Parameter Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="parameteritem.html">ParameterItem</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../prototyping.html"
+                        title="previous chapter">Rapid GUI prototyping</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="apiref.html"
+                        title="next chapter">ParameterTree API Reference</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/parametertree/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="apiref.html" title="ParameterTree API Reference"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../prototyping.html" title="Rapid GUI prototyping"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

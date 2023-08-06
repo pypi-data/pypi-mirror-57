@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>CurvePoint &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CurveArrow" href="curvearrow.html" />
+    <link rel="prev" title="FillBetweenItem" href="fillbetweenitem.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="curvearrow.html" title="CurveArrow"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="fillbetweenitem.html" title="FillBetweenItem"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="curvepoint">
+<h1>CurvePoint<a class="headerlink" href="#curvepoint" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.CurvePoint">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">CurvePoint</code><span class="sig-paren">(</span><em class="sig-param">curve</em>, <em class="sig-param">index=0</em>, <em class="sig-param">pos=None</em>, <em class="sig-param">rotate=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/CurvePoint.html#CurvePoint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.CurvePoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>A GraphicsItem that sets its location to a point on a PlotCurveItem.
+Also rotates to be tangent to the curve.
+The position along the curve is a Qt property, and thus can be easily animated.</p>
+<p>Note: This class does not display anything; see CurveArrow for an applied example</p>
+<dl class="method">
+<dt id="pyqtgraph.CurvePoint.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">curve</em>, <em class="sig-param">index=0</em>, <em class="sig-param">pos=None</em>, <em class="sig-param">rotate=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/CurvePoint.html#CurvePoint.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.CurvePoint.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position can be set either as an index referring to the sample number or
+the position 0.0 - 1.0
+If <em>rotate</em> is True, then the item rotates to match the tangent of the curve.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.CurvePoint.boundingRect">
+<code class="sig-name descname">boundingRect</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; PySide2.QtCore.QRectF<a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/CurvePoint.html#CurvePoint.boundingRect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.CurvePoint.boundingRect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.CurvePoint.event">
+<code class="sig-name descname">event</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">ev: PySide2.QtCore.QEvent</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/CurvePoint.html#CurvePoint.event"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.CurvePoint.event" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.CurvePoint.paint">
+<code class="sig-name descname">paint</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">painter: PySide2.QtGui.QPainter</em>, <em class="sig-param">option: PySide2.QtWidgets.QStyleOptionGraphicsItem</em>, <em class="sig-param">widget: typing.Union[PySide2.QtWidgets.QWidget</em>, <em class="sig-param">NoneType] = None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/CurvePoint.html#CurvePoint.paint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.CurvePoint.paint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.CurvePoint.setPos">
+<code class="sig-name descname">setPos</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">pos: PySide2.QtCore.QPointF</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/CurvePoint.html#CurvePoint.setPos"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.CurvePoint.setPos" title="Permalink to this definition">¶</a></dt>
+<dd><p>setPos(self, x: float, y: float)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="fillbetweenitem.html"
+                        title="previous chapter">FillBetweenItem</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="curvearrow.html"
+                        title="next chapter">CurveArrow</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/graphicsItems/curvepoint.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="curvearrow.html" title="CurveArrow"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="fillbetweenitem.html" title="FillBetweenItem"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

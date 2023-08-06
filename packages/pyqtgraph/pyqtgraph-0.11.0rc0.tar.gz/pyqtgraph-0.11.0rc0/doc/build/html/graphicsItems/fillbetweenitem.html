@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>FillBetweenItem &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CurvePoint" href="curvepoint.html" />
+    <link rel="prev" title="ArrowItem" href="arrowitem.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="curvepoint.html" title="CurvePoint"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="arrowitem.html" title="ArrowItem"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="fillbetweenitem">
+<h1>FillBetweenItem<a class="headerlink" href="#fillbetweenitem" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.FillBetweenItem">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">FillBetweenItem</code><span class="sig-paren">(</span><em class="sig-param">curve1=None</em>, <em class="sig-param">curve2=None</em>, <em class="sig-param">brush=None</em>, <em class="sig-param">pen=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/FillBetweenItem.html#FillBetweenItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FillBetweenItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>GraphicsItem filling the space between two PlotDataItems.</p>
+<dl class="method">
+<dt id="pyqtgraph.FillBetweenItem.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">curve1=None</em>, <em class="sig-param">curve2=None</em>, <em class="sig-param">brush=None</em>, <em class="sig-param">pen=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/FillBetweenItem.html#FillBetweenItem.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FillBetweenItem.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.FillBetweenItem.setBrush">
+<code class="sig-name descname">setBrush</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/FillBetweenItem.html#FillBetweenItem.setBrush"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FillBetweenItem.setBrush" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the fill brush. Acceps the same arguments as pg.mkBrush()</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.FillBetweenItem.setCurves">
+<code class="sig-name descname">setCurves</code><span class="sig-paren">(</span><em class="sig-param">curve1</em>, <em class="sig-param">curve2</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/FillBetweenItem.html#FillBetweenItem.setCurves"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FillBetweenItem.setCurves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the curves to fill between.</p>
+<p>Arguments must be instances of PlotDataItem or PlotCurveItem.</p>
+<p>Added in version 0.9.9</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.FillBetweenItem.setPen">
+<code class="sig-name descname">setPen</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">pen: PySide2.QtGui.QPen</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/FillBetweenItem.html#FillBetweenItem.setPen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FillBetweenItem.setPen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="arrowitem.html"
+                        title="previous chapter">ArrowItem</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="curvepoint.html"
+                        title="next chapter">CurvePoint</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/graphicsItems/fillbetweenitem.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="curvepoint.html" title="CurvePoint"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="arrowitem.html" title="ArrowItem"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

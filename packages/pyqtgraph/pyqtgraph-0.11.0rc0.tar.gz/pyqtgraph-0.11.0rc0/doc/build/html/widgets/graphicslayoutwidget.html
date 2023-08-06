@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>GraphicsLayoutWidget &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ProgressDialog" href="progressdialog.html" />
+    <link rel="prev" title="ColorButton" href="colorbutton.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="progressdialog.html" title="ProgressDialog"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="colorbutton.html" title="ColorButton"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="graphicslayoutwidget">
+<h1>GraphicsLayoutWidget<a class="headerlink" href="#graphicslayoutwidget" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.GraphicsLayoutWidget">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">GraphicsLayoutWidget</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">show=False</em>, <em class="sig-param">size=None</em>, <em class="sig-param">title=None</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsLayoutWidget.html#GraphicsLayoutWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayoutWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience class consisting of a <a class="reference internal" href="graphicsview.html#pyqtgraph.GraphicsView" title="pyqtgraph.GraphicsView"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsView</span></code></a> with a single <a class="reference internal" href="../graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout" title="pyqtgraph.GraphicsLayout"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsLayout</span></code></a> as its central item.</p>
+<p>This widget is an easy starting point for generating multi-panel figures.
+Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">w</span> <span class="o">=</span> <span class="n">pg</span><span class="o">.</span><span class="n">GraphicsLayoutWidget</span><span class="p">()</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">addPlot</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">addPlot</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">addViewBox</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">colspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>parent<span class="classifier">QWidget or None</span></dt><dd><p>The parent widget (see QWidget.__init__)</p>
+</dd>
+<dt>show<span class="classifier">bool</span></dt><dd><p>If True, then immediately show the widget after it is created.
+If the widget has no parent, then it will be shown inside a new window.</p>
+</dd>
+<dt>size<span class="classifier">(width, height) tuple</span></dt><dd><p>Optionally resize the widget. Note: if this widget is placed inside a
+layout, then this argument has no effect.</p>
+</dd>
+<dt>title<span class="classifier">str or None</span></dt><dd><p>If specified, then set the window title for this widget.</p>
+</dd>
+<dt>kargs<span class="classifier"></span></dt><dd><p>All extra arguments are passed to 
+<a class="reference internal" href="../graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout.__init__" title="pyqtgraph.GraphicsLayout.__init__"><code class="xref py py-func docutils literal notranslate"><span class="pre">GraphicsLayout.__init__()</span></code></a></p>
+</dd>
+</dl>
+<p>This class wraps several methods from its internal GraphicsLayout:
+<a class="reference internal" href="../graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout.nextRow" title="pyqtgraph.GraphicsLayout.nextRow"><code class="xref py py-func docutils literal notranslate"><span class="pre">nextRow</span></code></a>
+<a class="reference internal" href="../graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout.nextColumn" title="pyqtgraph.GraphicsLayout.nextColumn"><code class="xref py py-func docutils literal notranslate"><span class="pre">nextColumn</span></code></a>
+<a class="reference internal" href="../graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout.addPlot" title="pyqtgraph.GraphicsLayout.addPlot"><code class="xref py py-func docutils literal notranslate"><span class="pre">addPlot</span></code></a>
+<a class="reference internal" href="../graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout.addViewBox" title="pyqtgraph.GraphicsLayout.addViewBox"><code class="xref py py-func docutils literal notranslate"><span class="pre">addViewBox</span></code></a>
+<a class="reference internal" href="../graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout.addItem" title="pyqtgraph.GraphicsLayout.addItem"><code class="xref py py-func docutils literal notranslate"><span class="pre">addItem</span></code></a>
+<a class="reference internal" href="../graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout.getItem" title="pyqtgraph.GraphicsLayout.getItem"><code class="xref py py-func docutils literal notranslate"><span class="pre">getItem</span></code></a>
+<a class="reference internal" href="../graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout.addLabel" title="pyqtgraph.GraphicsLayout.addLabel"><code class="xref py py-func docutils literal notranslate"><span class="pre">addLabel</span></code></a>
+<a class="reference internal" href="../graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout.addLayout" title="pyqtgraph.GraphicsLayout.addLayout"><code class="xref py py-func docutils literal notranslate"><span class="pre">addLayout</span></code></a>
+<a class="reference internal" href="../graphicsItems/graphicslayout.html#pyqtgraph.GraphicsLayout.removeItem" title="pyqtgraph.GraphicsLayout.removeItem"><code class="xref py py-func docutils literal notranslate"><span class="pre">removeItem</span></code></a>
+<code class="xref py py-func docutils literal notranslate"><span class="pre">itemIndex</span></code>
+<code class="xref py py-func docutils literal notranslate"><span class="pre">clear</span></code></p>
+<dl class="method">
+<dt id="pyqtgraph.GraphicsLayoutWidget.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">show=False</em>, <em class="sig-param">size=None</em>, <em class="sig-param">title=None</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsLayoutWidget.html#GraphicsLayoutWidget.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsLayoutWidget.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>parent</p></td>
+<td><p>Optional parent widget</p></td>
+</tr>
+<tr class="row-odd"><td><p>useOpenGL</p></td>
+<td><p>If True, the GraphicsView will use OpenGL to do all of its
+rendering. This can improve performance on some systems,
+but may also introduce bugs (the combination of
+QGraphicsView and QGLWidget is still an ‘experimental’
+feature of Qt)</p></td>
+</tr>
+<tr class="row-even"><td><p>background</p></td>
+<td><p>Set the background color of the GraphicsView. Accepts any
+single argument accepted by
+<a class="reference internal" href="../functions.html#pyqtgraph.mkColor" title="pyqtgraph.mkColor"><code class="xref py py-func docutils literal notranslate"><span class="pre">mkColor</span></code></a>. By
+default, the background color is determined using the
+‘backgroundColor’ configuration option (see
+<a class="reference internal" href="../config_options.html#pyqtgraph.setConfigOptions" title="pyqtgraph.setConfigOptions"><code class="xref py py-func docutils literal notranslate"><span class="pre">setConfigOptions</span></code></a>).</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="colorbutton.html"
+                        title="previous chapter">ColorButton</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="progressdialog.html"
+                        title="next chapter">ProgressDialog</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/graphicslayoutwidget.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="progressdialog.html" title="ProgressDialog"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="colorbutton.html" title="ColorButton"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

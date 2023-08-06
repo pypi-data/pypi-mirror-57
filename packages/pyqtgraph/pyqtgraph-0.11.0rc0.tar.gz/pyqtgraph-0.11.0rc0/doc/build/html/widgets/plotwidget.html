@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>PlotWidget &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ImageView" href="imageview.html" />
+    <link rel="prev" title="PyQtGraph’s Widgets" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="imageview.html" title="ImageView"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="PyQtGraph’s Widgets"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="plotwidget">
+<h1>PlotWidget<a class="headerlink" href="#plotwidget" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.PlotWidget">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">PlotWidget</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">background='default'</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/PlotWidget.html#PlotWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotWidget" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="pyqtgraph.PlotWidget.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">background='default'</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/PlotWidget.html#PlotWidget.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotWidget.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>When initializing PlotWidget, <em>parent</em> and <em>background</em> are passed to 
+<a class="reference internal" href="../graphicsItems/graphicswidget.html#pyqtgraph.GraphicsWidget.__init__" title="pyqtgraph.GraphicsWidget.__init__"><code class="xref py py-func docutils literal notranslate"><span class="pre">GraphicsWidget.__init__()</span></code></a>
+and all others are passed
+to <a class="reference internal" href="../graphicsItems/plotitem.html#pyqtgraph.PlotItem.__init__" title="pyqtgraph.PlotItem.__init__"><code class="xref py py-func docutils literal notranslate"><span class="pre">PlotItem.__init__()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotWidget.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/pyqtgraph/widgets/PlotWidget.html#PlotWidget.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotWidget.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotWidget.getPlotItem">
+<code class="sig-name descname">getPlotItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/PlotWidget.html#PlotWidget.getPlotItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotWidget.getPlotItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the PlotItem contained within.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="pyqtgraph.PlotWidget.sigTransformChanged">
+<code class="sig-name descname">sigTransformChanged</code><em class="property"> = &lt;PySide2.QtCore.Signal object&gt;</em><a class="headerlink" href="#pyqtgraph.PlotWidget.sigTransformChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="graphicsview.html#pyqtgraph.GraphicsView" title="pyqtgraph.GraphicsView"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsView</span></code></a> widget with a single 
+<a class="reference internal" href="../graphicsItems/plotitem.html#pyqtgraph.PlotItem" title="pyqtgraph.PlotItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlotItem</span></code></a> inside.</p>
+<p>The following methods are wrapped directly from PlotItem: 
+<a class="reference internal" href="../graphicsItems/plotitem.html#pyqtgraph.PlotItem.addItem" title="pyqtgraph.PlotItem.addItem"><code class="xref py py-func docutils literal notranslate"><span class="pre">addItem</span></code></a>, 
+<a class="reference internal" href="../graphicsItems/plotitem.html#pyqtgraph.PlotItem.removeItem" title="pyqtgraph.PlotItem.removeItem"><code class="xref py py-func docutils literal notranslate"><span class="pre">removeItem</span></code></a>, 
+<a class="reference internal" href="../graphicsItems/plotitem.html#pyqtgraph.PlotItem.clear" title="pyqtgraph.PlotItem.clear"><code class="xref py py-func docutils literal notranslate"><span class="pre">clear</span></code></a>, 
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.setXRange" title="pyqtgraph.ViewBox.setXRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">setXRange</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.setYRange" title="pyqtgraph.ViewBox.setYRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">setYRange</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.setRange" title="pyqtgraph.ViewBox.setRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">setRange</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.autoRange" title="pyqtgraph.ViewBox.autoRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">autoRange</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.setXLink" title="pyqtgraph.ViewBox.setXLink"><code class="xref py py-func docutils literal notranslate"><span class="pre">setXLink</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.setYLink" title="pyqtgraph.ViewBox.setYLink"><code class="xref py py-func docutils literal notranslate"><span class="pre">setYLink</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.viewRect" title="pyqtgraph.ViewBox.viewRect"><code class="xref py py-func docutils literal notranslate"><span class="pre">viewRect</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.setMouseEnabled" title="pyqtgraph.ViewBox.setMouseEnabled"><code class="xref py py-func docutils literal notranslate"><span class="pre">setMouseEnabled</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.enableAutoRange" title="pyqtgraph.ViewBox.enableAutoRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">enableAutoRange</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.disableAutoRange" title="pyqtgraph.ViewBox.disableAutoRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">disableAutoRange</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.setAspectLocked" title="pyqtgraph.ViewBox.setAspectLocked"><code class="xref py py-func docutils literal notranslate"><span class="pre">setAspectLocked</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.setLimits" title="pyqtgraph.ViewBox.setLimits"><code class="xref py py-func docutils literal notranslate"><span class="pre">setLimits</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.register" title="pyqtgraph.ViewBox.register"><code class="xref py py-func docutils literal notranslate"><span class="pre">register</span></code></a>,
+<a class="reference internal" href="../graphicsItems/viewbox.html#pyqtgraph.ViewBox.unregister" title="pyqtgraph.ViewBox.unregister"><code class="xref py py-func docutils literal notranslate"><span class="pre">unregister</span></code></a></p>
+<p>For all 
+other methods, use <a class="reference internal" href="#pyqtgraph.PlotWidget.getPlotItem" title="pyqtgraph.PlotWidget.getPlotItem"><code class="xref py py-func docutils literal notranslate"><span class="pre">getPlotItem</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">PyQtGraph’s Widgets</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="imageview.html"
+                        title="next chapter">ImageView</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/plotwidget.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="imageview.html" title="ImageView"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="PyQtGraph’s Widgets"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

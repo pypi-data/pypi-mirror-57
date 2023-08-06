@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>GraphItem &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ViewBox" href="viewbox.html" />
+    <link rel="prev" title="ImageItem" href="imageitem.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="viewbox.html" title="ViewBox"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="imageitem.html" title="ImageItem"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="graphitem">
+<h1>GraphItem<a class="headerlink" href="#graphitem" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.GraphItem">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">GraphItem</code><span class="sig-paren">(</span><em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphItem.html#GraphItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>A GraphItem displays graph information as
+a set of nodes connected by lines (as in ‘graph theory’, not ‘graphics’). 
+Useful for drawing networks, trees, etc.</p>
+<dl class="method">
+<dt id="pyqtgraph.GraphItem.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphItem.html#GraphItem.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphItem.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphItem.boundingRect">
+<code class="sig-name descname">boundingRect</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; PySide2.QtCore.QRectF<a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphItem.html#GraphItem.boundingRect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphItem.boundingRect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphItem.paint">
+<code class="sig-name descname">paint</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">painter: PySide2.QtGui.QPainter</em>, <em class="sig-param">option: PySide2.QtWidgets.QStyleOptionGraphicsItem</em>, <em class="sig-param">widget: typing.Union[PySide2.QtWidgets.QWidget</em>, <em class="sig-param">NoneType] = None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphItem.html#GraphItem.paint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphItem.paint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphItem.setData">
+<code class="sig-name descname">setData</code><span class="sig-paren">(</span><em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphItem.html#GraphItem.setData"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphItem.setData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the data displayed by the graph.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 84%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>pos</p></td>
+<td><p>(N,2) array of the positions of each node in the graph.</p></td>
+</tr>
+<tr class="row-odd"><td><p>adj</p></td>
+<td><p>(M,2) array of connection data. Each row contains indexes
+of two nodes that are connected.</p></td>
+</tr>
+<tr class="row-even"><td><p>pen</p></td>
+<td><p>The pen to use when drawing lines between connected
+nodes. May be one of:</p>
+<ul class="simple">
+<li><p>QPen</p></li>
+<li><p>a single argument to pass to pg.mkPen</p></li>
+<li><p>a record array of length M
+with fields (red, green, blue, alpha, width). Note
+that using this option may have a significant performance
+cost.</p></li>
+<li><p>None (to disable connection drawing)</p></li>
+<li><p>‘default’ to use the default foreground color.</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>symbolPen</p></td>
+<td><p>The pen(s) used for drawing nodes.</p></td>
+</tr>
+<tr class="row-even"><td><p>symbolBrush</p></td>
+<td><p>The brush(es) used for drawing nodes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">**opts</span></code></p></td>
+<td><p>All other keyword arguments are given to
+<a class="reference internal" href="scatterplotitem.html#pyqtgraph.ScatterPlotItem.setData" title="pyqtgraph.ScatterPlotItem.setData"><code class="xref py py-func docutils literal notranslate"><span class="pre">ScatterPlotItem.setData()</span></code></a>
+to affect the appearance of nodes (symbol, size, brush,
+etc.)</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphItem.setPen">
+<code class="sig-name descname">setPen</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GraphItem.html#GraphItem.setPen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphItem.setPen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the pen used to draw graph lines.
+May be:</p>
+<ul class="simple">
+<li><p>None to disable line drawing</p></li>
+<li><p>Record array with fields (red, green, blue, alpha, width)</p></li>
+<li><p>Any set of arguments and keyword arguments accepted by 
+<a class="reference internal" href="../functions.html#pyqtgraph.mkPen" title="pyqtgraph.mkPen"><code class="xref py py-func docutils literal notranslate"><span class="pre">mkPen</span></code></a>.</p></li>
+<li><p>‘default’ to use the default foreground color.</p></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="imageitem.html"
+                        title="previous chapter">ImageItem</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="viewbox.html"
+                        title="next chapter">ViewBox</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/graphicsItems/graphitem.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="viewbox.html" title="ViewBox"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="imageitem.html" title="ImageItem"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

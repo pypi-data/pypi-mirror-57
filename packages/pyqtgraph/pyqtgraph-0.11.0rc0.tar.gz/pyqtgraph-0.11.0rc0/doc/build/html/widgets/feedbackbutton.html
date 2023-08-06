@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>FeedbackButton &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ComboBox" href="combobox.html" />
+    <link rel="prev" title="MatplotlibWidget" href="matplotlibwidget.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="combobox.html" title="ComboBox"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="matplotlibwidget.html" title="MatplotlibWidget"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="feedbackbutton">
+<h1>FeedbackButton<a class="headerlink" href="#feedbackbutton" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.FeedbackButton">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">FeedbackButton</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/FeedbackButton.html#FeedbackButton"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FeedbackButton" title="Permalink to this definition">¶</a></dt>
+<dd><p>QPushButton which flashes success/failure indication for slow or asynchronous procedures.</p>
+<dl class="method">
+<dt id="pyqtgraph.FeedbackButton.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/FeedbackButton.html#FeedbackButton.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FeedbackButton.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.FeedbackButton.failure">
+<code class="sig-name descname">failure</code><span class="sig-paren">(</span><em class="sig-param">message=None</em>, <em class="sig-param">tip=''</em>, <em class="sig-param">limitedTime=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/FeedbackButton.html#FeedbackButton.failure"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FeedbackButton.failure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays specified message on button and flashes button red to let user know there was an error. If you want the error to be displayed until the user takes an action, set limitedTime to False. Then call self.reset() after the desired action. Threadsafe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.FeedbackButton.feedback">
+<code class="sig-name descname">feedback</code><span class="sig-paren">(</span><em class="sig-param">success</em>, <em class="sig-param">message=None</em>, <em class="sig-param">tip=''</em>, <em class="sig-param">limitedTime=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/FeedbackButton.html#FeedbackButton.feedback"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FeedbackButton.feedback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls success() or failure(). If you want the message to be displayed until the user takes an action, set limitedTime to False. Then call self.reset() after the desired action.Threadsafe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.FeedbackButton.processing">
+<code class="sig-name descname">processing</code><span class="sig-paren">(</span><em class="sig-param">message='Processing..'</em>, <em class="sig-param">tip=''</em>, <em class="sig-param">processEvents=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/FeedbackButton.html#FeedbackButton.processing"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FeedbackButton.processing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays specified message on button to let user know the action is in progress. Threadsafe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.FeedbackButton.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/FeedbackButton.html#FeedbackButton.reset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FeedbackButton.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets the button to its original text and style. Threadsafe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.FeedbackButton.setStyleSheet">
+<code class="sig-name descname">setStyleSheet</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">styleSheet: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/FeedbackButton.html#FeedbackButton.setStyleSheet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FeedbackButton.setStyleSheet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.FeedbackButton.setText">
+<code class="sig-name descname">setText</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">text: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/FeedbackButton.html#FeedbackButton.setText"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FeedbackButton.setText" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.FeedbackButton.setToolTip">
+<code class="sig-name descname">setToolTip</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">arg__1: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/FeedbackButton.html#FeedbackButton.setToolTip"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FeedbackButton.setToolTip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.FeedbackButton.success">
+<code class="sig-name descname">success</code><span class="sig-paren">(</span><em class="sig-param">message=None</em>, <em class="sig-param">tip=''</em>, <em class="sig-param">limitedTime=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/FeedbackButton.html#FeedbackButton.success"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.FeedbackButton.success" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays specified message on button and flashes button green to let user know action was successful. If you want the success to be displayed until the user takes an action, set limitedTime to False. Then call self.reset() after the desired action. Threadsafe.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="matplotlibwidget.html"
+                        title="previous chapter">MatplotlibWidget</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="combobox.html"
+                        title="next chapter">ComboBox</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/feedbackbutton.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="combobox.html" title="ComboBox"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="matplotlibwidget.html" title="MatplotlibWidget"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

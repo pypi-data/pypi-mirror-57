@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>ConsoleWidget &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ColorMapWidget" href="colormapwidget.html" />
+    <link rel="prev" title="parametertree module" href="parametertree.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="colormapwidget.html" title="ColorMapWidget"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="parametertree.html" title="parametertree module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="consolewidget">
+<h1>ConsoleWidget<a class="headerlink" href="#consolewidget" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.console.ConsoleWidget">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.console.</code><code class="sig-name descname">ConsoleWidget</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">namespace=None</em>, <em class="sig-param">historyFile=None</em>, <em class="sig-param">text=None</em>, <em class="sig-param">editor=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/console/Console.html#ConsoleWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.console.ConsoleWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Widget displaying console output and accepting command input.
+Implements:</p>
+<ul class="simple">
+<li><p>eval python expressions / exec python statements</p></li>
+<li><p>storable history of commands</p></li>
+<li><p>exception handling allowing commands to be interpreted in the context of any level in the exception stack frame</p></li>
+</ul>
+<p>Why not just use python in an interactive shell (or ipython) ? There are a few reasons:</p>
+<ul class="simple">
+<li><p>pyside does not yet allow Qt event processing and interactive shell at the same time</p></li>
+<li><p>on some systems, typing in the console _blocks_ the qt event loop until the user presses enter. This can 
+be baffling and frustrating to users since it would appear the program has frozen.</p></li>
+<li><p>some terminals (eg windows cmd.exe) have notoriously unfriendly interfaces</p></li>
+<li><p>ability to add extra features like exception stack introspection</p></li>
+<li><p>ability to have multiple interactive prompts, including for spawned sub-processes</p></li>
+</ul>
+<dl class="method">
+<dt id="pyqtgraph.console.ConsoleWidget.catchAllExceptions">
+<code class="sig-name descname">catchAllExceptions</code><span class="sig-paren">(</span><em class="sig-param">catch=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/console/Console.html#ConsoleWidget.catchAllExceptions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.console.ConsoleWidget.catchAllExceptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>If True, the console will catch all unhandled exceptions and display the stack
+trace. Each exception caught clears the last.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.console.ConsoleWidget.catchNextException">
+<code class="sig-name descname">catchNextException</code><span class="sig-paren">(</span><em class="sig-param">catch=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/console/Console.html#ConsoleWidget.catchNextException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.console.ConsoleWidget.catchNextException" title="Permalink to this definition">¶</a></dt>
+<dd><p>If True, the console will catch the next unhandled exception and display the stack
+trace.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.console.ConsoleWidget.displayException">
+<code class="sig-name descname">displayException</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/console/Console.html#ConsoleWidget.displayException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.console.ConsoleWidget.displayException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display the current exception and stack.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.console.ConsoleWidget.loadHistory">
+<code class="sig-name descname">loadHistory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/console/Console.html#ConsoleWidget.loadHistory"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.console.ConsoleWidget.loadHistory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the list of previously-invoked command strings (or None).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.console.ConsoleWidget.saveHistory">
+<code class="sig-name descname">saveHistory</code><span class="sig-paren">(</span><em class="sig-param">history</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/console/Console.html#ConsoleWidget.saveHistory"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.console.ConsoleWidget.saveHistory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store the list of previously-invoked command strings.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.console.ConsoleWidget.setStack">
+<code class="sig-name descname">setStack</code><span class="sig-paren">(</span><em class="sig-param">frame=None</em>, <em class="sig-param">tb=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/console/Console.html#ConsoleWidget.setStack"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.console.ConsoleWidget.setStack" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display a call stack and exception traceback.</p>
+<p>This allows the user to probe the contents of any frame in the given stack.</p>
+<p><em>frame</em> may either be a Frame instance or None, in which case the current 
+frame is retrieved from <code class="docutils literal notranslate"><span class="pre">sys._getframe()</span></code>.</p>
+<p>If <em>tb</em> is provided then the frames in the traceback will be appended to 
+the end of the stack list. If <em>tb</em> is None, then sys.exc_info() will 
+be checked instead.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.console.ConsoleWidget.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param">strn</em>, <em class="sig-param">html=False</em>, <em class="sig-param">scrollToBottom='auto'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/console/Console.html#ConsoleWidget.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.console.ConsoleWidget.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a string into the console.</p>
+<p>If scrollToBottom is ‘auto’, then the console is automatically scrolled
+to fit the new text only if it was already at the bottom.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="parametertree.html"
+                        title="previous chapter">parametertree module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="colormapwidget.html"
+                        title="next chapter">ColorMapWidget</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/consolewidget.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="colormapwidget.html" title="ColorMapWidget"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="parametertree.html" title="parametertree module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

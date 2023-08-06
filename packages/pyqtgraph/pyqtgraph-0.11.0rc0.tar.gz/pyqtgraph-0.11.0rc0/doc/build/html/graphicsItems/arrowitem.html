@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>ArrowItem &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="FillBetweenItem" href="fillbetweenitem.html" />
+    <link rel="prev" title="ErrorBarItem" href="errorbaritem.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="fillbetweenitem.html" title="FillBetweenItem"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="errorbaritem.html" title="ErrorBarItem"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="arrowitem">
+<h1>ArrowItem<a class="headerlink" href="#arrowitem" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.ArrowItem">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">ArrowItem</code><span class="sig-paren">(</span><em class="sig-param">**opts</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/ArrowItem.html#ArrowItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ArrowItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>For displaying scale-invariant arrows.
+For arrows pointing to a location on a curve, see CurveArrow</p>
+<dl class="method">
+<dt id="pyqtgraph.ArrowItem.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">**opts</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/ArrowItem.html#ArrowItem.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ArrowItem.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Arrows can be initialized with any keyword arguments accepted by 
+the setStyle() method.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ArrowItem.paint">
+<code class="sig-name descname">paint</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">painter: PySide2.QtGui.QPainter</em>, <em class="sig-param">option: PySide2.QtWidgets.QStyleOptionGraphicsItem</em>, <em class="sig-param">widget: typing.Union[PySide2.QtWidgets.QWidget</em>, <em class="sig-param">NoneType] = None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/ArrowItem.html#ArrowItem.paint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ArrowItem.paint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ArrowItem.setStyle">
+<code class="sig-name descname">setStyle</code><span class="sig-paren">(</span><em class="sig-param">**opts</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/ArrowItem.html#ArrowItem.setStyle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ArrowItem.setStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes the appearance of the arrow.
+All arguments are optional:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 69%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Keyword Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>angle</p></td>
+<td><p>Orientation of the arrow in degrees. Default is
+0; arrow pointing to the left.</p></td>
+</tr>
+<tr class="row-odd"><td><p>headLen</p></td>
+<td><p>Length of the arrow head, from tip to base.
+default=20</p></td>
+</tr>
+<tr class="row-even"><td><p>headWidth</p></td>
+<td><p>Width of the arrow head at its base.</p></td>
+</tr>
+<tr class="row-odd"><td><p>tipAngle</p></td>
+<td><p>Angle of the tip of the arrow in degrees. Smaller
+values make a ‘sharper’ arrow. If tipAngle is
+specified, ot overrides headWidth. default=25</p></td>
+</tr>
+<tr class="row-even"><td><p>baseAngle</p></td>
+<td><p>Angle of the base of the arrow head. Default is
+0, which means that the base of the arrow head
+is perpendicular to the arrow tail.</p></td>
+</tr>
+<tr class="row-odd"><td><p>tailLen</p></td>
+<td><p>Length of the arrow tail, measured from the base
+of the arrow head to the end of the tail. If
+this value is None, no tail will be drawn.
+default=None</p></td>
+</tr>
+<tr class="row-even"><td><p>tailWidth</p></td>
+<td><p>Width of the tail. default=3</p></td>
+</tr>
+<tr class="row-odd"><td><p>pen</p></td>
+<td><p>The pen used to draw the outline of the arrow.</p></td>
+</tr>
+<tr class="row-even"><td><p>brush</p></td>
+<td><p>The brush used to fill the arrow.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ArrowItem.shape">
+<code class="sig-name descname">shape</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; PySide2.QtGui.QPainterPath<a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/ArrowItem.html#ArrowItem.shape"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ArrowItem.shape" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="errorbaritem.html"
+                        title="previous chapter">ErrorBarItem</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="fillbetweenitem.html"
+                        title="next chapter">FillBetweenItem</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/graphicsItems/arrowitem.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="fillbetweenitem.html" title="FillBetweenItem"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="errorbaritem.html" title="ErrorBarItem"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

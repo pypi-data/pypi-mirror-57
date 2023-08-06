@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>pyqtgraph.graphicsItems.GridItem &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../pyqtgraph.html" accesskey="U">pyqtgraph</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for pyqtgraph.graphicsItems.GridItem</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">..Qt</span> <span class="k">import</span> <span class="n">QtGui</span><span class="p">,</span> <span class="n">QtCore</span>
+<span class="kn">from</span> <span class="nn">.UIGraphicsItem</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">..Point</span> <span class="k">import</span> <span class="n">Point</span>
+<span class="kn">from</span> <span class="nn">..</span> <span class="k">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">fn</span>
+<span class="kn">from</span> <span class="nn">..</span> <span class="k">import</span> <span class="n">getConfigOption</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;GridItem&#39;</span><span class="p">]</span>
+<div class="viewcode-block" id="GridItem"><a class="viewcode-back" href="../../../graphicsItems/griditem.html#pyqtgraph.GridItem">[docs]</a><span class="k">class</span> <span class="nc">GridItem</span><span class="p">(</span><span class="n">UIGraphicsItem</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    **Bases:** :class:`UIGraphicsItem &lt;pyqtgraph.UIGraphicsItem&gt;`</span>
+<span class="sd">    </span>
+<span class="sd">    Displays a rectangular grid of lines indicating major divisions within a coordinate system.</span>
+<span class="sd">    Automatically determines what divisions to use.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="GridItem.__init__"><a class="viewcode-back" href="../../../graphicsItems/griditem.html#pyqtgraph.GridItem.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pen</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="n">textPen</span><span class="o">=</span><span class="s1">&#39;default&#39;</span><span class="p">):</span>
+        <span class="n">UIGraphicsItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="c1">#QtGui.QGraphicsItem.__init__(self, *args)</span>
+        <span class="c1">#self.setFlag(QtGui.QGraphicsItem.ItemClipsToShape)</span>
+        <span class="c1">#self.setCacheMode(QtGui.QGraphicsItem.DeviceCoordinateCache)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">opts</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">setPen</span><span class="p">(</span><span class="n">pen</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setTextPen</span><span class="p">(</span><span class="n">textPen</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setTickSpacing</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">])</span></div>
+
+
+<div class="viewcode-block" id="GridItem.setPen"><a class="viewcode-back" href="../../../graphicsItems/griditem.html#pyqtgraph.GridItem.setPen">[docs]</a>    <span class="k">def</span> <span class="nf">setPen</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the pen used to draw the grid.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">kwargs</span> <span class="o">==</span> <span class="p">{}</span> <span class="ow">and</span> <span class="p">(</span><span class="n">args</span> <span class="o">==</span> <span class="p">()</span> <span class="ow">or</span> <span class="n">args</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">,)):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;pen&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="n">mkPen</span><span class="p">(</span><span class="n">getConfigOption</span><span class="p">(</span><span class="s1">&#39;foreground&#39;</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;pen&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="n">mkPen</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">picture</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">update</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="GridItem.setTextPen"><a class="viewcode-back" href="../../../graphicsItems/griditem.html#pyqtgraph.GridItem.setTextPen">[docs]</a>    <span class="k">def</span> <span class="nf">setTextPen</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the pen used to draw the texts.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">kwargs</span> <span class="o">==</span> <span class="p">{}</span> <span class="ow">and</span> <span class="p">(</span><span class="n">args</span> <span class="o">==</span> <span class="p">()</span> <span class="ow">or</span> <span class="n">args</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">,)):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;textPen&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="n">mkPen</span><span class="p">(</span><span class="n">getConfigOption</span><span class="p">(</span><span class="s1">&#39;foreground&#39;</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">args</span> <span class="o">==</span> <span class="p">(</span><span class="kc">None</span><span class="p">,):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;textPen&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;textPen&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="n">mkPen</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">picture</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">update</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="GridItem.setTickSpacing"><a class="viewcode-back" href="../../../graphicsItems/griditem.html#pyqtgraph.GridItem.setTickSpacing">[docs]</a>    <span class="k">def</span> <span class="nf">setTickSpacing</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set the grid tick spacing to use.</span>
+
+<span class="sd">        Tick spacing for each axis shall be specified as an array of</span>
+<span class="sd">        descending values, one for each tick scale. When the value</span>
+<span class="sd">        is set to None, grid line distance is chosen automatically</span>
+<span class="sd">        for this particular level.</span>
+
+<span class="sd">        Example:</span>
+<span class="sd">            Default setting of 3 scales for each axis:</span>
+<span class="sd">            setTickSpacing(x=[None, None, None], y=[None, None, None])</span>
+
+<span class="sd">            Single scale with distance of 1.0 for X axis, Two automatic</span>
+<span class="sd">            scales for Y axis:</span>
+<span class="sd">            setTickSpacing(x=[1.0], y=[None, None])</span>
+
+<span class="sd">            Single scale with distance of 1.0 for X axis, Two scales</span>
+<span class="sd">            for Y axis, one with spacing of 1.0, other one automatic:</span>
+<span class="sd">            setTickSpacing(x=[1.0], y=[1.0, None])</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;tickSpacing&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;tickSpacing&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+                                    <span class="n">y</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;tickSpacing&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">grid_depth</span> <span class="o">=</span> <span class="nb">max</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;tickSpacing&#39;</span><span class="p">]])</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">picture</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">update</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="GridItem.viewRangeChanged"><a class="viewcode-back" href="../../../graphicsItems/griditem.html#pyqtgraph.GridItem.viewRangeChanged">[docs]</a>    <span class="k">def</span> <span class="nf">viewRangeChanged</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">UIGraphicsItem</span><span class="o">.</span><span class="n">viewRangeChanged</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">picture</span> <span class="o">=</span> <span class="kc">None</span></div>
+        <span class="c1">#UIGraphicsItem.viewRangeChanged(self)</span>
+        <span class="c1">#self.update()</span>
+        
+<div class="viewcode-block" id="GridItem.paint"><a class="viewcode-back" href="../../../graphicsItems/griditem.html#pyqtgraph.GridItem.paint">[docs]</a>    <span class="k">def</span> <span class="nf">paint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">opt</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
+        <span class="c1">#p.setPen(QtGui.QPen(QtGui.QColor(100, 100, 100)))</span>
+        <span class="c1">#p.drawRect(self.boundingRect())</span>
+        <span class="c1">#UIGraphicsItem.paint(self, p, opt, widget)</span>
+        <span class="c1">### draw picture</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">picture</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1">#print &quot;no pic, draw..&quot;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">generatePicture</span><span class="p">()</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">drawPicture</span><span class="p">(</span><span class="n">QtCore</span><span class="o">.</span><span class="n">QPointF</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">picture</span><span class="p">)</span></div>
+        <span class="c1">#p.setPen(QtGui.QPen(QtGui.QColor(255,0,0)))</span>
+        <span class="c1">#p.drawLine(0, -100, 0, 100)</span>
+        <span class="c1">#p.drawLine(-100, 0, 100, 0)</span>
+        <span class="c1">#print &quot;drawing Grid.&quot;</span>
+        
+        
+    <span class="k">def</span> <span class="nf">generatePicture</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">picture</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QPicture</span><span class="p">()</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QPainter</span><span class="p">()</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">begin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">picture</span><span class="p">)</span>
+        
+        <span class="n">vr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getViewWidget</span><span class="p">()</span><span class="o">.</span><span class="n">rect</span><span class="p">()</span>
+        <span class="n">unit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pixelWidth</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">pixelHeight</span><span class="p">()</span>
+        <span class="n">dim</span> <span class="o">=</span> <span class="p">[</span><span class="n">vr</span><span class="o">.</span><span class="n">width</span><span class="p">(),</span> <span class="n">vr</span><span class="o">.</span><span class="n">height</span><span class="p">()]</span>
+        <span class="n">lvr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">boundingRect</span><span class="p">()</span>
+        <span class="n">ul</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">lvr</span><span class="o">.</span><span class="n">left</span><span class="p">(),</span> <span class="n">lvr</span><span class="o">.</span><span class="n">top</span><span class="p">()])</span>
+        <span class="n">br</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">lvr</span><span class="o">.</span><span class="n">right</span><span class="p">(),</span> <span class="n">lvr</span><span class="o">.</span><span class="n">bottom</span><span class="p">()])</span>
+        
+        <span class="n">texts</span> <span class="o">=</span> <span class="p">[]</span>
+        
+        <span class="k">if</span> <span class="n">ul</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">br</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">ul</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">ul</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">br</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">br</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span>
+
+        <span class="n">lastd</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">grid_depth</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+            <span class="n">dist</span> <span class="o">=</span> <span class="n">br</span><span class="o">-</span><span class="n">ul</span>
+            <span class="n">nlTarget</span> <span class="o">=</span> <span class="mf">10.</span><span class="o">**</span><span class="n">i</span>
+
+            <span class="n">d</span> <span class="o">=</span> <span class="mf">10.</span> <span class="o">**</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">dist</span><span class="o">/</span><span class="n">nlTarget</span><span class="p">))</span><span class="o">+</span><span class="mf">0.5</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
+                <span class="n">ts</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;tickSpacing&#39;</span><span class="p">][</span><span class="n">ax</span><span class="p">]</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">ts</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="n">d</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span> <span class="o">=</span> <span class="n">ts</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+                    <span class="k">pass</span>
+                <span class="n">lastd</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span>
+
+            <span class="n">ul1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">ul</span> <span class="o">/</span> <span class="n">d</span><span class="p">)</span> <span class="o">*</span> <span class="n">d</span>
+            <span class="n">br1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">br</span> <span class="o">/</span> <span class="n">d</span><span class="p">)</span> <span class="o">*</span> <span class="n">d</span>
+            <span class="n">dist</span> <span class="o">=</span> <span class="n">br1</span><span class="o">-</span><span class="n">ul1</span>
+            <span class="n">nl</span> <span class="o">=</span> <span class="p">(</span><span class="n">dist</span> <span class="o">/</span> <span class="n">d</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span>
+            <span class="c1">#print &quot;level&quot;, i</span>
+            <span class="c1">#print &quot;  dim&quot;, dim</span>
+            <span class="c1">#print &quot;  dist&quot;, dist</span>
+            <span class="c1">#print &quot;  d&quot;, d</span>
+            <span class="c1">#print &quot;  nl&quot;, nl</span>
+            <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>  <span class="c1">## Draw grid for both axes</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;tickSpacing&#39;</span><span class="p">][</span><span class="n">ax</span><span class="p">]):</span>
+                    <span class="k">continue</span>
+                <span class="k">if</span> <span class="n">d</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">lastd</span><span class="p">[</span><span class="n">ax</span><span class="p">]:</span>
+                    <span class="k">continue</span>
+
+                <span class="n">ppl</span> <span class="o">=</span> <span class="n">dim</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span> <span class="o">/</span> <span class="n">nl</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span>
+                <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="mf">5.</span><span class="o">*</span><span class="p">(</span><span class="n">ppl</span><span class="o">-</span><span class="mi">3</span><span class="p">),</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">50.</span><span class="p">)</span>
+
+                <span class="n">linePen</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;pen&#39;</span><span class="p">]</span>
+                <span class="n">lineColor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;pen&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">color</span><span class="p">()</span>
+                <span class="n">lineColor</span><span class="o">.</span><span class="n">setAlpha</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+                <span class="n">linePen</span><span class="o">.</span><span class="n">setColor</span><span class="p">(</span><span class="n">lineColor</span><span class="p">)</span>
+
+                <span class="n">textPen</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;textPen&#39;</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">textPen</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">textColor</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">opts</span><span class="p">[</span><span class="s1">&#39;textPen&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">color</span><span class="p">()</span>
+                    <span class="n">textColor</span><span class="o">.</span><span class="n">setAlpha</span><span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+                    <span class="n">textPen</span><span class="o">.</span><span class="n">setColor</span><span class="p">(</span><span class="n">textColor</span><span class="p">)</span>
+
+                <span class="n">bx</span> <span class="o">=</span> <span class="p">(</span><span class="n">ax</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">2</span>
+                <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">nl</span><span class="p">[</span><span class="n">ax</span><span class="p">])):</span>
+                    <span class="n">linePen</span><span class="o">.</span><span class="n">setCosmetic</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">ax</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                        <span class="n">linePen</span><span class="o">.</span><span class="n">setWidthF</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pixelWidth</span><span class="p">())</span>
+                        <span class="c1">#print &quot;ax 0 height&quot;, self.pixelHeight()</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">linePen</span><span class="o">.</span><span class="n">setWidthF</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pixelHeight</span><span class="p">())</span>
+                        <span class="c1">#print &quot;ax 1 width&quot;, self.pixelWidth()</span>
+                    <span class="n">p</span><span class="o">.</span><span class="n">setPen</span><span class="p">(</span><span class="n">linePen</span><span class="p">)</span>
+                    <span class="n">p1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">])</span>
+                    <span class="n">p2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">])</span>
+                    <span class="n">p1</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span> <span class="o">=</span> <span class="n">ul1</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span> <span class="o">+</span> <span class="n">x</span> <span class="o">*</span> <span class="n">d</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span>
+                    <span class="n">p2</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span> <span class="o">=</span> <span class="n">p1</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span>
+                    <span class="n">p1</span><span class="p">[</span><span class="n">bx</span><span class="p">]</span> <span class="o">=</span> <span class="n">ul</span><span class="p">[</span><span class="n">bx</span><span class="p">]</span>
+                    <span class="n">p2</span><span class="p">[</span><span class="n">bx</span><span class="p">]</span> <span class="o">=</span> <span class="n">br</span><span class="p">[</span><span class="n">bx</span><span class="p">]</span>
+                    <span class="c1">## don&#39;t draw lines that are out of bounds.</span>
+                    <span class="k">if</span> <span class="n">p1</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nb">min</span><span class="p">(</span><span class="n">ul</span><span class="p">[</span><span class="n">ax</span><span class="p">],</span> <span class="n">br</span><span class="p">[</span><span class="n">ax</span><span class="p">])</span> <span class="ow">or</span> <span class="n">p1</span><span class="p">[</span><span class="n">ax</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nb">max</span><span class="p">(</span><span class="n">ul</span><span class="p">[</span><span class="n">ax</span><span class="p">],</span> <span class="n">br</span><span class="p">[</span><span class="n">ax</span><span class="p">]):</span>
+                        <span class="k">continue</span>
+                    <span class="n">p</span><span class="o">.</span><span class="n">drawLine</span><span class="p">(</span><span class="n">QtCore</span><span class="o">.</span><span class="n">QPointF</span><span class="p">(</span><span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">QPointF</span><span class="p">(</span><span class="n">p2</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">p2</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+                    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">textPen</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">ax</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                            <span class="n">x</span> <span class="o">=</span> <span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">unit</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                            <span class="n">y</span> <span class="o">=</span> <span class="n">ul</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">unit</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mf">8.</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">x</span> <span class="o">=</span> <span class="n">ul</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">unit</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">3</span>
+                            <span class="n">y</span> <span class="o">=</span> <span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">unit</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                        <span class="n">texts</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">QtCore</span><span class="o">.</span><span class="n">QPointF</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="s2">&quot;</span><span class="si">%g</span><span class="s2">&quot;</span><span class="o">%</span><span class="n">p1</span><span class="p">[</span><span class="n">ax</span><span class="p">]))</span>
+        <span class="n">tr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">deviceTransform</span><span class="p">()</span>
+        <span class="c1">#tr.scale(1.5, 1.5)</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">setWorldTransform</span><span class="p">(</span><span class="n">fn</span><span class="o">.</span><span class="n">invertQTransform</span><span class="p">(</span><span class="n">tr</span><span class="p">))</span>
+
+        <span class="k">if</span> <span class="n">textPen</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">texts</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># if there is at least one text, then c is set</span>
+            <span class="n">textColor</span><span class="o">.</span><span class="n">setAlpha</span><span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+            <span class="n">p</span><span class="o">.</span><span class="n">setPen</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QPen</span><span class="p">(</span><span class="n">textColor</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">texts</span><span class="p">:</span>
+                <span class="n">x</span> <span class="o">=</span> <span class="n">tr</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="n">Point</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+                <span class="n">p</span><span class="o">.</span><span class="n">drawText</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+        <span class="n">p</span><span class="o">.</span><span class="n">end</span><span class="p">()</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../pyqtgraph.html" >pyqtgraph</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

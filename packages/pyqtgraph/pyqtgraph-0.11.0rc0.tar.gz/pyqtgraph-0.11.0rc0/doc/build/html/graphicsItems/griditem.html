@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>GridItem &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ScaleBar" href="scalebar.html" />
+    <link rel="prev" title="CurveArrow" href="curvearrow.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="scalebar.html" title="ScaleBar"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="curvearrow.html" title="CurveArrow"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="griditem">
+<h1>GridItem<a class="headerlink" href="#griditem" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.GridItem">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">GridItem</code><span class="sig-paren">(</span><em class="sig-param">pen='default'</em>, <em class="sig-param">textPen='default'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GridItem.html#GridItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GridItem" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Bases:</strong> <a class="reference internal" href="uigraphicsitem.html#pyqtgraph.UIGraphicsItem" title="pyqtgraph.UIGraphicsItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">UIGraphicsItem</span></code></a></p>
+<p>Displays a rectangular grid of lines indicating major divisions within a coordinate system.
+Automatically determines what divisions to use.</p>
+<dl class="method">
+<dt id="pyqtgraph.GridItem.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">pen='default'</em>, <em class="sig-param">textPen='default'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GridItem.html#GridItem.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GridItem.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 85%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>bounds</p></td>
+<td><p>QRectF with coordinates relative to view box. The default is QRectF(0,0,1,1),
+which means the item will have the same bounds as the view.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GridItem.paint">
+<code class="sig-name descname">paint</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">painter: PySide2.QtGui.QPainter</em>, <em class="sig-param">option: PySide2.QtWidgets.QStyleOptionGraphicsItem</em>, <em class="sig-param">widget: typing.Union[PySide2.QtWidgets.QWidget</em>, <em class="sig-param">NoneType] = None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GridItem.html#GridItem.paint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GridItem.paint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GridItem.setPen">
+<code class="sig-name descname">setPen</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GridItem.html#GridItem.setPen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GridItem.setPen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the pen used to draw the grid.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GridItem.setTextPen">
+<code class="sig-name descname">setTextPen</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GridItem.html#GridItem.setTextPen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GridItem.setTextPen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the pen used to draw the texts.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GridItem.setTickSpacing">
+<code class="sig-name descname">setTickSpacing</code><span class="sig-paren">(</span><em class="sig-param">x=None</em>, <em class="sig-param">y=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GridItem.html#GridItem.setTickSpacing"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GridItem.setTickSpacing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the grid tick spacing to use.</p>
+<p>Tick spacing for each axis shall be specified as an array of
+descending values, one for each tick scale. When the value
+is set to None, grid line distance is chosen automatically
+for this particular level.</p>
+<dl>
+<dt>Example:</dt><dd><p>Default setting of 3 scales for each axis:
+setTickSpacing(x=[None, None, None], y=[None, None, None])</p>
+<p>Single scale with distance of 1.0 for X axis, Two automatic
+scales for Y axis:
+setTickSpacing(x=[1.0], y=[None, None])</p>
+<p>Single scale with distance of 1.0 for X axis, Two scales
+for Y axis, one with spacing of 1.0, other one automatic:
+setTickSpacing(x=[1.0], y=[1.0, None])</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GridItem.viewRangeChanged">
+<code class="sig-name descname">viewRangeChanged</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/GridItem.html#GridItem.viewRangeChanged"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GridItem.viewRangeChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the view widget/viewbox is resized/rescaled</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="curvearrow.html"
+                        title="previous chapter">CurveArrow</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="scalebar.html"
+                        title="next chapter">ScaleBar</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/graphicsItems/griditem.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="scalebar.html" title="ScaleBar"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="curvearrow.html" title="CurveArrow"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

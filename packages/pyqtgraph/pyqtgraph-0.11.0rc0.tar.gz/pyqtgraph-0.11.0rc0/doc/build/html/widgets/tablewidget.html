@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>TableWidget &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="TreeWidget" href="treewidget.html" />
+    <link rel="prev" title="DataTreeWidget" href="datatreewidget.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="treewidget.html" title="TreeWidget"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="datatreewidget.html" title="DataTreeWidget"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="tablewidget">
+<h1>TableWidget<a class="headerlink" href="#tablewidget" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.TableWidget">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">TableWidget</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extends QTableWidget with some useful functions for automatic data handling
+and copy / export context menu. Can automatically format and display a variety
+of data types (see <a class="reference internal" href="#pyqtgraph.TableWidget.setData" title="pyqtgraph.TableWidget.setData"><code class="xref py py-func docutils literal notranslate"><span class="pre">setData()</span></code></a> for more
+information.</p>
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>All positional arguments are passed to QTableWidget.__init__().</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Keyword Arguments</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>editable</p></td>
+<td><p>(bool) If True, cells in the table can be edited
+by the user. Default is False.</p></td>
+</tr>
+<tr class="row-odd"><td><p>sortable</p></td>
+<td><p>(bool) If True, the table may be soted by
+clicking on column headers. Note that this also
+causes rows to appear initially shuffled until
+a sort column is selected. Default is True.
+<em>(added in version 0.9.9)</em></p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear all contents from the table.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.contextMenuEvent">
+<code class="sig-name descname">contextMenuEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">arg__1: PySide2.QtGui.QContextMenuEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.contextMenuEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.contextMenuEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.copyAll">
+<code class="sig-name descname">copyAll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.copyAll"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.copyAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy all data to clipboard.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.copySel">
+<code class="sig-name descname">copySel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.copySel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.copySel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy selected data to clipboard.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.keyPressEvent">
+<code class="sig-name descname">keyPressEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QKeyEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.keyPressEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.keyPressEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.saveAll">
+<code class="sig-name descname">saveAll</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.saveAll"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.saveAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save all data to file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.saveSel">
+<code class="sig-name descname">saveSel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.saveSel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.saveSel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save selected data to file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.serialize">
+<code class="sig-name descname">serialize</code><span class="sig-paren">(</span><em class="sig-param">useSelection=False</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.serialize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert entire table (or just selected area) into tab-separated text values</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.setData">
+<code class="sig-name descname">setData</code><span class="sig-paren">(</span><em class="sig-param">data</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.setData"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.setData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the data displayed in the table.
+Allowed formats are:</p>
+<ul class="simple">
+<li><p>numpy arrays</p></li>
+<li><p>numpy record arrays</p></li>
+<li><p>metaarrays</p></li>
+<li><p>list-of-lists  [[1,2,3], [4,5,6]]</p></li>
+<li><p>dict-of-lists  {‘x’: [1,2,3], ‘y’: [4,5,6]}</p></li>
+<li><p>list-of-dicts  [{‘x’: 1, ‘y’: 4}, {‘x’: 2, ‘y’: 5}, …]</p></li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.setFormat">
+<code class="sig-name descname">setFormat</code><span class="sig-paren">(</span><em class="sig-param">format</em>, <em class="sig-param">column=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.setFormat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.setFormat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify the default text formatting for the entire table, or for a
+single column if <em>column</em> is specified.</p>
+<p>If a string is specified, it is used as a format string for converting
+float values (and all other types are converted using str). If a 
+function is specified, it will be called with the item as its only
+argument and must return a string. Setting format = None causes the 
+default formatter to be used instead.</p>
+<p>Added in version 0.9.9.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.setSortMode">
+<code class="sig-name descname">setSortMode</code><span class="sig-paren">(</span><em class="sig-param">column</em>, <em class="sig-param">mode</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.setSortMode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.setSortMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the mode used to sort <em>column</em>.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Sort Modes</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>value</p></td>
+<td><p>Compares item.value if available; falls back to text
+comparison.</p></td>
+</tr>
+<tr class="row-odd"><td><p>text</p></td>
+<td><p>Compares item.text()</p></td>
+</tr>
+<tr class="row-even"><td><p>index</p></td>
+<td><p>Compares by the order in which items were inserted.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Added in version 0.9.9</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.TableWidget.sizeHint">
+<code class="sig-name descname">sizeHint</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; PySide2.QtCore.QSize<a class="reference internal" href="../_modules/pyqtgraph/widgets/TableWidget.html#TableWidget.sizeHint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.TableWidget.sizeHint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="datatreewidget.html"
+                        title="previous chapter">DataTreeWidget</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="treewidget.html"
+                        title="next chapter">TreeWidget</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/tablewidget.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="treewidget.html" title="TreeWidget"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="datatreewidget.html" title="DataTreeWidget"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

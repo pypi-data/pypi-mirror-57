@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>pyqtgraph.graphicsItems.LinearRegionItem &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../pyqtgraph.html" accesskey="U">pyqtgraph</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for pyqtgraph.graphicsItems.LinearRegionItem</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">..Qt</span> <span class="k">import</span> <span class="n">QtGui</span><span class="p">,</span> <span class="n">QtCore</span>
+<span class="kn">from</span> <span class="nn">.GraphicsObject</span> <span class="k">import</span> <span class="n">GraphicsObject</span>
+<span class="kn">from</span> <span class="nn">.InfiniteLine</span> <span class="k">import</span> <span class="n">InfiniteLine</span>
+<span class="kn">from</span> <span class="nn">..</span> <span class="k">import</span> <span class="n">functions</span> <span class="k">as</span> <span class="n">fn</span>
+<span class="kn">from</span> <span class="nn">..</span> <span class="k">import</span> <span class="n">debug</span> <span class="k">as</span> <span class="n">debug</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;LinearRegionItem&#39;</span><span class="p">]</span>
+
+<div class="viewcode-block" id="LinearRegionItem"><a class="viewcode-back" href="../../../graphicsItems/linearregionitem.html#pyqtgraph.LinearRegionItem">[docs]</a><span class="k">class</span> <span class="nc">LinearRegionItem</span><span class="p">(</span><span class="n">GraphicsObject</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    **Bases:** :class:`GraphicsObject &lt;pyqtgraph.GraphicsObject&gt;`</span>
+<span class="sd">    </span>
+<span class="sd">    Used for marking a horizontal or vertical region in plots.</span>
+<span class="sd">    The region can be dragged and is bounded by lines which can be dragged individually.</span>
+<span class="sd">    </span>
+<span class="sd">    ===============================  =============================================================================</span>
+<span class="sd">    **Signals:**</span>
+<span class="sd">    sigRegionChangeFinished(self)    Emitted when the user has finished dragging the region (or one of its lines)</span>
+<span class="sd">                                     and when the region is changed programatically.</span>
+<span class="sd">    sigRegionChanged(self)           Emitted while the user is dragging the region (or one of its lines)</span>
+<span class="sd">                                     and when the region is changed programatically.</span>
+<span class="sd">    ===============================  =============================================================================</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="n">sigRegionChangeFinished</span> <span class="o">=</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Signal</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
+    <span class="n">sigRegionChanged</span> <span class="o">=</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Signal</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span>
+    <span class="n">Vertical</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Horizontal</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">_orientation_axis</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">Vertical</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">Horizontal</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s1">&#39;vertical&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s1">&#39;horizontal&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="p">}</span>
+    
+<div class="viewcode-block" id="LinearRegionItem.__init__"><a class="viewcode-back" href="../../../graphicsItems/linearregionitem.html#pyqtgraph.LinearRegionItem.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;vertical&#39;</span><span class="p">,</span> <span class="n">brush</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pen</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">hoverBrush</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">hoverPen</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">movable</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
+                 <span class="n">span</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">swapMode</span><span class="o">=</span><span class="s1">&#39;sort&#39;</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a new LinearRegionItem.</span>
+<span class="sd">        </span>
+<span class="sd">        ==============  =====================================================================</span>
+<span class="sd">        **Arguments:**</span>
+<span class="sd">        values          A list of the positions of the lines in the region. These are not</span>
+<span class="sd">                        limits; limits can be set by specifying bounds.</span>
+<span class="sd">        orientation     Options are &#39;vertical&#39; or &#39;horizontal&#39;, indicating the </span>
+<span class="sd">                        The default is &#39;vertical&#39;, indicating that the </span>
+<span class="sd">        brush           Defines the brush that fills the region. Can be any arguments that</span>
+<span class="sd">                        are valid for :func:`mkBrush &lt;pyqtgraph.mkBrush&gt;`. Default is</span>
+<span class="sd">                        transparent blue.</span>
+<span class="sd">        pen             The pen to use when drawing the lines that bound the region.</span>
+<span class="sd">        hoverBrush      The brush to use when the mouse is hovering over the region.</span>
+<span class="sd">        hoverPen        The pen to use when the mouse is hovering over the region.</span>
+<span class="sd">        movable         If True, the region and individual lines are movable by the user; if</span>
+<span class="sd">                        False, they are static.</span>
+<span class="sd">        bounds          Optional [min, max] bounding values for the region</span>
+<span class="sd">        span            Optional [min, max] giving the range over the view to draw</span>
+<span class="sd">                        the region. For example, with a vertical line, use span=(0.5, 1)</span>
+<span class="sd">                        to draw only on the top half of the view.</span>
+<span class="sd">        swapMode        Sets the behavior of the region when the lines are moved such that</span>
+<span class="sd">                        their order reverses:</span>
+<span class="sd">                        * &quot;block&quot; means the user cannot drag one line past the other</span>
+<span class="sd">                        * &quot;push&quot; causes both lines to be moved if one would cross the other</span>
+<span class="sd">                        * &quot;sort&quot; means that lines may trade places, but the output of</span>
+<span class="sd">                          getRegion always gives the line positions in ascending order.</span>
+<span class="sd">                        * None means that no attempt is made to handle swapped line </span>
+<span class="sd">                          positions.</span>
+<span class="sd">                        The default is &quot;sort&quot;.</span>
+<span class="sd">        ==============  =====================================================================</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="n">GraphicsObject</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">orientation</span> <span class="o">=</span> <span class="n">orientation</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">bounds</span> <span class="o">=</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">QRectF</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">blockLineSignal</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">moving</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mouseHovering</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">span</span> <span class="o">=</span> <span class="n">span</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">swapMode</span> <span class="o">=</span> <span class="n">swapMode</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_bounds</span> <span class="o">=</span> <span class="kc">None</span>
+        
+        <span class="c1"># note LinearRegionItem.Horizontal and LinearRegionItem.Vertical</span>
+        <span class="c1"># are kept for backward compatibility.</span>
+        <span class="n">lineKwds</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">movable</span><span class="o">=</span><span class="n">movable</span><span class="p">,</span>
+            <span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span>
+            <span class="n">span</span><span class="o">=</span><span class="n">span</span><span class="p">,</span>
+            <span class="n">pen</span><span class="o">=</span><span class="n">pen</span><span class="p">,</span>
+            <span class="n">hoverPen</span><span class="o">=</span><span class="n">hoverPen</span><span class="p">,</span>
+            <span class="p">)</span>
+            
+        <span class="k">if</span> <span class="n">orientation</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;horizontal&#39;</span><span class="p">,</span> <span class="n">LinearRegionItem</span><span class="o">.</span><span class="n">Horizontal</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">lines</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="c1"># rotate lines to 180 to preserve expected line orientation </span>
+                <span class="c1"># with respect to region. This ensures that placing a &#39;&lt;|&#39; </span>
+                <span class="c1"># marker on lines[0] causes it to point left in vertical mode</span>
+                <span class="c1"># and down in horizontal mode. </span>
+                <span class="n">InfiniteLine</span><span class="p">(</span><span class="n">QtCore</span><span class="o">.</span><span class="n">QPointF</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">angle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="o">**</span><span class="n">lineKwds</span><span class="p">),</span> 
+                <span class="n">InfiniteLine</span><span class="p">(</span><span class="n">QtCore</span><span class="o">.</span><span class="n">QPointF</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">angle</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="o">**</span><span class="n">lineKwds</span><span class="p">)]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">orientation</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;vertical&#39;</span><span class="p">,</span> <span class="n">LinearRegionItem</span><span class="o">.</span><span class="n">Vertical</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">lines</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="n">InfiniteLine</span><span class="p">(</span><span class="n">QtCore</span><span class="o">.</span><span class="n">QPointF</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">0</span><span class="p">),</span> <span class="n">angle</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="o">**</span><span class="n">lineKwds</span><span class="p">),</span> 
+                <span class="n">InfiniteLine</span><span class="p">(</span><span class="n">QtCore</span><span class="o">.</span><span class="n">QPointF</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">0</span><span class="p">),</span> <span class="n">angle</span><span class="o">=</span><span class="mi">90</span><span class="p">,</span> <span class="o">**</span><span class="n">lineKwds</span><span class="p">)]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Orientation must be &#39;vertical&#39; or &#39;horizontal&#39;.&quot;</span><span class="p">)</span>
+        
+        <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">:</span>
+            <span class="n">l</span><span class="o">.</span><span class="n">setParentItem</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+            <span class="n">l</span><span class="o">.</span><span class="n">sigPositionChangeFinished</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">lineMoveFinished</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">sigPositionChanged</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">lineMoved</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sigPositionChanged</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">lineMoved</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+            
+        <span class="k">if</span> <span class="n">brush</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">brush</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QBrush</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QColor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">50</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setBrush</span><span class="p">(</span><span class="n">brush</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">hoverBrush</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">brush</span><span class="o">.</span><span class="n">color</span><span class="p">()</span>
+            <span class="n">c</span><span class="o">.</span><span class="n">setAlpha</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">alpha</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">255</span><span class="p">))</span>
+            <span class="n">hoverBrush</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="n">mkBrush</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setHoverBrush</span><span class="p">(</span><span class="n">hoverBrush</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">setMovable</span><span class="p">(</span><span class="n">movable</span><span class="p">)</span></div>
+        
+<div class="viewcode-block" id="LinearRegionItem.getRegion"><a class="viewcode-back" href="../../../graphicsItems/linearregionitem.html#pyqtgraph.LinearRegionItem.getRegion">[docs]</a>    <span class="k">def</span> <span class="nf">getRegion</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the values at the edges of the region.&quot;&quot;&quot;</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">())</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">swapMode</span> <span class="o">==</span> <span class="s1">&#39;sort&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">r</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">r</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">r</span></div>
+
+<div class="viewcode-block" id="LinearRegionItem.setRegion"><a class="viewcode-back" href="../../../graphicsItems/linearregionitem.html#pyqtgraph.LinearRegionItem.setRegion">[docs]</a>    <span class="k">def</span> <span class="nf">setRegion</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rgn</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the values for the edges of the region.</span>
+<span class="sd">        </span>
+<span class="sd">        ==============   ==============================================</span>
+<span class="sd">        **Arguments:**</span>
+<span class="sd">        rgn              A list or tuple of the lower and upper values.</span>
+<span class="sd">        ==============   ==============================================</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">==</span> <span class="n">rgn</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">==</span> <span class="n">rgn</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="k">return</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">blockLineSignal</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">rgn</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">blockLineSignal</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="n">rgn</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="c1">#self.blockLineSignal = False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lineMoved</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lineMoved</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lineMoveFinished</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="LinearRegionItem.setBrush"><a class="viewcode-back" href="../../../graphicsItems/linearregionitem.html#pyqtgraph.LinearRegionItem.setBrush">[docs]</a>    <span class="k">def</span> <span class="nf">setBrush</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">br</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the brush that fills the region. Can have any arguments that are valid</span>
+<span class="sd">        for :func:`mkBrush &lt;pyqtgraph.mkBrush&gt;`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">brush</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="n">mkBrush</span><span class="p">(</span><span class="o">*</span><span class="n">br</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">currentBrush</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">brush</span></div>
+
+<div class="viewcode-block" id="LinearRegionItem.setHoverBrush"><a class="viewcode-back" href="../../../graphicsItems/linearregionitem.html#pyqtgraph.LinearRegionItem.setHoverBrush">[docs]</a>    <span class="k">def</span> <span class="nf">setHoverBrush</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">br</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set the brush that fills the region when the mouse is hovering over.</span>
+<span class="sd">        Can have any arguments that are valid</span>
+<span class="sd">        for :func:`mkBrush &lt;pyqtgraph.mkBrush&gt;`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">hoverBrush</span> <span class="o">=</span> <span class="n">fn</span><span class="o">.</span><span class="n">mkBrush</span><span class="p">(</span><span class="o">*</span><span class="n">br</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="LinearRegionItem.setBounds"><a class="viewcode-back" href="../../../graphicsItems/linearregionitem.html#pyqtgraph.LinearRegionItem.setBounds">[docs]</a>    <span class="k">def</span> <span class="nf">setBounds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bounds</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Optional [min, max] bounding values for the region. To have no bounds on the</span>
+<span class="sd">        region use [None, None].</span>
+<span class="sd">        Does not affect the current position of the region unless it is outside the new bounds. </span>
+<span class="sd">        See :func:`setRegion &lt;pyqtgraph.LinearRegionItem.setRegion&gt;` to set the position </span>
+<span class="sd">        of the region.&quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">:</span>
+            <span class="n">l</span><span class="o">.</span><span class="n">setBounds</span><span class="p">(</span><span class="n">bounds</span><span class="p">)</span></div>
+        
+<div class="viewcode-block" id="LinearRegionItem.setMovable"><a class="viewcode-back" href="../../../graphicsItems/linearregionitem.html#pyqtgraph.LinearRegionItem.setMovable">[docs]</a>    <span class="k">def</span> <span class="nf">setMovable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Set lines to be movable by the user, or not. If lines are movable, they will </span>
+<span class="sd">        also accept HoverEvents.&quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">:</span>
+            <span class="n">l</span><span class="o">.</span><span class="n">setMovable</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">movable</span> <span class="o">=</span> <span class="n">m</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setAcceptHoverEvents</span><span class="p">(</span><span class="n">m</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">setSpan</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mn</span><span class="p">,</span> <span class="n">mx</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">span</span> <span class="o">==</span> <span class="p">(</span><span class="n">mn</span><span class="p">,</span> <span class="n">mx</span><span class="p">):</span>
+            <span class="k">return</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">span</span> <span class="o">=</span> <span class="p">(</span><span class="n">mn</span><span class="p">,</span> <span class="n">mx</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">setSpan</span><span class="p">(</span><span class="n">mn</span><span class="p">,</span> <span class="n">mx</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">setSpan</span><span class="p">(</span><span class="n">mn</span><span class="p">,</span> <span class="n">mx</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+
+<div class="viewcode-block" id="LinearRegionItem.boundingRect"><a class="viewcode-back" href="../../../graphicsItems/linearregionitem.html#pyqtgraph.LinearRegionItem.boundingRect">[docs]</a>    <span class="k">def</span> <span class="nf">boundingRect</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">br</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">viewRect</span><span class="p">()</span>  <span class="c1"># bounds of containing ViewBox mapped to local coords.</span>
+        
+        <span class="n">rng</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getRegion</span><span class="p">()</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">orientation</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;vertical&#39;</span><span class="p">,</span> <span class="n">LinearRegionItem</span><span class="o">.</span><span class="n">Vertical</span><span class="p">):</span>
+            <span class="n">br</span><span class="o">.</span><span class="n">setLeft</span><span class="p">(</span><span class="n">rng</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">br</span><span class="o">.</span><span class="n">setRight</span><span class="p">(</span><span class="n">rng</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">length</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="n">height</span><span class="p">()</span>
+            <span class="n">br</span><span class="o">.</span><span class="n">setBottom</span><span class="p">(</span><span class="n">br</span><span class="o">.</span><span class="n">top</span><span class="p">()</span> <span class="o">+</span> <span class="n">length</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">span</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">br</span><span class="o">.</span><span class="n">setTop</span><span class="p">(</span><span class="n">br</span><span class="o">.</span><span class="n">top</span><span class="p">()</span> <span class="o">+</span> <span class="n">length</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">span</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">br</span><span class="o">.</span><span class="n">setTop</span><span class="p">(</span><span class="n">rng</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">br</span><span class="o">.</span><span class="n">setBottom</span><span class="p">(</span><span class="n">rng</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">length</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="n">width</span><span class="p">()</span>
+            <span class="n">br</span><span class="o">.</span><span class="n">setRight</span><span class="p">(</span><span class="n">br</span><span class="o">.</span><span class="n">left</span><span class="p">()</span> <span class="o">+</span> <span class="n">length</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">span</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">br</span><span class="o">.</span><span class="n">setLeft</span><span class="p">(</span><span class="n">br</span><span class="o">.</span><span class="n">left</span><span class="p">()</span> <span class="o">+</span> <span class="n">length</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">span</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="n">br</span> <span class="o">=</span> <span class="n">br</span><span class="o">.</span><span class="n">normalized</span><span class="p">()</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_bounds</span> <span class="o">!=</span> <span class="n">br</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_bounds</span> <span class="o">=</span> <span class="n">br</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">prepareGeometryChange</span><span class="p">()</span>
+        
+        <span class="k">return</span> <span class="n">br</span></div>
+        
+<div class="viewcode-block" id="LinearRegionItem.paint"><a class="viewcode-back" href="../../../graphicsItems/linearregionitem.html#pyqtgraph.LinearRegionItem.paint">[docs]</a>    <span class="k">def</span> <span class="nf">paint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="n">profiler</span> <span class="o">=</span> <span class="n">debug</span><span class="o">.</span><span class="n">Profiler</span><span class="p">()</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">setBrush</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">currentBrush</span><span class="p">)</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">setPen</span><span class="p">(</span><span class="n">fn</span><span class="o">.</span><span class="n">mkPen</span><span class="p">(</span><span class="kc">None</span><span class="p">))</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">drawRect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">boundingRect</span><span class="p">())</span></div>
+
+    <span class="k">def</span> <span class="nf">dataBounds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">frac</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">orthoRange</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">axis</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">_orientation_axis</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">orientation</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">getRegion</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">lineMoved</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">blockLineSignal</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="c1"># lines swapped</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">():</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">swapMode</span> <span class="o">==</span> <span class="s1">&#39;block&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="o">-</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">())</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">swapMode</span> <span class="o">==</span> <span class="s1">&#39;push&#39;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">1</span><span class="o">-</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">setValue</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">())</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">prepareGeometryChange</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sigRegionChanged</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+            
+    <span class="k">def</span> <span class="nf">lineMoveFinished</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sigRegionChangeFinished</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">mouseDragEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ev</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">movable</span> <span class="ow">or</span> <span class="nb">int</span><span class="p">(</span><span class="n">ev</span><span class="o">.</span><span class="n">button</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">LeftButton</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="n">ev</span><span class="o">.</span><span class="n">accept</span><span class="p">()</span>
+        
+        <span class="k">if</span> <span class="n">ev</span><span class="o">.</span><span class="n">isStart</span><span class="p">():</span>
+            <span class="n">bdp</span> <span class="o">=</span> <span class="n">ev</span><span class="o">.</span><span class="n">buttonDownPos</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cursorOffsets</span> <span class="o">=</span> <span class="p">[</span><span class="n">l</span><span class="o">.</span><span class="n">pos</span><span class="p">()</span> <span class="o">-</span> <span class="n">bdp</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">startPositions</span> <span class="o">=</span> <span class="p">[</span><span class="n">l</span><span class="o">.</span><span class="n">pos</span><span class="p">()</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">moving</span> <span class="o">=</span> <span class="kc">True</span>
+            
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">moving</span><span class="p">:</span>
+            <span class="k">return</span>
+            
+        <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">blockSignals</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># only want to update once</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">):</span>
+            <span class="n">l</span><span class="o">.</span><span class="n">setPos</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cursorOffsets</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">ev</span><span class="o">.</span><span class="n">pos</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">blockSignals</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">prepareGeometryChange</span><span class="p">()</span>
+        
+        <span class="k">if</span> <span class="n">ev</span><span class="o">.</span><span class="n">isFinish</span><span class="p">():</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">moving</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sigRegionChangeFinished</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sigRegionChanged</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+            
+    <span class="k">def</span> <span class="nf">mouseClickEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ev</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">moving</span> <span class="ow">and</span> <span class="n">ev</span><span class="o">.</span><span class="n">button</span><span class="p">()</span> <span class="o">==</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">RightButton</span><span class="p">:</span>
+            <span class="n">ev</span><span class="o">.</span><span class="n">accept</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">lines</span><span class="p">):</span>
+                <span class="n">l</span><span class="o">.</span><span class="n">setPos</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">startPositions</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">moving</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sigRegionChanged</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sigRegionChangeFinished</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">hoverEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ev</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">movable</span> <span class="ow">and</span> <span class="p">(</span><span class="ow">not</span> <span class="n">ev</span><span class="o">.</span><span class="n">isExit</span><span class="p">())</span> <span class="ow">and</span> <span class="n">ev</span><span class="o">.</span><span class="n">acceptDrags</span><span class="p">(</span><span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">LeftButton</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setMouseHover</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setMouseHover</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+            
+    <span class="k">def</span> <span class="nf">setMouseHover</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hover</span><span class="p">):</span>
+        <span class="c1">## Inform the item that the mouse is(not) hovering over it</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mouseHovering</span> <span class="o">==</span> <span class="n">hover</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mouseHovering</span> <span class="o">=</span> <span class="n">hover</span>
+        <span class="k">if</span> <span class="n">hover</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">currentBrush</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hoverBrush</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">currentBrush</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">brush</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">update</span><span class="p">()</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../pyqtgraph.html" >pyqtgraph</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

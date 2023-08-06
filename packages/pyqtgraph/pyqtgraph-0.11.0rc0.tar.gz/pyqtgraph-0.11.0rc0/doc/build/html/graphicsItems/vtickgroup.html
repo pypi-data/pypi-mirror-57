@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>VTickGroup &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LegendItem" href="legenditem.html" />
+    <link rel="prev" title="LabelItem" href="labelitem.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="legenditem.html" title="LegendItem"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="labelitem.html" title="LabelItem"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="vtickgroup">
+<h1>VTickGroup<a class="headerlink" href="#vtickgroup" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.VTickGroup">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">VTickGroup</code><span class="sig-paren">(</span><em class="sig-param">xvals=None</em>, <em class="sig-param">yrange=None</em>, <em class="sig-param">pen=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/VTickGroup.html#VTickGroup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.VTickGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Bases:</strong> <a class="reference internal" href="uigraphicsitem.html#pyqtgraph.UIGraphicsItem" title="pyqtgraph.UIGraphicsItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">UIGraphicsItem</span></code></a></p>
+<p>Draws a set of tick marks which always occupy the same vertical range of the view,
+but have x coordinates relative to the data within the view.</p>
+<dl class="method">
+<dt id="pyqtgraph.VTickGroup.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">xvals=None</em>, <em class="sig-param">yrange=None</em>, <em class="sig-param">pen=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/VTickGroup.html#VTickGroup.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.VTickGroup.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>xvals</p></td>
+<td><p>A list of x values (in data coordinates) at which to draw ticks.</p></td>
+</tr>
+<tr class="row-odd"><td><p>yrange</p></td>
+<td><p>A list of [low, high] limits for the tick. 0 is the bottom of
+the view, 1 is the top. [0.8, 1] would draw ticks in the top
+fifth of the view.</p></td>
+</tr>
+<tr class="row-even"><td><p>pen</p></td>
+<td><p>The pen to use for drawing ticks. Default is grey. Can be specified
+as any argument valid for <a class="reference internal" href="../functions.html#pyqtgraph.mkPen" title="pyqtgraph.mkPen"><code class="xref py py-func docutils literal notranslate"><span class="pre">mkPen</span></code></a></p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.VTickGroup.dataBounds">
+<code class="sig-name descname">dataBounds</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/VTickGroup.html#VTickGroup.dataBounds"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.VTickGroup.dataBounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called by ViewBox for determining the auto-range bounds.
+By default, UIGraphicsItems are excluded from autoRange.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.VTickGroup.paint">
+<code class="sig-name descname">paint</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">painter: PySide2.QtGui.QPainter</em>, <em class="sig-param">option: PySide2.QtWidgets.QStyleOptionGraphicsItem</em>, <em class="sig-param">widget: typing.Union[PySide2.QtWidgets.QWidget</em>, <em class="sig-param">NoneType] = None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/VTickGroup.html#VTickGroup.paint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.VTickGroup.paint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.VTickGroup.setPen">
+<code class="sig-name descname">setPen</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/VTickGroup.html#VTickGroup.setPen"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.VTickGroup.setPen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the pen to use for drawing ticks. Can be specified as any arguments valid
+for <a class="reference internal" href="../functions.html#pyqtgraph.mkPen" title="pyqtgraph.mkPen"><code class="xref py py-func docutils literal notranslate"><span class="pre">mkPen</span></code></a></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.VTickGroup.setXVals">
+<code class="sig-name descname">setXVals</code><span class="sig-paren">(</span><em class="sig-param">vals</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/VTickGroup.html#VTickGroup.setXVals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.VTickGroup.setXVals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the x values for the ticks.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>vals</p></td>
+<td><p>A list of x values (in data/plot coordinates) at which to draw ticks.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.VTickGroup.setYRange">
+<code class="sig-name descname">setYRange</code><span class="sig-paren">(</span><em class="sig-param">vals</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/VTickGroup.html#VTickGroup.setYRange"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.VTickGroup.setYRange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the y range [low, high] that the ticks are drawn on. 0 is the bottom of 
+the view, 1 is the top.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="labelitem.html"
+                        title="previous chapter">LabelItem</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="legenditem.html"
+                        title="next chapter">LegendItem</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/graphicsItems/vtickgroup.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="legenditem.html" title="LegendItem"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="labelitem.html" title="LabelItem"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

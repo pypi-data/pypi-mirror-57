@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>LabelItem &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="VTickGroup" href="vtickgroup.html" />
+    <link rel="prev" title="ScaleBar" href="scalebar.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="vtickgroup.html" title="VTickGroup"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="scalebar.html" title="ScaleBar"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="labelitem">
+<h1>LabelItem<a class="headerlink" href="#labelitem" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.LabelItem">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">LabelItem</code><span class="sig-paren">(</span><em class="sig-param">text=' '</em>, <em class="sig-param">parent=None</em>, <em class="sig-param">angle=0</em>, <em class="sig-param">**args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/LabelItem.html#LabelItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.LabelItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>GraphicsWidget displaying text.
+Used mainly as axis labels, titles, etc.</p>
+<p>Note: To display text inside a scaled view (ViewBox, PlotWidget, etc) use TextItem</p>
+<dl class="method">
+<dt id="pyqtgraph.LabelItem.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">text=' '</em>, <em class="sig-param">parent=None</em>, <em class="sig-param">angle=0</em>, <em class="sig-param">**args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/LabelItem.html#LabelItem.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.LabelItem.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Bases:</strong> <a class="reference internal" href="graphicsitem.html#pyqtgraph.GraphicsItem" title="pyqtgraph.GraphicsItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsItem</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">QtGui.QGraphicsWidget</span></code></p>
+<p>Extends QGraphicsWidget with several helpful methods and workarounds for PyQt bugs. 
+Most of the extra functionality is inherited from <a class="reference internal" href="graphicsitem.html#pyqtgraph.GraphicsItem" title="pyqtgraph.GraphicsItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsItem</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.LabelItem.resizeEvent">
+<code class="sig-name descname">resizeEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtWidgets.QGraphicsSceneResizeEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/LabelItem.html#LabelItem.resizeEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.LabelItem.resizeEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.LabelItem.setAttr">
+<code class="sig-name descname">setAttr</code><span class="sig-paren">(</span><em class="sig-param">attr</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/LabelItem.html#LabelItem.setAttr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.LabelItem.setAttr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set default text properties. See setText() for accepted parameters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.LabelItem.setText">
+<code class="sig-name descname">setText</code><span class="sig-paren">(</span><em class="sig-param">text</em>, <em class="sig-param">**args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/LabelItem.html#LabelItem.setText"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.LabelItem.setText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the text and text properties in the label. Accepts optional arguments for auto-generating
+a CSS style string:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 60%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Style Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>color</p></td>
+<td><p>(str) example: ‘CCFF00’</p></td>
+</tr>
+<tr class="row-odd"><td><p>size</p></td>
+<td><p>(str) example: ‘8pt’</p></td>
+</tr>
+<tr class="row-even"><td><p>bold</p></td>
+<td><p>(bool)</p></td>
+</tr>
+<tr class="row-odd"><td><p>italic</p></td>
+<td><p>(bool)</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.LabelItem.sizeHint">
+<code class="sig-name descname">sizeHint</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">which: PySide2.QtCore.Qt.SizeHint</em>, <em class="sig-param">constraint: PySide2.QtCore.QSizeF = Default(QSizeF)</em><span class="sig-paren">)</span> &#x2192; PySide2.QtCore.QSizeF<a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/LabelItem.html#LabelItem.sizeHint"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.LabelItem.sizeHint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="scalebar.html"
+                        title="previous chapter">ScaleBar</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="vtickgroup.html"
+                        title="next chapter">VTickGroup</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/graphicsItems/labelitem.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="vtickgroup.html" title="VTickGroup"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="scalebar.html" title="ScaleBar"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

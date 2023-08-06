@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>ColorMapWidget &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ScatterPlotWidget" href="scatterplotwidget.html" />
+    <link rel="prev" title="ConsoleWidget" href="consolewidget.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="scatterplotwidget.html" title="ScatterPlotWidget"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="consolewidget.html" title="ConsoleWidget"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="colormapwidget">
+<h1>ColorMapWidget<a class="headerlink" href="#colormapwidget" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.ColorMapWidget">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">ColorMapWidget</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/ColorMapWidget.html#ColorMapWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ColorMapWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class provides a widget allowing the user to customize color mapping
+for multi-column data. Given a list of field names, the user may specify
+multiple criteria for assigning colors to each record in a numpy record array.
+Multiple criteria are evaluated and combined into a single color for each
+record by user-defined compositing methods.</p>
+<p>For simpler color mapping using a single gradient editor, see 
+<a class="reference internal" href="gradientwidget.html#pyqtgraph.GradientWidget" title="pyqtgraph.GradientWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">GradientWidget</span></code></a></p>
+<dl class="method">
+<dt id="pyqtgraph.ColorMapWidget.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/ColorMapWidget.html#ColorMapWidget.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ColorMapWidget.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>parent</p></td>
+<td><p>(QWidget) An optional parent widget</p></td>
+</tr>
+<tr class="row-odd"><td><p>showHeader</p></td>
+<td><p>(bool) If True, then the QTreeView header is displayed.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.widgets.ColorMapWidget.ColorMapWidget.ColorMapParameter.setFields">
+<code class="sig-prename descclassname">ColorMapParameter.</code><code class="sig-name descname">setFields</code><span class="sig-paren">(</span><em class="sig-param">fields</em><span class="sig-paren">)</span><a class="headerlink" href="#pyqtgraph.widgets.ColorMapWidget.ColorMapWidget.ColorMapParameter.setFields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the list of fields to be used by the mapper.</p>
+<p>The format of <em>fields</em> is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span> <span class="p">(</span><span class="n">fieldName</span><span class="p">,</span> <span class="p">{</span><span class="n">options</span><span class="p">}),</span> <span class="o">...</span> <span class="p">]</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Field Options:</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>mode</p></td>
+<td><p>Either ‘range’ or ‘enum’ (default is range). For ‘range’,
+The user may specify a gradient of colors to be applied
+linearly across a specific range of values. For ‘enum’,
+the user specifies a single color for each unique value
+(see <em>values</em> option).</p></td>
+</tr>
+<tr class="row-odd"><td><p>units</p></td>
+<td><p>String indicating the units of the data for this field.</p></td>
+</tr>
+<tr class="row-even"><td><p>values</p></td>
+<td><p>List of unique values for which the user may assign a
+color when mode==’enum’. Optionally may specify a dict
+instead {value: name}.</p></td>
+</tr>
+<tr class="row-odd"><td><p>defaults</p></td>
+<td><p>Dict of default values to apply to color map items when
+they are created. Valid keys are ‘colormap’ to provide
+a default color map, or otherwise they a string or tuple
+indicating the parameter to be set, such as ‘Operation’ or
+(‘Channels..’, ‘Red’).</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.widgets.ColorMapWidget.ColorMapWidget.ColorMapParameter.map">
+<code class="sig-prename descclassname">ColorMapParameter.</code><code class="sig-name descname">map</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">mode='byte'</em><span class="sig-paren">)</span><a class="headerlink" href="#pyqtgraph.widgets.ColorMapWidget.ColorMapWidget.ColorMapParameter.map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an array of colors corresponding to <em>data</em>.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>data</p></td>
+<td><p>A numpy record array where the fields in data.dtype match those
+defined by a prior call to setFields().</p></td>
+</tr>
+<tr class="row-odd"><td><p>mode</p></td>
+<td><p>Either ‘byte’ or ‘float’. For ‘byte’, the method returns an array
+of dtype ubyte with values scaled 0-255. For ‘float’, colors are
+returned as 0.0-1.0 float values.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ColorMapWidget.addColorMap">
+<code class="sig-name descname">addColorMap</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/ColorMapWidget.html#ColorMapWidget.addColorMap"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ColorMapWidget.addColorMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new color mapping and return the created parameter.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="consolewidget.html"
+                        title="previous chapter">ConsoleWidget</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="scatterplotwidget.html"
+                        title="next chapter">ScatterPlotWidget</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/colormapwidget.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="scatterplotwidget.html" title="ScatterPlotWidget"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="consolewidget.html" title="ConsoleWidget"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

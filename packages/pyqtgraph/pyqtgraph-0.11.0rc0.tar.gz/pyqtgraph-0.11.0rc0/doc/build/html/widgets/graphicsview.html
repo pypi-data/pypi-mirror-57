@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>GraphicsView &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="DataTreeWidget" href="datatreewidget.html" />
+    <link rel="prev" title="ScatterPlotWidget" href="scatterplotwidget.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="datatreewidget.html" title="DataTreeWidget"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="scatterplotwidget.html" title="ScatterPlotWidget"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="graphicsview">
+<h1>GraphicsView<a class="headerlink" href="#graphicsview" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.GraphicsView">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">GraphicsView</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">useOpenGL=None</em>, <em class="sig-param">background='default'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Re-implementation of QGraphicsView that removes scrollbars and allows unambiguous control of the 
+viewed coordinate range. Also automatically creates a GraphicsScene and a central QGraphicsWidget
+that is automatically scaled to the full view geometry.</p>
+<p>This widget is the basis for <a class="reference internal" href="plotwidget.html#pyqtgraph.PlotWidget" title="pyqtgraph.PlotWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlotWidget</span></code></a>, 
+<a class="reference internal" href="graphicslayoutwidget.html#pyqtgraph.GraphicsLayoutWidget" title="pyqtgraph.GraphicsLayoutWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsLayoutWidget</span></code></a>, and the view widget in
+<a class="reference internal" href="imageview.html#pyqtgraph.ImageView" title="pyqtgraph.ImageView"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageView</span></code></a>.</p>
+<p>By default, the view coordinate system matches the widget’s pixel coordinates and 
+automatically updates when the view is resized. This can be overridden by setting 
+autoPixelRange=False. The exact visible range can be set with setRange().</p>
+<p>The view can be panned using the middle mouse button and scaled using the right mouse button if
+enabled via enableMouse()  (but ordinarily, we use ViewBox for this functionality).</p>
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">useOpenGL=None</em>, <em class="sig-param">background='default'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>parent</p></td>
+<td><p>Optional parent widget</p></td>
+</tr>
+<tr class="row-odd"><td><p>useOpenGL</p></td>
+<td><p>If True, the GraphicsView will use OpenGL to do all of its
+rendering. This can improve performance on some systems,
+but may also introduce bugs (the combination of
+QGraphicsView and QGLWidget is still an ‘experimental’
+feature of Qt)</p></td>
+</tr>
+<tr class="row-even"><td><p>background</p></td>
+<td><p>Set the background color of the GraphicsView. Accepts any
+single argument accepted by
+<a class="reference internal" href="../functions.html#pyqtgraph.mkColor" title="pyqtgraph.mkColor"><code class="xref py py-func docutils literal notranslate"><span class="pre">mkColor</span></code></a>. By
+default, the background color is determined using the
+‘backgroundColor’ configuration option (see
+<a class="reference internal" href="../config_options.html#pyqtgraph.setConfigOptions" title="pyqtgraph.setConfigOptions"><code class="xref py py-func docutils literal notranslate"><span class="pre">setConfigOptions</span></code></a>).</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.dragEnterEvent">
+<code class="sig-name descname">dragEnterEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QDragEnterEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.dragEnterEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.dragEnterEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.keyPressEvent">
+<code class="sig-name descname">keyPressEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QKeyEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.keyPressEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.keyPressEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.leaveEvent">
+<code class="sig-name descname">leaveEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtCore.QEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.leaveEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.leaveEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.mouseMoveEvent">
+<code class="sig-name descname">mouseMoveEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QMouseEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.mouseMoveEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.mouseMoveEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.mousePressEvent">
+<code class="sig-name descname">mousePressEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QMouseEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.mousePressEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.mousePressEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.mouseReleaseEvent">
+<code class="sig-name descname">mouseReleaseEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QMouseEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.mouseReleaseEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.mouseReleaseEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.paintEvent">
+<code class="sig-name descname">paintEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QPaintEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.paintEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.paintEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.pixelSize">
+<code class="sig-name descname">pixelSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.pixelSize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.pixelSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return vector with the length and width of one view pixel in scene coordinates</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">painter: PySide2.QtGui.QPainter</em>, <em class="sig-param">target: PySide2.QtCore.QRectF = Default(QRectF)</em>, <em class="sig-param">source: PySide2.QtCore.QRect = Default(QRect)</em>, <em class="sig-param">aspectRatioMode: PySide2.QtCore.Qt.AspectRatioMode = PySide2.QtCore.Qt.AspectRatioMode.KeepAspectRatio</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.render"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>render(self, target: PySide2.QtGui.QPaintDevice, targetOffset: PySide2.QtCore.QPoint = Default(QPoint), sourceRegion: PySide2.QtGui.QRegion = Default(QRegion), renderFlags: PySide2.QtWidgets.QWidget.RenderFlags = Instance(QWidget.RenderFlags(QWidget.DrawWindowBackground | QWidget.DrawChildren)))</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.resizeEvent">
+<code class="sig-name descname">resizeEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QResizeEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.resizeEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.resizeEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.scale">
+<code class="sig-name descname">scale</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">sx: float</em>, <em class="sig-param">sy: float</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.scale"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.scale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.scaleToImage">
+<code class="sig-name descname">scaleToImage</code><span class="sig-paren">(</span><em class="sig-param">image</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.scaleToImage"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.scaleToImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scales such that pixels in image are the same size as screen pixels. This may result in a significant performance increase.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.setAntialiasing">
+<code class="sig-name descname">setAntialiasing</code><span class="sig-paren">(</span><em class="sig-param">aa</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.setAntialiasing"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.setAntialiasing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable or disable default antialiasing.
+Note that this will only affect items that do not specify their own antialiasing options.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.setBackground">
+<code class="sig-name descname">setBackground</code><span class="sig-paren">(</span><em class="sig-param">background</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.setBackground"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.setBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the background color of the GraphicsView.
+To use the defaults specified py pyqtgraph.setConfigOption, use background=’default’.
+To make the background transparent, use background=None.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.setCentralWidget">
+<code class="sig-name descname">setCentralWidget</code><span class="sig-paren">(</span><em class="sig-param">item</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.setCentralWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.setCentralWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets a QGraphicsWidget to automatically fill the entire view (the item will be automatically
+resize whenever the GraphicsView is resized).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.translate">
+<code class="sig-name descname">translate</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">dx: float</em>, <em class="sig-param">dy: float</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.translate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.translate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.viewRect">
+<code class="sig-name descname">viewRect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.viewRect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.viewRect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the boundaries of the view in scene coordinates</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.GraphicsView.wheelEvent">
+<code class="sig-name descname">wheelEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtGui.QWheelEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/GraphicsView.html#GraphicsView.wheelEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.GraphicsView.wheelEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="scatterplotwidget.html"
+                        title="previous chapter">ScatterPlotWidget</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="datatreewidget.html"
+                        title="next chapter">DataTreeWidget</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/graphicsview.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="datatreewidget.html" title="DataTreeWidget"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="scatterplotwidget.html" title="ScatterPlotWidget"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

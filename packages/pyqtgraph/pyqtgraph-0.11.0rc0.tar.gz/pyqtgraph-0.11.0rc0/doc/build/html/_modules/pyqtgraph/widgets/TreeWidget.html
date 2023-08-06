@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>pyqtgraph.widgets.TreeWidget &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../pyqtgraph.html" accesskey="U">pyqtgraph</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for pyqtgraph.widgets.TreeWidget</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="kn">from</span> <span class="nn">..Qt</span> <span class="k">import</span> <span class="n">QtGui</span><span class="p">,</span> <span class="n">QtCore</span>
+<span class="kn">from</span> <span class="nn">weakref</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;TreeWidget&#39;</span><span class="p">,</span> <span class="s1">&#39;TreeWidgetItem&#39;</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="TreeWidget"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget">[docs]</a><span class="k">class</span> <span class="nc">TreeWidget</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Extends QTreeWidget to allow internal drag/drop with widgets in the tree.</span>
+<span class="sd">    Also maintains the expanded state of subtrees as they are moved.</span>
+<span class="sd">    This class demonstrates the absurd lengths one must go to to make drag/drop work.&quot;&quot;&quot;</span>
+    
+    <span class="n">sigItemMoved</span> <span class="o">=</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Signal</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="nb">object</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span> <span class="c1"># (item, parent, index)</span>
+    <span class="n">sigItemCheckStateChanged</span> <span class="o">=</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Signal</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+    <span class="n">sigItemTextChanged</span> <span class="o">=</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Signal</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>
+    <span class="n">sigColumnCountChanged</span> <span class="o">=</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Signal</span><span class="p">(</span><span class="nb">object</span><span class="p">,</span> <span class="nb">object</span><span class="p">)</span>  <span class="c1"># self, count</span>
+    
+<div class="viewcode-block" id="TreeWidget.__init__"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">)</span>
+        
+        <span class="c1"># wrap this item so that we can propagate tree change information</span>
+        <span class="c1"># to children.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_invRootItem</span> <span class="o">=</span> <span class="n">InvisibleRootItem</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="n">invisibleRootItem</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">setAcceptDrops</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setDragEnabled</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setEditTriggers</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QAbstractItemView</span><span class="o">.</span><span class="n">EditKeyPressed</span><span class="o">|</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QAbstractItemView</span><span class="o">.</span><span class="n">SelectedClicked</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">placeholders</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">childNestingLimit</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">itemClicked</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_itemClicked</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TreeWidget.setItemWidget"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.setItemWidget">[docs]</a>    <span class="k">def</span> <span class="nf">setItemWidget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">wid</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Overrides QTreeWidget.setItemWidget such that widgets are added inside an invisible wrapper widget.</span>
+<span class="sd">        This makes it possible to move the item in and out of the tree without its widgets being automatically deleted.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">w</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QWidget</span><span class="p">()</span>  <span class="c1">## foster parent / surrogate child widget</span>
+        <span class="n">l</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QVBoxLayout</span><span class="p">()</span>
+        <span class="n">l</span><span class="o">.</span><span class="n">setContentsMargins</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">w</span><span class="o">.</span><span class="n">setLayout</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+        <span class="n">w</span><span class="o">.</span><span class="n">setSizePolicy</span><span class="p">(</span><span class="n">wid</span><span class="o">.</span><span class="n">sizePolicy</span><span class="p">())</span>
+        <span class="n">w</span><span class="o">.</span><span class="n">setMinimumHeight</span><span class="p">(</span><span class="n">wid</span><span class="o">.</span><span class="n">minimumHeight</span><span class="p">())</span>
+        <span class="n">w</span><span class="o">.</span><span class="n">setMinimumWidth</span><span class="p">(</span><span class="n">wid</span><span class="o">.</span><span class="n">minimumWidth</span><span class="p">())</span>
+        <span class="n">l</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">wid</span><span class="p">)</span>
+        <span class="n">w</span><span class="o">.</span><span class="n">realChild</span> <span class="o">=</span> <span class="n">wid</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">placeholders</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="n">setItemWidget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TreeWidget.itemWidget"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.itemWidget">[docs]</a>    <span class="k">def</span> <span class="nf">itemWidget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">col</span><span class="p">):</span>
+        <span class="n">w</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="n">itemWidget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">col</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">w</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="s1">&#39;realChild&#39;</span><span class="p">):</span>
+            <span class="n">w</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">realChild</span>
+        <span class="k">return</span> <span class="n">w</span></div>
+
+<div class="viewcode-block" id="TreeWidget.dropMimeData"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.dropMimeData">[docs]</a>    <span class="k">def</span> <span class="nf">dropMimeData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">currentItem</span><span class="p">()</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">parent</span>
+        <span class="c1">#print &quot;drop&quot;, item, &quot;-&gt;&quot;, parent, index</span>
+        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">p</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">break</span>
+            <span class="k">if</span> <span class="n">p</span> <span class="ow">is</span> <span class="n">item</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">False</span>
+                <span class="c1">#raise Exception(&quot;Can not move item into itself.&quot;)</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">parent</span><span class="p">()</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">itemMoving</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        
+        <span class="n">currentParent</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">parent</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">currentParent</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">currentParent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">invisibleRootItem</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">parent</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">parent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">invisibleRootItem</span><span class="p">()</span>
+            
+        <span class="k">if</span> <span class="n">currentParent</span> <span class="ow">is</span> <span class="n">parent</span> <span class="ow">and</span> <span class="n">index</span> <span class="o">&gt;</span> <span class="n">parent</span><span class="o">.</span><span class="n">indexOfChild</span><span class="p">(</span><span class="n">item</span><span class="p">):</span>
+            <span class="n">index</span> <span class="o">-=</span> <span class="mi">1</span>
+            
+        <span class="bp">self</span><span class="o">.</span><span class="n">prepareMove</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+            
+        <span class="n">currentParent</span><span class="o">.</span><span class="n">removeChild</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="c1">#print &quot;  insert child to index&quot;, index</span>
+        <span class="n">parent</span><span class="o">.</span><span class="n">insertChild</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>  <span class="c1">## index will not be correct</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setCurrentItem</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">recoverMove</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="c1">#self.emit(QtCore.SIGNAL(&#39;itemMoved&#39;), item, parent, index)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sigItemMoved</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">True</span></div>
+
+<div class="viewcode-block" id="TreeWidget.itemMoving"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.itemMoving">[docs]</a>    <span class="k">def</span> <span class="nf">itemMoving</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">parent</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called when item has been dropped elsewhere in the tree.</span>
+<span class="sd">        Return True to accept the move, False to reject.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="kc">True</span></div>
+        
+    <span class="k">def</span> <span class="nf">prepareMove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="n">item</span><span class="o">.</span><span class="n">__widgets</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">item</span><span class="o">.</span><span class="n">__expanded</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">isExpanded</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">columnCount</span><span class="p">()):</span>
+            <span class="n">w</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">itemWidget</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+            <span class="n">item</span><span class="o">.</span><span class="n">__widgets</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">w</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="n">w</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">childCount</span><span class="p">()):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">prepareMove</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+        
+    <span class="k">def</span> <span class="nf">recoverMove</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">columnCount</span><span class="p">()):</span>
+            <span class="n">w</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">__widgets</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">w</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">setItemWidget</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">childCount</span><span class="p">()):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">recoverMove</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+        
+        <span class="n">item</span><span class="o">.</span><span class="n">setExpanded</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>  <span class="c1">## Items do not re-expand correctly unless they are collapsed first.</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QApplication</span><span class="o">.</span><span class="n">instance</span><span class="p">()</span><span class="o">.</span><span class="n">processEvents</span><span class="p">()</span>
+        <span class="n">item</span><span class="o">.</span><span class="n">setExpanded</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">__expanded</span><span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">collapseTree</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="n">item</span><span class="o">.</span><span class="n">setExpanded</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">childCount</span><span class="p">()):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">collapseTree</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+            
+    <span class="k">def</span> <span class="nf">removeTopLevelItem</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">topLevelItemCount</span><span class="p">()):</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">topLevelItem</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="ow">is</span> <span class="n">item</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">takeTopLevelItem</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                <span class="k">return</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Item &#39;</span><span class="si">%s</span><span class="s2">&#39; not in top-level items.&quot;</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
+    
+    <span class="k">def</span> <span class="nf">listAllItems</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">item</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">invisibleRootItem</span><span class="p">()</span>
+        
+        <span class="k">for</span> <span class="n">cindex</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">childCount</span><span class="p">()):</span>
+            <span class="n">foundItems</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">listAllItems</span><span class="p">(</span><span class="n">item</span><span class="o">=</span><span class="n">item</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="n">cindex</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">foundItems</span><span class="p">:</span>
+                <span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">items</span>
+            
+<div class="viewcode-block" id="TreeWidget.dropEvent"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.dropEvent">[docs]</a>    <span class="k">def</span> <span class="nf">dropEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ev</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="n">dropEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ev</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updateDropFlags</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="nf">updateDropFlags</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1">### intended to put a limit on how deep nests of children can go.</span>
+        <span class="c1">### self.childNestingLimit is upheld when moving items without children, but if the item being moved has children/grandchildren, the children/grandchildren</span>
+        <span class="c1">### can end up over the childNestingLimit. </span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">childNestingLimit</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">pass</span> <span class="c1"># enable drops in all items (but only if there are drops that aren&#39;t enabled? for performance...)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">items</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">listAllItems</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+                <span class="n">parentCount</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="n">p</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">parent</span><span class="p">()</span>
+                <span class="k">while</span> <span class="n">p</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">parentCount</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">parent</span><span class="p">()</span>
+                <span class="k">if</span> <span class="n">parentCount</span> <span class="o">&gt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">childNestingLimit</span><span class="p">:</span>
+                    <span class="n">item</span><span class="o">.</span><span class="n">setFlags</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">flags</span><span class="p">()</span> <span class="o">&amp;</span> <span class="p">(</span><span class="o">~</span><span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">ItemIsDropEnabled</span><span class="p">))</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">item</span><span class="o">.</span><span class="n">setFlags</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">flags</span><span class="p">()</span> <span class="o">|</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">ItemIsDropEnabled</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">informTreeWidgetChange</span><span class="p">(</span><span class="n">item</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="s1">&#39;treeWidgetChanged&#39;</span><span class="p">):</span>
+            <span class="n">item</span><span class="o">.</span><span class="n">treeWidgetChanged</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">childCount</span><span class="p">()):</span>
+            <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+        
+<div class="viewcode-block" id="TreeWidget.addTopLevelItem"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.addTopLevelItem">[docs]</a>    <span class="k">def</span> <span class="nf">addTopLevelItem</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="n">addTopLevelItem</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">item</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TreeWidget.addTopLevelItems"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.addTopLevelItems">[docs]</a>    <span class="k">def</span> <span class="nf">addTopLevelItems</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">items</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="n">addTopLevelItems</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">items</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">item</span><span class="p">)</span></div>
+            
+<div class="viewcode-block" id="TreeWidget.insertTopLevelItem"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.insertTopLevelItem">[docs]</a>    <span class="k">def</span> <span class="nf">insertTopLevelItem</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="n">insertTopLevelItem</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">item</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TreeWidget.insertTopLevelItems"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.insertTopLevelItems">[docs]</a>    <span class="k">def</span> <span class="nf">insertTopLevelItems</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">items</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="n">insertTopLevelItems</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">items</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">item</span><span class="p">)</span></div>
+            
+<div class="viewcode-block" id="TreeWidget.takeTopLevelItem"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.takeTopLevelItem">[docs]</a>    <span class="k">def</span> <span class="nf">takeTopLevelItem</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">topLevelItem</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">item</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">prepareMove</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="n">takeTopLevelItem</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">prepareMove</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">item</span></div>
+
+    <span class="k">def</span> <span class="nf">topLevelItems</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">topLevelItem</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">topLevelItemCount</span><span class="p">())]</span>
+        
+<div class="viewcode-block" id="TreeWidget.clear"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.clear">[docs]</a>    <span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">topLevelItems</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">prepareMove</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="n">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
+        
+        <span class="c1">## Why do we want to do this? It causes RuntimeErrors. </span>
+        <span class="c1">#for item in items:</span>
+            <span class="c1">#self.informTreeWidgetChange(item)</span>
+
+<div class="viewcode-block" id="TreeWidget.invisibleRootItem"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.invisibleRootItem">[docs]</a>    <span class="k">def</span> <span class="nf">invisibleRootItem</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_invRootItem</span></div>
+        
+<div class="viewcode-block" id="TreeWidget.itemFromIndex"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.itemFromIndex">[docs]</a>    <span class="k">def</span> <span class="nf">itemFromIndex</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the item and column corresponding to a QModelIndex.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">col</span> <span class="o">=</span> <span class="n">index</span><span class="o">.</span><span class="n">column</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">while</span> <span class="n">index</span><span class="o">.</span><span class="n">row</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">rows</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span><span class="o">.</span><span class="n">row</span><span class="p">())</span>
+            <span class="n">index</span> <span class="o">=</span> <span class="n">index</span><span class="o">.</span><span class="n">parent</span><span class="p">()</span>
+        <span class="n">item</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">topLevelItem</span><span class="p">(</span><span class="n">rows</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+            <span class="n">item</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">item</span><span class="p">,</span> <span class="n">col</span></div>
+
+<div class="viewcode-block" id="TreeWidget.setColumnCount"><a class="viewcode-back" href="../../../widgets/treewidget.html#pyqtgraph.TreeWidget.setColumnCount">[docs]</a>    <span class="k">def</span> <span class="nf">setColumnCount</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidget</span><span class="o">.</span><span class="n">setColumnCount</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sigColumnCountChanged</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_itemClicked</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">col</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="s1">&#39;itemClicked&#39;</span><span class="p">):</span>
+            <span class="n">item</span><span class="o">.</span><span class="n">itemClicked</span><span class="p">(</span><span class="n">col</span><span class="p">)</span></div>
+
+
+<span class="k">class</span> <span class="nc">TreeWidgetItem</span><span class="p">(</span><span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    TreeWidgetItem that keeps track of its own widgets and expansion state.</span>
+<span class="sd">    </span>
+<span class="sd">    * Widgets may be added to columns before the item is added to a tree.</span>
+<span class="sd">    * Expanded state may be set before item is added to a tree.</span>
+<span class="sd">    * Adds setCheked and isChecked methods.</span>
+<span class="sd">    * Adds addChildren, insertChildren, and takeChildren methods.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_widgets</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># col: widget</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tree</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_expanded</span> <span class="o">=</span> <span class="kc">False</span>
+        
+    <span class="k">def</span> <span class="nf">setChecked</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column</span><span class="p">,</span> <span class="n">checked</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setCheckState</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">Checked</span> <span class="k">if</span> <span class="n">checked</span> <span class="k">else</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">Unchecked</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">isChecked</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">col</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">checkState</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="o">==</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">Checked</span>
+        
+    <span class="k">def</span> <span class="nf">setExpanded</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">exp</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_expanded</span> <span class="o">=</span> <span class="n">exp</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="o">.</span><span class="n">setExpanded</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">exp</span><span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">isExpanded</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_expanded</span>
+        
+    <span class="k">def</span> <span class="nf">setWidget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column</span><span class="p">,</span> <span class="n">widget</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">column</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_widgets</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">removeWidget</span><span class="p">(</span><span class="n">column</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_widgets</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="n">widget</span>
+        <span class="n">tree</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">treeWidget</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">tree</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">tree</span><span class="o">.</span><span class="n">setItemWidget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column</span><span class="p">,</span> <span class="n">widget</span><span class="p">)</span>
+            
+    <span class="k">def</span> <span class="nf">removeWidget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column</span><span class="p">):</span>
+        <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">_widgets</span><span class="p">[</span><span class="n">column</span><span class="p">]</span>
+        <span class="n">tree</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">treeWidget</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">tree</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="n">tree</span><span class="o">.</span><span class="n">removeItemWidget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column</span><span class="p">)</span>
+            
+    <span class="k">def</span> <span class="nf">treeWidgetChanged</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">tree</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">treeWidget</span><span class="p">()</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tree</span> <span class="ow">is</span> <span class="n">tree</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_tree</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">treeWidget</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">tree</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">for</span> <span class="n">col</span><span class="p">,</span> <span class="n">widget</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_widgets</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">tree</span><span class="o">.</span><span class="n">setItemWidget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">widget</span><span class="p">)</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="o">.</span><span class="n">setExpanded</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_expanded</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">childItems</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">child</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">childCount</span><span class="p">())]</span>
+    
+    <span class="k">def</span> <span class="nf">addChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">child</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="o">.</span><span class="n">addChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">child</span><span class="p">)</span>
+        <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+            
+    <span class="k">def</span> <span class="nf">addChildren</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">childs</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="o">.</span><span class="n">addChildren</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">childs</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">childs</span><span class="p">:</span>
+            <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">insertChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">child</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="o">.</span><span class="n">insertChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">child</span><span class="p">)</span>
+        <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">insertChildren</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">childs</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="o">.</span><span class="n">addChildren</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">childs</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">childs</span><span class="p">:</span>
+            <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">removeChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">child</span><span class="p">):</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="o">.</span><span class="n">removeChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">child</span><span class="p">)</span>
+        <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+            
+    <span class="k">def</span> <span class="nf">takeChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="n">child</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="o">.</span><span class="n">takeChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+        <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">child</span>
+    
+    <span class="k">def</span> <span class="nf">takeChildren</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">childs</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="o">.</span><span class="n">takeChildren</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">childs</span><span class="p">:</span>
+            <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">childs</span>
+        
+    <span class="k">def</span> <span class="nf">setData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column</span><span class="p">,</span> <span class="n">role</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="c1"># credit: ekhumoro</span>
+        <span class="c1">#   http://stackoverflow.com/questions/13662020/how-to-implement-itemchecked-and-itemunchecked-signals-for-qtreewidget-in-pyqt4</span>
+        <span class="n">checkstate</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">checkState</span><span class="p">(</span><span class="n">column</span><span class="p">)</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">column</span><span class="p">)</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QTreeWidgetItem</span><span class="o">.</span><span class="n">setData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column</span><span class="p">,</span> <span class="n">role</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+        
+        <span class="n">treewidget</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">treeWidget</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">treewidget</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">role</span> <span class="o">==</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">CheckStateRole</span> <span class="ow">and</span> <span class="n">checkstate</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">checkState</span><span class="p">(</span><span class="n">column</span><span class="p">)):</span>
+            <span class="n">treewidget</span><span class="o">.</span><span class="n">sigItemCheckStateChanged</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">role</span> <span class="ow">in</span> <span class="p">(</span><span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">DisplayRole</span><span class="p">,</span> <span class="n">QtCore</span><span class="o">.</span><span class="n">Qt</span><span class="o">.</span><span class="n">EditRole</span><span class="p">)</span> <span class="ow">and</span> <span class="n">text</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">column</span><span class="p">)):</span>
+            <span class="n">treewidget</span><span class="o">.</span><span class="n">sigItemTextChanged</span><span class="o">.</span><span class="n">emit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">column</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">itemClicked</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">col</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Called when this item is clicked on.</span>
+<span class="sd">        </span>
+<span class="sd">        Override this method to react to user clicks.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+            
+<span class="k">class</span> <span class="nc">InvisibleRootItem</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Wrapper around a TreeWidget&#39;s invisible root item that calls</span>
+<span class="sd">    TreeWidget.informTreeWidgetChange when child items are added/removed.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_real_item</span> <span class="o">=</span> <span class="n">item</span>
+        
+    <span class="k">def</span> <span class="nf">addChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">child</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_real_item</span><span class="o">.</span><span class="n">addChild</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+        <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+            
+    <span class="k">def</span> <span class="nf">addChildren</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">childs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_real_item</span><span class="o">.</span><span class="n">addChildren</span><span class="p">(</span><span class="n">childs</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">childs</span><span class="p">:</span>
+            <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">insertChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">child</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_real_item</span><span class="o">.</span><span class="n">insertChild</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">child</span><span class="p">)</span>
+        <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">insertChildren</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">childs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_real_item</span><span class="o">.</span><span class="n">addChildren</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">childs</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">childs</span><span class="p">:</span>
+            <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">removeChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">child</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_real_item</span><span class="o">.</span><span class="n">removeChild</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+        <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+            
+    <span class="k">def</span> <span class="nf">takeChild</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="n">child</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_real_item</span><span class="o">.</span><span class="n">takeChild</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+        <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">child</span>
+    
+    <span class="k">def</span> <span class="nf">takeChildren</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">childs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_real_item</span><span class="o">.</span><span class="n">takeChildren</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">childs</span><span class="p">:</span>
+            <span class="n">TreeWidget</span><span class="o">.</span><span class="n">informTreeWidgetChange</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">childs</span>
+
+    <span class="k">def</span> <span class="nf">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attr</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_real_item</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../pyqtgraph.html" >pyqtgraph</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

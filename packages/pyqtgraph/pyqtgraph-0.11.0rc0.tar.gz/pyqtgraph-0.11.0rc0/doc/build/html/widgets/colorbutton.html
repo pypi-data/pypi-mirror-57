@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>ColorButton &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="GraphicsLayoutWidget" href="graphicslayoutwidget.html" />
+    <link rel="prev" title="CheckTable" href="checktable.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="graphicslayoutwidget.html" title="GraphicsLayoutWidget"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="checktable.html" title="CheckTable"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="colorbutton">
+<h1>ColorButton<a class="headerlink" href="#colorbutton" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.ColorButton">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">ColorButton</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">color=(128</em>, <em class="sig-param">128</em>, <em class="sig-param">128)</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/ColorButton.html#ColorButton"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ColorButton" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Bases:</strong> QtGui.QPushButton</p>
+<p>Button displaying a color and allowing the user to select a new color.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Signals:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>sigColorChanging(self)</p></td>
+<td><p>emitted whenever a new color is picked in the color dialog</p></td>
+</tr>
+<tr class="row-odd"><td><p>sigColorChanged(self)</p></td>
+<td><p>emitted when the selected color is accepted (user clicks OK)</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pyqtgraph.ColorButton.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">color=(128</em>, <em class="sig-param">128</em>, <em class="sig-param">128)</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/ColorButton.html#ColorButton.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ColorButton.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ColorButton.paintEvent">
+<code class="sig-name descname">paintEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">arg__1: PySide2.QtGui.QPaintEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/ColorButton.html#ColorButton.paintEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ColorButton.paintEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.ColorButton.setColor">
+<code class="sig-name descname">setColor</code><span class="sig-paren">(</span><em class="sig-param">color</em>, <em class="sig-param">finished=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/widgets/ColorButton.html#ColorButton.setColor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.ColorButton.setColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the button’s color and emits both sigColorChanged and sigColorChanging.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="checktable.html"
+                        title="previous chapter">CheckTable</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="graphicslayoutwidget.html"
+                        title="next chapter">GraphicsLayoutWidget</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/colorbutton.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="graphicslayoutwidget.html" title="GraphicsLayoutWidget"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="checktable.html" title="CheckTable"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Widgets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

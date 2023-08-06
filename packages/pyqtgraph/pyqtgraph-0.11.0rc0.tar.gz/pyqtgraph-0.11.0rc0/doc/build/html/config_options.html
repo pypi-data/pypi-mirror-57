@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Global Configuration Options &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PyQtGraph’s Helper Functions" href="functions.html" />
+    <link rel="prev" title="API Reference" href="apireference.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="functions.html" title="PyQtGraph’s Helper Functions"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="apireference.html" title="API Reference"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="apireference.html" accesskey="U">API Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="global-configuration-options">
+<span id="apiref-config"></span><h1>Global Configuration Options<a class="headerlink" href="#global-configuration-options" title="Permalink to this headline">¶</a></h1>
+<p>PyQtGraph has several global configuration options that allow you to change its
+default behavior. These can be accessed using the <a class="reference internal" href="#pyqtgraph.setConfigOptions" title="pyqtgraph.setConfigOptions"><code class="xref py py-func docutils literal notranslate"><span class="pre">setConfigOptions()</span></code></a> and
+<a class="reference internal" href="#pyqtgraph.getConfigOption" title="pyqtgraph.getConfigOption"><code class="xref py py-func docutils literal notranslate"><span class="pre">getConfigOption()</span></code></a> functions:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 14%" />
+<col style="width: 13%" />
+<col style="width: 59%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Option</strong></p></td>
+<td><p><strong>Type</strong></p></td>
+<td><p><strong>Default</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>leftButtonPan</p></td>
+<td><p>bool</p></td>
+<td><p>True</p></td>
+<td><p>If True, dragging the left mouse button over a ViewBox
+causes the view to be panned. If False, then dragging
+the left mouse button draws a rectangle that the
+ViewBox will zoom to.</p></td>
+</tr>
+<tr class="row-odd"><td><p>foreground</p></td>
+<td><p>See <a class="reference internal" href="functions.html#pyqtgraph.mkColor" title="pyqtgraph.mkColor"><code class="xref py py-func docutils literal notranslate"><span class="pre">mkColor()</span></code></a></p></td>
+<td><p>‘d’</p></td>
+<td><p>Default foreground color for text, lines, axes, etc.</p></td>
+</tr>
+<tr class="row-even"><td><p>background</p></td>
+<td><p>See <a class="reference internal" href="functions.html#pyqtgraph.mkColor" title="pyqtgraph.mkColor"><code class="xref py py-func docutils literal notranslate"><span class="pre">mkColor()</span></code></a></p></td>
+<td><p>‘k’</p></td>
+<td><p>Default background for <a class="reference internal" href="widgets/graphicsview.html#pyqtgraph.GraphicsView" title="pyqtgraph.GraphicsView"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsView</span></code></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>antialias</p></td>
+<td><p>bool</p></td>
+<td><p>False</p></td>
+<td><p>Enabling antialiasing causes lines to be drawn with
+smooth edges at the cost of reduced performance.</p></td>
+</tr>
+<tr class="row-even"><td><p>imageAxisOrder</p></td>
+<td><p>str</p></td>
+<td><p>‘col-major’</p></td>
+<td><p>For ‘row-major’, image data is expected in the standard row-major
+(row, col) order. For ‘col-major’, image data is expected in
+reversed column-major (col, row) order.
+The default is ‘col-major’ for backward compatibility, but this may
+change in the future.</p></td>
+</tr>
+<tr class="row-odd"><td><p>editorCommand</p></td>
+<td><p>str or None</p></td>
+<td><p>None</p></td>
+<td><p>Command used to invoke code editor from ConsoleWidget.</p></td>
+</tr>
+<tr class="row-even"><td><p>exitCleanup</p></td>
+<td><p>bool</p></td>
+<td><p>True</p></td>
+<td><p>Attempt to work around some exit crash bugs in PyQt and PySide.</p></td>
+</tr>
+<tr class="row-odd"><td><p>useWeave</p></td>
+<td><p>bool</p></td>
+<td><p>False</p></td>
+<td><p>Use weave to speed up some operations, if it is available.</p></td>
+</tr>
+<tr class="row-even"><td><p>weaveDebug</p></td>
+<td><p>bool</p></td>
+<td><p>False</p></td>
+<td><p>Print full error message if weave compile fails.</p></td>
+</tr>
+<tr class="row-odd"><td><p>useOpenGL</p></td>
+<td><p>bool</p></td>
+<td><p>False</p></td>
+<td><p>Enable OpenGL in GraphicsView. This can have unpredictable effects on stability
+and performance.</p></td>
+</tr>
+<tr class="row-even"><td><p>enableExperimental</p></td>
+<td><p>bool</p></td>
+<td><p>False</p></td>
+<td><p>Enable experimental features (the curious can search for this key in the code).</p></td>
+</tr>
+<tr class="row-odd"><td><p>crashWarning</p></td>
+<td><p>bool</p></td>
+<td><p>False</p></td>
+<td><p>If True, print warnings about situations that may result in a crash.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="function">
+<dt id="pyqtgraph.setConfigOptions">
+<code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">setConfigOptions</code><span class="sig-paren">(</span><em class="sig-param">**opts</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyqtgraph.html#setConfigOptions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.setConfigOptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set global configuration options.</p>
+<p>Each keyword argument sets one global option.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyqtgraph.getConfigOption">
+<code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">getConfigOption</code><span class="sig-paren">(</span><em class="sig-param">opt</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pyqtgraph.html#getConfigOption"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.getConfigOption" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the value of a single global configuration option.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="apireference.html"
+                        title="previous chapter">API Reference</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="functions.html"
+                        title="next chapter">PyQtGraph’s Helper Functions</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/config_options.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="functions.html" title="PyQtGraph’s Helper Functions"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="apireference.html" title="API Reference"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="apireference.html" >API Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>PlotItem &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="ImageItem" href="imageitem.html" />
+    <link rel="prev" title="PlotDataItem" href="plotdataitem.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="imageitem.html" title="ImageItem"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="plotdataitem.html" title="PlotDataItem"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="plotitem">
+<h1>PlotItem<a class="headerlink" href="#plotitem" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pyqtgraph.PlotItem">
+<em class="property">class </em><code class="sig-prename descclassname">pyqtgraph.</code><code class="sig-name descname">PlotItem</code><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>GraphicsWidget implementing a standard 2D plotting area with axes.</p>
+<p><strong>Bases:</strong> <a class="reference internal" href="graphicswidget.html#pyqtgraph.GraphicsWidget" title="pyqtgraph.GraphicsWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsWidget</span></code></a></p>
+<p>This class provides the ViewBox-plus-axes that appear when using
+<a class="reference internal" href="../functions.html#pyqtgraph.plot" title="pyqtgraph.plot"><code class="xref py py-func docutils literal notranslate"><span class="pre">pg.plot()</span></code></a>, <a class="reference internal" href="../widgets/plotwidget.html#pyqtgraph.PlotWidget" title="pyqtgraph.PlotWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">PlotWidget</span></code></a>,
+and <code class="xref py py-func docutils literal notranslate"><span class="pre">GraphicsLayoutWidget.addPlot()</span></code>.</p>
+<p>It’s main functionality is:</p>
+<ul class="simple">
+<li><p>Manage placement of ViewBox, AxisItems, and LabelItems</p></li>
+<li><p>Create and manage a list of PlotDataItems displayed inside the ViewBox</p></li>
+<li><p>Implement a context menu with commonly used display and analysis options</p></li>
+</ul>
+<p>Use <a class="reference internal" href="#pyqtgraph.PlotItem.plot" title="pyqtgraph.PlotItem.plot"><code class="xref py py-func docutils literal notranslate"><span class="pre">plot()</span></code></a> to create a new PlotDataItem and
+add it to the view. Use <a class="reference internal" href="#pyqtgraph.PlotItem.addItem" title="pyqtgraph.PlotItem.addItem"><code class="xref py py-func docutils literal notranslate"><span class="pre">addItem()</span></code></a> to
+add any QGraphicsItem to the view.</p>
+<p>This class wraps several methods from its internal ViewBox:
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.setXRange" title="pyqtgraph.ViewBox.setXRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">setXRange</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.setYRange" title="pyqtgraph.ViewBox.setYRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">setYRange</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.setRange" title="pyqtgraph.ViewBox.setRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">setRange</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.autoRange" title="pyqtgraph.ViewBox.autoRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">autoRange</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.setXLink" title="pyqtgraph.ViewBox.setXLink"><code class="xref py py-func docutils literal notranslate"><span class="pre">setXLink</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.setYLink" title="pyqtgraph.ViewBox.setYLink"><code class="xref py py-func docutils literal notranslate"><span class="pre">setYLink</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.setAutoPan" title="pyqtgraph.ViewBox.setAutoPan"><code class="xref py py-func docutils literal notranslate"><span class="pre">setAutoPan</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.setAutoVisible" title="pyqtgraph.ViewBox.setAutoVisible"><code class="xref py py-func docutils literal notranslate"><span class="pre">setAutoVisible</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.setLimits" title="pyqtgraph.ViewBox.setLimits"><code class="xref py py-func docutils literal notranslate"><span class="pre">setLimits</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.viewRect" title="pyqtgraph.ViewBox.viewRect"><code class="xref py py-func docutils literal notranslate"><span class="pre">viewRect</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.viewRange" title="pyqtgraph.ViewBox.viewRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">viewRange</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.setMouseEnabled" title="pyqtgraph.ViewBox.setMouseEnabled"><code class="xref py py-func docutils literal notranslate"><span class="pre">setMouseEnabled</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.enableAutoRange" title="pyqtgraph.ViewBox.enableAutoRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">enableAutoRange</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.disableAutoRange" title="pyqtgraph.ViewBox.disableAutoRange"><code class="xref py py-func docutils literal notranslate"><span class="pre">disableAutoRange</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.setAspectLocked" title="pyqtgraph.ViewBox.setAspectLocked"><code class="xref py py-func docutils literal notranslate"><span class="pre">setAspectLocked</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.invertY" title="pyqtgraph.ViewBox.invertY"><code class="xref py py-func docutils literal notranslate"><span class="pre">invertY</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.invertX" title="pyqtgraph.ViewBox.invertX"><code class="xref py py-func docutils literal notranslate"><span class="pre">invertX</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.register" title="pyqtgraph.ViewBox.register"><code class="xref py py-func docutils literal notranslate"><span class="pre">register</span></code></a>,
+<a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox.unregister" title="pyqtgraph.ViewBox.unregister"><code class="xref py py-func docutils literal notranslate"><span class="pre">unregister</span></code></a></p>
+<p>The ViewBox itself can be accessed by calling <a class="reference internal" href="#pyqtgraph.PlotItem.getViewBox" title="pyqtgraph.PlotItem.getViewBox"><code class="xref py py-func docutils literal notranslate"><span class="pre">getViewBox()</span></code></a></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 78%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Signals:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>sigYRangeChanged</p></td>
+<td><p>wrapped from <a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox" title="pyqtgraph.ViewBox"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewBox</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>sigXRangeChanged</p></td>
+<td><p>wrapped from <a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox" title="pyqtgraph.ViewBox"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewBox</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p>sigRangeChanged</p></td>
+<td><p>wrapped from <a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox" title="pyqtgraph.ViewBox"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewBox</span></code></a></p></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em>, <em class="sig-param">name=None</em>, <em class="sig-param">labels=None</em>, <em class="sig-param">title=None</em>, <em class="sig-param">viewBox=None</em>, <em class="sig-param">axisItems=None</em>, <em class="sig-param">enableMenu=True</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new PlotItem. All arguments are optional.
+Any extra keyword arguments are passed to PlotItem.plot().</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 87%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><em>title</em></p></td>
+<td><p>Title to display at the top of the item. Html is allowed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>labels</em></p></td>
+<td><p>A dictionary specifying the axis labels to display:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;left&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">args</span><span class="p">),</span> <span class="s1">&#39;bottom&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">args</span><span class="p">),</span> <span class="o">...</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>The name of each axis and the corresponding arguments are passed to
+<a class="reference internal" href="#pyqtgraph.PlotItem.setLabel" title="pyqtgraph.PlotItem.setLabel"><code class="xref py py-func docutils literal notranslate"><span class="pre">PlotItem.setLabel()</span></code></a>
+Optionally, PlotItem my also be initialized with the keyword arguments left,
+right, top, or bottom to achieve the same effect.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><em>name</em></p></td>
+<td><p>Registers a name for this view so that others may link to it</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>viewBox</em></p></td>
+<td><p>If specified, the PlotItem will be constructed with this as its ViewBox.</p></td>
+</tr>
+<tr class="row-even"><td><p><em>axisItems</em></p></td>
+<td><p>Optional dictionary instructing the PlotItem to use pre-constructed items
+for its axes. The dict keys must be axis names (‘left’, ‘bottom’, ‘right’, ‘top’)
+and the values must be instances of AxisItem (or at least compatible with AxisItem).</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.addItem">
+<code class="sig-name descname">addItem</code><span class="sig-paren">(</span><em class="sig-param">item</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.addItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.addItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a graphics item to the view box. 
+If the item has plot data (PlotDataItem, PlotCurveItem, ScatterPlotItem), it may
+be included in analysis performed by the PlotItem.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.addLegend">
+<code class="sig-name descname">addLegend</code><span class="sig-paren">(</span><em class="sig-param">size=None</em>, <em class="sig-param">offset=(30</em>, <em class="sig-param">30)</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.addLegend"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.addLegend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new LegendItem and anchor it over the internal ViewBox.
+Plots will be automatically displayed in the legend if they
+are created with the ‘name’ argument.</p>
+<p>If a LegendItem has already been created using this method, that
+item will be returned rather than creating a new one.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.addLine">
+<code class="sig-name descname">addLine</code><span class="sig-paren">(</span><em class="sig-param">x=None</em>, <em class="sig-param">y=None</em>, <em class="sig-param">z=None</em>, <em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.addLine"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.addLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an InfiniteLine and add to the plot.</p>
+<p>If <em>x</em> is specified,
+the line will be vertical. If <em>y</em> is specified, the line will be
+horizontal. All extra keyword arguments are passed to
+<a class="reference internal" href="infiniteline.html#pyqtgraph.InfiniteLine.__init__" title="pyqtgraph.InfiniteLine.__init__"><code class="xref py py-func docutils literal notranslate"><span class="pre">InfiniteLine.__init__()</span></code></a>.
+Returns the item created.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove all items from the ViewBox.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; bool<a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.close"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.enableAutoScale">
+<code class="sig-name descname">enableAutoScale</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.enableAutoScale"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.enableAutoScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable auto-scaling. The plot will continuously scale to fit the boundaries of its data.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.getAxis">
+<code class="sig-name descname">getAxis</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.getAxis"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.getAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the specified AxisItem. 
+<em>name</em> should be ‘left’, ‘bottom’, ‘top’, or ‘right’.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.getViewBox">
+<code class="sig-name descname">getViewBox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.getViewBox"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.getViewBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the <a class="reference internal" href="viewbox.html#pyqtgraph.ViewBox" title="pyqtgraph.ViewBox"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewBox</span></code></a> contained within.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.hideAxis">
+<code class="sig-name descname">hideAxis</code><span class="sig-paren">(</span><em class="sig-param">axis</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.hideAxis"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.hideAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hide one of the PlotItem’s axes. (‘left’, ‘bottom’, ‘right’, or ‘top’)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.hideButtons">
+<code class="sig-name descname">hideButtons</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.hideButtons"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.hideButtons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Causes auto-scale button (‘A’ in lower-left corner) to be hidden for this PlotItem</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.listDataItems">
+<code class="sig-name descname">listDataItems</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.listDataItems"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.listDataItems" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of all data items (PlotDataItem, PlotCurveItem, ScatterPlotItem, etc)
+contained in this PlotItem.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.plot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add and return a new plot.
+See <a class="reference internal" href="plotdataitem.html#pyqtgraph.PlotDataItem.__init__" title="pyqtgraph.PlotDataItem.__init__"><code class="xref py py-func docutils literal notranslate"><span class="pre">PlotDataItem.__init__</span></code></a> for data arguments</p>
+<dl class="simple">
+<dt>Extra allowed arguments are:</dt><dd><p>clear    - clear all plots before displaying new data
+params   - meta-parameters to associate with this data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.removeItem">
+<code class="sig-name descname">removeItem</code><span class="sig-paren">(</span><em class="sig-param">item</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.removeItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.removeItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove an item from the internal ViewBox.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.resizeEvent">
+<code class="sig-name descname">resizeEvent</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">event: PySide2.QtWidgets.QGraphicsSceneResizeEvent</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.resizeEvent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.resizeEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.setClipToView">
+<code class="sig-name descname">setClipToView</code><span class="sig-paren">(</span><em class="sig-param">clip</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.setClipToView"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.setClipToView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the default clip-to-view mode for all PlotDataItems managed by this plot.
+If <em>clip</em> is True, then PlotDataItems will attempt to draw only points within the visible
+range of the ViewBox.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.setDownsampling">
+<code class="sig-name descname">setDownsampling</code><span class="sig-paren">(</span><em class="sig-param">ds=None</em>, <em class="sig-param">auto=None</em>, <em class="sig-param">mode=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.setDownsampling"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.setDownsampling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the default downsampling mode for all PlotDataItems managed by this plot.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>ds</p></td>
+<td><p>(int) Reduce visible plot samples by this factor, or
+(bool) To enable/disable downsampling without changing the value.</p></td>
+</tr>
+<tr class="row-odd"><td><p>auto</p></td>
+<td><p>(bool) If True, automatically pick <em>ds</em> based on visible range</p></td>
+</tr>
+<tr class="row-even"><td><p>mode</p></td>
+<td><p>‘subsample’: Downsample by taking the first of N samples.
+This method is fastest and least accurate.
+‘mean’: Downsample by taking the mean of N samples.
+‘peak’: Downsample by drawing a saw wave that follows the min
+and max of the original data. This method produces the best
+visual representation of the data but is slower.</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.setExportMode">
+<code class="sig-name descname">setExportMode</code><span class="sig-paren">(</span><em class="sig-param">export</em>, <em class="sig-param">opts=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.setExportMode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.setExportMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is called by exporters to inform items that they are being drawn for export
+with a specific set of options. Items access these via self._exportOptions.
+When exporting is complete, _exportOptions is set to False.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.setLabel">
+<code class="sig-name descname">setLabel</code><span class="sig-paren">(</span><em class="sig-param">axis</em>, <em class="sig-param">text=None</em>, <em class="sig-param">units=None</em>, <em class="sig-param">unitPrefix=None</em>, <em class="sig-param">**args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.setLabel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.setLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the label for an axis. Basic HTML formatting is allowed.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>axis</p></td>
+<td><p>must be one of ‘left’, ‘bottom’, ‘right’, or ‘top’</p></td>
+</tr>
+<tr class="row-odd"><td><p>text</p></td>
+<td><p>text to display along the axis. HTML allowed.</p></td>
+</tr>
+<tr class="row-even"><td><p>units</p></td>
+<td><p>units to display after the title. If units are given,
+then an SI prefix will be automatically appended
+and the axis values will be scaled accordingly.
+(ie, use ‘V’ instead of ‘mV’; ‘m’ will be added automatically)</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.setLabels">
+<code class="sig-name descname">setLabels</code><span class="sig-paren">(</span><em class="sig-param">**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.setLabels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.setLabels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience function allowing multiple labels and/or title to be set in one call.
+Keyword arguments can be ‘title’, ‘left’, ‘bottom’, ‘right’, or ‘top’.
+Values may be strings or a tuple of arguments to pass to setLabel.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.setLogMode">
+<code class="sig-name descname">setLogMode</code><span class="sig-paren">(</span><em class="sig-param">x=None</em>, <em class="sig-param">y=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.setLogMode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.setLogMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set log scaling for x and/or y axes.
+This informs PlotDataItems to transform logarithmically and switches
+the axes to use log ticking.</p>
+<p>Note that <em>no other items</em> in the scene will be affected by
+this; there is (currently) no generic way to redisplay a GraphicsItem
+with log coordinates.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.setMenuEnabled">
+<code class="sig-name descname">setMenuEnabled</code><span class="sig-paren">(</span><em class="sig-param">enableMenu=True</em>, <em class="sig-param">enableViewBoxMenu='same'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.setMenuEnabled"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.setMenuEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable or disable the context menu for this PlotItem.
+By default, the ViewBox’s context menu will also be affected.
+(use enableViewBoxMenu=None to leave the ViewBox unchanged)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.setTitle">
+<code class="sig-name descname">setTitle</code><span class="sig-paren">(</span><em class="sig-param">title=None</em>, <em class="sig-param">**args</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.setTitle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.setTitle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the title of the plot. Basic HTML formatting is allowed.
+If title is None, then the title will be hidden.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.showAxis">
+<code class="sig-name descname">showAxis</code><span class="sig-paren">(</span><em class="sig-param">axis</em>, <em class="sig-param">show=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.showAxis"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.showAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show or hide one of the plot’s axes.
+axis must be one of ‘left’, ‘bottom’, ‘right’, or ‘top’</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.showButtons">
+<code class="sig-name descname">showButtons</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.showButtons"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.showButtons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Causes auto-scale button (‘A’ in lower-left corner) to be visible for this PlotItem</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.showGrid">
+<code class="sig-name descname">showGrid</code><span class="sig-paren">(</span><em class="sig-param">x=None</em>, <em class="sig-param">y=None</em>, <em class="sig-param">alpha=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.showGrid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.showGrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show or hide the grid for either axis.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>Arguments:</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>x</p></td>
+<td><p>(bool) Whether to show the X grid</p></td>
+</tr>
+<tr class="row-odd"><td><p>y</p></td>
+<td><p>(bool) Whether to show the Y grid</p></td>
+</tr>
+<tr class="row-even"><td><p>alpha</p></td>
+<td><p>(0.0-1.0) Opacity of the grid</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.showLabel">
+<code class="sig-name descname">showLabel</code><span class="sig-paren">(</span><em class="sig-param">axis</em>, <em class="sig-param">show=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.showLabel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.showLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show or hide one of the plot’s axis labels (the axis itself will be unaffected).
+axis must be one of ‘left’, ‘bottom’, ‘right’, or ‘top’</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyqtgraph.PlotItem.viewGeometry">
+<code class="sig-name descname">viewGeometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/pyqtgraph/graphicsItems/PlotItem/PlotItem.html#PlotItem.viewGeometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pyqtgraph.PlotItem.viewGeometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the screen geometry of the viewbox</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="plotdataitem.html"
+                        title="previous chapter">PlotDataItem</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="imageitem.html"
+                        title="next chapter">ImageItem</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/graphicsItems/plotitem.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="imageitem.html" title="ImageItem"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="plotdataitem.html" title="PlotDataItem"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../apireference.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >PyQtGraph’s Graphics Items</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>

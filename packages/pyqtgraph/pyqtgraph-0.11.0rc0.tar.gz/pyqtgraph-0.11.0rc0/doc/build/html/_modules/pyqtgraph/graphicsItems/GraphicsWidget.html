@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>pyqtgraph.graphicsItems.GraphicsWidget &#8212; pyqtgraph 0.11.0rc0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../pyqtgraph.html" accesskey="U">pyqtgraph</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for pyqtgraph.graphicsItems.GraphicsWidget</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">..Qt</span> <span class="k">import</span> <span class="n">QtGui</span><span class="p">,</span> <span class="n">QtCore</span>  
+<span class="kn">from</span> <span class="nn">..GraphicsScene</span> <span class="k">import</span> <span class="n">GraphicsScene</span>
+<span class="kn">from</span> <span class="nn">.GraphicsItem</span> <span class="k">import</span> <span class="n">GraphicsItem</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;GraphicsWidget&#39;</span><span class="p">]</span>
+
+<div class="viewcode-block" id="GraphicsWidget"><a class="viewcode-back" href="../../../graphicsItems/graphicswidget.html#pyqtgraph.GraphicsWidget">[docs]</a><span class="k">class</span> <span class="nc">GraphicsWidget</span><span class="p">(</span><span class="n">GraphicsItem</span><span class="p">,</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QGraphicsWidget</span><span class="p">):</span>
+    
+    <span class="n">_qtBaseClass</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QGraphicsWidget</span>
+<div class="viewcode-block" id="GraphicsWidget.__init__"><a class="viewcode-back" href="../../../graphicsItems/graphicswidget.html#pyqtgraph.GraphicsWidget.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        **Bases:** :class:`GraphicsItem &lt;pyqtgraph.GraphicsItem&gt;`, :class:`QtGui.QGraphicsWidget`</span>
+<span class="sd">        </span>
+<span class="sd">        Extends QGraphicsWidget with several helpful methods and workarounds for PyQt bugs. </span>
+<span class="sd">        Most of the extra functionality is inherited from :class:`GraphicsItem &lt;pyqtgraph.GraphicsItem&gt;`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">QtGui</span><span class="o">.</span><span class="n">QGraphicsWidget</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kargs</span><span class="p">)</span>
+        <span class="n">GraphicsItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
+        
+        <span class="c1">## done by GraphicsItem init</span>
+        <span class="c1">#GraphicsScene.registerObject(self)  ## workaround for pyqt bug in graphicsscene.items()</span>
+
+    <span class="c1"># Removed due to https://bugreports.qt-project.org/browse/PYSIDE-86</span>
+    <span class="c1">#def itemChange(self, change, value):</span>
+        <span class="c1">## BEWARE: Calling QGraphicsWidget.itemChange can lead to crashing!</span>
+        <span class="c1">##ret = QtGui.QGraphicsWidget.itemChange(self, change, value)  ## segv occurs here</span>
+        <span class="c1">## The default behavior is just to return the value argument, so we&#39;ll do that</span>
+        <span class="c1">## without calling the original method.</span>
+        <span class="c1">#ret = value</span>
+        <span class="c1">#if change in [self.ItemParentHasChanged, self.ItemSceneHasChanged]:</span>
+            <span class="c1">#self._updateView()</span>
+        <span class="c1">#return ret</span>
+
+    <span class="k">def</span> <span class="nf">setFixedHeight</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setMaximumHeight</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setMinimumHeight</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">setFixedWidth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setMaximumWidth</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setMinimumWidth</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+        
+    <span class="k">def</span> <span class="nf">height</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span><span class="o">.</span><span class="n">height</span><span class="p">()</span>
+    
+    <span class="k">def</span> <span class="nf">width</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">geometry</span><span class="p">()</span><span class="o">.</span><span class="n">width</span><span class="p">()</span>
+
+<div class="viewcode-block" id="GraphicsWidget.boundingRect"><a class="viewcode-back" href="../../../graphicsItems/graphicswidget.html#pyqtgraph.GraphicsWidget.boundingRect">[docs]</a>    <span class="k">def</span> <span class="nf">boundingRect</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">br</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mapRectFromParent</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">geometry</span><span class="p">())</span><span class="o">.</span><span class="n">normalized</span><span class="p">()</span>
+        <span class="c1">#print &quot;bounds:&quot;, br</span>
+        <span class="k">return</span> <span class="n">br</span></div>
+        
+<div class="viewcode-block" id="GraphicsWidget.shape"><a class="viewcode-back" href="../../../graphicsItems/graphicswidget.html#pyqtgraph.GraphicsWidget.shape">[docs]</a>    <span class="k">def</span> <span class="nf">shape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>  <span class="c1">## No idea why this is necessary, but rotated items do not receive clicks otherwise.</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">QtGui</span><span class="o">.</span><span class="n">QPainterPath</span><span class="p">()</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">addRect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">boundingRect</span><span class="p">())</span>
+        <span class="c1">#print &quot;shape:&quot;, p.boundingRect()</span>
+        <span class="k">return</span> <span class="n">p</span></div></div>
+
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyqtgraph 0.11.0rc0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../pyqtgraph.html" >pyqtgraph</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011, Luke Campagnola.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>
