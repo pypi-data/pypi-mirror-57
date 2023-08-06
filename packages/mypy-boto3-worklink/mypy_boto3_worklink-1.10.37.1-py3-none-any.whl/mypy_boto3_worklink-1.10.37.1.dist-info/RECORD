@@ -1,0 +1,10 @@
+mypy_boto3_worklink/__init__.py,sha256=mBNLadOi94_UkReCcKDGXCetBWWvwOmYYpfScWMFZgI,160
+mypy_boto3_worklink/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_worklink/client.py,sha256=xYbFfRJlW21DNvgX_xb6WOgSF-qMnCsrIVOSkxfjFRY,15460
+mypy_boto3_worklink/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_worklink/type_defs.py,sha256=NX3ySKz-P_kJ1bk2ruwo2gsH-K5YgUKBAhvuOIZ72FU,6160
+mypy_boto3_worklink/version.py,sha256=OdDVi_6rNJqpj47hPRjN7fCGSnDPlpLMy2iiRfULK7g,57
+mypy_boto3_worklink-1.10.37.1.dist-info/METADATA,sha256=hbByC51coUNNYcevan16n7dF-BJv93d2D6K30kMVVUE,1213
+mypy_boto3_worklink-1.10.37.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_worklink-1.10.37.1.dist-info/top_level.txt,sha256=v9lk1pd6LaJ-x9V0ThhUDRAuEh2gvQUijvnRvb6mbto,20
+mypy_boto3_worklink-1.10.37.1.dist-info/RECORD,,
