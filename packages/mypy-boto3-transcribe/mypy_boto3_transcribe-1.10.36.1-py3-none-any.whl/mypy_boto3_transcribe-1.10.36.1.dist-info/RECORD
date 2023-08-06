@@ -1,0 +1,10 @@
+mypy_boto3_transcribe/__init__.py,sha256=onTCM590k5TNP3V_1JWaaTKoekslBTkqcUnhvFr4yZk,191
+mypy_boto3_transcribe/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_transcribe/client.py,sha256=Rqu9lZJwrvWowkGFpa736UiQAjYWZafto1BTq0rek5Q,8501
+mypy_boto3_transcribe/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_transcribe/type_defs.py,sha256=1YloArQ_WdehSQ9sadNGg66GCL6dBxfLEaVPXdgbSx4,7883
+mypy_boto3_transcribe/version.py,sha256=Z6XC3DHchYfroBLNSRF0xmvW5FEF7R8jIV1-D7BNbJ8,57
+mypy_boto3_transcribe-1.10.36.1.dist-info/METADATA,sha256=aDkC6wCHAbmNpjpbqC2s58ouXnBxldzV_S7lycSfsds,1217
+mypy_boto3_transcribe-1.10.36.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_transcribe-1.10.36.1.dist-info/top_level.txt,sha256=feeLxmOaANsNS15rTqQmHIxvwZoO3fx7SonWXOzOZFM,22
+mypy_boto3_transcribe-1.10.36.1.dist-info/RECORD,,
