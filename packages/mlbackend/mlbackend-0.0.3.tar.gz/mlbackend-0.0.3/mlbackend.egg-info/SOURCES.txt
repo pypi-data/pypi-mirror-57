@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+mlbackend/__init__.py
+mlbackend/__main__.py
+mlbackend/mlrestapp.py
+mlbackend/project.py
+mlbackend.egg-info/PKG-INFO
+mlbackend.egg-info/SOURCES.txt
+mlbackend.egg-info/dependency_links.txt
+mlbackend.egg-info/requires.txt
+mlbackend.egg-info/top_level.txt
+mlbackend/hooks/__init__.py
+mlbackend/hooks/sqlite_hook.py
