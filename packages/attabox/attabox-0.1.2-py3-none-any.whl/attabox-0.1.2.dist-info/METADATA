@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: attabox
+Version: 0.1.2
+Summary: Attali Utility Library
+Home-page: http://github.com/
+Author: Poidudes
+Author-email: yonatan.attali@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
