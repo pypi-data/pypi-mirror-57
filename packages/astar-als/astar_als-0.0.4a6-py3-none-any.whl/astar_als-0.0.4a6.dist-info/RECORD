@@ -1,0 +1,10 @@
+astar_als-0.0.4a6.dist-info/METADATA,sha256=vPjNrQXPx7ovkEEq0wU69qPIHgBxJbfHrQsh_N52uPc,894
+astar_als-0.0.4a6.dist-info/RECORD,,
+astar_als-0.0.4a6.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+astar_als-0.0.4a6.dist-info/top_level.txt,sha256=jtgSD9AIFLY_RbYI3dLC1KP79812m1Bwr7to6CbqdH0,21
+astar_recommendation/__init__.py,sha256=3fV5LsaBzXR5xI-aF2pXY22AnHatr9OhMt0HvmPypOc,431
+astar_recommendation/collaborative_filtering/__init__.py,sha256=B9A2ch8UsFy9Vdp0WBtL1xo7Gt6BtEG1o_ryz-1tsYw,509
+astar_recommendation/collaborative_filtering/base.py,sha256=tJRl21ys1r6MMhoNpkBKC7a1Qgxq7p21B6KJse4hF8o,1103
+astar_recommendation/collaborative_filtering/item_base.py,sha256=8fXOzAHVYrgKXcASGzcKWD99b7qKifRECztxdD0B6cs,3121
+astar_recommendation/collaborative_filtering/model_base.py,sha256=W471-rwJ9HRHBiD4Ij674Rvy1_uZ9c-BbWkzpF1MEko,2205
+astar_recommendation/collaborative_filtering/user_base.py,sha256=SeTYTyI4Jlyu3ytH1zUmUWpX2_W3q9YtJsR3_5THC7M,232
