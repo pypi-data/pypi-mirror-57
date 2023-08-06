@@ -1,0 +1,313 @@
+{
+    "views": {
+        "home": {},
+        "documentation": {
+            "documents_dir": "/static/docs/core/library/hackingtools/modules",
+            "html_template": "core/documentation.html",
+            "bad_module": "Module {mod} doesn't exist",
+            "no_module_selected": "You have to select a module for getting it's documentation"
+        },
+        "add_pool_node": {
+            "error": "Seem's not to be online that pool node"
+        },
+        "ht_crypter_crypt_file": {
+            "bad_saved": "No se ha guardado correctamente"
+        },
+        "ht_bruteforce_crackZip": {
+            "error_see_log": "Something went wrong. See the log",
+            "not_solved": "Something want wrong",
+            "conn_closed": "Connection aborted. Remote end closed connection without response"
+        },
+        "ht_unzip_extractFile": {
+            "error_see_log": "Something went wrong. See the log",
+            "bad_pass": "Bad password"
+        },
+        "ht_objectdetection_predictImage": {
+            "default_model": "trained.clf",
+            "need_params": "ht_objectdetection_predictImage needs a param",
+            "need_file": "No files given as param"
+        },
+        "ht_objectdetection_predictFromZip": {
+            "default_model": "trained.clf",
+            "need_params": "ht_objectdetection_predictFromZip needs a param",
+            "need_file": "No files given as param"
+        }
+    },
+    "html": {
+        "modal_forms": {
+            "default_types": {
+                "text": {
+                    "__className__": "form-control"
+                },
+                "number": {
+                    "__className__": "form-control"
+                },
+                "password": {
+                    "__className__": "form-control"
+                },
+                "textarea": {
+                    "__className__": "file-input"
+                },
+                "file": {
+                    "__className__": "file-input"
+                },
+                "select": {
+                    "__className__": "form-control"
+                },
+                "button": {
+                    "__className__": "btn btn-secondary"
+                },
+                "submit": {
+                    "__className__": "btn btn-primary"
+                },
+                "checkbox": {
+                    "__className__": "custom-control-input"
+                }
+            }
+        }
+    },
+    "maps": {
+        "ht_crypter": {
+            "convertToExe": {
+                "__in_map_convertToExe__": false
+            },
+            "createStub": {
+                "__in_map_createStub__": false
+            },
+            "crypt_file": {
+                "__in_map_crypt_file__": false
+            },
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_bruteforce": {
+            "crackZip": {
+                "__in_map_crackZip__": true
+            },
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_unzip": {
+            "extractFilePassword": {
+                "__in_map_extractFilePassword__": false
+            },
+            "extractFile": {
+                "__in_map_extractFile__": true
+            },
+            "help": {
+                "__in_map_help__": false
+            },
+            "zipDirectory": {
+                "__in_map_zipDirectory__": false
+            }
+        },
+        "ht_rsa": {
+            "encrypt": {
+                "__in_map_encrypt__": true
+            },
+            "getRandomKeypair": {
+                "__in_map_getRandomKeypair__": true
+            },
+            "generate_keypair": {
+                "__in_map_generate_keypair__": true
+            },
+            "decode": {
+                "__in_map_decode__": true
+            },
+            "encode": {
+                "__in_map_encode__": true
+            },
+            "decrypt": {
+                "__in_map_decrypt__": true
+            },
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_shodan": {
+            "search_host": {
+                "__in_map_search_host__": false
+            },
+            "getIPListfromServices": {
+                "__in_map_getIPListfromServices__": false
+            },
+            "getSSLCerts": {
+                "__in_map_getSSLCerts__": false
+            },
+            "help": {
+                "__in_map_help__": false
+            },
+            "queryShodan": {
+                "__in_map_queryShodan__": false
+            },
+            "searchFromConfig": {
+                "__in_map_searchFromConfig__": false
+            },
+            "setApi": {
+                "__in_map_setApi__": true
+            }
+        },
+        "ht_metadata": {
+            "get_image_exif": {
+                "__in_map_get_image_exif__": true
+            },
+            "get_pdf_exif": {
+                "__in_map_get_pdf_exif__": true
+            },
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_virustotal": {
+            "help": {
+                "__in_map_help__": false
+            },
+            "isBadFile": {
+                "__in_map_isBadFile__": false
+            },
+            "isBadFileHash": {
+                "__in_map_isBadFileHash__": false
+            }
+        },
+        "ht_infector": {
+            "injectPayloadToWindowsTerminalProfile": {
+                "__in_map_injectPayloadToWindowsTerminalProfile__": true
+            },
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_rat": {
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_instagram": {
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_nmap": {
+            "getConnectedDevices": {
+                "__in_map_getConnectedDevices__": false
+            },
+            "getDevicePorts": {
+                "__in_map_getDevicePorts__": false
+            },
+            "hasDevicePortOpened": {
+                "__in_map_hasDevicePortOpened__": false
+            },
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_twitter": {
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_cpe": {
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_cve": {
+            "search": {
+                "__in_map_search__": true
+            },
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_cwe": {
+            "searchCWE": {
+                "__in_map_searchCWE__": true
+            },
+            "searchWeakness": {
+                "__in_map_searchWeakness__": true
+            },
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_spider": {
+            "crawl": {
+                "__in_map_crawl__": true
+            },
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_sqlinjection": {
+            "cantidadTuplasEnTapla": {
+                "__in_map_cantidadTuplasEnTapla__": true
+            },
+            "cogerColumnasTabla": {
+                "__in_map_cogerColumnasTabla__": true
+            },
+            "cogerNombreDeTablaPorID": {
+                "__in_map_cogerNombreDeTablaPorID__": true
+            },
+            "cogerTablas": {
+                "__in_map_cogerTablas__": true
+            },
+            "color": {
+                "__in_map_color__": true
+            },
+            "compareTextExistWhereSubstringACII": {
+                "__in_map_compareTextExistWhereSubstringACII__": true
+            },
+            "ejecutarSQL": {
+                "__in_map_ejecutarSQL__": true
+            },
+            "longitudCampoIDtablaCampo": {
+                "__in_map_longitudCampoIDtablaCampo__": true
+            },
+            "md5_decrypt": {
+                "__in_map_md5_decrypt__": true
+            },
+            "mostrarUserPass": {
+                "__in_map_mostrarUserPass__": true
+            },
+            "sacarValorPorTablaColumnaID": {
+                "__in_map_sacarValorPorTablaColumnaID__": true
+            },
+            "setParams": {
+                "__in_map_setParams__": true
+            },
+            "transformAsciiToHex": {
+                "__in_map_transformAsciiToHex__": true
+            },
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_hash": {
+            "hashContent": {
+                "__in_map_hashContent__": false
+            },
+            "help": {
+                "__in_map_help__": false
+            }
+        },
+        "ht_test": {
+            "hola": {
+                "__in_map_hola__": false
+            },
+            "liwiskas": {
+                "__in_map_liwiskas__": true
+            },
+            "mimimi": {
+                "__in_map_mimimi__": false
+            },
+            "help": {
+                "__in_map_help__": false
+            },
+            "mimismi": {
+                "__in_map_mimismi__": true
+            }
+        }
+    }
+}
