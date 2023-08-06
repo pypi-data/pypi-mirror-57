@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ifsc_expand/__init__.py
+ifsc_expand/__main__.py
+ifsc_expand/utils.py
+ifsc_expand.egg-info/PKG-INFO
+ifsc_expand.egg-info/SOURCES.txt
+ifsc_expand.egg-info/dependency_links.txt
+ifsc_expand.egg-info/entry_points.txt
+ifsc_expand.egg-info/requires.txt
+ifsc_expand.egg-info/top_level.txt

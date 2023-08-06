@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ifsc-expand
+Version: 1.0.0
+Summary: A Python package to get bank branch details from Indian Financial System Code(IFSC).
+Home-page: https://github.com/vil-c/ifsc-expand
+Author: Aman Kumar
+Author-email: amn9955@gmail.com
+License: MIT
+Description: # IFSC expand
+        
+        A Python package to get bank branch details from Indian Financial System Code(IFSC).
+        
+        ## Usage
+        
+        The following query on terminal will provide you the bank branch details of the bank with IFSC 'ifsc'.
+        
+        ```
+        ifsc-expand -i BKID0004792
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
