@@ -1,0 +1,10 @@
+atasker>=0.6.4
+neotermcolor
+psutil
+pyaltt2>=0.0.10
+pygments
+pyyaml
+rapidtables
+unipath
+wheel
+yappi
