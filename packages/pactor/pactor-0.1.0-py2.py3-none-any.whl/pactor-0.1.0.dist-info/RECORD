@@ -1,0 +1,13 @@
+pactor/__init__.py,sha256=wqGgxJwc4IA682KXrstF5B2F1YPy578qSLFxJTtwph8,2909
+pactor/__main__.py,sha256=MlMWa58rrsuJ4uOzyF5S8aNmIbzJj06R2jGjb_FcPSU,67
+pactor/_version.py,sha256=r_SIMIHc9z6UHqWx7MGMnu3yUCK1modp6qPB256ioD4,116
+pactor/cli.py,sha256=ME4Jh5mkOqJBuKuvRDehG8-BsvsD7_oddcthTPg7xUE,1977
+pactor/tests/__init__.py,sha256=kR_zLQzoUrahg_NPbIPRo_kN9MZbx_PISnk9dKnSQJw,750
+pactor/tests/test_pactor.py,sha256=Pq8u8MWRMxKpqWVUFeJIL0xpfXrREnJQ0Xm9suM6uRU,4734
+pactor-0.1.0.dist-info/AUTHORS.rst,sha256=Z3WENSCIeHn-Jzs4JwcBwbziau4a2eVo7qY2rheV5FY,74
+pactor-0.1.0.dist-info/LICENSE,sha256=IUVKqKCT5F1QX2ih-ASl-7shn4cCy0gY_L4vTBB7NAE,1100
+pactor-0.1.0.dist-info/METADATA,sha256=8YWHM69ROa3Yzd1Z0dU2CU6lYqNcX5LDn2E0rXhNjrg,4048
+pactor-0.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+pactor-0.1.0.dist-info/entry_points.txt,sha256=XCeOILqadXhxeYQduRY_wH3B3LTfY0sNu8DXwZ9By8c,44
+pactor-0.1.0.dist-info/top_level.txt,sha256=GD14qZC3JHi_OfLT5l-rU4XujDZrggG47qJAlu7rPes,7
+pactor-0.1.0.dist-info/RECORD,,
