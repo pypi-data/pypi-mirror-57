@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: arimafd
+Version: 0.3
+Summary: Build librarry
+Home-page: https://github.com/waico/arimafd
+Author: Vyacheslav Kozitsin, Yuri Katser
+Author-email: waico@waico.ru
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+
+# Outliers detection with arima!
+
+- Add some features later
+
