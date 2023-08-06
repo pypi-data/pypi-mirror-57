@@ -1,0 +1,4 @@
+ruamel.yaml
+
+[ansible_inventory_plugin]
+ansible
