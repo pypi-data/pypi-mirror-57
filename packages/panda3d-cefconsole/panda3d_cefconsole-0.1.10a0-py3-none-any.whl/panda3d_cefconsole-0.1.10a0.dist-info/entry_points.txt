@@ -1,0 +1,3 @@
+[console_scripts]
+cefconsole_demo = cefconsole.boilerplate:main
+

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: panda3d-cefconsole
+Version: 0.1.10a0
+Summary: A CEF-based extendable console for Panda3D applictions
+Home-page: https://github.com/TheCheapestPixels/panda-cefconsole
+Author: TheCheapestPixels
+Author-email: TheCheapestPixels@gmail.com
+License: UNKNOWN
+Keywords: panda3d console
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.5, <4
+Requires-Dist: panda3d
+Requires-Dist: cefpanda
+Requires-Dist: jinja2
+
+UNKNOWN
+
+
