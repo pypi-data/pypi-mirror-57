@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: UnitSkuMasterPyforest
+Version: 0.0.3
+Summary: test pypi
+Home-page: https://lidelin@git.netsdl.com/lidelin/pyforest_unitskumaster
+Author: Dylan
+Author-email: lidelin@netsdl.com
+License: UNKNOWN
+Description: # 使用说明
+        ```
+        pip install UnitSkuMasterPyforest
+        ```
+Keywords: pyforest unitskumaster
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
