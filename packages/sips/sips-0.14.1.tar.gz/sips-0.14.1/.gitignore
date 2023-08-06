@@ -1,0 +1,17 @@
+__pycache__/
+.ipynb_checkpoints/
+*.swp
+*.out
+*.csv
+*.pyc
+.vscode
+
+local/
+data/
+models/
+logs/
+
+sips.egg-info/
+sips/gym_sip/gym_sip.egg-info
+dist/
+build/
