@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pyotelem
+Version: 0.4.6
+Summary: A library for processing biotelemetry and datalogger data
+Home-page: https://github.com/ryanjdillon/pyotelem
+Author: Ryan J. Dillon
+Author-email: ryanjamesdillon@gmail.com
+License: GPL-3.0+
+Description: UNKNOWN
+Keywords: datalogger,accelerometer,biotelemetry
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
