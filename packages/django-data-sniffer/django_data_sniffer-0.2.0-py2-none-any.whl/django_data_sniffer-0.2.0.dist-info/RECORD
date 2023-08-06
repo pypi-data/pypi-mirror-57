@@ -1,0 +1,15 @@
+data_sniffer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_sniffer/apps.py,sha256=oXh2T9eb20oRWCacsQmNbxca3MBff5E4zzQJbZ_9RQ4,174
+data_sniffer/constants.py,sha256=tXB00cVO5291juipLhrl8dqJl5pVgEUD-WQ-rzg12ns,112
+data_sniffer/errors.py,sha256=22kGDSqdGldVaaOlBpHh5B9GAK0sqxzcbGDXk4TVlOk,459
+data_sniffer/tasks.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_sniffer/urls.py,sha256=K08UvFg7-KM99GvyfzS41BqXtPlg8y0BGdFmQmg3Ztk,304
+data_sniffer/utils.py,sha256=ecXFStUoaSFELuH5wtjLeR-oHzbrqq-lXe_I_zJE59w,4828
+data_sniffer/views.py,sha256=9dxfkKN63CitF5npAds3eAFyerwcrojlwKqmdyVe8Lo,1569
+data_sniffer/static/data_sniffer/css/style.css,sha256=6o8hQWDBD7eU8m0PnCiK3R342U6lpoKmydol4YjAdAo,1690
+data_sniffer/templates/data_sniffer/invalid.html,sha256=WGn1e1utLUXSSQ9sOfe3lrgzyTjyqPabOR4XRnQu0jM,353
+data_sniffer/templates/data_sniffer/status.html,sha256=z9PNySeAFGdLkoU55akupoYt_ic_Pxcy8iDn-OdVBe0,3534
+django_data_sniffer-0.2.0.dist-info/METADATA,sha256=KSd6A0IKrWz-a6Emakqt9IkhelCfZGhuy-4D-ReNoD0,2574
+django_data_sniffer-0.2.0.dist-info/RECORD,,
+django_data_sniffer-0.2.0.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+django_data_sniffer-0.2.0.dist-info/top_level.txt,sha256=U7_5DHej-myJT2DNqyuZJRyoeScyY06Y1qICXal2Sow,13
