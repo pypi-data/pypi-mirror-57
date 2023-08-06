@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: Thumablizr-tags
+Version: 1.0.1
+Summary: Use Thumbalizr in your Django templates
+Home-page: https://github.com/juliensobrier/thumbalizr_django
+Author: Julien Sobrier
+Author-email: julien@sobrier.net
+License: Apache
+Description: Thumbalizr_tags version 1.0
+        ================================
+        
+        Thumbalizr (https://thumbalizr.com/) is a web service to easily embed live screenshots of any URL in your website. Thumbalizr has full support for Flash, JavaScript, CSS, & HTML5.
+        
+        You can install the library from PyPI: https://pypi.org/project/Thumablizr-tags
+        
+        The source code can be found on github at https://github.com/juliensobrier/thumbalizr_django
+        
+        This module add custom tags to Django to embed your Thumbalizr screenshots.
+        
+        
+        
+        INSTALLATION
+        
+            python setup.py install
+        
+        
+        DEPENDENCIES
+        
+        The following python packages are required to run thumbalizr
+        
+            thumbalizr
+        
+            
+        DJANGO
+        
+        After installing Thumbalizr_tags, update your Django configurations:
+        
+        	settings.py:
+        	
+        	INSTALLED_APPS = [
+        		...
+        		'thumbalizr_django'
+        	]
+        
+        
+        	# Thumbalizr settings
+        	THUMBALIZR_SETTINGS = {
+        		'API_KEY': 'MY_KEY',
+        		'SECRET': 'MY_SECRET',
+        		'WIDTH': '',
+        	}
+        
+        Change MY_KEY to your Embed API key, and MY_SECRET with your Thumbalizr secret. You can add default values for the API call: WIDTH, BWIDTH, BHEIGHT, etc. If not set, Thumbalizr will use the default values for your profile.
+        
+        Then, in your templates, use the thumbalizr tag to generate the image URL. For example, to take a screenshot of https://www.thumbalizr.com/ with a thumbnail width of 800 pixels:
+        
+        	{% load thumbalizr_tags %}
+        	<img src="{{ 'https://www.thumbalizr.com/'|thumbalizr:800 }}"/>
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown

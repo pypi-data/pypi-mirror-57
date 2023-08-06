@@ -1,0 +1,9 @@
+README
+settings.py
+setup.py
+thumbalizr_tags.py
+Thumablizr_tags.egg-info/PKG-INFO
+Thumablizr_tags.egg-info/SOURCES.txt
+Thumablizr_tags.egg-info/dependency_links.txt
+Thumablizr_tags.egg-info/requires.txt
+Thumablizr_tags.egg-info/top_level.txt
