@@ -1,0 +1,6 @@
+attrs
+requests
+simplejson
+structlog
+typing
+six
