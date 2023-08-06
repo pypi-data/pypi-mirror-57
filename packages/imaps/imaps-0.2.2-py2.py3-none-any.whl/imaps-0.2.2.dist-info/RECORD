@@ -1,0 +1,14 @@
+imaps/__about__.py,sha256=KFZXfVaNR6AjQFbH8Eehmpw5Km5NfoM2pl1U-S3Zuv0,871
+imaps/__init__.py,sha256=blWYc76Nm5U8XwKVvJDTyXT1kOttrM7QVRzI6SPLBxw,13
+imaps/base/__init__.py,sha256=nDcVhgZhRA5W3-Y9U8Zt-Ck8lWcv-PjsmcvHyadNpmQ,43
+imaps/base/operation.py,sha256=ZPiCihX2tkELnSSNRf_Oqw3r4BT24U1EDfegQ0_90hw,398
+imaps/base/validation.py,sha256=vZjQmn_k7BAonEDZKLPcBBoI1b64d_DZFeNVPZTKPBU,397
+imaps/operations/__init__.py,sha256=k5LbdrN889Cu1DFRFAhwN2ViVGiFMvVab_fuziSfs_s,18
+imaps/operations/example.py,sha256=sPl1U3Er6Tr_KJsSNwPXo21F2cH3ob8jMqE-ZfNylHs,1126
+imaps/sandbox/__init__.py,sha256=yuqaxFtJVsEl5vus8mYODL8smxxPjDAXip3LSw5KtD8,139
+imaps/sandbox/kmers.py,sha256=gDmBSQgiSXouDXIwQoK_MuRZx0nRNu8FFJtsuolFldg,48744
+imaps-0.2.2.dist-info/LICENSE,sha256=Ewl2wCa8r6ncxHlpf-ZZXb77c82zdfxHuEeKzBbm6nM,11324
+imaps-0.2.2.dist-info/METADATA,sha256=p4dFII0orZXjE3ylZ-q3CDLecn7N3QVFZePTMmphIPE,1717
+imaps-0.2.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+imaps-0.2.2.dist-info/top_level.txt,sha256=tSl4Zyf9vFVaCOu7kaTn1KwC_0x0p3sADepZ7WncgO4,6
+imaps-0.2.2.dist-info/RECORD,,
