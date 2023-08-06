@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dj_kaggle_pipeline
+Version: 0.0.1
+Summary: Pipelines and utility classes for Kaggle and data science!
+Home-page: https://github.com/DhananjayAshok/KagglePipeline
+Author: Dhananjay Ashok
+Author-email: dhananjay.ashok99@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/DhananjayAshok/KagglePipeline/archive/0.0.1.tar.gz
+Description: # TO Be CONTINUED
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,8 @@
+README.md
+setup.py
+KagglePipeline/KagglePipeline.py
+KagglePipeline/__init__.py
+dj_kaggle_pipeline.egg-info/PKG-INFO
+dj_kaggle_pipeline.egg-info/SOURCES.txt
+dj_kaggle_pipeline.egg-info/dependency_links.txt
+dj_kaggle_pipeline.egg-info/top_level.txt
