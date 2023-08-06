@@ -1,0 +1,14 @@
+d120_provider/__init__.py,sha256=-Wp5r0TROvmVUcyHVBaWd0tJOwdqyYh7Xpf-EZW3cRk,61
+d120_provider/admin.py,sha256=Qdrx6eSepAAOq3eBCvmEppY7WRJHQtpkfYyUpb9xvRo,187
+d120_provider/apps.py,sha256=lBGO4onpVGr_1OqQwaWhV9vGIgZkx6vCyKqr94TE3Bw,261
+d120_provider/models.py,sha256=UoEpi9Kv9z5HKD_kmPT41G6YR56yJimXxeznbogQxPc,586
+d120_provider/provider.py,sha256=QsrOWbP2uIEG00e9CmgPKwp2zA4s4oQ8RSqQepgXsyY,822
+d120_provider/signals.py,sha256=2iE5JOJ7461MObKNRwgrLK3_0Ivcic8WINdcsEHq8DI,1068
+d120_provider/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+d120_provider/urls.py,sha256=GUBfbTcG-JdUMhxBYMaUELW3vUonB2oDpDuvVvjvQBM,161
+d120_provider/views.py,sha256=f80G_0Xq63DjCkcLSWug5aRiss1CQ5sHbAcDoxiyOjM,1540
+django_allauth_d120-0.0.1.dist-info/LICENSE,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+django_allauth_d120-0.0.1.dist-info/METADATA,sha256=Ic1F4_WU5s1YPaMQ0KQEs7fiHEzaQSK4C0BPyhAfF14,510
+django_allauth_d120-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_allauth_d120-0.0.1.dist-info/top_level.txt,sha256=NJ3NoQXtt0m6To8uNCMk0xQEdWQlMyvNXOA3lXawLRY,14
+django_allauth_d120-0.0.1.dist-info/RECORD,,

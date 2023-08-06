@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: django-allauth-d120
+Version: 0.0.1
+Summary: Allauth provider for the D120 SSO
+Home-page: https://github.com/d120/django-allauth-d120
+Author: ckleemann
+Author-email: ckleemann@d120.de
+License: AGPL
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: django-allauth (==0.40.0)
+
+README.md
+
+
