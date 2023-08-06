@@ -1,0 +1,11 @@
+pyircor/__init__.py,sha256=8LY28CiFot-F3xtcD_5xg64i3-y3adqF8P8gdc019h4,127
+pyircor/check.py,sha256=pof1VL7hgsJ0OIjpoH23GTqS1jQNlIKdHaa3Z_Tjhi4,1829
+pyircor/permute.py,sha256=C7P95oDlEiPB7xPfYSj15DTYA-o4NRWsL5LEP0nvLC4,959
+pyircor/tau.py,sha256=dc7it28GhGF3rTr_oOZISnBJisTqlFMXaj3GsCbRaVc,2253
+pyircor/tauap.py,sha256=4URnSuZ5Wtn7nOBx9ym2b9xU_GYu-9dXvQvMr2uUQgA,4434
+pyircor-0.1.0.dist-info/AUTHORS.rst,sha256=v0GumfiWuxbyB2J-czuCz4nxdtQ8msauo8uxQmgMrjI,158
+pyircor-0.1.0.dist-info/LICENSE,sha256=Tu8tgiIJyJwBaxvvwJn7yUbM_wDwwv6-EUP3bu9wQhs,1069
+pyircor-0.1.0.dist-info/METADATA,sha256=DVuUjAtac_lJvO3zWrUN_jmvhgkgQUl7xq0BOrPLY4g,2613
+pyircor-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pyircor-0.1.0.dist-info/top_level.txt,sha256=tdNWq8nDiDzngjGO1wVF6oQ84Cm02uBM6G3z57KbR-Q,8
+pyircor-0.1.0.dist-info/RECORD,,
