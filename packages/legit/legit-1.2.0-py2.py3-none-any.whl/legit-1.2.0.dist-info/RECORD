@@ -1,0 +1,14 @@
+legit/__init__.py,sha256=yizuY0RsreoXHv6JFsiW3AmiqtZ4DXau4FrmSqq0OsU,56
+legit/bootstrap.py,sha256=HhKz-sutVsqeMBK_55jTN5dPYzHPpdsaBditnxdrlUA,1604
+legit/cli.py,sha256=VaItN9U57nqU4YQ6m3txwCLaVw9BAvpk5yXZmftxmR8,11986
+legit/core.py,sha256=70_HHjM7-YZCYUQvy-eO9DIWtZXWf73K7hH9qRaP6ps,222
+legit/scm.py,sha256=FUZae9W77XR3gqhzrAMV28Dqyc6NfoxDEQCUbYA5Crc,12149
+legit/settings.py,sha256=SLTq0-twM_0bd10v1Q6OfEcL69qA_4vM3vmO23pb3dk,1533
+legit/utils.py,sha256=tCt1bCYvRwAbtWRZEic1sKr5rpAw7jZh4Ieq_1KmFaA,3559
+legit-1.2.0.dist-info/AUTHORS,sha256=GAA6S4-Vf3h-Iz7bLWaLPCbkkbUILhW9_eCtxDyZrpI,296
+legit-1.2.0.dist-info/LICENSE,sha256=UT5VT0uwCYrtFiIvdJkoXVQYtUmC6FVryGU89sRemSo,1553
+legit-1.2.0.dist-info/METADATA,sha256=1xm3yf9_wW6Ple9OEKs1yH4-TWBU4WeYYfecwLjqrFo,4299
+legit-1.2.0.dist-info/WHEEL,sha256=05Ahrak1u2K61DpLp9CDNSbUImLTITCMom_cqTFk6pE,116
+legit-1.2.0.dist-info/entry_points.txt,sha256=PK7VuOA-Ws2M3YPdIAfAErrLhzGG0tbr4WJJARCqTd4,41
+legit-1.2.0.dist-info/top_level.txt,sha256=ZoenIdKtRdHMriYHHe3myyDY_2PPGZXLY81djLf1Fjw,6
+legit-1.2.0.dist-info/RECORD,,
