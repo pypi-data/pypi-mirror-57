@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pycontw-report-generator
+Version: 1.0.0
+Summary: PyCon TW post-event report generator.A cli command to generate PyCon TW post-event reports. Previously known as attendee-analyzer
+Home-page: https://github.com/pycontw/pycontw-postevent-report-generator
+Author: Taihsiang Ho (tai271828)
+Author-email: tai271828@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/pycontw/pycontw-postevent-report-generator.git
+Description: UNKNOWN
+Keywords: attendee,pycontw,post-event,report-generator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
