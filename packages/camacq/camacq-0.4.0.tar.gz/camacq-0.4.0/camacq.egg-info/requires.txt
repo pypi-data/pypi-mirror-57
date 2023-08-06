@@ -1,0 +1,13 @@
+async_timeout
+colorlog
+jinja2
+leicacam>=0.4.0
+leicaexperiment
+matplotlib
+numpy
+pandas
+ruamel.yaml>=0.15
+scipy
+tifffile
+voluptuous
+xmltodict
