@@ -1,0 +1,7 @@
+setup.py
+Film_analysis.egg-info/PKG-INFO
+Film_analysis.egg-info/SOURCES.txt
+Film_analysis.egg-info/dependency_links.txt
+Film_analysis.egg-info/requires.txt
+Film_analysis.egg-info/top_level.txt
+film/films.py
