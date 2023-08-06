@@ -1,0 +1,11 @@
+glfw/GLFW.py,sha256=90rvRuT-_Q1JsEI9VzXFWxifCJ1q5wiJKUDTFD_1CNE,17235
+glfw/__init__.py,sha256=qhzOggDWmSHyXv0dgpo2kFph4I9JurJQkk9luwwQKaQ,94804
+glfw/glfw3.dll,sha256=dDtQ5MHqfJgSSFT7gat8DkT1cfQLXqrjJAkfc6KuRF4,222720
+glfw/library.py,sha256=0f-9yVjKUMBmcYbsvKmiqU-D1HGcdvfjBxhoG3LA7VY,6035
+glfw/msvcr110.dll,sha256=uWrP3SVQhqD-McsS1H2x6LwGkNVqStpMe8grPrLKtRo,838096
+glfw-1.8.7.dist-info/DESCRIPTION.rst,sha256=k4ysFd8HAEIWH-f_tUKqFVKyTBodxueSZbnNm3Ii5Es,3100
+glfw-1.8.7.dist-info/METADATA,sha256=hInaD7-Y6I2dhY8rGxVyhEquHqOdr2jcMN54z5Yr6IQ,3764
+glfw-1.8.7.dist-info/RECORD,,
+glfw-1.8.7.dist-info/WHEEL,sha256=xuJ2w_RR4DNgd4FmUhs0bHIe8YWrQzuvfyVHf4AJHeg,122
+glfw-1.8.7.dist-info/metadata.json,sha256=nYB7t7e0zKwlHTDY1KJkmQs-e1u4T7owsCbqN87cYYU,786
+glfw-1.8.7.dist-info/top_level.txt,sha256=n6GNY584FzIdaCsyFH_mQw_kXzRH9bZ9wYb8VvDeT3k,5
