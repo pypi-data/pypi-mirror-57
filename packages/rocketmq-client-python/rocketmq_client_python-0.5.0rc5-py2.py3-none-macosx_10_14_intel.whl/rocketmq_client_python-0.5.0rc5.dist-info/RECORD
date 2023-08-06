@@ -1,0 +1,12 @@
+rocketmq/__init__.py,sha256=M6Tzjsc1G7-BkNn5EJKBJbtvZAs8xF_bywbRMGXhekE,810
+rocketmq/client.py,sha256=pQRjD9XXqrLAHtIWsoGx7ioi3lKUcc9iP34cZ238mf0,14557
+rocketmq/consts.py,sha256=qsTa5oxfvUAhrV__ldXvzPkGFdiGmGg3FVG5fcCDXcE,1599
+rocketmq/exceptions.py,sha256=639ljNbZNeJfgOeUJeN9ABcCT-8HXnctw5hspRiNLto,2588
+rocketmq/ffi.py,sha256=7c4IPVLcZB_ur-dugnwExzMFKXMs_DXTqiVgh_HyFxA,10541
+rocketmq_client_python-0.5.0rc5.dist-info/METADATA,sha256=fdn3-YvygNsxuoJGHxE81eTv90VpByIxp51spYzQ9jw,2368
+rocketmq_client_python-0.5.0rc5.dist-info/RECORD,,
+rocketmq_client_python-0.5.0rc5.dist-info/WHEEL,sha256=3rxWNeqNKW22GPsEqUdi7MRSiJotp4PrGQV0YP-rkrI,141
+rocketmq_client_python-0.5.0rc5.dist-info/top_level.txt,sha256=uG886VN-GMPLM3w5N32GaZwTMoloipBQVJfP6w9LfTs,17
+samples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+samples/consumer.py,sha256=p4Rh0XOEv8bCgx_3OvEAsRBZqoLcED1ilZAlvA_6zDw,1331
+samples/producer.py,sha256=XFxR8K8v2XmjSUA6BbuzI4LkNrRn014VUHrkA6yzM5U,2720
