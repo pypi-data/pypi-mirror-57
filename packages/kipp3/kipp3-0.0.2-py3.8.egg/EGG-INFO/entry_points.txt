@@ -1,0 +1,3 @@
+        [console_scripts]
+        kipp3_runner=kipp3.runner.__main__:main
+    
