@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: nosqlmodel
+Version: 1.0.0
+Summary: nosqlmodel is a NoSql ORM without relations. Easy way to create models with a nosql backend. Currently Redis and Dynamodb supported.
+Home-page: https://gitlab.com/mozgurbayhan/nosqlmodel
+Author: Mehmet Ozgur Bayhan
+Author-email: mozgurbayhan@gmail.com
+License: BSD
+Project-URL: Bug Reports, https://gitlab.com/mozgurbayhan/nosqlmodel/issues
+Project-URL: Funding, https://www.losev.org.tr/bagis/Bagis.html
+Project-URL: Say Thanks!, https://gitlab.com/mozgurbayhan/nosqlmodel
+Project-URL: Source, https://gitlab.com/mozgurbayhan/nosqlmodel
+Description: **nosqlmodel**
+        
+        nosqlmodel is a NoSql ORM without relations. Easy way to create models with a nosql backend. Currently Redis and Dynamodb supported.
+        
+        
+        
+        For Detailed description:
+        
+        `https://gitlab.com/mozgurbayhan/nosqlmodel/blob/master/README.md <https://gitlab.com/mozgurbayhan/nosqlmodel/blob/master/README.md>`_
+        
+Keywords: nosql orm redis dynamo
+Platform: UNKNOWN
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
