@@ -1,0 +1,6 @@
+README
+setup.py
+clitest_chenglipku.egg-info/PKG-INFO
+clitest_chenglipku.egg-info/SOURCES.txt
+clitest_chenglipku.egg-info/dependency_links.txt
+clitest_chenglipku.egg-info/top_level.txt
