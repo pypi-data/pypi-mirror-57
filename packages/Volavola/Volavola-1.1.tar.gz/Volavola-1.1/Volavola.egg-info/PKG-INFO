@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: Volavola
+Version: 1.1
+Summary: Volvola is memory forensic tool based on Volatility2
+Home-page: https://github.com/dhk1349/Volavola
+Author: dhk1349
+Author-email: dhk1349@naver.com
+License: CPL v3.0
+Description: # Volavola
+        
+        Project of Best of the Best 8th.<br>
+        Developing Memory Forensic Tool "Volatility2".
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
