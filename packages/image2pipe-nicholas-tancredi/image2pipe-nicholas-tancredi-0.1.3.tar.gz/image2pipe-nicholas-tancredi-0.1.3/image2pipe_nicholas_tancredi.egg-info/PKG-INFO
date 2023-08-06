@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: image2pipe-nicholas-tancredi
+Version: 0.1.3
+Summary: Simple ffmpeg wrapper for image2pipe which yields rawvideo frames from input video URL
+Home-page: UNKNOWN
+Author: Nicholas Tancredi
+License: LICENSE.txt
+Description: UNKNOWN
+Keywords: ffmpeg yuv image2pipe
+Platform: UNKNOWN
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
