@@ -1,0 +1,4 @@
+opencv-python>=4.0.0.21
+pytesseract>=0.2.6
+camelot-py>=0.7.3
+numpy>=1.16.0

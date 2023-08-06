@@ -1,0 +1,11 @@
+README.md
+setup.py
+pdf2tables/__init__.py
+pdf2tables/aliyun_tables.py
+pdf2tables/image_tables.py
+pdf2tables/pdf_tables.py
+pdf2tables.egg-info/PKG-INFO
+pdf2tables.egg-info/SOURCES.txt
+pdf2tables.egg-info/dependency_links.txt
+pdf2tables.egg-info/requires.txt
+pdf2tables.egg-info/top_level.txt
