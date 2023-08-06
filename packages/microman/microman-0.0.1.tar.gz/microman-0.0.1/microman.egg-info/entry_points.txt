@@ -1,0 +1,3 @@
+[console_scripts]
+microman = microman.cli:main
+

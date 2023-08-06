@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: microman
+Version: 0.0.1
+Summary: micromanage all of your tasks
+Home-page: https://github.com/michalwols/microman
+Author: Michal Wolski
+Author-email: michalwols@gmail.com
+License: MIT
+Description: 
+        # microman
+        
+        Microman is a simple task execution manager and tracker. 
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: cli
