@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: castodia
+Version: 0.0.4.2
+Summary: Castodia package
+Home-page: https://github.com/ayazhan-sanau/CastodiaProduct
+Author: Ayazhan Zhakhan
+Author-email: az@sanau.co
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: requests
+
+# Castodia Package
+
+This is a Castodia package.
+
+
