@@ -1,0 +1,10 @@
+nagios_sql-0.8.1.dist-info/DESCRIPTION.rst,sha256=5dryDIEbGhqlfUzYiNhIAxNMj2h0tkfcbtX0goAk1fQ,7072
+nagios_sql-0.8.1.dist-info/METADATA,sha256=6wzqYnA4eAYrMEKNL5AOF-X_z5qSMHVTwKOvZ0uMaZs,7828
+nagios_sql-0.8.1.dist-info/RECORD,,
+nagios_sql-0.8.1.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+nagios_sql-0.8.1.dist-info/entry_points.txt,sha256=pt_M0e8UhXQYEcmZy9Qtvx0va6pD825u5EVXkHSseq8,52
+nagios_sql-0.8.1.dist-info/metadata.json,sha256=WS_0ovM7chUMa91p0Ax0LwrY5SDg8XF6-MU5_Vgv9-Y,1115
+nagios_sql-0.8.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+src/__init__.py,sha256=xdnXSoxwQItu4xWvSNVv-BwBc6cDIm8HrwEG546_9_w,59
+src/nagios_sql.py,sha256=r_9Mi5YLOYsKE9sJXBjwe5Qx7Vh3uqQdx7_DeEAThqc,15584
+src/version.py,sha256=XNn3DErW-dE12s4CTQuooW4fRHilj1KIDqpVDXLx7D0,217
