@@ -1,0 +1,15 @@
+ismrmrd/__init__.py,sha256=kAqsgSlBlgP8jm3cV8eQoLfA57nhG6c-BOEew4mWZ6s,206
+ismrmrd/acquisition.py,sha256=Yh8CxWA4icxBZuIBV6S5aiKgK4b0kZXlVsXHJGCT__Y,9319
+ismrmrd/constants.py,sha256=WjSh6D2GAiT9fM-3mg2o8siewWAgWvcYiWs9geXOQEs,2810
+ismrmrd/equality.py,sha256=yTvG3biLPn_U7zsjSZgOWLn9W0xvSBFtyZPSdEzTSLE,393
+ismrmrd/file.py,sha256=dEq9l2i62FxpW8Qi7LI4hazemisL4ntv-troYriKR0U,10717
+ismrmrd/flags.py,sha256=kmGS00FMWr1q1in0_kNBeerwC7BgqtqPdE3_qEulFz8,560
+ismrmrd/hdf5.py,sha256=iRwCl7gGVkSbIXIubxbQYJS1FhJlK1dIKggtCgV2ASM,13975
+ismrmrd/image.py,sha256=8W7dXzDhJ3GyTdcKK_3GBVclfif3NHECVbmHeFSD7c8,9960
+ismrmrd/meta.py,sha256=auerFpoQTiKZrE4_JAbXD4zQI5sCmIVCTH-8dQnE1cs,2426
+ismrmrd/waveform.py,sha256=ojnNkNdsRmtCNN46oU-DilolqdyH6-Q1LN0wFRm46fo,4968
+ismrmrd/xsd.py,sha256=jBHoUk2mTuMCnFY92B0OlPNScvtmgP3hTEYz6CovTfI,232509
+ismrmrd-1.6.5.dist-info/METADATA,sha256=ndXjDLcGVaPov2EbqU3pJkMXpbI8n-koype9xSNfIDY,598
+ismrmrd-1.6.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+ismrmrd-1.6.5.dist-info/top_level.txt,sha256=eyel2-9Q5vGoJtHm1PJyoPNdLvrHbUpHlIA1f9GOJD8,8
+ismrmrd-1.6.5.dist-info/RECORD,,
