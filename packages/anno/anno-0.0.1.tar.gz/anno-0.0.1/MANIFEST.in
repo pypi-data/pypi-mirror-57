@@ -1,0 +1,2 @@
+include anno/anno/templates/*
+include anno/anno/static/*
