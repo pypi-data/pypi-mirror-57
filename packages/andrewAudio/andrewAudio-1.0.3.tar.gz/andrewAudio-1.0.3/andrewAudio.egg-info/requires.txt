@@ -1,0 +1,8 @@
+numpy
+pysoundfile
+resampy
+scikit-learn
+scipy
+six
+tensorflow
+torch
