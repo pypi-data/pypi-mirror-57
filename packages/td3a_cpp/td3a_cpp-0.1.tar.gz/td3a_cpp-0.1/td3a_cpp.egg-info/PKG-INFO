@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: td3a-cpp
+Version: 0.1
+Summary: Example of a python module including cython and openmp
+Home-page: https://github.com/sdpython/td3a_cpp
+Author: Xavier Dupré
+Author-email: xavier.dupre@gmail.com
+License: UNKNOWN
+Description: Exemple d'un module python incluant cython et openmp
+Platform: UNKNOWN
+Requires: cython
+Requires: numpy
+Requires: scipy
