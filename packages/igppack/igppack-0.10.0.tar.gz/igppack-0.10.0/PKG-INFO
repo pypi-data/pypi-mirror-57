@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: igppack
+Version: 0.10.0
+Summary: 
+Author: Alby1
+Author-email: 30355916+Alby1@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: royalnet[telegram,discord,alchemy_easy,bard,constellation,sentry,herald,coloredlogs] (>=5.1.2,<6.0.0)
