@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: opfunu
+Version: 0.1.0
+Summary: A python package for Optimization Functions in Numpy.
+Home-page: https://github.com/thieunguyen5991/opfunu
+Author: Thieu Nguyen
+Author-email: nguyenthieu2102@gmail.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# Optimization Function in Numpy (OpFuNu)
+1. References links
+```code 
+1. http://benchmarkfcns.xyz/fcns
+2. https://en.wikipedia.org/wiki/Test_functions_for_optimization
+3. https://www.cs.unm.edu/~neal.holts/dga/benchmarkFunction/
+4. http://www.sfu.ca/~ssurjano/optimization.html
+```
+
+2. Installing package from pip
+```code 
+    python3 -m pip install --user virtualenv
+    python3 -m pip install --user numpy
+
+    https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+```
+
+
+
