@@ -1,0 +1,16 @@
+jax_md/__init__.py,sha256=S0cahZFMDQ3P0GN2uvw9PJVXrOLm-vnVEGIz2WpLmNY,646
+jax_md/energy.py,sha256=xdrEGPmBdBzMz9U6m7CDaEeA2sdMmWvzEXfWAYgdEOA,13188
+jax_md/interpolate.py,sha256=TaN6CosvHrORStmXofXl39t7uwYwGvO0HKmXn8kAxHM,2819
+jax_md/minimize.py,sha256=5YckfgPbQyOx0U8dvgudAHshdN2tbUfPZAiuPDmk1Jg,6594
+jax_md/partition.py,sha256=TLSzmRigTr7mntfX8DDiFmy5UqQ7Z56osAe7qKPj9-E,17912
+jax_md/quantity.py,sha256=CMaWF4RNMQvBxUXYG9elgjBRcoTUFz2caJI2IbuH3Qs,3348
+jax_md/simulate.py,sha256=TNNUCJrhNPn5EUxQyB1dIRYQoU-M0VWPnIi08O8evQY,17264
+jax_md/smap.py,sha256=fwtBRKUUBRVEMlLfktuNz3Dfo4cipeLXCCBFtEuMXjE,17883
+jax_md/space.py,sha256=it1VL0BTZjFY_bLAH5X7qdYlKz0D_db7TGA4AG3yD6c,9834
+jax_md/util.py,sha256=6TUaGcVbru4k_aoBchY06QGnWOWimPcUYPz5xfp4eCQ,2550
+jax_md-0.1.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+jax_md-0.1.0.dist-info/LICENSE_SHORT,sha256=vA2mla530c1P0vxmuvT0ikVi8TpDlP828TxphQQxV7I,574
+jax_md-0.1.0.dist-info/METADATA,sha256=Rhrp-_cuE5mnlLmpDgC8Zcd3PA2vjVLB2y3bVmPXp4A,296
+jax_md-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+jax_md-0.1.0.dist-info/top_level.txt,sha256=EvbM6MOupWPttqvmgUaJgRSxHVkVnWe9DOOCCOZCJmg,7
+jax_md-0.1.0.dist-info/RECORD,,
