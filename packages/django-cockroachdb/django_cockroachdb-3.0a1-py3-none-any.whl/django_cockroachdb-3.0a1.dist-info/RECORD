@@ -1,0 +1,15 @@
+django_cockroachdb/__init__.py,sha256=fbfSfdAtaIi6Lr93yCZmXua8dchkHXc7c4ae9NNk33E,87
+django_cockroachdb/base.py,sha256=LrvsEHo4_kY4e3pjDytHoRB1_JSz9tO4aIl3XSzl2kc,2231
+django_cockroachdb/client.py,sha256=TgMQeDj4MOPZ4YYeLEeu6kMW68eX2Vlk_WifWKVAqO8,1667
+django_cockroachdb/creation.py,sha256=VzfDRQQB6TAHiiwU_m1qRqlttYx1BikcKhytHiuAAU8,31970
+django_cockroachdb/features.py,sha256=bHPFIt2U0AHXUvpu1ZHZP79nf0v92iw89xMnVwLr7Uk,2608
+django_cockroachdb/functions.py,sha256=s6qf243ComhbwMIoRAh1wsq6lOfvhFlhviN3iduXEkA,2886
+django_cockroachdb/introspection.py,sha256=bZoSfpkKiO3hYQ9_6reiHHXFoAOhtLZ4qQSN0JBuua4,5293
+django_cockroachdb/operations.py,sha256=_jnWEFaHirIdTFahurZ_S-SDkLg5B58Ty4sLwQPoYWg,2555
+django_cockroachdb/schema.py,sha256=0CVyq1Pedog1AExpZ7FwPnmng2slolgkH5nMxJY9-zw,3587
+django_cockroachdb/utils.py,sha256=lxOh49De8yCuuNcsBrmLbkgCTpCFDP3fARybHksa2Ck,169
+django_cockroachdb-3.0a1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_cockroachdb-3.0a1.dist-info/METADATA,sha256=l8fHqREG75qVgvxjUl912UEEGo32C-9k-EudwYzc8E0,7390
+django_cockroachdb-3.0a1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+django_cockroachdb-3.0a1.dist-info/top_level.txt,sha256=lsqOctmVAHF3yNFK7ZKjI_Xk_bkkirGVcaQKM-IRr_M,19
+django_cockroachdb-3.0a1.dist-info/RECORD,,
