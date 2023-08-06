@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+fec_filing_iterator/__init__.py
+fec_filing_iterator/_version.py
+fec_filing_iterator/errors.py
+fec_filing_iterator/factories.py
+fec_filing_iterator/filing_iterator.py
+fec_filing_iterator.egg-info/PKG-INFO
+fec_filing_iterator.egg-info/SOURCES.txt
+fec_filing_iterator.egg-info/dependency_links.txt
+fec_filing_iterator.egg-info/requires.txt
+fec_filing_iterator.egg-info/top_level.txt
