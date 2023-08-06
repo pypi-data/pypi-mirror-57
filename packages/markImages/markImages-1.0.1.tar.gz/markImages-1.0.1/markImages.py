@@ -1,0 +1,70 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import cv2\n",
+    "#import glob\n",
+    "\n",
+    "\n",
+    "\n",
+    "def markImages(LargeImage,smallImages=[]):\n",
+    "\n",
+    "    '''\n",
+    "    This method find the smallimages in LargeImage and highlight them with rectangle in LargeImage.\n",
+    "    \n",
+    "    ARGS- LargeImage ----- Give object of image in which object needs to be highlighted/marked\n",
+    "          smallImages ----- provide list of small image objects that needs to be marked in largeimage.\n",
+    "    \n",
+    "    RETURNS the final LargeImage with rectangles save it anywhere.\n",
+    "    \n",
+    "    '''\n",
+    "    smallImges = smallImages\n",
+    "    large_image = LargeImage\n",
+    "    method = cv2.TM_SQDIFF_NORMED\n",
+    "\n",
+    "    outputimagename ='output.jpg'\n",
+    "   \n",
+    "   \n",
+    "    # Read the images from the file\n",
+    "\n",
+    "    for img in smallImges:\n",
+    "\n",
+    "\n",
+    "       \n",
+    "        small_image = img\n",
+    "\n",
+    "\n",
+    "        result = cv2.matchTemplate(small_image, large_image, method)\n",
+    "\n",
+    "        # We want the minimum squared difference\n",
+    "        mn,_,mnLoc,_ = cv2.minMaxLoc(result)\n",
+    "\n",
+    "        # Draw the rectangle:\n",
+    "        # Extract the coordinates of our best match\n",
+    "        MPx,MPy = mnLoc\n",
+    "\n",
+    "        # Step 2: Get the size of the template. This is the same size as the match.\n",
+    "        trows,tcols = small_image.shape[:2]\n",
+    "\n",
+    "        # Step 3: Draw the rectangle on large_image\n",
+    "        cv2.rectangle(large_image, (MPx,MPy),(MPx+tcols,MPy+trows),(0,0,255),2)\n",
+    "        cv2.imwrite(outputimagename,large_image)\n",
+    "    return large_image\n",
+    "        "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
