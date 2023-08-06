@@ -1,0 +1,9 @@
+README.md
+setup.py
+filetools/__init__.py
+filetools.egg-info/PKG-INFO
+filetools.egg-info/SOURCES.txt
+filetools.egg-info/dependency_links.txt
+filetools.egg-info/top_level.txt
+tests/__init__.py
+tests/tests_example.py
