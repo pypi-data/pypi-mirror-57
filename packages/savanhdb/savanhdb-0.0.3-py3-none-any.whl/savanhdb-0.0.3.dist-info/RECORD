@@ -1,0 +1,9 @@
+eventgridsink_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+savanh_databricks_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+savanhdb/__init__.py,sha256=g_30VfdvYutm5A7ZoFE4j9mUG5pHIKPOO-Sc06i5u_w,19
+savanhdb/sinks/__init__.py,sha256=u_7KFU0TE89QGHA8hXysThCKlu5XZBCpuu8FGYgmz5c,23
+savanhdb/sinks/eventgrid.py,sha256=GEgc46KutVE7vp3GFTRK7_eLthgDhT72lsh-HfzbP0M,1437
+savanhdb-0.0.3.dist-info/METADATA,sha256=vV8lrFjD8vO-mCWlO6SUyzLuZk7wT62Cq0gJllePOTM,730
+savanhdb-0.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+savanhdb-0.0.3.dist-info/top_level.txt,sha256=dnOD7busN5aQm4xI2KpPAydQu0yAyvoNRAXZrqhe2x0,9
+savanhdb-0.0.3.dist-info/RECORD,,
