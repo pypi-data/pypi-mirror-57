@@ -1,0 +1,4 @@
+repo=../frutils
+repo=../frkl
+repo=.
+serial=True
