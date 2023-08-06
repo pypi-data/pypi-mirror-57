@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sen_chatbot/ChatBot.py
+sen_chatbot.egg-info/PKG-INFO
+sen_chatbot.egg-info/SOURCES.txt
+sen_chatbot.egg-info/dependency_links.txt
+sen_chatbot.egg-info/requires.txt
+sen_chatbot.egg-info/top_level.txt
