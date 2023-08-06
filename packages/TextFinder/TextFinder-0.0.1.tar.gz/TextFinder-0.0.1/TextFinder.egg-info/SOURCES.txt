@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+TextFinder/TextFinder.py
+TextFinder/__init__.py
+TextFinder.egg-info/PKG-INFO
+TextFinder.egg-info/SOURCES.txt
+TextFinder.egg-info/dependency_links.txt
+TextFinder.egg-info/top_level.txt
