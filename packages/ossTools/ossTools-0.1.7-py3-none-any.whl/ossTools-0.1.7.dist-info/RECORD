@@ -1,0 +1,11 @@
+ossTools/__init__.py,sha256=n3x3cmy5jvDU7zjv1M-LZXIjAwZkxlzQJp_un9fj3fo,2087
+ossTools/_ossArchiveUtils.py,sha256=i_gqzxPrlYl6k3-joRp90U6SMEZUHX9SheWjwaPyvzk,1755
+ossTools/_ossFile.py,sha256=roH15jwQbxrca6UtEBpyyEtTrp3Svm-tuOQJqKY3whw,3093
+ossTools/_ossIO.py,sha256=xtrPvKbwsT06IzA4GpobVoELo0ScAppr5ym3ozZ3upM,7030
+ossTools/_ossOpenCVUtils.py,sha256=_DQiL2A94IarC8DL1tPxiw5fN3cogn8X3QTWvRkEvJg,958
+ossTools/_ossPath.py,sha256=MUWKrkriwKb3Sm-m7JuigsYGLprkm8qn5nCGbMBrfjY,1493
+ossTools/_ossTensorBoardUtils.py,sha256=nk4hBjvlviS55twbjs6c3PiRBZBMbjzlYqrhqBm4B-M,1632
+ossTools-0.1.7.dist-info/METADATA,sha256=Qp3e6p_CiVTVlQ8fe3JLUEqTISLP9ZxnX417KgjnYOY,2891
+ossTools-0.1.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ossTools-0.1.7.dist-info/top_level.txt,sha256=FLcu-bkwGnMPQK8J-scCPhjzfg_ez6OK-US6Kb6aDj8,9
+ossTools-0.1.7.dist-info/RECORD,,
