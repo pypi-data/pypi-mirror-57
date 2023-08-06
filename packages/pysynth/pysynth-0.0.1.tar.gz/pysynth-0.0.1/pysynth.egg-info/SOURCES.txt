@@ -1,0 +1,12 @@
+README.md
+setup.py
+pysynth/__init__.py
+pysynth/__main__.py
+pysynth/catdecat.py
+pysynth/ipf.py
+pysynth.egg-info/PKG-INFO
+pysynth.egg-info/SOURCES.txt
+pysynth.egg-info/dependency_links.txt
+pysynth.egg-info/requires.txt
+pysynth.egg-info/top_level.txt
+pysynth.egg-info/zip-safe
