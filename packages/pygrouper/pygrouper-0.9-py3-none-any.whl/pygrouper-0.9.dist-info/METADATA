@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pygrouper
+Version: 0.9
+Summary: simple realisation of cross-reference grouping algorithm; mostly used in event driven distributed systems
+Home-page: https://github.com/bl17zar/pygrouper
+Author: bl17zar
+Author-email: bl17zar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# description
+the project aims to provide simple to use events cross-referencing engine
+
+# development state
+* no releases yet
+* starting beta version
+
+# contribution
+feel free to PR or create issues
+
+# python version
+written and tested with python3.7
+
+# logging
+this package has default logging that uses configuration you provided in your application;
+for more info see this 
+[extract](https://docs.python.org/3/howto/logging.html#logging-from-multiple-modules) 
+from official logging doc
+
