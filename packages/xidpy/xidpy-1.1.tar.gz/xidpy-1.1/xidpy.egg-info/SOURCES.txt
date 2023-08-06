@@ -1,0 +1,6 @@
+README.md
+setup.py
+xidpy.egg-info/PKG-INFO
+xidpy.egg-info/SOURCES.txt
+xidpy.egg-info/dependency_links.txt
+xidpy.egg-info/top_level.txt
