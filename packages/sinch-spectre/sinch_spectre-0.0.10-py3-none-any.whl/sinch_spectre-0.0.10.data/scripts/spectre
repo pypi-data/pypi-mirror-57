@@ -1,0 +1,39 @@
+#!python
+import sys
+import argparse
+from spectre.generation import generator
+from spectre.importers import mysql
+from spectre import config
+
+def main():
+
+    handlers = {
+        'import': handle_import,
+        'generate': handle_export
+    }
+
+    parser = argparse.ArgumentParser(description='Generation of API specifications from your data schema')
+    parser.add_argument('command', help='What you want to do', choices=(['import','generate']))
+    parser.add_argument('path', help='The path to the file you want to import/export')
+    parser.add_argument('--spectre-dir', help='path to spectre directory')
+    parser.add_argument('--jhipster', action='append_const', const='jhipster', dest='generators')
+    parser.add_argument('--proto', action='append_const', const='proto', dest='generators')
+    parser.add_argument('--api-json', action='append_const', const='api.json', dest='generators')
+    parser.add_argument('--liquibase', action='append_const', const='liquibase', dest='generators')
+
+    args = parser.parse_args()
+
+    cfg = config.load(args.spectre_dir)
+    cfg.path = args.path
+    cfg.generators = args.generators
+    handler = handlers[args.command]
+    handler(cfg)
+
+def handle_import(config):
+    mysql.import_mysql(config)
+
+def handle_export(config):
+    generator.generate(config)
+
+if __name__== "__main__":
+    main()
