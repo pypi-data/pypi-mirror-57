@@ -1,0 +1,9 @@
+odoo/addons/partner_age/__init__.py,sha256=5_ZG2zhd41YVMhaVg6lDeqdxp9df8YQyUdDGGJJezVU,22
+odoo/addons/partner_age/__manifest__.py,sha256=Fpu1H60gdPEev4prDDPw9VALexC2e3kfw4wwfQmSvx8,709
+odoo/addons/partner_age/models/__init__.py,sha256=c-ngG8ZlGfhZo2Rqk1QeT5h4WuhU-Pu_CKK1pQkU69w,23
+odoo/addons/partner_age/models/partner.py,sha256=1nbfIBSGCdA9u7jgqM5eBNQVFMMJoz7CkS0nqfqqnE4,1282
+odoo/addons/partner_age/view/partner_view.xml,sha256=xlwutCdBtHo-6EzZaTBejBSgIuuY5cjyJLwuzcqqiHk,1026
+odoo12_addon_partner_age-12.0.1.0.0.99.dev1.dist-info/METADATA,sha256=ex09t-K260oAyOtjladUePJ2GXJ4jiGfmCHy1laFZf4,578
+odoo12_addon_partner_age-12.0.1.0.0.99.dev1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+odoo12_addon_partner_age-12.0.1.0.0.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_partner_age-12.0.1.0.0.99.dev1.dist-info/RECORD,,
