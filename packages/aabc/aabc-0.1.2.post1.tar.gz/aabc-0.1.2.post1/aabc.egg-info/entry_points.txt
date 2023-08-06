@@ -1,0 +1,3 @@
+[console_scripts]
+aabc = aabc.aabc:main
+
