@@ -1,0 +1,47 @@
+[console_scripts]
+tings = tings.interfaces.cli:cli
+
+[plugtings]
+tings.finders = tings.finders:TingFindersPlugting
+tings.freezers = tings.freezers:TingsFreezerPlugting
+tings.properties = tings.properties:TingPropertiesPlugting
+
+[tings.addons]
+create-find-data = tings.addons.internal:CreateFindData
+create-tings = tings.addons.internal:CreateTings
+to-dict = tings.addons.core:ToDict
+watch-tings = tings.addons.internal:WatchTings
+
+[tings.finders]
+archive-finder = tings.finders.archive:ArchiveTingFinder
+plugin-finder = tings.finders.pluggable:PluggableTingFinder
+
+[tings.finders.plugins]
+files = tings.finders.pluggable.files:FileTingFinderPlugin
+
+[tings.freezers]
+json = tings.freezers.json:JsonFreezer
+
+[tings.properties]
+dict-content = tings.properties.core:DictContent
+dict-merge = tings.properties.core:DictMerge
+dict-value = tings.properties.core:DictValue
+file-name = tings.properties.files:FileName
+file-size = tings.properties.files:FileSize
+id = tings.properties.core:Id
+input-content = tings.properties.core:InputContent
+input-type = tings.properties.core:InputType
+mirror = tings.properties.core:Mirror
+parent-type = tings.properties.types:ParentType
+path-parts = tings.properties.files:PathParts
+static-dict = tings.properties.core:StaticDict
+template-input-schema = tings.properties.templating:TemplateInputSchema
+text-content = tings.properties.files:TextContent
+ting-finder-obj = tings.properties.internal:TingFinderObj
+ting-spec-obj = tings.properties.internal:TingSpecObj
+type-chain = tings.properties.types:TypeChain
+type-dict = tings.properties.types:TypeDict
+
+[tings.utils.files.matchers]
+path-regex = tings.utils.files:PathRegexMatcher
+

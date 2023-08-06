@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: tings
+Version: 0.1.dev0
+Summary: Create Python objects from things.
+Home-page: https://gitlab.com/frkl/tings
+Author: Markus Binsteiner
+Author-email: markus@frkl.io
+License: "The Parity Public License 6.0.0"
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: appdirs (>=1.4.3)
+Requires-Dist: watchgod (>=0.5)
+Requires-Dist: observable (>=1.0.3)
+Requires-Dist: sortedcontainers (>=2.1.0)
+Requires-Dist: effect (>=1.1.0)
+Provides-Extra: arrow
+Requires-Dist: pyarrow (>=1.13.0) ; extra == 'arrow'
+Provides-Extra: cli
+Requires-Dist: frutils[cli] (>=0.1) ; extra == 'cli'
+Requires-Dist: urwid (>=2.1.0) ; extra == 'cli'
+Provides-Extra: develop
+Requires-Dist: flake8 ; extra == 'develop'
+Requires-Dist: ipython ; extra == 'develop'
+Requires-Dist: black ; extra == 'develop'
+Requires-Dist: pip-tools ; extra == 'develop'
+Requires-Dist: pre-commit ; extra == 'develop'
+Requires-Dist: watchdog ; extra == 'develop'
+Requires-Dist: wheel ; extra == 'develop'
+Requires-Dist: pipdeptree ; extra == 'develop'
+Requires-Dist: isort ; extra == 'develop'
+Requires-Dist: setuptools-scm ; extra == 'develop'
+Requires-Dist: cruft ; extra == 'develop'
+Requires-Dist: pp-ez ; extra == 'develop'
+Requires-Dist: nuitka ; extra == 'develop'
+Provides-Extra: docs
+Requires-Dist: portray ; extra == 'docs'
+Requires-Dist: livereload ; extra == 'docs'
+Requires-Dist: formic2 ; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: tox ; extra == 'testing'
+
+UNKNOWN
+
+
