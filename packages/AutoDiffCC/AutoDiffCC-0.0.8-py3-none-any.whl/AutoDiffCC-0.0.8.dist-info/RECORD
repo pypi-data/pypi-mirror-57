@@ -1,0 +1,12 @@
+autodiffcc/ADmath.py,sha256=AxmB2p848_FCAlcjgLkC3TJ-doOonK6dqDjiUwm32WU,8297
+autodiffcc/__init__.py,sha256=EZJF--_TgWYl-kCmFBdOJk2dGVlVtBdjKfqa1l7Ldw0,37
+autodiffcc/autodiffcc.py,sha256=aDgvptmU35JqPY_FNGuknGjd_ivB5bnilMN9NGGmvVU,7580
+autodiffcc/core.py,sha256=BcpazlcFV7fLKciMDdc_uTrsmnqB8HICz8RcPRGb0as,14107
+autodiffcc/testmf.py,sha256=HWxPCJPynchSJ6TKeR2YjnySnHd_-MGguta6NRzykIg,87
+autodiffcc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autodiffcc/tests/test_ADmath.py,sha256=iV4VBhiKgJzECcnTYDLq2XsutAY9U-3MW8P44gvKqJE,6573
+autodiffcc/tests/test_core.py,sha256=bbIjkFyFrAVx_vc9_Fe9tnDHHZ1SUA84ubJ1VbKUMGY,7893
+AutoDiffCC-0.0.8.dist-info/METADATA,sha256=z2a3PUe9ODgSXovzq8u4wMnPlDxnPu70joKUbCK69Lk,879
+AutoDiffCC-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+AutoDiffCC-0.0.8.dist-info/top_level.txt,sha256=3IMJDuy0yKmhf2tPvIcZFhNl4ITJxkFmQpgJubDVvyU,11
+AutoDiffCC-0.0.8.dist-info/RECORD,,
