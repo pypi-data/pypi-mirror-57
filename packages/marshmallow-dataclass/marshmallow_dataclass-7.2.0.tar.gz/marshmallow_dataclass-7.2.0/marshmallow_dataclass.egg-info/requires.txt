@@ -1,0 +1,33 @@
+marshmallow<4.0,>=3.0.0
+typing-inspect
+
+[:python_version == "3.6"]
+dataclasses
+
+[dev]
+marshmallow-enum
+marshmallow-union
+pre-commit~=1.18
+sphinx
+pytest
+
+[dev:implementation_name != "pypy" and sys_platform != "win32"]
+pytest-mypy-plugins
+
+[docs]
+sphinx
+
+[enum]
+marshmallow-enum
+
+[lint]
+pre-commit~=1.18
+
+[tests]
+pytest
+
+[tests:implementation_name != "pypy" and sys_platform != "win32"]
+pytest-mypy-plugins
+
+[union]
+marshmallow-union
