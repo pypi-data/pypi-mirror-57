@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: docile
+Version: 0.0.2
+Summary: Your automated Python documentation.
+Home-page: https://github.com/demangejeremy/docile
+Author: Jérémy DEMANGE
+Author-email: j@lachainemedias.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+# Docile
+
+Your automated Python documentation.
+
