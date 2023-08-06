@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: odoo12-addon-easy_my_coop_recompute_coop_number
+Version: 12.0.1.0.0.99.dev1
+Summary: Easy My Coop Recompute Coop Number
+Home-page: https://coopiteasy.be
+Author: Houssine BAKKALI <houssine@coopiteasy.be>
+License: UNKNOWN
+Description: 
+            This module allows to recompute the cooperator number subscription
+            it has to be used carefully.
+            
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Python: >=3.5

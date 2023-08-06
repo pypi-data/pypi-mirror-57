@@ -1,0 +1,12 @@
+setup.py
+odoo/addons/easy_my_coop_recompute_coop_number/__init__.py
+odoo/addons/easy_my_coop_recompute_coop_number/__manifest__.py
+odoo/addons/easy_my_coop_recompute_coop_number/wizard/__init__.py
+odoo/addons/easy_my_coop_recompute_coop_number/wizard/cooperator_number_wizard.py
+odoo/addons/easy_my_coop_recompute_coop_number/wizard/cooperator_number_wizard.xml
+odoo12_addon_easy_my_coop_recompute_coop_number.egg-info/PKG-INFO
+odoo12_addon_easy_my_coop_recompute_coop_number.egg-info/SOURCES.txt
+odoo12_addon_easy_my_coop_recompute_coop_number.egg-info/dependency_links.txt
+odoo12_addon_easy_my_coop_recompute_coop_number.egg-info/not-zip-safe
+odoo12_addon_easy_my_coop_recompute_coop_number.egg-info/requires.txt
+odoo12_addon_easy_my_coop_recompute_coop_number.egg-info/top_level.txt
