@@ -1,0 +1,7 @@
+setup.py
+film/films.py
+film_director_genre.egg-info/PKG-INFO
+film_director_genre.egg-info/SOURCES.txt
+film_director_genre.egg-info/dependency_links.txt
+film_director_genre.egg-info/requires.txt
+film_director_genre.egg-info/top_level.txt
