@@ -1,0 +1,11 @@
+README.md
+setup.py
+distributions_ChanWay/Binomialdistribution.py
+distributions_ChanWay/Gaussiandistribution.py
+distributions_ChanWay/Generaldistribution.py
+distributions_ChanWay/__init__.py
+distributions_ChanWay.egg-info/PKG-INFO
+distributions_ChanWay.egg-info/SOURCES.txt
+distributions_ChanWay.egg-info/dependency_links.txt
+distributions_ChanWay.egg-info/not-zip-safe
+distributions_ChanWay.egg-info/top_level.txt
