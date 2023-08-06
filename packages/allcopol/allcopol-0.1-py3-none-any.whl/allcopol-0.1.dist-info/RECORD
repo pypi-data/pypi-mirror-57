@@ -1,0 +1,13 @@
+allcopol-0.1.data/scripts/align_clusters.py,sha256=5w293gbPCfavyi5bja99iYa1ToOty4lQg8HgdWz1PCs,6613
+allcopol-0.1.data/scripts/allcopol.py,sha256=z994a9kNIRJA9ebFagyMMu2dSGEBX0kb8xk-vIXCdE0,16864
+allcopol-0.1.data/scripts/create_indfile.py,sha256=9iR75niCrokWC3NzNloqYpBwzbHh6_dUybabtPjHdjk,1670
+allcopol-0.1.data/scripts/relabel_trees.py,sha256=gSkury_n7OL76L0O0Cs60LxrxEaqzGa7UPu5Lf8WAQc,1022
+phylogen/__init__.py,sha256=v5_F89qX_xcQR9UxlqnL1aHo2uDDbCaPALhmKf_sM5o,98
+phylogen/optimization.py,sha256=LqnwO4iPCZwTrnMZmPkJpgh3Gtqpgb9WB9YsLTa6A9Q,4601
+phylogen/phylonet.py,sha256=vTKE3JnqPcLsoxN7t7Zy86jEto_mVWf2kVVo0NaXR64,7298
+phylogen/utils.py,sha256=qoh7OiwsyGfErXNxAeDfJuETF1yQVevTP_iSD75oM8I,8821
+allcopol-0.1.dist-info/LICENSE,sha256=Iru91UgONhSNVcUX95yY3D8-RTBSgsmjzpaUbiJAoSs,1077
+allcopol-0.1.dist-info/METADATA,sha256=FZc5qUcQ00HivMV1gUXIi5bbA2YPvdq9cNd8vc9xCtI,6361
+allcopol-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+allcopol-0.1.dist-info/top_level.txt,sha256=RGwhGpHW5QKALnYr9qNzwMIoSt9KAm7Jwbu8JmYauzQ,9
+allcopol-0.1.dist-info/RECORD,,
