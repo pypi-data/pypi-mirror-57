@@ -1,0 +1,8 @@
+PyQtGraph
+matplotlib
+numpy
+openpyxl
+PyQt5
+scipy
+scikit-image
+pandas
