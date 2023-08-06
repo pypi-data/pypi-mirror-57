@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ecl-tools
+Version: 1.0.0
+Summary: Some useful utilities for Python
+Home-page: https://bitbucket.org/elmcitylabs/ecl-tools/src/master/
+Author: Dan Loewenherz
+Author-email: dan@elmcitylabs.com
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: redis (==3.3.11)
+Requires-Dist: jsmin (==2.2.2)
+Requires-Dist: slimit (==0.8.1)
+
+UNKNOWN
+
+
