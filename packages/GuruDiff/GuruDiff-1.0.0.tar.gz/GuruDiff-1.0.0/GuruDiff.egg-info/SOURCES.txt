@@ -1,0 +1,12 @@
+README.md
+setup.py
+GuruDiff.egg-info/PKG-INFO
+GuruDiff.egg-info/SOURCES.txt
+GuruDiff.egg-info/dependency_links.txt
+GuruDiff.egg-info/requires.txt
+GuruDiff.egg-info/top_level.txt
+autodiff/AD.py
+autodiff/__init__.py
+autodiff/reverse.py
+test/test_forward.py
+test/test_reverse.py

@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: GuruDiff
+Version: 1.0.0
+Summary: A easy-used auto-differentiation package, supporting both forward mode and reverse mode
+Home-page: https://https://github.com/Software-Samurais/cs207-FinalProject
+Author: Erick Ruiz, Jingyuan Liu, Simon (Xin) Dong, Kailas Amin
+Author-email: eruiz@g.harvard.edu, jingyuanliu@g.harvard.edu, xindong@g.harvard.edu, kailasamin@college.harvard.edu
+License: UNKNOWN
+Description: # cs207-FinalProject
+        
+        [![Build Status](https://travis-ci.org/Software-Samurais/cs207-FinalProject.svg?branch=master)](https://travis-ci.org/Software-Samurais/cs207-FinalProject)
+        [![Coverage Status](https://codecov.io/gh/Software-Samurais/cs207-FinalProject/branch/master/graph/badge.svg)](https://codecov.io/gh/Software-Samurais/cs207-FinalProject)
+        
+        #### Group Number  3
+        #### Group Members:
+        - Erick Ruiz
+        - Jingyuan Liu
+        - Simon (Xin) Dong
+        - Kailas Amin
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
