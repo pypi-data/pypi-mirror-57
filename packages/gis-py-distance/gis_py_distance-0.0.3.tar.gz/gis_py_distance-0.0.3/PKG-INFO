@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gis_py_distance
+Version: 0.0.3
+Summary: A small example package
+Home-page: https://github.com/tom110/GIS-PY
+Author: tom
+Author-email: tomyeying@gmail.com
+License: UNKNOWN
+Description: this is a GIS PY course modal
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
