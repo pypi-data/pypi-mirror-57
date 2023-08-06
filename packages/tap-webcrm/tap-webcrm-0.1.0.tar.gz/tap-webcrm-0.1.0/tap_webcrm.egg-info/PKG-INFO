@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: tap-webcrm
+Version: 0.1.0
+Summary: Singer.io tap for extracting data from WebCRM
+Home-page: https://github.com/dreamdata-io/tap-webcrm
+Author: Dreamdata
+License: MIT
+Download-URL: https://github.com/dreamdata-io/tap-webcrm/archive/vv0.1.0.tar.gz
+Description: # tap-webcrm
+        
+        # installation
+        
+        install via `pip` using the following command:
+        
+        ```bash
+        pip install tap-webcrm
+        ```
+        
+        below is an example of a valid `config.json` for this tap.
+        
+        # Note
+        
+        ### singer.io compliance
+        
+        The tap supports `--discover` and `--catalog` as of release v0.1. To simplify your life when working with this, use the pip package `singer-discover`:
+        
+        ```bash
+        pip install https://github.com/chrisgoddard/singer-discover/archive/master.zip
+        ```
+        
+        ### Tables supported
+        
+        As of right now, Dreamdata only has use for the `Opportunity`, `Organisation` and `Person` tables - but it would be trivial to add support for other ones and PRs are welcome.
+        
+        # config
+        
+        the API_TOKEN can be provided as the environment variables `WEBCRM_API_TOKEN` or directly in the configuration as seen below:
+        
+        ```json
+        {
+          "api_token": "<API_TOKEN>"
+        }
+        ```
+        
+Keywords: singer,io,webcrm,etl,crm
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Provides-Extra: test
