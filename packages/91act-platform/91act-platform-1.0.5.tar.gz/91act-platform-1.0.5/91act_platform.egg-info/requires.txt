@@ -1,0 +1,5 @@
+requests
+python-crontab
+pymysql
+flask
+Flask-Session
