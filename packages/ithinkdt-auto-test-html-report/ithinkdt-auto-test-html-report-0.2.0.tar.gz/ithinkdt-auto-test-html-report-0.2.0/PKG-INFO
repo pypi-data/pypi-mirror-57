@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ithinkdt-auto-test-html-report
+Version: 0.2.0
+Summary: python auto test of form a test report
+Home-page: UNKNOWN
+Author: huiLi
+Author-email: lihui@ithinkdt.com
+License: MIT
+Description: python libs of form a test report
+Platform: any
