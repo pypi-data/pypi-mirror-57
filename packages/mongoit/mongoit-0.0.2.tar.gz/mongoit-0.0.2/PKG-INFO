@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mongoit
+Version: 0.0.2
+Summary: A pythonic package to work with the interface of pymongo for the Mongo DB
+Home-page: UNKNOWN
+Author: Kfir Nissim
+Author-email: kfirr99@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
