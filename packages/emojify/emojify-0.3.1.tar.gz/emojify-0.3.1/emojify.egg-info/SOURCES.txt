@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+emojify
+emojify.py
+setup.py
+test_emojify
+emojify.egg-info/PKG-INFO
+emojify.egg-info/SOURCES.txt
+emojify.egg-info/dependency_links.txt
+emojify.egg-info/top_level.txt
