@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+cuteuid/__init__.py
+cuteuid/preprocess.py
+cuteuid/core/__init__.py
+cuteuid/core/converters.py
+cuteuid/core/kinds/__init__.py
+cuteuid/core/kinds/base_uid.py
+cuteuid/core/kinds/emoji_uid.py
+cuteuid/core/kinds/leet_uid.py
+cuteuid/data/emojis.json
+cuteuid/data/words.json
+cuteuid_alexredmon.egg-info/PKG-INFO
+cuteuid_alexredmon.egg-info/SOURCES.txt
+cuteuid_alexredmon.egg-info/dependency_links.txt
+cuteuid_alexredmon.egg-info/top_level.txt
