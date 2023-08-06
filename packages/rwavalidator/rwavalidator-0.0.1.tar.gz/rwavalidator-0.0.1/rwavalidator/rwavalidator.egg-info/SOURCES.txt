@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+rwavalidator/rwavalidator.egg-info/PKG-INFO
+rwavalidator/rwavalidator.egg-info/SOURCES.txt
+rwavalidator/rwavalidator.egg-info/dependency_links.txt
+rwavalidator/rwavalidator.egg-info/not-zip-safe
+rwavalidator/rwavalidator.egg-info/top_level.txt
