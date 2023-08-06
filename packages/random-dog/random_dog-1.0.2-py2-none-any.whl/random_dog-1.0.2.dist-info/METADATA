@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: random-dog
+Version: 1.0.2
+Summary: Modul/Command Line Tool to get dog images
+Home-page: https://github.com/Prasnal/random-dog
+Author: Dorota Psota
+Author-email: dorota@lisp.pl
+License: MIT
+Keywords: dog fun
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Topic :: Terminals
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Topic :: Artistic Software
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# random-dog
+
+random-dog is a module for getting dog images, it uses dogAPI: https://dog.ceo/dog-api/
+The module creation was inspired by random-cat module (https://github.com/gravmatt/random-cat)
+
+**Python 2 and 3 compatible**
+
+## Installation
+
+Install through **pip**.
+
+```
+$ pip install random-dog
+```
+
+or get from source
+
+```
+$ git clone https://github.com/Prasnal/random-dog
+$ cd random-dog
+$ python setup.py install
+```
+
+## Usage
+
+The dog module has just one function **getDog()** with two optional arguments.
+
+### Arguments
+
+**directory** - default is the current directory
+
+**filename** - default is a unique id
+
+```
+import dog
+
+# dog.getDog(directory=None, filename=None)
+
+dog.getDog(directory='/users/tor', filename='dog')
+
+# /users/tor/dog.jpg
+```
+
+The function return the image name (absolute path if directory is specified) of the image.
+
+### Command Line
+
+You can also request an image on the terminal.
+
+```
+$ randomdog [file]
+
+# Example:
+
+$ randomdog /users/tor/dog.jpg
+```
+
+The argument _file_ is optional.
+
+The command return the filename/absolute path of the image to the standard output (stdout).
+
+### Licence
+
+The MIT License (MIT)
+
+
