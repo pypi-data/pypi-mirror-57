@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+test_client_176883/__init__.py
+test_client_176883/add_item.py
+test_client_176883/client.py
+test_client_176883/test.py
+test_client_176883.egg-info/PKG-INFO
+test_client_176883.egg-info/SOURCES.txt
+test_client_176883.egg-info/dependency_links.txt
+test_client_176883.egg-info/requires.txt
+test_client_176883.egg-info/top_level.txt
