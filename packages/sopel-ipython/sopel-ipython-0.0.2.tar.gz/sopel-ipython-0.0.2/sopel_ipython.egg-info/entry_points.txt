@@ -1,0 +1,3 @@
+[sopel.plugins]
+ipython = sopel_ipython
+
