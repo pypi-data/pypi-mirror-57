@@ -1,0 +1,19 @@
+INFO: [2019-12-01 11:48:49] module: __main__: succes starting tests now
+INFO: [2019-12-01 11:48:49] module: __main__: test
+INFO: [2019-12-01 11:48:49] module: __main__: <__main__.gui_logger object at 0x000001896D99F8C8>
+INFO: [2019-12-01 11:48:50] module: __main__: normal
+INFO: [2019-12-01 11:48:50] module: __main__: this is from get logger
+INFO: [2019-12-01 11:48:50] module: __main__: GUI
+WARNING: [2019-12-01 11:48:50] module: __main__: warning
+INFO: [2019-12-01 11:48:50] module: __main__: succes
+WARNING: [2019-12-01 11:48:51] module: __main__: not normal
+INFO: [2019-12-01 11:48:51] module: __main__: normal again
+INFO: [2019-12-01 11:48:51] module: __main__: showing GUI for one second
+INFO: [2019-12-01 11:48:52] module: __main__: again a test
+INFO: [2019-12-01 11:48:52] module: __main__: test int converter
+WARNING: [2019-12-01 11:48:52] module: __main__: expected an int got an <class 'str'>
+WARNING: [2019-12-01 11:48:52] module: __main__: expected an int between 1 and 5 got number 6
+WARNING: [2019-12-01 11:48:52] module: __main__: expected an int between 1 and 5 got number -1
+DEBUG: [2019-12-01 11:48:52] module: __main__: error next
+ERROR: [2019-12-01 11:48:52] module: __main__: no fatal error
+FATAL ERROR: [2019-12-01 11:48:53] module: __main__: fatal error
