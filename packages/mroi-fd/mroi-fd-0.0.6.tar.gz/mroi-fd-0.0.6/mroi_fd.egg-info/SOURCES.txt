@@ -1,0 +1,10 @@
+README.md
+setup.py
+mroi_fd/__init__.py
+mroi_fd/_utils.py
+mroi_fd/face_detector.py
+mroi_fd.egg-info/PKG-INFO
+mroi_fd.egg-info/SOURCES.txt
+mroi_fd.egg-info/dependency_links.txt
+mroi_fd.egg-info/requires.txt
+mroi_fd.egg-info/top_level.txt
