@@ -1,0 +1,12 @@
+README.md
+setup.py
+sorted/__init__.py
+sorted/base.py
+sorted/sorted.py
+sorted/subtract.py
+sorted/unique.py
+sorted.egg-info/PKG-INFO
+sorted.egg-info/SOURCES.txt
+sorted.egg-info/dependency_links.txt
+sorted.egg-info/requires.txt
+sorted.egg-info/top_level.txt
