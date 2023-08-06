@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+big_O_dmunguiatec.egg-info/PKG-INFO
+big_O_dmunguiatec.egg-info/SOURCES.txt
+big_O_dmunguiatec.egg-info/dependency_links.txt
+big_O_dmunguiatec.egg-info/requires.txt
+big_O_dmunguiatec.egg-info/top_level.txt
+big_o/__init__.py
+big_o/big_o.py
+big_o/complexities.py
+big_o/datagen.py
+big_o/test/__init__.py
+big_o/test/test_big_o.py
+big_o/test/test_complexities.py
