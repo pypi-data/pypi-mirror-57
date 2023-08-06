@@ -1,0 +1,6 @@
+requests
+python-hostlist
+psycopg2
+PyMySQL
+pyodbc
+python-swiftclient
