@@ -1,0 +1,6 @@
+pyscaffold>=3.2a0
+Jinja2~=2.10.3
+
+[testing]
+pytest
+pytest-cov
