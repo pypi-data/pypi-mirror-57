@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: trvaep
+Version: 0.0
+Summary: trVAE - Transfer Variational Autoencoders pytorch
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Mohammad Lotfollahi
+Author-email: mohammad.lotfollahi@helmholtz-muenchen.de
+Classifier: License :: OSI Approved :: MIT License
