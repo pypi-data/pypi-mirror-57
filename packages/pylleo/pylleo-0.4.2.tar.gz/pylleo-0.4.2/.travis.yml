@@ -1,0 +1,17 @@
+language: python
+python:
+- '3.6'
+- '3.7'
+cache: pip
+install:
+- pip install -r requirements.txt
+- pip install -r requirements_test.txt
+script:
+- pytest --black --flake8
+deploy:
+  provider: pypi
+  user: __token__
+  password:
+    secure: LxDJX+/cpY4ZGboHuCgmZGVIY3hM8dZEPzC8OQ0JOuPFw4qUIt8b3FHYpJsHxCIWrBASXt7N3KihRca+OgNPBBt28iQb3w6REtjlEs8F2NaPBAjVtPSaYDWoed/tYrvnN0R0+jLLsoR3u1ask0w73GSjokQt5Qc55DhuYXpggzJm2IugXhvRGZMAV8Iuw/wO/PYENMCecKvBbRMNUk4Sjq0Vq7I5NXlr0gYmjhROyCEKMk5IoBxmegfeyFi4aarrIikpbgjwNHOk3Dwk4akhXkHd0xSMW9Ti9ovJ6oT7GNolaC1J8AxtBDliUIGp+dbM+aCCn2b7knZ1u+aRlxpBMox6v2bPQgqkX59EDCnfysf/0/GNqS6bm87c+a6Ja/zLWMmaNuKs5Pw3dNhEVi7/cQF3L+sAcmteAyjlnb6EKZBtiupjG9d9k9ChIdgTUFGIs78Yhy8k1EfHWtVAqLx9BpZboB709U1PljigQ3KSpkU4/JV74IaWtse1A/fGoCgrgWXz643lESZwzBnI30iRWFJBeMhV/tMkAXno41U4bf4csjJSgHu2fqcC4jKTJixzs69bvR6bVp5DI8uo3x2+U9dIvatW4oNgDvqv0bKEL4asp6+SgdpdquASuc8oxaFSNCUfFdz+WeeekFRwVZAYNnUBL5z6DN0gXPQ9Fcss8Xw=
+  on:
+    tags: true
