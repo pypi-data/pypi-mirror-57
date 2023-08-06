@@ -1,0 +1,10 @@
+requests
+lxml
+fire
+six
+
+[MultiParser]
+pyquery
+parse
+w3lib
+bs4
