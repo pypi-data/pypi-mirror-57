@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: smiler
+Version: 0.1.0
+Summary: Emoji for humans
+Home-page: https://github.com/iyehuda/smiler
+Author: Yehuda Chikvashvili
+Author-email: yehudaac1@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: smile emoji face
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python

@@ -1,0 +1,9 @@
+README.md
+setup.py
+smiler/__init__.py
+smiler/__main__.py
+smiler.egg-info/PKG-INFO
+smiler.egg-info/SOURCES.txt
+smiler.egg-info/dependency_links.txt
+smiler.egg-info/entry_points.txt
+smiler.egg-info/top_level.txt
