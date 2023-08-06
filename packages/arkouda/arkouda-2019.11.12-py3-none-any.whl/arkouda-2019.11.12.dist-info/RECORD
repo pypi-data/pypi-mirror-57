@@ -1,0 +1,14 @@
+arkouda/__init__.py,sha256=8aXINYIz_MomNsb3_Jo4CVMSkR1epVznELkemy8Xd8k,295
+arkouda/client.py,sha256=IhLy2EYkQ6bE_b7rLr-LJyKcIWiS9OPESnMTGGUjkss,5912
+arkouda/dtypes.py,sha256=YbOjyO1HvM0GacnSA87t02xl3wDciIB9Dthxmybetgc,1792
+arkouda/groupbyclass.py,sha256=uA46TYPmKARBjjlqc_GdU0J1_ITbioAnTCUA-gN-aac,12214
+arkouda/numeric.py,sha256=_QTObfQ5Vqiw9DNHGLseLNeeipvyDCX5DHfQH3Cl6Ik,8370
+arkouda/pdarrayIO.py,sha256=cgdPvZEtnLrFimUap-40bBb5rJt_fYOQ-5VKOiYsn70,7110
+arkouda/pdarrayclass.py,sha256=Ikwval6yt0Sq7rdLEfDzROjsCynFETXXKCsCv63R6Jc,25525
+arkouda/pdarraycreation.py,sha256=67WH34rg2xPJqZy8XPm7wUNFztRQaTORUkcH661I7Mk,10277
+arkouda/pdarraysetops.py,sha256=I_epmS-5q8H86GuvGRMSsx_CAZCulAO7MW7rChNDRUE,9273
+arkouda/sorting.py,sha256=m1i6fsc_9xNBKuw0_Cn8o8UP411EKtDZt_0uQLAhlfs,3557
+arkouda-2019.11.12.dist-info/METADATA,sha256=2tPqVn5gwgK9IF_Ek-EGdbkz9AhdgFaM1OVMVQEvGrA,8054
+arkouda-2019.11.12.dist-info/RECORD,,
+arkouda-2019.11.12.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+arkouda-2019.11.12.dist-info/top_level.txt,sha256=qKtbmGB4q4M9tpM09wZ15-v1ZxR19xta7m5UxxjPGug,8
