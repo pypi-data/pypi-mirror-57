@@ -1,0 +1,5 @@
+mutagen
+requests
+spotipy
+tqdm
+pycryptodome
