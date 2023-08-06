@@ -1,0 +1,7 @@
+py_slvs/slvs.py,sha256=pg_4mQO7pXAP3JMDsmYHKVz5we7n3Ee9vy166N0pmXc,23885
+py_slvs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_slvs/_slvs.so,sha256=BOUO0qxaU2tW6GPwNW_hIwvKWQBjkwZRYAW-_N6Km_o,686160
+py_slvs-1.0.0.dist-info/WHEEL,sha256=tcpAxzOgtfEMGl3y3UxOQ2LpqjJBdR2anSRjP1UDoXA,102
+py_slvs-1.0.0.dist-info/top_level.txt,sha256=ExQaSNEnlFfOx83vuPyt4wHTIAdHysMOLYxwQUiy1_8,8
+py_slvs-1.0.0.dist-info/METADATA,sha256=Rv82FWVfqHtweSgTIw9fwdwry-axGuk1Hon9IUM4rUs,1113
+py_slvs-1.0.0.dist-info/RECORD,,
