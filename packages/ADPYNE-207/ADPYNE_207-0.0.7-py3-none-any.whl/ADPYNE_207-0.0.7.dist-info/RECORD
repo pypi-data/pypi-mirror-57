@@ -1,0 +1,15 @@
+ADPYNE/AutoDiff.py,sha256=8W4iCB4sVvNTaQVnCwntjw4gMnDErlVRaf8eKpq0FD0,8462
+ADPYNE/Dual.py,sha256=gHq0TE-dwdXgykObTphlENL17Do2o5jT3zCg67BErnA,4150
+ADPYNE/Hessian.py,sha256=LIhGL3G8ikf9cbv1VDtG39SrG0JkZDz7SAOxpftMYqs,514
+ADPYNE/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ADPYNE/elemFunctions.py,sha256=cUHu5X6MR16BTtuaUYgbUiArS2x8DPCz9AahcaeIaE8,17591
+ADPYNE/tests/AutoDiff_test.py,sha256=CDSEoLNZr1YpjoFuRmSWGgvh27jxzjMvB-_eIMyj9E4,13202
+ADPYNE/tests/Dual_test.py,sha256=KHTakJNYAVoF7-p0kgk0eoIAX7ijS5_O9hwGj_jA8Ww,11180
+ADPYNE/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ADPYNE/tests/elemFunctions_Dual_test.py,sha256=R7Kf0_2bjZtmxCs11U8eaX-vGuq1iP5YgsHuu9wfVu4,16087
+ADPYNE/tests/elemFunctions_test.py,sha256=VT2JS_DvR-I-kFy3ByirT7JlQwJZYhXebk7DFGvSzV0,18693
+ADPYNE_207-0.0.7.dist-info/LICENSE,sha256=pjWZtA4ObtW18FhQ6Isp8AA2S6LMDYRjCNnP7qIVqeA,1064
+ADPYNE_207-0.0.7.dist-info/METADATA,sha256=ctAS2soMnBAdge3eXidS6K0Kr-KGrOwhSzrzqvljh2E,1702
+ADPYNE_207-0.0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ADPYNE_207-0.0.7.dist-info/top_level.txt,sha256=f3RZeEkKkFb2BRjpAqUBudscPxdGuVfDuhQHGuwkpQo,7
+ADPYNE_207-0.0.7.dist-info/RECORD,,
