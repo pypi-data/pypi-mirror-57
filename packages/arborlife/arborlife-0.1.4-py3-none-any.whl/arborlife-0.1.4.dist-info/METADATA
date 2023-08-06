@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: arborlife
+Version: 0.1.4
+Summary: Python implementation of Arbor Life simulation.
+Home-page: https://github.com/rogerhurwitz/arborlife
+Author: Roger Hurwitz
+Author-email: rogerhurwitz@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: PyYAML (>=5.2)
+Requires-Dist: numpy (>=1.17.4)
+Requires-Dist: scipy (>=1.3.3)
+
+UNKNOWN
+
+
