@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <widget class="QWidget" name="WidgetFoo">
+  <layout class="QVBoxLayout" name="Layout_Good">
+    <widget class="QLabel" name="Label_Good">
+    </widget>
+    <widget class="QComboBox" name="Combo_Good">
+    </widget>
+    <widget class="QFrame" name="Frame_Good">
+    </widget>
+    <spacer name="Spacer_Good">
+    </spacer>
+    <widget class="QStackedWidget" name="Stack_Good">
+    </widget>
+    <widget class="QLineEdit" name="Input_Good">
+    </widget>
+  </layout>
+
+  <layout class="QVBoxLayout" name="XLayout_Bad">
+    <widget class="QLabel" name="XLabel_Bad">
+    </widget>
+    <widget class="QComboBox" name="XCombo_Bad">
+    </widget>
+    <widget class="QFrame" name="XFrame_Bad">
+    </widget>
+    <spacer name="XSpacer_Bad">
+    </spacer>
+    <widget class="QStackedWidget" name="XStack_Bad">
+    </widget>
+    <widget class="QLineEdit" name="XInput_Bad">
+    </widget>
+  </layout>
+ </widget>
+</ui>

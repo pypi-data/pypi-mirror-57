@@ -1,0 +1,79 @@
+[
+    {
+        "selector": "//layout",
+        "attrs": [
+            {"attr": "name", "regex": "^Layout_.*"}
+        ],
+        "description": "Rule 001: Enforce Q*Layout starts with Layout_ - %(name)s"
+    },
+    {
+        "selector": "//widget[@class='QLineEdit']",
+        "attrs": [
+            {"attr": "name", "regex": "^Input_.*"}
+        ],
+        "description": "Rule 002: Enforce QLineEdit starts with Input_ - %(name)s"
+    },
+    {
+        "selector": "//widget[@class='QLabel']",
+        "attrs": [
+            {"attr": "name", "regex": "^Label_.*"}
+        ],
+        "description": "Rule 003: Enforce QLabel starts with Label_ - %(name)s"
+    },
+    {
+        "selector": "//widget[@class='QImage']",
+        "attrs": [
+            {"attr": "name", "regex": "^Image_.*"}
+        ],
+        "description": "Rule 004: Enforce QImage starts with Image_ - %(name)s"
+    },
+    {
+        "selector": "//widget[@class='QRadioButton']",
+        "attrs": [
+            {"attr": "name", "regex": "^Radio_.*"}
+        ],
+        "description": "Rule 005: Enforce QRadioButton starts with Radio_ - %(name)s"
+    },
+    {
+        "selector": "//widget[@class='QCheckBox']",
+        "attrs": [
+            {"attr": "name", "regex": "^Check_.*"}
+        ],
+        "description": "Rule 006: Enforce QCheckBox starts with Check_ - %(name)s"
+    },
+    {
+        "selector": "//widget[@class='QComboBox']",
+        "attrs": [
+            {"attr": "name", "regex": "^Combo_.*"}
+        ],
+        "description": "Rule 007: Enforce QComboBox starts with Check_ - %(name)s"
+    },
+    {
+        "selector": "//widget[@class='QDialog']",
+        "attrs": [
+            {"attr": "name", "regex": "^Dialog_.*"}
+        ],
+        "description": "Rule 008: Enforce QDialog starts with Dialog_ - %(name)s"
+    },
+    {
+        "selector": "//widget[@class='QWindow']",
+        "attrs": [
+            {"attr": "name", "regex": "^Window_.*"}
+        ],
+        "description": "Rule 009: Enforce QWindow starts with Window_ - %(name)s"
+    },
+    {
+        "selector": "//widget[@class='QMenuItem']",
+        "attrs": [
+            {"attr": "name", "regex": "^Menu_.*"}
+        ],
+        "description": "Rule 010: Enforce QWindow starts with Window_ - %(name)s"
+    },
+    {
+        "selector": "//widget[@class='QAction']",
+        "attrs": [
+            {"attr": "name", "regex": "^Action_.*"}
+        ],
+        "description": "Rule 011: Enforce QAction starts with Action_ - %(name)s"
+    },
+]

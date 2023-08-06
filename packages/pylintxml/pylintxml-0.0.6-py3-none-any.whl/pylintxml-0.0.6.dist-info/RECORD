@@ -1,0 +1,11 @@
+pylintxml/main.py,sha256=_5BG8BSYUzRtMljIF3S9UQYUCyCiAyzlmoe2jAMEm5Q,2732
+pylintxml/examples/books/.lintxml,sha256=jj_PJMam4fl_GDRwbWiMfVAuX9098qWY5IlraaQCwPA,212
+pylintxml/examples/books/sample_fail.xml,sha256=hPqdlPnsDzCpC87cSK4KcBd4VLiD5K3PqxWZUndc-ik,4536
+pylintxml/examples/books/sample_ok.xml,sha256=YAeP8OLF34Lfkg_farhd9NcnJsrG-vVGWrsdQGl5y_E,4532
+pylintxml/examples/qt/.lintxml,sha256=X1IQ_S45WvAA_eMO1F9qkdxUVHdyCOuRtv6qaXg5KCA,2569
+pylintxml/examples/qt/sample.xml,sha256=9nJOS5YavFFCBKDQzAyhpJ6a-OzBHXmjrLbQvqsnz50,997
+pylintxml-0.0.6.dist-info/METADATA,sha256=-8Q4Hubk_z0XTDgKO2oAdcpeUAjOosnzCdDijoxXMnk,863
+pylintxml-0.0.6.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pylintxml-0.0.6.dist-info/entry_points.txt,sha256=EVsATtQjTWob18OtQxbDbnMbTrnqnSijd0ztTRe9aA0,51
+pylintxml-0.0.6.dist-info/top_level.txt,sha256=ygxGqsgNkAbNZThGzLA7BpuyDprTuEUxHsTh1nTtiC4,10
+pylintxml-0.0.6.dist-info/RECORD,,
