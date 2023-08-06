@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cdrive
+Version: 0.0.2
+Summary: Python SDK for CDrive
+Home-page: https://github.com/columbustech/cdrive-sdk
+Author: Kaushik Chandrasekhar
+Author-email: kaushikc92@gmail.com
+License: UNKNOWN
+Description: # Python SDK for CDrive
+        
+        This package provides a python SDK for accessing CDrive functionality.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
