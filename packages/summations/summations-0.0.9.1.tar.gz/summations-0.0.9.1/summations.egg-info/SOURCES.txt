@@ -1,0 +1,8 @@
+README.rst
+setup.py
+summations/__init__.py
+summations/summations.py
+summations.egg-info/PKG-INFO
+summations.egg-info/SOURCES.txt
+summations.egg-info/dependency_links.txt
+summations.egg-info/top_level.txt
