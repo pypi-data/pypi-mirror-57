@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: akida-models
+Version: 0.0.1
+Summary: Akida Models
+Home-page: https://www.akidalab.com
+Author: David Corvoysier
+Author-email: dcorvoysier@brainchip.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
