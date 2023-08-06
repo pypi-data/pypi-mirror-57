@@ -1,0 +1,6 @@
+README.md
+setup.py
+openfaas.egg-info/PKG-INFO
+openfaas.egg-info/SOURCES.txt
+openfaas.egg-info/dependency_links.txt
+openfaas.egg-info/top_level.txt
