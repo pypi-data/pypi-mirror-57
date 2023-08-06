@@ -1,0 +1,14 @@
+README.md
+setup.py
+tikreg/__init__.py
+tikreg/kernels.py
+tikreg/models.py
+tikreg/priors.py
+tikreg/spatial_priors.py
+tikreg/svd_dgesvd.py
+tikreg/temporal_priors.py
+tikreg/utils.py
+tikreg.egg-info/PKG-INFO
+tikreg.egg-info/SOURCES.txt
+tikreg.egg-info/dependency_links.txt
+tikreg.egg-info/top_level.txt
