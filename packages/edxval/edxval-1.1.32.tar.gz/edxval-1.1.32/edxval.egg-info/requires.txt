@@ -1,0 +1,11 @@
+enum34
+pillow
+pysrt
+Django>=1.11
+django-model-utils
+edx-drf-extensions
+lxml
+django-storages
+edx-django-oauth2-provider
+boto
+djangorestframework==3.7.7
