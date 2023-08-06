@@ -1,0 +1,11 @@
+thickbrick/__init__.py,sha256=egftXIr_huM2BKc_5NpLLsnoJuAKM_iRr0ZX4Ok_dvk,158
+thickbrick/_statisticaldistances.py,sha256=Nf4VyfzuGiCCpj5DHIjuERhCjUwWLhUi3iDWz24TivA,4349
+thickbrick/_thickbrick.py,sha256=Up3MU9gpFTyRx3yTt1bv6GiXQ6vfNFVktEGHZ34ES-U,10712
+thickbrick/KernelRegression/_NW_kerreg_1d.py,sha256=mq0YfvtS8XfY2dQJI-aNaLewaNBXRRv0OG6UL2hOtX8,14522
+thickbrick/KernelRegression/__init__.py,sha256=4hLvrY9elvXWINSm2Falx0m2Q1RuYiLeE-xUcLIoDGY,68
+thickbrick/KernelRegression/_onedim.py,sha256=saZbNpdAfRPIs7q7oh09gNydYRWZXSGuDCr2W3-jOyY,1184
+thickbrick-0.1.0.dist-info/LICENCE,sha256=QW7pFwes25SHnVRl2s7Y2qxs6qiVM_ZQ3J026s_SM9k,1087
+thickbrick-0.1.0.dist-info/METADATA,sha256=B8bJySkL1LHHhYju-jXX3oi-Qa6H2DKhRKr5YFXJgnQ,2891
+thickbrick-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+thickbrick-0.1.0.dist-info/top_level.txt,sha256=w7ybCG9QjKgePJbSRaZnVJL2GH8VITAO2iBExo_Jg14,11
+thickbrick-0.1.0.dist-info/RECORD,,
