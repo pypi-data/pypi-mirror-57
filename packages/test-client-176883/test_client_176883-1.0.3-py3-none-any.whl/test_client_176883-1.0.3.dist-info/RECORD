@@ -1,0 +1,10 @@
+test_client_176883/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_client_176883/add_item.py,sha256=gZs_qoTk4lj-R4vNIm3S4eb1u0ma6w4c6xa-7oZXGQY,376
+test_client_176883/client.py,sha256=yiGUACIQAv6sSjSPbMMVtQb9utKxxRg8PXfF94BsaVw,1450
+test_client_176883/test.py,sha256=GsjaOM3bgQ4UM5gk4wJ1C88wxJGL0Wwra4kmcsIX0xE,227
+test_client_176883/api_request/__init__.py,sha256=WEno1q07BqUNFUOmdWvek63XZYaHrktgjcCQg1h1NrA,59
+test_client_176883/api_request/add_item.py,sha256=gZs_qoTk4lj-R4vNIm3S4eb1u0ma6w4c6xa-7oZXGQY,376
+test_client_176883-1.0.3.dist-info/METADATA,sha256=o6jDk1mhUzGHdBn-9zvZD0-HGTNFIlQ4cQXqHNebB0g,689
+test_client_176883-1.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+test_client_176883-1.0.3.dist-info/top_level.txt,sha256=W_m7OSOxdGDn1aSWeoQeIUXcflkt68_aWhOB8q0zrg4,19
+test_client_176883-1.0.3.dist-info/RECORD,,
