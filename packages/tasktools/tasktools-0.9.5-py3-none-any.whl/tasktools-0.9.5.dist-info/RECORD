@@ -1,0 +1,12 @@
+requeriments.txt,sha256=5JIy2UBn4T3xOS1cyCDBqBl-EuBmbPTqX76QSAAKryY,175
+tasktools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tasktools/assignator.py,sha256=YSRs5hDj6xVZhvzv7AX41IVJ309xO8ArwnyZgKawrRU,6085
+tasktools/async_queue.py,sha256=l33YEHcrFtxj1BeIcbZPtVRPoa55m3niDRP7_ZEG8M4,2546
+tasktools/scheduler.py,sha256=rsA4kHD7bu0szY3I3wJ9rnfZYUgdH-tjN-0BQ3G-4ho,13637
+tasktools/taskloop.py,sha256=rbQp1Jfx1zRuGVFrqD4jFNhsyYs14FAWBaeoba0DYp4,3155
+tasktools-0.9.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tasktools-0.9.5.dist-info/LICENSE.txt,sha256=5p_9SzYZ4m6ZPWlRA8WBTr0v0Ev5yqoQ4rU_jijPhew,1076
+tasktools-0.9.5.dist-info/METADATA,sha256=v4V4o_iKb4I7hC2CJfvO0mrfExAMlmHxVN7WmfVKcYo,332
+tasktools-0.9.5.dist-info/WHEEL,sha256=_OfpK4bWOib5kHbXgC6xhPw-kdAw9Ks7_xlOUIiTiwQ,92
+tasktools-0.9.5.dist-info/top_level.txt,sha256=8LRtBZwhWbcWE7HVgiTcpzcxNdi5z7qt9Gtn915KA20,10
+tasktools-0.9.5.dist-info/RECORD,,
