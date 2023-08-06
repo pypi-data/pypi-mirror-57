@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: non-admin-draftail
+Version: 0.1.0
+Summary: You can now use Wagtail Draftail editor on non-admin pages
+License: MIT
+Author: Tim Kamanin
+Author-email: tim@timonweb.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
