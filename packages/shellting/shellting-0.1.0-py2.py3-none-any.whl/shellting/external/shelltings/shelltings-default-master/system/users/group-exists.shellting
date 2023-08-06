@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#
+# doc:
+#   short_help: Sets an environment variable.
+#
+# args:
+#   group:
+#     doc:
+#       short_help: The name of the group.
+#     type: string
+#     required: true
+#     cli:
+#       param_type: argument
+#   gid:
+#     doc:
+#       short_help: The gid of the group.
+#     type: string
+#     required: true
+#
+# properties:
+#   elevated: true
+#   idempotent: true
+#   internet: false
+#

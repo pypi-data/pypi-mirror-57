@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+# doc:
+#   short_help: Sets an environment variable.
+#
+# args:
+#   path:
+#     doc:
+#       short_help: The path to the folder.
+#     type: string
+#     required: true
+#     cli:
+#       param_type: argument
+#
+
+
+if [ -f "${path}" ]
+then
+  echo "Error: Path ${path} exists but is file"
+  return 1
+fi
+
+if [ ! -d "${path}" ]
+then
+  mkdir -p "${path}"
+else
+  return 0
+fi

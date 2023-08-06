@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+# doc:
+#   short_help: Sets the executable flag for a file.
+#
+# args:
+#   path:
+#     doc:
+#       short_help: The path to the file.
+#     type: string
+#     required: true
+#     cli:
+#       param_type: argument
+#
+
+if [ -d "$1" ]
+then
+  echo "Error: Path $1 exists but is folder"
+  return 1
+fi
+
+if [ ! -f "$1" ]
+then
+  echo "Error: Path $1 does not exist"
+  return 1
+fi
+
+chmod +x "$1"

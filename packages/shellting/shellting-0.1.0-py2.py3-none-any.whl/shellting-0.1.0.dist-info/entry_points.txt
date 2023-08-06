@@ -1,0 +1,6 @@
+[console_scripts]
+shellting = shellting.cli:cli
+
+[freckles.adapters]
+shell = shellting.freckles_adapter_shell:FrecklesAdapterShell
+
