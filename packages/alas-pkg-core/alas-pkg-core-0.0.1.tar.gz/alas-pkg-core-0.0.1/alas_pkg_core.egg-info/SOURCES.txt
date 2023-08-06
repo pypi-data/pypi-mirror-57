@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup-alas-pkg-core.py
+setup.cfg
+alas_pkg_core.egg-info/PKG-INFO
+alas_pkg_core.egg-info/SOURCES.txt
+alas_pkg_core.egg-info/dependency_links.txt
+alas_pkg_core.egg-info/requires.txt
+alas_pkg_core.egg-info/top_level.txt
