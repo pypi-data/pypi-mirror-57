@@ -1,0 +1,4 @@
+aiohttp>=3.6.2
+certifi>=2019.9.11
+pydantic>=1.1
+python-rapidjson>=0.8.0
