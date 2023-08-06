@@ -1,0 +1,6 @@
+README.md
+setup.py
+Volavola.egg-info/PKG-INFO
+Volavola.egg-info/SOURCES.txt
+Volavola.egg-info/dependency_links.txt
+Volavola.egg-info/top_level.txt
