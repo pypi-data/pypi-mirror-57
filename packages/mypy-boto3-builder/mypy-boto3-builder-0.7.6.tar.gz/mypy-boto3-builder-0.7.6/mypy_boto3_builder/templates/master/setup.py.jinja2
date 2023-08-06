@@ -1,0 +1,60 @@
+from os.path import abspath, dirname
+
+from setuptools import setup
+
+
+LONG_DESCRIPTION = open(dirname(abspath(__file__)) + "/README.md", "r").read()
+
+
+setup(
+    name="{{ package.pypi_name }}",
+    version="{{ build_version }}",
+    packages=[
+        "{{ package.name }}",
+    ],
+    url="https://github.com/vemel/mypy_boto3",
+    license="MIT License",
+    author="Vlad Emelianov",
+    author_email="vlad.emelianov.nz@gmail.com",
+    description="Mypy-friendly boto3 {{ boto3_version }} type annotations master module.",
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "Environment :: Console",
+        "License :: OSI Approved :: MIT License",
+        "Natural Language :: English",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "Typing :: Typed",
+    ],
+    long_description=LONG_DESCRIPTION,
+    long_description_content_type="text/markdown",
+    install_requires=[
+        "boto3",
+        "typing_extensions; python_version < '3.8'",
+        "{{ boto3_stubs_name }}=={{ build_version }}",
+    ],
+    extras_require={
+        "essential": [
+            {% for service_name in package.service_names -%}
+            {% if service_name.is_essential() -%}
+            "{{ service_name.pypi_name }}=={{ build_version }}",
+            {% endif -%}
+            {% endfor -%}
+        ],
+        {% for service_name in package.service_names -%}
+        "{{ service_name.extras_name }}": ["{{ service_name.pypi_name }}=={{ build_version }}"],
+        {% endfor -%}
+    },
+    package_data={"{{ package.name }}": ["py.typed"]},
+    zip_safe=False,
+    entry_points={
+        "console_scripts": ["mypy_boto3 = mypy_boto3.main:main"]
+    },
+)
