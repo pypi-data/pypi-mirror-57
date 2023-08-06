@@ -1,0 +1,7 @@
+cloud_tpu_client/__init__.py,sha256=gEEjmbwDmAkg6r0-VSQUhS7owh81_O6-J1Uhtzcollo,755
+cloud_tpu_client/client.py,sha256=zELBYAlFih0u1aqZEF-s62ozg1UgTmMZ-4ncXNZOxVM,7239
+cloud_tpu_client/version.py,sha256=RwO6cvd6UaQUECYG1CughQgwqaTf6ddYgdgmcP0TXck,863
+cloud_tpu_client-0.1.dist-info/METADATA,sha256=L-DqDJixcBbhUMnTpesOD_5ByZTj7JKs5Map8V_tFlA,1184
+cloud_tpu_client-0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+cloud_tpu_client-0.1.dist-info/top_level.txt,sha256=L8cY8pGSLu_O0AB6IOy3K46_gF9FPALy8SizJf-PoD0,17
+cloud_tpu_client-0.1.dist-info/RECORD,,
