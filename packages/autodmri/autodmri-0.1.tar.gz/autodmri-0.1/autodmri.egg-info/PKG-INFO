@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: autodmri
+Version: 0.1
+Summary: Implementation of "Automated characterization of noise distributions in diffusion MRI data".
+Home-page: https://github.com/samuelstjean/autodmri
+Author: Samuel St-Jean
+Author-email: samuel@isi.uu.nl
+License: LICENSE
+Description: # autodmri
+        
+        Automated characterization of noise distributions in diffusion MRI data
+        
+        You can find the preprint of the manuscript here https://www.biorxiv.org/content/10.1101/686436v1
+        and the datasets are available here https://zenodo.org/record/2483105
+        
+        The documentation is also available at http://autodmri.rtfd.io/
+        
+        I am currently making the code nicer and easily usable (and am busy with other stuff), but the main script is already present with some data.
+        I should add shortly after an example.
+        
+Platform: UNKNOWN
