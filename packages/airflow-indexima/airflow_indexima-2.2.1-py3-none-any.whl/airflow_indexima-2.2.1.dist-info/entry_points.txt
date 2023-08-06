@@ -1,0 +1,3 @@
+[airflow.plugins]
+indexima=airflow_indexima.indexima:IndeximaAirflowPlugin
+

@@ -1,0 +1,16 @@
+airflow_indexima/__init__.py,sha256=Vq6CtTxgGvOoJFtDnQ069MNMZpX0EtyiZ7B9KPC7qhw,227
+airflow_indexima/connection.py,sha256=4KdlKsZcdjl860v05O74Lw7c4WRP_U1zJwMguRciCoQ,2506
+airflow_indexima/hive_transport.py,sha256=lPqj9XReX-r0IggL5kCfFTW-bVL6_pmO7uaFqrkhzCk,6343
+airflow_indexima/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_indexima/hooks/indexima.py,sha256=scbcvFruHDEUwj1ClDFtiDQpDKh2Kn1TNtZfl17IV70,8291
+airflow_indexima/indexima.py,sha256=eKshBp0woZqt8UYtMdw3tVg6BJsqVh7nQ-H9LCN0rzQ,681
+airflow_indexima/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_indexima/operators/indexima.py,sha256=sjVQN0mah010cFkx9O8N5OoRmxk1JuzQzpTMc25m32E,12105
+airflow_indexima/uri/__init__.py,sha256=Rkw-Gf9vmzCG_9XBjBBx-FVBWDnkUFaL_6wR1FbL86g,391
+airflow_indexima/uri/factory.py,sha256=YCwnoqH_VXD0x9qMWUdAtnA97nTVObjU2NhgK2ayMoY,1148
+airflow_indexima/uri/jdbc.py,sha256=0VEDbSdDw2NLWZ7jddP-B8aMADLwuWwvl2mnfq6hyJE,2568
+airflow_indexima-2.2.1.dist-info/entry_points.txt,sha256=VxmeqhqAZnu9EZRb4OhgENSGNkGtm2VW9vmPOzwGNMw,76
+airflow_indexima-2.2.1.dist-info/LICENSE.md,sha256=sXJ8jJBvARYjsjiYfvkV--KQe3Sh46Fid_0Ts6TONMc,1089
+airflow_indexima-2.2.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+airflow_indexima-2.2.1.dist-info/METADATA,sha256=omj3emKdCPLmVFweA93AXXMfWxhmtYH0E8UXP1I1AcA,10632
+airflow_indexima-2.2.1.dist-info/RECORD,,
