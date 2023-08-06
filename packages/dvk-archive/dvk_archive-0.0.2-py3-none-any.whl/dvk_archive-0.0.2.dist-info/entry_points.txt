@@ -1,0 +1,5 @@
+[console_scripts]
+dvk-missing-media = dvk_archive.error.missing_media:main
+dvk-same-ids = dvk_archive.error.same_ids:main
+dvk-unlinked = dvk_archive.error.unlinked:main
+
