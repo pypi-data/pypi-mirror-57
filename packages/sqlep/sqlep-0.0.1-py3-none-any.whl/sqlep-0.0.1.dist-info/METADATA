@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sqlep
+Version: 0.0.1
+Summary: a tool for testing sql queries
+Home-page: https://github.com/cianru/sqlep
+Author: cian dream team
+Author-email: etl@cian.ru
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: pandas (==0.21.1)
+Requires-Dist: PyHive[hive] (==0.6.1)
+Requires-Dist: pytest (>=4.0)
+Requires-Dist: pytest-mock (~=1.1.0)
+
+UNKNOWN
+
+
