@@ -1,0 +1,1184 @@
+2019-12-06 15:44:32 +0200,maintenance
+
+Reorganised menus
+
+2019-11-27 15:42:20 +0200,Feature addition
+
+Added an option to create custom profiles with pictures in the modelling interface.
+
+2019-11-22 13:48:23 +0200,Bugfix and Feature addition
+
+Fixed a bug causing the measured data in 3D modeller to shift into the wrong place. This might only occurs if the model extents are different to the data.
+Added supervised classification. Added segmentation.
+
+2019-11-06 13:32:04 +0200,New Features
+
+Added BIRRP Interface
+Added Change Detection viewer
+
+2019-10-23 07:24:51 +0200,Tests
+
+Added Gravity and modelling tests
+
+2019-09-30 07:55:00 +0200,Testing routines
+
+Added testing routines for cluster and raster
+
+2019-09-11 07:16:26 +0200,Update grvmag3d.py
+
+Added parallel processing to core calculations for forward modelling
+
+2019-09-11 07:08:58 +0200,Modifications
+
+Change line direction to be 0 degrees in N direction. Added parallel processing to magnetic calculations
+
+2019-09-02 07:46:38 +0200,Feature add
+
+added import and display of segy data
+added basic gravity processing
+
+2019-08-22 15:20:31 +0200,Version 3
+
+Small edits for release
+
+2019-08-22 12:43:13 +0200,Revert "Revert "Bugfixes""
+
+This reverts commit 901ddeebc245c6d60dd9aedace6b51a8be92098f.
+
+2019-08-22 12:39:35 +0200,Revert "Bugfixes"
+
+This reverts commit 2fb65d0c57601c8754f258ca8796b0c974c49200.
+
+2019-08-22 11:38:29 +0200,Bugfixes
+
+Fixed bug with exporting profile data from modeller
+
+2019-08-21 13:42:04 +0200,Update tab_prof.py
+
+fix bug in applying regional to all output gravity channels
+
+2019-08-15 11:33:41 +0200,Update
+
+Removed regional gravity estimation
+
+2019-08-14 15:30:47 +0200,Bugfix
+
+Adjusted borehole log position slightly to the right.
+
+2019-08-14 13:51:21 +0200,Modification
+
+simplified regional dataset. Added better potential field test.
+
+2019-08-13 14:24:59 +0200,Minor changes
+
+2019-08-06 15:49:51 +0200,Bugfixes
+
+Cluster bugfixes relating to export and imports. RGB Images now imported separately.
+
+2019-08-02 15:43:03 +0200,Bugfixes
+
+2019-08-02 08:15:07 +0200,Bugfixes
+
+2019-07-31 12:03:23 +0200,Bugfixes
+
+Multiple bugfixes
+
+2019-07-30 12:57:15 +0200,Feature add
+
+Added MT  processing and inversion
+Fixed indexing on fuzzy cluster
+
+2019-06-26 15:49:34 +0200,Feature addition
+
+Added older crisp and fuzzy cluster routines
+
+2019-06-18 08:06:53 +0200,Update graphs.py
+
+minor update
+
+2019-05-27 08:38:26 +0200,Formatting Update
+
+2019-05-23 09:04:38 +0200,Update graphs.py
+
+add line numbers to line map.
+
+2019-05-21 07:30:47 +0200,Update
+
+Added line data import and display.
+Tidied pyqt menu code.
+
+2019-05-15 11:08:16 +0200,Housekeeping
+
+Neatening some code
+
+2019-05-14 15:36:44 +0200,Bugfix
+
+Show metadata for RGB data
+
+2019-05-14 14:19:59 +0200,Bugfixes
+
+Added ESRI ascii import.
+Added error message to some graphs.
+Fixed normalisation error.
+Fixed options appearing on gradients.
+Fixed tilt angle error.
+Fixed null values not being correct after RTP.
+Fixed cut raster with polygon error.
+Gridding now has an option for a null value.
+Clustering to show error if required number of classes is not found.
+Fixed icons on messageboxes.
+
+2019-05-10 07:58:46 +0200,Bugfixes
+
+Bugfixes
+
+2019-05-09 13:50:49 +0200,Bugfixes
+
+Fixed a layout bug with graphs. Fixed a bug adding "Other" data to modelling software.  Added internal 'dist_point_to_segment' since it is being depreciated by Matplotlib.
+
+2019-04-24 08:13:57 +0200,Bugfix
+
+Removed imports of libraries which were not necessary. Fixed a bug in modeller which caused lithologies added to not display. Fixed resizing bug for images on interpretation module.
+
+2019-03-12 08:07:11 +0200,Update
+
+Updates for Linux
+
+2019-03-06 13:43:44 +0200,Feature addition
+
+added tilt depth to 3D model functionality.
+
+2019-01-30 15:19:21 +0200,Update
+
+Various updates, including bugfix to RGB output from raster data interpretation when viewed in ArcGIS
+
+2018-11-06 13:48:27 +0200,Bugfix
+
+Bugfix and code neatening
+
+2018-11-06 08:05:36 +0200,bugfixes
+
+Misc
+
+2018-11-01 09:37:29 +0200,Bugfix
+
+2018-10-25 15:40:47 +0200,Bugfixes
+
+Bugfixes in raster graphs, and new modelling interface.
+
+2018-10-08 08:43:28 +0200,Bugfix
+
+Fixed bug relating to limited number of layers.
+Fixed bug relating to quarry event calculations
+
+2018-09-17 14:41:17 +0200,beta
+
+PyGMI 3 beta
+
+2018-04-16 08:10:44 +0200,Fix for float128 and complex256 and pyopengl
+
+2018-02-28 12:54:28 +0200,IGRF
+
+Added updated IGRF coefficients
+
+2018-02-09 07:50:31 +0200,Bug Fixes
+
+bug fixes in saving of 3d model, when it is used by another process, and
+in reading csv vector data.
+
+2018-01-25 14:10:44 +0200,igrf bugfix
+
+fixed a bug relating to newer numpy
+
+2018-01-03 08:19:39 +0200,Maintenance
+
+Cleaned code in the equation editor.
+
+2017-11-03 14:35:48 +0200,Add more control to Anaglyphs
+
+2017-10-26 11:39:33 +0200,Bugfix
+
+fixed the orientation of anaglyph contours
+
+2017-10-24 09:57:44 +0200,Bug fixes and new feature
+
+Fixed a bug in beachball code.
+Introduced anaglyphs for raster data.
+Updated color bar list to new standards
+
+2017-10-13 08:51:44 +0200,Bugfix
+
+minor changes and a bugfix between ginterp.py and the latest matplotlib.
+
+2017-09-01 08:09:42 +0200,maintenance
+
+2017-08-31 16:09:39 +0200,Feature add
+
+Added directional lighting to 3D display
+
+2017-08-29 14:14:11 +0200,update readme
+
+2017-08-29 13:53:33 +0200,Format fix
+
+readme.md format fix
+2017-08-29 13:43:12 +0200,Merge pull request #7 from Patrick-Cole/Qt5
+
+Qt5
+2017-08-29 13:44:10 +0200,Prep for new release
+
+2017-08-28 15:40:29 +0200,Feature addition
+
+Added axis and orthographic projection option to 3D display view.
+
+2017-08-23 12:41:39 +0200,Feature addition
+
+Added perspective change to beachball plots
+
+2017-08-16 13:28:47 +0200,Bugfix
+
+2017-08-16 11:48:14 +0200,bugfix
+
+2017-08-16 11:45:02 +0200,Maintenance and bug fixes
+
+Corrected clustering label. Bugfix on lithmodel. Correction to profile
+coordinates to place profile in centre of cell, as opposed to beginning
+of it. Added IGRF report backs.
+
+2017-08-02 11:14:06 +0200,Mainetnance
+
+2017-08-02 09:15:19 +0200,Bugfix
+
+Fixed bugs with tensor calculations
+
+2017-07-28 15:58:14 +0200,Updates to tensor
+
+soem updates to tensor modelling
+
+2017-07-20 08:24:50 +0200,Bugfix
+
+2017-07-20 08:17:57 +0200,Revert "coding change"
+
+This reverts commit 1ed752a74de535dd2d61f8d64bc84e1c0a406315.
+
+2017-07-20 08:17:46 +0200,Fix bug
+
+2017-07-18 09:29:06 +0200,coding change
+
+changed from c-like += etc to longer version due to problems it was
+causing with numy.
+
+2017-06-23 13:10:11 +0200,bugfix
+
+fix for error exporting text columns
+
+2017-06-21 16:20:44 +0200,maintenance and bugfix
+
+fixed a bug with calculating changes only on model
+made changed to the wat matplotlib calls are made.
+
+2017-06-08 08:07:39 +0200,Maintenance
+
+2017-06-01 11:54:26 +0200,Speed improvements
+
+speed improvements to gravity and magnetic calcs
+
+2017-06-01 10:13:34 +0200,Blakely fix
+
+2017-05-31 16:37:41 +0200,Test
+
+Blakely test
+
+2017-05-19 09:35:15 +0200,Changes and bugfixes
+
+Fuzzy and Crisp clustering replaced by scikit_learn cluster analysis.
+Import of csv point data enhanced and new cut tool added for point data.
+Dependancies updated. Minor bugs fixed
+
+2017-05-12 14:51:35 +0200,Bugfix
+
+Many bug fixes
+
+2017-05-11 14:29:24 +0200,Feature removal
+
+Removed the auto update check due to problems it was giving on many pc's
+
+2017-05-09 14:12:18 +0200,Bugfix
+
+Fixed bugs with smoothing data and merging data
+
+2017-05-08 14:46:41 +0200,Maintenance
+
+Got rid of excessive old code.
+Fixed a bug with null values from equation editor.
+Fixed null value bug exporting rgb tiffs. (8-bit)
+
+2017-05-04 09:53:43 +0200,Bugfix and maintenance
+
+2017-05-04 07:46:53 +0200,Update
+
+Changed the profile views so that calculated data is drawn over observed
+data.
+
+2017-04-24 13:38:57 +0200,Bug fix
+
+Fixed bugs relating to selection of raster bands going to modelling, and
+saving of those raster bands.
+
+2017-04-20 08:13:14 +0200,Bug Fix
+
+Fixed bug on data import for qt5
+
+2017-04-06 08:41:20 +0200,Added Lith Merge
+
+2017-04-05 12:45:03 +0200,housekeeping
+
+2017-04-05 12:39:51 +0200,Qt5
+
+Code changed for qt5
+
+2017-03-06 09:35:00 +0200,New release v2.2.15
+
+2017-02-14 07:38:39 +0200,Bugfix
+
+2017-02-08 11:50:43 +0200,3d import fix
+
+fix for 3d import from text files.
+
+2017-01-30 10:09:22 +0200,Anaglyph tests
+
+2017-01-10 08:02:25 +0200,Minor maintenence
+
+2016-12-14 12:47:43 +0200,Seismology Focmec format update
+
+2016-12-02 16:04:43 +0200,test
+
+2016-12-02 07:32:27 +0200,bugfix
+
+2016-12-01 12:25:28 +0200,Update
+
+added feature to calculate only changes to model.
+
+2016-11-28 08:03:27 +0200,Bugfix
+
+Fixed leapfrog import bug when header is in csv file.
+
+2016-11-23 08:08:39 +0200,readme update
+
+2016-11-15 07:54:14 +0200,2.2.14 release
+
+2016-11-11 07:58:37 +0200,Bugfix
+
+2016-11-09 15:50:13 +0200,Feature addition
+
+Added import of Leapfrog csv blockfiles
+
+2016-11-07 13:15:10 +0200,Bugfix
+
+2016-11-07 09:02:27 +0200,Bugfixes
+
+Fixed bug exporting ER Mapper files using SA custion projection
+Fixed a bug in 3D model software
+
+2016-11-03 13:35:03 +0200,Bugfix
+
+2016-11-02 15:02:57 +0200,Bug fix
+
+bug fix for merge module
+
+2016-10-31 13:03:33 +0200,Bug Fix
+
+Bug Fix for previous enhancements
+
+2016-10-26 14:37:25 +0200,Bug fix
+
+2016-10-25 15:38:06 +0200,Feature Update
+
+Added a tool to merge two models
+
+2016-10-24 12:48:11 +0200,Update
+
+reactivated a progress bar display
+
+2016-10-19 15:42:48 +0200,alpha speed update
+
+update modelling calculation using multi processing.
+
+2016-10-11 15:40:12 +0200,Update readme.md
+
+2016-10-11 15:38:36 +0200,Update readme.rst
+
+Update dependencies on readme
+
+2016-10-11 15:30:24 +0200,Bugfixes
+
+Minor setup bug fixes
+
+2016-10-07 07:33:01 +0200,Setup Bugfix
+
+fixed a problem in setup.py
+
+2016-10-06 09:49:57 +0200,Add llvmlite to setup requirements
+
+2016-10-06 07:51:19 +0200,2.2.12 Release
+
+2016-09-30 07:36:41 +0200,Information
+
+minor text fix
+
+2016-09-26 09:52:10 +0200,Bug Fix
+
+Fixed an bug saving and opening files, introduced in previous commit.
+
+2016-09-22 15:28:29 +0200,Bugfix
+
+Bug fixes and prep for PyQt5
+
+2016-08-25 15:06:41 +0200,Bugfix
+
+Fixed a bug exporting 3D image.
+
+2016-08-22 07:48:52 +0200,Update
+
+New version also checks for an update on pypi
+
+2016-08-05 08:32:25 +0200,Housekeeping plus bugfix
+
+Fixed a bug with no mask exported from modeller.
+
+2016-08-04 07:24:46 +0200,Housekeeping
+
+2016-08-02 07:40:56 +0200,Bugfix
+
+Fixed export bug
+
+2016-07-12 15:16:56 +0200,Update
+
+to version 2.2.11
+
+2016-07-12 14:34:37 +0200,Update
+
+Added aster GED (binary) and fixed a bug on hdr aster GED import.
+
+2016-07-11 07:43:19 +0200,minor update
+
+update to misc function
+
+2016-07-07 10:30:56 +0200,Bug Fix
+
+Fixed a bug when resizing a model
+
+2016-06-21 08:39:28 +0200,Bugfix
+
+Bugfix in kmz export and in quarry event removal algorithm
+
+2016-06-08 16:30:09 +0200,bugfix
+
+2016-06-08 16:08:24 +0200,Update
+
+2016-06-08 14:47:13 +0200,bug fix
+
+2016-06-08 14:42:10 +0200,Updates
+
+2016-05-17 10:05:55 +0200,readme update
+
+2016-05-13 15:21:39 +0200,Modification
+
+Mod to beachball code
+
+2016-05-11 14:52:15 +0200,Rose diagram correction
+
+Bug fix
+
+2016-04-26 13:23:33 +0200,Minor updates
+
+2016-04-26 12:52:47 +0200,Update
+
+2016-04-21 07:37:42 +0200,Bug fixes
+
+Fixes to shapefile 3D export
+
+2016-04-15 10:31:08 +0200,Maintenance
+
+2016-04-15 07:34:19 +0200,Maintenance
+
+2016-04-14 14:50:01 +0200,Updates
+
+Updates to beachball, vertical gradient and export 3d model to shapefile
+
+2016-04-07 07:25:30 +0200,Updates
+
+Update to beachballs and picture overlay on 3D modelling
+
+2016-04-01 11:36:29 +0200,Bugfix
+
+Fault plane solutions
+
+2016-03-30 07:49:51 +0200,Readme update
+
+Updates readme taking into account anaconda bug
+
+2016-03-10 08:30:33 +0200,Update Readme
+
+2016-03-10 07:49:10 +0200,Information
+
+Posted changelog
+
+2016-03-08 08:24:27 +0200,Added Raster Imports
+
+Added Raster Imports
+
+2016-03-04 13:37:30 +0200,Bugfix
+
+Fixed a bug preventing the saving of an image in the 3D viewer. It was
+caused by a changing library API.
+
+2016-03-04 09:44:21 +0200,Bugfix
+
+Fixed the RTP module.
+
+2016-03-03 10:49:53 +0200,Code Edits
+
+Syntax edits
+
+2016-02-09 14:42:16 +0200,Bug Fix
+
+removed pdb in crisp clust
+
+2016-02-09 07:59:18 +0200,Bugfix
+
+fixed bug affecting export of integer datasets
+
+2016-02-08 13:40:03 +0200,Arcinfo grid
+
+2015-12-07 14:16:12 +0200,Bugfix
+
+Fixed a new bug with equation editor
+
+2015-12-07 08:40:22 +0200,misc
+
+minor edit
+
+2015-12-03 11:11:30 +0200,Addition
+
+Added save message for 3D model save.
+
+2015-12-02 10:01:42 +0200,Equation editor fix
+
+Added null values
+Fixed masking of null values
+
+2015-12-02 07:35:16 +0200,Vertical Gradients
+
+Added alpha version Vertical Gradients - but there is still lots of work
+to be done. It does not play well with null values.
+
+2015-11-27 11:45:37 +0200,Bug fix
+
+2015-10-16 11:13:46 +0200,bugfix
+
+2015-10-16 10:52:20 +0200,bugfix
+
+2015-10-16 10:33:26 +0200,bugfix
+
+2015-10-16 10:01:39 +0200,bugfix
+
+bugfix with export csv
+
+2015-10-16 08:46:13 +0200,Feature addition
+
+new exports all profiles from a 3-d model
+
+2015-10-02 16:29:11 +0200,Update changes
+
+changes
+
+2015-10-02 15:14:18 +0200,Bugfix
+
+part 2
+
+2015-10-02 14:54:51 +0200,Bug Fix
+
+Fixed a bug crashing regional test
+
+2015-10-02 12:08:18 +0200,Bug Fix
+
+Fixed a bug where null values were not set correctly in the
+normalisation routine.
+
+2015-10-02 08:15:28 +0200,Maintenance and bug fix
+
+Changed import paths to absolute.
+Fixed a bug with seismology delete records routine
+
+2015-10-01 15:45:09 +0200,Bug Fix
+
+Fixed offset problem with new mag routine
+
+2015-10-01 08:49:24 +0200,minor maintenance
+
+removed libraries not needed etc
+
+2015-09-25 10:26:51 +0200,Major Bug Fix
+
+Fixed a problem with adding a gravity regional dataset to calculated
+gravity.
+
+2015-08-28 13:44:32 +0200,Update
+
+2015-08-27 08:39:58 +0200,Speed update
+
+Updates the speed of the calculation for magnetic data.
+
+2015-08-18 10:39:29 +0200,Minor updates
+
+2015-06-19 09:32:41 +0200,fix
+
+2015-06-19 09:25:59 +0200,Revert "Update for 2.2.7"
+
+This reverts commit 9eee0be453befae635836efc6c6793a006dec52c.
+
+2015-06-19 09:18:56 +0200,Update for 2.2.7
+
+2015-06-19 08:28:57 +0200,Minor Update
+
+2015-06-19 07:58:21 +0200,Update Readme
+
+2015-06-18 12:40:40 +0200,Update
+
+Updated changelog
+
+2015-06-18 12:35:51 +0200,Setup Update
+
+Update to setup for hosting on pypi
+
+2015-06-11 09:18:04 +0200,Bug Fix
+
+Added the possibility for ENVI files to have .dat extension and allowed
+uint files to have a no data value of 0 where none is defined
+
+2015-06-08 15:21:48 +0200,Bugfix
+
+Fixed bug with surfer export
+
+2015-06-08 12:22:12 +0200,Bug Fix
+
+2015-06-05 11:00:59 +0200,Convension
+
+changed a variable name
+
+2015-06-01 13:50:13 +0200,Bug Fix
+
+Fixed bug with regional test
+
+2015-05-20 12:52:53 +0200,Bug Fix
+
+Equation editor bug fix
+
+2015-05-11 09:36:16 +0200,Bug Fix
+
+Fixed a bug where profiles were not saving to images correctly
+
+2015-05-05 09:12:00 +0200,Update
+
+Minor Edits
+
+2015-04-10 13:52:44 +0200,Minor
+
+2015-04-10 09:40:03 +0200,Update
+
+2015-04-09 15:47:20 +0200,Update
+
+Progress Bar on Main Interface
+Reprojecting bug fix for datasets with negative values.
+
+2015-04-09 11:29:51 +0200,Update
+
+Fixes to tilt depth and new progress bars
+
+2015-04-07 12:32:40 +0200,Update
+
+Added Column to tilt depth to specify contour id. Also removed redundant
+progress bars. Sped up smoothing with median.
+
+2015-04-01 07:47:26 +0200,Update
+
+Added tilt depth algorithm
+
+2015-03-31 07:47:54 +0200,Bug Fix
+
+Bug Fix with tilt angle
+
+2015-03-30 15:39:13 +0200,Bug Fix
+
+2015-03-27 13:58:54 +0200,Update
+
+Added RTP
+
+2015-03-25 15:10:42 +0200,Bug Fix
+
+Cluster and Fuzzy analysis had a bug when connecting external data
+
+2015-03-24 10:44:12 +0200,Update
+
+changed where rows and cols displays on modelling software, for people
+with lower res screens. Made small improvement to drawing speed on
+profile view.
+
+2015-03-23 15:48:24 +0200,Update
+
+Added references to the help
+
+2015-03-23 11:38:18 +0200,Bug Fix
+
+Update to cursor size
+
+2015-03-20 11:58:35 +0200,Update
+
+Modelling now has variable size cursor
+
+2015-03-19 13:20:38 +0200,Update
+
+Change to modelling cursor.
+
+2015-03-18 10:06:19 +0200,Update
+
+Updates the behaviour of the slider on the profile view of the 3D
+modelling module.
+
+2015-03-17 15:04:50 +0200,Update
+
+minor
+
+2015-03-17 14:22:29 +0200,Bugfix
+
+grids on kmz export were upside down
+
+2015-03-17 13:54:35 +0200,Update
+
+Mag and Grav calculation buttons simplified.
+
+2015-03-17 09:51:24 +0200,Update
+
+Gravity regional addition (scalar add) in modelling program now modify
+calculated data, instead of observed data - so that original data is
+honoured.
+
+2015-03-16 14:09:44 +0200,Update
+
+Update to kmz export. The export now can allow smooth models. Update
+also allows new projection format for igrf, data reprojection and kmz
+files
+
+2015-03-11 09:31:43 +0200,Update
+
+Projections
+
+2015-03-10 08:32:33 +0200,Update
+
+Geotiff now save tfw world file. Contour Geotiffs are now 3 times
+bigger, to improve resolution. Contour lines now have double thickness.
+
+2015-03-09 15:15:09 +0200,Bug Fix
+
+2015-03-09 14:34:50 +0200,Bug Fix
+
+2015-03-09 12:58:58 +0200,Update
+
+Sunshaded Geotiff is now the same as the on screen version.
+
+2015-03-04 16:00:26 +0200,Update
+
+Minor tweaks
+
+2015-03-04 15:46:30 +0200,Update
+
+Add save model to 3D modelling module
+
+2015-03-04 12:54:35 +0200,Update
+
+Primary Help completed
+
+2015-03-04 11:34:04 +0200,Update
+
+Help Update
+
+2015-03-03 13:57:40 +0200,Update
+
+More help
+
+2015-03-02 15:31:50 +0200,Update
+
+First version with a helpdoc button on main interface
+
+2015-02-25 07:44:39 +0200,Bug Fix
+
+2015-02-24 13:01:26 +0200,Bug Fix
+
+Fixed a bug on the Geosoft import
+
+2015-02-12 12:18:29 +0200,Update
+
+Changelog update
+
+2015-02-12 11:21:27 +0200,Bug Fix
+
+Fixed a display bug in modeller where data was not visible.
+
+2015-01-21 09:38:57 +0200,Updates
+
+Added Geosoft Import
+
+2015-01-13 08:48:44 +0200,feature add
+
+add Geopak import
+
+2015-01-08 07:27:56 +0200,update
+
+minor edits
+
+2015-01-05 09:07:47 +0200,Bug
+
+Fixed a python 2.7 print function bug
+
+2014-12-12 10:41:13 +0200,Update
+
+Updated notes
+
+2014-12-11 09:23:14 +0200,Update
+
+Increased size of font for ternary colorbar. Corrected minor issues with
+modelling information display.
+
+2014-12-10 12:49:02 +0200,Bug Fix
+
+2014-12-10 08:48:12 +0200,ternary colorbar
+
+2014-12-09 11:22:35 +0200,Bug fix
+
+2014-12-09 09:24:02 +0200,Update
+
+Added error messages
+
+2014-12-08 14:02:56 +0200,Bug Fix
+
+Fixed ability to save 3D images
+
+2014-12-05 10:20:07 +0200,Update
+
+2014-12-05 10:19:12 +0200,Update
+
+Latest version of 3D stuff
+
+2014-12-04 16:07:24 +0200,3D Update
+
+2014-12-04 08:22:11 +0200,bug fix
+
+masking problem with er mapper import
+
+2014-11-26 08:03:04 +0200,Update
+
+2014-11-25 11:40:04 +0200,Update
+
+Added extra 3D display functionality
+
+2014-11-21 15:18:13 +0200,Update
+
+2014-11-21 14:31:32 +0200,Update
+
+2014-11-21 14:00:09 +0200,update
+
+smooth model
+
+2014-11-21 07:48:43 +0200,Update
+
+Added marching cubes
+forced full field recalc to avoid bug
+
+2014-11-18 16:24:23 +0200,Bug Fix
+
+Fixed layer import bug
+
+2014-11-18 09:35:28 +0200,Update
+
+2014-11-17 15:50:51 +0200,Update
+
+2014-11-17 10:10:10 +0200,Update
+
+Bug Fix in model import
+
+2014-11-17 09:54:38 +0200,Update
+
+Fixed bug when resizing some models
+
+2014-11-14 15:32:20 +0200,Update
+
+2014-11-10 11:30:01 +0200,Update
+
+2014-11-10 09:05:09 +0200,Updated
+
+Fix for bad values in reprojections
+
+2014-11-07 15:15:41 +0200,Update
+
+New display of point data
+
+2014-11-07 13:52:14 +0200,Updates
+
+Equation editor improved to use numexpr
+fixed a bug regarding duplicate data names in interpretation module.
+Added a few reports in 3D modelling module
+
+2014-10-28 15:40:58 +0200,Update
+
+2014-10-28 15:13:06 +0200,Update
+
+Improved the multi-band select by making it a context menu
+
+2014-10-24 13:24:03 +0200,Update
+
+Update help reference
+
+2014-10-24 11:05:28 +0200,Updates
+
+2014-10-24 08:40:22 +0200,Update to python 2.4.2
+
+Includes dependency on numba
+
+2014-10-22 16:16:39 +0200,Update
+
+Seis updates
+
+2014-10-20 08:18:57 +0200,Update
+
+Added some seismology routines
+
+2014-10-17 13:44:39 +0200,update
+
+Fixed writing of null value to file when exporting ENVI format
+
+2014-10-10 14:32:21 +0200,update
+
+2014-10-10 14:29:34 +0200,update
+
+2014-10-10 14:10:42 +0200,Update
+
+2014-10-06 14:41:56 +0200,Comment updates
+
+2014-10-03 15:03:00 +0200,New Feature
+
+Query for which datasets to connect added
+
+2014-09-30 11:38:43 +0200,Update and bug fix
+
+Added new gridding technique. and fixed bugs related to vector imports.
+
+2014-09-29 11:08:32 +0200,update
+
+bugfix
+
+2014-09-29 10:56:27 +0200,Update
+
+Add a custom data range to the profile view on the modelling module.
+
+2014-09-23 11:43:35 +0200,update
+
+2014-09-22 11:22:49 +0200,Bug Fix
+
+Fix calculation problem when changing model parameters
+
+2014-09-22 08:21:18 +0200,Bug Fixes
+
+Fixed a big with equation editor and updates
+Fixed a bug with basic statistics and masked values
+
+2014-09-17 10:55:47 +0200,Bug Fix
+
+Fixed a bug fix in the summing of calculations for modelling
+
+2014-09-12 14:43:50 +0200,Bug Fix
+
+Fixed a problem when exporting color bars
+
+2014-09-12 11:56:53 +0200,Bug Fix
+
+Fixed sunshade bug
+
+2014-09-12 11:44:03 +0200,Bug fix
+
+IGRF bug fix with combo
+
+2014-09-12 11:10:24 +0200,Bug Fix
+
+Bug in IGRF module
+
+2014-09-12 08:38:51 +0200,Critical: Bug Fix
+
+Fixed a problem with the field calculations
+
+2014-09-12 07:42:17 +0200,Work in progress
+
+2014-09-11 14:49:45 +0200,Bug Fixes and comments
+
+2014-09-10 15:31:21 +0200,Bug Fixes
+
+2014-09-10 09:42:08 +0200,Bug Fix
+
+Fixed problem with high colors in geotiff export
+
+2014-09-10 09:03:33 +0200,Bug Fix
+
+Fixed a bug saving geotiffs
+
+2014-09-04 10:45:49 +0200,Update README.md
+2014-09-04 10:42:35 +0200,Update README.md
+2014-09-04 10:33:12 +0200,Equation editor bug fix
+
+Fixed equation editor to allow class data.
+
+2014-09-03 13:53:41 +0200,Fixed bug on apply regional in modelling
+
+2014-09-02 14:56:15 +0200,ASCII Import fixed
+
+2014-09-01 15:57:35 +0200,Minor bug fixes and formatting
+
+2014-08-29 13:33:11 +0200,Fix relative imports
+
+fixed imports into modules to allow for relative imports
+
+2014-08-29 08:26:45 +0200,Fixed a bug in setup.py
+
+Fixed a bad reference to pygmi.point in setup.py. It should now be
+pygmi.vector
+
+2014-08-29 07:52:59 +0200,Improvements to calculation speed
+
+2014-08-26 15:27:07 +0200,Regional model merge
+
+Allows merging of a regional model with primary model
+
+2014-08-22 12:32:24 +0200,Fixed bug with ascii model export
+
+ascii model export bug fixed
+export is renamed from xyz to csv
+
+2014-08-21 08:32:58 +0200,Fixed IGRF bug
+
+Fixed a bug in IGRF routine for different size input grids
+
+2014-08-20 17:03:26 +0200,Organisation of graph routines
+
+2014-08-19 16:37:14 +0200,Rose Diagrams and shape files
+
+2014-08-18 16:10:53 +0200,tests
+
+2014-08-14 14:12:31 +0200,Bug fixes
+
+Fixed progress bar on forward modelling
+Minor bugs
+
+2014-08-13 11:04:14 +0200,Add warning
+
+2014-08-12 15:08:42 +0200,implemented multiprocessing on forward modelling
+
+2014-08-12 13:34:45 +0200,Bug Fix
+
+2014-08-12 12:55:44 +0200,small fix
+
+2014-08-12 10:58:37 +0200,add custom profile display
+
+2014-08-12 08:18:15 +0200,Testing routine
+
+Added a testing routine for forward modelling.
+
+2014-08-06 13:09:29 +0200,I/O bug fixes
+
+Import and export bug fixes, especially with null values
+
+2014-08-05 11:45:18 +0200,Bug fixes
+
+Fixes to name mangling
+
+2014-08-04 09:57:04 +0200,Smoothing, data cutting, comments, new functions
+
+Converted code to functions for easier library access. Modified
+smoothing algorithm and added better comments. Smoothing has some bugs
+though.
+
+2014-07-25 09:00:51 +0200,Python 2.7 Compatibility changes
+
+2014-07-25 08:43:14 +0200,Merge remote-tracking branch 'origin/master'
+
+Conflicts:
+	pygmi/main.py
+
+2014-07-25 08:39:38 +0200,Python 2.7 compatibility changes
+
+2014-07-25 08:39:00 +0200,Misc
+
+2014-07-24 15:46:16 +0200,Fixes
+
+2014-07-24 14:42:15 +0200,Adopt PyQt4
+
+I decided to go back to PyQt4 because of some potential compatibility
+problems I was having.
+
+2014-07-24 08:49:30 +0200,Fixed import problem with pickle
+
+A module was moved and this prevented some data being loaded. This was
+fixed
+
+2014-07-24 08:14:50 +0200,Temporary fix for graphics bug
+
+This is a temporary fix for plots being corrupted.
+
+2014-07-24 07:56:32 +0200,Update README.md
+2014-07-23 14:10:37 +0200,File Cleanup
+
+Clean up some files
+
+2014-07-23 12:59:29 +0200,Merge remote-tracking branch 'origin/master'
+
+2014-07-23 12:36:11 +0200,Removed files
+
+Removed some files
+
+2014-07-23 10:33:02 +0200,Bug Fixes
+
+Fixed a bug which caused figures to pop up independent of the GUI
+Increased the decimal precision of the density input in the modelling
+module
+
+2014-07-22 15:12:51 +0200,Update README.md
+2014-07-22 08:54:25 +0200,Added information to some files
+
+Added license information to some files
+Fixed a line in Readme.md
+
+2014-07-21 15:54:45 +0200,Small Test
+
+Deleting files which accidentally made their way on server
+
+2014-07-21 15:51:16 +0200,Small Test
+
+2014-07-21 15:45:49 +0200,Changes to make PyGMI functions accessible
+
+Exposed some raster functions
+Moved datatypes.py into new locations
+Edited some __init__.py files
+
+2014-07-21 10:55:44 +0200,Small Corrections
+
+2014-07-21 10:55:29 +0200,Update README.md
+
+Spelling correction
+2014-07-18 14:19:54 +0200,Changed Readme File
+
+2014-07-18 09:58:13 +0200,Added .gitignore
+
+Added .gitignore file
+
+2014-07-18 09:59:26 +0200,Delete pygmi-2.1.0.zip
+2014-07-18 09:38:24 +0200,PyGMI
+
+This is the initial commit of PyGMI
+
