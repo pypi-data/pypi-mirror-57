@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: TracBookmark
+Version: 1.0.0
+Summary: A plugin bookmark Trac resources.
+Home-page: https://trac-hacks.org/wiki/BookmarkPlugin
+Author: Yoshiyuki Sugimoto
+Maintainer: Yoshiyuki Sugimoto
+Maintainer-email: s.yosiyuki@gmail.com
+License: 3-clause BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Trac
