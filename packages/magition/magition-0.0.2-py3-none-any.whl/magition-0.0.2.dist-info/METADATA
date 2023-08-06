@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: magition
+Version: 0.0.2
+Summary: Some functions for Magic Condition calculations
+Home-page: https://github.com/darwinqii
+Author: darwinqii
+Author-email: peng.qi@usask.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: scipy (==1.2.1)
+Requires-Dist: pathlib
+
+UNKNOWN
+
+
