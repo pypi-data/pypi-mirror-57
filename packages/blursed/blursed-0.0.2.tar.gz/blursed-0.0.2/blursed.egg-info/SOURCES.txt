@@ -1,0 +1,11 @@
+LICENSE
+README.md
+blursed.py
+setup.cfg
+setup.py
+blursed.egg-info/PKG-INFO
+blursed.egg-info/SOURCES.txt
+blursed.egg-info/dependency_links.txt
+blursed.egg-info/requires.txt
+blursed.egg-info/top_level.txt
+test/test.py
