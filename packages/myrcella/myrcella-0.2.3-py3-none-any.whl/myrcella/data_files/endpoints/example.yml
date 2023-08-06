@@ -1,0 +1,10 @@
+name: ping
+data:
+   time: int
+   user: str
+   important: false #specifying default value instead of type
+   location:
+       country: str
+       city: str
+metadata:
+- day
