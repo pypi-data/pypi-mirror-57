@@ -1,0 +1,16 @@
+jakarto_datasets/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+jakarto_datasets/commons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jakarto_datasets/commons/path_manager.py,sha256=soDcqGHWXrgkqNhWDi_F3LT57kjY9GuO9JpCb-E5UEY,1197
+jakarto_datasets/datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jakarto_datasets/datasets/storm_drains/__init__.py,sha256=JvzzI1_5bPnBz1Z0iKfZbWT27aetSukdQnyVsdTV60Q,83
+jakarto_datasets/datasets/storm_drains/storm_drains.py,sha256=EgAxj4tulzircW6dh-3HQFOP9xwDPPDW9tdxn2YsLXM,6943
+jakarto_datasets/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jakarto_datasets/utils/archive_manager.py,sha256=8kyJzmhG5_yDN2wGhPHVmLZw_tV8vrgDpKmM2PC0DJM,647
+jakarto_datasets/utils/data_structure_operator.py,sha256=uVsaJbCBbzcFXrZTnXbo66d8I5wsTefPXXZDLn3kDJo,533
+jakarto_datasets/utils/downloader.py,sha256=CspTQuGhaWNSLF7KrITjTFguUWEKg2_7YfUHz4GBAM0,1534
+jakarto_datasets/utils/memory_manager.py,sha256=OKbUmiRxvsFjjCuldj6Z_RS5HVPGjd2-U84N9bDQY6o,1171
+jakarto_datasets-0.1.0.dist-info/LICENSE.txt,sha256=Hx0Sp-xJEY6c7cj_8BqtrDdP1VD_lolClneYtZFs8QU,1062
+jakarto_datasets-0.1.0.dist-info/METADATA,sha256=wQtQAiuVR21Y8-6aCA5tUPTcm-Tq54FCsQw5pJ1mrB4,4153
+jakarto_datasets-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jakarto_datasets-0.1.0.dist-info/top_level.txt,sha256=5Nj7FCcCFfE4FQTkSyhqEIVWDHhKn1vvZf1bb725ays,17
+jakarto_datasets-0.1.0.dist-info/RECORD,,
