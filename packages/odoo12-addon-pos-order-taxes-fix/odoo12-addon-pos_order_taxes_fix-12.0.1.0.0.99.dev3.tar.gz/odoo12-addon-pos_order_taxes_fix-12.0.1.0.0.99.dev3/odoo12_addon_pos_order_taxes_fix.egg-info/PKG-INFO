@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: odoo12-addon-pos-order-taxes-fix
+Version: 12.0.1.0.0.99.dev3
+Summary: Adds a button to on pos session to fix the taxes of the orders that doesn't match the calculation on backend"
+Home-page: https://coopiteasy.be
+Author: Coop IT Easy SCRL fs
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Python: >=3.5

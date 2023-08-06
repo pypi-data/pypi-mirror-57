@@ -1,0 +1,12 @@
+setup.py
+odoo/addons/pos_order_taxes_fix/__init__.py
+odoo/addons/pos_order_taxes_fix/__manifest__.py
+odoo/addons/pos_order_taxes_fix/models/__init__.py
+odoo/addons/pos_order_taxes_fix/models/pos_session.py
+odoo/addons/pos_order_taxes_fix/views/pos_session_view.xml
+odoo12_addon_pos_order_taxes_fix.egg-info/PKG-INFO
+odoo12_addon_pos_order_taxes_fix.egg-info/SOURCES.txt
+odoo12_addon_pos_order_taxes_fix.egg-info/dependency_links.txt
+odoo12_addon_pos_order_taxes_fix.egg-info/not-zip-safe
+odoo12_addon_pos_order_taxes_fix.egg-info/requires.txt
+odoo12_addon_pos_order_taxes_fix.egg-info/top_level.txt
