@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: wfepy
+Version: 0.1
+Summary: Workflow Engine for Python
+Home-page: https://github.com/redhat-aqe/wfepy
+Author: Filip Poboril
+Author-email: fpoboril@redhat.com
+License: MIT
+Download-URL: https://github.com/redhat-aqe/wfepy/archive/v0.1.tar.gz
+Description: WfEpy
+        =====
+        
+        **Workflow Engine for Python**
+        
+        
+        Installation
+        ------------
+        
+        Install it using pip ::
+        
+            pip3 install wfepy
+        
+        or clone repository ::
+        
+            git clone https://gitlab.com/redhat-aqe/wfepy.git
+            cd wfepy
+        
+        and install Python package including dependencies ::
+        
+            python3 setup.py install
+        
+Keywords: Workflow,Workflow Engine
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
