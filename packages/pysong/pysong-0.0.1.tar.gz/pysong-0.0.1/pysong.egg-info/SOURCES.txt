@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+pysong/__init__.py
+pysong/__main__.py
+pysong/song.py
+pysong/song_elements.py
+pysong/song_midi_converter.py
+pysong/song_test.py
+pysong.egg-info/PKG-INFO
+pysong.egg-info/SOURCES.txt
+pysong.egg-info/dependency_links.txt
+pysong.egg-info/top_level.txt
