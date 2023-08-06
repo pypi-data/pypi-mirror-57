@@ -1,0 +1,12 @@
+fairpred/__init__.py,sha256=XgKtNCTvZwYuaGd1ojm6Kc3dnGS0883qInKeznsdFvg,135
+fairpred/fair_predictor.py,sha256=X_8iny0XDFxK_92b67clQEADaOw-q8e1n7UtnvaPNIA,2126
+fairpred/fairpred_new.py,sha256=fKt5eRt5rhCj6yGQKYPo67jB0V6jMSQF3ZgeJy_E40c,4290
+fairpred/load_data.py,sha256=qunX0-nkhgCssoJrkzqHQ36U7PLx9bBMjlLJcdierxU,7984
+fairpred/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fairpred-0.1.data/scripts/fairpred_new.py,sha256=fKt5eRt5rhCj6yGQKYPo67jB0V6jMSQF3ZgeJy_E40c,4290
+fairpred-0.1.data/scripts/load_data.py,sha256=qunX0-nkhgCssoJrkzqHQ36U7PLx9bBMjlLJcdierxU,7984
+fairpred-0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+fairpred-0.1.dist-info/METADATA,sha256=r5j1usmT3fwAvuIutT2u8Cl7xvI8fOHN6Ma1-NNVEqY,455
+fairpred-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fairpred-0.1.dist-info/top_level.txt,sha256=VCsgCPq_grKAr3Ap9zbJznazgdIbiU8qcqNuSbUFIC0,9
+fairpred-0.1.dist-info/RECORD,,
