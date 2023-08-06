@@ -1,0 +1,23 @@
+<script>
+    function handlePusherNotifications() {
+        const PUSHER_USER_ID = '{{ PUSHER_USER_ID }}';
+        if (PUSHER_USER_ID) {
+            const PUSHER_KEY = '{{ PUSHER_KEY }}';
+
+            const pusher = new Pusher(PUSHER_KEY, {
+                authEndpoint: '{% url "pusher_auth" %}',
+                auth: {
+                    headers: {
+                        'X-CSRFToken': "{{ csrf_token }}"
+                    }
+                },
+                cluster: '{{ PUSHER_CLUSTER }}',
+                forceTLS: true
+            });
+
+            const channel = pusher.subscribe('private-user-' + PUSHER_USER_ID);
+            channel.bind('new-notification', NOTIFICATION_CALLBACK);
+        }
+    }
+    handlePusherNotifications();
+</script>
