@@ -1,0 +1,7 @@
+numpy
+scipy
+syned
+wofry
+srxraylib
+oasys-srwpy
+h5py
