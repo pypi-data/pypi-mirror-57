@@ -1,0 +1,9 @@
+rigidbodysimulator/__init__.py,sha256=XWJX_nllKWkK-vxSsGd7NLXvzkZ5_McywjTaRnN9Xck,48
+rigidbodysimulator/plotting.py,sha256=Bj4AtYcLVOMk8q6hVcLC96N-gmC83W8lZl6VL4rz6CE,4137
+rigidbodysimulator/rigid_body_dynamics.py,sha256=MNzubyqpt9gtrCDooZDDucxHH92u8QhXlhcgWcnC8cs,3466
+rigidbodysimulator/substitute_dynamic_symbols.py,sha256=oZrC831F_sv4w9U1BBiflGkTleGrJWadoXpWK-ebSzc,2454
+rigidbodysimulator-0.2.3.dist-info/LICENSE,sha256=0JofpnBpGUSWbY8zMW0PpsF9wqGExTahcFenu5uVVGI,1077
+rigidbodysimulator-0.2.3.dist-info/METADATA,sha256=EYTulyReIih2Bv9mz51goay7O-VjMJ1i1eB_JlNIfMc,761
+rigidbodysimulator-0.2.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+rigidbodysimulator-0.2.3.dist-info/top_level.txt,sha256=gGMPvbK0IwHhDu5r9eCZsKkcgE0TN_HKMFkyTQ2kbkE,19
+rigidbodysimulator-0.2.3.dist-info/RECORD,,
