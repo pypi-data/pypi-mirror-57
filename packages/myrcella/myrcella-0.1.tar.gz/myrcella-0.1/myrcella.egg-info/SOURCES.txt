@@ -1,0 +1,11 @@
+README.md
+setup.py
+myrcella/__init__.py
+myrcella/database.py
+myrcella/main.py
+myrcella/server.py
+myrcella.egg-info/PKG-INFO
+myrcella.egg-info/SOURCES.txt
+myrcella.egg-info/dependency_links.txt
+myrcella.egg-info/requires.txt
+myrcella.egg-info/top_level.txt

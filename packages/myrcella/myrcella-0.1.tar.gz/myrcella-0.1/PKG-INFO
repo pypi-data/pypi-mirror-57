@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: myrcella
+Version: 0.1
+Summary: Simple API server to collect data according to dynamically loaded yaml specifications
+Home-page: https://github.com/krateng/myrcella
+Author: Johannes Krattenmacher
+Author-email: python@krateng.dev
+License: GPLv3
+Description: # pythonpackage
+        Template for Python packages
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
