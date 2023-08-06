@@ -1,0 +1,13 @@
+unicorner/__init__.py,sha256=HJGi4fOp1tavdwfvOVNpoAw7uVckJpDtmz2Yo2Ud9-k,336
+unicorner/__main__.py,sha256=qAzkU4qmXed_g9Ylg4ubB0dyLF74S3S6v3J84ZsQTmI,70
+unicorner/cli.py,sha256=bMILa5Bc2nMpNrtqKEFwDn7zBaZRdpk2iR6aJ8AVbOE,773
+unicorner/dtos.py,sha256=nwj_DR3CmZzgv8KUtBx8jDuU22dUBVkhac4rauRGl5s,1404
+unicorner/env.py,sha256=UGU2Kgv4liSQiCRLxZoqa5_bI_N-xlP4zOmvz-TukmQ,219
+unicorner/extraction.py,sha256=Iw7WoCHvWLS7pDDsKF26gzJHDNKukzq6sXTNtep5DhE,4735
+unicorner/season_page.py,sha256=ZmgzIApmcKoY0OIn7HwjsxeqD_UyJm5eqARoC1W_E9k,14000
+unicorner/values.py,sha256=ue6zGCnJUQvm-Onf41H7AYG_bEUtL5EBwLHPuR9qsNw,3651
+unicorner-0.2.3.dist-info/LICENSE,sha256=oZKu3KohgkmHMJB9mOixa4Y51jHlrblLDtyUh24bbgE,1506
+unicorner-0.2.3.dist-info/METADATA,sha256=kxqJUK3yDbAZeyfkzGRkrx0I87SJUA3tLl0CGskbd5w,2684
+unicorner-0.2.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+unicorner-0.2.3.dist-info/top_level.txt,sha256=uRuypj8y0m3zk2FeO8fWb9__iDdgMKutui9POk1dDEA,10
+unicorner-0.2.3.dist-info/RECORD,,
