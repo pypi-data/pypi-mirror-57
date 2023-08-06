@@ -1,0 +1,4 @@
+[console_scripts]
+giotto_prepare_annot = giotto_viewer.prepare_annot:main
+giotto_read_matrix_custom = giotto_viewer.read_matrix_custom:main
+
