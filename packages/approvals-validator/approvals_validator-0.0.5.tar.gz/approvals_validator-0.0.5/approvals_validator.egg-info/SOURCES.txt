@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+validate_approvals
+approval_validator/__init__.py
+approval_validator/change_set.py
+approval_validator/changed_directory.py
+approval_validator/cli_utils.py
+approval_validator/exceptions.py
+approval_validator/file_utils.py
+approval_validator/tests/__init__.py
+approval_validator/tests/changed_directory_test.py
+approval_validator/tests/file_utils_test.py
+approvals_validator.egg-info/PKG-INFO
+approvals_validator.egg-info/SOURCES.txt
+approvals_validator.egg-info/dependency_links.txt
+approvals_validator.egg-info/top_level.txt
