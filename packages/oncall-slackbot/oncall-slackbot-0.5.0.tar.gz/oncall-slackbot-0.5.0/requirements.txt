@@ -1,0 +1,8 @@
+# slacker is forked locally into the slacker directory to pull in support for blocks
+# see the readme in the slacker directory for more information
+slackbot==0.5.5
+pygerduty>=0.38.2
+pytz>=2019.3
+humanize>=0.5.1
+# Lock spacy version since the models are built for version AFAIK
+spacy==2.2.3
