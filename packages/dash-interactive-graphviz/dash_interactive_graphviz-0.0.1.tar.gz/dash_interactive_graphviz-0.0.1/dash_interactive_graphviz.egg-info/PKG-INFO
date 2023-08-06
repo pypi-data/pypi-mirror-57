@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dash-interactive-graphviz
+Version: 0.0.1
+Summary: An interactive graphviz viewer for dash
+Home-page: UNKNOWN
+Author: James Saunders <james@businessoptics.biz>
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Dash
+Description-Content-Type: text/markdown
