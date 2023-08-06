@@ -1,0 +1,14 @@
+kotlin_jupyter_kernel-0.7.11.data/data/share/jupyter/kernels/kotlin/kernel.json,sha256=r7BBFl5aXCyrFze1qpCEaxe459ULMNJKV25ZM2U5Hgk,128
+run_kotlin_kernel/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+run_kotlin_kernel/__main__.py,sha256=qH2BGbN7X-lzdLPEX0wpG6jS62gQszokYI8C_DnDkZk,129
+run_kotlin_kernel/run_kernel.py,sha256=GZ6iORManvma7dmNRjPqV4ziiGOaI6ImlynmCeQuVIY,1404
+run_kotlin_kernel/config/config.json,sha256=f1mf3CdVdynYw-4v6Y3xe0THjF43AsLUddDfHOfvZ5Y,7717
+run_kotlin_kernel/config/jar_args.json,sha256=_3S21jeoyn-JhCUfRVqllDPrLPcVYCjZ76H-lMnG9Xg,255
+run_kotlin_kernel/jars/annotations-13.0.jar,sha256=rOKhDcji1f00kl7KwD5JiLLA-FFlDJS4zvSbob0RFHg,17536
+run_kotlin_kernel/jars/jupyter-lib.jar,sha256=osl5WZLqijxHTL-8dsdKlIOmZyr1b9cs3uh-oyK33TQ,13446
+run_kotlin_kernel/jars/kotlin-stdlib-1.3.70-dev-2104.jar,sha256=MVV3FpoZwkfJxPpEkC494RmNmU5Zvno7ZPNbbjJ3qFI,1335900
+run_kotlin_kernel/jars/kotlin-stdlib-common-1.3.70-dev-2104.jar,sha256=sxJgOYHFN0l4HNibdrplywgeyU0491yItkh8veIna5w,171424
+kotlin_jupyter_kernel-0.7.11.dist-info/METADATA,sha256=Vi_p2OuqNq7FqloFl_0yt-Lv_TZI1ZapyPMnVtw7WYg,223
+kotlin_jupyter_kernel-0.7.11.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+kotlin_jupyter_kernel-0.7.11.dist-info/top_level.txt,sha256=sVPduYWJcSMSjLn_NTDSC7uB8QCTGrqnAMe7Iguccto,18
+kotlin_jupyter_kernel-0.7.11.dist-info/RECORD,,
