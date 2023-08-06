@@ -1,0 +1,405 @@
+from datetime import datetime
+from decimal import Decimal
+from enum import Enum
+from typing import Any, Type, overload
+
+import attr
+from attr.validators import deep_iterable, instance_of, optional
+
+from rhodes._util import RHODES_ATTRIB
+from rhodes.exceptions import InvalidDefinitionError
+from rhodes.structures import JsonPath
+
+__all__ = (
+    "VariablePath",
+    "ChoiceRule",
+    "StringEquals",
+    "StringGreaterThan",
+    "StringGreaterThanEquals",
+    "StringLessThan",
+    "StringLessThanEquals",
+    "NumericEquals",
+    "NumericGreaterThan",
+    "NumericGreaterThanEquals",
+    "NumericLessThan",
+    "NumericLessThanEquals",
+    "BooleanEquals",
+    "TimestampEquals",
+    "TimestampGreaterThan",
+    "TimestampGreaterThanEquals",
+    "TimestampLessThan",
+    "TimestampLessThanEquals",
+    "And",
+    "Or",
+    "Not",
+    "all_",
+    "any_",
+)
+
+
+class VariablePath(JsonPath):
+    """JsonPath with overloading helper methods."""
+
+    # TODO: Add __and__ and __or__ behaviors?
+
+    def __lt__(self, other: Any) -> Type["ChoiceRule"]:
+        return derive_rule(variable=self, operator="<", value=other)
+
+    def __le__(self, other: Any) -> Type["ChoiceRule"]:
+        return derive_rule(variable=self, operator="<=", value=other)
+
+    def __eq__(self, other: Any) -> Type["ChoiceRule"]:
+        return derive_rule(variable=self, operator="==", value=other)
+
+    def __ne__(self, other: Any) -> "Not":
+        inner_rule = derive_rule(variable=self, operator="==", value=other)
+        return Not(Rule=inner_rule)
+
+    def __gt__(self, other: Any) -> Type["ChoiceRule"]:
+        return derive_rule(variable=self, operator=">", value=other)
+
+    def __ge__(self, other: Any) -> Type["ChoiceRule"]:
+        return derive_rule(variable=self, operator=">=", value=other)
+
+
+def _required_next(instance):
+    if instance.Next is None:
+        raise InvalidDefinitionError("ChoiceRule missing state transition")
+
+
+def _require_choice_rule_instance(*, class_name: str, attribute_name: str, value):
+    if not isinstance(value, ChoiceRule):
+        raise TypeError(f'"{class_name}.{attribute_name}" must be a "ChoiceRule". Received "{type(value)}"')
+
+
+def _require_no_next(*, class_name: str, attribute_name: str, value):
+    if value.Next is not None:
+        raise ValueError(f'"{class_name}.{attribute_name}" must not have a "Next" value defined.')
+
+
+def _single_to_dict(instance, suppress_next=False):
+    if not suppress_next:
+        _required_next(instance)
+
+    instance_dict = {instance.__class__.__name__: instance._serialized_value(), "Variable": str(instance.Variable)}
+    if instance.Next is not None:
+        instance_dict["Next"] = instance.Next
+
+    return instance_dict
+
+
+def _convert_to_variable_path(value) -> VariablePath:
+    if isinstance(value, VariablePath):
+        return value
+
+    return VariablePath(value)
+
+
+def _single(cls):
+    cls.Variable = RHODES_ATTRIB(validator=instance_of(VariablePath), converter=_convert_to_variable_path)
+    cls.Next = RHODES_ATTRIB(validator=optional(instance_of(str)))
+    cls.to_dict = _single_to_dict
+
+    return cls
+
+
+def _multi_to_dict(instance, suppress_next=False):
+    if not suppress_next:
+        _required_next(instance)
+
+    # TODO: Validate that no children have a Next value
+
+    return {
+        instance.__class__.__name__: [rule.to_dict(suppress_next=True) for rule in instance.Rules],
+        "Next": instance.Next,
+    }
+
+
+def _validate_multi_subrules(instance, attribute, value):
+    for pos, rule in enumerate(value):
+        position_name = f"{attribute.name}[{pos}]"
+        _require_choice_rule_instance(class_name=instance.__class__.__name__, attribute_name=position_name, value=rule)
+        _require_no_next(class_name=instance.__class__.__name__, attribute_name=position_name, value=rule)
+
+
+def _multi(cls):
+    cls.Rules = RHODES_ATTRIB(validator=_validate_multi_subrules)
+    cls.Next = RHODES_ATTRIB(validator=optional(instance_of(str)))
+    cls.to_dict = _multi_to_dict
+
+    return cls
+
+
+def _string(cls):
+    cls.Value = RHODES_ATTRIB(validator=instance_of(str))
+    cls = _single(cls)
+
+    return cls
+
+
+def _number(cls):
+    def _numeric_converter(value) -> Decimal:
+        if isinstance(value, Decimal):
+            return value
+
+        return Decimal(str(value))
+
+    def _value_serializer(instance) -> float:
+        return float(instance.Value)
+
+    # TODO: Note that for interoperability,
+    #  numeric comparisons should not be assumed to work
+    #  with values outside the magnitude or precision
+    #  representable using the IEEE 754-2008 “binary64” data type.
+    #  In particular,
+    #  integers outside of the range [-(253)+1, (253)-1]
+    #  might fail to compare in the expected way.
+    cls.Value = RHODES_ATTRIB(validator=instance_of(Decimal), converter=_numeric_converter)
+    cls._serialized_value = _value_serializer
+    cls = _single(cls)
+
+    return cls
+
+
+def _bool(cls):
+    cls.Value = RHODES_ATTRIB(validator=instance_of(bool))
+    cls = _single(cls)
+
+    return cls
+
+
+def _timestamp(cls):
+    def _datetime_validator(instance, attribute, value):
+        if value.tzinfo is None:
+            raise ValueError(f"'{attribute.name}' must have a 'tzinfo' value set.")
+
+    def _value_serializer(instance):
+        return instance.Value.isoformat()
+
+    cls.Value = RHODES_ATTRIB(validator=[instance_of(datetime), _datetime_validator])
+    cls._serialized_value = _value_serializer
+    cls = _single(cls)
+
+    return cls
+
+
+@attr.s(eq=False)
+class ChoiceRule:
+
+    member_of = None
+    Value = NotImplemented
+    Next = NotImplemented
+
+    def to_dict(self):
+        raise NotImplementedError()
+
+    def __eq__(self, other: "ChoiceRule") -> bool:
+        if not isinstance(other, self.__class__):
+            return False
+
+        if self.to_dict() != other.to_dict():
+            return False
+
+        if self.member_of != other.member_of:
+            return False
+
+        return True
+
+    def __ne__(self, other: "ChoiceRule") -> bool:
+        return not self.__eq__(other)
+
+    def _serialized_value(self):
+        return self.Value
+
+    def then(self, state):
+        if self.Next is not None:
+            raise InvalidDefinitionError(f"Choice rule already has a defined target")
+
+        self.member_of.member_of.add_state(state)
+
+        self.Next = state.title
+
+        return state
+
+
+@attr.s(eq=False)
+@_string
+class StringEquals(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_string
+class StringLessThan(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_string
+class StringGreaterThan(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_string
+class StringLessThanEquals(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_string
+class StringGreaterThanEquals(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_number
+class NumericEquals(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_number
+class NumericLessThan(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_number
+class NumericGreaterThan(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_number
+class NumericLessThanEquals(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_number
+class NumericGreaterThanEquals(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_bool
+class BooleanEquals(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_timestamp
+class TimestampEquals(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_timestamp
+class TimestampLessThan(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_timestamp
+class TimestampGreaterThan(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_timestamp
+class TimestampLessThanEquals(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_timestamp
+class TimestampGreaterThanEquals(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_multi
+class And(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+@_multi
+class Or(ChoiceRule):
+    pass
+
+
+@attr.s(eq=False)
+class Not(ChoiceRule):
+    Rule = RHODES_ATTRIB(validator=instance_of(ChoiceRule))
+    Next = RHODES_ATTRIB(validator=optional(instance_of(str)))
+
+    @Rule.validator
+    def _validate_rule(self, attribute, value):
+        _require_choice_rule_instance(class_name=self.__class__.__name__, attribute_name=attribute.name, value=value)
+        _require_no_next(class_name=self.__class__.__name__, attribute_name=attribute.name, value=value)
+
+    def to_dict(self, suppress_next=False):
+        if not suppress_next:
+            _required_next(self)
+
+        inner_rule = self.Rule.to_dict(suppress_next=True)
+        instance_dict = dict(Not=inner_rule)
+
+        if self.Next is not None:
+            instance_dict["Next"] = self.Next
+
+        return instance_dict
+
+
+_OPERATORS = {
+    "string": {
+        "==": StringEquals,
+        "<": StringLessThan,
+        "<=": StringLessThanEquals,
+        ">": StringGreaterThan,
+        ">=": StringGreaterThanEquals,
+    },
+    "number": {
+        "==": NumericEquals,
+        "<": NumericLessThan,
+        "<=": NumericLessThanEquals,
+        ">": NumericGreaterThan,
+        ">=": NumericGreaterThanEquals,
+    },
+    "time": {
+        "==": TimestampEquals,
+        "<": TimestampLessThan,
+        "<=": TimestampLessThanEquals,
+        ">": TimestampGreaterThan,
+        ">=": TimestampGreaterThanEquals,
+    },
+    "boolean": {"==": BooleanEquals},
+}
+_TYPE_MAP = {bool: "boolean", int: "number", float: "number", Decimal: "number", str: "string", datetime: "time"}
+
+
+def derive_rule(*, variable: VariablePath, operator: str, value) -> Type[ChoiceRule]:
+    if isinstance(value, Enum):
+        value = value.value
+
+    try:
+        value_type = _TYPE_MAP[type(value)]
+    except KeyError:
+        raise TypeError(f'Unhandled value type "{type(value)}"')
+
+    try:
+        operator_class = _OPERATORS[value_type][operator]
+    except KeyError:
+        raise ValueError(f'Unhandled operator "{operator}"')
+
+    return operator_class(Variable=variable, Value=value)
+
+
+def all_(*rules: ChoiceRule) -> And:
+    return And(Rules=list(rules))
+
+
+def any_(*rules: ChoiceRule) -> Or:
+    return Or(Rules=list(rules))
