@@ -1,0 +1,3 @@
+redis
+simplified_html
+simplified_scrapy
