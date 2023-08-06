@@ -1,0 +1,6 @@
+README.md
+setup.py
+soldaiSGA.egg-info/PKG-INFO
+soldaiSGA.egg-info/SOURCES.txt
+soldaiSGA.egg-info/dependency_links.txt
+soldaiSGA.egg-info/top_level.txt
