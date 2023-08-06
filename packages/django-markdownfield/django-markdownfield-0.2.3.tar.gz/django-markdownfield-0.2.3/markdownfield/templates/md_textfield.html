@@ -1,0 +1,26 @@
+<textarea name="{{ widget.name }}" {% include "django/forms/widgets/attrs.html" %}>
+{% if widget.value %}{{ widget.value }}{% endif %}</textarea>
+<script>
+    var easyMDE = new EasyMDE({
+        element: document.getElementById("id_{{ widget.name }}"),
+        hideIcons: ["side-by-side", "preview"],
+        spellChecker: false,
+        parsingConfig: {
+            allowAtxHeaderWithoutSpace: true,
+        }
+    });
+</script>
+<style>
+    @media (min-width: 767px) {
+        .change-form .cm-s-easymde {
+            margin-left: 170px;
+        }
+
+        .change-form .editor-toolbar {
+            margin-left: 170px;
+        }
+    }
+    .change-form .cm-s-easymde.CodeMirror-fullscreen, .change-form .editor-toolbar.fullscreen {
+        margin:0 !important;
+    }
+</style>
