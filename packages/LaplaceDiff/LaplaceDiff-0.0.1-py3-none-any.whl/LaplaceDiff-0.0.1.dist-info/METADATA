@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: LaplaceDiff
+Version: 0.0.1
+Summary: automatic differentiation
+Home-page: UNKNOWN
+Author: TeamLaplace
+Author-email: yanlitao@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+UNKNOWN
+
+
