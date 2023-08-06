@@ -1,0 +1,4 @@
+pandas>=0.25
+lxml
+httpx==0.9.3
+tenacity==6.0.0
