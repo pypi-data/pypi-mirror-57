@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kcli
+Version: 99.0
+Summary: Provisioner/Manager for Libvirt/Ovirt/Gcp/Aws/Openstack/Kubevirt and containers
+Home-page: http://github.com/karmab/kcli
+Author: Karim Boumedhel
+Author-email: karimboumedhel@gmail.com
+License: ASL
+Description: Provisioner/Manager for Libvirt/Ovirt/Gcp/Aws/Openstack/Kubevirt and containers
+Platform: UNKNOWN
+Provides-Extra: kubevirt
+Provides-Extra: all
+Provides-Extra: aws
+Provides-Extra: vsphere
+Provides-Extra: gcp
+Provides-Extra: ovirt
+Provides-Extra: openstack
