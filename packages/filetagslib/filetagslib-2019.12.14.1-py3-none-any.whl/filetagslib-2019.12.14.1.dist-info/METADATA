@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: filetagslib
+Version: 2019.12.14.1
+Summary: Utility library for providing functions related to the filetags file name convention: https://github.com/novoid/filetags
+Home-page: https://github.com/novoid/filetagslib
+Author: Karl Voit
+Author-email: tools@Karl-Voit.at
+License: GPLv3
+Download-URL: https://github.com/novoid/filetagslib/zipball/master
+Keywords: tagging,tags,file managing,file management,files,tagtrees,tagstore,tag-based navigation,tag-based filter
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
