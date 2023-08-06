@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: process_engine_client
+Version: 0.1
+Summary: A Client for on process-engine.io hosted workflow engine.
+Home-page: https://github.com/moellenbeck/process_engine_client
+Author: 5Minds IT-Solutions GmbH & Co. KG
+Author-email: processengine@5minds.de
+License: UNKNOWN
+Description: # The new python based process-engone-client
+        
+        ## Installation
+        * [GitHub - pyenv/pyenv: Simple Python version management](https://github.com/pyenv/pyenv)
+        
+        ### Notwendige Bibliotheken für Python
+        
+        `python3 -m pip install —user —requirement requirements.txt`
+        
+        
+Keywords: workflow-engine processengine client bpmn
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
