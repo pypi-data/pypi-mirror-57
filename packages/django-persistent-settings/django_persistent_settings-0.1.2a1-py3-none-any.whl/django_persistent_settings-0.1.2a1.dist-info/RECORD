@@ -1,0 +1,14 @@
+persistent_settings/__init__.py,sha256=SIHAudtJldv9HhCkALIPBpGGj2HKHjybODfRVIxZrrk,75
+persistent_settings/admin.py,sha256=QOl5e2m3ekU5aj0yj9Uq4nRQrNMB_FfqNae6RyIxkC0,35
+persistent_settings/apps.py,sha256=O-GcDD1P8W6cZyLFh9CZHPnUlM6-gu79bhOJZH4ro3I,152
+persistent_settings/middlewares.py,sha256=Wbqm7L-xxNkI7pyE-nz0uQ-r7KFL0EmHXErY-yb53Kg,664
+persistent_settings/models.py,sha256=kKwNP2K1VZOFs-glLrqaeI41Rkv8ao-S_MUajTo29hA,2738
+persistent_settings/migrations/0001_initial.py,sha256=v6LKIAMbXEpebxubaxpiPylFBilIasG8boWAxxT5An4,775
+persistent_settings/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+persistent_settings/templatetags/__init__.py,sha256=IOMcdXaX3IBAawoGoteRYqF5Y2ggxsLweR5XZqxfpMk,59
+persistent_settings/templatetags/persistent_settings.py,sha256=2kQbDiEVXHKvgJeTy-SG9dLZlFsjTE69hwGHIeWFFUk,617
+django_persistent_settings-0.1.2a1.dist-info/LICENSE.txt,sha256=K-ZOSE8zJ3E12je1WYktlj_7k6REj45MAslYG8miPiE,552
+django_persistent_settings-0.1.2a1.dist-info/METADATA,sha256=u7ONU_D7K5NZlMAnYTjPlVXDMFW5bbGsLi6eicVyhIE,4282
+django_persistent_settings-0.1.2a1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_persistent_settings-0.1.2a1.dist-info/top_level.txt,sha256=r36YIsJ4S1Bd8w0tp1t-0t8I3iTExxOQpKNxmwG5BNo,20
+django_persistent_settings-0.1.2a1.dist-info/RECORD,,
