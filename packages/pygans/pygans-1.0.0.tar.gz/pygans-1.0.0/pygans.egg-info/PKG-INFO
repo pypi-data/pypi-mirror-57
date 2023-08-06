@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pygans
+Version: 1.0.0
+Summary: Simple Python Framework for creating GANs and seeing evolution through time
+Home-page: https://gitlab.com/afzp99/pygans
+Author: Andres Felipe Zapata Palacio
+Author-email: afzp99@gmail.com
+License: MIT
+Description: # Educative Library: PyGANs
+        
+        Simple Python Framework for creating GANs and seeing step by step the evolution of the generated data. Has an incorporated example that helps begginers to see the evolution of the GAN generating points in a 2D function.
+        
+        Supported 2D Functions:
+        * Trigonometric Functions (f(x)=sin(x))  
+        *  Polynomial Functions, for example:  
+        O f(x) = x\*\*2  
+        O f(x) = x\*\*5 - 3x\*\*2 - 4  
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

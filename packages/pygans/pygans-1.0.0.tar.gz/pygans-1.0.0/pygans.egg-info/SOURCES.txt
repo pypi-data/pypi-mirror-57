@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+pygans/__init__.py
+pygans/animation.py
+pygans/dataset_generator.py
+pygans/dataset_generator_2d.py
+pygans/discriminator.py
+pygans/gan.py
+pygans/generator.py
+pygans/models.py
+pygans.egg-info/PKG-INFO
+pygans.egg-info/SOURCES.txt
+pygans.egg-info/dependency_links.txt
+pygans.egg-info/requires.txt
+pygans.egg-info/top_level.txt
