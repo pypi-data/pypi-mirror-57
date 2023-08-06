@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+Macutil/__init__.py
+Macutil/macutil
+Macutil/doc/known_macs.txt
+Macutil/modules/__init__.py
+Macutil/modules/brute.py
+Macutil/modules/general.py
+Macutil/modules/utility.py
+macutil.egg-info/PKG-INFO
+macutil.egg-info/SOURCES.txt
+macutil.egg-info/dependency_links.txt
+macutil.egg-info/top_level.txt
