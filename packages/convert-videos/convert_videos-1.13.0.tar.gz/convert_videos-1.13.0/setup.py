@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['convert_videos']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['colorama>=0.4.3,<0.5.0', 'ffmpy>=0.2.2,<0.3.0', 'video_utils>=1.1.1,<2.0.0']
+
+setup_kwargs = {
+    'name': 'convert-videos',
+    'version': '1.13.0',
+    'description': 'This tool allows bulk conversion of videos using ffmpeg',
+    'long_description': None,
+    'author': 'Justin Dray',
+    'author_email': 'justin@dray.be',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.6,<4.0',
+}
+
+
+setup(**setup_kwargs)
