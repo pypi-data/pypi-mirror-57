@@ -1,0 +1,6 @@
+torch
+torchvision
+tensorboardX
+pandas
+wget
+onnx
