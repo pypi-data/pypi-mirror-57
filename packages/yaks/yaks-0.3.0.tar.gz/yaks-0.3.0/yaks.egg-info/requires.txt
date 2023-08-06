@@ -1,0 +1,4 @@
+hexdump
+mvar
+papero==0.2.7
+zenoh==0.3.0
