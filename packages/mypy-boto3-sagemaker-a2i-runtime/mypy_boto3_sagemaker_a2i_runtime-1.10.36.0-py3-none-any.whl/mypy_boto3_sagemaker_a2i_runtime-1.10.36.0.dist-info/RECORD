@@ -1,0 +1,11 @@
+mypy_boto3_sagemaker_a2i_runtime/__init__.py,sha256=h-xHZzu7J5rSegvfncbb7Y5N6BVPArXIBs4hEJsqbTs,240
+mypy_boto3_sagemaker_a2i_runtime/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_sagemaker_a2i_runtime/client.py,sha256=CGQ709Yg9gDhYe0SBk2qMmCVFxDq6Zljvu-ZYll5MRs,4962
+mypy_boto3_sagemaker_a2i_runtime/paginator.py,sha256=r-E4q88r7GRZDef6amRpA9jUbfcrl2uolVKACx4JoTE,1317
+mypy_boto3_sagemaker_a2i_runtime/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_sagemaker_a2i_runtime/type_defs.py,sha256=4PZQv_I1IgblkQ_mY4S7PZUQBsuDmVRW5x6ooAUAnpE,3048
+mypy_boto3_sagemaker_a2i_runtime/version.py,sha256=sWKX2BV98mDKhEE-vx306wW6px5oyy-Rt8EEXgS78Ho,57
+mypy_boto3_sagemaker_a2i_runtime-1.10.36.0.dist-info/METADATA,sha256=-VnKly2rY2ul0ye5YWqSIlY5ulHg5XyElqDlVvD6m7A,1239
+mypy_boto3_sagemaker_a2i_runtime-1.10.36.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_sagemaker_a2i_runtime-1.10.36.0.dist-info/top_level.txt,sha256=6HqhaVyIH74_dXwyZ6pZf3XCPDsbnwA6l1k0RTXaHFM,33
+mypy_boto3_sagemaker_a2i_runtime-1.10.36.0.dist-info/RECORD,,
