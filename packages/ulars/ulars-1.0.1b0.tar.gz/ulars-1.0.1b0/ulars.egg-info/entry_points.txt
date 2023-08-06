@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        lars = lars.main:main
+    
