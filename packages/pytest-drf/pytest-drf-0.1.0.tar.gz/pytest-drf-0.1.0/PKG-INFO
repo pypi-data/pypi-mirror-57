@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pytest-drf
+Version: 0.1.0
+Summary: A Django REST framework plugin for pytest.
+License: MIT
+Author: Zach "theY4Kman" Kanzler
+Author-email: they4kman@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: djangorestframework (>3)
+Requires-Dist: inflection (>=0.3.1,<0.4.0)
+Requires-Dist: pytest (>=3.6)
+Requires-Dist: pytest-assert-utils (>=0.1.0,<0.2.0)
+Requires-Dist: pytest-common-subject (>=1.0,<2.0)
+Requires-Dist: pytest-lambda (>=1.1,<2.0)
