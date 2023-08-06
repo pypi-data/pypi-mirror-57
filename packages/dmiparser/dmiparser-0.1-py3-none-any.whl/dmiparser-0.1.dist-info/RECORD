@@ -1,0 +1,8 @@
+dmiparser/__init__.py,sha256=nVIUs-dCbgBUbWvaopaxQF_YDDEutz1end5AAU-OyMQ,5328
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dmiparser.py,sha256=gebf-OeEFJKnQ4-17HDtoQf62N5NYDLRiedXNwgEUEM,1738
+dmiparser-0.1.dist-info/LICENSE,sha256=9akK0CKYEpesVUJFwZKE2NVh9PBDeQZj44X0QgyAm6M,1055
+dmiparser-0.1.dist-info/METADATA,sha256=4vZKhxH4ONR3YvOj70xFhzbZuLdWF3VyygboxhMBi7Y,1730
+dmiparser-0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+dmiparser-0.1.dist-info/top_level.txt,sha256=ROLlm9GQJtSuz8Rcul6Apo7e-KzTwLQ018FDNNEbtp4,16
+dmiparser-0.1.dist-info/RECORD,,
