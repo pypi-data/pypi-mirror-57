@@ -1,0 +1,5 @@
+setup.py
+grtest.egg-info/PKG-INFO
+grtest.egg-info/SOURCES.txt
+grtest.egg-info/dependency_links.txt
+grtest.egg-info/top_level.txt
