@@ -1,0 +1,9 @@
+README.md
+setup.py
+deploy_transformers/__init__.py
+deploy_transformers/deploy.py
+deploy_transformers.egg-info/PKG-INFO
+deploy_transformers.egg-info/SOURCES.txt
+deploy_transformers.egg-info/dependency_links.txt
+deploy_transformers.egg-info/requires.txt
+deploy_transformers.egg-info/top_level.txt
