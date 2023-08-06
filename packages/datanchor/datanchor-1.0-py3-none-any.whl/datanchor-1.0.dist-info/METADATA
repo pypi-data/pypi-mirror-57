@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: datanchor
+Version: 1.0
+Summary: DAtAnchor Inc Python library
+Home-page: https://github.com/dataanchor/dat-sdk
+Author: Harihara Varma Indukuri
+Author-email: hari@datanchor.io
+License: MIT
+Platform: UNKNOWN
+Requires: requests
+Requires: psutil
+Description-Content-Type: text/markdown
+
+# Setup and Usage
+
+## Pre-Requisites:
+
+1. pip3 install requests
+2. pip3 install psutil
+
+## Setup:
+
+1. pip3 install "datanchor==1.0"
+2. Usage Example below. Note: `data` object in the example should be replaced with the response you receive from Datanchor encrypt service.
+
+```
+from app.datanchor import Datanchor
+
+def main():
+    d = Datanchor()
+    data = {
+        "data": "U2FsdGVkX1+bvTL3NjzTIMHS4it8++O33BlKmGbz1Ts=",
+        "context": "U2FsdGVkX19Tws0WtFmpHbr2C5lkeqCGvJyZ03EIZp/OKxYcFm8u4HXVQIij6QRj1IGHLKiussrr8/5qTmGjt2dJ2EbqJcs4rlX5O2wNc2X1SreCY0T+wlPM/a4/i46W",
+        "username": "U2FsdGVkX1+anPgxa0gXsi8Ka/0S0B1ttrm1qZUfeso=",
+        "key": "U2FsdGVkX18+fXxHbWIfSiqSqWisamH56m/HNq6/bWqKPuz/2PUAvGXN/RDDK16RRaQeW3djEfMPmkAOQfBvihj8uuxkvx31p7I1BwVBXbyR5t2iRs62WwnbRaN8AAVCarqak4kFYRHRss6uHUXBTN7yDxhm7SgofwBUUb6nkCshYksDCwRO0KxhZEKi9rzZDg9jA+VvDMdSSQ+FbRGPUWV4rOjN1hGDzU9M2BaGiWJLx3I+EiFOFSgjq0+bVSl297qUhH5GC4k6wj0qiih065g5MA+O7BbfkQD76xDODtftarGggk0cBi+YhqI0pS7BeJsZrJtn5kVxMtqUTuoalui4+IVz70bM8eE072BhA+c7vkLOh7RedTcTEfl8yFgbY77F1PEA8IAVIhOWEUDYPgG9ePuzOFKWM6RT6c1DrJmY/a5hjh6781SncXBs39CLusVuVDn4dGP956DiDu42minj1Xzs1/Kz9JnZmsuVaTLk2kW/uyX4uUpedx+4N6hmkjZO5Q/eMcbc2HtNgQNnYgHvWYdOC/Auv3ZuWXKMgsKUV0gLVjJMLDHHu+GCs21DxivuSOv0Vo5MTEFc4nb3RQEpPhWP8KANArB+s/g1MhCX2S+TbMGefojI3dQ2AEvrNYf5NDHrfBfR15W7CooKt/1u7HKxeieXRRWXtrEfF9+a3Do08VpU/72sRpRX6WdUAhyLz/UDSov4lZboDgeeyg=="
+    }
+
+    print(d.decrypt(data))
+
+main()
+```
+
