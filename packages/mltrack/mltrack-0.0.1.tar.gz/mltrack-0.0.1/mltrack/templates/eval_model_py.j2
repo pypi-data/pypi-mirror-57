@@ -1,0 +1,19 @@
+from settings import model_pkl, model_eval, feature_data_filepath
+import pickle
+from sklearn.metrics import log_loss
+
+
+def eval_model(model_pkl, loss_func):
+    model = pickle.load(open(model_pkl, 'rb'))
+    feature_data = pickle.load(open(feature_data_filepath, 'rb'))
+    y_test = feature_data["y_test"]
+    x_test = feature_data["x_test"]
+    
+    y_test_pred = model.predict_proba(x_test)
+
+    evaluation_output = f" \n Test set score for model {model} = {loss_func(y_true=y_test, y_pred=y_test_pred)} \n \n"
+    print(f"model evaluation completed: \n {evaluation_output}")
+    model_eval.write_text(evaluation_output)
+
+if __name__ == '__main__':
+    eval_model(model_pkl=model_pkl, loss_func=log_loss)

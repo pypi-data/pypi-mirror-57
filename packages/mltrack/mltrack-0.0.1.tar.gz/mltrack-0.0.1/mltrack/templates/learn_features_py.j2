@@ -1,0 +1,29 @@
+#Here is where you will experiment to figure out how to featurize raw input data
+#For the toy example here, we will assume that a standard scaling + PCA are sufficient for "features"
+
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+import pickle
+from pathlib import Path
+from settings import train_set_filepath, data_dir_interim, scaler_pkl, pca_pkl
+from src.features.featurizer import Featurizer
+
+
+def learn_features():
+    featurizer = Featurizer(StandardScaler(), PCA(0.95))
+    #load data from data/raw
+    train_set = pickle.load(open(train_set_filepath, 'rb'))
+    x_train_raw = train_set[0]
+    featurizer.fit_on_x_train(x_train=x_train_raw)
+    #pickle.dump(featurizer, open(str(featurizer_filepath.resolve()), 'wb'))
+    scaler_and_pca = {
+        "scaler": featurizer.scaler,
+        "pca": featurizer.pca
+    }
+
+    scaler_n_pca_filepath = data_dir_interim / 'scaler_n_pca.pkl'
+    pickle.dump(scaler_and_pca, open( scaler_n_pca_filepath , 'wb'))
+
+
+if __name__ == '__main__':
+    learn_features()
