@@ -1,0 +1,6 @@
+[console_scripts]
+netlist_to_skidl = skidl.netlist_to_skidl_main:main
+
+[gui_scripts]
+zyc = skidl.search_gui.skidl_part_footprint_search:main
+
