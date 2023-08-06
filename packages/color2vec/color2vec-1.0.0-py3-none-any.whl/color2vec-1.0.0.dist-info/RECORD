@@ -1,0 +1,12 @@
+color2vec/__init__.py,sha256=F28taDpj6CGl40lAwyFUYvg-fV3k9KdN2kwQzk1xOu4,262
+color2vec/src/RGB_to_vec.py,sha256=eyF1LC2mPSHftXEAr6HnHYPH-Ar7wEwhBp86yr8p2as,8965
+color2vec/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+color2vec/src/annoy_similarity.py,sha256=m9CH5Vo91WNyQUM2eaFE2cEr8x0-wsK5NfGni4oM_uA,2146
+color2vec/src/color2vec.py,sha256=jCpdnO4P8kRJh0zyyVidbZEqWrUae0L3LRnemOjCE-U,2431
+color2vec/src/lab.py,sha256=AwDeiLIWQ6vnD38x8AaNiJRee1uAoLv6GgHlAQrES_c,953
+color2vec/src/string_to_RGB.py,sha256=qipV9wwnyS2vlljhz5wGJUGzY64QEI5YWalI3OJrLOs,3321
+color2vec/src/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+color2vec-1.0.0.dist-info/METADATA,sha256=_9-2OlQgFBTvnO9tncoamBg0gaUxjjP9LodSbuahSHo,3191
+color2vec-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+color2vec-1.0.0.dist-info/top_level.txt,sha256=HDk_Bnni0PslTyl4ecRmTrBF6FXO3uFzbkkA1B_yG-8,10
+color2vec-1.0.0.dist-info/RECORD,,
