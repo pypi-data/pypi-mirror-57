@@ -1,0 +1,11 @@
+calcmin/__init__.py,sha256=Tn-BDRHs3723DXjZJQUfHsq42txD69wPdriuCxYTYDs,32
+calcmin/core.py,sha256=3J0f-BdAzskWY6jrL-WMafAulUYNxuCwWnhViiJbK_Y,7683
+calcmin/parameters.yml,sha256=lrtPYG18hJP7U9EGElr3ey3BJi_zzebC6wUvhLG8WZU,427
+calcmin/datasets/__init__.py,sha256=FWmDiSt0MfyRNPqRnWhQWIt4nT5ONbRr_LvQ-3tnLkk,691
+calcmin/tests/__init__.py,sha256=DKramWvKlwKn8E4PX4hoYWL7fuklNXYDazfr5BexVSs,211
+calcmin/tests/utest_calcmin.py,sha256=m7O9a1UrLgRpumQsxz4CDyjZfTETb8TSEUw_aqgoxYw,1395
+CalcMin-0.1.0.dist-info/LICENSE.txt,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+CalcMin-0.1.0.dist-info/METADATA,sha256=3dJEexM2MYZWqgquQLVlAMR0cn8--6UIZ1Mn_7UXbf0,302
+CalcMin-0.1.0.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+CalcMin-0.1.0.dist-info/top_level.txt,sha256=rBxP3mLaKcrYCbYrxqy3dQLMJMTxxadJDIdtbkEOW_E,8
+CalcMin-0.1.0.dist-info/RECORD,,

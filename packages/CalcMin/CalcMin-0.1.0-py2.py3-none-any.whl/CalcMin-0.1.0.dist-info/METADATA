@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: CalcMin
+Version: 0.1.0
+Summary: CalcMin
+Home-page: https://github.com/Data-to-Knowledge/CalcMin
+Author: Mike Kittridge
+Author-email: mullenkamp1@gmail.com
+License: Apache
+Requires-Dist: pandas
+Requires-Dist: pdsql
+Requires-Dist: hydrointerp
+Requires-Dist: pyyaml
+
+CalcMin
+
+
