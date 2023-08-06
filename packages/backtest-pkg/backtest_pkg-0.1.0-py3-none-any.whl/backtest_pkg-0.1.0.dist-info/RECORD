@@ -1,0 +1,9 @@
+backtest_pkg/__init__.py,sha256=1hXv-InwUw_YL8nR3w2dVmWsgpoY_QNepxACjQh_glQ,110
+backtest_pkg/backtest_portfolio.py,sha256=vxbUR0mHtue_mcVwW0pP6S12x7n1Q14Enplbhb9rAwQ,18516
+backtest_pkg/backtest_signal.py,sha256=OZrQfmipIIIK2hSzWidjG4IPsTCFDoYdRNZ_wOCFr3w,1379
+backtest_pkg/backtest_trading_system.py,sha256=84rM_GN_4_GF4S77rR1S4Bm57kFdQwbbFRDpEmKBeWg,2624
+backtest_pkg-0.1.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+backtest_pkg-0.1.0.dist-info/METADATA,sha256=7SBVZsI48oy6MwU24yuz5d8xIVsTBXeQiWBEPpYFZNE,1782
+backtest_pkg-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+backtest_pkg-0.1.0.dist-info/top_level.txt,sha256=M8rAHt70ZMeaCEnBMg49fXtvZ3NyCqHWqKOcZe5puJ8,13
+backtest_pkg-0.1.0.dist-info/RECORD,,
