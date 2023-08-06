@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: caspertools
+Version: 1.0
+Summary: Tools used for hidden navigation
+Home-page: https://github.com/jfqueija/caspertools
+Author: José Fº Queija
+Author-email: pepekiko@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/jfqueija/caspertools/tarball/0.1
+Description: UNKNOWN
+Keywords: hidden,navigation,tor,privoxy
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
