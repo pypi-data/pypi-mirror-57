@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: Thumbalizr
+Version: 1.0.1
+Summary: Client to interact with Thumbalizr
+Home-page: https://github.com/juliensobrier/thumbalizr-python
+Author: Julien Sobrier
+Author-email: julien@sobrier.net
+License: Apache
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+Requires-Dist: hashlib
+Requires-Dist: requests
+
+Thumbalizr version 1.0.0
+================================
+
+Thumbalizr (https://thumbalizr.com/) is a web service to easily embed live screenshots of any URL in your website. Thumbalizr has full support for Flash, JavaScript, CSS, & HTML5.
+
+You can install the library from PyPI: https://pypi.python.org/pypi/Thumbalizr
+
+The source code can be found on github at https://github.com/juliensobrier/thumbalizr-python
+
+
+
+INSTALLATION
+
+    python setup.py install
+
+
+DEPENDENCIES
+
+The following python packages are required to run thumbalizr
+
+    hashlib
+    requests
+
+
+To use Thumbalizr with a Django website, check out https://github.com/juliensobrier/thumbalizr_django
+
+EXAMPLE
+
+	from thumbalizr import Thumbalizr
+
+	thumbalizr = Thumbalizr('MY_KEY', 'SECRET')
+	# Generate a URL for the thumbnail
+	url = thumbalizr.url('https://www.google.com/', {'bwidth: 1280, 'bheight': 1024, 'width': 800});
+	print(url)
+
+	# Download the thumbnail
+	results = thumbalizr.download_wait(url, 'google.png');
+	print("%s"  % (results[0]))
+
