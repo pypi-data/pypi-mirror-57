@@ -1,0 +1,12 @@
+README.rst
+setup.py
+op_cli/__init__.py
+op_cli/main.py
+op_cli.egg-info/PKG-INFO
+op_cli.egg-info/SOURCES.txt
+op_cli.egg-info/dependency_links.txt
+op_cli.egg-info/entry_points.txt
+op_cli.egg-info/requires.txt
+op_cli.egg-info/top_level.txt
+op_cli/functions/__init__.py
+op_cli/functions/app.py
