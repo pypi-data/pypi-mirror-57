@@ -1,0 +1,468 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Plotting validation curves &mdash; geometric-smote 0.1.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/copybutton.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/geometric-smote.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/gallery.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Release History" href="../release_history.html" />
+    <link rel="prev" title="Data generation mechanism" href="plot_data_generation_mechanism.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> geometric-smote
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../test.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">Contribute</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Examples</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">General</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="plot_data_generation_mechanism.html">Data generation mechanism</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Plotting validation curves</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#low-imbalance-ratio-or-high-samples-to-features-ratio">Low Imbalance Ratio or high Samples to Features Ratio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#high-imbalance-ratio-or-low-samples-to-features-ratio">High Imbalance Ratio or low Samples to Features Ratio</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Additional Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release_history.html">Release History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">geometric-smote</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">General</a> &raquo;</li>
+        
+      <li>Plotting validation curves</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/auto_examples/plot_validation_curves.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-auto-examples-plot-validation-curves-py"><span class="std std-ref">here</span></a> to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="plotting-validation-curves">
+<span id="sphx-glr-auto-examples-plot-validation-curves-py"></span><h1>Plotting validation curves<a class="headerlink" href="#plotting-validation-curves" title="Permalink to this headline">¶</a></h1>
+<p>In this example the impact of the Geometric SMOTE’s hyperparameters is examined.
+The validation scores of a Geometric SMOTE-GBC classifier is presented for
+different values of the Geometric SMOTE’s hyperparameters.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Author: Georgios Douzas &lt;gdouzas@icloud.com&gt;</span>
+<span class="c1"># Licence: MIT</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">LinearSVC</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">validation_curve</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">make_scorer</span><span class="p">,</span> <span class="n">cohen_kappa_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">make_classification</span>
+<span class="kn">from</span> <span class="nn">imblearn.pipeline</span> <span class="kn">import</span> <span class="n">make_pipeline</span>
+<span class="kn">from</span> <span class="nn">imblearn.metrics</span> <span class="kn">import</span> <span class="n">geometric_mean_score</span>
+
+<span class="kn">from</span> <span class="nn">gsmote</span> <span class="kn">import</span> <span class="n">GeometricSMOTE</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="vm">__doc__</span><span class="p">)</span>
+
+<span class="n">RANDOM_STATE</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">SCORER</span> <span class="o">=</span> <span class="n">make_scorer</span><span class="p">(</span><span class="n">geometric_mean_score</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">generate_imbalanced_data</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">,</span> <span class="n">n_features</span><span class="p">,</span> <span class="n">n_informative</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Generate imbalanced data.&quot;&quot;&quot;</span>
+    <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">make_classification</span><span class="p">(</span>
+        <span class="n">n_classes</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">class_sep</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">weights</span><span class="o">=</span><span class="n">weights</span><span class="p">,</span>
+        <span class="n">n_informative</span><span class="o">=</span><span class="n">n_informative</span><span class="p">,</span>
+        <span class="n">n_redundant</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">flip_y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="n">n_features</span><span class="o">=</span><span class="n">n_features</span><span class="p">,</span>
+        <span class="n">n_clusters_per_class</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">n_samples</span><span class="o">=</span><span class="n">n_samples</span><span class="p">,</span>
+        <span class="n">random_state</span><span class="o">=</span><span class="n">RANDOM_STATE</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span>
+
+
+<span class="k">def</span> <span class="nf">generate_validation_curve_info</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">param_range</span><span class="p">,</span> <span class="n">param_name</span><span class="p">,</span> <span class="n">scoring</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Generate information for the validation curve.&quot;&quot;&quot;</span>
+    <span class="n">_</span><span class="p">,</span> <span class="n">test_scores</span> <span class="o">=</span> <span class="n">validation_curve</span><span class="p">(</span>
+        <span class="n">estimator</span><span class="p">,</span>
+        <span class="n">X</span><span class="p">,</span>
+        <span class="n">y</span><span class="p">,</span>
+        <span class="n">param_name</span><span class="o">=</span><span class="n">param_name</span><span class="p">,</span>
+        <span class="n">param_range</span><span class="o">=</span><span class="n">param_range</span><span class="p">,</span>
+        <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+        <span class="n">scoring</span><span class="o">=</span><span class="n">scoring</span><span class="p">,</span>
+        <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">test_scores_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">test_scores</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">test_scores_std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">test_scores</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">test_scores_mean</span><span class="p">,</span> <span class="n">test_scores_std</span><span class="p">,</span> <span class="n">param_range</span>
+
+
+<span class="k">def</span> <span class="nf">plot_validation_curve</span><span class="p">(</span><span class="n">validation_curve_info</span><span class="p">,</span> <span class="n">scoring_name</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Plot the validation curve.&quot;&quot;&quot;</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">test_scores_mean</span><span class="p">,</span> <span class="n">test_scores_std</span><span class="p">,</span> <span class="n">param_range</span> <span class="o">=</span> <span class="n">validation_curve_info</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">param_range</span><span class="p">,</span> <span class="n">test_scores_mean</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span>
+        <span class="n">param_range</span><span class="p">,</span>
+        <span class="n">test_scores_mean</span> <span class="o">+</span> <span class="n">test_scores_std</span><span class="p">,</span>
+        <span class="n">test_scores_mean</span> <span class="o">-</span> <span class="n">test_scores_std</span><span class="p">,</span>
+        <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">idx_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">test_scores_mean</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">param_range</span><span class="p">[</span><span class="n">idx_max</span><span class="p">],</span> <span class="n">test_scores_mean</span><span class="p">[</span><span class="n">idx_max</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="n">scoring_name</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">get_xaxis</span><span class="p">()</span><span class="o">.</span><span class="n">tick_bottom</span><span class="p">()</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">tick_left</span><span class="p">()</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;left&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_position</span><span class="p">((</span><span class="s1">&#39;outward&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;bottom&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_position</span><span class="p">((</span><span class="s1">&#39;outward&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="section" id="low-imbalance-ratio-or-high-samples-to-features-ratio">
+<h2>Low Imbalance Ratio or high Samples to Features Ratio<a class="headerlink" href="#low-imbalance-ratio-or-high-samples-to-features-ratio" title="Permalink to this headline">¶</a></h2>
+<p>When <img class="math" src="../_images/math/b696b7b11badadf0e4d0caba6d267e1301dc318f.png" alt="\text{IR} = \frac{\text{\# majority samples}}{\text{\# minority
+samples}}"/> (Imbalance Ratio) is low or <img class="math" src="../_images/math/71a60eb0a3255affe69dba4ebd67dad970cd2aec.png" alt="\text{SFR} = \frac{\text{\#
+samples}}{\text{\# features}}"/> (Samples to Features Ratio) is high then the
+minority selection strategy and higher absolute values of the truncation and
+deformation factors dominate as optimal hyperparameters.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">generate_imbalanced_data</span><span class="p">([</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">],</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">gsmote_gbc</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span>
+    <span class="n">GeometricSMOTE</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="n">RANDOM_STATE</span><span class="p">),</span>
+    <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="n">RANDOM_STATE</span><span class="p">),</span>
+<span class="p">)</span>
+
+<span class="n">scoring_name</span> <span class="o">=</span> <span class="s1">&#39;Geometric Mean Score&#39;</span>
+<span class="n">validation_curve_info</span> <span class="o">=</span> <span class="n">generate_validation_curve_info</span><span class="p">(</span>
+    <span class="n">gsmote_gbc</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;geometricsmote__k_neighbors&quot;</span><span class="p">,</span> <span class="n">SCORER</span>
+<span class="p">)</span>
+<span class="n">plot_validation_curve</span><span class="p">(</span><span class="n">validation_curve_info</span><span class="p">,</span> <span class="n">scoring_name</span><span class="p">,</span> <span class="s1">&#39;K Neighbors&#39;</span><span class="p">)</span>
+
+<span class="n">validation_curve_info</span> <span class="o">=</span> <span class="n">generate_validation_curve_info</span><span class="p">(</span>
+    <span class="n">gsmote_gbc</span><span class="p">,</span>
+    <span class="n">X</span><span class="p">,</span>
+    <span class="n">y</span><span class="p">,</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">9</span><span class="p">),</span>
+    <span class="s2">&quot;geometricsmote__truncation_factor&quot;</span><span class="p">,</span>
+    <span class="n">SCORER</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">plot_validation_curve</span><span class="p">(</span><span class="n">validation_curve_info</span><span class="p">,</span> <span class="n">scoring_name</span><span class="p">,</span> <span class="s1">&#39;Truncation Factor&#39;</span><span class="p">)</span>
+
+<span class="n">validation_curve_info</span> <span class="o">=</span> <span class="n">generate_validation_curve_info</span><span class="p">(</span>
+    <span class="n">gsmote_gbc</span><span class="p">,</span>
+    <span class="n">X</span><span class="p">,</span>
+    <span class="n">y</span><span class="p">,</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="s2">&quot;geometricsmote__deformation_factor&quot;</span><span class="p">,</span>
+    <span class="n">SCORER</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">plot_validation_curve</span><span class="p">(</span><span class="n">validation_curve_info</span><span class="p">,</span> <span class="n">scoring_name</span><span class="p">,</span> <span class="s1">&#39;Deformation Factor&#39;</span><span class="p">)</span>
+
+<span class="n">validation_curve_info</span> <span class="o">=</span> <span class="n">generate_validation_curve_info</span><span class="p">(</span>
+    <span class="n">gsmote_gbc</span><span class="p">,</span>
+    <span class="n">X</span><span class="p">,</span>
+    <span class="n">y</span><span class="p">,</span>
+    <span class="p">[</span><span class="s1">&#39;minority&#39;</span><span class="p">,</span> <span class="s1">&#39;majority&#39;</span><span class="p">,</span> <span class="s1">&#39;combined&#39;</span><span class="p">],</span>
+    <span class="s2">&quot;geometricsmote__selection_strategy&quot;</span><span class="p">,</span>
+    <span class="n">SCORER</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">plot_validation_curve</span><span class="p">(</span><span class="n">validation_curve_info</span><span class="p">,</span> <span class="n">scoring_name</span><span class="p">,</span> <span class="s1">&#39;Selection Strategy&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="sphx-glr-horizontal">
+<li><img alt="../_images/sphx_glr_plot_validation_curves_001.png" class="sphx-glr-multi-img" src="../_images/sphx_glr_plot_validation_curves_001.png" />
+</li>
+<li><img alt="../_images/sphx_glr_plot_validation_curves_002.png" class="sphx-glr-multi-img" src="../_images/sphx_glr_plot_validation_curves_002.png" />
+</li>
+<li><img alt="../_images/sphx_glr_plot_validation_curves_003.png" class="sphx-glr-multi-img" src="../_images/sphx_glr_plot_validation_curves_003.png" />
+</li>
+<li><img alt="../_images/sphx_glr_plot_validation_curves_004.png" class="sphx-glr-multi-img" src="../_images/sphx_glr_plot_validation_curves_004.png" />
+</li>
+</ul>
+</div>
+<div class="section" id="high-imbalance-ratio-or-low-samples-to-features-ratio">
+<h2>High Imbalance Ratio or low Samples to Features Ratio<a class="headerlink" href="#high-imbalance-ratio-or-low-samples-to-features-ratio" title="Permalink to this headline">¶</a></h2>
+<p>When <img class="math" src="../_images/math/aa05d71dfd1abe7061ed5595013e948675118fbb.png" alt="\text{IR}"/> is high or <img class="math" src="../_images/math/2a8f7e2a72b35858b9f1bc4ae9f0378616ea1e14.png" alt="\text{SFR}"/> is low then the majority
+or combined selection strategies and lower absolute values of the truncation
+and deformation factors dominate as optimal hyperparameters.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">generate_imbalanced_data</span><span class="p">([</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">],</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+<span class="n">gsmote_gbc</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span>
+    <span class="n">GeometricSMOTE</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="n">RANDOM_STATE</span><span class="p">),</span>
+    <span class="n">LinearSVC</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="n">RANDOM_STATE</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mf">1e5</span><span class="p">),</span>
+<span class="p">)</span>
+
+<span class="n">scoring_name</span> <span class="o">=</span> <span class="s1">&#39;Geometric Mean Score&#39;</span>
+<span class="n">validation_curve_info</span> <span class="o">=</span> <span class="n">generate_validation_curve_info</span><span class="p">(</span>
+    <span class="n">gsmote_gbc</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;geometricsmote__k_neighbors&quot;</span><span class="p">,</span> <span class="n">SCORER</span>
+<span class="p">)</span>
+<span class="n">plot_validation_curve</span><span class="p">(</span><span class="n">validation_curve_info</span><span class="p">,</span> <span class="n">scoring_name</span><span class="p">,</span> <span class="s1">&#39;K Neighbors&#39;</span><span class="p">)</span>
+
+<span class="n">validation_curve_info</span> <span class="o">=</span> <span class="n">generate_validation_curve_info</span><span class="p">(</span>
+    <span class="n">gsmote_gbc</span><span class="p">,</span>
+    <span class="n">X</span><span class="p">,</span>
+    <span class="n">y</span><span class="p">,</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">9</span><span class="p">),</span>
+    <span class="s2">&quot;geometricsmote__truncation_factor&quot;</span><span class="p">,</span>
+    <span class="n">SCORER</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">plot_validation_curve</span><span class="p">(</span><span class="n">validation_curve_info</span><span class="p">,</span> <span class="n">scoring_name</span><span class="p">,</span> <span class="s1">&#39;Truncation Factor&#39;</span><span class="p">)</span>
+
+<span class="n">validation_curve_info</span> <span class="o">=</span> <span class="n">generate_validation_curve_info</span><span class="p">(</span>
+    <span class="n">gsmote_gbc</span><span class="p">,</span>
+    <span class="n">X</span><span class="p">,</span>
+    <span class="n">y</span><span class="p">,</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+    <span class="s2">&quot;geometricsmote__deformation_factor&quot;</span><span class="p">,</span>
+    <span class="n">SCORER</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">plot_validation_curve</span><span class="p">(</span><span class="n">validation_curve_info</span><span class="p">,</span> <span class="n">scoring_name</span><span class="p">,</span> <span class="s1">&#39;Deformation Factor&#39;</span><span class="p">)</span>
+
+<span class="n">validation_curve_info</span> <span class="o">=</span> <span class="n">generate_validation_curve_info</span><span class="p">(</span>
+    <span class="n">gsmote_gbc</span><span class="p">,</span>
+    <span class="n">X</span><span class="p">,</span>
+    <span class="n">y</span><span class="p">,</span>
+    <span class="p">[</span><span class="s1">&#39;minority&#39;</span><span class="p">,</span> <span class="s1">&#39;majority&#39;</span><span class="p">,</span> <span class="s1">&#39;combined&#39;</span><span class="p">],</span>
+    <span class="s2">&quot;geometricsmote__selection_strategy&quot;</span><span class="p">,</span>
+    <span class="n">SCORER</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">plot_validation_curve</span><span class="p">(</span><span class="n">validation_curve_info</span><span class="p">,</span> <span class="n">scoring_name</span><span class="p">,</span> <span class="s1">&#39;Selection Strategy&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-pytb notranslate"><div class="highlight"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;/Users/gdouzas/Projects/algowit/geometric-smote/.venv/lib/python3.7/site-packages/sphinx_gallery/gen_rst.py&quot;</span>, line <span class="m">440</span>, in <span class="n">_memory_usage</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="n">func</span><span class="p">()</span>
+  File <span class="nb">&quot;/Users/gdouzas/Projects/algowit/geometric-smote/.venv/lib/python3.7/site-packages/sphinx_gallery/gen_rst.py&quot;</span>, line <span class="m">425</span>, in <span class="n">__call__</span>
+    <span class="n">exec</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">code</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">globals</span><span class="p">)</span>
+  File <span class="nb">&quot;/Users/gdouzas/Projects/algowit/geometric-smote/examples/plot_validation_curves.py&quot;</span>, line <span class="m">193</span>, in <span class="n">&lt;module&gt;</span>
+    <span class="n">SCORER</span><span class="p">,</span>
+  File <span class="nb">&quot;/Users/gdouzas/Projects/algowit/geometric-smote/examples/plot_validation_curves.py&quot;</span>, line <span class="m">61</span>, in <span class="n">generate_validation_curve_info</span>
+    <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
+  File <span class="nb">&quot;/Users/gdouzas/Projects/algowit/geometric-smote/.venv/lib/python3.7/site-packages/sklearn/model_selection/_validation.py&quot;</span>, line <span class="m">1483</span>, in <span class="n">validation_curve</span>
+    <span class="k">for</span> <span class="n">train</span><span class="p">,</span> <span class="n">test</span> <span class="ow">in</span> <span class="n">cv</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">groups</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">param_range</span><span class="p">)</span>
+  File <span class="nb">&quot;/Users/gdouzas/Projects/algowit/geometric-smote/.venv/lib/python3.7/site-packages/joblib/parallel.py&quot;</span>, line <span class="m">1016</span>, in <span class="n">__call__</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">retrieve</span><span class="p">()</span>
+  File <span class="nb">&quot;/Users/gdouzas/Projects/algowit/geometric-smote/.venv/lib/python3.7/site-packages/joblib/parallel.py&quot;</span>, line <span class="m">908</span>, in <span class="n">retrieve</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_output</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">job</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">timeout</span><span class="p">))</span>
+  File <span class="nb">&quot;/Users/gdouzas/Projects/algowit/geometric-smote/.venv/lib/python3.7/site-packages/joblib/_parallel_backends.py&quot;</span>, line <span class="m">554</span>, in <span class="n">wrap_future_result</span>
+    <span class="k">return</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">(</span><span class="n">timeout</span><span class="o">=</span><span class="n">timeout</span><span class="p">)</span>
+  File <span class="nb">&quot;/Users/gdouzas/.pyenv/versions/3.7.5/lib/python3.7/concurrent/futures/_base.py&quot;</span>, line <span class="m">435</span>, in <span class="n">result</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get_result</span><span class="p">()</span>
+  File <span class="nb">&quot;/Users/gdouzas/.pyenv/versions/3.7.5/lib/python3.7/concurrent/futures/_base.py&quot;</span>, line <span class="m">384</span>, in <span class="n">__get_result</span>
+    <span class="k">raise</span> <span class="bp">self</span><span class="o">.</span><span class="n">_exception</span>
+<span class="gr">joblib.externals.loky.process_executor.TerminatedWorkerError</span>: <span class="n">A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker. The exit codes of the workers are {SIGABRT(-6)}</span>
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  26.101 seconds)</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-plot-validation-curves-py">
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/c4591c6f522b3e75cff5085f76fa3868/plot_validation_curves.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_validation_curves.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/4151619efd649e76e73d361c50155243/plot_validation_curves.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_validation_curves.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../release_history.html" class="btn btn-neutral float-right" title="Release History" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="plot_data_generation_mechanism.html" class="btn btn-neutral float-left" title="Data generation mechanism" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Georgios Douzas
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
