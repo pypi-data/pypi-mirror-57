@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+rancher.py
+requirements.txt
+setup.py
+rancher_client_python_3p.egg-info/PKG-INFO
+rancher_client_python_3p.egg-info/SOURCES.txt
+rancher_client_python_3p.egg-info/dependency_links.txt
+rancher_client_python_3p.egg-info/requires.txt
+rancher_client_python_3p.egg-info/top_level.txt
