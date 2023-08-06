@@ -1,0 +1,7 @@
+autodiff/AD.py,sha256=2mR2-kTSRjzk3ydzMUsLhz6NYh6Z5Y0kIUd2sD2YWLY,10249
+autodiff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autodiff/reverse.py,sha256=WtJAchvWFjCGuDZQKzhbhkQu_j4iufmM9OTxCh4voKQ,23756
+GuruDiff-1.0.0.dist-info/METADATA,sha256=ORFUuyZIQU-PwgYal8MzTIglVMzlodgyHbizHHSEIjs,1167
+GuruDiff-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+GuruDiff-1.0.0.dist-info/top_level.txt,sha256=MwixkEq9H4SMj4_Smwm-xH3ZhV7tnVAhBff-R-LEHJk,9
+GuruDiff-1.0.0.dist-info/RECORD,,
