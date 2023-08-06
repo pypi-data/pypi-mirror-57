@@ -1,0 +1,11 @@
+passwd_checker/__init__.py,sha256=EHSYQzzJIb6HzUGAPkmvvXLtbRFHA7tVwk65DtbOavE,42
+passwd_checker/checker.py,sha256=c_tBv6s8icYHQuqYhwW52xiwhiIaPpHzlO4rREPRBIM,1341
+passwd_checker/data/common-credentials-100k.txt,sha256=hPnwHaMyO0HNwDD4n3-rZb92p-DVJlrKu3FcKzeV8Ug,781896
+passwd_checker/data/common-credentials-10k.txt,sha256=Anng59hU3EBGDbGKfPLgn7Zhg33Arn07jcbng7pdhLQ,76508
+passwd_checker/data/common-credentials-1M.txt,sha256=6sYyOEKzJh2g70wYDI4j9NBWUi6pfCkluGh_RTtAor4,8529110
+passwd_checker/data/common-credentials-1k.txt,sha256=lwQBRrhQ-qu7datxAsJsOtDP8QWdcotErsQqvMI0-Tc,7407
+passwd_checker-0.0.1.dist-info/LICENSE,sha256=GRPMe_b9O9T464VN6-8r3mYnXX5_XA35bQZNfZ_rvu0,1062
+passwd_checker-0.0.1.dist-info/METADATA,sha256=obEKitXHxhuWCV1lnZnbgjaDTNod7K5_Ox4mhqHubHI,602
+passwd_checker-0.0.1.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+passwd_checker-0.0.1.dist-info/top_level.txt,sha256=4tQTuhHZo6F3jPph43vUaDzr7AhQSsJ9hJDa9J-Kqpc,15
+passwd_checker-0.0.1.dist-info/RECORD,,
