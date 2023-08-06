@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: BRCurrencyPy
+Version: 0.1
+Summary: Um conversor de moedas e criptmoedas para a moeda brasileira. 🇧🇷
+Home-page: https://github.com/tsukuuyomi/BRCurrencyPy
+Author: tsukuuyomi
+Author-email: maykeguedes009@hotmail.com
+License: MIT
+Keywords: python,currency,money,converter,coin,bitcoin,cryptocurrency
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: bs4
+Requires-Dist: requests
+
+UNKNOWN
+
+
