@@ -1,0 +1,7 @@
+setup.py
+edssdka/__init__.py
+edssdka/help.py
+edssdka.egg-info/PKG-INFO
+edssdka.egg-info/SOURCES.txt
+edssdka.egg-info/dependency_links.txt
+edssdka.egg-info/top_level.txt
