@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: appcenter_tool
+Version: 0.3
+Summary: Helper to trigger appcenterbuild
+Home-page: https://bitbucket.org/celadonteam/appcenter-build
+Author: Celadon Developers
+Author-email: opensource@celadon.ae
+License: MIT
+Description: # Small package that helps you to trigger app center builds from CLI
+        
+        ## Usage
+        
+        ```
+        appcenter_tool $API_KEY $BRANCH $PROJECT1 $PROJECT2  ... $PROJECTN
+        ```
+        
+Platform: any
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

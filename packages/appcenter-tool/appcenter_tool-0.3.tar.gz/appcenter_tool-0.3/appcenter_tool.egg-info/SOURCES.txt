@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+appcenter_tool/__init__.py
+appcenter_tool/__main__.py
+appcenter_tool/utils.py
+appcenter_tool.egg-info/PKG-INFO
+appcenter_tool.egg-info/SOURCES.txt
+appcenter_tool.egg-info/dependency_links.txt
+appcenter_tool.egg-info/entry_points.txt
+appcenter_tool.egg-info/not-zip-safe
+appcenter_tool.egg-info/top_level.txt
