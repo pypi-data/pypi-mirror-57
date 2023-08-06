@@ -1,0 +1,17 @@
+pysatMagVect/__init__.py,sha256=fwGOplFtB9ky3BvECYMVtijcs-Vx9ohDu8yviqRvFUQ,398
+pysatMagVect/_core.py,sha256=na_AWwTurWTDODQRQcegwX23DrnCVwx7fNXqGipKmHQ,61815
+pysatMagVect/igrf.cpython-37m-darwin.so,sha256=QkNA4QqCaCdxfI5RtAzo63PR0aTYtTmQD2NXCYUC830,76520
+pysatMagVect/satellite.py,sha256=81dsgyr1KZ_mEJ1QspsWT6H6vVJQI7zbP0mKgU0HF_g,42552
+pysatMagVect/version.txt,sha256=QLjrQACpE6d5EJBTXykdPTaYdBYqie88nj1OiHobnnk,6
+pysatMagVect/.dylibs/libgcc_s.1.dylib,sha256=ZaZqtS461JFE_hat2R8T1c2Za9kAfj2zuoj2zl2bU7o,255704
+pysatMagVect/.dylibs/libgfortran.4.dylib,sha256=DZzHnGCq4s7Vu9QfjK7GxehpyuIV0dqFfdxl8O0pq0M,2104676
+pysatMagVect/.dylibs/libquadmath.0.dylib,sha256=wZuuAJaIJLRM98mJY93damPywqsCG2vl288K4-Uzew4,285336
+pysatMagVect/igrf.cpython-37m-darwin.so.dSYM/Contents/Info.plist,sha256=pFBJRGw875lW-5W8GY-c0G3aYQGwiXOpvzSuci-R6Hg,655
+pysatMagVect/igrf.cpython-37m-darwin.so.dSYM/Contents/Resources/DWARF/igrf.cpython-37m-darwin.so,sha256=zNkjmxVY800YeJelcWOqwO0hjjXbu3LV3tthsmJv7jM,80629
+pysatMagVect/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysatMagVect/tests/test_core.py,sha256=YF3Yuppmg0hzQ8-jdd3uiQBU8nY8NwZYIi2FukCXmPs,117115
+pysatMagVect-0.4.0.dist-info/LICENSE,sha256=krOhprkyLO4wp-PSrUUp08xG7lav2sozR09MIxP8PxE,1517
+pysatMagVect-0.4.0.dist-info/METADATA,sha256=ebO9kCFVgZEEKuW1R7_5kNbLGU9n_IXzM2l7aVK6t_I,515
+pysatMagVect-0.4.0.dist-info/RECORD,,
+pysatMagVect-0.4.0.dist-info/top_level.txt,sha256=owp2qY9VtNgYMZEy_YUKGiAdF8C-Gdeue2ieTlqmvUU,13
+pysatMagVect-0.4.0.dist-info/WHEEL,sha256=hfI5ToU1-GTWSi2sLLmwv978lonZPoEq3ZF3oyaHTiY,110
