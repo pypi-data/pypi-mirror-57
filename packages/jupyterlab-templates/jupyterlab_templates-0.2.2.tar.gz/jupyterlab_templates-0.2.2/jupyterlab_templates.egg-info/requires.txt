@@ -1,0 +1,9 @@
+jupyterlab>=1.0.0
+
+[dev]
+autopep8
+pytest
+pytest-cov>=2.6.1
+flake8
+bumpversion
+mock
