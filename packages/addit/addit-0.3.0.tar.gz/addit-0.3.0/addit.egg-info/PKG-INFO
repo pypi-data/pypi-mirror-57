@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: addit
+Version: 0.3.0
+Summary: Instant add .gitignore file via the command line
+Home-page: https://github.com/nutshellfool/addit
+Author: Richard Li
+Author-email: lirui.sep@gmail.com
+Maintainer: Richard Li
+Maintainer-email: lirui.sep@gmail.com
+License: MIT
+Description: Add the .gitignore file via command line
+Keywords: addit help console command line gitignore
+Platform: UNKNOWN
+Requires-Python: >=3.5
