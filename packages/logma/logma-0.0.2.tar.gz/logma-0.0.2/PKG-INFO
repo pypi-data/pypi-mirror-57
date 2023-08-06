@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: logma
+Version: 0.0.2
+Summary: defaults for structlog
+Home-page: https://github.com/peakiq/logma
+Author: peakiq
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: # logma
+        
+        future place of great logging
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
