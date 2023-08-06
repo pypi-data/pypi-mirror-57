@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+branchcustomization = mkdocs_branchcustomization_plugin.plugin:BranchPlugin
+
