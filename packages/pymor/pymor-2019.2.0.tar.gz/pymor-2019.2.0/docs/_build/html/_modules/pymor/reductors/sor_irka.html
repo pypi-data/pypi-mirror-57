@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>pymor.reductors.sor_irka &#8212; pyMOR v2019.2rc0+680.g9bf3f73a.dirty Manual</title>
+    <link rel="stylesheet" href="../../../_static/pymor.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyMOR v2019.2rc0+680.g9bf3f73a.dirty Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for pymor.reductors.sor_irka</h1><div class="highlight"><pre>
+<span></span><span class="c1"># This file is part of the pyMOR project (http://www.pymor.org).</span>
+<span class="c1"># Copyright 2013-2019 pyMOR developers and contributors. All rights reserved.</span>
+<span class="c1"># License: BSD 2-Clause License (http://opensource.org/licenses/BSD-2-Clause)</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">pymor.core.interfaces</span> <span class="k">import</span> <span class="n">BasicInterface</span>
+<span class="kn">from</span> <span class="nn">pymor.models.iosys</span> <span class="k">import</span> <span class="n">SecondOrderModel</span>
+<span class="kn">from</span> <span class="nn">pymor.reductors.interpolation</span> <span class="k">import</span> <span class="n">SOBHIReductor</span>
+<span class="kn">from</span> <span class="nn">pymor.reductors.h2</span> <span class="k">import</span> <span class="n">IRKAReductor</span><span class="p">,</span> <span class="n">_poles_and_tangential_directions</span><span class="p">,</span> <span class="n">_convergence_criterion</span>
+
+
+<div class="viewcode-block" id="SORIRKAReductor"><a class="viewcode-back" href="../../../generated/pymor.reductors.html#pymor.reductors.sor_irka.SORIRKAReductor">[docs]</a><span class="k">class</span> <span class="nc">SORIRKAReductor</span><span class="p">(</span><span class="n">BasicInterface</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;SOR-IRKA reductor.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    fom</span>
+<span class="sd">        The full-order |SecondOrderModel| to reduce.</span>
+<span class="sd">    mu</span>
+<span class="sd">        |Parameter|.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fom</span><span class="p">,</span> <span class="n">mu</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">fom</span><span class="p">,</span> <span class="n">SecondOrderModel</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fom</span> <span class="o">=</span> <span class="n">fom</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mu</span> <span class="o">=</span> <span class="n">fom</span><span class="o">.</span><span class="n">parse_parameter</span><span class="p">(</span><span class="n">mu</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">V</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">W</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pg_reductor</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">conv_crit</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sigmas</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">R</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">L</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">errors</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="SORIRKAReductor.reduce"><a class="viewcode-back" href="../../../generated/pymor.reductors.html#pymor.reductors.sor_irka.SORIRKAReductor.reduce">[docs]</a>    <span class="k">def</span> <span class="nf">reduce</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">rom0</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">,</span> <span class="n">maxit</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">num_prev</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+               <span class="n">force_sigma_in_rhp</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;orth&#39;</span><span class="p">,</span> <span class="n">conv_crit</span><span class="o">=</span><span class="s1">&#39;sigma&#39;</span><span class="p">,</span> <span class="n">compute_errors</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+               <span class="n">irka_options</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Reduce using SOR-IRKA.</span>
+
+<span class="sd">        It uses IRKA as the intermediate reductor, to reduce from 2r to</span>
+<span class="sd">        r poles.</span>
+<span class="sd">        See Section 5.3.2 in [W12]_.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        r</span>
+<span class="sd">            Order of the reduced order model.</span>
+<span class="sd">        sigma</span>
+<span class="sd">            Initial interpolation points (closed under conjugation).</span>
+
+<span class="sd">            If `None`, interpolation points are log-spaced between 0.1</span>
+<span class="sd">            and 10. If `sigma` is an `int`, it is used as a seed to</span>
+<span class="sd">            generate it randomly. Otherwise, it needs to be a</span>
+<span class="sd">            one-dimensional array-like of length `r`.</span>
+
+<span class="sd">            `sigma` and `rom0` cannot both be not `None`.</span>
+<span class="sd">        b</span>
+<span class="sd">            Initial right tangential directions.</span>
+
+<span class="sd">            If `None`, if is chosen as all ones. If `b` is an `int`, it</span>
+<span class="sd">            is used as a seed to generate it randomly. Otherwise, it</span>
+<span class="sd">            needs to be a |VectorArray| of length `r` from `fom.B.source`.</span>
+
+<span class="sd">            `b` and `rom0` cannot both be not `None`.</span>
+<span class="sd">        c</span>
+<span class="sd">            Initial left tangential directions.</span>
+
+<span class="sd">            If `None`, if is chosen as all ones. If `c` is an `int`, it</span>
+<span class="sd">            is used as a seed to generate it randomly. Otherwise, it</span>
+<span class="sd">            needs to be a |VectorArray| of length `r` from `fom.Cp.range`.</span>
+
+<span class="sd">            `c` and `rom0` cannot both be not `None`.</span>
+<span class="sd">        rom0</span>
+<span class="sd">            Initial reduced order model.</span>
+
+<span class="sd">            If `None`, then `sigma`, `b`, and `c` are used. Otherwise,</span>
+<span class="sd">            it needs to be an |LTIModel| of order `r` and it is used to</span>
+<span class="sd">            construct `sigma`, `b`, and `c`.</span>
+<span class="sd">        tol</span>
+<span class="sd">            Tolerance for the convergence criterion.</span>
+<span class="sd">        maxit</span>
+<span class="sd">            Maximum number of iterations.</span>
+<span class="sd">        num_prev</span>
+<span class="sd">            Number of previous iterations to compare the current</span>
+<span class="sd">            iteration to. Larger number can avoid occasional cyclic</span>
+<span class="sd">            behavior of IRKA.</span>
+<span class="sd">        force_sigma_in_rhp</span>
+<span class="sd">            If `False`, new interpolation are reflections of the current</span>
+<span class="sd">            reduced order model&#39;s poles. Otherwise, only the poles in</span>
+<span class="sd">            the left half-plane are reflected.</span>
+<span class="sd">        projection</span>
+<span class="sd">            Projection method:</span>
+
+<span class="sd">            - `&#39;orth&#39;`: projection matrices are orthogonalized with</span>
+<span class="sd">              respect to the Euclidean inner product</span>
+<span class="sd">            - `&#39;biorth&#39;`: projection matrices are biorthogolized with</span>
+<span class="sd">              respect to the E product</span>
+<span class="sd">        conv_crit</span>
+<span class="sd">            Convergence criterion:</span>
+
+<span class="sd">            - `&#39;sigma&#39;`: relative change in interpolation points</span>
+<span class="sd">            - `&#39;h2&#39;`: relative :math:`\mathcal{H}_2` distance of</span>
+<span class="sd">              reduced-order models</span>
+<span class="sd">        compute_errors</span>
+<span class="sd">            Should the relative :math:`\mathcal{H}_2`-errors of</span>
+<span class="sd">            intermediate reduced order models be computed.</span>
+
+<span class="sd">            .. warning::</span>
+<span class="sd">                Computing :math:`\mathcal{H}_2`-errors is expensive. Use</span>
+<span class="sd">                this option only if necessary.</span>
+<span class="sd">        irka_options</span>
+<span class="sd">            Dict of options for IRKAReductor.reduce.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        rom</span>
+<span class="sd">            Reduced-order |SecondOrderModel|.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">fom</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fom</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">fom</span><span class="o">.</span><span class="n">cont_time</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+        <span class="k">assert</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="n">r</span> <span class="o">&lt;</span> <span class="n">fom</span><span class="o">.</span><span class="n">order</span>
+        <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">num_prev</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">and</span> <span class="n">num_prev</span> <span class="o">&gt;=</span> <span class="mi">1</span>
+        <span class="k">assert</span> <span class="n">projection</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;orth&#39;</span><span class="p">,</span> <span class="s1">&#39;biorth&#39;</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">conv_crit</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;sigma&#39;</span><span class="p">,</span> <span class="s1">&#39;h2&#39;</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">irka_options</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">irka_options</span><span class="p">,</span> <span class="nb">dict</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">irka_options</span><span class="p">:</span>
+            <span class="n">irka_options</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="c1"># initial interpolation points and tangential directions</span>
+        <span class="k">assert</span> <span class="n">sigma</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">sigma</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">sigma</span><span class="p">)</span> <span class="o">==</span> <span class="n">r</span>
+        <span class="k">assert</span> <span class="n">b</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">or</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">fom</span><span class="o">.</span><span class="n">B</span><span class="o">.</span><span class="n">source</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">==</span> <span class="n">r</span>
+        <span class="k">assert</span> <span class="n">c</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">or</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">fom</span><span class="o">.</span><span class="n">Cp</span><span class="o">.</span><span class="n">range</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">==</span> <span class="n">r</span>
+        <span class="k">assert</span> <span class="p">(</span><span class="n">rom0</span> <span class="ow">is</span> <span class="kc">None</span>
+                <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">rom0</span><span class="p">,</span> <span class="n">SecondOrderModel</span><span class="p">)</span>
+                <span class="ow">and</span> <span class="n">rom0</span><span class="o">.</span><span class="n">order</span> <span class="o">==</span> <span class="n">r</span> <span class="ow">and</span> <span class="n">rom0</span><span class="o">.</span><span class="n">B</span><span class="o">.</span><span class="n">source</span> <span class="o">==</span> <span class="n">fom</span><span class="o">.</span><span class="n">B</span><span class="o">.</span><span class="n">source</span> <span class="ow">and</span> <span class="n">rom0</span><span class="o">.</span><span class="n">Cp</span><span class="o">.</span><span class="n">range</span> <span class="o">==</span> <span class="n">fom</span><span class="o">.</span><span class="n">Cp</span><span class="o">.</span><span class="n">range</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">sigma</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">rom0</span> <span class="ow">is</span> <span class="kc">None</span>
+        <span class="k">assert</span> <span class="n">b</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">rom0</span> <span class="ow">is</span> <span class="kc">None</span>
+        <span class="k">assert</span> <span class="n">c</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">rom0</span> <span class="ow">is</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">rom0</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">block</span><span class="p">(</span><span class="s1">&#39;Intermediate reduction ...&#39;</span><span class="p">):</span>
+                <span class="n">irka_reductor</span> <span class="o">=</span> <span class="n">IRKAReductor</span><span class="p">(</span><span class="n">rom0</span><span class="o">.</span><span class="n">to_lti</span><span class="p">())</span>
+                <span class="n">rom_r</span> <span class="o">=</span> <span class="n">irka_reductor</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="o">**</span><span class="n">irka_options</span><span class="p">)</span>
+            <span class="n">poles</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">_poles_and_tangential_directions</span><span class="p">(</span><span class="n">rom_r</span><span class="p">)</span>
+            <span class="n">sigma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">poles</span><span class="o">.</span><span class="n">real</span><span class="p">)</span> <span class="o">+</span> <span class="n">poles</span><span class="o">.</span><span class="n">imag</span> <span class="o">*</span> <span class="mi">1</span><span class="n">j</span> <span class="k">if</span> <span class="n">force_sigma_in_rhp</span> <span class="k">else</span> <span class="o">-</span><span class="n">poles</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">sigma</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">sigma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">sigma</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+                <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">sigma</span><span class="p">)</span>
+                <span class="n">sigma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">r</span><span class="p">))</span>
+            <span class="k">if</span> <span class="n">b</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">b</span> <span class="o">=</span> <span class="n">fom</span><span class="o">.</span><span class="n">B</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+                <span class="n">b</span> <span class="o">=</span> <span class="n">fom</span><span class="o">.</span><span class="n">B</span><span class="o">.</span><span class="n">source</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">distribution</span><span class="o">=</span><span class="s1">&#39;normal&#39;</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="n">b</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">c</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">c</span> <span class="o">=</span> <span class="n">fom</span><span class="o">.</span><span class="n">Cp</span><span class="o">.</span><span class="n">range</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+                <span class="n">c</span> <span class="o">=</span> <span class="n">fom</span><span class="o">.</span><span class="n">Cp</span><span class="o">.</span><span class="n">range</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">distribution</span><span class="o">=</span><span class="s1">&#39;normal&#39;</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="n">c</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Starting SOR-IRKA&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">conv_crit</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sigmas</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">sigma</span><span class="p">)]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">R</span> <span class="o">=</span> <span class="p">[</span><span class="n">b</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">errors</span> <span class="o">=</span> <span class="p">[]</span> <span class="k">if</span> <span class="n">compute_errors</span> <span class="k">else</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_pg_reductor</span> <span class="o">=</span> <span class="n">SOBHIReductor</span><span class="p">(</span><span class="n">fom</span><span class="p">,</span> <span class="n">mu</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">mu</span><span class="p">)</span>
+        <span class="c1"># main loop</span>
+        <span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">maxit</span><span class="p">):</span>
+            <span class="c1"># interpolatory reduced order model</span>
+            <span class="n">rom</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pg_reductor</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="n">sigma</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="n">projection</span><span class="p">)</span>
+
+            <span class="c1"># reduction to a system with r poles</span>
+            <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">block</span><span class="p">(</span><span class="s1">&#39;Intermediate reduction ...&#39;</span><span class="p">):</span>
+                <span class="n">irka_reductor</span> <span class="o">=</span> <span class="n">IRKAReductor</span><span class="p">(</span><span class="n">rom</span><span class="o">.</span><span class="n">to_lti</span><span class="p">())</span>
+                <span class="n">rom_r</span> <span class="o">=</span> <span class="n">irka_reductor</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="o">**</span><span class="n">irka_options</span><span class="p">)</span>
+
+            <span class="c1"># new interpolation points and tangential directions</span>
+            <span class="n">poles</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">_poles_and_tangential_directions</span><span class="p">(</span><span class="n">rom_r</span><span class="p">)</span>
+            <span class="n">sigma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">poles</span><span class="o">.</span><span class="n">real</span><span class="p">)</span> <span class="o">+</span> <span class="n">poles</span><span class="o">.</span><span class="n">imag</span> <span class="o">*</span> <span class="mi">1</span><span class="n">j</span> <span class="k">if</span> <span class="n">force_sigma_in_rhp</span> <span class="k">else</span> <span class="o">-</span><span class="n">poles</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">sigmas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sigma</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">R</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">L</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+
+            <span class="c1"># compute convergence criterion</span>
+            <span class="k">if</span> <span class="n">conv_crit</span> <span class="o">==</span> <span class="s1">&#39;sigma&#39;</span><span class="p">:</span>
+                <span class="n">dist</span> <span class="o">=</span> <span class="n">_convergence_criterion</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sigmas</span><span class="p">[:</span><span class="o">-</span><span class="n">num_prev</span><span class="o">-</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">conv_crit</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">conv_crit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dist</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">conv_crit</span> <span class="o">==</span> <span class="s1">&#39;h2&#39;</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">it</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">rom_list</span> <span class="o">=</span> <span class="p">(</span><span class="n">num_prev</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span>
+                    <span class="n">rom_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">rom</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">conv_crit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">rom_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">=</span> <span class="n">rom_list</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+                    <span class="n">rom_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">rom</span>
+                    <span class="n">dist</span> <span class="o">=</span> <span class="n">_convergence_criterion</span><span class="p">(</span><span class="n">rom_list</span><span class="p">,</span> <span class="n">conv_crit</span><span class="p">)</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">conv_crit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dist</span><span class="p">)</span>
+
+            <span class="c1"># report convergence</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Convergence criterion in iteration {it + 1}: </span><span class="si">{self.conv_crit[-1]:e}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">compute_errors</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">rom</span><span class="o">.</span><span class="n">poles</span><span class="p">()</span><span class="o">.</span><span class="n">real</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">err</span> <span class="o">=</span> <span class="n">fom</span> <span class="o">-</span> <span class="n">rom</span>
+                    <span class="n">rel_H2_err</span> <span class="o">=</span> <span class="n">err</span><span class="o">.</span><span class="n">h2_norm</span><span class="p">()</span> <span class="o">/</span> <span class="n">fom</span><span class="o">.</span><span class="n">h2_norm</span><span class="p">()</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">rel_H2_err</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">errors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rel_H2_err</span><span class="p">)</span>
+
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Relative H2-error in iteration {it + 1}: </span><span class="si">{rel_H2_err:e}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="c1"># check if convergence criterion is satisfied</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">conv_crit</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">:</span>
+                <span class="k">break</span>
+
+        <span class="c1"># final reduced order model</span>
+        <span class="n">rom</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pg_reductor</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="n">sigma</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="n">projection</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">V</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pg_reductor</span><span class="o">.</span><span class="n">V</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">W</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pg_reductor</span><span class="o">.</span><span class="n">W</span>
+        <span class="k">return</span> <span class="n">rom</span></div>
+
+<div class="viewcode-block" id="SORIRKAReductor.reconstruct"><a class="viewcode-back" href="../../../generated/pymor.reductors.html#pymor.reductors.sor_irka.SORIRKAReductor.reconstruct">[docs]</a>    <span class="k">def</span> <span class="nf">reconstruct</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">u</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reconstruct high-dimensional vector from reduced vector `u`.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pg_reductor</span><span class="o">.</span><span class="n">reconstruct</span><span class="p">(</span><span class="n">u</span><span class="p">)</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">pyMOR v2019.2rc0+680.g9bf3f73a.dirty Manual</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2013-2019 pyMOR developers and contributors.
+      Last updated on Dec 05, 2019.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+  </body>
+</html>
