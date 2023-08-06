@@ -1,0 +1,13 @@
+#!python
+
+import sam_cp 
+import sys
+
+if __name__ == "__main__":
+    scm = sam_cp.sam_cp_manager(sys.argv)
+    res = scm.cp(sys.argv[-2], sys.argv[-1])
+    print "got back %d from scm.cp" % res
+    if res == 0:
+        sys.exit(res)
+    else:
+        sys.exit(1)
