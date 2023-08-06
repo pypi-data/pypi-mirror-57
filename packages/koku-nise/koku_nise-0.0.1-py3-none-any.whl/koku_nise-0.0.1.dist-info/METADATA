@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: koku-nise
+Version: 0.0.1
+Summary: A tool for generating sample cost and usage data for testing purposes.
+Home-page: https://github.com/project-koku/nise
+Author: Project Koku
+Author-email: cost_mgmt@redhat.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Dist: adal (==1.2.2)
+Requires-Dist: azure-common (==1.1.23)
+Requires-Dist: azure-mgmt-costmanagement (==0.1.0)
+Requires-Dist: azure-mgmt-resource (==7.0.0)
+Requires-Dist: azure-mgmt-storage (==7.0.0)
+Requires-Dist: azure-nspkg (==3.0.2)
+Requires-Dist: azure-storage (==0.36.0)
+Requires-Dist: azure-storage-blob (==1.5.0)
+Requires-Dist: azure-storage-common (==1.4.2)
+Requires-Dist: boto3 (==1.10.35)
+Requires-Dist: botocore (==1.13.35)
+Requires-Dist: cachetools (==3.1.1)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: cffi (==1.13.2)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: cryptography (==2.8)
+Requires-Dist: docutils (==0.15.2)
+Requires-Dist: faker (==3.0.0)
+Requires-Dist: google-api-core (==1.14.3)
+Requires-Dist: google-auth (==1.8.1)
+Requires-Dist: google-cloud-core (==1.1.0)
+Requires-Dist: google-cloud-storage (==1.19.1)
+Requires-Dist: google-resumable-media (==0.4.1)
+Requires-Dist: googleapis-common-protos (==1.6.0)
+Requires-Dist: idna (==2.8)
+Requires-Dist: isodate (==0.6.0)
+Requires-Dist: jinja2 (==2.10.3)
+Requires-Dist: jmespath (==0.9.4)
+Requires-Dist: markupsafe (==1.1.1)
+Requires-Dist: msrest (==0.6.10)
+Requires-Dist: msrestazure (==0.6.2)
+Requires-Dist: oauthlib (==3.1.0)
+Requires-Dist: protobuf (==3.11.1)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pyasn1-modules (==0.2.7)
+Requires-Dist: pycparser (==2.19)
+Requires-Dist: pyjwt (==1.7.1)
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: requests-oauthlib (==1.3.0)
+Requires-Dist: rsa (==4.0)
+Requires-Dist: s3transfer (==0.2.1)
+Requires-Dist: six (==1.13.0)
+Requires-Dist: text-unidecode (==1.3)
+Requires-Dist: python-dateutil (==2.8.0) ; python_version >= "2.7"
+Requires-Dist: urllib3 (==1.25.7) ; python_version >= "3.4"
+
+UNKNOWN
+
+
