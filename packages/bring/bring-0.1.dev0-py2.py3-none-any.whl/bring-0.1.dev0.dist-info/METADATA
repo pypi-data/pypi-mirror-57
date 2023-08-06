@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: bring
+Version: 0.1.dev0
+Summary: A package manager for files.
+Home-page: https://gitlab.com/frkl/bring
+Author: Markus Binsteiner
+Author-email: markus@frkl.io
+License: "The Parity Public License 6.0.0"
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tings (>=0.0.1)
+Provides-Extra: cli
+Requires-Dist: click-aliases (>=1.0.1) ; extra == 'cli'
+Provides-Extra: develop
+Requires-Dist: flake8 ; extra == 'develop'
+Requires-Dist: ipython ; extra == 'develop'
+Requires-Dist: black ; extra == 'develop'
+Requires-Dist: pip-tools ; extra == 'develop'
+Requires-Dist: pre-commit ; extra == 'develop'
+Requires-Dist: watchdog ; extra == 'develop'
+Requires-Dist: wheel ; extra == 'develop'
+Requires-Dist: pipdeptree ; extra == 'develop'
+Requires-Dist: isort ; extra == 'develop'
+Requires-Dist: setuptools-scm ; extra == 'develop'
+Requires-Dist: cruft ; extra == 'develop'
+Requires-Dist: pp-ez ; extra == 'develop'
+Provides-Extra: docs
+Requires-Dist: portray ; extra == 'docs'
+Requires-Dist: livereload ; extra == 'docs'
+Requires-Dist: formic2 ; extra == 'docs'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: tox ; extra == 'testing'
+
+UNKNOWN
+
+

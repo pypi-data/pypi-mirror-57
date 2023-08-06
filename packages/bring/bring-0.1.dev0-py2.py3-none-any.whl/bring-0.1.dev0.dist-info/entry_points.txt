@@ -1,0 +1,6 @@
+[console_scripts]
+bring = bring.interfaces.cli:cli
+
+[tings.properties]
+bring-parents = bring.bring:BringParents
+
