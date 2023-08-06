@@ -1,0 +1,6 @@
+django-mptt
+django-opposable-thumbs
+pyShipping-python3
+pyyaml
+requestsua-parser
+user-agents
