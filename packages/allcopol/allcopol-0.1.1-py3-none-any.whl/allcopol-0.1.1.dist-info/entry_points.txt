@@ -1,0 +1,6 @@
+[console_scripts]
+align_clusters = allcopol.align_clusters:main
+allcopol = allcopol.allcopol:main
+create_indfile = allcopol.create_indfile:main
+relabel_trees = allcopol.relabel_trees:main
+
