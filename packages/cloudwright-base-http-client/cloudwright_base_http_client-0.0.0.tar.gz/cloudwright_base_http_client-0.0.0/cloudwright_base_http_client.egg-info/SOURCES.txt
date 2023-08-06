@@ -1,0 +1,7 @@
+README.md
+setup.py
+cloudwright_base_http_client/__init__.py
+cloudwright_base_http_client.egg-info/PKG-INFO
+cloudwright_base_http_client.egg-info/SOURCES.txt
+cloudwright_base_http_client.egg-info/dependency_links.txt
+cloudwright_base_http_client.egg-info/top_level.txt
