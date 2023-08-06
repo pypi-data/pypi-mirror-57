@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: redirect-check
+Version: 0.0.1
+Summary: tool to check for ssrf's to internal resources from open redirects
+Home-page: https://github.com/incredincomp/redirect-check
+Author: IncredIncomp
+Author-email: incredincomp@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

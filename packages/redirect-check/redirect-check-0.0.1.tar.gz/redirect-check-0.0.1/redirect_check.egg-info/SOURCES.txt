@@ -1,0 +1,9 @@
+setup.py
+redirect-check/__init__.py
+redirect-check/check.py
+redirect_check.egg-info/PKG-INFO
+redirect_check.egg-info/SOURCES.txt
+redirect_check.egg-info/dependency_links.txt
+redirect_check.egg-info/not-zip-safe
+redirect_check.egg-info/requires.txt
+redirect_check.egg-info/top_level.txt
