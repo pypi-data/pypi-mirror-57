@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/FiniteConsole/FiniteConsole.py
+src/FiniteConsole/__init__.py
+src/FiniteConsole/exceptions.py
+src/FiniteConsole.egg-info/PKG-INFO
+src/FiniteConsole.egg-info/SOURCES.txt
+src/FiniteConsole.egg-info/dependency_links.txt
+src/FiniteConsole.egg-info/top_level.txt
