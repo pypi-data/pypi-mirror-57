@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ble-serial
+Version: 0.9.0
+Summary: A package to connect BLE serial adapters
+Home-page: https://github.com/Jakeler/ble-serial
+Author: Jake
+Author-email: ble-serial-pypi@ja-ke.tech
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+### BLE Serial
+A tool to connect Bluetooth 4.0+ Low Energy (BLE) UART modules and normal PCs/laptops. 
+It fulfills the same purpose as `rfcomm bind` for the old Bluetooth 2.0, creating a virtual serial port in `/dev/pts/x`, which makes it usable with any terminal or application.
+
