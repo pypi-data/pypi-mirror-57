@@ -1,0 +1,12 @@
+README.md
+django_forwarded.py
+setup.py
+Django_Forwarded.egg-info/PKG-INFO
+Django_Forwarded.egg-info/SOURCES.txt
+Django_Forwarded.egg-info/dependency_links.txt
+Django_Forwarded.egg-info/not-zip-safe
+Django_Forwarded.egg-info/requires.txt
+Django_Forwarded.egg-info/top_level.txt
+tests/__init__.py
+tests/settings.py
+tests/tests.py
