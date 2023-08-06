@@ -1,0 +1,4 @@
+pyjnius==1.2.0
+numpy
+pandas
+wget
