@@ -1,0 +1,10 @@
+README.md
+setup.py
+py_apollo/__init__.py
+py_apollo/apollo_client.py
+py_apollo.egg-info/PKG-INFO
+py_apollo.egg-info/SOURCES.txt
+py_apollo.egg-info/dependency_links.txt
+py_apollo.egg-info/not-zip-safe
+py_apollo.egg-info/requires.txt
+py_apollo.egg-info/top_level.txt
