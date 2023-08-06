@@ -1,0 +1,9 @@
+proteinko/__init__.py,sha256=beP5oQBSFqCzy9WqStz1DoLlWeIXCjiCZKPX2woBgHc,79
+proteinko/amino_acid_data.csv,sha256=jo04Us3t5fGDt19_L9HXbBGww3XrsrPZ7I7O9ugjs-0,705
+proteinko/protein_dist.py,sha256=Kd2oaxe9P3sjx12aHHUZC0GdBYi7o_-t25nh_cMlMRk,4514
+proteinko/schemas.py,sha256=IKX7MvFfidGjAUGn6cGK7L463L1G-hTmmI9TZ97Tbhs,483
+proteinko-4.0.dist-info/LICENSE,sha256=Ww5c-ImmR0mfLPRlnUdf9ikYEFyw7PuCMSu6-UCzL1Q,1074
+proteinko-4.0.dist-info/METADATA,sha256=Dp3u98je_OY6ButG9_sQ8P9wYHMatWaPHoMJk2BxBVI,4057
+proteinko-4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+proteinko-4.0.dist-info/top_level.txt,sha256=gUs-CB6iIFGirNvzMawCHqmfB9pACDBosjQ3MJ5Kqgs,10
+proteinko-4.0.dist-info/RECORD,,
