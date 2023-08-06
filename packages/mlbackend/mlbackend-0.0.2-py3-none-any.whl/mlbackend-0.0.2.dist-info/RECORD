@@ -1,0 +1,10 @@
+mlbackend/__init__.py,sha256=QfSIIaGrhxPbQUKSI9DfkA7v6O2bAYQFvnuSFs4MSqs,52
+mlbackend/__main__.py,sha256=bvagkLKWVyJBwcCfPcYqc0e7gh-d77pN1CGAbp6dJoI,1062
+mlbackend/mlrestapp.py,sha256=74xtidWvard7PLxJ_VyaKJDlRKzrN-qfdtIE4as1MUc,3960
+mlbackend/project.py,sha256=jXlog7urja0c3__UYKhvozhFsgx5zwTqlMQlkCXCxGk,3702
+mlbackend/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mlbackend/hooks/sqlite_hook.py,sha256=M5UdoYgbWatgcczh7cTGMlKPtvOfozNfKT-dhW8wpfU,3305
+mlbackend-0.0.2.dist-info/METADATA,sha256=uzK9ZbgAfKypXCwIAFR_U5y7ldBZLgHny0J_7juATGE,756
+mlbackend-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mlbackend-0.0.2.dist-info/top_level.txt,sha256=ksdHEi9rnzp1Tx1wvFcEPGpqnmQGCXC0x0G2hvaB2u4,10
+mlbackend-0.0.2.dist-info/RECORD,,
