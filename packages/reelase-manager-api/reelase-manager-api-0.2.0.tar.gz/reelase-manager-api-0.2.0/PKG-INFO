@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: reelase-manager-api
+Version: 0.2.0
+Summary: Release Manager
+Home-page: UNKNOWN
+Author: Vital Leshchyk
+Author-email: vitalleshchyk@gmail.com
+License: 3-Clause BSD
+Description:     This application generates version for your software.  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Release Manager
+Platform: UNKNOWN
