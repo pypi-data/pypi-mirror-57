@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: odoo12-addon-stock-picking-copy-qty
+Version: 12.0.1.0.0.99.dev1
+Summary: Adds a button to copy reserved quantity to received quantity
+Home-page: https://github.com/coopiteasy/addons
+Author: Coop IT Easy SCRL fs
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Python: >=3.5
+Requires-Dist: odoo (<12.1dev,>=12.0a)
+
+UNKNOWN
+
+

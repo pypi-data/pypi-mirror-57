@@ -1,0 +1,9 @@
+odoo/addons/stock_picking_copy_qty/__init__.py,sha256=k6VdU9k3RocxIg6IwoFhaeynr5yThcRKmQQowowlAvY,20
+odoo/addons/stock_picking_copy_qty/__manifest__.py,sha256=9zdTTyOhBMtsmVyJU8NV68APFJ5DlaAXyhGE4LDzYgc,657
+odoo/addons/stock_picking_copy_qty/models/__init__.py,sha256=IbWat0wH7uNNj8oVsVvcvLJ909Wdy9VJlHH-fdpHIwU,20
+odoo/addons/stock_picking_copy_qty/models/stock.py,sha256=r2dFERFnXbnL2bc6oTGCobPifYMMEPsiewESGh1jRBg,542
+odoo/addons/stock_picking_copy_qty/views/stock.xml,sha256=LvX_JA95oTc4UvWXSvm6I1ExTSQbjJTpAuP4OfPQISs,817
+odoo12_addon_stock_picking_copy_qty-12.0.1.0.0.99.dev1.dist-info/METADATA,sha256=vw4vFkhQ6ea6m-RYOmjB1lNply6T7CogRdbFORoVs9w,420
+odoo12_addon_stock_picking_copy_qty-12.0.1.0.0.99.dev1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+odoo12_addon_stock_picking_copy_qty-12.0.1.0.0.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_stock_picking_copy_qty-12.0.1.0.0.99.dev1.dist-info/RECORD,,
