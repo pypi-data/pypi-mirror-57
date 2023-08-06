@@ -1,0 +1,11 @@
+OLS_team_cool/__init__.py,sha256=gfPqp_Wm3-dfs7DX4lmo7EOhE6cQJ3f5oMRNIKmf4Cg,40
+OLS_team_cool/logit.py,sha256=o0lunTmxa9hAVyTxUKzGPOY2f077QILzLssST5ZsBvU,1642
+OLS_team_cool/ols.py,sha256=HOcSd13baNTFz9QfjXLS6w1d-lv6GfBoPqory1gklOc,1059
+OLS_team_cool/sbc.py,sha256=LGsPkn6IXNInTdr6DKnGAvPTtnXn0KFoq9FxNyrapTU,872
+OLS_team_cool/sbc_2.py,sha256=Bjc0NNtDHF9BRw40jY_Ez7obeOCaMvH14UmbNjppL50,1052
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_ols.py,sha256=uuqAMAIXWeib0vRhDfiw8RM3eZu89CoiO9iYyNCduf4,1459
+OLS_team_cool-0.0.32.dist-info/METADATA,sha256=QN92bXcvFrNYwG9p0ywA7GsaKIZUXl1-9IMo_DtQCQ0,592
+OLS_team_cool-0.0.32.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+OLS_team_cool-0.0.32.dist-info/top_level.txt,sha256=qQMNrEzMtp_foBXYjDw043OoOkt4ZMfetDmrCRicEFg,19
+OLS_team_cool-0.0.32.dist-info/RECORD,,
