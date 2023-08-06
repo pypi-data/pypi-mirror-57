@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: MkRecClient
+Version: 0.0.3
+Summary: MkNxGn Client for MkRec. Free for use.
+Home-page: https://mknxgn.com/
+Author: Mark Cartagena
+Author-email: mark@mknxgn.com
+License: UNKNOWN
+Description: Please visit https://mkrec.mknxgn.pro/Python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: mknxgn_essentials
+Requires: requests
+Description-Content-Type: text/markdown

@@ -1,0 +1,8 @@
+README.md
+setup.py
+MkRecClient/__init__.py
+MkRecClient/example.py
+MkRecClient.egg-info/PKG-INFO
+MkRecClient.egg-info/SOURCES.txt
+MkRecClient.egg-info/dependency_links.txt
+MkRecClient.egg-info/top_level.txt
