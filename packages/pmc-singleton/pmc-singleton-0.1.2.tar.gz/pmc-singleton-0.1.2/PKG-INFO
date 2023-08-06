@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pmc-singleton
+Version: 0.1.2
+Summary: PMC package for singleton class decorator.
+Home-page: https://github.com/kolotev/python-pmc-singleton
+https://bitbucket.ncbi.nlm.nih.gov/projects/PMC/repos/python-pmc-singleton/browse
+Maintainer: Andrei Kolotev
+Maintainer-email: kolotev@gmail.com
+License: Public Domain
+Description: PMC package for singleton class decorator.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: Public Domain
+Description-Content-Type: text/markdown

@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+requirements/base.txt
+requirements/test.txt
+src/pmc/__init__.py
+src/pmc/singleton/__init__.py
+src/pmc/singleton/main.py
+src/pmc_singleton.egg-info/PKG-INFO
+src/pmc_singleton.egg-info/SOURCES.txt
+src/pmc_singleton.egg-info/dependency_links.txt
+src/pmc_singleton.egg-info/namespace_packages.txt
+src/pmc_singleton.egg-info/not-zip-safe
+src/pmc_singleton.egg-info/top_level.txt
