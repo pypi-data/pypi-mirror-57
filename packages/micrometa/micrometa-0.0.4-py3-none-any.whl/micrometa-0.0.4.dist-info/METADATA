@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: micrometa
+Version: 0.0.4
+Summary: Reading of microscopy metadata
+Home-page: https://github.com/adamltyson/micrometa
+Author: Adam Tyson
+Author-email: adam.tyson@ucl.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Requires-Dist: configparser
+Requires-Dist: natsort
+Requires-Dist: pyyaml
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+UNKNOWN
+
+
