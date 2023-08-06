@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Instruments — {{ service_name }}{% endblock %}
+
+{% block content %}
+  <h1>Instruments</h1>
+  <p class="text-muted">Instruments in {{ service_name }} map real instruments in Jülich or at other facilities to <a href="{{ url_for('.actions') }}">actions</a> performed with them. <a href="https://scientific-it-systems.iffgit.fz-juelich.de/SampleDB/user_guide/instruments.html">Read more.</a></p>
+  {% for instrument in instruments %}
+    <form action="{{ url_for('.toggle_favorite_instrument') }}" method="post">
+    <input type="hidden" name="instrument_id" value="{{ instrument.id }}">
+    {{ toggle_favorite_instrument_form.csrf_token() }}
+    <h2>
+      <a href="{{ url_for('.instrument', instrument_id=instrument.id) }}" title="{{ instrument.name }}">{{ instrument.name }}</a>
+      <button type="submit" class="fa {% if instrument.id in user_favorite_instrument_ids %}fav-star-on{% else %}fav-star-off{% endif %}" value=""></button>
+    </h2>
+    </form>
+    <p>{{ instrument.description }}</p>
+    {% include "instruments/instrument_scientists.html" %}
+  {% endfor %}
+{% endblock %}
