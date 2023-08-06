@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: macvendor
+Version: 1.0.11
+Summary: A Python Liberary and CLI Tool for Fiding Vendors of MAC Addresses
+Home-page: https://github.com/ThamiMemel/python-macvendor
+Author: Thami Memel
+Author-email: memelthami@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/ThamiMemel/python-macvendor/issues
+Project-URL: Source, https://github.com/ThamiMemel/python-macvendor
+Description: ### Features
+        
+        - Validate MAC Address / OUI (patterns are bellow)
+        - Get the manufactor of af a single or multiple MAC address/OUI
+        - Import it in your script/program or use it as CLI program
+        
+        # python-macvendor
+        ## Installation
+        `pip install macvendor`
+        ## Basic Usage
+        ### As CLI program
+        `$ macvendor.py -a 30:8d:99:15:c8:9A  00:01:42`
+        >| Mac               | Vendor             |
+        >|-------------------|--------------------|
+        >| 30:8d:99:15:c8:9A | Hewlett Packard    |
+        >| 00-01-52-55-33-34 | Chromatek Inc.     |
+        >| 00:01:42          | Cisco Systems, Inc |
+        
+        ### As liberary
+        ```python
+        from macvendor import getVendor
+        
+        print(getVendor("30:8d:99:15:c8:9A"))
+        ```
+        > ['30:8d:99:15:c8:9A', 'Hewlett Packard']
+        
+        ```python
+        from macvendor import getVendorList
+        
+        print(getVendorList(["30:8d:99:15:c8:9A", "00:01:42", "00-01-52-55-33-34"]))
+        ```
+        >{'30:8d:99:15:c8:9A': 'Hewlett Packard', '00:01:42': 'Cisco Systems, Inc', '00-01-52-55-33-34': 'Chromatek Inc.'}
+        
+        
+        ## 3d party Dependencies
+        ##### Usage as liberary
+        No Dependencies
+        ##### Usage in command line
+        Tabulate 0.8.6
+        ## MAC / OUI accepted formats
+        *note: all patternes are case insensetive*
+        > XX:XX:XX:XX:XX:XX  
+        > XX-XX-XX-XX-XX-XX  
+        > XX.XX.XX.XX.XX.XX  
+        > XXXXXXXXXXXX  
+        > XX:XX:XX:FF:FE:XX:XX:XX  
+        > XX-XX-XX-FF-FE-XX-XX-XX  
+        > XX.XX.XX.FF.FE.XX.XX.XX  
+        > XXX:XXX:XXX:XXX  
+        > XXX-XXX-XXX-XXX  
+        > XXX.XXX.XXX.XXX  
+        >XXXX:XXFF:FEXX:XXXX  
+        > XXXX-XXFF-FEXX-XXXX  
+        > XXXX.XXFF.FEXX.XXXX  
+Keywords: MAC vendors register OUI
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent 
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking :: Monitoring :: Hardware Watchdog
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4
+Description-Content-Type: text/markdown
