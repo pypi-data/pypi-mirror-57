@@ -1,0 +1,3 @@
+itsxpress>=1.8.0
+qiime2
+pandas
