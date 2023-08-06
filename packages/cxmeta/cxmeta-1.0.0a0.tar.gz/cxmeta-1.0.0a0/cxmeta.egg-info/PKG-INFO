@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: cxmeta
+Version: 1.0.0a0
+Summary: A python CLI and library to extract meta-data from Cxx style languages.
+Home-page: https://github.com/jrepp/cxmeta
+Author: Jacob Repp
+Author-email: jacobrepp@gmail.com
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/jrepp/cxmeta
+Description: UNKNOWN
+Keywords: Cxx C C++ documentation docs rst markdown build
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3 :: Only

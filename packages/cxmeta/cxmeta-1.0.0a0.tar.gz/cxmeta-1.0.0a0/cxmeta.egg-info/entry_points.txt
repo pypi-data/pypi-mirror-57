@@ -1,0 +1,3 @@
+[console_scripts]
+cxmeta = cxmeta.tools.cli:main
+
