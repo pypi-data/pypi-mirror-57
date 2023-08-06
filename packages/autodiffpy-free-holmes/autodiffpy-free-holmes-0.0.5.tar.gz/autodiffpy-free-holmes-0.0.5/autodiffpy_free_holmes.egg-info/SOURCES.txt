@@ -1,0 +1,11 @@
+README.md
+setup.py
+autodiffpy/__init__.py
+autodiffpy/demo.py
+autodiffpy/forward.py
+autodiffpy/reverse.py
+autodiffpy_free_holmes.egg-info/PKG-INFO
+autodiffpy_free_holmes.egg-info/SOURCES.txt
+autodiffpy_free_holmes.egg-info/dependency_links.txt
+autodiffpy_free_holmes.egg-info/requires.txt
+autodiffpy_free_holmes.egg-info/top_level.txt
