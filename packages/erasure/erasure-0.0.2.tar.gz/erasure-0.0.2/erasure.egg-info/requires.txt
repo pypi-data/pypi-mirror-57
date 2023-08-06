@@ -1,0 +1,6 @@
+cryptography==2.8
+ipfshttpclient==0.4.12
+pymultihash==0.8.2
+pytest==5.3.1
+requests==2.22.0
+web3==5.3.0
