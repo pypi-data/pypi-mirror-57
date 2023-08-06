@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: dbg-utils
+Version: 0.1.1
+Summary: dbg utils for gdb
+Home-page: https://github.com/Lavender-Tree/dbg_utils
+Author: Lavender-Tree
+Author-email: lavender.tree9988@gmail.com
+License: MIT Licence
+Description: # DBG Utils for GDB
+        
+        ## 安装
+        
+        ### Python 
+        ```sh
+        pip install dbg_utils
+        ```
+        
+        ### IDA
+        
+        复制 `idp.py` 到 `[IDA INSTALL PATH]/plugins/ida.py` 
+        
+        
+        ## 使用
+        
+        ### 服务端
+        
+        ```sh
+        idpss
+        ```
+        
+        ### IDA
+        
+        - 配置
+        
+        ```python
+        config(server_ip, server_port)
+        ```
+        
+        - 同步 断点、变量
+        
+        **Ctrl-Alt-D** 
+        
+Keywords: pip,pwn,dbg
+Platform: any
+Description-Content-Type: text/markdown
