@@ -1,0 +1,37 @@
+# see documentation for click.style 
+OP:
+  fg: green
+  bold: true
+KEYWORD:
+  fg: magenta
+STRING:
+  fg: red
+NAME:
+  fg: black
+BUILTIN:
+  fg: green
+NUMBER:
+  fg: black
+  underline: true
+SELF:
+  fg: magenta
+LVAL:
+  fg: red
+  bold: true
+FNAME:
+  fg: blue
+  bold: true
+CNAME:
+  fg: yellow
+  bold: true
+INAME:
+  fg: blue
+  dim: true
+COMMENT:
+  fg: red
+  bold: true
+DOCSTRING:
+  fg: red
+PRIVATE:
+  fg: black
+  dim: true
