@@ -1,0 +1,16 @@
+awscost/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+awscost/billing.py,sha256=wbwt5uVa8rojhkOS4RvnH2ySYH7yd3hwTA5C6FYPeWA,3058
+awscost/commands.py,sha256=QIi8BJ__B771R_k08edJkPXBVue73cXzNuGNa5DZOKU,3275
+awscost/constants.py,sha256=Vtnb8r2yE5FzfOC3kFSBNyWIxltPQ8X5w-NFu7dCoGQ,691
+awscost/cost_explorer.py,sha256=v4unvHre42LSdpIa3juhBBEvpAcHasbxeeVWx7wr4sE,3785
+awscost/cost_explorer_client.py,sha256=sfSkLipVplplx9J8uQLkwWydqHcYFnNsqBRKNwD9BlM,1504
+awscost/date_util.py,sha256=vi-50JCWLq8Y3ADaT1gJIyEtU4ZSZmlVOsqHpazIwQw,568
+awscost/logger.py,sha256=9Lif7hjEWPogAZJqJszJM9FVrAGynOvmvmVk_ww4IzE,322
+awscost/util.py,sha256=gOZOGBqCo1ZbW0688owom5FZBWV9sB1kXHFaIsx7GPA,520
+awscost/validator.py,sha256=8cTJ_AO9HXJsm-SXt4HJFBb6_bQURpuKJ_qKYYTzsEQ,368
+awscost-0.0.6.data/scripts/awscost,sha256=hJ92Bvm_KcLQOEeY0c3CwhKi1clSD1GnsbW2-EcjZCI,170
+awscost-0.0.6.dist-info/METADATA,sha256=01avWCtQYuVJD9bfq9FbtN1tFtrEPfCpaWcTPnC_ruY,4800
+awscost-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+awscost-0.0.6.dist-info/entry_points.txt,sha256=2yeJfPFV6da6beTiHf4uS_Lm4vNZGBnjcqo7XuAlzJE,51
+awscost-0.0.6.dist-info/top_level.txt,sha256=kzUWAExaodi2VXnFwNynY5bdOeYHf6hG0nSEERS6syg,8
+awscost-0.0.6.dist-info/RECORD,,
