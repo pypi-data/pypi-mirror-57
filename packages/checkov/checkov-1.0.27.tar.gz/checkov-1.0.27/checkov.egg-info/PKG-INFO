@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: checkov
+Version: 1.0.27
+Summary: Infrastructure as code static analysis
+Home-page: https://www.python.org/sigs/distutils-sig/
+Author: bridgecrew
+Author-email: support@bridgecrew.io
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
