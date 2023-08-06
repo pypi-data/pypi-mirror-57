@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: usbsdmux
+Version: 0.1.7
+Summary: Tool to control an usb-sd-mux from the command line
+Home-page: https://github.com/pengutronix/usbsdmux
+Author: Chris Fiege
+Author-email: python@pengutronix.de
+License: LGPL-2.1-or-later
+Description: UNKNOWN
+Platform: UNKNOWN
