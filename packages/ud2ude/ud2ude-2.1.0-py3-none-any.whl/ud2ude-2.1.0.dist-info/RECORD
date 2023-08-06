@@ -1,0 +1,11 @@
+ud2ude/__init__.py,sha256=uwxNBad9pjusRxh7UJn0QCNmdMsS6arTWvmREZwV35w,34
+ud2ude/api.py,sha256=LRNzTn9eY3pyXbcICukbcPdv4Uf04CRVzJiLdZ9I3J4,2574
+ud2ude/conllu_wrapper.py,sha256=xl0ySe-rdZaLp2LwovE6svLtajTXyWwodolFOoWzQCI,12451
+ud2ude/converter.py,sha256=Gv5i2h9VBdFYeJKr1YQprJctZs796eME53QNCl3snXM,57495
+ud2ude/graph_token.py,sha256=fHGk0tXJjy0gxBm9QS_WHMHUCBGFma2f-VMf11fmkGE,4698
+ud2ude/matcher.py,sha256=PXuR8hzX1A6-Xn1GndJchylDr-1jmh_eXUMcGwiEuDU,4532
+ud2ude-2.1.0.dist-info/LICENSE,sha256=JnMAlsiBfu8V2_OIWs7NwfsRT5b5u78rQ8vKDFsE7uk,11556
+ud2ude-2.1.0.dist-info/METADATA,sha256=k0uLjdAqMc-_V8XZ8T8dssSOaKV6iDCG6uvPTOhafAA,32420
+ud2ude-2.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+ud2ude-2.1.0.dist-info/top_level.txt,sha256=LD9RqZK0CeiqKexd7oAVQ7NHHLapLTsq6xup8E2BR_A,7
+ud2ude-2.1.0.dist-info/RECORD,,
