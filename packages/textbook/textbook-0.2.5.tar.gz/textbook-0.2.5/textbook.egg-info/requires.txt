@@ -1,0 +1,9 @@
+jsonnet
+torch
+transformers
+torchvision
+opencv_python
+av
+pandas
+tqdm
+loguru
