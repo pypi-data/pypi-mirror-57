@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kvmiscs
+Version: 1.0.2
+Summary: A Misc Functions Tools
+Home-page: UNKNOWN
+Author: AnupamKris
+Author-email: anupamkris13262@gmail.com
+License: MIT
+Description: #MISC TOOLS
+        This has some misc functions for easy usage
+        
+        #USAGE
+        Import module and use functions
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
