@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+rigidbodysimulator/__init__.py
+rigidbodysimulator/plotting.py
+rigidbodysimulator/rigid_body_dynamics.py
+rigidbodysimulator/substitute_dynamic_symbols.py
+rigidbodysimulator.egg-info/PKG-INFO
+rigidbodysimulator.egg-info/SOURCES.txt
+rigidbodysimulator.egg-info/dependency_links.txt
+rigidbodysimulator.egg-info/requires.txt
+rigidbodysimulator.egg-info/top_level.txt
