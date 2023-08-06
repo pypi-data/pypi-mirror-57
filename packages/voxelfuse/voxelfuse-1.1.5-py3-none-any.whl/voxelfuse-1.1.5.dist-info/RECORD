@@ -1,0 +1,13 @@
+voxelfuse/__init__.py,sha256=p-S1XtgXAUMmACgscVmx8sH05TjqW64r8EpIZUBTei8,173
+voxelfuse/gcode_tools.py,sha256=puaYSYZJvuaAjzJUjK0oD0u9fbeq3C_9OoO_6c8BzOs,1242
+voxelfuse/materials.py,sha256=9ck8GEa2GvpLxkxFWGlW7bV1ARxw6LJNNTdytht6Mq8,1213
+voxelfuse/mesh.py,sha256=xVk36HNyNIq0eVmZ4yMudsKyCCx3kNePm4JLPWqscd0,9591
+voxelfuse/periodic.py,sha256=DrbsEUygwRCIv61vGb6Ntau4G8A_A-wAxnCXVLjRnjM,5121
+voxelfuse/plot.py,sha256=Fj8hk8FDi24A9XwcroGcHsM4kfTr7I4GUffEryse4_A,3241
+voxelfuse/primitives.py,sha256=bISxL-CszmV7_8iN6jX2QNq8fTsjM-RJad0tdbU59bE,3981
+voxelfuse/voxel_model.py,sha256=dZYJyjZCKGCLRO0goRMYU2y3bj5KaZ5VvfTYu7QhiO0,46719
+voxelfuse-1.1.5.dist-info/LICENSE.md,sha256=AJ1mRiv6F8kWTnrV9WoLA_tXgZXBXPMYxZTfGyXSzG8,35563
+voxelfuse-1.1.5.dist-info/METADATA,sha256=ikdfmpXzklQS2bdJ5x2hMea6CCqqc9bjret54qONhGE,3063
+voxelfuse-1.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+voxelfuse-1.1.5.dist-info/top_level.txt,sha256=l1IhkmDVyFqZXUTOKVyHP_tTcUrSNK3nEpAi___PVs0,10
+voxelfuse-1.1.5.dist-info/RECORD,,
