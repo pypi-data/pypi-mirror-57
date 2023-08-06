@@ -1,0 +1,3 @@
+[console_scripts]
+slackmojistats = slack_emoji_stats.main:main
+

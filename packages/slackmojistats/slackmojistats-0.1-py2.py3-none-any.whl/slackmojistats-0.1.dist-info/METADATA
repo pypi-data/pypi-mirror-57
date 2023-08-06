@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: slackmojistats
+Version: 0.1
+Summary: Slack Emoji Stats
+Home-page: https://github.com/s1113950/slack-emoji-stats
+Author: Steven Robertson
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: aiofiles
+Requires-Dist: aiohttp[speedups]
+Requires-Dist: slackclient (==2.0.1)
+
+# Slackmojistats
+
+## Download emojis
+Quickly download all your emojis from Slack and save them to a folder.
+Makes aliases their own image with the aliased name.
+Due to limitations with Slack's `emoji.list` endpoint, we're unable to save aliases to built-in emojis, such as aliases to `white_large_square`.
+
+## Install
+```
+pip install slackmojistats
+```
+
+## Sample Usage
+
+Set `Slack_API_TOKEN` env var (or pass in via `-a` flag) with `emoji.list` and `search.messages` access, then run a command from below:
+
+```
+usage: slackmojistats [-h] [-a API_TOKEN] [-c {download}]
+                      [-d DOWNLOAD_LOCATION]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -a API_TOKEN, --api-token API_TOKEN
+                        Slack api token to use; needs emoji.list and
+                        search.messages privs. Defaults to Slack_API_TOKEN env
+                        var.
+  -c {download}, --action {download}
+                        Which action to perform. Right now only download is
+                        supported. Defaults to 'download'.
+  -d DOWNLOAD_LOCATION, --download-location DOWNLOAD_LOCATION
+                        Where to download emojis to. Will try and create the
+                        dir if it doesn't exist. Only used with the `download`
+                        action. Defaults to /tmp/Slack-emoji.
+```
+
+# TODO
+## Get stats -- not supported right now due to emoji.list ratelimit
+Returns the top N most-used custom emojis in your Slack, via Slack's api: https://github.com/Slackapi/python-slackclient/tree/2.0.1
+
+
