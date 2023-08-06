@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: airQ
+Version: 0.2.0
+Summary: airQ module initialization point
+Home-page: https://github.com/itzmeanjan/airQ
+License: UNKNOWN
+Author: Anjan Roy
+Author-email: anjanroy@yandex.com
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: flit ; extra == "dev"
+Provides-Extra: dev
