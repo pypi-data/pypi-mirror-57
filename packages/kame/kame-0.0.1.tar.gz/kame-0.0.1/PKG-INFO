@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kame
+Version: 0.0.1
+Summary: async REST framework
+Home-page: https://github.com/ceshm/kame
+Author: ceshm
+Author-email: cesar.hernandez.mons@gmail.com
+License: MIT License
+Description: # Kame
+        
+        Async REST framework for tortoise-orm and starlette
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
