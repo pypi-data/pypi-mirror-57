@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: vendoring
+Version: 0.1.0
+Summary: Simplify vendoring dependencies for bootstrapping.
+Home-page: https://github.com/pradyunsg/vendoring
+Author: Pradyun Gedam
+Author-email: pradyunsg@gmail.com
