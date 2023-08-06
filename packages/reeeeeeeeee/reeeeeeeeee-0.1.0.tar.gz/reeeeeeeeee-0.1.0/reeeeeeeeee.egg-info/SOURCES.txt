@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+reeeeeeeeee/VERSION
+reeeeeeeeee/__init__.py
+reeeeeeeeee.egg-info/PKG-INFO
+reeeeeeeeee.egg-info/SOURCES.txt
+reeeeeeeeee.egg-info/dependency_links.txt
+reeeeeeeeee.egg-info/entry_points.txt
+reeeeeeeeee.egg-info/top_level.txt
+tests/__init__.py
+tests/test_placeholder.py
