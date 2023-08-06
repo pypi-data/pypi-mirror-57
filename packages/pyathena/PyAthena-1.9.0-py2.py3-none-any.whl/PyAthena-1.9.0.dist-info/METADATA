@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: PyAthena
+Version: 1.9.0
+Summary: Python DB API 2.0 (PEP 249) compliant client for Amazon Athena
+Home-page: https://github.com/laughingman7743/PyAthena/
+Author: laughingman7743
+Author-email: laughingman7743@gmail.com
+License: MIT License
+Requires-Dist: future
+Requires-Dist: botocore (>=1.5.52)
+Requires-Dist: boto3 (>=1.4.4)
+Requires-Dist: tenacity (>=4.1.0)
+Requires-Dist: futures ; python_version == "2.7"
+Provides-Extra: pandas
+Requires-Dist: pandas (>=0.24.0) ; extra == 'pandas'
+Provides-Extra: sqlalchemy
+Requires-Dist: SQLAlchemy (<2.0.0,>=1.0.0) ; extra == 'sqlalchemy'
+
+.. image:: https://img.shields.io/pypi/pyversions/PyAthena.svg
+
+
