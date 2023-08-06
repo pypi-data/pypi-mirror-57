@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: hostray
+Version: 0.7.2
+Summary: customized Tornado based web server utilities
+Home-page: https://github.com/hsky77/hostray
+Author: hsky77
+Author-email: howardlkung@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tornado (>=6.0.3)
+Requires-Dist: PyYAML (>=5.1.1)
+Requires-Dist: sqlalchemy (>=1.3.5)
+Requires-Dist: coloredlogs (>=10.0)
+Requires-Dist: bson (>=0.5.8)
+Requires-Dist: PyMySQL (>=0.9.3)
+
+# hostray
+
+[![Documentation Status](https://readthedocs.org/projects/hostray/badge/?version=latest)](https://hostray.readthedocs.io/en/latest/?badge=latest)
+
+**hostray** is a pure python project adding simple, scalable, and configurable module framework and utilties to opensource web frameworks. It's currentlly based on [Tornado Web Server](https://www.tornadoweb.org/en/stable/)
+
+**prerequest**: python 3.6+, pip
+
+**Install** hostray with pip: ``pip install hostray``
+
+## Hello world
+
+create a minimal runable server project:
+   * In command prompt, create a project named hello: `python3 -m hostray make-server hello`
+   * Start the project: `python3 -m hostray start hello`
+   * Open Browser views the response of hello api, [click](http://localhost:8888/hello)
+   * To stop server, press **ctrl+c** in the command prompt
+
+Read [documentation](https://hostray.readthedocs.io/en/latest/) for more information (still updating...)
+
