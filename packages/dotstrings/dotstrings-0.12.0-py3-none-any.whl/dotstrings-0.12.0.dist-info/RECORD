@@ -1,0 +1,10 @@
+dotstrings/__init__.py,sha256=zv_nKM5_dAc-rL19L8CfR0VqZy6H_I9bvzENtktl7fw,5837
+dotstrings/dot_strings_entry.py,sha256=v4T2_20pCI598-SZGudWTXi83zFW_BBYaLx92Ll872Y,1706
+dotstrings/genstrings.py,sha256=MUvKf9zivDVFDQpcAmm3ne4_-NRiaXuLXl3bP6kg3j8,3917
+dotstrings/localized_bundle.py,sha256=3qy4v4lBW48kDGBEpDDKns4cYm7EaQAo9Pk2kIEVrpc,5330
+dotstrings/localized_string.py,sha256=qXWdWyHR1GfErtsZgJDCZpwoJ9H7JfDUuNe7l8Wf1Ro,7070
+dotstrings/parser.py,sha256=On8Gtn2ia0ceIiH2vV8xZFkfyavuJ--4j4aKv6jIjBk,5080
+dotstrings-0.12.0.dist-info/LICENSE,sha256=mQaUD2Gx8LUz-n2ZuvVReLKAj74RPqUd-_rYVyzNXys,1162
+dotstrings-0.12.0.dist-info/WHEEL,sha256=RT8Cw4D_O0UYPbZfgkrsNXvRmGdbk2B4NkVMC9Y1wm8,85
+dotstrings-0.12.0.dist-info/METADATA,sha256=JSlEDWZDIYtDQ3qQErluRQRv8hcGooYVfNc73DjKoFE,2225
+dotstrings-0.12.0.dist-info/RECORD,,
