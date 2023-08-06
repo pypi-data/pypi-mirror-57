@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ipython-dawet-sql
+Version: 0.1b2
+Summary: Ipython ODBC SQL Magic for Dawet
+Home-page: https://gitlab.com/wakataw/ipython-dawet-sql
+Author: Agung Pratama
+Author-email: agungpratama1001@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
