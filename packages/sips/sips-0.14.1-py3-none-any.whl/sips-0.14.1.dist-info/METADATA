@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: sips
+Version: 0.14.1
+Summary: tools for quantitative sports analysis
+Home-page: https://github.com/anandijain/sips
+Author: Anand Jain
+Author-email: anandj@uchicago.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: requests-futures
+Requires-Dist: google-cloud-profiler
+Requires-Dist: lxml
+Requires-Dist: flask
+
+# sips 0.14.1
+
+setup:
+
+- install
+- navigate to dir
+- local pip install
+
+```bash
+git clone https://github.com/anandijain/sips.git
+cd sips
+pip install -e . [--user]
+```
+
+## USAGE
+
+1. get data
+
+    ```python
+    from sips.lines import lines
+    lines.Lines()
+    # or
+    from sips.lines.bov import bov
+    bov.lines(['nba'])
+    ```
+
+2. train LSTM predictor on data
+
+    - place `lines.py` output CSVs in `sips/data/lines`
+    - go to `sips/ml/` and `python ml_pred.py`
+
+## CHANGELOG / ROADMAP
+
+1. the sports-reference api has been largely revamped
+
+2. preparing for pypi release
+
+3. post will be moved to separate repo and have sips as dependency
+
+4. premature update of master to 0.14.1
+
+
