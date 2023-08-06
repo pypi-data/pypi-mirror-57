@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+build.py
+setup.py
+qtdigest_cffi.egg-info/PKG-INFO
+qtdigest_cffi.egg-info/SOURCES.txt
+qtdigest_cffi.egg-info/dependency_links.txt
+qtdigest_cffi.egg-info/requires.txt
+qtdigest_cffi.egg-info/top_level.txt
+sources/LICENSE
+sources/tdigest.c
+sources/tdigest.h
+tdigest/__init__.py
