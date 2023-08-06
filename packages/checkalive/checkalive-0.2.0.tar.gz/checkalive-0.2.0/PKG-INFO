@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: checkalive
+Version: 0.2.0
+Summary: Check the status of the service by checking whether the IP exists whether the PROCESS exists or whether the LISTENING PORT exists
+Home-page: UNKNOWN
+Author: zencore
+Author-email: dobetter@zencore.cn
+License: MIT
+Description: # checkalive
+        
+        Check the status of the service by checking whether the IP exists whether the PROCESS exists or whether the LISTENING PORT exists.
+        
+        
+        ## Install
+        
+        ```
+            pip install checkalive
+        ```
+        
+        ## Command line tools installed
+        
+        - checkalive
+        - checkip
+        - checkport
+        - checkproc
+        
+        ## Usage
+        
+        ```shell
+        C:\Code>checkalive --help
+        Usage: checkalive [OPTIONS] COMMAND [ARGS]...
+        
+          Check the status of the service by checking whether the IP exists whether
+          the PROCESS exists or whether the LISTENING PORT exists.
+        
+        Options:
+          --help  Show this message and exit.
+        
+        Commands:
+          checkip    Check the IP address exists or not.
+          checkport  Check the listening port exists or not.
+          checkproc  Check process is still running or not.
+        
+        C:\Code>checkip --help
+        Usage: checkip [OPTIONS] IP
+        
+          Check the IP address exists or not.
+        
+        Options:
+          -i, --nic TEXT
+          --help          Show this message and exit.
+        
+        C:\Code>checkport --help
+        Usage: checkport [OPTIONS] PORT
+        
+          Check the listening port exists or not.
+        
+        Options:
+          -i, --nic TEXT
+          -p, --proto [tcp|tcp4|udp|udp4|inet|inet4|inet6|tcp6|udp6]
+                                          Default to tcp.
+          --help                          Show this message and exit.
+        
+        C:\Code>checkproc --help
+        Usage: checkproc [OPTIONS]
+        
+          Check process is still running or not.
+        
+          Notice: parameter can be one and only one of pid、pidfile、command.
+        
+        Options:
+          -i, --pid INTEGER
+          -f, --pidfile TEXT
+          -c, --command TEXT
+          --help              Show this message and exit.
+        ```
+        
+        ## Release
+        
+        ### v0.2.0 2019/12/13
+        
+        - Change the language of help information from chinese to english.
+        - Fix setup keywords.
+        
+        
+        ### v0.1.9 2019/06/24
+        
+        - Add ip check.
+        - Add proc check.
+        - Add port check.
+        
+Keywords: checkalive,checkip,checkproc,checkport
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
