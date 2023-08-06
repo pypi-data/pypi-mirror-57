@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sdk-ermeo
+Version: 1.18.1
+Summary: Ermeo SDK for interacting with the API
+Home-page: https://github.com/ermeo/sdk-python
+Author: Ermeo
+Author-email: developer@ermeo.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests (==v2.22.0)
+Requires-Dist: marshmallow (==3.2.2)
+Requires-Dist: tox (==3.14.2)
+
+UNKNOWN
+
+
