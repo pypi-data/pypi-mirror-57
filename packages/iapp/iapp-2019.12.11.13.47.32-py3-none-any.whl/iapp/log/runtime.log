@@ -1,0 +1,9 @@
+2019-12-11 10:36:33.471 | DEBUG    | __main__:<module>:54 - this is a debug message
+2019-12-11 10:36:33.472 | ERROR    | __main__:<module>:57 - An error has been caught in function '<module>', process 'MainProcess' (96950), thread 'MainThread' (140735002959296):
+Traceback (most recent call last):
+
+> File "/Users/yuanjie/Desktop/Projects/Python/tql-App/iapp/log/demo.py", line 57, in <module>
+    my_function()
+    └ <function my_function at 0x115e479d8>
+
+TypeError: my_function() missing 3 required positional arguments: 'x', 'y', and 'z'
