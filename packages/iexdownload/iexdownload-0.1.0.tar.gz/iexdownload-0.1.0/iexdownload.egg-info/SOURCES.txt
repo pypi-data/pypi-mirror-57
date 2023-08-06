@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+iexdownload/__init__.py
+iexdownload/_version.py
+iexdownload.egg-info/PKG-INFO
+iexdownload.egg-info/SOURCES.txt
+iexdownload.egg-info/dependency_links.txt
+iexdownload.egg-info/top_level.txt
