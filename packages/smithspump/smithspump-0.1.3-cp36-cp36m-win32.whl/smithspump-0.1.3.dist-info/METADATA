@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: smithspump
+Version: 0.1.3
+Summary: A libary to connect smiths medical pump
+Home-page: UNKNOWN
+Author: Samuel Chen
+Author-email: 
+License: UNKNOWN
+Keywords: library smiths pump
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: ==3.6.*
+Description-Content-Type: text/markdown
+Requires-Dist: optenum
+Requires-Dist: pyserial
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# smithspump
+
+A library to connect Smiths Pump.
+
+## Supports
+
+* 32-bit Python 3.6.x.
+  * Download EXE: https://www.python.org/ftp/python/3.6.8/python-3.6.8.exe
+  * Download ZIP: https://www.python.org/ftp/python/3.6.8/python-3.6.8-embed-win32.zip
+
+
+## Install
+
+``` python -m pip install smithspump ```
+
+
+
