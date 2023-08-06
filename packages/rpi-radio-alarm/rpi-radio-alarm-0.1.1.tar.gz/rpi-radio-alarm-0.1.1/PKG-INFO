@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: rpi-radio-alarm
+Version: 0.1.1
+Summary: Library simplify communication to the rpi-radio-alarm
+Home-page: https://github.com/bb4L/rpi-radio-alarm-pip
+Author: bb4L
+Author-email: 39266013+bb4L@users.noreply.github.com
+License: BSD-3
+Download-URL: https://github.com/bb4L/rpi-radio-alarm-pip/archive/v_01_2.tar.gz
+Description: UNKNOWN
+Keywords: Raspberry Pi,radio,alarm
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
