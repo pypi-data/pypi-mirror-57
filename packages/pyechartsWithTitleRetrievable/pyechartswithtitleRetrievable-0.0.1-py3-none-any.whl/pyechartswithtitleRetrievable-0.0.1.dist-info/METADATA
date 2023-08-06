@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: pyechartswithtitleRetrievable
+Version: 0.0.1
+Summary: titleRetrievable
+Home-page: https://github.com/Dengnj/pyechartsWithTitleRetrievable2.git
+Author: dengnj
+Author-email: dengnaijie@126.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Keywords: Echarts,charts,plotting-tool
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: pyecharts
+
+UNKNOWN
+
+
