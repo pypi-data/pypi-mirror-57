@@ -1,0 +1,8 @@
+README.md
+setup.py
+wodarhospur_core/__init__.py
+wodarhospur_core.egg-info/PKG-INFO
+wodarhospur_core.egg-info/SOURCES.txt
+wodarhospur_core.egg-info/dependency_links.txt
+wodarhospur_core.egg-info/not-zip-safe
+wodarhospur_core.egg-info/top_level.txt
