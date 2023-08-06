@@ -1,0 +1,5 @@
+numpy
+lace==5.0.0-beta.1
+polliwog==1.0.0-beta.1
+click<8.0,>=7.0
+vg>=1.5
