@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: ai-django-fileupload
+Version: 0.1.1
+Summary: Integrate jQuery fileupload
+Home-page: https://gitlab.ambient-innovation.com/ai/ai-django-fileupload
+Author: Ambient Innovation GmbH
+Author-email: info@ambient-innovation.com
+License: The MIT License (MIT)
+Download-URL: https://gitlab.ambient-innovation.com/ai/ai-django-fileupload.git
+Description: A minimal django package with a working jquery file upload and list of files
+Platform: UNKNOWN
