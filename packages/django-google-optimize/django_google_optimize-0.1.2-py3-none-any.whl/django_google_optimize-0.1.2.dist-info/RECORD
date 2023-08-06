@@ -1,0 +1,8 @@
+google_optimize/__init__.py,sha256=Vkc6KoLsfx3EX0LzqUelS_-mOK-yH6ZLUytjB19MwRc,106
+google_optimize/context_processors.py,sha256=QLXukI49FQ2I-74yF4KJitxPx0YwDRYl5Nknx6hPESY,294
+google_optimize/utils.py,sha256=InwwZOhpx1x2NM8e5NbqvY0YrvDBeNK72gi1DS2ByVs,1973
+django_google_optimize-0.1.2.dist-info/LICENSE,sha256=e42YlVeOGAB2heklLsO4tYucTnYX3FeqR-h3TLxmjBQ,1091
+django_google_optimize-0.1.2.dist-info/METADATA,sha256=7pCCuHaQ_uRG9xOh9UsBTc6_yjw9J5BkCexxqcHQ6Qw,3766
+django_google_optimize-0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_google_optimize-0.1.2.dist-info/top_level.txt,sha256=U0Ene3XpOOaxbGab8FL29Ojgo75_rk1j1biDdnBMNcg,16
+django_google_optimize-0.1.2.dist-info/RECORD,,
