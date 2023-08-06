@@ -1,0 +1,15 @@
+oslo_limit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oslo_limit/_i18n.py,sha256=ringjyqwak2fI5D7hSZIjtbuXPGu50AJHHKIxn1NVHU,826
+oslo_limit/exception.py,sha256=3W941btggFVM0cA4Wafq8F_8UbypgONYXGPz28fShrw,2373
+oslo_limit/limit.py,sha256=LV35ZWm9kbcmikDfGyWNRUUu9Y3OlswewE41OzDc2hI,10630
+oslo_limit/opts.py,sha256=1xtONU2tg6K3fG3IBfPY6PH6-_N3m78WRdnjPq84gP0,1885
+oslo_limit/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oslo_limit/tests/test_limit.py,sha256=gbPFjwKakS_kM0YxAjPMENBrVB_GQ_czyhoYOtEjVJw,10038
+oslo.limit-0.3.0.dist-info/AUTHORS,sha256=mQeuDZm0-Ioxs8ixnGhkBoktAWdcwVSCgduuQsErVfU,647
+oslo.limit-0.3.0.dist-info/LICENSE,sha256=XfKg2H1sVi8OoRxoisUlMqoo10TKvHmU_wU39ks7MyA,10143
+oslo.limit-0.3.0.dist-info/METADATA,sha256=lSQDJpzip6QzITu1fPt2AO3me6DyWoq8vDw9s8UQ-_c,1927
+oslo.limit-0.3.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+oslo.limit-0.3.0.dist-info/entry_points.txt,sha256=RuNc34_HNRXYyaT4fhzh9gxaWUPlXcPrhvGoM3yTWN4,59
+oslo.limit-0.3.0.dist-info/pbr.json,sha256=RlJgBbWe18Gz1f6YhWxjaMXBxzhcx_poz74uNraM5hQ,46
+oslo.limit-0.3.0.dist-info/top_level.txt,sha256=Ohf0M1wlmWqOJG4DkNrviUF1NlzzMKhgeUx0JJw4F1A,11
+oslo.limit-0.3.0.dist-info/RECORD,,
