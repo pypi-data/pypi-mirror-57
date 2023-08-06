@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: mysql-sql-operate
+Version: 0.1.1
+Summary: mysql operate
+Home-page: https://crm.booleandata.cn/
+Author: feikong
+Author-email: feikong@shouxin168.com
+License: UNKNOWN
+Description: test for making a third package.
+        
+        but now must be have a readme.
+        
+        so i create a readme.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.0, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3*
