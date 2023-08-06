@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: matrix-saml-strip-hostname
+Version: 0.1.0
+Summary: SAML mapping provider to strip hostnames from mxids
+Author: Sylvain Fankhauser
+Author-email: sephi@fhtagn.top
+Requires-Python: >=3.5
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
