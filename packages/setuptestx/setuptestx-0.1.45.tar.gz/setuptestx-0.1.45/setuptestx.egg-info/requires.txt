@@ -1,0 +1,4 @@
+setuplibcore>=0.1.0
+yapyutils>=0.1.0
+pythonids>=0.1.31
+yapyutils>=0.1.0
