@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: airQInsight
+Version: 0.2.0
+Summary: A tool designed to power exploratory data analysis, on airQ collected Air Quality Indicator Data.
+Home-page: https://github.com/itzmeanjan/airQ-insight/
+License: UNKNOWN
+Author: Anjan Roy
+Author-email: anjanroy@yandex.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: flit ; extra == "dev"
+Provides-Extra: dev
+
+# airQ-insight
+Works on Air Quality Indication Dataset collected by **airQ** to give deeper insight, written with :heart:
+
+**More coming soon ...**
+
