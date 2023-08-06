@@ -1,0 +1,3 @@
+[console_scripts]
+aws-sso = aws_sso.command_line:main
+
