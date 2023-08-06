@@ -1,0 +1,41 @@
+README.md
+setup.py
+simplequi/__init__.py
+simplequi/_api.py
+simplequi/_app.py
+simplequi/_canvas.py
+simplequi/_colours.py
+simplequi/_constants.py
+simplequi/_fonts.py
+simplequi/_frame.py
+simplequi/_image.py
+simplequi/_keys.py
+simplequi/_mapping.py
+simplequi/_sound.py
+simplequi/_timer.py
+simplequi/_url.py
+simplequi/_widgets.py
+simplequi.egg-info/PKG-INFO
+simplequi.egg-info/SOURCES.txt
+simplequi.egg-info/dependency_links.txt
+simplequi.egg-info/requires.txt
+simplequi.egg-info/top_level.txt
+simplequi/examples/__init__.py
+simplequi/examples/codeskulptor_default.py
+simplequi/examples/sample_drawing.py
+simplequi/examples/sample_image.py
+simplequi/examples/sample_sound.py
+simplequi/examples/sample_timer.py
+simplequi/examples/resources/253756_tape-on.wav
+simplequi/examples/resources/425556__planetronik__rock-808-beat.mp3
+simplequi/examples/resources/sample_image.png
+simplequi/resources/fonts/NK57 Monospace/nk57-monospace-cd-rg.ttf
+simplequi/resources/fonts/NK57 Monospace/nk57-monospace-sc-rg.ttf
+simplequi/resources/fonts/NK57 Monospace/read-this.html
+simplequi/resources/fonts/NK57 Monospace/typodermic-eula-02-2014.pdf
+simplequi/resources/ssllib/BUILD-README.txt
+simplequi/resources/ssllib/FAQ.txt
+simplequi/resources/ssllib/LICENSE.txt
+simplequi/resources/ssllib/README.txt
+simplequi/resources/ssllib/libcrypto-1_1-x64.dll
+simplequi/resources/ssllib/libssl-1_1-x64.dll
