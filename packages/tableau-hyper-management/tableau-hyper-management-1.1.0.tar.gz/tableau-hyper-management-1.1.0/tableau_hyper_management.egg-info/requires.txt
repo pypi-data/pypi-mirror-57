@@ -1,0 +1,4 @@
+cffi<2,>=1.12.2
+numpy
+pandas
+tableauhyperapi
