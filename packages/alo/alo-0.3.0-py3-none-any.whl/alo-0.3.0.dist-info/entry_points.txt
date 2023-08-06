@@ -1,0 +1,3 @@
+[console_scripts]
+alo=alo.cli:main
+
