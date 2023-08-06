@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: mkdocs-git-revision-date-localized-plugin
+Version: 0.2
+Summary: Mkdocs plugin that enables displaying the localized date of the last git modification of a markdown file.
+Home-page: https://github.com/timvink/mkdocs-git-revision-date-localized-plugin/
+Author: Tim Vink
+Author-email: vinktim@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: mkdocs git date timeago babel plugin
+Platform: UNKNOWN
+Requires-Python: >=3.4
