@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: startergateid
+Version: 0.0.2
+Summary: SID Client for Python
+Home-page: https://github.com/startergate/SID.py
+Author: startergate
+Author-email: startergate36@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# SID.py
+
+SID Python Client
+
+
