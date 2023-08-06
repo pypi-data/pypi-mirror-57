@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: erasure
+Version: 0.0.1
+Summary: A python library to interact with the erasure protocol.
+Home-page: https://github.com/ankitchiplunkar/erasure.py
+Author: Ankit Chiplunkar
+Author-email: ankitchiplunkar@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: ethereum
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6, <4
