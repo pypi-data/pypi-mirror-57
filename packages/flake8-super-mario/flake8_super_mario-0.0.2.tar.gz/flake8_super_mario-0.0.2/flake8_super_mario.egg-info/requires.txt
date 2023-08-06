@@ -1,0 +1,3 @@
+setuptoolscognitive-complexity>=0.0.4
+mr-proper>=0.0.4
+mccabe>=0.6.1
