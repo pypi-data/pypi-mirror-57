@@ -1,0 +1,14 @@
+lazygrid/__init__.py,sha256=x_wrOC01V5TnqnI3cNNkPRGerI5eGn0Jcy5ohPySjdg,786
+lazygrid/config.py,sha256=Y7WhoKhxvkQqpayvi2AUlFxPpISYXMJD9uF6PzFdnkY,1238
+lazygrid/database.py,sha256=o99j0432yNYflaOcq8MtP6wNRuX1CWBC0nDxRbJaexU,4701
+lazygrid/datasets.py,sha256=M0imPBRBRMlltuBbEJRpfsc-P6WbsB44R4cnAJd1Mh0,8923
+lazygrid/grid.py,sha256=avfoqGcTCyK1eqjWfNUifSDUWUHMCk1qfQAaGm9sjYo,7261
+lazygrid/lazy_estimator.py,sha256=JxwulOFYx3A_5oOlquctPDmmIc7eZB7AFDAuAOygjME,9773
+lazygrid/plotter.py,sha256=Hg_G1BIVSjXTkiqehYh4fki0kXVu9xL1cvPv1kghFoU,6716
+lazygrid/statistics.md,sha256=W4eamETTx7vAVgmWnvKAyIe0z8zrJ3LwHCMskxR-6Eg,9062
+lazygrid/statistics.py,sha256=vvQOToo6wdgaD3dcC4hDyWLCnyAGCbjOEoNUcTuUChg,6589
+lazygrid-5.0.0.dist-info/LICENSE.txt,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+lazygrid-5.0.0.dist-info/METADATA,sha256=flj9dxYO_8-6TEoSLPMJ_slq4I-JN-H8QSOJ3LOWn9s,5713
+lazygrid-5.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+lazygrid-5.0.0.dist-info/top_level.txt,sha256=RN5iibPLBPEcxMqBbgIZuDMm4kTMwxJfhtkztgQh8ao,9
+lazygrid-5.0.0.dist-info/RECORD,,
