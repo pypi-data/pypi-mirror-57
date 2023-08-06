@@ -1,0 +1,5 @@
+Pillow>=3.4.0
+six
+imutils
+opencv-python
+numpy
