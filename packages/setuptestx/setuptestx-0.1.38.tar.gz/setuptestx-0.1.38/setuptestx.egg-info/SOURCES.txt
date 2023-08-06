@@ -1,0 +1,16 @@
+.gitignore
+ArtisticLicense20.html
+MANIFEST.in
+README.md
+licenses-amendments.txt
+setup.cfg
+setup.py
+setuptestx/__init__.py
+setuptestx/testx.py
+setuptestx.egg-info/PKG-INFO
+setuptestx.egg-info/SOURCES.txt
+setuptestx.egg-info/dependency_links.txt
+setuptestx.egg-info/entry_points.txt
+setuptestx.egg-info/not-zip-safe
+setuptestx.egg-info/requires.txt
+setuptestx.egg-info/top_level.txt
