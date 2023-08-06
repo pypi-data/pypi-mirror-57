@@ -1,0 +1,9 @@
+pybackupper/__init__.py,sha256=fFr_IXowC1hcHSnGMzrJrwXUNeUicBU5zSpjpCah66A,31
+pybackupper/Google/GAuth.py,sha256=SJ7cfHgq89bmJvzWvAQynMMCHWOgm6qHFDHaOzq9BW0,1464
+pybackupper/Google/GMain.py,sha256=DVTnDthbyMLtMKl5TE00qrVHioaekBBzZ8MyhVQelMc,2444
+pybackupper/Google/GRequests.py,sha256=SJ3YEXILXOBi1iCAjWWX7crGL1N599ZUrO-lqxLBJpU,3021
+pybackupper/Google/__init__.py,sha256=0JLC-hfGngX79u5UfkxZxgqqIZQUTbVCHt2Fuh1KurQ,42
+pybackupper-2.0.dist-info/METADATA,sha256=XofekCyn8NuRtXuXTIP-FTjl6G3e5ezHBhvAqQX40sU,1251
+pybackupper-2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pybackupper-2.0.dist-info/top_level.txt,sha256=cv5BQY34QEtekmdAlTy0I_nZTvIvUIdAvOHe_k15xdc,12
+pybackupper-2.0.dist-info/RECORD,,
