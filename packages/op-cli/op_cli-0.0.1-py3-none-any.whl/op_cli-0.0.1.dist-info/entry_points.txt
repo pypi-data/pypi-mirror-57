@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        op-cli=op_cli.main:main
+    

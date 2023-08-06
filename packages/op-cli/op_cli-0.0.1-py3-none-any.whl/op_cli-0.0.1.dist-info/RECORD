@@ -1,0 +1,13 @@
+op_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+op_cli/main.py,sha256=zPwRgpB3VVRVNGrn_HKSlENNBUQ9VPnyJlP6TKxU2cg,1298
+op_cli/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+op_cli/functions/app.py,sha256=rWO13DK_f485F4v6TsWb-yQFhaSoCfQk8Iv9XZukLfg,1730
+op_cli/functions/arithmetic.py,sha256=UlaTaLLiAJxIUHSK6qUrCEkDzSPT2u9ewXZQXc62MCU,170
+op_cli/functions/comparison.py,sha256=2fm-bI65DXdIFFSVRCj1KZDPCKTq4TP6NS145YnuinA,137
+op_cli/functions/operation.py,sha256=oOS7MKFdlXq2KLMnVCFIKTGGlZcnNWZhyVewnTEJePY,53
+op_cli-0.0.1.dist-info/METADATA,sha256=vMFfj6OH78UoRRtV-0NUdGo_dQey9G8glOp2p0R3wYo,1438
+op_cli-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+op_cli-0.0.1.dist-info/dependency_links.txt,sha256=jMTGCjkWJnAW6FjSuJz359eVMnYV2e_2kqqg9KVWMFs,395
+op_cli-0.0.1.dist-info/entry_points.txt,sha256=Suue3MalS4AlraHZ1moXjMMM9yTsGALFR1BKKLiY8js,63
+op_cli-0.0.1.dist-info/top_level.txt,sha256=zU1N3fVZoK6NBpTKC9_f0Diy2lmjGTx6pR1d36YLZbY,7
+op_cli-0.0.1.dist-info/RECORD,,
