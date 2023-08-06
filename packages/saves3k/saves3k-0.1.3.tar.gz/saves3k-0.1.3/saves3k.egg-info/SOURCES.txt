@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+saves3k/saves3k.py
+saves3k.egg-info/PKG-INFO
+saves3k.egg-info/SOURCES.txt
+saves3k.egg-info/dependency_links.txt
+saves3k.egg-info/top_level.txt
