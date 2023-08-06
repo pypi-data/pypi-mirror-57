@@ -1,0 +1,17 @@
+.gitignore
+LICENSE.txt
+readme.md
+setup.cfg
+setup.py
+.idea/encodings.xml
+.idea/markov.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/libraries/R_User_Library.xml
+markov_model_attribution/__init__.py
+markov_model_attribution.egg-info/PKG-INFO
+markov_model_attribution.egg-info/SOURCES.txt
+markov_model_attribution.egg-info/dependency_links.txt
+markov_model_attribution.egg-info/not-zip-safe
+markov_model_attribution.egg-info/top_level.txt
