@@ -1,0 +1,10 @@
+README.md
+contributing.md
+setup.cfg
+setup.py
+ldr/ldr.egg-info/PKG-INFO
+ldr/ldr.egg-info/SOURCES.txt
+ldr/ldr.egg-info/dependency_links.txt
+ldr/ldr.egg-info/entry_points.txt
+ldr/ldr.egg-info/requires.txt
+ldr/ldr.egg-info/top_level.txt
