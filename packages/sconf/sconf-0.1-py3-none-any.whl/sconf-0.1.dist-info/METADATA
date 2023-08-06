@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sconf
+Version: 0.1
+Summary: Simple config supporting CLI modification
+Home-page: https://github.com/khanrc/sconf
+Author: khanrc
+Author-email: khanrc@naver.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Requires-Dist: ruamel.yaml
+
+UNKNOWN
+
+
