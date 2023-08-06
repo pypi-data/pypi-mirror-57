@@ -1,0 +1,28 @@
+Metadata-Version: 1.2
+Name: BotDr
+Version: 1.3
+Summary: Birth date control
+Home-page: https://github.com/botfg/BotDr
+Author: botfg76
+Author-email: botfgbartenevfgzero76@gmail.com
+License: Apache License Version 2.0
+Description: Description
+        ===========
+        
+        Linux only
+        
+        BotDr - python3 console script for working with birthday dates supporting local accounts
+        
+        This program calculates the number of days before a birthday knowing the date of birth.
+        
+        You can also get information about the number of birthdays before the end of the year, etc.
+        
+        Accounts are portable and encrypted
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
