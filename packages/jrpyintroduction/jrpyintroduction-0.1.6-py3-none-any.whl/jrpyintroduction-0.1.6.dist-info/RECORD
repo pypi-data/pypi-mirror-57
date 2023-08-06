@@ -1,0 +1,10 @@
+jrpyintroduction/__init__.py,sha256=M1XIivW2cpVswfjz2wqGEl0NqcMSyXOYJt2W29V91N8,188
+jrpyintroduction/__version__.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+jrpyintroduction/datasets/__init__.py,sha256=OT_bPVicLRFQz8EhrMg1BlYkbTwF8uME8TbDhtIFDNM,60
+jrpyintroduction/datasets/data/movies.zip,sha256=qivayc0CcavExRtCYDR553KIHA0vp7L2mrtRcu1hGfU,1355247
+jrpyintroduction/datasets/movies.py,sha256=Nij23weMMELEnUgj3Jtg3wkUeTALgy8a7-QD6MpMZXs,301
+jrpyintroduction/get_numeric_list.py,sha256=WdsVE6Zaukwt1dja-uieibcvasmlmEgcjE6KOiSqiBo,237
+jrpyintroduction/vignettes.py,sha256=qlSGZzeMip5jmYQf2xqLmgW2tG7sIMAKlTog1oZmZRU,1084
+jrpyintroduction-0.1.6.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+jrpyintroduction-0.1.6.dist-info/METADATA,sha256=yUvd6wJpdUxwr2qSIqBhJBU9Far1yQKtlZl8xbEOVkw,440
+jrpyintroduction-0.1.6.dist-info/RECORD,,
