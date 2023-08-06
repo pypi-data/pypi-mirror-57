@@ -1,0 +1,11 @@
+portfolio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+portfolio/portfolio_report.py,sha256=SWAOMMjoqyNE25UHjozDhBv-aGx8q5R6LVqlFHGETZg,5119
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=UWm3xqe88L1jaHusRdtpnQxgZoJbFHBvE-AfFv5mtME,477
+tests/test_io.py,sha256=9_Q-nZPKSB8A03etQOmZ1cMFH7B3rkmFvIfzIkUPbgc,3482
+portfolio_report_SMACDOUGALL_BOT-0.0.3.dist-info/LICENCE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+portfolio_report_SMACDOUGALL_BOT-0.0.3.dist-info/METADATA,sha256=E9BgmKKUtsQNsyZbDgBNjsRIWAFNyJFmQamCn-fv4fM,347
+portfolio_report_SMACDOUGALL_BOT-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+portfolio_report_SMACDOUGALL_BOT-0.0.3.dist-info/entry_points.txt,sha256=cCD5eeIN_vO0GUj_bI0sE9vXjDe80oy3SZv2-UVOB24,70
+portfolio_report_SMACDOUGALL_BOT-0.0.3.dist-info/top_level.txt,sha256=aq2znRkkfvFVli3-keXJ3pKcAIziOICUDF7XxlSzuWs,10
+portfolio_report_SMACDOUGALL_BOT-0.0.3.dist-info/RECORD,,
