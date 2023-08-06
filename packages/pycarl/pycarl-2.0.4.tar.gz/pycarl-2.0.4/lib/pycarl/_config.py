@@ -1,0 +1,4 @@
+# Generated from setup.py at 2019-12-13 15:16:27.670904
+CARL_VERSION = "14.19"
+CARL_WITH_PARSER = True
+CARL_WITH_CLN = True
