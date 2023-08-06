@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: stockroom
+Version: 0.0.1
+Summary: A high level data and model versioning toolkit sits on top of hangar
+Home-page: https://github.com/tensorwerk/stockroom
+Author: hhsecond
+Author-email: sherin@tensorwerk.com
+License: UNKNOWN
+Description: # StockRoom
+        A platform to version models, data, parameters, metrics etc alongside git versioned source code. 
+        Althouh it is built as a high level API kit for [hangar](https://github.com/tensorwerk/hangar-py) and comes as part of hangar itself, user doesn't need to know any founding philosophy of hangar work with stockroom unless you need fine grained control
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
