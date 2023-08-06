@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: python-enzymeml
+Version: 1.0.0
+Summary: Library for reading / writing Enzyme ML documents
+Home-page: https://github.com/EnzymeML/python-enzymeml
+Author: EnzymeML Team
+Author-email: enzymeml-team@googlegroups.com
+License: BSD-2-Clause
+Project-URL: Bug Reports, https://github.com/EnzymeML/python-enzymeml/issues
+Project-URL: Source, https://github.com/EnzymeML/python-enzymeml
+Description: UNKNOWN
+Platform: UNKNOWN

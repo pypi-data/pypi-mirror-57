@@ -1,0 +1,13 @@
+README.md
+setup.py
+enzymeml/__init__.py
+enzymeml/enzymeml.py
+enzymeml/enzymemlkey.py
+enzymeml/ontologymanager.py
+enzymeml/tables.py
+python_enzymeml.egg-info/PKG-INFO
+python_enzymeml.egg-info/SOURCES.txt
+python_enzymeml.egg-info/dependency_links.txt
+python_enzymeml.egg-info/requires.txt
+python_enzymeml.egg-info/top_level.txt
+test/test.py
