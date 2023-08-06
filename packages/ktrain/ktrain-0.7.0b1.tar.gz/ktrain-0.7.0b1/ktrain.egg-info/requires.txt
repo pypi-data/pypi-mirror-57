@@ -1,0 +1,13 @@
+scikit-learn>=0.20.0
+matplotlib>=3.0.0
+pandas>=0.24.2
+fastprogress>=0.1.21
+keras_bert
+requests
+seqeval
+joblib
+langdetect
+jieba
+cchardet
+networkx==2.3
+bokeh
