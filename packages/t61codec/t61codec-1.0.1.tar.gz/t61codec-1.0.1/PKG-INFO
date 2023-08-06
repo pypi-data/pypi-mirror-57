@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: t61codec
+Version: 1.0.1
+Summary: Python Character Mapping Codec for T61
+Home-page: https://github.com/exhuma/t61codec
+Author: Michel Albert
+Author-email: michel@albert.lu
