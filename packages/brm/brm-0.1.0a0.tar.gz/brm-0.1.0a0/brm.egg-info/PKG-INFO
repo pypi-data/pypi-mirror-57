@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: brm
+Version: 0.1.0a0
+Summary: Bicycle Repair Man - Rewrite Python Sources
+Home-page: https://github.com/isidentical/brm
+Author: isidentical
+Author-email: isidentical@gmail.com
+License: UNKNOWN
+Description: # Bicycle Repair Man
+        Rewrite python sources, highly experimental
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
