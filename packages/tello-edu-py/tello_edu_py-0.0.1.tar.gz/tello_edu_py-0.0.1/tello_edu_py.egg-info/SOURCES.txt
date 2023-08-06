@@ -1,0 +1,10 @@
+README.md
+setup.py
+tello_edu_py/__init__.py
+tello_edu_py/comms_manager.py
+tello_edu_py/fly_tello.py
+tello_edu_py/tello.py
+tello_edu_py.egg-info/PKG-INFO
+tello_edu_py.egg-info/SOURCES.txt
+tello_edu_py.egg-info/dependency_links.txt
+tello_edu_py.egg-info/top_level.txt
