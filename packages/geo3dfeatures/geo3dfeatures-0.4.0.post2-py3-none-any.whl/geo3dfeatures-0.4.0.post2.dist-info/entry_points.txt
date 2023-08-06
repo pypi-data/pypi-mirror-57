@@ -1,0 +1,3 @@
+[console_scripts]
+geo3d=geo3dfeatures.tools.__main__:main
+
