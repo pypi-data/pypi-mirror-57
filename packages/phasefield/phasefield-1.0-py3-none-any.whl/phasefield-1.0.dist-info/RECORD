@@ -1,0 +1,17 @@
+phasefield/InspectSharp.py,sha256=5TvrHAsSLWF3jGxmGpEeu5qi3QCaYg5VE4gcawaL5sM,8408
+phasefield/__init__.py,sha256=vyPH69lUrf3kHUJbRQlDuj_Z-amRmbNkDAjIeLcZonM,191
+phasefield/auxfun.py,sha256=HVE17nPwXsABFNolM1pyYnZL8p3gjItAKSiJtDpGL9c,3321
+phasefield/external.py,sha256=d7wcv5GMY1DSFFQLf7f1ufAQt73qvpT1QE6FzYSryk0,27
+phasefield/ob_frac.cc,sha256=zom2lvdLNfHW5RyfGVWe4xkTlbkZ1-XguM4y1XMOJpQ,6861
+phasefield/phase_stepper.py,sha256=TaefUocD92ykijcFCpK8ehtLh-dgQtNBg_r1GQLnppU,18823
+phasefield/stepper.py,sha256=24RTl8aJHXxUxLigrfHRJhsESA_ANujnHVmMHTgSpcE,24520
+phasefield/tnnmg.cc,sha256=aPPFaDe2rqU0q7HV9TrPg88_lQCKbP9tU98dv7JiDlY,6500
+phasefield/ufl_dict.py,sha256=UmxxYjuBNmM9o2aE3xfX99yQuwK6vY5GW29roOdanGA,1347
+phasefield/ufl_phasefield.py,sha256=YYOMP7scYY8Ob9D3-Hdr2JfcNC-gcHT9jlM7J8Cg3kk,13885
+phasefield/useDune.py,sha256=24ZtK-v6xRPLfhMH5Uto8HtkXEkmsMEuXwCacRdNnWI,2154
+phasefield/useFenics.py,sha256=tCTKQcykpfjWaRP1yp6aOyG8WDWtu8Dyb2Q_HJ-5cyg,2472
+phasefield-1.0.dist-info/LICENSE.md,sha256=5f3to2cCZnrO4Gm84vYItqMuseBd1wwgry8KxROsZnQ,35250
+phasefield-1.0.dist-info/METADATA,sha256=-pSFtMnppXHGR-cKaKK28cUJ0dN1QFnhOjz5mFR1HqI,3003
+phasefield-1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+phasefield-1.0.dist-info/top_level.txt,sha256=_XBq3XCBlxYcvR7NYL_GKML6krIblzYMxeTwFk1iKuU,11
+phasefield-1.0.dist-info/RECORD,,
