@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: aud
+Version: 0.8.0
+Summary: aud is a python package that aims to make bulk file edits easy enough for anyone with minimal scripting or python knowledge
+Home-page: https://github.com/zdhoward/aud
+Author: Zach Howard
+Author-email: zach.d.howard@gmail.com
+License: MIT
+Download-URL: https://github.com/zdhoward/aud/archive/v_080.tar.gz
+Description: UNKNOWN
+Keywords: audio,studio,batch,easy
+Platform: UNKNOWN
