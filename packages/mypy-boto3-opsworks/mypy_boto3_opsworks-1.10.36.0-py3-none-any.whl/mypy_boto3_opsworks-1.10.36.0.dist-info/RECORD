@@ -1,0 +1,13 @@
+mypy_boto3_opsworks/__init__.py,sha256=R4xFIV8eeklqD4jX4sjNHgnmmbOGRMw9AkjNwuyj0CQ,697
+mypy_boto3_opsworks/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_opsworks/client.py,sha256=zDbNW9TVdfCSQRCcvviWtm5ca9QFMdqudc1eTPPtFHI,43893
+mypy_boto3_opsworks/paginator.py,sha256=XmCZ0vhNCOd4r39ItzyCTyNaBjKkE-cPTCDwEz8XoVw,1060
+mypy_boto3_opsworks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_opsworks/service_resource.py,sha256=udw3mxgTTkDdwRK_9Y3Bd6IBoiPKKRgl4NhzQHA3kQE,12170
+mypy_boto3_opsworks/type_defs.py,sha256=-_Z1Sg3DCMiDDd56ugk1yqWsU0UtKI2rc-MKD_xP8Rc,23829
+mypy_boto3_opsworks/version.py,sha256=sWKX2BV98mDKhEE-vx306wW6px5oyy-Rt8EEXgS78Ho,57
+mypy_boto3_opsworks/waiter.py,sha256=juJb7aXNDpRm32hbZ8O26K7WIsI-c5oEb0xo_CRLLYc,4550
+mypy_boto3_opsworks-1.10.36.0.dist-info/METADATA,sha256=QyzmjigIix1l2t3XlIoeXXLYtTT-OeLp0drPby6Q_pI,1213
+mypy_boto3_opsworks-1.10.36.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_opsworks-1.10.36.0.dist-info/top_level.txt,sha256=g6K7Pqn-Pcp-0bpsfAkt8E5wxeZMUqgetKdt4D6ny3Q,20
+mypy_boto3_opsworks-1.10.36.0.dist-info/RECORD,,
