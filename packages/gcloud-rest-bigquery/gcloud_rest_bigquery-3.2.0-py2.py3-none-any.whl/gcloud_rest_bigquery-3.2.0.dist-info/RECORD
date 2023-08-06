@@ -1,0 +1,14 @@
+gcloud_rest_bigquery-3.2.0-py3.7-nspkg.pth,sha256=yh_2vbQ3vJpMiFbvaFfXmGdXqzGytdeN5hxcSUNFt5g,1692
+gcloud/rest/bigquery/__init__.py,sha256=vpz9eyCyBn07Zjiwg2evmIvjCRvLFVu2oOIA_F4OMWI,471
+gcloud/rest/bigquery/bigquery.py,sha256=MGNEW5u3UJjlEdPgY9STHugg9IeGGF53-W8A7MhACgk,9736
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/conftest.py,sha256=G69yHJI3b72fFN7zpUzbqxFCJFiQNelHQmZJ-JOUKqg,827
+tests/integration/smoke_test.py,sha256=Rjn_tLQQIdVyukcZKugx2Z0j-2EDJf5bzmaxH754A1o,4033
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/bigquery_test.py,sha256=YoBJ9WdwG3X-MYSNBAw7VG2Rh6SfQoQ7ywF_LYwJXKs,1294
+gcloud_rest_bigquery-3.2.0.dist-info/LICENSE,sha256=Icg1hWR-wexT11pK_0G4br0w4RzIRi94pRv0dc6bK_k,1068
+gcloud_rest_bigquery-3.2.0.dist-info/METADATA,sha256=bOsLHvdZeiXg-9LZdO6LWW4FIa78U3I14iKnTBmWXr4,2387
+gcloud_rest_bigquery-3.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+gcloud_rest_bigquery-3.2.0.dist-info/namespace_packages.txt,sha256=lvTjKP_ervwXKvwypRaaIo5JBgFsERlMNd73yVqrX10,19
+gcloud_rest_bigquery-3.2.0.dist-info/top_level.txt,sha256=sox9WnuebKsnnDxekC1Pd7Q7wUz_DL8DRjlHhthn-ik,13
+gcloud_rest_bigquery-3.2.0.dist-info/RECORD,,
