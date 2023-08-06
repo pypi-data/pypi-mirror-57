@@ -1,0 +1,45 @@
+language: python
+python:
+    - "3.4"
+    - "3.5"
+    - "3.6"
+    - "pypy3.5"
+
+matrix:
+  include:
+    - python: 3.7
+      dist: xenial
+
+# when setting sudo to true, issues with strace are fixed
+# see: https://github.com/travis-ci/travis-ci/issues/9033
+sudo: true
+
+addons:
+  apt:
+    packages:
+      - strace
+
+before_install:
+  - pip install -U pip setuptools
+
+install:
+  - pip install .
+  - pip install -r dev_requirements.txt python-coveralls
+
+branches:
+  only:
+    - master
+    - test
+
+
+script:
+   - doit pyflakes
+   - py.test
+   - if [[ $TRAVIS_PYTHON_VERSION == '3.7' ]]; then doit coverage; fi
+after_success:
+  - if [[ $TRAVIS_PYTHON_VERSION == '3.7' ]]; then coveralls; fi
+
+notifications:
+    email:
+        on_success: change
+        on_failure: change
