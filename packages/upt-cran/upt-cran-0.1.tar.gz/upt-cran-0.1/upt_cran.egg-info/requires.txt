@@ -1,0 +1,6 @@
+lxml
+requests
+upt
+
+[test]
+requests_mock
