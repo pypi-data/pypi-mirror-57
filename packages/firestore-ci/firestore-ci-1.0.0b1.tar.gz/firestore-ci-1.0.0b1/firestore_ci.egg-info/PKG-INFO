@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: firestore-ci
+Version: 1.0.0b1
+Summary: ORM for Firestore with cascade
+Home-page: https://github.com/crazynayan/firestore
+Author: Nayan Zaveri
+Author-email: nayan@crazyideas.co.in
+License: MIT
+Description: UNKNOWN
+Keywords: firestore google orm cascade
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
