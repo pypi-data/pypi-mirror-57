@@ -1,0 +1,11 @@
+[Unit]
+Description=Graph generator, using airQ collected data
+Wants=airQ-insight.timer
+
+[Service]
+User=anjan
+WorkingDirectory=/path-to-working-directory
+ExecStart=airQInsight /path-to-data-file /path-to-sink-directory
+
+[Install]
+WantedBy=multi-user.target
