@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: lunuan
+Version: 0.1.2
+Summary: Python开发中常用的类
+Home-page:  
+Author: huaxing
+Author-email: huaxing@lunuan.com.cn
+Maintainer: huaxing
+Maintainer-email: huaxing@lunuan.com.cn
+License: BSD License
+Description: Python开发中常用的类
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
