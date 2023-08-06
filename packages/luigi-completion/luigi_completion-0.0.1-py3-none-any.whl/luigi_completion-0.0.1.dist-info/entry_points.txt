@@ -1,0 +1,3 @@
+[console_scripts]
+mklcomp = luigi_completion.make_luigi_completion:main
+
