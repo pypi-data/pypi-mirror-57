@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: odoo12-addon-partner_age
+Version: 12.0.1.0.0.99.dev1
+Summary: Partner Age
+Home-page: https://coopiteasy.be
+Author: Houssine BAKKALI <houssine.bakkali@gmail.com>
+License: AGPL-3
+Description: 
+            This module computes the age of the partner.
+            
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.5
