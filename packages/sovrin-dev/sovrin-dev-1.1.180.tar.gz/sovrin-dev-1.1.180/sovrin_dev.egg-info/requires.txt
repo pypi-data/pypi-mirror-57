@@ -1,0 +1,3 @@
+indy-node==1.12.1.dev1150
+sovtoken==1.0.6.dev126
+sovtokenfees==1.0.6.dev126
