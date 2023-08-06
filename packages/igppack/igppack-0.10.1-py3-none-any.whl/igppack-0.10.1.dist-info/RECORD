@@ -1,0 +1,9 @@
+igppack/__init__.py,sha256=R3U22X6-r6yMJLAzMPni0vCDUionb3J564zn3aoNI_c,214
+igppack/commands/__init__.py,sha256=v8Q-htK7bowM6qrKLWvNVJWyCmpRxxsCFhmadY1rm3Q,312
+igppack/commands/giustizia.py,sha256=bTXR_7PLlfQh7KreWKhkQUaCOYJwh4bzYZiTWEFAse4,2023
+igppack/commands/rage.py,sha256=NeJDQ4jzN796wiCkC8GmrePDibr137z_pSGnhQ0uvzM,734
+igppack/tables/__init__.py,sha256=zGa2NxI8lDUS_1mCc5JkqlhNGwWcFKY2BcvUFHZZl2c,239
+igppack/tables/giustizia.py,sha256=TFsI-bdXWk3rXyhavwxCMMN6iqxXTgSn82z7R9gwCfA,523
+igppack-0.10.1.dist-info/WHEEL,sha256=KvY1g7zIOl4mQEMkderYQrWQRhoTqMOhqr9g8hbxY54,85
+igppack-0.10.1.dist-info/METADATA,sha256=_Pcf1a1ddtr-i9jK5s8pn1xGzolwZlyfzjK3H6eLeOs,373
+igppack-0.10.1.dist-info/RECORD,,
