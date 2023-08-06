@@ -1,0 +1,7 @@
+README.md
+setup.py
+uipath_cloud/__init__.py
+uipath_cloud.egg-info/PKG-INFO
+uipath_cloud.egg-info/SOURCES.txt
+uipath_cloud.egg-info/dependency_links.txt
+uipath_cloud.egg-info/top_level.txt
