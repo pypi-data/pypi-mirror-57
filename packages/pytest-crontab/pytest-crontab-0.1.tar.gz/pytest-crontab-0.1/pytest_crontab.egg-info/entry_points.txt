@@ -1,0 +1,3 @@
+[pytest11]
+pytest-crontab = pytest_crontab.plugin
+

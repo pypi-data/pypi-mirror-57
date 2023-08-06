@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pytest-crontab
+Version: 0.1
+Summary: add crontab task in crontab
+Home-page: https://github.com/hanzhichao/pytest-crontab
+Author: Han Zhichao
+Author-email: superhin@126.com
+License: MIT license
+Description: add crontab task in crontab
+Keywords: pytest,py.test,crontab,mysql
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
