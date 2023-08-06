@@ -1,0 +1,3 @@
+[datasette]
+configure_asgi = datasette_configure_asgi
+
