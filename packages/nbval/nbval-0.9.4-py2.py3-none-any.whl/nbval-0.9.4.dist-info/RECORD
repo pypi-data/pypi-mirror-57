@@ -1,0 +1,12 @@
+nbval/__init__.py,sha256=Fd1XKyn-IBF_vwdIaQX0se9gGulgCuZlV07-BXOYDyg,104
+nbval/_version.py,sha256=63QzYubXcX22x5CY5ST5MIgV9Hk3M6xdhQdYu3bvT8Y,104
+nbval/cover.py,sha256=s0CiVa9nzzH7LZRxQlGm-dsDjxkEUuyPmO1hoVFRtHs,6746
+nbval/kernel.py,sha256=gdFywfnlaynaEbIKVW84PFB0rmJrOmG2PzJMJGZeEiI,7169
+nbval/nbdime_reporter.py,sha256=lSMkk6Bm0cmkJADk-DAzJsXz2-wNC28A1Z_Zgm8gVE8,4745
+nbval/plugin.py,sha256=nOCxJ6HtMqE97tHYrekKh1pXCBn-dYKmrbvdMpNeUW8,33664
+nbval-0.9.4.dist-info/LICENSE.txt,sha256=Hbx0S3i7jM0NwOH_oYUZoEqTBij9gv_K4nWOoDRFlPk,1910
+nbval-0.9.4.dist-info/METADATA,sha256=pEaxv3hJdxHTZQlhMX0i6vUUcnlId5q4VVmkFDJtaN4,6266
+nbval-0.9.4.dist-info/RECORD,,
+nbval-0.9.4.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+nbval-0.9.4.dist-info/entry_points.txt,sha256=0KerHyPTidWA-uBg9XWzqP012h0b2UUs9KHWurtT5_A,33
+nbval-0.9.4.dist-info/top_level.txt,sha256=KEpLJQIz_rqzvh3p38Qw9dHmRf6P4ITE1BiGnFTEQh8,6
