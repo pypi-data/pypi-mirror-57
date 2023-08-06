@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: extra-tools
+Version: 1.0.0
+Summary: A Python package for extra_tools
+Home-page: https://github.com/nikhilkumarsingh/weather-reporter
+Author: AnupamKris
+Author-email: anupamkris13262@gmail.com
+License: MIT
+Description: #There is nothing here
+        Get Lost
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
