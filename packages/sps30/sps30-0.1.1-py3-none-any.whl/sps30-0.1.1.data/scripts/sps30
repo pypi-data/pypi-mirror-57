@@ -1,0 +1,3 @@
+#!python
+
+echo "Hey! This is my pip package for Particulate Matter sensor SPS30 by Sensirion. This package supports Python3"
