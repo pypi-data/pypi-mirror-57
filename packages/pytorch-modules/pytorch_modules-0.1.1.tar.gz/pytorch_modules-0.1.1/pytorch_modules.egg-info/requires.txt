@@ -1,0 +1,5 @@
+torch>=1.0
+opencv-python<=3.4.8.29
+numpy>=1.11
+tqdm
+lmdb>=0.98
