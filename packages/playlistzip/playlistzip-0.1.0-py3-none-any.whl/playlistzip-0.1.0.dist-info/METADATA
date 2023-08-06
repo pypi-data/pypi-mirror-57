@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: playlistzip
+Version: 0.1.0
+Summary: 
+License: GPL-3.0+
+Author: Ross Vorotynskij
+Author-email: ross@rvcg.net
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: jsonpath-rw (>=1.4,<2.0)
+Requires-Dist: pycurl (>=7.43,<8.0)
