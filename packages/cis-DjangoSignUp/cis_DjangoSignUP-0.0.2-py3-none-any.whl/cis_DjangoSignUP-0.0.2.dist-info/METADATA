@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: cis-DjangoSignUP
+Version: 0.0.2
+Summary: DJango sign up
+Home-page: UNKNOWN
+Author: harish r
+Author-email: harish.r@imailt.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Django sign up testing package
+==============================
+
+**Description:**
+
+    The main motive is to upload our own package on PyPI. so for doing testing, I have
+    uploaded it on this platform.
+
+**installation:**
+
+Just run a command on the terminal 
+
+    pip install cis_DjangoSignUp.
+
+
+
+
