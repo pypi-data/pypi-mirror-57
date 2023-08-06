@@ -1,0 +1,3 @@
+[console_scripts]
+appcenter_tool = appcenter_tool.__main__:main
+
