@@ -1,0 +1,3 @@
+elephant
+neo
+sciunit>=0.1.5.2
