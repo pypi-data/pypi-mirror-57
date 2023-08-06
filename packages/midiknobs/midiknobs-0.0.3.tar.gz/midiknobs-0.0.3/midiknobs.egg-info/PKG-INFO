@@ -1,0 +1,37 @@
+Metadata-Version: 1.2
+Name: midiknobs
+Version: 0.0.3
+Summary: A small pyqt5 gui to use midi knobs for change linux master audio
+Home-page: UNKNOWN
+License: UNKNOWN
+Project-URL: Source, https://github.com/nicolalandro/midi_kbobs
+Description: # midi_kbobs
+        
+        This project is a gui able to set a midi knobs as controller of Linux master audio.
+        
+        # User Doc
+        
+        * run:
+        
+        ```bash
+        midiknobs_gui
+        ```
+        
+        ![Gui image](https://raw.githubusercontent.com/nicolalandro/midi_kbobs/master/imgs/gui.png)
+        
+        * Select the Midi device
+        * Set the correct value of "Channel" and "Control"
+        * Click "Connect"
+        * Move your midi knob
+        * Click "Disconnect"
+        
+        # Dev Doc
+        
+        ```bash
+        # use python>=3.5
+        python setup.py install
+        midiknobs_gui
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.5
