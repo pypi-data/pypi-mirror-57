@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+arxiv2bib/__init__.py
+arxiv2bib/arxiv2bib
+arxiv2bib/arxiv2bib.py
+arxiv2bibpy.egg-info/PKG-INFO
+arxiv2bibpy.egg-info/SOURCES.txt
+arxiv2bibpy.egg-info/dependency_links.txt
+arxiv2bibpy.egg-info/requires.txt
+arxiv2bibpy.egg-info/top_level.txt
