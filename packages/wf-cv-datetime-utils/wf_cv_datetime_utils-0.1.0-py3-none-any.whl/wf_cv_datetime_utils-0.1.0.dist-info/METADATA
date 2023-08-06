@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wf-cv-datetime-utils
+Version: 0.1.0
+Summary: Miscellaneous utilities for working with datetimes when processing images
+Home-page: https://github.com/WildflowerSchools/wf-cv-datetime-utils
+Author: Theodore Quinn
+Author-email: ted.quinn@wildflowerschools.org
+License: UNKNOWN
+Keywords: cv,datetime
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Dist: pandas (>=0.25)
+Requires-Dist: python-dateutil (>=2.8)
+
+# cv-datetime-utils
+
+Miscellaneous utilities for working with datetimes when processing images
+
+Contains functions to convert various datetime formats (native Python, numpy, pandas; timezone-naive or timezone-aware; timezones in dateutil format or pytz format) into known timezone-naive formats in UTC
+
+
