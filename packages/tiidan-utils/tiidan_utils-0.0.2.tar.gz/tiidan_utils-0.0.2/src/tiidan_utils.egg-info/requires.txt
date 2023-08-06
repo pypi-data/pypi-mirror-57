@@ -1,0 +1,7 @@
+click
+ssm-parameter-store==19.5.0
+botocore
+boto3
+numpy
+sqlalchemy
+pandas
