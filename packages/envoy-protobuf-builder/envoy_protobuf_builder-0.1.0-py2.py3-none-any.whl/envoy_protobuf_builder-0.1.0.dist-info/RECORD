@@ -1,0 +1,12 @@
+envoy_protobuf/__init__.py,sha256=pBPSa-Rt1N3KWTbOnBO324GVynzaWSPFQedknnsfjII,142
+envoy_protobuf/builder.py,sha256=T6ieRdDNFhmpgGJh7BCtBh9W_wE4aPZu_0h8wYii33k,2267
+envoy_protobuf/main.py,sha256=gsPO7zumUprBzX_Qiy2BAt3wgG0xwduTPa8zva4c0ZI,689
+envoy_protobuf/models.py,sha256=GA9dUDF7H0k6pECAob4ULMbjjQ1mvI2DoUSHxHXK-ts,1233
+envoy_protobuf/util.py,sha256=3zE6cPG_D2N3OCGNVPYJZMKjDc9XIeqOpRPQLBNEOWQ,378
+envoy_protobuf_builder-0.1.0.dist-info/AUTHORS.rst,sha256=OkOrMacRCm-akVqrZa2BgN3L33HeMoDAtPo_35TGjN8,158
+envoy_protobuf_builder-0.1.0.dist-info/LICENSE,sha256=zyM1c_-EYM6oi-5G_qYrHXhenbhwQkh29uN6zLyu2vo,1074
+envoy_protobuf_builder-0.1.0.dist-info/METADATA,sha256=m5WmoYYZhHMWJQgniI6tY-jLatq4krJGJvQl5mN0HpI,4412
+envoy_protobuf_builder-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+envoy_protobuf_builder-0.1.0.dist-info/entry_points.txt,sha256=y3H8Qltuaj_GdU9dvatG1jF5ut4D-ZGd-iqzeV_P66Q,69
+envoy_protobuf_builder-0.1.0.dist-info/top_level.txt,sha256=L1jGVO6sACjVqzaWX9C2Ub_bijEkxqbE0c1NmpLOZoQ,15
+envoy_protobuf_builder-0.1.0.dist-info/RECORD,,

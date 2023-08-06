@@ -1,0 +1,3 @@
+[console_scripts]
+envoy-protobuf-builder = envoy_protobuf.main:main
+
