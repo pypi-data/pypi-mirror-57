@@ -1,0 +1,14 @@
+nn_numpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nn_numpy/data.py,sha256=Bqdvj-KB3O3K6OKwEldJcJQ1JWgd-oRv1UOEShBDmt4,938
+nn_numpy/helpers.py,sha256=mqOZRGnOl9QuWUl07BDBWYxCypATJxO8xn0MDXVJLEg,59
+nn_numpy/layers.py,sha256=UyeD7eblA6pU3IkSpQn7ysPIAzIoOWK3Qhl-XDg6LCo,2342
+nn_numpy/loss.py,sha256=wIDVP-m6iiPsRWozXLG9lLW8r_3z3rZlHMM9FPpbIMc,583
+nn_numpy/nn.py,sha256=z_VYTSzlTo23WKTQ__mDDeMl-V6GTQSPprZ-ff2HDvE,810
+nn_numpy/optim.py,sha256=CdijSoV2YQ4GVei-1lnEX_rUtDrP8nWyFrNNEzsT7BI,492
+nn_numpy/tensor.py,sha256=1otuRSUPWg8ks6Kf-IRU9bw91MnjUaNVhGNmt8H_zqU,72
+nn_numpy/train.py,sha256=jIhN6FLMW5R8V1JaRywrA-etalddK1DQnAleCQYZ9CE,870
+nn_numpy-0.0.1.dist-info/LICENSE,sha256=5_1NAty8vH47U5j5C6So1oIVz3ZlY4BmGRhDx8CEDIA,1064
+nn_numpy-0.0.1.dist-info/METADATA,sha256=r6hZuavTUm7CCnVhlw01x-GgbZwBnMM5tSAlpCs3xt4,1412
+nn_numpy-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nn_numpy-0.0.1.dist-info/top_level.txt,sha256=CtdhP2uFX9c2qUDlAiPAdOuESMixrHSrHscMTGdGAYI,9
+nn_numpy-0.0.1.dist-info/RECORD,,
