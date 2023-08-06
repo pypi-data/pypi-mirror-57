@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: rss-aggregator
+Version: 4.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/Solborm
+Author: Vadim Rashkevich
+Author-email: vadimrashkevich@yandex.ru
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7

@@ -1,0 +1,13 @@
+setup.py
+RssReader/__init__.py
+RssReader/getting_news.py
+RssReader/logger.py
+RssReader/menu.py
+RssReader/rssaggregator.py
+RssReader/tests.py
+rss_aggregator.egg-info/PKG-INFO
+rss_aggregator.egg-info/SOURCES.txt
+rss_aggregator.egg-info/dependency_links.txt
+rss_aggregator.egg-info/entry_points.txt
+rss_aggregator.egg-info/requires.txt
+rss_aggregator.egg-info/top_level.txt
