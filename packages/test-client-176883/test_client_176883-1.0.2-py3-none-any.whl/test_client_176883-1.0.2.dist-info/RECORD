@@ -1,0 +1,8 @@
+test_client_176883/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_client_176883/add_item.py,sha256=gZs_qoTk4lj-R4vNIm3S4eb1u0ma6w4c6xa-7oZXGQY,376
+test_client_176883/client.py,sha256=yiGUACIQAv6sSjSPbMMVtQb9utKxxRg8PXfF94BsaVw,1450
+test_client_176883/test.py,sha256=GsjaOM3bgQ4UM5gk4wJ1C88wxJGL0Wwra4kmcsIX0xE,227
+test_client_176883-1.0.2.dist-info/METADATA,sha256=7nDLnWrKpAzTLAJI_sAJRFoTZpSjEGfzGkst6l4Njh4,689
+test_client_176883-1.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+test_client_176883-1.0.2.dist-info/top_level.txt,sha256=T94kAI6CkurkbznUe0K3Xez75591YC4TCCu2tBQUG5M,31
+test_client_176883-1.0.2.dist-info/RECORD,,
