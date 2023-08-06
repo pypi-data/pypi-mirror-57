@@ -1,0 +1,17 @@
+dostoevsky/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dostoevsky/corpora.py,sha256=7B7Knbp1We5XyoKPX3PUiQkQJuX9t9FRKzthuvQ-nLw,1776
+dostoevsky/models.py,sha256=W-KhoV5e7i3B2ebWD2s6mewrAt_I8YpqZhw2Vclv1C8,2451
+dostoevsky/tokenization.py,sha256=WB9o-3Np-unqvGygkA29ED-DGYGVZgYWVdqqZOmXLLo,3154
+dostoevsky/data/__init__.py,sha256=koTLTO5U2kjm5P795OR0fGPNQ13jwnt1i7Cqpye5VuU,1505
+dostoevsky/data/corpora/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dostoevsky/data/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dostoevsky/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dostoevsky/tests/conftest.py,sha256=4WK8Fg70bxefmlrIe5MFqqPJfwhHala5LhLuvNoMT6s,2205
+dostoevsky/tests/test_corpora.py,sha256=Mj2faOaQE1pYUA1HWU0Ftw-vYqSPtAmENLZ37TvElo4,361
+dostoevsky/tests/test_tokenization.py,sha256=9KrMIniElc73-RgrbySxy6qShbi7_sSxHtm2cR5qnsc,2418
+dostoevsky-0.4.0.data/scripts/dostoevsky,sha256=pmHJUJHvuGL6UcX8nGS2GSfmlDGxvVbZZ5CEpKC_FN0,783
+dostoevsky-0.4.0.dist-info/LICENSE,sha256=dkU0dSGmTTgIkW87ThDcHNQ3fd5WabPMYNjdxVd9uA0,1074
+dostoevsky-0.4.0.dist-info/METADATA,sha256=UYIZye33wXozJD4cg-zvj3Rgow36v8c13MKQmSFflUM,3162
+dostoevsky-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dostoevsky-0.4.0.dist-info/top_level.txt,sha256=Dphg9P2YjnotfaYJ6AuGMgyZP7lCoMclWT0Zb66K5No,11
+dostoevsky-0.4.0.dist-info/RECORD,,
