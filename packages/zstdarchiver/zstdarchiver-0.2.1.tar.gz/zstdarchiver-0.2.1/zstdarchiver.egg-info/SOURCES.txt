@@ -1,0 +1,16 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+zstdarchiver/__init__.py
+zstdarchiver/zstdarchiver.py
+zstdarchiver.egg-info/PKG-INFO
+zstdarchiver.egg-info/SOURCES.txt
+zstdarchiver.egg-info/dependency_links.txt
+zstdarchiver.egg-info/requires.txt
+zstdarchiver.egg-info/top_level.txt
+zstdarchiver/plugins/__init__.py
+zstdarchiver/plugins/crypt/__init__.py
+zstdarchiver/plugins/crypt/default.py
+zstdarchiver/plugins/meta/__init__.py
+zstdarchiver/plugins/meta/mozilla.py
