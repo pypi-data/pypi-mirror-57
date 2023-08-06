@@ -1,0 +1,8 @@
+README
+setup.py
+awss3lib/__init__.py
+awss3lib/awss3lib.py
+awss3lib.egg-info/PKG-INFO
+awss3lib.egg-info/SOURCES.txt
+awss3lib.egg-info/dependency_links.txt
+awss3lib.egg-info/top_level.txt
