@@ -1,0 +1,15 @@
+GaugeRnR/__init__.py,sha256=iLdB9exwjY8N6lUMo8id5NGqBF7owWjlOmGZGx-e_vQ,719
+GaugeRnR/__main__.py,sha256=qL9X2BvMqCayS0jzOSaO8watDslbFw2x9QyD6mN7A0E,118
+GaugeRnR/application.py,sha256=htIfcTkN7rjHQYEyfGLrerUNKV5PkWdb6Nu5gvIzxw8,2176
+GaugeRnR/dataLoader.py,sha256=xIXehbuv-jAkktBncVcQGRr6fgz-57tT28wkG_LCV9Y,319
+GaugeRnR/gaugeRnR.py,sha256=F9iDyENakRo5X9YdSUfKj7apNeGSnH7VUqvwEy5rnRo,7131
+GaugeRnR/generator.py,sha256=WBd60oMasb-qsAbqeBgdgPvOrjeuCCGVQjGRCBPFTSA,1516
+GaugeRnR/linearity.py,sha256=zoQ0uvUBfU3b4PxprjZvDpetxavFFaeAWVQB3IprJ8U,2278
+GaugeRnR/normality.py,sha256=HuEJz-sOdOghE01P99qqIyPS9l7b6f53uMCLcD8pfec,2217
+GaugeRnR/statistics.py,sha256=rdbIsjA6UPr_7HgC-3PoRWUheclpqyuNasjpp5jZxhI,3813
+GaugeRnR-0.4.0.dist-info/LICENSE,sha256=lj4zF2Mij68VOIdrKt6SjlQ2wL7soS4kkWcNQiwVdAU,1180
+GaugeRnR-0.4.0.dist-info/METADATA,sha256=3u-KfRu7i4gqEV3s9rYZ_MAfhHMJxBxVLM1ZVi_qIp4,4519
+GaugeRnR-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+GaugeRnR-0.4.0.dist-info/entry_points.txt,sha256=NogWyHmUZFESHTaonbfIycxHIEeaE3QZembD_inioH8,53
+GaugeRnR-0.4.0.dist-info/top_level.txt,sha256=NI1hUBzwmA61EFKbiWkQzkoIPiwY6fvsIza1ppMOxXk,9
+GaugeRnR-0.4.0.dist-info/RECORD,,
