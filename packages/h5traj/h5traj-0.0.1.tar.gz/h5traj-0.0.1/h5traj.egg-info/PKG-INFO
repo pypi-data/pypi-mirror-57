@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: h5traj
+Version: 0.0.1
+Summary: HDF5-backed MDTraj
+Home-page: UNKNOWN
+Author: Charlie Laughton
+Author-email: charles.laughton@nottingham.ac.uk
+License: MIT license.
+Description: An HDF5-backed variant of MDTraj, designed to minimize memory usage
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix

@@ -1,0 +1,10 @@
+setup.py
+h5traj/__init__.py
+h5traj/_version.py
+h5traj/trajectory.py
+h5traj.egg-info/PKG-INFO
+h5traj.egg-info/SOURCES.txt
+h5traj.egg-info/dependency_links.txt
+h5traj.egg-info/not-zip-safe
+h5traj.egg-info/requires.txt
+h5traj.egg-info/top_level.txt
