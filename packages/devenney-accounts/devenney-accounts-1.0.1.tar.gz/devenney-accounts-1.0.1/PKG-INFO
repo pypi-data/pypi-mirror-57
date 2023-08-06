@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: devenney-accounts
+Version: 1.0.1
+Summary: Elegant Django account management
+Home-page: https://github.com/devenney/django_accounts
+Author: Brendan Devenney
+Author-email: brendan@devenney.io
+License: MIT
+Description: # django_accounts
+        
+        [![Build Status](https://api.travis-ci.org/devenney/django_accounts.svg?branch=master)](https://travis-ci.org/devenney/django_accounts)
+        [![Coverage Status](https://coveralls.io/repos/github/devenney/django_accounts/badge.svg)](https://coveralls.io/github/devenney/django_accounts)
+        
+Platform: UNKNOWN
