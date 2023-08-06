@@ -1,0 +1,13 @@
+README.md
+setup.py
+basic_auth/__init__.py
+basic_auth/basic_auth.py
+basic_auth.egg-info/PKG-INFO
+basic_auth.egg-info/SOURCES.txt
+basic_auth.egg-info/dependency_links.txt
+basic_auth.egg-info/top_level.txt
+tests/__init__.py
+tests/test_WSO.py
+tests/test_basic.py
+tests/test_general.py
+tests/test_ztidy_up.py
