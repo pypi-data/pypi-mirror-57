@@ -1,0 +1,15 @@
+django_vue_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_vue_generator/forms.py,sha256=_YjPHnd7X9MkXuL_luDjJEWcPHZwWioYwr_LLVk5FcY,7876
+django_vue_generator/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_vue_generator/management/commands/build_frontend.py,sha256=WlnBlxJKGOymQ2msuGXB8tYCJJyGJsl76AqJdyPfSTk,455
+django_vue_generator/management/commands/generate_vue_form.py,sha256=I0u6q_3Wc4NP1n6PDEz5C-LPrsK3qondcc4Oah7d860,840
+django_vue_generator/management/commands/start_frontend.py,sha256=PKrmyRu37e5GLhwAACq3LbyG2ptN8Wu02scQd9hdtqA,4936
+django_vue_generator/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_vue_generator/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_vue_generator/tests.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_vue_generator/urls.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_vue_generator/utils.py,sha256=Kzq9enk01CmGXDGOJMlyqMPYcnYDGlxIDruveqGxVfE,1570
+django_vue_generator/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_vue_generator-0.1.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+django_vue_generator-0.1.0.dist-info/METADATA,sha256=d0RbwoKtvJ3y6TTlFuUZDzAQV05fqqctBERyJr09jhI,495
+django_vue_generator-0.1.0.dist-info/RECORD,,

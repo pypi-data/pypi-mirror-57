@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: django-vue-generator
+Version: 0.1.0
+Summary: Generates vue frontend for django rest framework projects.
+Home-page: https://github.com/pawnhearts/django_vue_generator
+Author: ph
+Author-email: robotnaoborot@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: django (>=2.2,<3.0)
+Requires-Dist: django-filter (>=2.2,<3.0)
+Requires-Dist: djangorestframework (>=3.10,<4.0)
