@@ -1,0 +1,69 @@
+Metadata-Version: 1.1
+Name: Django-Deployment-Tools
+Version: 0.3.0
+Summary: Django deployment utilities
+Home-page: UNKNOWN
+Author: Orange Cloud for Business
+Author-email: yves-gwenael.bourhis@orange.com
+License: UNKNOWN
+Description: ========================
+        Django Deployement Tools
+        ========================
+        
+        Tools to help deploy a django application
+        
+        INSTALLATION:
+        =============
+        
+            pip install .
+        
+        CONFIGURATION:
+        ==============
+        
+        Add `'django_deploy_tools',` in your `settings.INSTALLED_APPS`.
+        
+        Add a `STATIC_ROOT` variable in your django `settings.py` file.
+        
+        See <https://docs.djangoproject.com/en/3.0/ref/settings/#static-files>,
+        <https://docs.djangoproject.com/en/3.0/ref/settings/#static-root> and
+        <https://docs.djangoproject.com/en/3.0/howto/static-files/> for more
+        details.
+        
+        USAGE:
+        ======
+        
+        First collect static files:
+        
+            python manage.py collectstatic
+        
+        If you have django-compressor run 
+        
+            python manage.py compress
+        
+        (see <https://django-compressor.readthedocs.io/en/stable/> for more details).
+        
+        Then, create a wsgi file:
+        
+            python manage.py make_sgi --wsgi --out path/to/wsgi_file
+        
+        And the generate an apache configuration file:
+        
+            python manage.py make_apache_conf --wsgi path/to/wsgi_file --sll --out /path/to/apache_conf_file
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
