@@ -1,0 +1,4 @@
+[console_scripts]
+mtb_modalClass = museotoolbox._cli.computeClassificationStability:__modalClassCLI
+mtb_sampleExtraction = museotoolbox._cli.sampleExtraction:main
+
