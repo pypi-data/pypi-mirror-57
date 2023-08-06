@@ -1,0 +1,8 @@
+__pycache__/
+*.yaml
+!sample_config.yaml
+lightberry.proto/*.py
+!lightberry.proto/__init__.py
+*.pyc
+.idea/
+.vscode/

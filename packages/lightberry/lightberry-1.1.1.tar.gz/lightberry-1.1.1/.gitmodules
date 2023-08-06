@@ -1,0 +1,3 @@
+[submodule "proto"]
+	path = protofiles
+	url = https://gitlab.samclark.me/lightberry/proto.git

@@ -1,0 +1,63 @@
+mqtt:
+  host: samclark.me
+  port: 1883
+
+signing:
+    key: SIGNING_KEY
+    name: DEVICE_ID
+verify:
+    key: VERIFY_KEY
+    name: DEVICE_ID
+
+deviceId: DEVICE_ID
+deviceConfig:
+  pairingCode: PAIRING_CODE
+  alexa:
+    manufacturerName: LightBerry
+    friendlyName: SwitchBerry
+    description: A simple on and off switch
+    displayCategories:
+    - SWITCH
+    capabilities:
+    - type: AlexaInterface
+      interface: Alexa.PowerController
+      version: 3
+      properties:
+        supported:
+        - name: powerState
+        proactivelyReported: False
+        retrievable: True
+    - type: AlexaInterface
+      interface: Alexa.EndpointHealth
+      version: 3
+      properties:
+        supported:
+        - name: connectivity
+        proactivelyReported: False
+        retrievable: True
+    - type: AlexaInterface
+      interface: Alexa
+      version: 3
+  lightberry:
+    manufacturer: SwitchBerry
+    model: Sample Switch
+    description: A demo on-off switch
+    primaryType: switch
+    capabilities:
+      - state_reporting
+
+logging:
+  version: 1
+  formatters:
+    brief:
+      format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+      datefmt:
+  handlers:
+    console:
+      class: logging.StreamHandler
+      level: DEBUG
+      formatter: brief
+      stream: ext://sys.stdout
+  root:
+    level: DEBUG
+    handlers: [console]

@@ -1,0 +1,26 @@
+# This file is a template, and might need editing before it works on your project.
+# Official framework image. Look for the different tagged releases at:
+# https://hub.docker.com/r/library/node/tags/
+
+stages:
+- build
+- release
+
+build:
+  image: python
+  stage: build
+  script:
+  - pip install --upgrade setuptools wheel
+  - python3 setup.py sdist bdist_wheel
+  artifacts:
+    paths:
+    - dist/*
+
+release-pypi:
+  image: python
+  stage: release
+  only:
+  - tags
+  script:
+  - pip install --upgrade twine
+  - twine upload dist/*
