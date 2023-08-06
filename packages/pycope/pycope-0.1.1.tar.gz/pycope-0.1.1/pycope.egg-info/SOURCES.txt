@@ -1,0 +1,13 @@
+README.md
+setup.py
+pycope/__init__.py
+pycope/context.py
+pycope/executable.py
+pycope/layer.py
+pycope/prioritizers.py
+pycope/strategy.py
+pycope.egg-info/PKG-INFO
+pycope.egg-info/SOURCES.txt
+pycope.egg-info/dependency_links.txt
+pycope.egg-info/requires.txt
+pycope.egg-info/top_level.txt
