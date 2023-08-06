@@ -1,0 +1,10 @@
+_pydeform.cpython-37m-darwin.so,sha256=zsZJHcpKCb0yDBob87ogIdH02qDdnEBLjG7QwLyJet4,979244
+_stk.cpython-37m-darwin.so,sha256=4Px2MR-FNApmbS8v1FFGtN3x4cIspwMsMJzDNLzUUng,650852
+pydeform/__init__.py,sha256=DWNlCO1xH-rhbCL0o75ON1OPnQoWiFxM9oANstPd_ts,143
+pydeform/interruptible.py,sha256=ruYuruP7AgLpuKDuJYUML95uox2UJO15jb5KnofO3Wg,1472
+pydeform/sitk_api.py,sha256=LnpPO2mtxplt-vjcL1HOEsQKyebmIHl-CDLwcBap32w,12088
+pydeform-0.5.1.dist-info/LICENSE,sha256=zmTN8X7pdHcCTmqfoM-xBdTAE_HEQSusyyoLcB4Gjdw,1071
+pydeform-0.5.1.dist-info/METADATA,sha256=SztZdLL2CSsn9QXin7sLRSKf6OBYNBUMZHVHj3_Shq8,17282
+pydeform-0.5.1.dist-info/WHEEL,sha256=PJpvlWYoaC6URR0LWg8CW_GxFlQ7xrZNRTDuqcfncbQ,110
+pydeform-0.5.1.dist-info/top_level.txt,sha256=aBQRorTXYrTPVzJK0EbsYcVssurF762DZXNI8rXtoJE,19
+pydeform-0.5.1.dist-info/RECORD,,
