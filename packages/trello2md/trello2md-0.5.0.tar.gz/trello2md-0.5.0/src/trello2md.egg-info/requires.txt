@@ -1,0 +1,2 @@
+docopt
+py-trello>=0.16
