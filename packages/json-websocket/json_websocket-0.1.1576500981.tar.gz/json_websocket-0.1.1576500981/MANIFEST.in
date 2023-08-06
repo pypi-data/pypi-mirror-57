@@ -1,0 +1,9 @@
+include json_websocket/basic/websocket_data.js
+include json_websocket/basic/websocket_styles.css
+
+
+recursive-include json_websocket/basic *.js
+recursive-include json_websocket/basic *.css
+
+recursive-include json_websocket/cmd *.js
+recursive-include json_websocket/cmd *.css
