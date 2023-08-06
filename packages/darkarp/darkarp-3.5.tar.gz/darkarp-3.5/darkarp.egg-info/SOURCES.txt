@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+darkarp/__init__.py
+darkarp.egg-info/PKG-INFO
+darkarp.egg-info/SOURCES.txt
+darkarp.egg-info/dependency_links.txt
+darkarp.egg-info/top_level.txt
+darkarp/malkit_modules/__init__.py
+darkarp/malkit_modules/build.py
+darkarp/malkit_modules/cookiesteal.py
+darkarp/malkit_modules/encrypt.py
+darkarp/malkit_modules/identifiers.py
