@@ -1,0 +1,12 @@
+build
+containers
+dist
+helms@tmp
+jupyter-config
+legion-cicd
+lib
+node_modules
+odahuflow
+scripts
+src
+style
