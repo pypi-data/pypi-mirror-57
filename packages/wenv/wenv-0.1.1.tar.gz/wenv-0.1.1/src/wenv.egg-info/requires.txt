@@ -1,0 +1,14 @@
+
+[certifi]
+certifi
+
+[dev]
+pytest
+coverage
+pytest-cov
+python-language-server
+setuptools
+Sphinx
+sphinx_rtd_theme
+twine
+wheel
