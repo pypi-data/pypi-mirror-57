@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: wf-smc-kalman
+Version: 0.1.0
+Summary: Sequential Monte Carlo modeling for linear Gaussian systems
+Home-page: https://github.com/WildflowerSchools/smc_kalman
+Author: Theodore Quinn
+Author-email: ted.quinn@wildflowerschools.org
+License: UNKNOWN
+Keywords: smc
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Dist: numpy (>=1.15)
+Requires-Dist: scipy (>=1.1)
+Requires-Dist: matplotlib (>=2.2)
+
+# smc_kalman
+
+Sequential Monte Carlo modeling for linear Gaussian systems
+
+## Installation
+
+* Clone this repo to any convenient location on your local drive
+
+* From within your Python development environment (base environment or a virtual environment), run `pip install -e LOCAL_PATH_TO_REPO`
+
+* `pip` will install the `smc_kalman` package in your Python development environment (along with all dependencies)
+
+* You can then import the modules like any other Python package (e.g., `import smc_kalman`)
+
+
