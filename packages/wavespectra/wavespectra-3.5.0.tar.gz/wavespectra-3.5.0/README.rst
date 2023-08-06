@@ -1,0 +1,78 @@
+wavespectra
+===========
+Python library for ocean wave spectra.
+
+.. image:: https://travis-ci.org/wavespectra/wavespectra.svg?branch=master
+    :target: https://travis-ci.org/wavespectra/wavespectra
+.. image:: https://readthedocs.org/projects/wavespectra/badge/?version=latest
+    :target: https://wavespectra.readthedocs.io/en/latest/
+.. image:: https://img.shields.io/pypi/v/wavespectra.svg
+    :target: https://pypi.org/project/wavespectra/
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/python/black
+
+Main contents:
+--------------
+* SpecArray_: extends xarray's `DataArray`_ with methods to manipulate wave spectra and calculate spectral statistics.
+* SpecDataset_: wrapper around `SpecArray`_ with methods for selecting and saving spectra in different formats.
+
+Documentation:
+--------------
+The documentation is hosted on ReadTheDocs at https://wavespectra.readthedocs.io/en/latest/.
+
+Install:
+--------
+Where to get it
+~~~~~~~~~~~~~~~
+The source code is currently hosted on GitHub at: https://github.com/wavespectra/wavespectra
+
+Binary installers for the latest released version are available at the `Python package index`_.
+
+Install from pypi
+~~~~~~~~~~~~~~~~~
+.. code:: bash
+
+   # Default install, miss some dependencies and functionality
+   pip install wavespectra
+
+   # Complete install
+   pip install wavespectra[extra]
+
+Install from sources
+~~~~~~~~~~~~~~~~~~~~
+Install requirements. Navigate to the base root of wavespectra_ and execute:
+
+.. code:: bash
+
+   # Default install, miss some dependencies and functionality
+   pip install -r requirements/default.txt
+
+   # Also, for complete install
+   pip install -r requirements/extra.txt
+
+Then install wavespectra:
+
+.. code:: bash
+
+   python setup.py install
+
+   # Run pytest integration
+   python setup.py test
+
+Alternatively, to install in `development mode`_:
+
+.. code:: bash
+
+   pip install -e .
+
+
+.. _SpecArray: https://github.com/wavespectra/wavespectra/blob/master/wavespectra/specarray.py
+.. _SpecDataset: https://github.com/wavespectra/wavespectra/blob/master/wavespectra/specdataset.py
+.. _DataArray: http://xarray.pydata.org/en/stable/generated/xarray.DataArray.html
+.. _Dataset: http://xarray.pydata.org/en/stable/generated/xarray.Dataset.html
+.. _readspec: https://github.com/wavespectra/wavespectra/blob/master/wavespectra/readspec.py
+.. _xarray accessors: http://xarray.pydata.org/en/stable/internals.html?highlight=accessor
+.. _SWAN: http://swanmodel.sourceforge.net/online_doc/swanuse/node50.html
+.. _Python package index: https://pypi.python.org/pypi/wavespectra
+.. _wavespectra: https://github.com/wavespectra/wavespectra
+.. _development mode: https://pip.pypa.io/en/latest/reference/pip_install/#editable-installs
