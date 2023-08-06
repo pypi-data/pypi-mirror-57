@@ -1,0 +1,10 @@
+README.md
+setup.py
+eLearning/__init__.py
+eLearning/connector.py
+eLearning/test.py
+eLearning/users.py
+eLearning.egg-info/PKG-INFO
+eLearning.egg-info/SOURCES.txt
+eLearning.egg-info/dependency_links.txt
+eLearning.egg-info/top_level.txt
