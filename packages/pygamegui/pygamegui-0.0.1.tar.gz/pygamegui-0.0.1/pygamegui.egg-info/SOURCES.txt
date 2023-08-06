@@ -1,0 +1,7 @@
+README.md
+setup.py
+pygamegui.egg-info/PKG-INFO
+pygamegui.egg-info/SOURCES.txt
+pygamegui.egg-info/dependency_links.txt
+pygamegui.egg-info/requires.txt
+pygamegui.egg-info/top_level.txt
