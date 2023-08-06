@@ -1,0 +1,7 @@
+README.md
+setup.py
+cloudwright_scalyr/__init__.py
+cloudwright_scalyr.egg-info/PKG-INFO
+cloudwright_scalyr.egg-info/SOURCES.txt
+cloudwright_scalyr.egg-info/dependency_links.txt
+cloudwright_scalyr.egg-info/top_level.txt
