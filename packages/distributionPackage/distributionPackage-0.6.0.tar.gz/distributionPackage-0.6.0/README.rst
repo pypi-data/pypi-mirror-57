@@ -1,0 +1,126 @@
+distributionPackage
+-------------------
+
+|pipeline| |coverage|
+
+.. |pipeline| image:: https://gitlab.com/blueskyjunkie/distribution-package/badges/master/pipeline.svg
+   :target: https://gitlab.com/blueskyjunkie/distribution-package/commits/master
+   :alt: pipeline status
+
+.. |coverage| image:: https://gitlab.com/blueskyjunkie/distribution-package/badges/master/coverage.svg
+   :target: https://gitlab.com/blueskyjunkie/distribution-package/commits/master
+   :alt: coverage report
+
+|pypiVersion| |doi0.5.0|
+
+.. |pypiVersion| image:: https://badge.fury.io/py/distributionPackage.svg
+   :target: https://badge.fury.io/py/distributionPackage
+   :alt: PyPI version
+
+
+A tool for packaging a set of files for distribution using a YAML manifest definition from the
+`packageManifest project <https://gitlab.com/blueskyjunkie/package-manifest>`_.
+
+.. contents::
+
+.. section-numbering::
+
+
+Main Features
+=============
+
+* Simple default operation
+* zip or tar-gzip package generation (or both)
+* Specify project path to build package from
+* Append manifest files to an existing tar or zip package
+
+
+Installation
+============
+
+The simplest way to acquire ``distributionPackage`` is using ``pip``.
+
+.. code-block:: bash
+
+   pip install distributionPackage
+
+It's highly recommended that you install the package into a
+`Python virtual environment <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_.
+
+
+Getting Started
+===============
+
+Define a package manifest in a YAML file. The default name expected by ``distributionPackage`` is ``manifest.yml``. The example
+below constructs a simple manifest for a hypothetical C++ project.
+
+.. code-block:: yaml
+
+   - include:
+       files: [ 'README.md', 'LICENSE', 'VERSION' ]
+   - global-include:
+       files: [ '*.h', '*.cpp' ]
+   - prune:
+       directory: 'scripts'
+
+Assuming that you have installed ``distributionPackage`` and that the ``makePackage`` command is in your path,
+
+.. code-block:: bash
+
+   makePackage
+
+By default ``makePackage`` will acquire the manifest definitions from ``./manifest.yml``, output a file
+``distribution-out.tar.gz`` in the current directory and assume that the current directory is the root directory of the
+project to be packaged (for the basis of constructing the package file names from the manifest).
+
+Multiple manifest files may also be specified using the ``--manifests`` argument. The YAML data from the files are concatenated in the same
+order as the file names into a single manifest.
+
+Using the ``--help`` option will describe the various options available.
+
+.. code-block:: bash
+
+   > makePackage --help
+
+   usage: makePackage [-h] [-a] [-m [MANIFEST_PATH [MANIFEST_PATH ...]]]
+                      [-o OUTPUT] [-p PACKAGE] [-r PROJECTROOT] [-n] [-z]
+
+   Build a distribution package from a manifest
+
+   optional arguments:
+     -h, --help            show this help message and exit
+     -a, --append          Append to an existing distribution package, if it
+                           exists. Created otherwise. (default disabled)
+     -m [MANIFEST_PATH [MANIFEST_PATH ...]], --manifests [MANIFEST_PATH [MANIFEST_PATH ...]]
+                           Manifest file(s) to use to build the package. (default
+                           manifest.yml)
+     -o OUTPUT, --output OUTPUT
+                           Directory to place the generated distribution files.
+                           Created if not present. (default ./)
+     -p PACKAGE, --package PACKAGE
+                           Filename stub of output package, not including suffix
+                           or version info. (default distribution-out)
+     -r PROJECTROOT, --project-root PROJECTROOT
+                           Project root to package files from. (default ./)
+     -n, --no-tar          Disable tar, gzip output distribution. (default
+                           enabled)
+     -z, --zip             Enable zip output distribution. (default disabled)
+
+
+DOI Archive
+===========
+
+.. |doi0.3.0| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1166222.svg
+   :target: https://doi.org/10.5281/zenodo.1166222
+   :alt: doi v0.3.0
+
+*DOI v0.3.0* |doi0.3.0|
+
+.. |doi0.4.0| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1173381.svg
+   :target: https://doi.org/10.5281/zenodo.1173381
+   :alt: doi v0.4.0
+
+*DOI v0.4.0* |doi0.4.0|
+
+.. |doi0.5.0| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1927706.svg
+   :target: https://doi.org/10.5281/zenodo.1927706
