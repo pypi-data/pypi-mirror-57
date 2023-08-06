@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: imageserver
+Version: 0.1
+Summary: Host thumbnails of images on a remote machine
+Home-page: UNKNOWN
+Author: Nidhi
+Author-email: chandranidhi45@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
