@@ -1,0 +1,1 @@
+Call the function: help with the parameter e, of any exception thrown that is not in the "errors.ignore" file to immediately go to a stack overflow search of your error. 
