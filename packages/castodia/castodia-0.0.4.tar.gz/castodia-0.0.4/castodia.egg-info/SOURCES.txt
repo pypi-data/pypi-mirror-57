@@ -1,0 +1,8 @@
+README.md
+setup.py
+castodia/__init__.py
+castodia.egg-info/PKG-INFO
+castodia.egg-info/SOURCES.txt
+castodia.egg-info/dependency_links.txt
+castodia.egg-info/requires.txt
+castodia.egg-info/top_level.txt
