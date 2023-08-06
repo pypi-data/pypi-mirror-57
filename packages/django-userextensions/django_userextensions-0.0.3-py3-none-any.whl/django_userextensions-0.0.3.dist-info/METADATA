@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: django-userextensions
+Version: 0.0.3
+Summary: A user extension module for django
+Home-page: https://github.com/davidslusser/django-userextensions
+Author: David Slusser
+Author-email: dbslusser@gmail.com
+License: GPL-3.0
+Download-URL: https://github.com/davidslusser/django-userextensions/archive/0.0.3.tar.gz
+Keywords: django,helpers,extension,user,profile
+Platform: UNKNOWN
+Requires-Dist: django (>=2.0.12)
+Requires-Dist: django-braces (>=1.13.0)
+Requires-Dist: django-handyhelpers (>=0.0.7)
+Requires-Dist: djangorestframework (>=3.9.4)
+
+UNKNOWN
+
+
