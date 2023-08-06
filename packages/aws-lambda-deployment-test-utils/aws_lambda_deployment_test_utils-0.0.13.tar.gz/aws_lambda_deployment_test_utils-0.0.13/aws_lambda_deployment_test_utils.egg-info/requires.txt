@@ -1,0 +1,2 @@
+boto3
+timeout-decorator==0.4.1
