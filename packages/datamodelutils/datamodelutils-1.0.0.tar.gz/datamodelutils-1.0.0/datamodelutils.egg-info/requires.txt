@@ -1,0 +1,5 @@
+cdisutils
+psqlgraph>=3.0.0
+dictionaryutils>=3.0.0
+gen3dictionary~=2.0
+gen3datamodel>=3.0.0
