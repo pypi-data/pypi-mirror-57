@@ -1,0 +1,13 @@
+p1 >> blip()
+
+p_all.amp=0
+
+p2 >> blip(amp=1)
+
+print(p2.__init)
+
+p3.amp=2
+
+p3 >> pluck()
+
+print(p3.attr["amp"])
