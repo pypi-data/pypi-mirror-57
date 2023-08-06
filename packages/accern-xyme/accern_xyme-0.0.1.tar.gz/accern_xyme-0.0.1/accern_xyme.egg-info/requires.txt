@@ -1,0 +1,7 @@
+numpy>=1.17.3
+pandas>=0.25.3
+quick-server>=0.7.3
+
+[dev]
+
+[test]
