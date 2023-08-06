@@ -1,0 +1,5 @@
+numpy
+six
+pytz
+pandas
+PyQt5
