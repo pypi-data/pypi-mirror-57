@@ -1,0 +1,11 @@
+fiddler/__init__.py,sha256=iM9JN-q9JX9Q6K_AXLjyDeLc1OST3mUwt4LMa_bRCCw,575
+fiddler/_version.py,sha256=2eiWQI55fd-roDdkt4Hvl9WzrTJ4xQo33VzFud6D03U,22
+fiddler/client.py,sha256=aWhOw-Ndbf3KVnXhAPP6T-IxitpwxDXgspM-oLi0c7M,5314
+fiddler/core_objects.py,sha256=4GWUt5KE2YhvAH9IkZi-z-6-WRfhK-urhGGnCgN_MZI,24030
+fiddler/fiddler_api.py,sha256=-fB_Nu5oVpJQma-m-w7WMcB0vIH_SX098OpFNKfaIWQ,41043
+fiddler/model_loaders.py,sha256=XE-BdcV9Wz9CHZSjJqki9dJNt5E-aRk_8tjqpZjBPjQ,5101
+fiddler_client-0.4.0.dist-info/LICENSE.txt,sha256=w8-LUAb_VLBWSsCNmih0pAqLIicJfGu8OJXpDjkIg_o,559
+fiddler_client-0.4.0.dist-info/METADATA,sha256=Tdyu1ROTqz6a5riP3chaObpb9Cmuc7GPDB5sB_PBI3s,1689
+fiddler_client-0.4.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fiddler_client-0.4.0.dist-info/top_level.txt,sha256=ndC6LqvKmrTTs8czRlBOYdYgSqZbHuMf0zHt_HWpzzk,8
+fiddler_client-0.4.0.dist-info/RECORD,,
