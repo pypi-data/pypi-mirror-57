@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: SED_cli
+Version: 0.0.1
+Summary: This package is intended to help configuring and developing of embedded projects - It will not compile, or check or do anything         besides configuration. The goal is to provided a way to developer simply program what he/she wants and let the package deal with all the configuration needed.
+Home-page: https://github.com/belinello/SED_cli
+Author: Victor Hugo Belinello
+Author-email: victorbelinello17@gmail.com
+License: MIT
+Download-URL: https://github.com/belinello/SED_cli/archive/v0.0.1-alpha.tar.gz
+Description: UNKNOWN
+Keywords: Embedded,Configuration
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
