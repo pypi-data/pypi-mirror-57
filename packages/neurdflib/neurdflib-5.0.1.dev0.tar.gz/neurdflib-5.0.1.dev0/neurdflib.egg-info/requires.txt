@@ -1,0 +1,6 @@
+six
+isodate
+pyparsing
+
+[html]
+html5lib
