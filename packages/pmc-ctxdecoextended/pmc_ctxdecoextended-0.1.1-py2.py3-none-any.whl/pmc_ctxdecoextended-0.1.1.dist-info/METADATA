@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pmc-ctxdecoextended
+Version: 0.1.1
+Summary: A PMC python module, that extends contextlib.ContextDecorator class to allow the use of decorator without using it as a callable (aka as function)
+Home-page: https://github.com/kolotev/python-pmc-singleton
+https: //bitbucket.ncbi.nlm.nih.gov/projects/PMC/repos/python-pmc-ctxdecoextended/browse
+Maintainer: Andrei Kolotev
+Maintainer-email: kolotev@ncbi.nlm.nih.gov
+License: Public Domain
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+A PMC python module, that extends contextlib.ContextDecorator class to allow the use of decorator without using it as a callable (aka as function)
+
+
