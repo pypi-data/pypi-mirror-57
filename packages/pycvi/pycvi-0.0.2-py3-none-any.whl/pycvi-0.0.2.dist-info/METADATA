@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pycvi
+Version: 0.0.2
+Summary: Easily compute clustering cliterions
+Home-page: UNKNOWN
+Author: Yohan Foucade
+Author-email: foucade@lipn.fr
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+

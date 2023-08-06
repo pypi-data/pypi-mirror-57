@@ -1,0 +1,14 @@
+pycvi/__init__.py,sha256=yAhbecnSYYimCJDgt_GINlkqcOfZd4B7ZvKwp6dRQME,40
+pycvi/internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycvi/internal/davies_bouldin.py,sha256=ZcKo0GX4XNxDHV6OH04MaeGHV-0xSuS1Em-lGndMdXg,1299
+pycvi/utils/__init__.py,sha256=gops5gHQQYoJu4GpTNX9zxth6yv3GLiujWUWjcgntw0,81
+pycvi/utils/dataset.py,sha256=WUP214-6_xYr-9i8quFcibg12ChchGVaDFFsWVx_1DM,500
+pycvi/utils/distances.py,sha256=7O992yF0a8guPiTJj7Pa9Lpf0nBPGx5ls555Z8dl9dA,1012
+pycvi/utils/features.py,sha256=Dy0-EMWBWvuK6XlbIL9VX6_1b7u3OVD__Ldy9ZYeckc,211
+pycvi/utils/labels.py,sha256=k4O5gPRU3tHYqRJqcQSFAf3FrkeighGeYyrGdPSjon8,550
+pycvi/utils/parse.py,sha256=7Q6iTJpde3YkOhSaVCTdLFHjP2Ql-TH_8OsAsutKKPg,1397
+pycvi-0.0.2.dist-info/LICENSE,sha256=Qnnk6rZvA2AXzGN5mRy0mx8n03N90F9B3w_e1ivSYHU,1053
+pycvi-0.0.2.dist-info/METADATA,sha256=kjCOg7UCTxLqWBKjTx36oWhW5tnaa5rCQxt7HfJ7vsQ,251
+pycvi-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pycvi-0.0.2.dist-info/top_level.txt,sha256=Kbu2AXAsU8Iaq8TGbGh5xE9qEW0Mn09pFogsJnZHxc0,6
+pycvi-0.0.2.dist-info/RECORD,,
