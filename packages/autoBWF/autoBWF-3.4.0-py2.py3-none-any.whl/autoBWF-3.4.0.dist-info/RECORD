@@ -1,0 +1,16 @@
+autoBWF/BWFfileIO.py,sha256=IEKqkB0csKvifQOzrX4Hi_xpeTDozO3gx_I4lt7cUJg,8053
+autoBWF/__init__.py,sha256=0eHFL3oNQa-11UB8XfH-WPY2qPK7Y-GE26zVak6m-M0,167
+autoBWF/autoBWF.py,sha256=WQbODCbtuY9XlTUJj3xlfYQpDhADoYT7rStKnG0PZfA,23695
+autoBWF/autobwfconfig.py,sha256=8AMrAfVPsCcj4qrf6OusjGN-QjKEveUHtRzXxvo6jVM,2488
+autoBWF/autolame.py,sha256=wgPqE-tPxrvXcFy-FWqEq--UaTil0Dq-QLrNB4EaGxw,2176
+autoBWF/autosplice.py,sha256=tdw4ZIa378OlKYM6FYiX6HxJzO2kEG3BX95ckclOWsw,3774
+autoBWF/bwf2csv.py,sha256=r-WOc0IRmUwF8bJjPaqM6i6btRR3fDGJCXiy1H2iIhA,1100
+autoBWF/bwf2pbcore.py,sha256=DsqSUYySyTnWyzTOZYbyeF2CPGRwbw7RdSenBWw-yY4,7119
+autoBWF/tabbed.py,sha256=DHzf4qigVi6vHxSJLYfNjR4VhrZA6W83CeJot6yHccw,53002
+autoBWF-3.4.0.dist-info/AUTHORS.md,sha256=2jh3RWEG1SreMIJtyMn1XRqbwYFfybojAIbxx2ZATW4,191
+autoBWF-3.4.0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+autoBWF-3.4.0.dist-info/METADATA,sha256=ohJXFlfOT0iA0Unw_BekM-M0uqPy6q3HSArRyowwddo,2599
+autoBWF-3.4.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+autoBWF-3.4.0.dist-info/entry_points.txt,sha256=Y75qNNgVobqp-MA6QT2nBvOI6mvA58EJmY63Zt10ojE,188
+autoBWF-3.4.0.dist-info/top_level.txt,sha256=ae9h4uDd9pl7fmf7h942Oi3FCm5oaqnnN8DpdjBdlqs,8
+autoBWF-3.4.0.dist-info/RECORD,,
