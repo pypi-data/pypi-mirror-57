@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: brainrex
+Version: 1.0.1
+Summary: Python Client for the Brainrex API.
+Home-page: https://github.com/BrainrexAPI/brainrex-python
+Author: UNKNOWN
+Author-email: gonzalo@brainrex.com
+License: MIT
+Download-URL: https://github.com/BrainrexAPI/brainrex-python/archive/v1.0.1.tar.gz
+Description:     Provides anomaly detection and natural language processing technlogies to blockchain developers.  # noqa: E501
+            
+Keywords: Swagger,Brainrex API,anomaly detection crypto,sentiment analysis,blockchain
+Platform: UNKNOWN
