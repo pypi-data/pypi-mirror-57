@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: cimiss-python
+Version: 0.1.1
+Summary: A CIMISS client for python
+Home-page: https://github.com/So0ni/cimiss-python
+Author: Sonic Young
+Author-email: 173976914@qq.com
+License: GPL Licence
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
