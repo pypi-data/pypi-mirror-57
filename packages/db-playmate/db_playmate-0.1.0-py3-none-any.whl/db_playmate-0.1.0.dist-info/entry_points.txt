@@ -1,0 +1,3 @@
+[console_scripts]
+sync=db_playmate:cli.main
+

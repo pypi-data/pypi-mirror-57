@@ -1,0 +1,12 @@
+db_playmate/__init__.py,sha256=bt5gdypUr5N3_vVRAKji8rap0QXVqAwY6cUeF4K_j1c,161
+db_playmate/box.py,sha256=HVJADzYnnqH3sU8bWAjADfsfY1oNrxxDyeJHSK2HU1Y,8862
+db_playmate/cli.py,sha256=3SDY0kf5Z8uMDW0iuJpbxsVQsnZoorXZXv-GzDwWQLE,1946
+db_playmate/kobo/__init__.py,sha256=AgpEj0RQQFr9bjJN3T2LjcEmr4sKqfXSSv5_GgZBY-Q,158
+db_playmate/kobo/form.py,sha256=WxhebGZACRJ4tJlt2v7TertWBrzqckp8B-0NBdCrKDo,4189
+db_playmate/kobo/kobo.py,sha256=Yie3FqLMAhcf1FvmyFKx8XkLm_3-8YrcCsrS8lKIxWA,2080
+db_playmate/kobo/question.py,sha256=WhuvrlWq7z0YBnFwZHOMEtDjhYWca6dJCPzl1l43ESI,827
+db_playmate/kobo/submission.py,sha256=zA2VPw34a15OKJMb1XWQkUX4bsz45OX3FuGGiixa_g4,885
+db_playmate-0.1.0.dist-info/entry_points.txt,sha256=zOkc5PobaVCqoXKDzLoBxGV5ufM-OcqPQ50MBa97X4s,45
+db_playmate-0.1.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+db_playmate-0.1.0.dist-info/METADATA,sha256=uvyjI8yJw36VO7aO7OWW8Tk36eRIXwTD7o4uXh4aFjE,725
+db_playmate-0.1.0.dist-info/RECORD,,
