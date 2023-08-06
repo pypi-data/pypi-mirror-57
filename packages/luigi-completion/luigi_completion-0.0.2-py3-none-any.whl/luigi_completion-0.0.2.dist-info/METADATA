@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: luigi-completion
+Version: 0.0.2
+Summary: completion for luigi on bash, zsh
+Home-page: https://github.com/vaaaaanquish/luigi_completion
+Author: vaaaaanquish
+Author-email: 6syun9@gmail.com
+License: MIT
+Platform: any
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# luigi_completion
+completion for luigi on bash, zsh, xonsh
+
+
+# Install
+
+```
+pip install luigi_completion
+```
+And set completion script
+- bash: https://github.com/vaaaaanquish/luigi_completion/blob/master/luigi_completion/luigi_completion.bash
+- zsh: https://github.com/vaaaaanquish/luigi_completion/blob/master/luigi_completion/luigi_completion.zsh
+
+
+# Usage
+
+```
+cd [luigi Project Directory]
+mklcomp main.py    # make .luigi_completion file
+```
+
+Input [TAB] key after `python` or `luigi` command in CLI.
+
+
