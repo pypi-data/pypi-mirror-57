@@ -1,0 +1,93 @@
+Metadata-Version: 1.1
+Name: sqlalchemy-clickhouse-timezone
+Version: 0.1.3
+Summary: ClickHouse SQLAlchemy Dialect with timezone support
+Home-page: https://github.com/ufully/sqlalchemy-clickhouse-timezone
+Author: 21499836@qq.com
+Author-email: 21499836@qq.com
+License: Apache License, Version 2.0
+Download-URL: https://github.com/ufully/sqlalchemy-clickhouse-timezone/releases/tag/v0.1.0
+Description: 
+        sqlalchemy-clickhouse-timezone
+        
+        add timezone support
+        
+        Installation
+        ------------
+        
+        The package is installable through PIP::
+        
+           pip install sqlalchemy-clickhouse-timezone
+        
+        Usage
+        -----
+        setting the environ param to start timezone support
+        
+          default is '0' using pytz.utc
+        
+          'CLICKHOUSE_USE_TIMEZONE': '0' => using utc
+        
+          'CLICKHOUSE_USE_TIMEZONE': '1' => using system timezone
+        
+          'CLICKHOUSE_USE_TIMEZONE': 'Asia/Shanghai' => using configed Asian/Shanghai
+        
+        
+        configed
+           os.environ.setdefault('CLICKHOUSE_USE_TIMEZONE', '0')
+           os.environ.setdefault('CLICKHOUSE_USE_TIMEZONE', '1')
+           os.environ.setdefault('CLICKHOUSE_USE_TIMEZONE', 'Asia/Shanghai')
+        
+        --------------------------------------------------
+        'infi.clickhouse_orm==1.0.4'
+        --------------------------------------------------
+        
+        original project usage...
+        --------------------------------------------------
+        
+        ClickHouse dialect for SQLAlchemy.
+        
+        Installation
+        ------------
+        
+        The package is installable through PIP::
+        
+           pip install sqlalchemy-clickhouse
+        
+        --------------------------------------------------
+        
+        The DSN format is similar to that of regular Postgres::
+        
+            >>> import sqlalchemy as sa
+            >>> sa.create_engine('clickhouse://username:password@hostname:port/database')
+            Engine('clickhouse://username:password@hostname:port/database')
+        
+        It implements a dialect, so there's no user-facing API.
+        
+        Testing
+        -------
+        
+        The dialect can be registered on runtime if you don't want to install it as::
+        
+            from sqlalchemy.dialects import registry
+            registry.register("clickhouse", "base", "dialect")
+        
+Keywords: db database cloud analytics clickhouse with tiemzone support
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: SQL
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
