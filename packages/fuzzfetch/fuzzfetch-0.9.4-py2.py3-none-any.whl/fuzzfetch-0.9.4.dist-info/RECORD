@@ -1,0 +1,12 @@
+fuzzfetch/__init__.py,sha256=eCeynf4OlMESD8dKE2ciiwnnlFkiFRHySTix5yA3FPM,349
+fuzzfetch/__main__.py,sha256=0a9c6uEDuJILmpGdKxmQ8YmrbZ1xrxgqAK-xT-PalmY,283
+fuzzfetch/extract.py,sha256=oCi9zu1ThHsd1tPJHuC6NGEJdWUSdum9rpnbrokL_AA,3903
+fuzzfetch/fetch.py,sha256=lTvrd7NsDD0g53KteVseBnM0hkwdkKbAO4T55HSySWo,41944
+fuzzfetch/path.py,sha256=QjiB7LAnpSwkWSphXPA3Tb6YEiuQ3452fO4pFf_tuEE,3550
+fuzzfetch/shim.py,sha256=COQU4PPUoZyMbNv5-Zz_urhEYFjEemOYHP7BfA9stFs,502
+fuzzfetch-0.9.4.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+fuzzfetch-0.9.4.dist-info/METADATA,sha256=PuUtz3MTrEbrQERCpI3lE-kk5XG6jMb38bC8gqce_1M,1012
+fuzzfetch-0.9.4.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+fuzzfetch-0.9.4.dist-info/entry_points.txt,sha256=7bzcUFSR5CMrqnJc7Cz-7Rj3Kk9ItkM5rdPrKjV-7n4,54
+fuzzfetch-0.9.4.dist-info/top_level.txt,sha256=mzB1UnNOEei60LZP6sqKtRE6b3wnNoaaVvOCcWqW2fc,10
+fuzzfetch-0.9.4.dist-info/RECORD,,
