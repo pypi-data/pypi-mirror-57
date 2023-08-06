@@ -1,0 +1,4 @@
+[console_scripts]
+nlp-inference = nlp_architect.cli:nlp_inference_cli
+nlp-train = nlp_architect.cli:nlp_train_cli
+
