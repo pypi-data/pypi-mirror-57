@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: savanh-databricks
+Version: 0.1.1
+Summary: Databricks spark Azure packages
+Home-page: https://github.com/samvanhoutte/databricks
+Author: Sam Vanhoutte
+Author-email: sam.vanhoutte@marchitec.be
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: azure.eventgrid
+
+# Databricks Azure tooling package
+
+This is a package that provides reusable code and helper classes to use with Azure Databricks and Spark.  
+It provides the following functionalities:
+
+- EventGridSinkWriter: an output sink to Azure Event Grid for Structured Streaming
+
