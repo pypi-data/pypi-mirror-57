@@ -1,0 +1,10 @@
+pytodo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytodo/argparser.py,sha256=PVos-jspUkLKwN4ZQAQd50hi_eU-X6w2j0Vf0gW_NXw,811
+pytodo/priority.py,sha256=dv5bcvOIkBg5qkadYDlBlNJ4QMLEQu1ihbOEvYhFGqo,452
+pytodo/quotes.py,sha256=rj_h7S_4OGHsFaSShAlUX7peN3nniXDKPRZDj_Sb5yw,301
+pytodo/script.py,sha256=BXxldCBPKG1LQa5vHvQmVC7exgPFjUwECJekFItvXhE,4486
+pytodo_package-0.1.1.dist-info/LICENSE,sha256=GoxfsTGV2nUdQ2fopER69reOG6V_PvWozlce0URCziw,1071
+pytodo_package-0.1.1.dist-info/METADATA,sha256=PzAljhyD_CRDkfzEqfFS3q-JI6-7k_tsMNd8Ea7RPIY,2935
+pytodo_package-0.1.1.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+pytodo_package-0.1.1.dist-info/top_level.txt,sha256=Yt6yDMi_ZSwlQk7ZuxxRCYtAGyXWcjzwJXJOaoASaww,7
+pytodo_package-0.1.1.dist-info/RECORD,,
