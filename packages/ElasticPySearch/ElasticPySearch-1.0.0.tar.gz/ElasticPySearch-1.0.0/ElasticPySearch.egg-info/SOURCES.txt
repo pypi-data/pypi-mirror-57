@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ElasticPySearch/__init__.py
+ElasticPySearch.egg-info/PKG-INFO
+ElasticPySearch.egg-info/SOURCES.txt
+ElasticPySearch.egg-info/dependency_links.txt
+ElasticPySearch.egg-info/top_level.txt
