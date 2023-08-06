@@ -1,0 +1,8 @@
+aws_s3_ops/__init__.py,sha256=181e_vu6hhCPXjKugStlpW-VQAJmH6Prc7YxmOPDjQc,36
+aws_s3_ops/aws_s3_ops.py,sha256=gZVj6VJki3L2-VNRudWRV4XRmXcWOrP3L7sbSWHYfjQ,10734
+aws_s3_ops/exceptions.py,sha256=gVLmB36yfz0t9sJ0V97mqCBqXmqpNf7wpt0Qxjo5Oys,589
+aws_s3_ops-1.0.0.dist-info/LICENSE.txt,sha256=WBZObMsBAcV35riIPc6bTp__GsZV8G3rMtMW08ow94w,1045
+aws_s3_ops-1.0.0.dist-info/METADATA,sha256=RDo0GhhFzIKHCapt4ZCSYd2SyPz3O19AG70OsifFc_U,4969
+aws_s3_ops-1.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+aws_s3_ops-1.0.0.dist-info/top_level.txt,sha256=v354U_UpiQUtm4xjk0eSgK8OJfarknIk_vkxkj5xdL4,11
+aws_s3_ops-1.0.0.dist-info/RECORD,,
