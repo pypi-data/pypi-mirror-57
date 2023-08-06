@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pchain
+Version: 0.5.0
+Summary: Foundation of flexible, shareable and creative data-driven programming technology
+Home-page: https://github.com/srplab/pchain
+Author: srplab
+Author-email: srplab.cn@hotmail.com
+License: MIT Licence
+Keywords: process chain
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+<h1 align="center">Process Chain</h1>
+
+Current programming uses pre-designed logic, which consist of multiple processes that are combined in a carefully designed sequence to perform specific functions. In a logical sequence, although there are branches or choices, these branches and choices are also pre-designed. This programming method is completely under the control of the designer, reflecting the designer's thinking and wisdom. Designers have a complete understanding of the processing  procedure of information and data, the program can complete the processing of information and data according to the designer's way of thinking, the designer's wisdom makes the program realized in this way efficient. However, this method lacks flexibility, adaptability and creativity. In the process of data processing, the relationship between data and data, the relationship between data and process is transparent. It is not easy to get the relationship between data and data, data and process. It is also not easy to adjust the processing logic based on the desired result. When the expected result changes, the designer needs to adjust the logic of data processing, design new logic, and develop new programs.
+
+The current development of programming technology focuses on programming languages (the rise of various programming languages, constantly updated, and constantly introducing new versions), improving performance, simplifying grammar, reducing or eliminating programming errors, and simplifying the concurrent process. But in terms of programming, it is still based on traditional logic sequences, without paying too much attention to flexibility, adaptability and creativity.
+
+The process chain is a new programming technology aim to increase the flexibility and buildability of the program. The process chain introduces the management of data and processes, adds definitions of data management types, descriptions of process input data types, and output data types so that process chains can be built based on input data types and output data object types. The scheduling of data objects is the core of the process chain. During execution, the process chain automatically matches or controls the data objects based on the it's type, and the process processes the data until there are no new data or processes. The process can be adjusted according to the rules to obtain the desired output. The process chain provides the basis for rule object management, but the rules themselves are not within the scope of the process chain, at least not currently.
+
+The process chain records the relationship between data objects and the relationship between data and processes. These relationships can be used as the basis for future data object processing.
+
+ **[More detail](https://github.com/srplab/pchain)**
+
+
+
+
