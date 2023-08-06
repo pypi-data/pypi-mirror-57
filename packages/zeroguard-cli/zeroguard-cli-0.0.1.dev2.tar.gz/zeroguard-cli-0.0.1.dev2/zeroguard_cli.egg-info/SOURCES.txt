@@ -1,0 +1,16 @@
+MANIFEST.in
+Pipfile.lock
+README.md
+setup.py
+zeroguard_cli.egg-info/PKG-INFO
+zeroguard_cli.egg-info/SOURCES.txt
+zeroguard_cli.egg-info/dependency_links.txt
+zeroguard_cli.egg-info/entry_points.txt
+zeroguard_cli.egg-info/requires.txt
+zeroguard_cli.egg-info/top_level.txt
+zgcli/__init__.py
+zgcli/__version__.py
+zgcli/config.py
+zgcli/main.py
+zgcli/commands/__init__.py
+zgcli/commands/status.py
