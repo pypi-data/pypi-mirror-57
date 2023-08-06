@@ -1,0 +1,14 @@
+tikreg/__init__.py,sha256=G5rG70zFNnzA2GmD4L_2HyKPtnIip_jUHaBpX7FgDk4,1996
+tikreg/defaults.cfg,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tikreg/kernels.py,sha256=lKxDJtdar0GgcuRm_lXUrATfoqm1BjVMly_-Oy8PdJo,8390
+tikreg/models.py,sha256=j70StnOAI_lk_0x_kiYtBQPhDdG6bOPqFv3Dluc2AZA,73705
+tikreg/priors.py,sha256=S5O_K0fRj4dGrwn4s7kHoxr-BVFxvCUdKXW_a3yKEJg,18282
+tikreg/spatial_priors.py,sha256=yD6U2QQbqygmCEuIDqhpQQn65JIBUYDlqwb9y1xejzU,6268
+tikreg/svd_dgesvd.py,sha256=Q7CoF5-ZtqvPpcp9pekMnaNROdDTdvFgSBBqMhRwytI,6652
+tikreg/temporal_priors.py,sha256=Wn9PjewNqOjxxbBTTPhVZcH-n8FApBJmqb2I8w_Y_yo,14197
+tikreg/utils.py,sha256=CcsUfX7mmaR0gfSH8IofhxjLN-0DR-tIvVJdVYpC2JI,33210
+tikreg-0.0.1.dist-info/LICENSE,sha256=T42rJlPdgJfX1OSeEpbgZpvcZWjAo3HyZAbIgZ5-DBs,1579
+tikreg-0.0.1.dist-info/METADATA,sha256=ov5p7htsYchrw0IORcvy8RRtJzGraJwW7SAvLWTvqG0,676
+tikreg-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+tikreg-0.0.1.dist-info/top_level.txt,sha256=xCWKoHn0Ku0pznmm_CtCO3t6AlPha9fooSN8jI_Wdm4,7
+tikreg-0.0.1.dist-info/RECORD,,
