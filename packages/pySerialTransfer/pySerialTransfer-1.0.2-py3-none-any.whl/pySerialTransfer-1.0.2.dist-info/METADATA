@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pySerialTransfer
+Version: 1.0.2
+Summary: Python package used to transmit and receive low overhead byte packets - especially useful for PC<-->Arduino USB communication (compatible with https://github.com/PowerBroker2/SerialTransfer)
+Home-page: https://github.com/PowerBroker2/pySerialTransfer
+Author: Power_Broker
+Author-email: gitstuff2@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/PowerBroker2/pySerialTransfer/archive/1.0.2.tar.gz
+Keywords: Arduino,serial,usb,protocol,communication
+Platform: UNKNOWN
+
+UNKNOWN
+
+
