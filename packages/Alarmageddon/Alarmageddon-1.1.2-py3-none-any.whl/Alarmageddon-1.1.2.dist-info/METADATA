@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Alarmageddon
+Version: 1.1.2
+Summary: Automated testing and reporting
+Home-page: https://github.com/PearsonEducation/Alarmageddon/tarball/1.1.2
+Author: Tim Stewart, Scott Hellman
+Author-email: timothy.stewart@pearson.com, scott.hellman@pearson.com
+License: Apache2
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: fabric (==2.5.0)
+Requires-Dist: Jinja2 (==2.10.1)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: statsd (==2.0.3)
+Requires-Dist: colorama (==0.3.2)
+Requires-Dist: six (==1.13.0)
+Requires-Dist: pika (==1.1.0)
+Requires-Dist: pytest (==4.6.6)
+Requires-Dist: pytest-localserver (==0.5.0)
+
+UNKNOWN
+
+
