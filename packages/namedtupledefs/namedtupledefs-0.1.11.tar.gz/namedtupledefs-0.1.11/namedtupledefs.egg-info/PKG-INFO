@@ -1,0 +1,241 @@
+Metadata-Version: 1.2
+Name: namedtupledefs
+Version: 0.1.11
+Summary: Extended 'namedtuple' by default values.
+Home-page: https://sourceforge.net/projects/namedtupledefs/
+Author: Arno-Can Uestuensoez
+Author-email: acue_sf2@sourceforge.net
+Maintainer: acue
+Maintainer-email: acue_sf2@sourceforge.net
+License: Artistic-License-2.0 + Forced-Fairplay-Constraints
+Download-URL: https://sourceforge.net/projects/namedtupledefs/files/
+Project-URL: home, https://sourceforge.net/projects/namedtupledefs"
+Project-URL: documents, https://namedtupledefs.sourceforge.io/
+Project-URL: runtimerepo, https://pypi.org/project/namedtupledefs/
+Project-URL: downloads, https://pypi.org/project/namedtupledefs/
+Project-URL: downloads1, https://sourceforge.net/projects/namedtupledefs/
+Project-URL: source, https://github.com/ArnoCan/namedtupledefs/
+Project-URL: source1, https://sourceforge.net/projects/namedtupledefs/
+Project-URL: source2, https://bitbucket.org/acue/namedtupledefs/
+Project-URL: tracker, https://github.com/ArnoCan/namedtupledefs/issues
+Description: namedtupledefs
+        ==============
+        
+        The package 'namedtupledefs' provides a patched version of the 'collections.namedtuple' 
+        with field defaults for 'namedtuple' and type-accurate '_merge'. This is a drop-in compatible
+        patch with multiple enhancements.
+        
+        See doc-string and online documents for examples.
+        
+        **Online documentation**:
+        
+        * https://namedtupledefs.sourceforge.io/
+        
+        
+        **Runtime-Repository**:
+        
+        * PyPI: https://pypi.org/project/namedtupledefs/
+        
+          Install: *pip install namedtupledefs*, see also section 'Install' of the online documentation.
+        
+        
+        **Downloads**:
+        
+        * sourceforge.net: https://sourceforge.net/projects/namedtupledefs/files/
+        
+        * bitbucket.org: https://bitbucket.org/acue/namedtupledefs
+        
+        * github.com: https://github.com/ArnoCan/namedtupledefs/
+        
+        * pypi.org: https://pypi.org/project/namedtupledefs/
+        
+        
+        Project Data
+        ------------
+        
+        * PROJECT: 'namedtupledefs'
+        
+        * MISSION: The extension of the standard *collections.namedtuple* by default values, merging, and accurate pickling.
+        
+        * VERSION: 00.01
+        
+        * RELEASE: 00.01.011
+        
+        * STATUS: alpha
+        
+        * AUTHOR: Arno-Can Uestuensoez
+        
+        * COPYRIGHT=Copyright (c) 2019 Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez. 
+        	
+        * LICENSE=Artistic-License-2.0 + Forced-Fairplay-Constraints - see following clauses
+        
+        Patches and this Documentation:
+        
+        * COPYRIGHT=Copyright (c) 2019 Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez. All rights reserved.
+        	
+        * LICENSE=Artistic-License-2.0 + Forced-Fairplay-Constraints
+        	      
+          With exception for the public integration into the standard library *collections* 
+          by the PSF. Than for the integrated public code-patches:
+        
+            PSF LICENSE AGREEMENT FOR PYTHON.  
+        
+        Original code copied from Standard Python Library see "namedtupledefs.namedtuple_original":
+        
+        * COPYRIGHT ORIGINAL=Copyright (c) 2001-2018 Python Software Foundation. All rights reserved.
+        
+        * LICENSE ORIGINAL=PSF LICENSE AGREEMENT FOR PYTHON
+        
+        
+        Runtime Environment
+        -------------------
+        For a comprehensive list refer to the documentation.
+        
+        **Python Syntax Support**
+        
+        * Python3
+        * For the Python2.7 refer to the package namedtupledefs2.
+          
+          This package requires the *exec* statement/function, due to it's size it is
+          separated into two variants instead of using shared code.  
+        
+        **Python Implementation Support**
+        
+        *  CPython, IPython, IronPython, Jython, and PyPy
+        
+        
+        **OS on Server, Workstation, Laptops, Virtual Machines, and Containers**
+        
+        * Linux: AlpineLinux, ArchLinux, CentOS, Debian, Fedora, Gentoo, OpenSUSE, Raspbian, RHEL, Slackware, SLES, Ubuntu, ...  
+        
+        * BSD: DragonFlyBSD, FreeBSD, NetBSD, OpenBSD, GhostBSD, TrueOS, NomadBSD
+        
+        * OS-X: Snow Leopard
+        
+        * Windows: Win10, Win8.1, Win7, WinXP, Win2019, Win2016, Win2012, Win2008, Win2000
+        
+        * WSL-1.0: Alpine, Debian, KaliLinux, openSUSE, SLES, Ubuntu
+        
+        * Cygwin
+        
+        * UNIX: Solaris10, Solaris11
+        
+        * Minix: Minix3
+        
+        * ReactOS
+        
+        **Network and Security**
+        
+        * Network Devices: OpenWRT
+        
+        * Security: KaliLinux, pfSense, BlackArch, ParrotOS, Pentoo
+        
+        **OS on Embedded Devices**
+        
+        * RaspberryPI: ArchLinux, CentOS, OpenBSD, OpenWRT, Raspbian
+        
+        * ASUS-TinkerBoard: Armbian
+        
+        Current Release
+        ---------------
+        
+        Major Changes:
+        
+        * Initial release.
+        
+        
+        ToDo:
+        
+        * MicroPython, CircuitPython
+        
+        Known Issues:
+        
+        * not yet
+        
+        
+Keywords: ARM,GhostBSD,LinuxMint,Manjaro,TrueOS,collections.namedtuple collections,defaults fields,fielddefaults,fieldnames,fields,namedtuple,namedtuples,Aix,Alpine,AlpineLinux,Arch,ArchLinux,ArchLinuxARM,Armbian,BSD,BlackArch,BlackArchLinux,CPython,CentOS,Cygwin,Darwin,Debian,Distribution,DragonFlyBSD,Fedora,FigureWrap,FreeBSD,Gentoo,HP-UX,IPython,ImageWrap,IronPython,Java,Java,Jython,Kali,KaliLinux,Linux,MacOS,Minix,Minx3,NetBSD,OS-X,OpenBSD,OpenSUSE,OpenWRT,PyPy,Python2,Python3,RHEL,Raspbian,ReactOS,SLES,Scriptin,SnowLeopard,Solaris,Sphinx,Sphinx,SuSE,SunOS,SunOS5,Ubuntu,Unix,WSL,WSL 1.0,WSL 2.0,WSL-1.0,WSL-2.0,Windows,Windows10,Windows2003,Windows2008,Windows2010,Windows2012,Windows2016,Windows2019,Windows2019se,Windows7,Windows8,WindowsXP,bitarray,bitmask,build_apidoc,build_apiref,build_docx,commands,distutils,doc,documentation,docx,enumerate,epydoc,extension,hexvalue,image,imagewrap,info,install_docx,list,literalincludewrap,mkdocs,namedtupledefs,pandoc,pkg_docx,setup,setup commands,setup.py,setuptools,show,sphinx,sphinx extensions,sphinx-apidoc,sphinx-build,sphinx.ext.imagewrap,sphinx.ext.literalincludewrap
+Platform: Aix
+Platform: GhostBSD
+Platform: LinuxMint
+Platform: Manjaro
+Platform: TrueOS
+Platform: AlpineLinux
+Platform: ArchLinux
+Platform: ArchLinuxARM
+Platform: Armbian
+Platform: BlackArchLinux
+Platform: CentOS
+Platform: Cygwin
+Platform: Darwin
+Platform: Debian
+Platform: DragonFlyBSD
+Platform: FedoraLinux
+Platform: FreeBSD
+Platform: GentooLinux
+Platform: HP-UX
+Platform: KaliLinux
+Platform: MacOS
+Platform: Minix
+Platform: Minx3
+Platform: NetBSD
+Platform: OS-X
+Platform: OpenBSD
+Platform: OpenSUSE
+Platform: OpenWRT
+Platform: RHEL
+Platform: Raspbian
+Platform: ReactOS
+Platform: SLES
+Platform: Solaris
+Platform: SuSE
+Platform: SunOS
+Platform: SunOS5
+Platform: Ubuntu
+Platform: Unix
+Platform: Windows10
+Platform: Windows2003
+Platform: Windows2008
+Platform: Windows2010
+Platform: Windows2012
+Platform: Windows2016
+Platform: Windows2019
+Platform: Windows2019se
+Platform: Windows7
+Platform: Windows8
+Platform: WindowsXP
+Classifier: Framework :: Setuptools Plugin
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Other Environment
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Free To Use But Restricted
+Classifier: License :: OSI Approved :: Artistic License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Other OS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: POSIX :: BSD :: OpenBSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: Other
+Classifier: Operating System :: POSIX :: SunOS/Solaris
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: IronPython
+Classifier: Programming Language :: Python :: Implementation :: Jython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
