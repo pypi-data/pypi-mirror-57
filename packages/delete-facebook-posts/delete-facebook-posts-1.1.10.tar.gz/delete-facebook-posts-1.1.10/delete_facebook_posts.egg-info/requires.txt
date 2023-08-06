@@ -1,0 +1,10 @@
+selenium
+selenium-requests
+requests
+pybloom-live
+attrs
+cattrs
+lxml
+pendulum
+clint
+progressbar
