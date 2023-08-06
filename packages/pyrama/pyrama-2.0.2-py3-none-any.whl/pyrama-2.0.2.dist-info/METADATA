@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyrama
+Version: 2.0.2
+Summary: Ramachandran plot generator
+Home-page: https://github.com/gerdos/PyRAMA
+Author: gerdos
+Author-email: gerdos@caesar.elte.hu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: biopython
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
