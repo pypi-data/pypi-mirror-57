@@ -1,0 +1,9 @@
+README.md
+setup.py
+email-forwarder/__init__.py
+email-forwarder/email_forwarder.py
+email_forwarder.egg-info/PKG-INFO
+email_forwarder.egg-info/SOURCES.txt
+email_forwarder.egg-info/dependency_links.txt
+email_forwarder.egg-info/top_level.txt
+email_forwarder.egg-info/zip-safe
