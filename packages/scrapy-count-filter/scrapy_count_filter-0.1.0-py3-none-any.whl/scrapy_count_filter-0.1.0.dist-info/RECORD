@@ -1,0 +1,8 @@
+scrapy_count_filter/__init__.py,sha256=9vWEycJR6SCqco6eEaxYus8yYqhuREJfP0iZBNyaa-M,60
+scrapy_count_filter/__version__.py,sha256=l2E7xRnTag1WDm6-N9yNz15Q0NVLUH7aKEQBOopOmkY,63
+scrapy_count_filter/middleware.py,sha256=5aJmBzrGpQvaSLt-kBQqXO80wZ8To9KmgP9pFOpk-Gs,3194
+scrapy_count_filter-0.1.0.dist-info/LICENSE,sha256=GK3sCYYmRyXmWcZJ6rYigV0dr03DM_XeXfvmqf8JeSw,1525
+scrapy_count_filter-0.1.0.dist-info/METADATA,sha256=6_bU2XITEFdEHD2mysC-rK2fydKqEV7_U1E339L6d3s,840
+scrapy_count_filter-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+scrapy_count_filter-0.1.0.dist-info/top_level.txt,sha256=c6u1NTkGAdZX95Qrj6D7CeRyaV1-zglwHozL1G331iA,20
+scrapy_count_filter-0.1.0.dist-info/RECORD,,
