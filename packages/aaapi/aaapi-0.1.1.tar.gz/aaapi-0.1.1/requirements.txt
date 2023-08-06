@@ -1,0 +1,7 @@
+crepe
+pandas
+scikit-learn==0.22
+scipy
+librosa
+mido
+numpy
