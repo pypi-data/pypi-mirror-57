@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: meta1-pricefeed
+Version: 0.0.10
+Summary: Command line tool to assist with price feed generation on META1 blockchain
+Home-page: http://www.github.com/meta1-blockchain/meta1-pricefeed
+Author: Fabian Schuh & Rostislav Gogolauri
+Author-email: go.go.gg.rostislav@gmail.com
+Maintainer: Rostislav Gogolauri
+Maintainer-email: go.go.gg.rostislav@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/meta1-blockchain/meta1-pricefeed/tarball/0.0.10
+Description: UNKNOWN
+Keywords: meta1,price,feed,cli
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
