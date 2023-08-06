@@ -1,0 +1,17 @@
+[metadata]
+name = 'autobots'
+version = '0.0.1'
+description = 'transformers based nlp library'
+author = 'Bharath G.S'
+author_email = 'royalkingpin@gmail.com'
+license = 'MIT'
+url = 'https://github.com/maxent-ai/autobots'
+
+[requires]
+python_version = ['3.7']
+
+[build-system]
+requires = ['setuptools', 'wheel']
+
+[tool.hatch.commands]
+prerelease = 'hatch build'
