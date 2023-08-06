@@ -1,0 +1,78 @@
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
+
+[tool.black]
+line-length = 88
+target-version = ["py36"]
+exclude = "setup.py"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+known_first_party = "alo"
+default_section = "THIRDPARTY"
+not_skip = "__init__.py"
+
+[tool.poetry]
+name = "alo"
+version = "0.2.0"
+description = "A tool to combine function with DAG"
+
+license = "Apache-2.0"
+
+authors = [
+    "uchuhimo <uchuhimo@outlook.com>"
+]
+
+readme = "README.md"
+
+repository = "https://github.com/uchuhimo/alo"
+homepage = "https://github.com/uchuhimo/alo"
+
+keywords = []
+classifiers=[
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+
+[tool.poetry.dependencies]
+python = ">= 3.6"
+six = "*"
+more-itertools = "*"
+click = "*"
+typing-extensions = "*"
+dataclasses = { version = "*", python = "< 3.7" }
+typing = { version = "*", python = "< 3.7" }
+contextvars = { version = "*", python = "< 3.7" }
+
+[tool.poetry.dev-dependencies]
+pip = "*"
+dephell = { version = "*", extras = [ "full" ], allow-prereleases = true }
+fissix = { version = "*", allow-prereleases = true }
+bump2version="*"
+wheel="*"
+watchdog="*"
+flake8 = "*"
+black = { version = "*", allow-prereleases = true }
+isort = "*"
+mypy = "*"
+pre-commit = "*"
+pytest = "*"
+tox="*"
+coverage="*"
+Sphinx="*"
+twine="*"
+ipython = "*"
+
+[tool.poetry.scripts]
+alo = "alo.cli:main"
