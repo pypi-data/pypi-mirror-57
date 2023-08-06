@@ -1,0 +1,9 @@
+gmic.cpython-37m-i386-linux-gnu.so,sha256=vJDKZBHMaQKzgBwE17lf8WKiW_coprdBKupLnYXy3Qs,13325976
+gmic-2.8.0.dev4.dist-info/WHEEL,sha256=e1_WZKsoHV1IIaYJKFwXtC2sSoi0Dll6iY6tWNRvKIA,107
+gmic-2.8.0.dev4.dist-info/METADATA,sha256=LkifSV1M4ISkYA5AVqEHvZaCEWUl_zDdkKkzpHhg1E0,5561
+gmic-2.8.0.dev4.dist-info/top_level.txt,sha256=N5S8DOqgJb95TqY4faqXq7jvl0DZzqPYKJND1jokBQE,5
+gmic-2.8.0.dev4.dist-info/RECORD,,
+.libsgmic/libpng12-61124c64.so.0.10.0,sha256=merBsyfBZ6arJYgqx8cPzQXibgUMvTz-jsqKQRsmBKk,168212
+.libsgmic/libcurl-8d8a9a66.so.4.5.0,sha256=zjAkDQjM7WfxP-KdierDgvnbEFju5KNSRnsHjr1ol_E,2891224
+.libsgmic/libz-83853723.so.1.2.3,sha256=6L0AYPckpsJzCjqPErwqsxt4jx3jn-XyAVLME9t7bNc,75576
+.libsgmic/libfftw3-bdebe806.so.3.2.4,sha256=pkVI7y6kbzC6HVSxwZ26xJe0zeYRnmlvfYPrLVaViW8,890796
