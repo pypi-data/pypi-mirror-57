@@ -1,0 +1,10 @@
+README.md
+setup.py
+deputy/__init__.py
+deputy/deputy.py
+deputy/deputy_test.py
+google_deputy_api_python_client.egg-info/PKG-INFO
+google_deputy_api_python_client.egg-info/SOURCES.txt
+google_deputy_api_python_client.egg-info/dependency_links.txt
+google_deputy_api_python_client.egg-info/requires.txt
+google_deputy_api_python_client.egg-info/top_level.txt
