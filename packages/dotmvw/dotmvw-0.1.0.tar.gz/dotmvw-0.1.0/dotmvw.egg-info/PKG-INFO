@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dotmvw
+Version: 0.1.0
+Summary: For automating complete HyperView session generation
+Home-page: https://github.com/yaonuma/dotmvw
+Author: Yumitomo Onuma
+Author-email: yaonuma@umich.edu
+License: UNKNOWN
+Description: DOTMVW
+        =======
+        
+        Description
+        -----------
+        
+        This is a simple package to write HyperView session files implementing the anytree package. It can be used in  
+        combination with FEA data acccess modules that comes packaged with commercial FEA software and other report generation  
+        related packages such as python-pptx to automate FEA post-processing.  
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
