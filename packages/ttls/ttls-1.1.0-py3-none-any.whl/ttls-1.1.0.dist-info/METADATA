@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ttls
+Version: 1.1.0
+Summary: Twinkly Twinkly Little Star
+Home-page: https://github.com/jschlyter/ttls
+Author: Jakob Schlyter
+Author-email: jakob@schlyter.se
+License: BSD
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: aiohttp
+Requires-Dist: colour
+Requires-Dist: setuptools
+
+ttls (Twinkly Twinkly Little Star) can help you make async requests to
+Twinkly LEDs. A commmand line utility is also included.
+
+
