@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: enc-dotenv
+Version: 0.0.3
+Summary: encrypted env
+Home-page: https://github.com/bhags1981/python-encrypted-dotenv
+Author: Sinyu Jung
+Author-email: 
+License: UNKNOWN
+Description: # python-encrypted-dotenv[![Coverage Status](https://coveralls.io/repos/github/bhags1981/python-encrypted-dotenv/badge.svg?branch=master)](https://coveralls.io/github/bhags1981/python-encrypted-dotenv?branch=master)
+        Encrypt your env file for python-dotenv. 
+        
+        python-encrypted-dotenv 
+        ===============================================================================
+        
+        Encrypt env file
+        
+        ## Usages
+        
+        
+        ## Related Projects
+        
+        -   [python-dotenv](https://github.com/theskumar/python-dotenv) - Reads the key-value pair from .env file and adds them to environment variable.
+        
+        
+        ## Acknowledgements
+        
+        This project is currently maintained by Sinyu Jung
+        
+        # Install the latest
+        
+        To install the latest version of `enc-dotenv` simply run:
+        
+        `pip install enc-dotenv`
+        
+        
+        Changelog
+        =========
+        
+        Latest
+        -----
+        
+        
+        0.0.3
+        -----
+        Fixed dependency error.
+        
+        0.0.2
+        -----
+        Added load_encrypted_dotenv
+        
+        
+        0.0.1
+        -----
+        - First commit
+        
+        
+        
+Keywords: encrypted　environment variables,deployments,settings,env,dotenv,configurations,python
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Classifier: Environment :: Web Environment
+Description-Content-Type: text/markdown
