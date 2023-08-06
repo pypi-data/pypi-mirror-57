@@ -1,0 +1,8 @@
+README.md
+setup.py
+gwf_target_group/__init__.py
+gwf_target_group.egg-info/PKG-INFO
+gwf_target_group.egg-info/SOURCES.txt
+gwf_target_group.egg-info/dependency_links.txt
+gwf_target_group.egg-info/requires.txt
+gwf_target_group.egg-info/top_level.txt
