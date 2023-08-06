@@ -1,0 +1,3 @@
+[console_scripts]
+reamit = reamit.__main__:main
+

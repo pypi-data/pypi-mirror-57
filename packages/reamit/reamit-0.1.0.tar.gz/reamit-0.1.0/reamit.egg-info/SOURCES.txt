@@ -1,0 +1,10 @@
+README.md
+setup.py
+reamit/__init__.py
+reamit/__main__.py
+reamit.egg-info/PKG-INFO
+reamit.egg-info/SOURCES.txt
+reamit.egg-info/dependency_links.txt
+reamit.egg-info/entry_points.txt
+reamit.egg-info/requires.txt
+reamit.egg-info/top_level.txt

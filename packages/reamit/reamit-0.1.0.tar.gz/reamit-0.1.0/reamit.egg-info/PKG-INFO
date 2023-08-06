@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: reamit
+Version: 0.1.0
+Summary: Readable assembly code generator
+Home-page: https://github.com/matthewscholefield/reamit
+Author: Matthew D. Scholefield
+Author-email: matthew331199@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: reamit
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
