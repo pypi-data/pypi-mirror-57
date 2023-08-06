@@ -1,0 +1,10 @@
+README.md
+setup.py
+xlsx2pdf/__init__.py
+xlsx2pdf/cli.py
+xlsx2pdf/transformator.py
+xlsx2pdf.egg-info/PKG-INFO
+xlsx2pdf.egg-info/SOURCES.txt
+xlsx2pdf.egg-info/dependency_links.txt
+xlsx2pdf.egg-info/requires.txt
+xlsx2pdf.egg-info/top_level.txt
