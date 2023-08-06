@@ -1,0 +1,5 @@
+oss2
+six
+tarfile
+opencv-python
+tensorboardX
