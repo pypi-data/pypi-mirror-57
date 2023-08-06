@@ -1,0 +1,20 @@
+**Product Data**
+
+* MISSION=Extended 'namedtuple' by default values.
+
+* AUTHOR=Arno-Can Uestuensoez
+
+* PROJECT=namedtupledefs
+
+* COPYRIGHT=(C)2019 Arno-Can Uestuensoez
+
+* LICENSE=Artistic-License-2.0 + Forced-Fairplay-Constraints
+
+* VERSION=0.1.4
+
+* RELEASE=0.1.4
+
+* STATUS=Unknown
+
+* BUILDDATE=2019.12.05-11:12
+

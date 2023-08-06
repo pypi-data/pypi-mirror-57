@@ -1,0 +1,616 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.4. namedtupledefs.namedtuple_original &mdash; setupdocx  documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5. Resources" href="index_part_resources.html" />
+    <link rel="prev" title="4.3. namedtupledefs.__init__" href="namedtupledefs_init.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.36
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Shortcuts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">namedtuple - patched for support of field defaults for Python3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_cockpit.html">apidoc</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index_part_abstract.html">1. Abstract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_platform_support.html">2. Platform Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_blueprint.html">3. Blueprint</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index_part_documents.html">4. Documents</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="sw_design.html">4.1. The SW-Design of <em>namedtupledefs</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="namedtupledefs_api.html">4.2. The namedtupledefs API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namedtupledefs_init.html">4.3. namedtupledefs.__init__</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.4. namedtupledefs.namedtuple_original</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">4.4.1. Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#license">4.4.2. License</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module">4.4.3. Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source">4.4.4. Source</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index_part_resources.html">5. Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">6. Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">7. External References</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Application</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="howto/index.html">Howto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq/index.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">setupdocx</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index_part_documents.html">4. Documents</a> &raquo;</li>
+        
+      <li>4.4. namedtupledefs.namedtuple_original</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/namedtuple_original.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="namedtupledefs-namedtuple-original">
+<span id="api-namedtupleoriginal"></span><h1>4.4. namedtupledefs.namedtuple_original<a class="headerlink" href="#namedtupledefs-namedtuple-original" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<h2>4.4.1. Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>The original source from the <em>Python</em> library, here the syntax revision <em>Python2.7</em>.
+See also <a class="reference internal" href="references.html#namedtuple" id="id1"><span>[namedtuple]</span></a>.</p>
+</div>
+<div class="section" id="license">
+<h2>4.4.2. License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>Original code copied from Standard Python Library see “namedtupledefs.namedtuple_original”:</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">COPYRIGHT</span> <span class="n">ORIGINAL</span><span class="o">=</span><span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2001</span><span class="o">-</span><span class="mi">2018</span> <span class="n">Python</span> <span class="n">Software</span> <span class="n">Foundation</span><span class="o">.</span> <span class="n">All</span> <span class="n">rights</span> <span class="n">reserved</span><span class="o">.</span>
+
+<span class="o">*</span> <span class="n">LICENSE</span> <span class="n">ORIGINAL</span><span class="o">=</span><span class="n">PSF</span> <span class="n">LICENSE</span> <span class="n">AGREEMENT</span> <span class="n">FOR</span> <span class="n">PYTHON</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="module">
+<h2>4.4.3. Module<a class="headerlink" href="#module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="source">
+<span id="namedtuple-original-source"></span><h2>4.4.4. Source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1">#</span>
+<span class="c1"># Original Code: Copyright (c) 2001-2018 Python Software Foundation. All rights reserved.</span>
+<span class="c1"># Original License: PSF LICENSE AGREEMENT FOR PYTHON</span>
+<span class="c1"># Patches: Copyright (c) 2019 Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez. </span>
+<span class="c1">#          All rights reserved.</span>
+<span class="c1"># Patches License: Artistic-License-2.0 + Forced-Fairplay-Constraints</span>
+<span class="c1">#         Exception for the integration into the standard library collections: </span>
+<span class="c1">#              PSF LICENSE AGREEMENT FOR PYTHON.  </span>
+<span class="c1">#</span>
+<span class="kn">import</span> <span class="nn">sys</span> <span class="kn">as</span> <span class="nn">_sys</span>
+
+<span class="kn">from</span> <span class="nn">operator</span> <span class="kn">import</span> <span class="n">itemgetter</span> <span class="k">as</span> <span class="n">_itemgetter</span>
+<span class="kn">from</span> <span class="nn">keyword</span> <span class="kn">import</span> <span class="n">iskeyword</span> <span class="k">as</span> <span class="n">_iskeyword</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+
+
+<span class="c1">################################################################################</span>
+<span class="c1">### namedtuple</span>
+<span class="c1">################################################################################</span>
+
+<span class="n">_class_template</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span><span class="se">\</span>
+<span class="s1">class {typename}(tuple):</span>
+<span class="s1">    &#39;{typename}({arg_list})&#39;</span>
+
+<span class="s1">    __slots__ = ()</span>
+
+<span class="s1">    _fields = {field_names!r}</span>
+
+<span class="s1">    def __new__(_cls, {arg_list}):</span>
+<span class="s1">        &#39;Create new instance of {typename}({arg_list})&#39;</span>
+<span class="s1">        return _tuple.__new__(_cls, ({arg_list}))</span>
+
+<span class="s1">    @classmethod</span>
+<span class="s1">    def _make(cls, iterable, new=tuple.__new__, len=len):</span>
+<span class="s1">        &#39;Make a new {typename} object from a sequence or iterable&#39;</span>
+<span class="s1">        result = new(cls, iterable)</span>
+<span class="s1">        if len(result) != {num_fields:d}:</span>
+<span class="s1">            raise TypeError(&#39;Expected {num_fields:d} arguments, got </span><span class="si">%d</span><span class="s1">&#39; </span><span class="si">% le</span><span class="s1">n(result))</span>
+<span class="s1">        return result</span>
+
+<span class="s1">    def __repr__(self):</span>
+<span class="s1">        &#39;Return a nicely formatted representation string&#39;</span>
+<span class="s1">        return &#39;{typename}({repr_fmt})&#39; </span><span class="si">% s</span><span class="s1">elf</span>
+
+<span class="s1">    def _asdict(self):</span>
+<span class="s1">        &#39;Return a new OrderedDict which maps field names to their values&#39;</span>
+<span class="s1">        return OrderedDict(zip(self._fields, self))</span>
+
+<span class="s1">    def _replace(_self, **kwds):</span>
+<span class="s1">        &#39;Return a new {typename} object replacing specified fields with new values&#39;</span>
+<span class="s1">        result = _self._make(map(kwds.pop, {field_names!r}, _self))</span>
+<span class="s1">        if kwds:</span>
+<span class="s1">            raise ValueError(&#39;Got unexpected field names: </span><span class="si">%r</span><span class="s1">&#39; % kwds.keys())</span>
+<span class="s1">        return result</span>
+
+<span class="s1">    def __getnewargs__(self):</span>
+<span class="s1">        &#39;Return self as a plain tuple.  Used by copy and pickle.&#39;</span>
+<span class="s1">        return tuple(self)</span>
+
+<span class="s1">    __dict__ = _property(_asdict)</span>
+
+<span class="s1">    def __getstate__(self):</span>
+<span class="s1">        &#39;Exclude the OrderedDict from pickling&#39;</span>
+<span class="s1">        pass</span>
+
+<span class="s1">{field_defs}</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="n">_repr_template</span> <span class="o">=</span> <span class="s1">&#39;{name}=</span><span class="si">%r</span><span class="s1">&#39;</span>
+
+<span class="n">_field_template</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span><span class="se">\</span>
+<span class="s1">    {name} = _property(_itemgetter({index:d}), doc=&#39;Alias for field number {index:d}&#39;)</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="k">def</span> <span class="nf">namedtuple</span><span class="p">(</span><span class="n">typename</span><span class="p">,</span> <span class="n">field_names</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">rename</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Returns a new subclass of tuple with named fields.</span>
+
+<span class="sd">    &gt;&gt;&gt; Point = namedtuple(&#39;Point&#39;, [&#39;x&#39;, &#39;y&#39;])</span>
+<span class="sd">    &gt;&gt;&gt; Point.__doc__                   # docstring for the new class</span>
+<span class="sd">    &#39;Point(x, y)&#39;</span>
+<span class="sd">    &gt;&gt;&gt; p = Point(11, y=22)             # instantiate with positional args or keywords</span>
+<span class="sd">    &gt;&gt;&gt; p[0] + p[1]                     # indexable like a plain tuple</span>
+<span class="sd">    33</span>
+<span class="sd">    &gt;&gt;&gt; x, y = p                        # unpack like a regular tuple</span>
+<span class="sd">    &gt;&gt;&gt; x, y</span>
+<span class="sd">    (11, 22)</span>
+<span class="sd">    &gt;&gt;&gt; p.x + p.y                       # fields also accessible by name</span>
+<span class="sd">    33</span>
+<span class="sd">    &gt;&gt;&gt; d = p._asdict()                 # convert to a dictionary</span>
+<span class="sd">    &gt;&gt;&gt; d[&#39;x&#39;]</span>
+<span class="sd">    11</span>
+<span class="sd">    &gt;&gt;&gt; Point(**d)                      # convert from a dictionary</span>
+<span class="sd">    Point(x=11, y=22)</span>
+<span class="sd">    &gt;&gt;&gt; p._replace(x=100)               # _replace() is like str.replace() but targets named fields</span>
+<span class="sd">    Point(x=100, y=22)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Validate the field names.  At the user&#39;s option, either generate an error</span>
+    <span class="c1"># message or automatically replace the field name with a valid name.</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">field_names</span><span class="p">,</span> <span class="nb">basestring</span><span class="p">):</span>
+        <span class="n">field_names</span> <span class="o">=</span> <span class="n">field_names</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">field_names</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">field_names</span><span class="p">)</span>
+    <span class="n">typename</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">typename</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">rename</span><span class="p">:</span>
+        <span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">field_names</span><span class="p">):</span>
+            <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="nb">all</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span> <span class="ow">or</span> <span class="n">c</span><span class="o">==</span><span class="s1">&#39;_&#39;</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">name</span><span class="p">)</span>
+                <span class="ow">or</span> <span class="n">_iskeyword</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+                <span class="ow">or</span> <span class="ow">not</span> <span class="n">name</span>
+                <span class="ow">or</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span>
+                <span class="ow">or</span> <span class="n">name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
+                <span class="ow">or</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">):</span>
+                <span class="n">field_names</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;_</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">index</span>
+            <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="p">[</span><span class="n">typename</span><span class="p">]</span> <span class="o">+</span> <span class="n">field_names</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">str</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;Type names and field names must be strings&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span> <span class="ow">or</span> <span class="n">c</span><span class="o">==</span><span class="s1">&#39;_&#39;</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">name</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Type names and field names can only contain &#39;</span>
+                             <span class="s1">&#39;alphanumeric characters and underscores: </span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">_iskeyword</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Type names and field names cannot be a &#39;</span>
+                             <span class="s1">&#39;keyword: </span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Type names and field names cannot start with &#39;</span>
+                             <span class="s1">&#39;a number: </span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span>
+    <span class="n">seen</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">field_names</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">rename</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Field names cannot start with an underscore: &#39;</span>
+                             <span class="s1">&#39;</span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Encountered duplicate field name: </span><span class="si">%r</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span>
+        <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="c1"># Fill-in the class template</span>
+    <span class="n">class_definition</span> <span class="o">=</span> <span class="n">_class_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">typename</span> <span class="o">=</span> <span class="n">typename</span><span class="p">,</span>
+        <span class="n">field_names</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">field_names</span><span class="p">),</span>
+        <span class="n">num_fields</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">field_names</span><span class="p">),</span>
+        <span class="n">arg_list</span> <span class="o">=</span> <span class="nb">repr</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">field_names</span><span class="p">))</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+        <span class="n">repr_fmt</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">_repr_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+                             <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">field_names</span><span class="p">),</span>
+        <span class="n">field_defs</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">_field_template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+                               <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">field_names</span><span class="p">))</span>
+    <span class="p">)</span>
+    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+        <span class="k">print</span> <span class="n">class_definition</span>
+
+    <span class="c1"># Execute the template string in a temporary namespace and support</span>
+    <span class="c1"># tracing utilities by setting a value for frame.f_globals[&#39;__name__&#39;]</span>
+    <span class="n">namespace</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">_itemgetter</span><span class="o">=</span><span class="n">_itemgetter</span><span class="p">,</span> <span class="vm">__name__</span><span class="o">=</span><span class="s1">&#39;namedtuple_</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">typename</span><span class="p">,</span>
+                     <span class="n">OrderedDict</span><span class="o">=</span><span class="n">OrderedDict</span><span class="p">,</span> <span class="n">_property</span><span class="o">=</span><span class="nb">property</span><span class="p">,</span> <span class="n">_tuple</span><span class="o">=</span><span class="nb">tuple</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">exec</span> <span class="n">class_definition</span> <span class="ow">in</span> <span class="n">namespace</span>
+    <span class="k">except</span> <span class="ne">SyntaxError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">SyntaxError</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">message</span> <span class="o">+</span> <span class="s1">&#39;:</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">class_definition</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">namespace</span><span class="p">[</span><span class="n">typename</span><span class="p">]</span>
+
+    <span class="c1"># For pickling to work, the __module__ variable needs to be set to the frame</span>
+    <span class="c1"># where the named tuple is created.  Bypass this step in environments where</span>
+    <span class="c1"># sys._getframe is not defined (Jython for example) or sys._getframe is not</span>
+    <span class="c1"># defined for arguments greater than 0 (IronPython).</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">result</span><span class="o">.</span><span class="vm">__module__</span> <span class="o">=</span> <span class="n">_sys</span><span class="o">.</span><span class="n">_getframe</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">f_globals</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;__name__&#39;</span><span class="p">,</span> <span class="s1">&#39;__main__&#39;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="p">(</span><span class="ne">AttributeError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="k">return</span> <span class="n">result</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="index_part_resources.html" class="btn btn-neutral float-right" title="5. Resources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="namedtupledefs_init.html" class="btn btn-neutral float-left" title="4.3. namedtupledefs.__init__" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Copyright (C) 2016 Arno-Can Uestuensoez @Ingenieurbuero Arno-Can Uestuensoez
+      <span class="lastupdated">
+        Last updated on Dec 05, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
