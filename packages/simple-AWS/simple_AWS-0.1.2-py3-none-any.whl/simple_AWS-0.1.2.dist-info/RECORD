@@ -1,0 +1,10 @@
+simple_AWS/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_AWS/dynamodb_functions.py,sha256=WDBbmyfr42UarzW76qArLsSkcNaVtjYvxxREDfPQ_Ss,7569
+simple_AWS/s3_functions.py,sha256=1-3f0xi5QXPUxwpfWZZcfYjpNOrEqIUb-ocMrbvPkAg,4061
+simple_AWS/sns_functions.py,sha256=ZtAyKovwTMi9ld9Wmc4c5fErNlothQ6CYmC9GArkGbk,1420
+simple_AWS/sqs_functions.py,sha256=_0td8ysSnyXuz5TrlpR4hAkHLNpEZpkL6l1xE6xJs-s,2383
+simple_AWS-0.1.2.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+simple_AWS-0.1.2.dist-info/METADATA,sha256=ILnzmwdGt3SDM0AIbTdXdo8Aq6R1Yxgewih8p7a1MLg,5762
+simple_AWS-0.1.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+simple_AWS-0.1.2.dist-info/top_level.txt,sha256=HfwdkkQCtodgRU_8vA7nfVv_sb5XG_ZJmpwlRp408WU,11
+simple_AWS-0.1.2.dist-info/RECORD,,
