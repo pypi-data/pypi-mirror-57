@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: djChat
+Version: 0.1
+Summary: Chat application.
+Home-page: https://gitlab.com/Django.apps/djchat
+Author: a.Signz
+Author-email: a.Signz089@googlemail.com
+Maintainer: a.Signz
+Maintainer-email: a.Signz089@googlemail.com
+License: GPLv3+
+Project-URL: Bug Reports, https://gitlab.com/Django.apps/djchat/issues
+Project-URL: Source, https://gitlab.com/Django.apps/djChat.git
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Requires-Dist: django (<3.0)
+Requires-Dist: channels (~=2.3.1)
+Requires-Dist: channels-redis (~=2.4.1)
+Provides-Extra: dev
+Requires-Dist: black (==19.10b0) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: Sphinx (~=2.1.2) ; extra == 'docs'
+Requires-Dist: recommonmark (~=0.4.0) ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest (~=5.1) ; extra == 'test'
+Requires-Dist: pytest-asyncio (~=0.10) ; extra == 'test'
+Requires-Dist: pytest-cov (~=2.7) ; extra == 'test'
+
+# chat_vue
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
