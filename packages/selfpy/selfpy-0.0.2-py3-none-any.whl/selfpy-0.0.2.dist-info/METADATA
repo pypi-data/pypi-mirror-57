@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: selfpy
+Version: 0.0.2
+Summary: pyecharts title retrievable
+Home-page: https://github.com/Dengnjs/up
+Author: dengnj
+Author-email: dengnaijie@126.com
+License: MIT
+Keywords: pyecharts-retrievableTitle
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: numpy
+Provides-Extra: images
+Requires-Dist: PIL ; extra == 'images'
+Provides-Extra: phantomjs
+Requires-Dist: snapshot-phantomjs ; extra == 'phantomjs'
+Provides-Extra: selenium
+Requires-Dist: snapshot-selenium ; extra == 'selenium'
+
+UNKNOWN
+
+
