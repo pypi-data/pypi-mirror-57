@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: address-so
+Version: 0.0.2
+Summary: A unified API for blockchain developers
+Home-page: https://github.com/address-so/address-python-sdk
+Author: Reznichenko Yaroslav
+Author-email: y@address.so
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
