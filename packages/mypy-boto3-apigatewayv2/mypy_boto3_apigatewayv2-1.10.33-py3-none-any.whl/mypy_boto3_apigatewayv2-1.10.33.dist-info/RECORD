@@ -1,0 +1,11 @@
+mypy_boto3_apigatewayv2/__init__.py,sha256=t4hID8e_TpHaQegj2iOr-WDl7paSOoDETdasTxEzZ3o,755
+mypy_boto3_apigatewayv2/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_apigatewayv2/client.py,sha256=wu225_6B3_v5DBggMs2RffL2Uwj1iNDB3Pe5h3Pbnyg,40420
+mypy_boto3_apigatewayv2/paginator.py,sha256=QgzvOnGpAeXy4kRGiianQHwWrR3kV-EduUEsEdk-esM,7015
+mypy_boto3_apigatewayv2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_apigatewayv2/type_defs.py,sha256=Z6EfYzQIBtm-hz_wZh9HCeE8dF1jbt5jSOO-vC0qxDw,51447
+mypy_boto3_apigatewayv2/version.py,sha256=ay4Kxw86xwUJX0iINQwdgWtfO2c2SwRu6FytnOmjRJY,55
+mypy_boto3_apigatewayv2-1.10.33.dist-info/METADATA,sha256=_AAECV7F-d5mbCk1zoDz6eBGxPXQkP4DROb2BpfFUVE,1217
+mypy_boto3_apigatewayv2-1.10.33.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_apigatewayv2-1.10.33.dist-info/top_level.txt,sha256=YQpn6muKgEshKg4MVGtb3SMUbyVMERIK1zfTzbUDDic,24
+mypy_boto3_apigatewayv2-1.10.33.dist-info/RECORD,,
