@@ -1,0 +1,8 @@
+absl-py
+atari-py
+dopamine-rl>=2.0.5
+gin-config
+gym
+numpy
+scipy
+tensorflow
