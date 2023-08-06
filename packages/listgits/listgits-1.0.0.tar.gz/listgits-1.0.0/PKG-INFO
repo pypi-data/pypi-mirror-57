@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: listgits
+Version: 1.0.0
+Summary: Python command line program for listing git repositories under a folder root, and optionally run any git command on those repos
+Home-page: https://github.com/OsirisTerje/listgits
+Author: Terje Sandstrom
+Author-email: terje@hermit.no
+License: UNKNOWN
+Description: # listgits
+        Python command line program for listing all git repositories under a folder root
+        
+        Usage:
+        
+        ```
+        python listgits
+        ```
+        
+        Options :
+        
+        * --h: Show the possible options
+        * --s: Short form, not showing non-git folders
+        * --l: Show only local repos, which do not have any remotes (includes --s)
+        * --r: Show only repos that have remotes (includes --s)
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
