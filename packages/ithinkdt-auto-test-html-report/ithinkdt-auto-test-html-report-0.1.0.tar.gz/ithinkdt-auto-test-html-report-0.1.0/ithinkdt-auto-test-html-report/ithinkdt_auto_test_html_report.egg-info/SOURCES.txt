@@ -1,0 +1,9 @@
+setup.py
+ithinkdt-auto-test-html-report/com/__init__.py
+ithinkdt-auto-test-html-report/com/ithinkdt/__init__.py
+ithinkdt-auto-test-html-report/com/ithinkdt/unittest/HTMLTestRunnerEN.py
+ithinkdt-auto-test-html-report/com/ithinkdt/unittest/__init__.py
+ithinkdt-auto-test-html-report/ithinkdt_auto_test_html_report.egg-info/PKG-INFO
+ithinkdt-auto-test-html-report/ithinkdt_auto_test_html_report.egg-info/SOURCES.txt
+ithinkdt-auto-test-html-report/ithinkdt_auto_test_html_report.egg-info/dependency_links.txt
+ithinkdt-auto-test-html-report/ithinkdt_auto_test_html_report.egg-info/top_level.txt
