@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: push-app-version
+Version: 0.0.5
+Summary: Push version in GCS bucket for triggered deployments
+Home-page: https://github.com/mrpink/push-app-version
+Author: Will Pink
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Trigger deploys from Concourse CI
+Keywords: google gcs version
+Platform: UNKNOWN
