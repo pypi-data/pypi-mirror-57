@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: waveshare-rpi
+Version: 0.0.25
+Summary: A quick-and-dirty library wrapping the native API of the waveshare GPS hat.
+Home-page: http://packages.python.org/waveshare_rpi
+Author: Eli Barnett
+Author-email: emichaelbarnett@gmail.com
+License: MIT
+Keywords: waveshare rpi gps
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pynmea2
+Requires-Dist: pyserial
+
+lorem ipsum dolor sit amet...
+
+
