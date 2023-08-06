@@ -1,0 +1,9 @@
+MANIFEST.in
+README
+setup.py
+wordside/__init__.py
+wordside/wordside.py
+wordside.egg-info/PKG-INFO
+wordside.egg-info/SOURCES.txt
+wordside.egg-info/dependency_links.txt
+wordside.egg-info/top_level.txt
