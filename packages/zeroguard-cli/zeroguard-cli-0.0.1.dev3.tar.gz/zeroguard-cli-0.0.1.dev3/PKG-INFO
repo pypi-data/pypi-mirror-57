@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: zeroguard-cli
+Version: 0.0.1.dev3
+Summary: ZeroGuard CLI
+Home-page: https://zeroguard.com
+Author: ZeroGuard
+Author-email: oss@zeroguard.com
+License: AGPL-3.0
+Project-URL: Documentation, https://zeroguard-cli.readthedocs.io
+Project-URL: Source, https://github.com/zeroguard/zeroguard-cli
+Description: ZeroGuard CLI
+        =============
+        [![Build Status](https://travis-ci.org/zeroguard/zeroguard-cli.svg?branch=master)](https://travis-ci.org/zeroguard/zeroguard-cli)
+        [![Coverage Status](https://coveralls.io/repos/github/zeroguard/zeroguard-cli/badge.svg?branch=master)](https://coveralls.io/github/zeroguard/zeroguard-cli?branch=master)
+        [![Documentation Status](https://readthedocs.org/projects/zeroguard-cli/badge/?version=latest)](https://zeroguard-cli.readthedocs.io/en/latest/?badge=latest)
+        ![PyPI Status](https://img.shields.io/pypi/status/zeroguard-cli)
+        ![PyPI Version](https://img.shields.io/pypi/v/zeroguard-cli)
+        ![Repository License](https://img.shields.io/github/license/zeroguard/zeroguard-cli)
+        ![PyPI Python Version](https://img.shields.io/pypi/pyversions/zeroguard-cli)
+        
+        > **NOTE**: This project is currently under active development. Nothing works as
+        > of right now but that may change any day. Start, watch and check it out
+        > later.
+        
+        This is an official CLI application for interacting with
+        [ZeroGuard Recon](https://zeroguard.com/platform/recon-threat-intelligence)
+        threat intelligence platform.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Security
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
