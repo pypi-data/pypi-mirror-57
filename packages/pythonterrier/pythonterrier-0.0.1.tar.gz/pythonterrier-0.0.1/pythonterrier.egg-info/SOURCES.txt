@@ -1,0 +1,7 @@
+README.md
+main.py
+setup.py
+pythonterrier.egg-info/PKG-INFO
+pythonterrier.egg-info/SOURCES.txt
+pythonterrier.egg-info/dependency_links.txt
+pythonterrier.egg-info/top_level.txt
