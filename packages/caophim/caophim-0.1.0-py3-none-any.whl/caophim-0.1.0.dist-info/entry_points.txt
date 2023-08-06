@@ -1,0 +1,4 @@
+[console_scripts]
+generate-config=caophim:generate_config
+manage=caophim:manage
+
