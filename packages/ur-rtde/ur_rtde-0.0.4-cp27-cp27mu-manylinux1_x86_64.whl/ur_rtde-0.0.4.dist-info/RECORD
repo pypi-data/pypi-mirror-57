@@ -1,0 +1,10 @@
+librtde.so,sha256=JtK8lx1SxUYEtSkTr0Abiaa-0Ahv86bLo8QKW_OG5og,885881
+rtde_io.so,sha256=rC2rzW2X313blPUUjwN9cjUp_kheNqK8hVWyGnBTgb0,811640
+rtde_receive.so,sha256=uQH5k2A_IibJ4LbGXVpl90YW02ydjxo2Kzbu-NqVZiA,811672
+dashboard_client.so,sha256=UmIzOUh9hdtqZZ0MwVZTN-Ey2-4vuo9UF8d0IQOJXx0,811672
+script_client.so,sha256=Snk5PytMJXpo7ymPzbAqIy8-VN3dX1ZkCgfl8xbiBWw,811672
+rtde_control.so,sha256=f2ZQNVsD9ykD_IZkypK0v38N6ROcLjq_YVwXuH4QUVo,811800
+ur_rtde-0.0.4.dist-info/top_level.txt,sha256=cQHKhzqRqcreja5_610bk4zuPL8gRTlbyD9EqDEkiy8,8
+ur_rtde-0.0.4.dist-info/METADATA,sha256=1ZhrIepsIJUbaCDADRt4EVke8KKPsh94SKDkw2TudfU,2631
+ur_rtde-0.0.4.dist-info/RECORD,,
+ur_rtde-0.0.4.dist-info/WHEEL,sha256=M5Ujap42zjfAFnpJOoFU72TFHuBKh-JF0Rqu5vZhkVE,110
