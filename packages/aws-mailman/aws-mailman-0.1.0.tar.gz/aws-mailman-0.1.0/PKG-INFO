@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: aws-mailman
+Version: 0.1.0
+Summary: A utility for updating domain registrant information in Amazon Route 53
+Home-page: https://github.com/fernando-mc/
+Author: Fernando Medina Corey
+Author-email: fernandomc.sea@gmail.com
+License: MIT
+Download-URL: https://github.com/fernando-mc/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: AWS,Route53,Domains
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
