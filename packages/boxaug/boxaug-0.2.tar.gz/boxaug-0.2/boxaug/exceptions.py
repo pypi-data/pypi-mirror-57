@@ -1,0 +1,4 @@
+
+
+class BoxaugError(Exception):
+    pass
