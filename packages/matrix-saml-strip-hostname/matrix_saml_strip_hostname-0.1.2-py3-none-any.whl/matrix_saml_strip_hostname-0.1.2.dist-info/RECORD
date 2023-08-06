@@ -1,0 +1,5 @@
+matrix_saml_strip_hostname/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+matrix_saml_strip_hostname/mapping_providers.py,sha256=Hb31_hxJ18-f8hrQn58QzzK07GFaEj9ZLStiS948wl0,522
+matrix_saml_strip_hostname-0.1.2.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+matrix_saml_strip_hostname-0.1.2.dist-info/METADATA,sha256=4cpdC3Hw3AwFc2L3YB0xOMWvcgbH-WOlU8YrHEjIYXo,2420
+matrix_saml_strip_hostname-0.1.2.dist-info/RECORD,,
