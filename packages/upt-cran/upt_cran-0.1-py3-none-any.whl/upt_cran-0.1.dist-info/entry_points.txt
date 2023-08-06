@@ -1,0 +1,3 @@
+[upt.frontends]
+cran = upt_cran.upt_cran:CranFrontend
+

@@ -1,0 +1,11 @@
+upt_cran/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upt_cran/upt_cran.py,sha256=CPu2fGf_mmCofr_7EBE1V5TPeOiBTPzPps4KLBZT1Bg,15351
+upt_cran/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upt_cran/tests/fake_html.py,sha256=0qTRY1LtRFDp_rQmLkQIPIXDlFd7Y4k3f4klL313iTo,4502
+upt_cran/tests/test_upt_cran.py,sha256=RtE0dUzrQwNnCrd8ZmxNzOdwBeYCTz7aqp_mxKSiX9I,2324
+upt_cran-0.1.dist-info/LICENSE,sha256=K4YfAQJXAO8C3cgGAhnpsUQfp5otbPf60LBOmyPykI4,1464
+upt_cran-0.1.dist-info/METADATA,sha256=c-OVQHCNHeXj5Y7L6WpD7OH15fJn-Xb56UI9Gbwqab4,837
+upt_cran-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+upt_cran-0.1.dist-info/entry_points.txt,sha256=RJIvjTdi5ytKbf6Lmr4fxOLyBCYaC9WGqLM4_BvOzsc,55
+upt_cran-0.1.dist-info/top_level.txt,sha256=g5zXp_hj8jCozqmqQ5HzeHmuO1EcdtFnY2DeirTp-zE,9
+upt_cran-0.1.dist-info/RECORD,,
