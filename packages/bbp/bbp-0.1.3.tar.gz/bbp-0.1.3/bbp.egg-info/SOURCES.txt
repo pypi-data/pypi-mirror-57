@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bbp/__init__.py
+bbp/wrapper.py
+bbp.egg-info/PKG-INFO
+bbp.egg-info/SOURCES.txt
+bbp.egg-info/dependency_links.txt
+bbp.egg-info/requires.txt
+bbp.egg-info/top_level.txt
