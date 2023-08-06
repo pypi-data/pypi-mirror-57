@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: edag-cli
+Version: 0.0.3
+Summary: The EDAG CLI
+Home-page: https://github.com/sodre/cli
+Author: Patrick Sodré
+Author-email: sodre@elasticdag.com
+License: Proprietary
+Keywords: cli edag
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: Click (>=7.0)
+Requires-Dist: click-plugins
+Requires-Dist: entrypoints
+
+===========================
+EDAG Command Line Interface
+===========================
+
+.. image:: https://img.shields.io/codacy/grade/CODACY_PROJECT_ID_HERE?logo=codacy&style=flat-square
+   :target: https://www.codacy.com/app/elasticdag/edag-cli
+   :alt: Codacy Badge
+
+.. image:: https://img.shields.io/codacy/coverage/CODACY_PROJECT_ID_HERE?logo=codacy&style=flat-square
+   :target: https://www.codacy.com/app/elasticdag/edag-cli
+   :alt: Codacy Badge
+
+.. image:: https://img.shields.io/badge/code--style-black-black?style=flat-square
+   :target: https://github.com/psf/black
+
+
+
+
+
+
+The EDAG CLI
+
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `sodre/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`sodre/cookiecutter-pypackage`: https://github.com/sodre/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.0.0 (2019-12-14)
+------------------
+
+* First release on PyPI.
+
+

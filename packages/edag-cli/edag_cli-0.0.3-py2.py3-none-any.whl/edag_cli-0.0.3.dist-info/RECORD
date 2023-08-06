@@ -1,0 +1,11 @@
+edag/cli/__init__.py,sha256=f1xTanxwxzkLVHCsMkLtL0BIzr6jzJOs5YdW6JmE0Rg,220
+edag/cli/__main__.py,sha256=gdptk8jOfWuM-CHvc5DXah4uyiwLz-8HHVHPFCHoFBc,29
+edag/cli/_version.py,sha256=e50DrI0vUqeavmDzxBNADCILVmmNVr6AXD7b9PypO1k,497
+edag/cli/cli.py,sha256=zxT-BqOiRXPNXCYaOl01QmNx8jeOq0KZ8QJyEtJQG_k,340
+edag_cli-0.0.3.dist-info/AUTHORS.rst,sha256=pKYPgltKgRUT_KlV2UbfAEbz8DcqhwhKPwmPI7L6XE4,160
+edag_cli-0.0.3.dist-info/LICENSE,sha256=Prtu-T-t_AL05XIXXZIQ1BTZgoJXJkYAP8vazWC9_0A,78
+edag_cli-0.0.3.dist-info/METADATA,sha256=_kZESr-e4yaHphpxRmPllGTg67wFGianRtqJM5FaKFI,1747
+edag_cli-0.0.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+edag_cli-0.0.3.dist-info/entry_points.txt,sha256=k6fwUXJW7yXCofVOHAHz0CPWDXxWP_AkZGIMH8PxQ6M,44
+edag_cli-0.0.3.dist-info/top_level.txt,sha256=ZIq8DN9nVYU-RoJkBqAATUvB0mJIrq8Qwnaq1N5GpI8,5
+edag_cli-0.0.3.dist-info/RECORD,,
