@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: reldoc
+Version: 1.0.1
+Summary: create release doc.
+Home-page: https://github.com/majent/nps-release
+Author: ryoomori
+Author-email: ryo763783@gmail.com
+License: UNKNOWN
+Keywords: reldoc
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: GitPython
+
+# nps-release
+
+## Install
+
+```
+pip install reldoc
+```
+
+## Usage
+reldoc $TAG
+
+ex) 
+```
+reldoc 20191209_0104
+
+```
+or
+```
+git describe --tags --abbrev=0 | xargs reldoc
+```
+
+
+
