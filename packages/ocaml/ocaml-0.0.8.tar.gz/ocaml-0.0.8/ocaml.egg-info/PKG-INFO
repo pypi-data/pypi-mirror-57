@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ocaml
+Version: 0.0.8
+Summary: OCaml toplevel system integrated in Python
+Home-page: UNKNOWN
+Author: Laurent Mazare
+Author-email: lmazare@gmail.com
+License: UNKNOWN
+Description: The ocaml package makes it possible to use the OCaml toplevel loop from Python code.
+Platform: UNKNOWN
