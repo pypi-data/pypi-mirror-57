@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: fpipe
+Version: 0.0.5
+Summary: Library for working with file-likes as piped streams
+Home-page: https://github.com/vkvam/fpipe
+Author: Vemund Kvam
+Author-email: vemund.kvam@gmail.com
+License: MIT
+Keywords: pipe file stream
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+
+=====
+fpipe
+=====
+
+
+Framework for processing file-likes through chained pipes
+
+
+Description
+===========
+
+Each step in the chain generates file-likes that are passed on to the next step in the chain.
+
+An example of a workflow could be:
+FTP -> Decrypt -> UnTar -> Calculate MD5 checksum -> S3
+
