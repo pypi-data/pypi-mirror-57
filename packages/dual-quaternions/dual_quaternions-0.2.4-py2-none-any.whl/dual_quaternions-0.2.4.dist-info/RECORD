@@ -1,0 +1,9 @@
+dual_quaternions/__init__.py,sha256=64Hzdky_zZf7OT15T09QSNiYv12OKU4RSgjH9BlbOTc,45
+dual_quaternions/dual_quaternions.py,sha256=i2BH4G-oEdiLMjO7oiKlW4gDz7OsynVhw6RIijQB6f4,15783
+dual_quaternions/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dual_quaternions/tests/test_dual_quaternions.py,sha256=05zQ1yi4kfJmFZVZhJ9DEcQuZxJrZ2tDlgND-2xnMUI,18224
+dual_quaternions-0.2.4.dist-info/LICENSE,sha256=0Bl6ws7KrqENUb_f2EYMk4m8DkcACsyQSF3d7tmAA3w,1072
+dual_quaternions-0.2.4.dist-info/METADATA,sha256=oEv6dcj_Ggc1HNlA4TffLW6WVaGHEvqLZaSrL_wA5QY,628
+dual_quaternions-0.2.4.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+dual_quaternions-0.2.4.dist-info/top_level.txt,sha256=eeY4n-V_gR8LTCpbu9kGTfXBWLtVRWpRJDDLBpP651M,17
+dual_quaternions-0.2.4.dist-info/RECORD,,
