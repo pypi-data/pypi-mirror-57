@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+setup.py
+expi_skel/__init__.py
+expi_skel.egg-info/PKG-INFO
+expi_skel.egg-info/SOURCES.txt
+expi_skel.egg-info/dependency_links.txt
+expi_skel.egg-info/requires.txt
+expi_skel.egg-info/top_level.txt
