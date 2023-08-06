@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gastimator
+Version: 0.1.1
+Summary: Implementation of a Python MCMC gibbs-sampler with adaptive stepping
+Home-page: https://github.com/TimothyADavis/GAStimator
+Author: Timothy A. Davis
+Author-email: DavisT@cardiff.ac.uk
+License: GNU GPLv3
+Description: # GAStimator
+        Implementation of a Python MCMC gibbs-sampler with adaptive stepping
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
