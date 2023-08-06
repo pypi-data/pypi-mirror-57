@@ -1,0 +1,19 @@
+Metadata-Version: 1.0
+Name: adobo
+Version: 0.2.57
+Summary: An analysis framework for single cell gene expression data.
+Home-page: https://github.com/oscar-franzen/adobo
+Author: Oscar Franzén
+Author-email: p.oscar.franzen@gmail.com
+License: LICENSE
+Description: # Description
+        adobo is a Python-framework for single cell gene expression data analysis. adobo can be composed into scripts, used in interactive workflows and much more.
+        
+        # Getting started
+        Full documentation and tutorial are available here:
+        * https://oscar-franzen.github.io/adobo/
+        
+        # Contact, bugs, etc
+        * Oscar Franzén, <p.oscar.franzen@gmail.com>
+        
+Platform: UNKNOWN
