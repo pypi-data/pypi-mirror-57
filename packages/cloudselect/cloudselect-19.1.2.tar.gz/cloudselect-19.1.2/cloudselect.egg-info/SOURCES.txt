@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+cloudselect/__init__.py
+cloudselect/cloudselect.py
+cloudselect/instance.py
+cloudselect/selector.py
+cloudselect.egg-info/PKG-INFO
+cloudselect.egg-info/SOURCES.txt
+cloudselect.egg-info/dependency_links.txt
+cloudselect.egg-info/entry_points.txt
+cloudselect.egg-info/requires.txt
+cloudselect.egg-info/top_level.txt
+test/test_cloudselect.py
+test/test_options.py
+test/test_selector.py
