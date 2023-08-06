@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: teetime
+Version: 0.0.2
+Summary: Add tee like functionally to Popen
+Home-page: https://github.com/Peilonrayz/Teetime
+Author: Peilonrayz
+Author-email: peilonrayz@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/Peilonrayz/Teetime
+Project-URL: Tracker, https://github.com/Peilonrayz/Teetime/issues
+Description: # Teetime
+        
+        [![Master Build Status](https://travis-ci.org/Peilonrayz/teetime.svg?branch=master)](https://travis-ci.org/Peilonrayz/teetime)
+        
+        Adding tee like functionally to `subprocess.Popen`.
+        
+        ## Installation
+        
+        ```bash
+        $ pip install teetime
+        ```
+        
+        ## How to use
+        
+        There is some documentation in the code, and can be generated with `tox -e docs`. Common usage is:
+        
+        ```python
+        import sys
+        import teetime
+        
+        with open('log.txt', 'wb') as f:
+            process = teetime.popen_call(
+                ['python', 'test.py'],
+                stdout=(sys.stdout.buffered, f),
+                stderr=(sys.stderr.buffered, f),
+            )
+            process.wait()
+        ```
+        
+        **Note**: `popen_call` blocks until IO is complete. If you have no IO, `stdout=()`, then it will not block. This is why you still need `process.wait()`.
+        
+        # Development
+        
+        All tests use are run via tox. This includes running static analysis tools, unit tests and generating documentation.
+        
+        ```bash
+        $ tox
+        ```
+        
+Keywords: tee popen command
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
