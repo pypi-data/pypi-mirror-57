@@ -1,0 +1,15 @@
+bokeh
+cchardet
+fastprogress>=0.1.21
+jieba
+joblib
+keras_bert
+langdetect
+matplotlib>=3.0.0
+networkx==2.3
+packaging
+pandas>=0.24.2
+requests
+scikit-learn==0.21.3
+seqeval
+stellargraph>=0.8.2
