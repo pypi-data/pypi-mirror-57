@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: opensource-job-portal
+Version: 0.1.0
+Summary: An opensourse Job Portal with Unlimited free job posting, Social Api authentication.
+Home-page: https://github.com/MicroPyramid/opensource-job-portal.git
+Author: Micropyramid
+Author-email: hello@micropyramid.com
+License: UNKNOWN
+Description: Peel Jobs
+        ===========
+        
+        Job Portal with Unlimited free job posting, Social Api's authentication.
+        
+        Recruiter
+        ----------
+        
+        Enhancements:
+        
+        * Can post jobs to social networking sites like facebook, twitter, linkedin.
+        * Walk-in's
+        * Copy An Existing Job Post, Deactivate.
+        * Added Google Maps
+        * Mobile Number Authentication
+        * Post their job post message into social networking sites.
+        
+        Portal
+        -------
+        
+        Enhancements:
+        
+        * Job Alerts
+        * New Mobile Design
+        * Normal Search and Advanced Search
+        * Email Notifications
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

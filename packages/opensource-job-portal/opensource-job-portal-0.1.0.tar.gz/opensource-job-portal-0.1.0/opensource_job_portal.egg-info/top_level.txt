@@ -1,0 +1,12 @@
+agency
+candidate
+dashboard
+jobsp
+mpcomp
+peeldb
+pjob
+psite
+recruiter
+search
+social
+tickets
