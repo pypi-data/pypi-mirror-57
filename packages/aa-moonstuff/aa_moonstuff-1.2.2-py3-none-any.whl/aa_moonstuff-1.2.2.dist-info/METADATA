@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aa-moonstuff
+Version: 1.2.2
+Summary: An app to deal with moooon!
+Home-page: https://gitlab.com/colcrunch/aa-moonstuff
+Author: Col Crunch
+Author-email: it-team@serin.space
+License: GPLv3
+Platform: UNKNOWN
+Requires-Python: ~=3.4
+Requires-Dist: django-bootstrap-form
+Requires-Dist: allianceauth (>=2.0.5)
+Requires-Dist: typing ; python_version=="3.4"
+Provides-Extra: testing
+
+UNKNOWN
+
+
