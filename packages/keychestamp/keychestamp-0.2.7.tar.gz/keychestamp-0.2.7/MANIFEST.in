@@ -1,0 +1,6 @@
+include LICENSE
+include keychestamp/*
+include *.sh
+include *.md
+include *.py
+exclude test/*
