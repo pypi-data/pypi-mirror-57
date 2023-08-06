@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: imageserver
+Version: 0.1.4
+Summary: Host thumbnails for images   
+Home-page: UNKNOWN
+Author: Nidhi Chandra
+Author-email: chandranidhi45@gmail.com
+License: MIT
+Description: Host images on your machine as thumbnails
+        
+        *To use, simply do:*
+        
+        imageserver --dataroot=/path/to/imagefolder --port=port
+            
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
