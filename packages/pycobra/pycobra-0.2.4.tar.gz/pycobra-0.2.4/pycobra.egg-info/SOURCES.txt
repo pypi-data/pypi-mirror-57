@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+pycobra/__init__.py
+pycobra/classifiercobra.py
+pycobra/cobra.py
+pycobra/diagnostics.py
+pycobra/ewa.py
+pycobra/kernelcobra.py
+pycobra/visualisation.py
+pycobra.egg-info/.DS_Store
+pycobra.egg-info/PKG-INFO
+pycobra.egg-info/SOURCES.txt
+pycobra.egg-info/dependency_links.txt
+pycobra.egg-info/requires.txt
+pycobra.egg-info/top_level.txt
