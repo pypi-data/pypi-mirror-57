@@ -1,0 +1,8 @@
+tiny_gnupg/__init__.py,sha256=YcWLlxn7acC76NmNrEK_P_u1lNiobmJnaauufbiR0Eo,433
+tiny_gnupg/tiny_gnupg.py,sha256=_4qLJPkRCBI6w4wHxYsIyorbSgPhjOZ3Q_Xie0FAnVw,12839
+tiny_gnupg/gpghome/gpg2,sha256=kp-OejiUR67vKI2Iet8ypuFD_Rbl3wyV8r_FKr1mdGo,1017384
+tiny_gnupg-0.3.6.dist-info/LICENSE,sha256=_uV70VyhLv7waj9AjZj4sNZE1v4CuebRnr47qQK8_QI,32474
+tiny_gnupg-0.3.6.dist-info/METADATA,sha256=-wxX31Bltjc7rLeP2F4oBLyrw4rYIYm5bGtrEAmejJA,8635
+tiny_gnupg-0.3.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tiny_gnupg-0.3.6.dist-info/top_level.txt,sha256=jg0vkCCDwTs5gifwLo3qXKO82UMAH3-DcWb9HawkeBU,11
+tiny_gnupg-0.3.6.dist-info/RECORD,,
