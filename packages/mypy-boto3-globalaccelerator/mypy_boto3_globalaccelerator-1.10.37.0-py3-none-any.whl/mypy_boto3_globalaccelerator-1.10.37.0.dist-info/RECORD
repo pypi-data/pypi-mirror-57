@@ -1,0 +1,11 @@
+mypy_boto3_globalaccelerator/__init__.py,sha256=pwl9S148c0kg8qXeGKccyzx3i-9HQmNIieeN7qJcBuE,474
+mypy_boto3_globalaccelerator/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_globalaccelerator/client.py,sha256=3Mb1GVqLC59YQxdm8nVDuq0az_STY-BBRxMXUhrB5vc,12782
+mypy_boto3_globalaccelerator/paginator.py,sha256=KUoGqlWuFXpXWviOMGDum4dh9sAMzhX-82rQ9kR2Qz4,2639
+mypy_boto3_globalaccelerator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_globalaccelerator/type_defs.py,sha256=4JRHcA3ZS7dVNsx9NQM1DWFHWHfUkFzfzj41zmtAKAc,4625
+mypy_boto3_globalaccelerator/version.py,sha256=TIXH_Ij_ACc4EJwGIPin448HhFGiM7HiY4Pcejo61CA,57
+mypy_boto3_globalaccelerator-1.10.37.0.dist-info/METADATA,sha256=tzf3eVn8LJ1v3HR4lHOB4eBXgYHZiQn12BLrTPXbqCU,1231
+mypy_boto3_globalaccelerator-1.10.37.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_globalaccelerator-1.10.37.0.dist-info/top_level.txt,sha256=qj1Qt4sHRgG8Ic_oU2fEgZTXr1PKHZNgADRku4wqfyg,29
+mypy_boto3_globalaccelerator-1.10.37.0.dist-info/RECORD,,
