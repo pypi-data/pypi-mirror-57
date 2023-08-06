@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: contiltcore
+Version: 0.0.3
+Summary: Contilt Infrastructure
+Home-page: https://github.com/your_package/homepage/
+Author: Contilt
+Author-email: info@contilt.com
+License: UNKNOWN
+Description: Contilt Infrastructure
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
