@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: googleDriveFileDownloader
+Version: 0.0.1
+Summary: Helper to download google drive files with the URL
+Home-page: https://pidugusundeep.in
+Author: PIDUGU SUNDEEP
+Author-email: pidugusundeep5@gmail.com
+License: GPLv3
+Description: 
+        # Google-Drive-File-Downloader
+        Google Drive File Downloader
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
