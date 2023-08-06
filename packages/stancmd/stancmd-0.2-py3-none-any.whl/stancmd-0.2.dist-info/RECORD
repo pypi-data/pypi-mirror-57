@@ -1,0 +1,8 @@
+stan/__init__.py,sha256=Vn2zlSnQQVgMlR3gTyB6th9pgn-fyMZTEBey1VD48Eg,107
+stan/stan.py,sha256=l1afdY_bK8PychpdAlI0IQBv2lCeme3ZrbtRcmWl9pQ,793
+stan/utils.py,sha256=XcwWwJFHqt2xCPlEe2pPhqpQD1ofXTe9Ocqno_ZZ-oY,225
+stancmd-0.2.dist-info/METADATA,sha256=Y6kKi4qURP8RT56o9uwkWTYJNDTA4-X-BBGtULWsDok,250
+stancmd-0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+stancmd-0.2.dist-info/entry_points.txt,sha256=Mw2PjC5YKjHQN1Z9Nbs7LT4z9F_fP9knMWbyo-Jg30E,44
+stancmd-0.2.dist-info/top_level.txt,sha256=JwCeQoci5RlK4wyrJzaLp33zb7QxDaN5WWEulgvoooI,5
+stancmd-0.2.dist-info/RECORD,,
