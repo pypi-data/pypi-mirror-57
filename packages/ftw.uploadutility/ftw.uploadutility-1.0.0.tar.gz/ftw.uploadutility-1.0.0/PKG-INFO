@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: ftw.uploadutility
+Version: 1.0.0
+Summary: ftw.uploadutility
+Home-page: https://github.com/4teamwork/ftw.uploadutility
+Author: 4teamwork AG
+Author-email: mailto:info@4teamwork.ch
+License: GPL2
+Description: .. contents:: Table of Contents
+        
+        
+        Introduction
+        ============
+        
+        Port of "ZPublisher.HTTPRequest.FileUpload" utility from plone 5 to plone 4.
+        
+        
+        Compatibility
+        -------------
+        
+        Plone 4.3.x
+        
+        
+        Installation
+        ============
+        
+        - Add the package to your buildout configuration:
+        
+        ::
+        
+            [instance]
+            eggs +=
+                ...
+                ftw.uploadutility
+        
+        
+        Development
+        ===========
+        
+        1. Fork this repo
+        2. Clone your fork
+        3. Shell: ``ln -s development.cfg buildout.cfg``
+        4. Shell: ``python bootstrap.py``
+        5. Shell: ``bin/buildout``
+        
+        Run ``bin/test`` to test your changes.
+        
+        Or start an instance by running ``bin/instance fg``.
+        
+        
+        Links
+        =====
+        
+        - Github: https://github.com/4teamwork/ftw.uploadutility
+        - Issues: https://github.com/4teamwork/ftw.uploadutility/issues
+        - Pypi: http://pypi.python.org/pypi/ftw.uploadutility
+        
+        
+        Copyright
+        =========
+        
+        This package is copyright by `4teamwork <http://www.4teamwork.ch/>`_.
+        
+        ``ftw.uploadutility`` is licensed under GNU General Public License, version 2.
+        
+        Changelog
+        =========
+        
+        
+        1.0.0 (2019-12-16)
+        ------------------
+        
+        - Initial implementation.
+        
+Keywords: ftw uploadutility
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 4.3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: tests
