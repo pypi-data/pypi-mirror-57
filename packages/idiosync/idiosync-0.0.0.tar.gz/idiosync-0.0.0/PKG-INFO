@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: idiosync
+Version: 0.0.0
+Summary: Synchronize user databases
+Home-page: UNKNOWN
+Author: Michael Brown
+Author-email: mbrown@fensystems.co.uk
+License: GPLv2+
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
