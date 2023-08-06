@@ -1,0 +1,9 @@
+yspec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yspec/checker.py,sha256=lOCEdH_3ezG8q_jR0vDjZ9rESET3fxeHgby-EhNxyrE,4420
+yspec/cli.py,sha256=rvzDcXzuzn6H_-M8SZzSyd8hPOLqvaY4BrRrKN_f0mk,2314
+yspec-0.1.0.data/scripts/yspec,sha256=EMCa0MIfqNGQ9Dy6mLXnBFsuR3l3Tb9f9Nj4TxPAVvs,826
+yspec-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+yspec-0.1.0.dist-info/METADATA,sha256=YblzXF9k2BpbKN0Xc6oNw4pQJZxtetfyxbEMKKlruRY,4185
+yspec-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+yspec-0.1.0.dist-info/top_level.txt,sha256=Q2iUBDbcR6HrMWbhvXDLuoqCTd8xQOtAHmBIWf3vPE4,6
+yspec-0.1.0.dist-info/RECORD,,
