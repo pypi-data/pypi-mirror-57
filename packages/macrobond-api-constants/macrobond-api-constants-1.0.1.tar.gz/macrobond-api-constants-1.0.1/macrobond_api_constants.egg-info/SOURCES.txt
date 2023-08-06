@@ -1,0 +1,6 @@
+README.md
+setup.py
+macrobond_api_constants.egg-info/PKG-INFO
+macrobond_api_constants.egg-info/SOURCES.txt
+macrobond_api_constants.egg-info/dependency_links.txt
+macrobond_api_constants.egg-info/top_level.txt
