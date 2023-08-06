@@ -1,0 +1,7 @@
+
+[documentation]
+sphinx
+recommonmark
+sphinx-markdown-tables
+sphinx-rtd-theme
+sphinx-js
