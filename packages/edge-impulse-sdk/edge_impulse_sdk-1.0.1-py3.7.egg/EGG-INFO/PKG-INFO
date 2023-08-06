@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: edge-impulse-sdk
+Version: 1.0.1
+Summary: Edge Impulse SDK
+Home-page: https://edgeimpulse.com
+Author: UNKNOWN
+Author-email: jan@edgeimpulse.com
+License: UNKNOWN
+Description:     Python SDK to interact with the Edge Impulse API (https://docs.edgeimpulse.com/reference-link/edge-impulse-api). At Edge Impulse we enable developers to create the next generation of intelligent device solutions with embedded Machine Learning.
+            
+Keywords: OpenAPI,OpenAPI-Generator,Edge Impulse API
+Platform: UNKNOWN
