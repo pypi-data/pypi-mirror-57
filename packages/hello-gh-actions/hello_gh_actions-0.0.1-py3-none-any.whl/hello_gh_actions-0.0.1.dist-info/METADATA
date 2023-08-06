@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hello-gh-actions
+Version: 0.0.1
+Summary: This package demonstrates building and publishing python packages on githubs infrastructure
+Home-page: UNKNOWN
+Author: Sören Wegener
+Author-email: soerface@flipdot.org
+License: UNKNOWN
+Project-URL: Source Code, https://github.com/soerface/template-python-package
+Project-URL: Bug Tracker, https://github.com/soerface/template-python-package/issues
+Project-URL: Documentation, https://readthedocs.org/projects/hello-gh-actions/
+Platform: UNKNOWN
+
+UNKNOWN
+
+
