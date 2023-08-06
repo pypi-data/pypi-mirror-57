@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: rwafaker
+Version: 0.0.1
+Summary: This package generates massive amounts of realistic fake data in Rwanda native language (Ikinyarwanda)
+Home-page: UNKNOWN
+Author: Igwaneza Bruce
+Author-email: knowbeeinc@gmail.com
+License: MIT
+Keywords: rwanda,faker,fake,rwafake
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+rwafaker
+===========
+
+This is a simple python package that generates massive amounts of realistic fake data in Rwanda native language (Ikinyarwanda)
+
+Installation
+------------
+
+The distribution is hosted on pypi at: https://pypi.org/project/rwafaker/. To directly install the package from pypi, run from your terminal::
+
+    $ pip install rwafaker
+
+Usage
+----------- 
+
+Single Outputs
+===============
+
+.. code-block :: python
+
+   from rwafake import rwafaker
+
+   fname = rwafaker.firstName() # 'Bisamaza'
+
+   lname = rwafaker.lastName() # 'Smith'
+
+   fullName = rwafaker.fullName() # 'Bisamaza Smith'
+
+   email = rwafaker.email() # 'bisamaza_sm@gmail.com'
+
+Multiple Outputs
+=================
+
+.. code-block :: python
+
+   from rwafake import rwafaker
+
+   fname = rwafaker.firstName(2) # ['Ngarambe', 'Rwigema']
+
+   lname = rwafaker.lastName(2) # ['Barker', 'Fuller']
+
+   fullName = rwafaker.fullName(2) # ['Kandekwe Galloway', 'Buhigiro Byers']
+
+   email = rwafaker.email(2) # ['banganirora.suarez@ur.ac.rw', 'umugaba.cox@yahoo.com']
+
+
+
