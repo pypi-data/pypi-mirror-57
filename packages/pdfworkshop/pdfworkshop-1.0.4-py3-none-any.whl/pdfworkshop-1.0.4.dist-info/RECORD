@@ -1,0 +1,13 @@
+pdfworkshop/__init__.py,sha256=FTs7b3epzEkTZBhPF76_RlZTOLsxNZ4iPyOmx_mC-RA,61
+pdfworkshop/__main__.py,sha256=70cY6smjslBmyRHYbYzcG9FuNXNd6-NupPc4_QLmGN0,126
+pdfworkshop/_definitions.py,sha256=eYT1Z4SrG08qqFiDkeZJ30xbVragAp_qoVQGDnMI2q8,318
+pdfworkshop/cli.py,sha256=5Wwxsu9B7HAWezaMv9Ka8Eyql8ke5vDZJdvSLFNGZlo,744
+pdfworkshop/config.ini,sha256=VxHcFUQ0PvuORz2aG-GaoTXLdujQn2eYe_KjGfPmBiM,96
+pdfworkshop/config.py,sha256=8utJlR9VeERxa-XDdyIZH9dCJWWxHve9uwEBIo9zHz8,3376
+pdfworkshop/pdfworkshop.py,sha256=4Vuuen7tCWAnv3dAknoghrYUE3Tq-pNKS9d13-nQjOQ,6955
+pdfworkshop-1.0.4.dist-info/LICENSE,sha256=8AMk2oHb_lAvJKSw2SybAczVHI0eufzY0PTECXSeKy0,1073
+pdfworkshop-1.0.4.dist-info/METADATA,sha256=0M8PByb9jFp4EtEkR11T7M542AVe_AWvtQsg0XBCVv4,3139
+pdfworkshop-1.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pdfworkshop-1.0.4.dist-info/entry_points.txt,sha256=nMRc3mdq_RMEtoCEo0AORYmipFlzo-tmi1cfSwnwPxs,55
+pdfworkshop-1.0.4.dist-info/top_level.txt,sha256=ty7m4dW5BMgzJT08gDdCP7uRnL-l0oWcxQPxKYh7Fmw,12
+pdfworkshop-1.0.4.dist-info/RECORD,,
