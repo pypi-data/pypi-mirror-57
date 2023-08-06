@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: flask-rapid
+Version: 0.0.0
+Summary: Flask framework enhancements for rapid and robust web API development.
+Home-page: https://github.com/mobiusbyte/flask-rapid
+Author: Jill San Luis
+Author-email: jill@mobiusbyte.com
+License: MIT
+Project-URL: Code, https://github.com/mobiusbyte/flask-rapid
+Project-URL: Issue tracker, https://github.com/mobiusbyte/flask-rapid/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# flask-rapid
+Flask framework enhancements for rapid and robust web API development
+
+
