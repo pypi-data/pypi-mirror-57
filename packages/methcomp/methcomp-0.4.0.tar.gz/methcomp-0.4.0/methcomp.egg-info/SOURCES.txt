@@ -1,0 +1,10 @@
+README.md
+setup.py
+methcomp/__init__.py
+methcomp/blandaltman.py
+methcomp/regression.py
+methcomp.egg-info/PKG-INFO
+methcomp.egg-info/SOURCES.txt
+methcomp.egg-info/dependency_links.txt
+methcomp.egg-info/requires.txt
+methcomp.egg-info/top_level.txt
