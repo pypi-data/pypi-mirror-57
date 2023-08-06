@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fetch-dcos-token
+Version: 0.9.5
+Summary: Simple module to get a JWT token from a DC/OS master
+Home-page: https://github.com/m-dekkers/fetch_dcos_token
+Author: Martijn Dekkers
+Author-email: pypi@dekkers.org.uk
+License: UNKNOWN
+Description: ## Purpose 
+        This module will connect to the specified DC/OS Master (or https://master.mesos/ if no cluster URL is specified) and with the given username/key or username/password, get a JWT that is valid for the specified amount of time. 
+        
+        ## Usage
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

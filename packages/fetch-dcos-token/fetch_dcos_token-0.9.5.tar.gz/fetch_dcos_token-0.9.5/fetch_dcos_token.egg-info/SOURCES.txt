@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fetch_dcos_token/__init__.py
+fetch_dcos_token/fetch_dcos_token.py
+fetch_dcos_token.egg-info/PKG-INFO
+fetch_dcos_token.egg-info/SOURCES.txt
+fetch_dcos_token.egg-info/dependency_links.txt
+fetch_dcos_token.egg-info/requires.txt
+fetch_dcos_token.egg-info/top_level.txt
