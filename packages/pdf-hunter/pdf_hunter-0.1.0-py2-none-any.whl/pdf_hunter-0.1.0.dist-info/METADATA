@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pdf-hunter
+Version: 0.1.0
+Summary: Download PDF links from a webpage
+Home-page: UNKNOWN
+Author: Simon Garisch
+Author-email: gatman946@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: beautifulsoup4 (>=4.8.1)
+
+# pdf_hunter
+
+
