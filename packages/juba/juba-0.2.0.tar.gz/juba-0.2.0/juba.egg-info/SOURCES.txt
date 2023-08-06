@@ -1,0 +1,14 @@
+README.md
+setup.py
+juba/__init__.py
+juba/__version__.py
+juba/forwordfitting.py
+juba/markov.py
+juba/ner.py
+juba/similar.py
+juba.egg-info/PKG-INFO
+juba.egg-info/SOURCES.txt
+juba.egg-info/dependency_links.txt
+juba.egg-info/requires.txt
+juba.egg-info/top_level.txt
+juba.egg-info/zip-safe
