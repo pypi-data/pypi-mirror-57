@@ -1,0 +1,3 @@
+[freckles_cli.plugins]
+codegen = pyckles.freckles_cli_plugin_codegen:codegen
+
