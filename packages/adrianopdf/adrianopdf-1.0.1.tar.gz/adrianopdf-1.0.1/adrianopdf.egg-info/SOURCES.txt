@@ -1,0 +1,9 @@
+README.md
+setup.py
+adrianopdf/__init__.py
+adrianopdf/pdf2image.py
+adrianopdf/pdf2text.py
+adrianopdf.egg-info/PKG-INFO
+adrianopdf.egg-info/SOURCES.txt
+adrianopdf.egg-info/dependency_links.txt
+adrianopdf.egg-info/top_level.txt
