@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+ivpy/__init__.py
+ivpy/core.py
+ivpy.egg-info/PKG-INFO
+ivpy.egg-info/SOURCES.txt
+ivpy.egg-info/dependency_links.txt
+ivpy.egg-info/top_level.txt
+src/_core.c
+src/queue.c
+src/variable.c
+src/xtab.c
