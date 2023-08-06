@@ -1,0 +1,10 @@
+mypy_boto3_outposts/__init__.py,sha256=oucoime8wuI0yDIFY3LINiibmNZnLXXDE6fouuOM99A,109
+mypy_boto3_outposts/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_outposts/client.py,sha256=5e1g7FW96H1Y-hA6o-eNzx6YeDqV4vCkG-nLX0moJu0,3970
+mypy_boto3_outposts/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_outposts/type_defs.py,sha256=bQFf4963gP3PPRgvqoSnFg_qk53F35obZufkIqyvwpE,2759
+mypy_boto3_outposts/version.py,sha256=ay4Kxw86xwUJX0iINQwdgWtfO2c2SwRu6FytnOmjRJY,55
+mypy_boto3_outposts-1.10.33.dist-info/METADATA,sha256=h9LqXFenspmELbrI2OcAsWTNsulyoqEyAG14G_JOCP0,1209
+mypy_boto3_outposts-1.10.33.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_outposts-1.10.33.dist-info/top_level.txt,sha256=ivwPVOxFvlPeokSlIHYsfe9gr2VtyyV1Vg2YSmPIMlw,20
+mypy_boto3_outposts-1.10.33.dist-info/RECORD,,
