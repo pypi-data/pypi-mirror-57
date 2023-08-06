@@ -1,0 +1,16 @@
+pyscada_gpio-0.7.0-py2.7-nspkg.pth,sha256=pqvOaJu1UGSgRnV6NMAGMFYHQAJEYoIVzB-PjDimUQs,544
+pyscada/gpio/__init__.py,sha256=asnCftpHd8FkH6zcz1381cq0rT1uiYTPcxkuaphtPMw,485
+pyscada/gpio/__init__.pyc,sha256=Yk0YMaCxe-C6IfUNWTYFBKiGAKLQnhr6Q8wPzy_vsRA,659
+pyscada/gpio/admin.py,sha256=2kG6aJZ0lutGUlG3qRUqX07KqIYWCyC-D77E8WEX9bM,2516
+pyscada/gpio/apps.py,sha256=EQD9yHfaAH8pZ5QkywcuprOS8Wo2OxDFiS_fTAg26ek,320
+pyscada/gpio/device.py,sha256=9_TISlosL2BwZME7pBGV07xtcW6RjZwxiD2MmkUrYJo,2329
+pyscada/gpio/models.py,sha256=-ipLIcFm25-q3k3dXunahxxTMjm_iQaGU3teAxSB0AI,2263
+pyscada/gpio/worker.py,sha256=ELW9X-PpfQa3LIKZRlQZgt3AYaGf6r7h93qmaQW5DlE,452
+pyscada/gpio/migrations/0001_initial.py,sha256=IJvNlt2dv9D7XIU-Ie2yK_uMCLnQGDO9PqgxsToKZac,2871
+pyscada/gpio/migrations/0002_add_device_protocol.py,sha256=ThcVWNcUUz-u4GhQu6GpuII_ApklZ8MP9-nQHAu4r-E,1508
+pyscada/gpio/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyscada_gpio-0.7.0.dist-info/METADATA,sha256=SXVwz851nKPz_7obOg3KmueoLrfjURc_1ufn44b6l1s,1561
+pyscada_gpio-0.7.0.dist-info/RECORD,,
+pyscada_gpio-0.7.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+pyscada_gpio-0.7.0.dist-info/namespace_packages.txt,sha256=MLHNNCUaClJB6PYb7m9a59LkNpEmpWUsiY_a2cVL8Bs,8
+pyscada_gpio-0.7.0.dist-info/top_level.txt,sha256=MLHNNCUaClJB6PYb7m9a59LkNpEmpWUsiY_a2cVL8Bs,8
