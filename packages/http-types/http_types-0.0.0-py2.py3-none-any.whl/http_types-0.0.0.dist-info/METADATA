@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: http-types
+Version: 0.0.0
+Summary: Types for HTTP requests and responses
+Home-page: http://github.com/Meeshkan/py-http-types
+Author: Meeshkan Dev Team
+Author-email: dev@meeshkan.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: typing-extensions
+Requires-Dist: typeguard
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: autopep8 ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: pytest-watch ; extra == 'dev'
+Requires-Dist: pytest-testmon ; extra == 'dev'
+Requires-Dist: pyhamcrest ; extra == 'dev'
+
+
+# HTTP types in Python
+
+Types for HTTP request and response.
+
+Requires **Python >= 3.6**.
+
+## Installation
+
+```bash
+pip install http-types
+```
+
+## Usage
+
+```bash
+from http_types import Request, Response
+
+req = Request(method='get', ...)
+
+# TODO
+```
+
+## Development
+
+1. Create a new virtual environment.
+1. Install dependencies: `pip install --upgrade -e .[dev]`
+1. Run tests: `pytest tests/` or `python setup.py test`
+
+
