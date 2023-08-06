@@ -1,0 +1,10 @@
+README.md
+setup.py
+polywhirl/__init__.py
+polywhirl/__main__.py
+polywhirl.egg-info/PKG-INFO
+polywhirl.egg-info/SOURCES.txt
+polywhirl.egg-info/dependency_links.txt
+polywhirl.egg-info/entry_points.txt
+polywhirl.egg-info/requires.txt
+polywhirl.egg-info/top_level.txt

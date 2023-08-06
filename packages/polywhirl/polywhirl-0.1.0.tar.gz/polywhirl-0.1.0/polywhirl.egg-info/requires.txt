@@ -1,0 +1,7 @@
+pandas
+pandas-profiling
+pandas_gbq
+PyYAML
+tqdm
+jinja2
+click

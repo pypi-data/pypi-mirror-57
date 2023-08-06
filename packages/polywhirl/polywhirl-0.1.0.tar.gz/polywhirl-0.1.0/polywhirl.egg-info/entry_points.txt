@@ -1,0 +1,3 @@
+[console_scripts]
+polywhirl = polywhirl.__main__:main
+
