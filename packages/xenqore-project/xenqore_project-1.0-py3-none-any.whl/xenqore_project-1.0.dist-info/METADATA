@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xenqore-project
+Version: 1.0
+Summary: xenqore upload test(tensorflow version)
+Home-page: https://github.com/kojunhyun/Binarized_Neural_Network-tensorflow_keras
+Author: kojunhyun
+Author-email: skykjh20@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/kojunhyun/Binarized_Neural_Network-tensorflow_keras
+Keywords: xenqore_project
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+
+UNKNOWN
+
+

@@ -1,0 +1,12 @@
+xenqore/__init__.py,sha256=UveuEMQsGXzUPu-m8deyZA29RnvVrKMrmJWo6EAFMaU,1881
+xenqore/apps.py,sha256=yS191IaRSUM87fvsOsk84azy_gC-pc2CSG9Dl_eyjZc,12649
+xenqore/constants.py,sha256=Qd-p54vVYPNjTw_T20PMgff6hdc1b6zSOTTAA6-5l8g,2076
+xenqore/datatypes.py,sha256=vEt3zqq2S0ld_NYqq99-YuggkINdf0K9lUEobuAt-Jc,8869
+xenqore/device.py,sha256=ufK2sUZPCmODOLu-MyJxze_UMUdTtllM_hjmHCriYmg,14123
+xenqore/layers.py,sha256=1ZnY1K16Y8RVdG1OYPM_DlDxMCeI7qF78Kb-cW03RKs,20783
+xenqore/math.py,sha256=dr2GyrJI0BVNZw7iSB7839lmHT-K2yfKi_x3Uj2n6TU,1904
+xenqore/utils.py,sha256=6-xex9H5Qv0u9uC3i6UHrBC_Q3on5iQKLO-DRuhfyD0,3687
+xenqore_project-1.0.dist-info/METADATA,sha256=We6kjWdWXlbySHdFDHBmTNrB81Ohatfqmk84CPJW920,567
+xenqore_project-1.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+xenqore_project-1.0.dist-info/top_level.txt,sha256=G4mUmDX_vgcoXV9m4Zhg37ZouwKNk5-s1zcjypM1t2I,8
+xenqore_project-1.0.dist-info/RECORD,,
