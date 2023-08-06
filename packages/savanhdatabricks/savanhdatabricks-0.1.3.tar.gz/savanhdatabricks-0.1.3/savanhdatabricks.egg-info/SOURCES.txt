@@ -1,0 +1,9 @@
+README.md
+setup.py
+savanhdatabricks/__init__.py
+savanhdatabricks/eventgridsinkwriter.py
+savanhdatabricks.egg-info/PKG-INFO
+savanhdatabricks.egg-info/SOURCES.txt
+savanhdatabricks.egg-info/dependency_links.txt
+savanhdatabricks.egg-info/requires.txt
+savanhdatabricks.egg-info/top_level.txt
