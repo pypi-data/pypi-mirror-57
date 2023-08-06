@@ -1,0 +1,11 @@
+snapshot_field/__init__.py,sha256=mWI5Fof9SpgrReXMMp4dd_zIBN2B5hZu8jtSBHbOqc4,213
+snapshot_field/apps.py,sha256=6Ywufu7J2u7ihoZldjk4Sl8H3JIyYPAASZLO7f3Ztp4,247
+snapshot_field/compat.py,sha256=BGCLHkW7B8dz8o4LjWk9toiY5hmJ6E1Wj59-6oH_L1E,299
+snapshot_field/fields.py,sha256=bg3Ye5eUW2m5rzYoOBv7AqDCAOhkbnxXZkYEtSll_xo,9318
+snapshot_field/monkey.py,sha256=Jr5uoMMmoxg-XubZcCpoI8AkqWAEAvtLIDSWQbQin1E,240
+snapshot_field/utils.py,sha256=bIoegXH2RzLg7dgnsdYHGZR_5tWFFgAs6WR9j2FpGNk,4596
+django_snapshot_field-0.1.2.dist-info/LICENSE,sha256=p2Pc8h8dnZN8NxLnKB7BQDpDrQtET3UoYwb7UiK2CGg,1090
+django_snapshot_field-0.1.2.dist-info/METADATA,sha256=taK2Bj7VXYfwtVwARsgT_0qsdHRAWPt_E8CYBOeSpgw,3496
+django_snapshot_field-0.1.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_snapshot_field-0.1.2.dist-info/top_level.txt,sha256=ZtTYcqQP488Nk4kHDR0GiAxXFaojBfsLxMusLKCqsTM,15
+django_snapshot_field-0.1.2.dist-info/RECORD,,
