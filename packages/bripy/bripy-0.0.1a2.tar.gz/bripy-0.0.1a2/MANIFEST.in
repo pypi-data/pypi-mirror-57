@@ -1,0 +1,11 @@
+include README.md
+include LICENSE.md
+include requirements.txt
+include build.py
+include Makefile
+graft src/samtools-1.3.1/htslib-1.3.1
+graft src/bri/src
+graft images
+graft src
+prune build
+prune docs
