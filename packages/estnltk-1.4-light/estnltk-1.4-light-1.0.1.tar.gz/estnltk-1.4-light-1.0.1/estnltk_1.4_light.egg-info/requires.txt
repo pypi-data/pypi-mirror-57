@@ -1,0 +1,4 @@
+six
+nltk
+regex
+cached_property

@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: estnltk-1.4-light
+Version: 1.0.1
+Summary: Estnltk-1.4-light is a heavily stripped-down version of estnltk 1.4 which only includes core instruments for text tokenization and morphological analysis including lemmatization.
+Home-page: https://github.com/AleksTk/estnltk-1.4-light
+Author: Alexander Tkachenko
+Author-email: alex.tk.fb@gmail.com
+License: GPLv2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Linguistic
