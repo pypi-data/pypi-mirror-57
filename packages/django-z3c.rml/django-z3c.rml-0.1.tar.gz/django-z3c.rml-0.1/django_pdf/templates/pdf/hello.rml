@@ -1,0 +1,43 @@
+{% spaceless %}
+{% load i18n %}
+{% load static %}
+{% get_current_language as LC %}
+{% endspaceless %}<!--?xml version="1.0" encoding="utf-8" standalone="no" ?-->
+<!DOCTYPE document SYSTEM "rml.dtd">
+<document filename="{{ title }}.pdf" title="{{ title }} - {{ date }}">
+    <template pageSize="a4" leftMargin="2.5cm" showBoundary="0"
+              author="a.Signz"
+              subject="{{ title }}"
+              title="{{ title }}"
+              creator="a.Signz"
+              displayDocTitle="1"
+              lang="{{ LC }}">
+        <pageTemplate id="main">
+            <pageGraphics>
+                <setFont name="Helvetica-Bold" size="18"/>
+                <drawString x="2cm" y="28.7cm">{{ title }} - Default Page</drawString>
+                <setFont name="Helvetica-Bold" size="12"/>
+                <drawString x="2cm" y="1cm">
+                    footer
+                </drawString>
+                <setFont name="Helvetica" size="11"/>
+                <drawString x="18cm" y="1.5cm">
+                    <pageNumber/> / <getName id="lastPage" default="0"/>
+                </drawString>
+            </pageGraphics>
+            <frame id="body" x1="2.5cm" y1="2cm" width="16.5cm" height="25cm"/>
+        </pageTemplate>
+    </template>
+    <stylesheet>
+        <paraStyle name="space" fontName="Helvetica" fontSize="11" leading="24" spaceBefore="5cm" spaceAfter="5cm"/>
+        <paraStyle name="default" fontName="Helvetica" fontSize="11" leading="24"/>
+        <paraStyle name="small" fontName="Helvetica" fontSize="9" leading="24"/>
+        <paraStyle name="smaller" fontName="Helvetica" fontSize="8" leading="24"/>
+        <paraStyle name="h1" fontName="Helvetica" fontSize="14" leading="24" spaceBefore="5cm" alignment="CENTRE" spaceAfter="5cm"/>
+    </stylesheet>
+    <story firstPageTemplate="main">
+        <para style="h1">
+            {{ title }}
+        </para>
+    </story>
+</document>

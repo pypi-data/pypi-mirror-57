@@ -1,0 +1,120 @@
+{% spaceless %}
+{% load i18n static %}
+{% get_current_language as LC %}
+{% endspaceless %}<!--?xml version="1.0" encoding="utf-8" standalone="no" ?-->
+<!DOCTYPE document SYSTEM "rml.dtd">
+<document filename="{{ title }}.pdf" title="{{ title }} - {{ date_local|date:'Y-m-d H:i:s' }}">
+    <template pageSize="a4" leftMargin="2.5cm" showBoundary="0"
+              author="a.Signz"
+              subject="{{ subject }}"
+              title="{{ title }}"
+              creator="a.Signz"
+              displayDocTitle="1"
+              lang="{{ LC }}">
+        <pageTemplate id="addressPage">
+            <pageGraphics>
+                <setFont name="Helvetica-Bold" size="18"/>
+                <drawString x="2cm" y="28.7cm">{{ title }}</drawString>
+                <drawString x="2cm" y="1cm">footer</drawString>
+                <stroke color="(1,0.251,0,0)"/>
+                <lines>2cm 27cm 19.5cm 27cm</lines>
+                <stroke color="(0,0,0,.5)"/>
+                <lineMode width="0.15mm"/>
+                <lines>-0.3cm 21cm .75cm 21cm</lines>
+                <lines>-0.3cm 10.5cm .75cm 10.5cm</lines>
+                <lineMode width="0.25mm"/>
+                <lines>-0.3cm 14.85cm .5cm 14.85cm</lines>
+                <setFont name="Helvetica-Bold" size="11"/>
+                <drawString x="18cm" y="1.5cm">
+                    <pageNumber/> / <getName id="lastPage" default="0"/>
+                </drawString>
+            </pageGraphics>
+            <frame id="address" x1="2cm" y1="22.5cm" width="8.5cm" height="4.5cm"/>
+            <frame id="info" x1="12.5cm" y1="20.5cm" width="7.5cm" height="6cm"/>
+            <frame id="date" x1="12.5cm" y1="19.5cm" width="7cm" height="1cm"/>
+            <frame id="body" x1="2.5cm" y1="2cm" width="16.5cm" height="18.5cm"/>
+        </pageTemplate>
+        <pageTemplate id="main">
+            <pageGraphics>
+                <setFont name="Helvetica-Bold" size="18"/>
+                <drawString x="2cm" y="28.7cm">{{ title }} - Default Page</drawString>
+                <setFont name="Helvetica-Bold" size="12"/>
+                <drawString x="2cm" y="1cm">footer</drawString>
+                <setFont name="Helvetica" size="11"/>
+                <drawString x="18cm" y="1.5cm">
+                    <pageNumber/> / <getName id="lastPage" default="0"/>
+                </drawString>
+            </pageGraphics>
+            <frame id="body" x1="2.5cm" y1="2cm" width="16.5cm" height="25cm"/>
+        </pageTemplate>
+    </template>
+    <stylesheet>
+        <paraStyle name="space" fontName="Helvetica" fontSize="11" leading="24" spaceBefore="5cm" spaceAfter="5cm"/>
+        <paraStyle name="default" fontName="Helvetica" fontSize="11" leading="24"/>
+        <paraStyle name="small" fontName="Helvetica" fontSize="9" leading="24"/>
+        <paraStyle name="smaller" fontName="Helvetica" fontSize="8" leading="24"/>
+        <paraStyle name="h1" fontName="Helvetica" fontSize="14" leading="24" spaceBefore="5cm" alignment="CENTRE"
+                   spaceAfter="5cm"/>
+        <paraStyle name="address" fontName="Helvetica" fontSize="11" leading="14"/>
+        <paraStyle name="info" fontName="Helvetica" fontSize="11" leading="14"/>
+        <paraStyle name="date" alignment="RIGHT" fontName="Helvetica" fontSize="11" leading="24"/>
+        <blockTableStyle id="blocktablestyle0">
+            <blockValign value="TOP"/>
+            <blockTopPadding length="2"/>
+            <blockBottomPadding length="2"/>
+            <blockLeftPadding length="3"/>
+            <blockRightPadding length="3"/>
+            <lineStyle kind="LINEBELOW" colorName="silver" start="0,1" stop="-1,-2"/>
+            <lineStyle kind="LINEAFTER" colorName="silver" start="0,1" stop="-2,-1"/>
+            <blockFont name="Helvetica" size="11" start="0,1" stop="-1,-1"/>
+            <blockTopPadding length="3" start="0,0" stop="-1,0"/>
+            <blockBottomPadding length="3" start="0,0" stop="-1,0"/>
+            <blockLeftPadding length="7" start="0,0" stop="-1,0"/>
+            <blockRightPadding length="7" start="0,0" stop="-1,0"/>
+            <blockFont name="Helvetica-Bold" size="12" start="0,0" stop="-1,0"/>
+            <blockTextColor colorName="(1,0.251,0,0)" start="0,0" stop="-1,0"/>
+            <blockBackground colorName="(1,0.251,0,0.4)" start="0,0" stop="-1,0"/>
+        </blockTableStyle>
+    </stylesheet>
+    <story firstPageTemplate="addressPage">
+        <para style="smaller">
+            {{ address_return }}
+        </para>
+        <para style="address">
+            {{ address_extra }}
+        </para>
+        <para style="address">
+            {% autoescape off %}{{ address }}{% endautoescape %}
+        </para>
+        <nextFrame/>
+        <para style="info">
+            {% autoescape off %}{{ info }}{% endautoescape %}
+        </para>
+        <nextFrame/>
+        <para style="date">
+            {{ date_local|date:'SHORT_DATE_FORMAT' }}
+        </para>
+        <nextFrame/>
+        <para style="default">
+            Welcome <b>{{ user_name }}</b>,<br/>to the world of RML!
+        </para>
+        <setNextTemplate name="main"/>
+        <para style="h1">
+            <b>DIN 5008</b>
+            Sample
+        </para>
+        <para style="space">
+            <b>SPACE</b>
+        </para>
+
+        <nextFrame/>
+        <para style="default">
+            {{ data }}
+            <br/>
+        </para>
+        <para style="space">
+            <b>SPACE</b>
+        </para>
+        <namedString id="lastPage"><pageNumber/></namedString>
+    </story>
+</document>
