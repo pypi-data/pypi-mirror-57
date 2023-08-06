@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+analysts_tool_share/__init__.py
+analysts_tool_share/hello.py
+analysts_tool_share.egg-info/PKG-INFO
+analysts_tool_share.egg-info/SOURCES.txt
+analysts_tool_share.egg-info/dependency_links.txt
+analysts_tool_share.egg-info/top_level.txt
