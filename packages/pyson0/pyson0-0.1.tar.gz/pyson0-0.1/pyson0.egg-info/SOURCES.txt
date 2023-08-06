@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyson0/__init__.py
+pyson0/json0.py
+pyson0/json0diff.py
+pyson0.egg-info/PKG-INFO
+pyson0.egg-info/SOURCES.txt
+pyson0.egg-info/dependency_links.txt
+pyson0.egg-info/top_level.txt
