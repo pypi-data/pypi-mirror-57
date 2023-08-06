@@ -1,0 +1,8 @@
+README.md
+setup.py
+websub/__init__.py
+websub.egg-info/PKG-INFO
+websub.egg-info/SOURCES.txt
+websub.egg-info/dependency_links.txt
+websub.egg-info/requires.txt
+websub.egg-info/top_level.txt

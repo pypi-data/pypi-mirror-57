@@ -1,0 +1,9 @@
+sanic
+httpx
+anyio
+bs4
+lxml
+
+[dev]
+ipython
+twine
