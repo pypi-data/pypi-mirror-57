@@ -1,0 +1,60 @@
+.pslg_widget svg {
+  background-color: #FFF;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.pslg_widget svg:not(.active):not(.ctrl) {
+  cursor: crosshair;
+}
+
+.pslg_widget path.segment {
+  fill: none;
+  stroke-width: 4px;
+  cursor: default;
+}
+
+.pslg_widget svg:not(.active):not(.ctrl) path.segment{
+  cursor: pointer;
+}
+
+.pslg_widget path.segment.selected {
+  stroke-dasharray: 10,2;
+}
+
+.pslg_widget path.segment.dragline {
+  pointer-events: none;
+}
+
+.pslg_widget path.segment.hidden {
+  stroke-width: 0;
+}
+
+.pslg_widget circle.vertex {
+  stroke-width: 1.5px;
+  cursor: pointer;
+}
+
+.pslg_widget rect.region {
+  stroke-width: 1.5px;
+  cursor: pointer;
+}
+
+.pslg_widget polyline.hole {
+  stroke-width: 1.5px;
+  cursor: pointer;
+}
+
+.pslg_widget text {
+  font: 12px sans-serif;
+  pointer-events: none;
+}
+
+.pslg_widget text.id {
+  text-anchor: middle;
+  font-weight: bold;
+}
