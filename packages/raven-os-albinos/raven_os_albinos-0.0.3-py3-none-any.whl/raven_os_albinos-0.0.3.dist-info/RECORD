@@ -1,0 +1,11 @@
+albinos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+albinos/client.py,sha256=MZ4glr2xGneZDi0NJN2_5sW2jKsCAPLPvOT4ipGf_Xo,2678
+albinos/config.py,sha256=sG4eICJgMl7UxRTLUUperfWT0bfSPrLiV3b8RVHDhg8,5958
+albinos/controller.py,sha256=ZjV1wYixSWf1nIn5I1aiQcVpx4SgwKgA0AiaZVPvf7c,522
+albinos/error.py,sha256=ZdGu1xrOtetplWDJlSVVmDqIdJcxmMOMAEdpkH8Vx8Y,379
+raven_os_albinos-0.0.3.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+raven_os_albinos-0.0.3.dist-info/METADATA,sha256=l56_BM0Xr_BKo622q3RlJX2eNvxH7JQDc8hl98tzQF0,346
+raven_os_albinos-0.0.3.dist-info/RECORD,,
+raven_os_albinos-0.0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+raven_os_albinos-0.0.3.dist-info/metadata.json,sha256=HmiuSp_qiBkyf9sknRrEWgiLqoM3O0-So-n6hUu57MI,513
+raven_os_albinos-0.0.3.dist-info/top_level.txt,sha256=jyUG_H1A5gl66HYg35PO-9f8jl2XoQTxGmYzZ7DdP2o,13
