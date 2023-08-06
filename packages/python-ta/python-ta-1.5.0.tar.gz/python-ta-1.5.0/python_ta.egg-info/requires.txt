@@ -1,0 +1,14 @@
+astroid<2.4,>=2.3
+funcparserlib
+hypothesis
+pycodestyle
+pylint<2.5,>=2.4
+colorama
+six
+jinja2
+pygments
+wrapt
+
+[dev]
+graphviz
+pytest
