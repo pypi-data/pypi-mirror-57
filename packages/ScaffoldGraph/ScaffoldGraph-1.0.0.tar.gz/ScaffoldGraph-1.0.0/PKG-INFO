@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ScaffoldGraph
+Version: 1.0.0
+Summary: ScaffoldGraph is an open-source cheminformatics library, built using RDKit and NetworkX for generating scaffold networks and scaffold trees.
+Home-page: https://github.com/UCLCheminformatics/scaffoldgraph
+Author: Oliver Scott
+Author-email: oliver.scott.17@ucl.ac.uk
+License: MIT
+Download-URL: https://github.com/UCLCheminformatics/scaffoldgraph/archive/1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: rdkit,networkx,cheminformatics,scaffolds
+Platform: UNKNOWN
