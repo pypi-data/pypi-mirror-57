@@ -1,0 +1,3 @@
+[console_scripts]
+vb_index = vb_toolbox.app:main
+
