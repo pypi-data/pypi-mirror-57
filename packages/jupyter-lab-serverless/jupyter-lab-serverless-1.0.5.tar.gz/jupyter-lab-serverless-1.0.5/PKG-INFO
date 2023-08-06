@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: jupyter-lab-serverless
+Version: 1.0.5
+Summary: Build And Run Serverless Functions in Jupyter Lab.
+Home-page: https://u2takey.github.com
+Author: u2takey
+Author-email: u2takey@gmail.com
+License: BSD
+Description: UNKNOWN
+Keywords: Jupyter,JupyterLab,ServerLess
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
