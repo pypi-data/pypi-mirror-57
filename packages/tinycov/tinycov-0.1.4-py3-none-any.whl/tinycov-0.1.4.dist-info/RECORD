@@ -1,0 +1,10 @@
+tinycov/__init__.py,sha256=AVw7bBQjsvaSUN3WpI4fYYnh0HQn-08b8GEGKT2m4yA,381
+tinycov/__main__.py,sha256=nQZi3Ti01RXZ9ja2v4Vlv6I784YpXlu1TOnw2EC3tUM,4154
+tinycov/tinycov.py,sha256=UKqusFXSmnDIYZYb1VKEH1PMi-5bE3DEzUJN8Wfjcn8,12993
+tinycov/version.py,sha256=aBEbDvx4LMg8A1TJJR6dEHu8rQODVin528hLS_EDvuA,22
+tinycov-0.1.4.dist-info/LICENSE,sha256=zkqyPqocBHlTFJdZvJFj4SIioe20T5IE-9FbtUJP8nU,1132
+tinycov-0.1.4.dist-info/METADATA,sha256=imuLe2glLt53UkH1Z6G7UujDy97WUX_5wesVtIXOWR4,6233
+tinycov-0.1.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+tinycov-0.1.4.dist-info/entry_points.txt,sha256=F7pHwrF2ywvYlzLumbApaSKVXjKE9aqHek94qgAKBfc,50
+tinycov-0.1.4.dist-info/top_level.txt,sha256=2dZV2D6j7JTSVvOnwOk3OExs__Kyt5nLHlAnVzSMgKc,8
+tinycov-0.1.4.dist-info/RECORD,,
