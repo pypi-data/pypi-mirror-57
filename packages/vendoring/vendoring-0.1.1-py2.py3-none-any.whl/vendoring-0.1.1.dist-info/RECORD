@@ -1,0 +1,16 @@
+vendoring/__init__.py,sha256=0wNZNnyM9z3Q7DmmLgoVaOU2J8BUSxr_DqtaOxwlyu0,213
+vendoring/cli.py,sha256=N2HTl2d2QAH81xwnJbPb5DlJFwZLDjDaSgNi4fEpz2A,1336
+vendoring/configuration.py,sha256=5qOwsQ258DjcjXoFDZLe2IKeB5ZToOgOaMdCFGyay6A,7409
+vendoring/errors.py,sha256=Taj65W3JAvALEjWMWKGzc06Jjj2DCHeSdsjw5GNxI_4,186
+vendoring/ui.py,sha256=sGVabeGitA2PbW5tXvp8l2RjVNWoRjtCYpIWWiH9tp0,3230
+vendoring/utils.py,sha256=3SFxZaJiybmAaCIV0y556ieoDrMFX_Rgx6kJgvPgMF8,873
+vendoring/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vendoring/tasks/cleanup.py,sha256=McMpwrDxltV2TLqOGs9uRv_r0O_kQVYd_B3mlFuniww,956
+vendoring/tasks/license.py,sha256=ziDtQrEViHBs9SWnSCub_zIMSJA-QxYsaAuGLCwouRc,5370
+vendoring/tasks/stubs.py,sha256=Gt0BIwwD_MHcCGbBcq3JT1ycEAWotqFMp_YPdc-VQmY,1686
+vendoring/tasks/vendor.py,sha256=e_f-UhGMUuJ2w-_wzu2vrfKrpbxfCCAl3ucbzUls_yE,4189
+vendoring-0.1.1.dist-info/entry_points.txt,sha256=9ylamEDKN5IszNQejkYZM5NhJqy-NU9rLZ_Lf0xw3_M,48
+vendoring-0.1.1.dist-info/LICENSE,sha256=DMKvd6OVj-FfnGQU1-5DosSm8ki1of1E-UYmkLbvk2A,1080
+vendoring-0.1.1.dist-info/WHEEL,sha256=BO4rLihzJxX3WFgRFhCLEiuIEjpUSRh92PQXyB9DXS0,99
+vendoring-0.1.1.dist-info/METADATA,sha256=57mDKUBNAFGgDnAnT1MWB6ATI6pcSTNljd_ZBr68gL0,1061
+vendoring-0.1.1.dist-info/RECORD,,
