@@ -1,0 +1,8 @@
+migrations/0001_initial.py,sha256=HCAk_7pwvB4KFw4_V-H5Rp80irmZXYrRThfoJJK7xWA,847
+migrations/0002_gatsbyimage_gatsbyimagerendition.py,sha256=954H3MNUB0cBL_zyv2_5W5RQPZmgrEP8zR9y7COp3To,5693
+migrations/0003_auto_20190807_1031.py,sha256=-Jd9QDGrXXRdRI4Dcc5--40K0RNGl3SeioA6MJywVeQ,538
+migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtailgatsby-0.0.1.dist-info/METADATA,sha256=H0AmbbuDPaxwCny2fEsmqem-92FW3TSfCDVChxhJjEY,810
+wagtailgatsby-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+wagtailgatsby-0.0.1.dist-info/top_level.txt,sha256=7Vfp3vCAN7rl4-1zzPa-_BHJXDWnajxHlyMCiJbvhvM,11
+wagtailgatsby-0.0.1.dist-info/RECORD,,
