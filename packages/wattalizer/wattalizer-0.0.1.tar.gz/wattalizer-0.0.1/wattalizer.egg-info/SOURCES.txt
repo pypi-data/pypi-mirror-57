@@ -1,0 +1,10 @@
+README.md
+setup.py
+wattalizer/__init__.py
+wattalizer/plotter.py
+wattalizer/webserver.py
+wattalizer.egg-info/PKG-INFO
+wattalizer.egg-info/SOURCES.txt
+wattalizer.egg-info/dependency_links.txt
+wattalizer.egg-info/requires.txt
+wattalizer.egg-info/top_level.txt
