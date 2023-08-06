@@ -1,0 +1,52 @@
+{
+	"root": {
+		"l0": [
+			{
+				"@idx": 0,
+				"@id": 123,
+				"__content": "a"
+			},
+			{
+				"@idx": 1,
+				"@id": 124,
+				"__content": "b"
+			},
+			{
+				"@idx": 2,
+				"@id": 125,
+				"__content": "c"
+			}
+		],
+		"l1": [
+			{
+				"@idx": 2,
+				"@id": 128,
+				"__content": "e"
+			},
+			{
+				"@idx": 0,
+				"@id": 126,
+				"__content": "d"
+			},
+			{
+				"@idx": 1,
+				"@id": 127,
+				"__content": "e"
+			}
+		],
+		"sub0": {
+			"subl1": [
+				"a0",
+				"b0",
+				"c0"
+			],
+			"__content": "my-sub-text0"
+		},
+		"l2": {
+			"@id": 128,
+			"__content": "a"
+		},
+		"__content": "my-text4\n  \n  my-text0\n  \n  \n  \n  my-text1\n  \n  my-text2\n  \n  my-text3"
+	}
+}
+	

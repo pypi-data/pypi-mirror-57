@@ -1,0 +1,14 @@
+<root>
+  <l0>b</l0>
+  <l1>d</l1>
+  <l0 idx="2" id="125">c</l0>
+  <l1 idx="2" id="128">e</l1>
+  <l0 idx="0" id="123">a</l0>
+  <sub0>
+	<subl1>a0</subl1>
+	<subl1>b0</subl1>
+	<subl1>c0</subl1>
+  </sub0>
+  <l1 idx="1" id="127">e</l1>
+  <l2 id="128">a</l2>
+</root>

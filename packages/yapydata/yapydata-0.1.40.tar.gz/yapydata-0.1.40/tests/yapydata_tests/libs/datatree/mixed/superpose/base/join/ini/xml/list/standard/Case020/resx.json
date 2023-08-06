@@ -1,0 +1,39 @@
+{
+	"section3": {
+		"dict3": [
+			1111,
+			2222,
+			3333
+		]
+	},
+	"root": {
+		"section1": {
+			"dict1": {
+				"list1": [
+					11,
+					22,
+					33
+				]
+			}
+		},
+		"section0": {
+			"dict0": {
+				"dict0": 123
+			}
+		}
+	},
+	"section1": {
+		"dict1": {
+			"attr2": 9,
+			"attr0": 7
+		}
+	},
+	"section0": {
+		"dict0": [
+			"A",
+			"B",
+			"C"
+		],
+		"value0": 21
+	}
+}
