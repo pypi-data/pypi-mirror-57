@@ -1,0 +1,150 @@
+{%extends "base.html"%}
+{%block head%}
+
+{%endblock%}
+{%block body%}
+<script>
+    var QWindow=winjs.QWindow;
+    var getDir=panjs.getDir;
+    var getFile=panjs.getFile;
+    var newFile=panjs.newFile;
+    var newDir=panjs.newDir;
+    var Editor=edjs.Editor;
+    var T=wpjs.T
+
+</script>
+
+<div class="pan" id="pan">
+    <div class="w-100 h-100 explorer" id="explorer">
+        <div class="text-info head">
+            <span class="label-primary menu-item">Home</span><span @click="backward" class="label-public menu-item">Back</span>
+            <span class="label-primary menu-item">New File</span><span class="label-public menu-item">New Dir</span>
+            <span @click="refresh" class="label-primary menu-item">Refresh</span>
+        </div>
+        <div class="body">
+            <div class="flist-item" v-bind:itemname="fileitem.name" v-bind:itemtype="fileitem.type"
+                 v-for="fileitem in items">
+                <label @click="updateView"><%fileitem.name%></label>
+                <label><%fileitem.type%></label>
+            </div>
+        </div>
+    </div>
+    <style>
+        .explorer {
+            display: flex;
+            flex-flow: column;
+        }
+        .explorer .head {
+            flex: 0 1 40px;
+            width: 100%;
+            background-color: white;color: orange;
+            border-bottom: black dotted 2px;
+        }
+        .explorer .head .menu-item{
+            margin:auto 3px auto 3px;
+            padding: auto 3px auto 3px !important;
+            border: solid gray 2px;
+        }
+        .explorer .flist-item{
+            border-bottom: dotted 2px black;
+        }
+        .explorer .body {
+            flex: 1 0 auto;
+            max-height: calc(90% - 40px);
+            /*height: 300px;*/
+            width: 100%;
+            background-color: white;
+            color: orange;
+            overflow: auto;
+        }
+
+    </style>
+</div>
+<div id="editor"></div>
+<script>
+    var editor=new Editor($('#editor'));
+    var edwin = new QWindow({
+        el: $('#pan'),
+        styles: {
+            header: {
+                'background-color': 'cornflowerblue'
+            },
+            // body: {
+            //     'background-color': 'white'
+            // },
+            // inner: {
+            //     'background-color': 'white'
+            // }
+        }
+    });
+</script>
+<script style="background-color: cornflowerblue">
+    var vm = new Vue({
+        el: "#explorer",
+        delimiters: ['<%', '%>'],
+        data: {
+            items: getDir('./', './'),
+            location: "./",
+            root_path:'./',
+            loc_history:['./']
+        },
+        methods: {
+            log:function(text){
+                text=text||'expolorer info....';console.log(text);
+            },
+            forward:function(name){
+                this.loc_history.push(this.location+'/'+name);
+                this.refresh();
+            },
+            backward:function(){
+                if(this.loc_history.length<=1){return false;}
+                this.loc_history.pop();
+                this.refresh();
+            },
+            refresh:function(){
+                var loc=this.loc_history.slice(-1)[0];
+                this.items=getDir(this.root_path,loc);
+                this.location=loc;
+            },
+            tryNewFile:function(e){
+
+            },
+            tryNewDir:function(e){
+
+            },
+            trySaveFile:function(e){
+
+            },
+            tryDeleteFile:function(e){
+
+            },
+            tryDeleteDir:function(e){
+
+            },
+            updateView: function (e) {
+                console.log(e.target);
+                var obj = $(e.target).parent('.flist-item');
+                var name = obj.attr('itemname');
+                var type = obj.attr('itemtype');
+                switch (type) {
+                    case T.DIR:
+                        this.forward(name);
+                        // this.items = getDir(this.location, name);
+                        // this.location = this.location + '/' + name;
+                        break;
+                    case T.FILE:
+                        var content = getFile(this.location, name);
+                        editor.add_content(content);
+                        editor.show();
+                        break;
+                    default:
+                        null;break;
+                }
+
+            }
+        }
+    })
+</script>
+
+
+{%endblock%}
