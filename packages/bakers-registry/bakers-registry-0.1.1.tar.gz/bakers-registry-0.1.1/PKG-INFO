@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: bakers-registry
+Version: 0.1.1
+Summary: Command line interface for the Tezos Bakers Registry
+Home-page: https://github.com/baking-bad/bakers-registry-cli
+License: MIT
+Keywords: tezos,crypto,blockchain,xtz
+Author: Michael Zaikin
+Author-email: mz@baking-bad.org
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: conseil
+Requires-Dist: jsondiff
+Requires-Dist: pytezos (>=2.2.1,<3.0.0)
+Project-URL: Repository, https://github.com/baking-bad/bakers-registry-cli
+Description-Content-Type: text/markdown
+
+# Bakers Registry client
+
+[![PyPI version](https://badge.fury.io/py/bakers-registry.svg?)](https://badge.fury.io/py/bakers-registry)
+[![made_with pytezos](https://img.shields.io/badge/made_with-pytezos-brightgreen.svg)](https://github.com/baking-bad/pytezos)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Console client for the [Tezos Bakers Registry](https://tezit.github.io/baker-registry)
+
+## Installation
+
+```bash
+pip install bakers-registry
+```
+
+## Usage
+
+### `bakers get` Get a particular baker
+
+### `bakers set` Generate cmdline for `tezos-client`
+
+### `bakers new` Create default config
+
+### `bakers all` Get all bakers
+
+### `bakers log` Get recent changes
