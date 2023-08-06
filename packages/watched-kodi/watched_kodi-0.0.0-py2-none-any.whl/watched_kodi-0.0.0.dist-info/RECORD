@@ -1,0 +1,13 @@
+watched_kodi/KodiAddon.py,sha256=nzxmWguBkfRp5cYqmc6T7qOFJ-BEe3XHyfn3OEXSVN0,2100
+watched_kodi/__init__.py,sha256=uN7xNDDdJpdUDoVq-hf5JP8Mx6F3FKsS8fMu_GN02iQ,412
+watched_kodi/common.py,sha256=I2FprMawdVopvlYjfRvL889WGZuBA-rcmol-lkmEwsg,59
+watched_kodi/watched_local.py,sha256=8zli3IU9nK8FzhABn6Wk05ZmT9OwUI51YbPQnKspZ7s,627
+watched_kodi/xbmc.py,sha256=AIumChS383xFIf7rPg8zQXF6QOfIjpzCOLu76RaCY8E,463
+watched_kodi/xbmcaddon.py,sha256=tee0_RglaRDd1uwjoUF8yNEbbQFYc_dWVDeNSMKZDro,411
+watched_kodi/xbmcgui.py,sha256=elbZrzKB6F0EdDHTRQm5kRm16KL_DU7eYiu-pUtG-R4,1457
+watched_kodi/xbmcplugin.py,sha256=Vs1pDovM3raN0Ke7DdaHFmtVZxqORjRCrRqO2n6bKy4,4547
+watched_kodi/xbmcvfs.py,sha256=5FjMXWdBEQrNYthQ_b-v5pNT-cErUif_1yrbU_3RJXw,390
+watched_kodi-0.0.0.dist-info/METADATA,sha256=YFSVH3jueiXP-e9r7ygwbLvYn44Nb4ac8pxQhsfPXb0,534
+watched_kodi-0.0.0.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+watched_kodi-0.0.0.dist-info/top_level.txt,sha256=No_SOWnWZWxIzOl8Ujvsc5K3KsLiIfpvrtcVbtK8PVs,13
+watched_kodi-0.0.0.dist-info/RECORD,,
