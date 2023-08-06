@@ -1,0 +1,10 @@
+dataclasses
+fire
+imageio
+pyyaml
+
+[cpu]
+tensorflow<2.0
+
+[gpu]
+tensorflow-gpu<2.0
