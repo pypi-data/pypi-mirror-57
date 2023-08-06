@@ -1,0 +1,10 @@
+bokeh==0.12.10
+numpy
+pandas
+openpyxl
+xlrd
+matplotlib
+pyomo
+tornado==4.5.3
+xlsxwriter
+nodejs
