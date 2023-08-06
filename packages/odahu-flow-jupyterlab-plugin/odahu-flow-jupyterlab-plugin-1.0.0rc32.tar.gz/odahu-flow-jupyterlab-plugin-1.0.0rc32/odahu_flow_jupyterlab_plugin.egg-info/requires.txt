@@ -1,0 +1,7 @@
+odahu-flow-sdk==1.0.0rc32
+notebook
+pydantic==0.32.2
+
+[testing]
+pylint>=2.3.0
+jupyterlab~=1.1
