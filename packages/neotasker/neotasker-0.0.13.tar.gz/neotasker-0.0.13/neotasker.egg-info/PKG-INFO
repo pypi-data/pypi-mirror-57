@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: neotasker
+Version: 0.0.13
+Summary: Lightweight thread and asyncio task library
+Home-page: https://github.com/alttch/neotasker
+Author: Altertech
+Author-email: div@altertech.com
+License: MIT
+Description: # neotasker
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
