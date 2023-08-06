@@ -1,0 +1,6 @@
+Django>=2.2
+djangorestframework
+django-polymorphic
+celery
+psycopg2
+Fiona
