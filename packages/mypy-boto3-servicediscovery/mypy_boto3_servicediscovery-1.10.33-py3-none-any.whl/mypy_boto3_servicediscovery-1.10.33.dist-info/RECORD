@@ -1,0 +1,11 @@
+mypy_boto3_servicediscovery/__init__.py,sha256=ONXZOxGLAnynfFlyn8aGtZDrsEuEQTdli7sPkBGg5Zw,419
+mypy_boto3_servicediscovery/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_servicediscovery/client.py,sha256=DVd2rWofWfrs9HBPMP00QfgFF_rnsxz9Rm1NdFbyqlg,14249
+mypy_boto3_servicediscovery/paginator.py,sha256=0ydQx6J4ELj_3CnysAHZkktUM5NdUbsGfVlWkSqgSO4,3299
+mypy_boto3_servicediscovery/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_servicediscovery/type_defs.py,sha256=m4Rpb2ngcgZNquWbsGZmFKYeWclnMKGoFKqWHejPWAE,21607
+mypy_boto3_servicediscovery/version.py,sha256=ay4Kxw86xwUJX0iINQwdgWtfO2c2SwRu6FytnOmjRJY,55
+mypy_boto3_servicediscovery-1.10.33.dist-info/METADATA,sha256=QcZnd73yq4xSfaoEcWKuB02WeI3pLEWmZ-hkWPWNzOg,1225
+mypy_boto3_servicediscovery-1.10.33.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_servicediscovery-1.10.33.dist-info/top_level.txt,sha256=K94mvHugmVg-e4PhqS0JtAHvTj57vrb0njLRfCLoN64,28
+mypy_boto3_servicediscovery-1.10.33.dist-info/RECORD,,
