@@ -1,0 +1,10 @@
+test-deploy-package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test-deploy-package/test_deploy.py,sha256=cHbK4lb5DPU_Bhe8UfXCqn5fNE4EMtVLcvPWI767LdY,6572
+test_deploy_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_deploy_package/test_deploy.py,sha256=cHbK4lb5DPU_Bhe8UfXCqn5fNE4EMtVLcvPWI767LdY,6572
+test_deploy_package-1.0.8.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_deploy_package-1.0.8.dist-info/METADATA,sha256=gw5Kx_spnDxFp8yyezFZt2skiVOXUheqkCHG-uqtpVQ,651
+test_deploy_package-1.0.8.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+test_deploy_package-1.0.8.dist-info/entry_points.txt,sha256=kN72rO3wmPQZzcCukFxDBR1g5YIYVXqvjbjMnN7R5bY,70
+test_deploy_package-1.0.8.dist-info/top_level.txt,sha256=3gpnPvyhTMxzNawxyXT048fZFddlTa2b54E9iSA2DIE,20
+test_deploy_package-1.0.8.dist-info/RECORD,,
