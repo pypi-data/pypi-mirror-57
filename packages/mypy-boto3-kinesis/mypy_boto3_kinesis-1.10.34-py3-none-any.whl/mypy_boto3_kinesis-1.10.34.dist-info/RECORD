@@ -1,0 +1,12 @@
+mypy_boto3_kinesis/__init__.py,sha256=u5fxni89XWNN8CaVGeACOS-UH16QY-orh8wjz8Vr6tg,529
+mypy_boto3_kinesis/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kinesis/client.py,sha256=oJ102h_zJ-UWNDPku_mv_x5_EmOiWZdgQjQKRZG5IUg,18334
+mypy_boto3_kinesis/paginator.py,sha256=g6ZVoS6qolY2vkZXDRTJf8y6Ypt-Zs4EPMfUISMy0l8,3107
+mypy_boto3_kinesis/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kinesis/type_defs.py,sha256=6rDHAtyehRWDI6pPMNHwFpUPwHaGxRIZkAc1UGhDD-k,17668
+mypy_boto3_kinesis/version.py,sha256=FMH1uWn0ppvgG9pl60zz1fbdvmiqTjJn78jjp7vlJxo,55
+mypy_boto3_kinesis/waiter.py,sha256=M0UOraDaxmckrbII2rmt-E8pSuRxv-hlvTbBPYOss-Q,1475
+mypy_boto3_kinesis-1.10.34.dist-info/METADATA,sha256=J3EnvZ5kdlRFRsWgVsJ1NXVdbytdRDMkQm4-hWv6rs4,1207
+mypy_boto3_kinesis-1.10.34.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_kinesis-1.10.34.dist-info/top_level.txt,sha256=Kqd0fpFV60VgCylCPAkGxClbQclLdFRYnSY5JsAj_7Y,19
+mypy_boto3_kinesis-1.10.34.dist-info/RECORD,,
