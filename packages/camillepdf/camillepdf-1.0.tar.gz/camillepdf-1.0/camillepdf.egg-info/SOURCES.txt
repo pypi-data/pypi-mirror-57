@@ -1,0 +1,9 @@
+README.md
+setup.py
+camillepdf/__init__.py
+camillepdf/pdf2image.py
+camillepdf/pdf2text.py
+camillepdf.egg-info/PKG-INFO
+camillepdf.egg-info/SOURCES.txt
+camillepdf.egg-info/dependency_links.txt
+camillepdf.egg-info/top_level.txt
