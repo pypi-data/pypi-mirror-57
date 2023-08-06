@@ -1,0 +1,17 @@
+repobee_plug/__init__.py,sha256=b56A4_8WJ-j6K77uYvjInxwb9DzubpicuwA43C-ApVk,2220
+repobee_plug/__version.py,sha256=VhPVi9h0ODRleSheq477IZx-chKqKYyWG5aEcGSs71w,31
+repobee_plug/_apimeta.py,sha256=xyWK58WjdAugA9HSkMpDu2F8EtMDR1aYjwOqpGSPHLs,16369
+repobee_plug/_containers.py,sha256=SDckyz2BNcZCKQZcrjthZUHWRSVGtqOOP_RJ8lBVEpA,4371
+repobee_plug/_corehooks.py,sha256=SQCkB3-qHHt56r4s_ACqWfUByKY_cgojXLlSKeoUV1w,3253
+repobee_plug/_deprecation.py,sha256=FC2XoDgakNtp3VfNDJGSKNJPkaFMQu4wExff3u2izfA,2389
+repobee_plug/_exceptions.py,sha256=M-8RcTApZmiqdgXY-g9HQYA5ve6mDkLUcZUh4oi6qsU,1681
+repobee_plug/_exthooks.py,sha256=1QyXMLjDc34XoT0DmI6IHtn3ZoZdqHJDvQynKfNEYvw,6694
+repobee_plug/_name.py,sha256=1Adc0_IKRTUf0KRjDB1DlYBqF178pYdo7hrz9u2v3W4,1653
+repobee_plug/_pluginmeta.py,sha256=6FSRaPxl98-di6Cb8x4PL_W38CyUT87Kybz2nu72u7c,3138
+repobee_plug/_serialize.py,sha256=4S4XuoO_dnWCAEbOHGd19r4PSLpdFB5kwIt7HwI1ujQ,1384
+repobee_plug/_tasks.py,sha256=q7mdxMVrHHLx0wiSjgCDNH43j7XwxDYuP84IHyZOBn0,3040
+repobee_plug-0.12.0a4.dist-info/LICENSE,sha256=xMBmzTggjC_Tad-iOit7jiwOsLBPNK0WTWFC8e0JyjI,1071
+repobee_plug-0.12.0a4.dist-info/METADATA,sha256=T6TUTtdusg8sCOOjLjAy3JXES9s8BX9uI3_GcTjEhAo,2130
+repobee_plug-0.12.0a4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+repobee_plug-0.12.0a4.dist-info/top_level.txt,sha256=361uKzTtCx8739JLQG92_H-X3_8-VVNP3fV7MtZ0fuE,13
+repobee_plug-0.12.0a4.dist-info/RECORD,,
