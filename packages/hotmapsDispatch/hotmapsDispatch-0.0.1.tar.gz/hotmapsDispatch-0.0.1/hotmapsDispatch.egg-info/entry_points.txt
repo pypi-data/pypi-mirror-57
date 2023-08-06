@@ -1,0 +1,6 @@
+[console_scripts]
+hotmapsDispatch_console = app.__main__:main
+
+[gui_scripts]
+hotmapsDispatch = app.__main__:main
+
