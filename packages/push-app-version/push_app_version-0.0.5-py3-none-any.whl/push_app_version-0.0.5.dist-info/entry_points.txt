@@ -1,0 +1,3 @@
+[console_scripts]
+push-app-version = push_version.push:main
+
