@@ -1,0 +1,15 @@
+might/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+might/allmight.py,sha256=nTF-wmTiE8GmmWA9IiSromlDlhCkaq9cSzHFpdOptSI,13345
+might/amr_methods.py,sha256=mS1XBDIDs4L_HNP_xGzBv_lVojBKtf6ch-iSDgFE5DA,23339
+might/assembly_methods.py,sha256=oHQJnVwrLWlqwLCQstJ_z8twEGrL1lE-1g6rNSFyKfs,24822
+might/database_methods.py,sha256=oecIgV1npRfmtDH3H3bYMcQukuzioYveQMoIZpgFVJ8,7811
+might/kraken_methods.py,sha256=uFr38xz2vMmwZgIx_ND-xxhRBcItDh0ZyENWGRK2tnU,8391
+might/might.py,sha256=VOFlsDpX4-iF56jnMT0-w_IV0kdNQXONUCXQ1tjtDGg,29884
+might/might_log.py,sha256=eSM3FBK75eawA7ug2BDLqgEKK0E0gj3My_mkvjiLajM,9115
+might/miscellaneous.py,sha256=cx0ArHzAb9qT-L9WP954pBFuJ27EgjGszAikToms9Nc,29608
+mrsn_might-1.0.3rc0.dist-info/LICENSE,sha256=4Q2c3z876I-PpySrucJilByh-OOx8nPiCUzYbcX39YE,35077
+mrsn_might-1.0.3rc0.dist-info/METADATA,sha256=D05SOPfsrAMvmRdilLZpkUBCOX4-_gMUfwiLtVkIocA,8095
+mrsn_might-1.0.3rc0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mrsn_might-1.0.3rc0.dist-info/entry_points.txt,sha256=arK0Nkb0bllDHCye6n2vEsCw0mygF3R16XyeGn9KcFk,78
+mrsn_might-1.0.3rc0.dist-info/top_level.txt,sha256=4_OaB-FS-NR-BwhkuO7dKA0ruZJy_rtY5Uf-DkCu8Nk,6
+mrsn_might-1.0.3rc0.dist-info/RECORD,,
