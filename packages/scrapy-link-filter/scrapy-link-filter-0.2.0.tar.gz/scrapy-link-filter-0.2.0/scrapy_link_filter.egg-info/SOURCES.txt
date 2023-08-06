@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scrapy_link_filter/__init__.py
+scrapy_link_filter/__version__.py
+scrapy_link_filter/middleware.py
+scrapy_link_filter.egg-info/PKG-INFO
+scrapy_link_filter.egg-info/SOURCES.txt
+scrapy_link_filter.egg-info/dependency_links.txt
+scrapy_link_filter.egg-info/top_level.txt
+test/__init__.py
+test/test_mw.py
