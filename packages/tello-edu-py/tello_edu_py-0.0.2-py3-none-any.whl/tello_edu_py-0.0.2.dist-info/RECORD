@@ -1,0 +1,9 @@
+tello_edu_py/__init__.py,sha256=NHuyrrCaYbU6foTl_Zo5vh6pF-DLNl1ILDAUbBfuV0o,123
+tello_edu_py/comms_manager.py,sha256=8eLSuVnRePwDeIshyQnjO65AQNJaDCxTcLY7p291Ky0,17218
+tello_edu_py/fly_tello.py,sha256=uC9ECEkY-jKi8X64da9lLkS5_EH6bU7q5FAzrZ4D14U,34742
+tello_edu_py/tello.py,sha256=GTC2RqC6WKKFPDAPWRPbIV_cTcx0kLqs9ot3j_DlV9A,6074
+tello_edu_py-0.0.2.dist-info/LICENSE,sha256=yiq99pWITHfqS0pbZMp7cy2dnbreTuvBwudsU-njvIM,1210
+tello_edu_py-0.0.2.dist-info/METADATA,sha256=wSSP7YctZgNxZ-akotj-_j3Xm3aVHESvSYFAN2B73qY,9687
+tello_edu_py-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tello_edu_py-0.0.2.dist-info/top_level.txt,sha256=J8mYRpOVNfsrKx6zhtPyzg1BO6UQivJYJUQuu2-T9xc,13
+tello_edu_py-0.0.2.dist-info/RECORD,,
