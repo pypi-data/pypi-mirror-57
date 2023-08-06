@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: allestm
+Version: 1.1.1
+Summary: Predicting various structural features of transmembrane proteins.
+Home-page: http://github.com/phngs/allestm
+Author: Dr. Peter Hönigschmid
+Author-email: hoenigschmid.peter@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: keras
+Requires-Dist: tensorflow
+Requires-Dist: scikit-learn
+Requires-Dist: xgboost
+Requires-Dist: requests
+
+UNKNOWN
+
+
