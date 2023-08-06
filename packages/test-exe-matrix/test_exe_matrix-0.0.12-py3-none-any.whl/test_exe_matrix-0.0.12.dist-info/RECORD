@@ -1,0 +1,11 @@
+test_exe_matrix/conftest.py,sha256=i10mZ7AwZPD69Ob1eT6awKowZE_9d7qxZaECFnk8VSc,749
+test_exe_matrix/main.py,sha256=77Qevwf83OSiDfVrXpDN0wHQoXB8hPC-spftxiD93qM,584
+test_exe_matrix/matrix.yaml,sha256=hNPtyWCor2rMFUbz3qyaml0ttDo4Ia9uSx1ayHHVky8,391
+test_exe_matrix/test_the_matrix.py,sha256=XWJF7VSI5rSqX1oreeCLFIjNe_O-9aWg2Eug51vAK9A,1690
+test_exe_matrix-0.0.12.dist-info/entry_points.txt,sha256=Lyi9bS9FW8MLhSQTykmrsxatwfDAL966cbpz0WgQaiw,67
+test_exe_matrix-0.0.12.dist-info/LICENSE,sha256=OrCEjBD-yuWYqU8uz-cCsBwWwmnb5CV4aHmbLPY6G68,81
+test_exe_matrix-0.0.12.dist-info/LICENSE_CeCILL_2.1.txt,sha256=DdMKiWE_wJusIzxeRfyvnWxOr676SmeFLvv-iiTl0dc,22961
+test_exe_matrix-0.0.12.dist-info/LICENSE_GPL_2.1.txt,sha256=O4vFP9OTwXTSwd42Bja7kItLk4b4c-PEVuJcEGUWqTg,26462
+test_exe_matrix-0.0.12.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+test_exe_matrix-0.0.12.dist-info/METADATA,sha256=pUn-utr6PK_c4OMDel0Ojb3tFfM_Z9z3H0PJ_WjRG7w,1325
+test_exe_matrix-0.0.12.dist-info/RECORD,,
