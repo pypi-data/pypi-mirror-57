@@ -1,0 +1,12 @@
+simpleprophet/__init__.py,sha256=R2GxiX4GPcWrum-c-WlQjnJ6y2cUFsGSu_B5cmU_Ix4,199
+simpleprophet/data.py,sha256=FhZVriaWEqD6xCd-2Qq4in0gkW_RbdRj67sCOVfFgI0,3913
+simpleprophet/modeling.py,sha256=RMw-5upCeooEURIpzgY4_uIoBArhVVb6YO5wSdq_0M4,1948
+simpleprophet/models.py,sha256=JEQMfz5UFRIDBoeH-SlMZC1pj4wzXKf9OK2GLm1hI6U,5939
+simpleprophet/output.py,sha256=twHHkXLlsPdRQ7QnezYJPfdBbwwtk5D5v2iwiat37b0,4485
+simpleprophet/pipeline.py,sha256=cgekK2URS9kiip7ANhZVgry_TxxUGqSS8E8kfMI8OUQ,4733
+simpleprophet/utils.py,sha256=xY2vJ2WqcUgxB6tW-oRzPctHjMVi6JDbDCR9rGLDrAQ,3149
+simpleprophet/validations.py,sha256=x-qvFBoCipeXLjhrA0sWeIhHQRzpwJgL4EUbrnXcdGY,7482
+simpleprophet-0.2.dist-info/METADATA,sha256=cVY98PWLF2e4pP-mfbl7k1pYrYz3j1mF6FtgjCBdTsM,5124
+simpleprophet-0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+simpleprophet-0.2.dist-info/top_level.txt,sha256=Sr4pzazeKCXw_t_zrnVwao7sc3w3lCGcXjWcPF0m0kI,14
+simpleprophet-0.2.dist-info/RECORD,,
