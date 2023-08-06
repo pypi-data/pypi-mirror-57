@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: python_framework_utils
+Version: 0.0.2
+Summary: Python常用工具类整合框架
+Home-page: https://gitee.com/kingons/python_framework_utils
+Author: kingon
+Author-email: 521274311@qq.com
+License: UNKNOWN
+Description: Simpler to use python implement any servers. 
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
