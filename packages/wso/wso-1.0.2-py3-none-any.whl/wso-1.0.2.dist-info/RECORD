@@ -1,0 +1,11 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_configure.py,sha256=zyInw5B451xySTV559dJD-ZweO9ghBNisL48hv_HgWY,9691
+tests/test_wso.py,sha256=tjIfE2JGPpJdEbLLtUSVNLuZOyWvG4o3sxwuItoEr1U,24709
+wso/__init__.py,sha256=J0pFfWu2AABY6U3jJ4amtESM899-ZVgM7fhUsrqbw2I,21
+wso/configure.py,sha256=szwiC9huaQElIWlDfjbjc_9goLadm_uRg0LvzV1RC5E,5189
+wso/wso.py,sha256=NlreXjKU-1uwZ1U6qnVjmi1TahLXT6Az0U45khVhgCE,43162
+wso-1.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+wso-1.0.2.dist-info/METADATA,sha256=nwTAxCsHanhuenMSaPa3VusMjUygB4VsCRm39iywIXc,1824
+wso-1.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+wso-1.0.2.dist-info/top_level.txt,sha256=hiaLgff3yDwZkZ4SfqMAhWKped2zgUQ7D7KIyaVBL9U,10
+wso-1.0.2.dist-info/RECORD,,
