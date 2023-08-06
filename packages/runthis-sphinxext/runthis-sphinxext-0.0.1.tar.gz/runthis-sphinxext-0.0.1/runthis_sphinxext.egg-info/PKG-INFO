@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: runthis-sphinxext
+Version: 0.0.1
+Summary: Provides a sphinx code-block for rendering RunThis blocks
+Home-page: https://github.com/regro/runthis-sphinxext
+Author: Anthony Scopatz
+Author-email: scopatz@gmail.com
+Maintainer: Anthony Scopatz
+License: BSD
+Description: # runthis-sphinxext
+        A sphinx extension that adds RunThis code blocks
+        
+Platform: Cross Platform
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
