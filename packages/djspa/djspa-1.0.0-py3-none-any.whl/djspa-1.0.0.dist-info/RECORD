@@ -1,0 +1,9 @@
+djspa/__init__.py,sha256=PygCOd8mXd5iejwVskVcrm4mQeHO0UzvI3eQ9QTP66M,895
+djspa/exceptions.py,sha256=onj6HXZfgJmnZXGlV2FSXI6tyereBKR515p-e7leUE8,500
+djspa/urls.py,sha256=LWVmwstufuM8nVeRmFAjRkQ6RxAwwiK6-DdHb-8Y0yo,331
+djspa/views.py,sha256=qxPKFQNaA3bBAqtUcIKmpm6eESokHMQ98nbcc4f6sEA,3068
+djspa-1.0.0.dist-info/LICENSE,sha256=qoipfBGj_2KVZSI2JTiYdo632LIMf43QydY_636FOXU,35783
+djspa-1.0.0.dist-info/METADATA,sha256=1GQc96H_YelWV3u_w86sIOdnq_u83lIL_eGAWNGmjrE,2038
+djspa-1.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+djspa-1.0.0.dist-info/top_level.txt,sha256=Q1FiOF1NUZZ211G7_lqqKobQLv72ML-bWI8j2jW4R2o,6
+djspa-1.0.0.dist-info/RECORD,,
