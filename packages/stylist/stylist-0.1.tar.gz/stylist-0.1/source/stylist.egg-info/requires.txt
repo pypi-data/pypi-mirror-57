@@ -1,0 +1,9 @@
+fparser
+
+[dev]
+check-manifest
+flake8
+
+[test]
+pytest
+pytest-cov
