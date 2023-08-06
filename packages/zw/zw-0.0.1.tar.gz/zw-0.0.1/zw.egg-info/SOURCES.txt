@@ -1,0 +1,7 @@
+setup.py
+zw/__init__.py
+zw.egg-info/PKG-INFO
+zw.egg-info/SOURCES.txt
+zw.egg-info/dependency_links.txt
+zw.egg-info/entry_points.txt
+zw.egg-info/top_level.txt

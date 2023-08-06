@@ -1,0 +1,4 @@
+[console_scripts]
+jujube = zw:jujube
+pill = zw:pill
+
