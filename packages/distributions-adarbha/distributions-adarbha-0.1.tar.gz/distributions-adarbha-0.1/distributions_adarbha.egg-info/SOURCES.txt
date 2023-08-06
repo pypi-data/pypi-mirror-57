@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions-adarbha/Binomialdistribution.py
+distributions-adarbha/Gaussiandistribution.py
+distributions-adarbha/Generaldistribution.py
+distributions-adarbha/__init__.py
+distributions_adarbha.egg-info/PKG-INFO
+distributions_adarbha.egg-info/SOURCES.txt
+distributions_adarbha.egg-info/dependency_links.txt
+distributions_adarbha.egg-info/not-zip-safe
+distributions_adarbha.egg-info/top_level.txt
