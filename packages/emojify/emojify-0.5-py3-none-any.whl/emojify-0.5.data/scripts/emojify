@@ -1,0 +1,7 @@
+#!python
+# -*- coding: UTF-8 -*-
+
+import emojify
+
+args = emojify.run_argparse()
+emojify.main(args.input, args.output, args.emoji)
