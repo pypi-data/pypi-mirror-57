@@ -1,0 +1,8 @@
+Django
+djangorestframework
+django-storages
+django-filter
+django-cleanup
+djangopubsub
+boto3
+python-dateutil
