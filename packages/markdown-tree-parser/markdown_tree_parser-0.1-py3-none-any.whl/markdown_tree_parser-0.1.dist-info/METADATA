@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: markdown-tree-parser
+Version: 0.1
+Summary: Markdown tree parser
+Home-page: https://github.com/phpusr/markdown-tree-parser
+Author: phpusr
+Author-email: phpusr@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+markdown-tree-parser
+====================
+
+Parse markdown file to python object, which contains markdown tree headings
+
+### Usage examples
+
+```python
+import unittest
+
+from markdown_tree_parser.parser import parse_string
+
+
+class TestParser(unittest.TestCase):
+
+    def test_code_block(self):
+        text = '''
+Title
+=====
+
+# Code
+
+Code 1
+------
+Some text
+\```
+# TODO
+\```
+
+Code 2
+------
+\```python
+# TODO
+print('test')
+\```
+
+# Heading
+'''
+        out = parse_string(text)
+        self.assertEqual(out.title, 'Title')
+        self.assertEqual(out[0][0].text, 'Code 1')
+        self.assertEqual(out[0][0].source, 'Some text\n```\n# TODO\n```\n')
+        self.assertEqual(out[0][1].text, 'Code 2')
+        self.assertEqual(out[0][1].source, "```python\n# TODO\nprint('test')\n```\n")
+        self.assertEqual(out[1].text, 'Heading')
+
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+
