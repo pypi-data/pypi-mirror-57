@@ -1,0 +1,3 @@
+[console_scripts]
+epm = epm.main:run
+
