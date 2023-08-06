@@ -1,0 +1,12 @@
+pika
+cbor
+
+[asyncio]
+aiormq
+uvloop
+
+[synchronous]
+kombu
+
+[test]
+tox
