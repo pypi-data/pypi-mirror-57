@@ -1,0 +1,3 @@
+[console_scripts]
+imageserver = imageserver.server:main
+
