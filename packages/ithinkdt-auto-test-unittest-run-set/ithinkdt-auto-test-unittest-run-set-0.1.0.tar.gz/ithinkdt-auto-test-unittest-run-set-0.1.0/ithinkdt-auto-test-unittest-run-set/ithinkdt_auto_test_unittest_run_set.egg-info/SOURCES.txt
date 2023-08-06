@@ -1,0 +1,9 @@
+setup.py
+ithinkdt-auto-test-unittest-run-set/com/__init__.py
+ithinkdt-auto-test-unittest-run-set/com/ithinkdt/__init__.py
+ithinkdt-auto-test-unittest-run-set/com/ithinkdt/unittest/__init__.py
+ithinkdt-auto-test-unittest-run-set/com/ithinkdt/unittest/run_set.py
+ithinkdt-auto-test-unittest-run-set/ithinkdt_auto_test_unittest_run_set.egg-info/PKG-INFO
+ithinkdt-auto-test-unittest-run-set/ithinkdt_auto_test_unittest_run_set.egg-info/SOURCES.txt
+ithinkdt-auto-test-unittest-run-set/ithinkdt_auto_test_unittest_run_set.egg-info/dependency_links.txt
+ithinkdt-auto-test-unittest-run-set/ithinkdt_auto_test_unittest_run_set.egg-info/top_level.txt
