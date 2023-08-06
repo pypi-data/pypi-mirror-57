@@ -1,0 +1,11 @@
+README.md
+setup.py
+serverless_psycopg2/__init__.py
+serverless_psycopg2/event.py
+serverless_psycopg2/pg2_wrapper.py
+serverless_psycopg2/test_serverless_pg2.py
+serverless_psycopg2.egg-info/PKG-INFO
+serverless_psycopg2.egg-info/SOURCES.txt
+serverless_psycopg2.egg-info/dependency_links.txt
+serverless_psycopg2.egg-info/requires.txt
+serverless_psycopg2.egg-info/top_level.txt
