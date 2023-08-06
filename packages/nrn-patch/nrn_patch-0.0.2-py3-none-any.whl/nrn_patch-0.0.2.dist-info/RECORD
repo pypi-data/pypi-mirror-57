@@ -1,0 +1,10 @@
+patch/__init__.py,sha256=utKZ5dgquGBqvUWEmEyXhKZbX3Ead7oh2zRRmYzt0cc,77
+patch/core.py,sha256=XgW3_2Kj_JIWnT0fi4GWny4AtEGlbJr9hVkt3wsZJGY,216
+patch/exceptions.py,sha256=2ZBVWU-s52QehVuvccW4km13DcGQrsRZmQXyH0kV8BQ,94
+patch/interpreter.py,sha256=B4EDUeXJkvbmsdzNMzKJWwA4R6JAOPCI2Zmzv27POSs,2015
+patch/objects.py,sha256=WDz4nt-I8vzjLqxhQCuQqFk_rJGxyRzG5mwR-WMDpoA,3335
+nrn_patch-0.0.2.dist-info/LICENSE,sha256=tJ_zaKC2tNV_HCEYSG7iwXiJjC_IYQpDiJYsgWkCMdI,1095
+nrn_patch-0.0.2.dist-info/METADATA,sha256=5g2xXsOKqctAqZ_dvLqJMty51JWD6IsSTnFisB4y3K4,2592
+nrn_patch-0.0.2.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+nrn_patch-0.0.2.dist-info/top_level.txt,sha256=YS8fpSgs8zbjwlHUDX2Tf1AuyynE5HnqTDNHFhUKsns,6
+nrn_patch-0.0.2.dist-info/RECORD,,
