@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gcp-jwt
+Version: 0.1
+Summary: Generate, Sign and verify JWTs using GCP KMS.
+Home-page: UNKNOWN
+Author: Charles Smith
+Author-email: binarskugga@gmail.com
+License: GNU GPLv3
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: cryptography
+Requires-Dist: google-cloud-kms
+
+UNKNOWN
+
+
