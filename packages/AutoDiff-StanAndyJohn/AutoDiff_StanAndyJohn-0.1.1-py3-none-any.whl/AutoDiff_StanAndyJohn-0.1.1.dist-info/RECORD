@@ -1,0 +1,15 @@
+autoDiff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoDiff/autoDiff.py,sha256=BkjwCI6sSxPB_nyKtMrhOdV8WXDK3mKLkJj6tJRaKLE,441
+autoDiff/element_func.py,sha256=9sokEQjqKKcp32L7mbM74hecqj2UyI1x6ANzPT7_pd4,7440
+autoDiff/operator.py,sha256=s21fgwa8E9BpCevOJHMeZEeM499FG4QeeFEJ2N6l8IA,8725
+autoDiff/optimization.py,sha256=2I8sBF10C9nVZVRp4y6yhOZGRd5J9vXSOKu57kVuBX0,15375
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_autoDiff.py,sha256=3fMRVF2aFl5phHRxZtkC6IZZgmNWbBuPdw1ecLoCcEw,106
+tests/test_element_funcs.py,sha256=90HSlNColNZE1jisPrwuGWsF4WgY_O4T8L7XlPApqs8,20462
+tests/test_operators.py,sha256=nZkjwhKXB6qhZPbOt2RQlgc4df-6oO4zo377HI-zcRg,3130
+tests/test_optimization.py,sha256=WmLlHMxCMoECqOt6r9ZzOYJAcM_oSgj90OHeEKhEVsI,13030
+AutoDiff_StanAndyJohn-0.1.1.dist-info/LICENSE,sha256=ddEKCTcLq3iaQXjlf5ohDklMZEKuPmKM7fPHMC70NTk,1063
+AutoDiff_StanAndyJohn-0.1.1.dist-info/METADATA,sha256=vlYGkdqyMhtl8W-odVDXUcDbez_Uzp0JBxSS-XtLDKo,1076
+AutoDiff_StanAndyJohn-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+AutoDiff_StanAndyJohn-0.1.1.dist-info/top_level.txt,sha256=Q1q6B96jq1sRS-I6pxeVYFRoVYVURGnMfmnv7_v1CJQ,15
+AutoDiff_StanAndyJohn-0.1.1.dist-info/RECORD,,
