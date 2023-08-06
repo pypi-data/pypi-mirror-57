@@ -1,0 +1,10 @@
+zarame/__init__.py,sha256=8xlGrE-9rm4_t_KdGCHElQYBYv2KDTHC4kB6YTjz8u8,46
+zarame/dump.py,sha256=2lOOCI1mTUEzfyUa251PQoibG6QjTS03cboRrx335Nk,387
+zarame/load.py,sha256=QYEAk1xn9AKUlsmrcNI9CZXUaugtN2WI8sG6ug-JzgQ,1295
+zarame/utils.py,sha256=1x7UKf4dlheX3nZWIRihhdkAq_qzACHpL-mnPfAYXlw,280
+zarame-0.0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+zarame-0.0.2.dist-info/METADATA,sha256=AonIsGpySrOFcAC9Ya3mF6No0usYJDS8gcvQ8k47UCo,297
+zarame-0.0.2.dist-info/RECORD,,
+zarame-0.0.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+zarame-0.0.2.dist-info/metadata.json,sha256=Tcu_sEBvhwtcVUtzMRIKqFAbV04oez2kh9AhIymhJJ8,453
+zarame-0.0.2.dist-info/top_level.txt,sha256=K5nvcI3GNaTMOUxLN4eNzOD6dTFVg_MonYm8TD9WprU,7
