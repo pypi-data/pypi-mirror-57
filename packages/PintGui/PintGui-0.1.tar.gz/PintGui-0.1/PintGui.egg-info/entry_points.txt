@@ -1,0 +1,4 @@
+
+      [gui_scripts]
+      PintGui = PintGui.scripts.main:start
+      
