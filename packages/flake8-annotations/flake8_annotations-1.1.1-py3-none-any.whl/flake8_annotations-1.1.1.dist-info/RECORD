@@ -1,0 +1,11 @@
+flake8_annotations/__init__.py,sha256=zVDjOkxqi_k9Wx7I2RLmFvrSU3ORa0BuPV6UepAGPts,12584
+flake8_annotations/checker.py,sha256=i8jZCaH3Uf9nkQNJoUBJerRItS_IBq0dA8iDrkQ4yKc,6441
+flake8_annotations/enums.py,sha256=57sEK0aC33v1lSYIUmnNTjX8nC836FuKKSa8aTrYJR4,893
+flake8_annotations/error_codes.py,sha256=umg7HVk2e1XkJDOcJAk_fBO_gwap7nNENf0rYaTl364,5308
+flake8_annotations-1.1.1.dist-info/LICENSE,sha256=IdanZQQbjL_unFgHNrwAY8eTlNIXmqqX1e794mAWQIU,1070
+flake8_annotations-1.1.1.dist-info/METADATA,sha256=1-dde8LxWA5h9UIrbga6Q8e5DM4C36ac9azJ9UxUoxc,7893
+flake8_annotations-1.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+flake8_annotations-1.1.1.dist-info/entry_points.txt,sha256=PchA_JSJ4gq-NQLjpKzBDLPLwUFzUUkXNBkWf0TgXOs,69
+flake8_annotations-1.1.1.dist-info/top_level.txt,sha256=DrmPDh_b0HVTst1EjBMjmB8MMHMDfsXah0pRRJXvXOc,19
+flake8_annotations-1.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+flake8_annotations-1.1.1.dist-info/RECORD,,
