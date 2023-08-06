@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: airQInsight
+Version: 0.2.0
+Summary: A tool designed to power exploratory data analysis, on airQ collected Air Quality Indicator Data.
+Home-page: https://github.com/itzmeanjan/airQ-insight/
+Author: Anjan Roy
+Author-email: anjanroy@yandex.com
