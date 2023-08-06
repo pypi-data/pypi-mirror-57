@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dcoshelpers/getjwt.py
+dcoshelpers.egg-info/PKG-INFO
+dcoshelpers.egg-info/SOURCES.txt
+dcoshelpers.egg-info/dependency_links.txt
+dcoshelpers.egg-info/requires.txt
+dcoshelpers.egg-info/top_level.txt
