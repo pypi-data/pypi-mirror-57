@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zbuilder
+Version: 0.0.5
+Summary: Create VMs
+Home-page: https://github.com/hasiotis/zbuilder
+Author: Chasiotis Nikos
+Author-email: hasiotis@gmail.com
+License: GPLv3+
+Description: # Zbuilder: Building VMs and applying ansible playbooks
+        
+        [![Documentation Status](https://readthedocs.org/projects/zbuilder/badge/?version=latest)](https://zbuilder.readthedocs.io/en/latest/?badge=latest)
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
