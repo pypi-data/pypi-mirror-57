@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: TracAdvancedTicketWorkflow
+Version: 1.2.1
+Summary: Advanced workflow operations Trac plugin
+Home-page: https://trac-hacks.org/wiki/AdvancedTicketWorkflowPlugin
+Author: Eli Carter
+Author-email: elicarter@retracile.net
+License: 3-Clause BSD
+Platform: UNKNOWN
+Classifier: Framework :: Trac
+Requires-Dist: Trac
+
+Provides more advanced workflow operations for Trac 1.2
+
+
