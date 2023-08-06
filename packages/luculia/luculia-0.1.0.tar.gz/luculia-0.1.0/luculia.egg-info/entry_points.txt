@@ -1,0 +1,3 @@
+[console_scripts]
+luculia = luculia.__main__:main
+
