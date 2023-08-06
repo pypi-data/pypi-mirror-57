@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+Greeting/__init__.py
+Temu_Greet.egg-info/PKG-INFO
+Temu_Greet.egg-info/SOURCES.txt
+Temu_Greet.egg-info/dependency_links.txt
+Temu_Greet.egg-info/top_level.txt
