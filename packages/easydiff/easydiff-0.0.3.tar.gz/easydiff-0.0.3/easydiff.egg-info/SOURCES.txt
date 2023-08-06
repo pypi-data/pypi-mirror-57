@@ -1,0 +1,15 @@
+README.md
+setup.py
+EasyDiff/__init__.py
+EasyDiff/ad.py
+EasyDiff/rev_var.py
+EasyDiff/var.py
+easydiff.egg-info/PKG-INFO
+easydiff.egg-info/SOURCES.txt
+easydiff.egg-info/dependency_links.txt
+easydiff.egg-info/top_level.txt
+tests/__init__.py
+tests/test_ad.py
+tests/test_rev_ad.py
+tests/test_rev_var.py
+tests/test_var.py
