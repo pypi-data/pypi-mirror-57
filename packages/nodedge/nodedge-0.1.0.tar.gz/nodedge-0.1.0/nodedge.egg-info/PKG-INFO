@@ -1,0 +1,28 @@
+Metadata-Version: 1.2
+Name: nodedge
+Version: 0.1.0
+Summary: Create nodedge!
+Home-page: https://github.com/nodedge/nodedge
+Author: Anthony De Bortoli
+Author-email: admin@nodedge.io
+License: GNU General Public License v3
+Description: Create Nodedge!
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-12-12)
+        ------------------
+        
+        * First release as a library
+        
+Keywords: Node editor
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
