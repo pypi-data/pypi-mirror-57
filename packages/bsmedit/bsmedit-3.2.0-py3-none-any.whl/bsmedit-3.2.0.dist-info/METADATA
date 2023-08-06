@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bsmedit
+Version: 3.2.0
+Summary: Another C/C++/SystemC Simulation Controller
+Home-page: http://bsmedit.feiyilin.com
+Author: Tianzhu Qiao
+Author-email: tq@feiyilin.com
+License: MIT
+Platform: any
+Requires-Dist: wxpython
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: click
+
+UNKNOWN
+
+
