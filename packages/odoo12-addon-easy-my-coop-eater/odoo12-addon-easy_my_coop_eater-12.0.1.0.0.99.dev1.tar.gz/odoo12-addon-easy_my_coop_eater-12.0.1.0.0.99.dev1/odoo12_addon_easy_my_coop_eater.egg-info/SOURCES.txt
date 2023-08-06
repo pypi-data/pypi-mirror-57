@@ -1,0 +1,13 @@
+setup.py
+odoo/addons/easy_my_coop_eater/__init__.py
+odoo/addons/easy_my_coop_eater/__manifest__.py
+odoo/addons/easy_my_coop_eater/models/__init__.py
+odoo/addons/easy_my_coop_eater/models/coop.py
+odoo/addons/easy_my_coop_eater/models/product.py
+odoo/addons/easy_my_coop_eater/view/product_view.xml
+odoo12_addon_easy_my_coop_eater.egg-info/PKG-INFO
+odoo12_addon_easy_my_coop_eater.egg-info/SOURCES.txt
+odoo12_addon_easy_my_coop_eater.egg-info/dependency_links.txt
+odoo12_addon_easy_my_coop_eater.egg-info/not-zip-safe
+odoo12_addon_easy_my_coop_eater.egg-info/requires.txt
+odoo12_addon_easy_my_coop_eater.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: odoo12-addon-easy_my_coop_eater
+Version: 12.0.1.0.0.99.dev1
+Summary: Easy My Coop Eater/worker
+Home-page: https://coopiteasy.be
+Author: Houssine BAKKALI <houssine@coopiteasy.be>
+License: UNKNOWN
+Description: 
+            This module allows to manage the activity of the cooperator.
+            
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Python: >=3.5
