@@ -1,0 +1,12 @@
+setup.py
+odoo/addons/stock_picking_copy_qty/__init__.py
+odoo/addons/stock_picking_copy_qty/__manifest__.py
+odoo/addons/stock_picking_copy_qty/models/__init__.py
+odoo/addons/stock_picking_copy_qty/models/stock.py
+odoo/addons/stock_picking_copy_qty/views/stock.xml
+odoo12_addon_stock_picking_copy_qty.egg-info/PKG-INFO
+odoo12_addon_stock_picking_copy_qty.egg-info/SOURCES.txt
+odoo12_addon_stock_picking_copy_qty.egg-info/dependency_links.txt
+odoo12_addon_stock_picking_copy_qty.egg-info/not-zip-safe
+odoo12_addon_stock_picking_copy_qty.egg-info/requires.txt
+odoo12_addon_stock_picking_copy_qty.egg-info/top_level.txt
