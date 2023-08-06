@@ -1,0 +1,9 @@
+README.md
+setup.py
+shawnguo/__init__.py
+shawnguo/love.py
+shawnguo/version.py
+shawnguo.egg-info/PKG-INFO
+shawnguo.egg-info/SOURCES.txt
+shawnguo.egg-info/dependency_links.txt
+shawnguo.egg-info/top_level.txt

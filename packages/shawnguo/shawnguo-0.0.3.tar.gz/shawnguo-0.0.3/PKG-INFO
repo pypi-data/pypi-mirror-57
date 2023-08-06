@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: shawnguo
+Version: 0.0.3
+Summary: Shawn Guo's project
+Home-page: https://github.com/Shawn-Guo-CN/shawnguo
+Author: Shawn Guo
+Author-email: shawnguo.cn@gmail.com
+License: UNKNOWN
+Description: # shawnguo
+        
+        `.love()` is now available.
+Keywords: shawnguo,python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
