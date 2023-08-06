@@ -1,0 +1,15 @@
+KagglePipeline/KagglePipeline.py,sha256=rP-oqXZIC-6iYbj03-3j36keABBbrjghHKO2RFWAv7c,504
+KagglePipeline/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+KagglePipeline/augmentation/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+KagglePipeline/evaluation/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+KagglePipeline/models/ModelBase.py,sha256=BZJs2eBizeyM0B63-1X7IpmjDaNVyc7JZ0D_xWbIPdQ,936
+KagglePipeline/models/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+KagglePipeline/models/neural_networks/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+KagglePipeline/models/neural_networks/mlp/SimpleHiddenMLP.py,sha256=RKUyQD6lY4lzGstobs-st6RvLBSlGb72wTi8r883RBY,4379
+KagglePipeline/models/neural_networks/mlp/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+KagglePipeline/preprocessing/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+dj_kaggle_pipeline-0.0.3.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+dj_kaggle_pipeline-0.0.3.dist-info/METADATA,sha256=37UdBS3jl05my65L94YJrnAteLxZ-yY_QsX6MZ3mZqk,678
+dj_kaggle_pipeline-0.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+dj_kaggle_pipeline-0.0.3.dist-info/top_level.txt,sha256=o7VmFo8Rvswm6e8yxA0hH82pBz1QcrmoMs1FiyXkb3A,15
+dj_kaggle_pipeline-0.0.3.dist-info/RECORD,,
