@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: savi
+Version: 0.0.5
+Summary: Una ayuda para los de lic. en sistemas jajaj
+Home-page: https://github.com/SebaSavino
+Author: seba.savi
+Author-email: seba.manda98@gmail.com
+License: MIT
+Description: # savi
+        
+        Hecho por un alumno, para los alumnos xd 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

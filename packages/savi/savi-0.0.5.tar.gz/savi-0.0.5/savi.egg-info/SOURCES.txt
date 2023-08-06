@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+savi/__init__.py
+savi/binaria.py
+savi/burbuja.py
+savi/seleccion.py
+savi.egg-info/PKG-INFO
+savi.egg-info/SOURCES.txt
+savi.egg-info/dependency_links.txt
+savi.egg-info/entry_points.txt
+savi.egg-info/requires.txt
+savi.egg-info/top_level.txt
