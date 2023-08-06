@@ -1,0 +1,48 @@
+# Textbook: Universal NLP Datasets
+
+Current support few commonsense reasoning datsets(`alphanli`, `hellaswag`, `physicaliqa`, `socialiqa`, `codah`, and `commonsenseqa`). It adopts `ray`'s multiprocessing in loading/processing the datasets.
+
+## Architecture
+
+![Architecture Image](./textbook.svg)
+
+## Dependency
+
+`pip install -r requirements.txt`
+
+## Download raw datasets
+
+```bash
+    bash fetch.sh
+```
+
+It downloads `alphanli`, `hellaswag`, `physicaliqa`, `socialiqa`, `codah`, and `commonsenseqa` from AWS.
+In case you want to use something-something, pelase download the dataset from 20bn's website.
+
+## Usage
+
+### Initialize `ray`
+
+```python
+    import ray
+    ray.init(memory=1024 * 1024 * 1024, num_cpus=2)
+```
+
+### Load a dataset
+
+```python
+    from transformers import BertTokenizer
+    from textbook import *
+
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    text_renderer = TextRenderer.remote(tokenizer)
+
+    anli_tool = BatchTool(tokenizer, max_seq_len=128, source="anli")
+    anli_dataset = TextDataset(path='data_cache/alphanli/eval.jsonl',
+                                config=ANLIConfiguration.remote(), renderers=[text_renderer])
+    # Batch by number of examples
+    anli_iter = DataLoader(anli_dataset, batch_size=2, collate_fn=anli_tool.collate_fn)
+
+    # Batch by number of tokens
+    anli_iter = DataLoader(anli_dataset, batch_sampler=TokenBasedSampler(anli_dataset, batch_size=128), collate_fn=anli_tool.collate_fn)
+```
