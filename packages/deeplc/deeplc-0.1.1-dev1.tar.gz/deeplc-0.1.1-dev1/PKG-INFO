@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: deeplc
+Version: 0.1.1-dev1
+Summary: DeepLC: Retention time prediction for (modified) peptides using Deep Learning.
+Home-page: http://compomics.github.io/projects/DeepLC
+Author: Robbin Bouwmeester, Niels Hulstaert, Ralf Gabriels, Prof. Lennart Martens, Prof. Sven Degroeve
+Author-email: Robbin.Bouwmeester@UGent.be
+License: apache-2.0
+Description: UNKNOWN
+Keywords: DeepLC,Proteomics,deep learning,peptides,retention time,prediction
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Development Status :: 4 - Beta
