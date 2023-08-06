@@ -1,0 +1,35 @@
+from cuteuid import generate_cuteuid
+
+print("generate_cuteuid()")
+print(generate_cuteuid())
+print("generate_cuteuid(hex_only=True)")
+print(generate_cuteuid(hex_only=True))
+
+print("generate_cuteuid(emoji=True)")
+print(generate_cuteuid(emoji=True))
+print("generate_cuteuid(emoji=True, flags_only=True)")
+print(generate_cuteuid(emoji=True, flags_only=True))
+print("generate_cuteuid(emoji=True, smileys_only=True)")
+print(generate_cuteuid(emoji=True, smileys_only=True))
+
+
+
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+print(generate_cuteuid(emoji=True))
+import pdb; pdb.set_trace()
