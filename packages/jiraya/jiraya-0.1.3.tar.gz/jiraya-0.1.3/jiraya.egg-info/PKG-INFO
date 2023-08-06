@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: jiraya
+Version: 0.1.3
+Summary: Simple Jira Command Line Interface.
+Home-page: https://github.com/rochacon/jiraya
+Author: Rodrigo Chacon
+Author-email: rochacon@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
