@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+syft_proto/__init__.py
+syft_proto/proto.json
+syft_proto/proto.py
+syft_proto.egg-info/PKG-INFO
+syft_proto.egg-info/SOURCES.txt
+syft_proto.egg-info/dependency_links.txt
+syft_proto.egg-info/top_level.txt
+syft_proto/../proto.json
