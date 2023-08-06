@@ -1,0 +1,16 @@
+syrupy/__init__.py,sha256=Yw8cXh_gngcaYobOnAGuvCW_5CUT1B9iwHGZgHhDQ98,2055
+syrupy/assertion.py,sha256=E_1r0zfpEE4gIYSiGBcJhFYUOj3M1q1WxuQrDDJ0-W4,3407
+syrupy/constants.py,sha256=VxfPgPzTXgbsLWrdhgVrMY2-HiBe7MWE3Y-Kd_PwcaQ,35
+syrupy/exceptions.py,sha256=tCgXaQ182XW86qvWUgOZobisdMzE4awyRAMHA9TbaA0,73
+syrupy/io.py,sha256=Z3gi6IpfcwG2fkbemYZ86tQJn5ZyMXFaGzMJ2IkmCqs,5940
+syrupy/location.py,sha256=IfMdISFFqd5Urls1rTQMbwpcPMYAhRAkflY5-xuanYU,168
+syrupy/serializer.py,sha256=EETZcgkzQH4Bdm1Z94NjO7x2pUSB6cgOyyRLq8LL0dU,191
+syrupy/session.py,sha256=tveZMzMWiYlp1BqhIHMc3EqF9-jgmDTD_biq6172D-k,6345
+syrupy/terminal.py,sha256=PCUnJLxHFlFsKKQ_MprukyHDCA59rKxirBePLVPGl94,212
+syrupy/types.py,sha256=DNRFrOJCrbDQOnCJ_zKrXDbdTHO43Q3CJOsMqLUS7fg,66
+syrupy-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+syrupy-0.0.2.dist-info/METADATA,sha256=_VJznTXxGECkyOR2dtakbMq2GESixdFAQK4N2_273Y4,5070
+syrupy-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+syrupy-0.0.2.dist-info/entry_points.txt,sha256=mnOI40cUMb1wvLB1Eal2X77egskaX7ce8KdfYC7wzdw,28
+syrupy-0.0.2.dist-info/top_level.txt,sha256=liKgxIgr6Z7g4ki2xA0Kjau46J6kRvp5ugteF4bGKHc,7
+syrupy-0.0.2.dist-info/RECORD,,
