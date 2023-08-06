@@ -1,0 +1,4 @@
+include nfl_insights/README.md
+include nfl_insights/queries/*.sql
+include nfl_insights/LICENSE
+include nfl_insights/nfl_language_templates.json
