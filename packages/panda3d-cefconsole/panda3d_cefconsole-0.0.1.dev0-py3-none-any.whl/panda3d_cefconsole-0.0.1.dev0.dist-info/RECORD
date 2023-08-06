@@ -1,0 +1,12 @@
+cefconsole/__init__.py,sha256=LIxCor2vJr75-xk4wnw1p-k3OcwRdbXfr_nybJNtp7o,153
+cefconsole/boilerplate.py,sha256=dciqx8VRonFsmF1a3FEKtLuY_sjrUCOtyLBrCsbfVf4,605
+cefconsole/core.py,sha256=FV0guQOExUKCHB0TdOqN8oxcsZHFzWIrkjNN3wXGQ98,2288
+cefconsole/repl.py,sha256=QCBFS-0zQxH4eZG81GOutxFW1zr41sM1rc9TBQW6Shs,2934
+cefconsole/templates/console.html,sha256=Hjd5CxVbzpcyD_OQgrnm9pM80WALtEwTNQrmH7r0R6g,1694
+cefconsole/templates/demo.html,sha256=A8_4seYMT2TZ9MgKbNZxEsuI4e6o2IzNwsorP9mAeSM,466
+cefconsole/templates/python.html,sha256=2ILvS8F_YOV2SrO4IvYqlxqJh2dznPZEaxQqeYS45oQ,2071
+panda3d_cefconsole-0.0.1.dev0.dist-info/METADATA,sha256=r14_PHAqmVq2v6BOz2lzxfjjjCkOGojZc7ULnpeVz4I,570
+panda3d_cefconsole-0.0.1.dev0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+panda3d_cefconsole-0.0.1.dev0.dist-info/entry_points.txt,sha256=dIPXxubLA7to75otFIGZBlscz_2XWhvyd1PadnQZopU,65
+panda3d_cefconsole-0.0.1.dev0.dist-info/top_level.txt,sha256=e0tEgop4P7MrFlfzOtj2dCAVtWEH1Polj1i8bHWd6pc,11
+panda3d_cefconsole-0.0.1.dev0.dist-info/RECORD,,
