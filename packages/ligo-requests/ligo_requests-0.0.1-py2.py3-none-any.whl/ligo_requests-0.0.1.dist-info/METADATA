@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ligo-requests
+Version: 0.0.1
+Summary: generic connection pooling HTTP client for the LIGO/Virgo services
+Home-page: https://git.ligo.org/emfollow/ligo-requests
+Author: Leo Singer
+Author-email: leo.singer@ligo.org
+License: GPL-2+
+Project-URL: Bug Tracker, https://git.ligo.org/emfollow/ligo-requests/issues
+Project-URL: Documentation, https://ligo-requests.readthedocs.io/
+Project-URL: Source Code, https://git.ligo.org/emfollow/ligo-requests
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+Requires-Dist: requests
+Requires-Dist: safe-netrc
+Requires-Dist: six
+
+# ligo-requests
+
+ligo-requests provides a generic REST API client for the LIGO/Virgo services.
+It uses the powerful [Requests](http://requests.readthedocs.io/) package for
+reliable and high-throughput HTTP connection pooling.
+
+
