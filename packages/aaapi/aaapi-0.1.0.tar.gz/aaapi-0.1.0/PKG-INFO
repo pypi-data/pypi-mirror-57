@@ -1,0 +1,84 @@
+Metadata-Version: 1.2
+Name: aaapi
+Version: 0.1.0
+Summary: Another Audio API - Collection of audio and music processing API with massive amount of dependencies
+Home-page: https://github.com/ye-yu/aaapi
+Author: Ye Yu
+Author-email: rafolwen98@gmail.com
+License: MIT license
+Description: =====
+        aaapi
+        =====
+        
+        
+        .. image:: https://img.shields.io/pypi/v/aaapi.svg
+                :target: https://pypi.python.org/pypi/aaapi
+        
+        .. image:: https://img.shields.io/travis/ye-yu/aaapi.svg
+                :target: https://travis-ci.org/ye-yu/aaapi
+        
+        .. image:: https://readthedocs.org/projects/aaapi/badge/?version=latest
+                :target: https://aaapi.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Another Audio API - Collection of audio and music processing API with massive amount of dependencies
+        
+        
+        * Free software: MIT license
+        * Documentation: https://aaapi.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        - AudioUtils
+        
+          - loading wav files
+          - splitting audio based on volumn peaks
+          - extracting audio features of MFCC and spectral entropy
+          - f0 estimation using CREPE
+        
+        - MidiUtils
+        
+          - converting frequencies to musical notes
+          - converting frequencies to musical label
+          - converting pandas pd into midi files
+          - grouping consecutive notes into one note
+          - grouping multiple notes into weighted-averaged note
+        
+        - MusicUtils
+        
+          - identifying the scale of the musical notes
+        
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-12-09)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: aaapi
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
